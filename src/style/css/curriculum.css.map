@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../mixins/mixins.scss","../stylesscss/curriculum.scss"],"names":[],"mappings":"AAgFQ;AC9EJ;EDAQ;EAEI;;AAEJ;EACI;;;ACDZ;EACI;EACA;EACA;EAKI","file":"curriculum.css"}
+{"version":3,"sourceRoot":"","sources":["../sass/curriculum.css"],"names":[],"mappings":"AAAA;AACA;EACE;EACA;;;AAGF;EACE;;;AAGF;EACE;EACA;EACA;EACA;;;AAGF;AAEA","file":"curriculum.css"}
