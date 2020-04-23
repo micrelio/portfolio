@@ -69,9 +69,6 @@
 .stick .mode img {
   width: calc(0.1rem + 3vw);
 }
-.stick .movil img {
-  display: none;
-}
 .stick .links {
   display: none;
 }
