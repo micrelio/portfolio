@@ -14,7 +14,7 @@
     }
 
     .nav {
-        border-bottom: 0.1rem solid #fff;
+        border-bottom: 0.05rem solid #fff;
         // display: block;
         // margin: 0vh 5vh 0vh 5vh;
         box-shadow: 0px 4px 3px rgba(0, 0, 0, .5);
@@ -66,7 +66,7 @@
 
                     .nav-link {
                         margin: 0 0.2rem 0 0.2rem;
-                        color: white;
+                        color: gray;
                         padding: 1.6rem;
 
                         font {
@@ -74,7 +74,9 @@
                         }
 
                         border: {
-                            radius: 0.5rem;
+                            radius: 0.9rem;
+                            color:gray;
+                            width: 0.05rem;
                         }
 
                         background: {
@@ -113,14 +115,17 @@
     }
 
     .movil img {
-        //display: none;
+        display: none;
     }
-
-    .links {
-       display: none;
-    }
-    
+.mnav-link{
+    display: none;
 }
+    .desplegable {
+        display: none;
+    }
+}
+
+
 
 /*******************************/
 

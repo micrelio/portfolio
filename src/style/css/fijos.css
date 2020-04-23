@@ -6,7 +6,7 @@
   width: 100%;
 }
 .stick .nav {
-  border-bottom: 0.1rem solid #fff;
+  border-bottom: 0.05rem solid #fff;
   box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
   background-color: rgba(0, 0, 0, 0.438);
 }
@@ -48,9 +48,11 @@
 }
 .stick .nav .navbar .menu .links .nav-link {
   margin: 0 0.2rem 0 0.2rem;
-  color: white;
+  color: gray;
   padding: 1.6rem;
-  border-radius: 0.5rem;
+  border-radius: 0.9rem;
+  border-color: gray;
+  border-width: 0.05rem;
   background-color: rgba(0, 0, 0, 0.582);
   cursor: pointer;
 }
@@ -69,7 +71,13 @@
 .stick .mode img {
   width: calc(0.1rem + 3vw);
 }
-.stick .links {
+.stick .movil img {
+  display: none;
+}
+.stick .mnav-link {
+  display: none;
+}
+.stick .desplegable {
   display: none;
 }
 

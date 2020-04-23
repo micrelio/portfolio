@@ -7,7 +7,7 @@ $(function() {
 
     var pull = $('#pull');
 
-    menu = $('.links');
+    menu = $('.desplegable');
 
     menuHeight = menu.height();
 
