@@ -300,6 +300,8 @@ footer {
 	.main-copy-redes .footer-redes {
 		width: 80%;
 		margin: auto;
-	}
-
+  }
+  .footer-redes a{
+    width: 100%;
+  }
 }
