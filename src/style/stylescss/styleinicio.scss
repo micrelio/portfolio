@@ -1,0 +1,17 @@
+@import "../mixins/mixins.scss";
+@import "../variables/variables.scss";
+.head {
+    @include head;
+}
+
+.primera {
+    width: 100vw;
+    padding: 5%;
+    // height: 100vh;
+    img {
+        width: 80vw;
+    }
+    background: {
+        color: white;
+    }
+}

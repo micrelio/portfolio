@@ -1,0 +1,17 @@
+@import "../mixins/mixins.scss";
+@import "../variables/variables.scss";
+.head {
+    @include head;
+}
+
+.segunda {
+    width: 100vw;
+    padding: 5%;
+    height: 80vh;
+    img {
+        // width: 90vw;
+    }
+    background: {
+        color: white;
+    }
+}

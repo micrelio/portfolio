@@ -1,0 +1,19 @@
+/* hovers*/
+.head {
+  width: 100%;
+  background-color: pink;
+}
+.head img {
+  width: 100%;
+}
+
+.primera {
+  width: 100vw;
+  padding: 5%;
+  background-color: white;
+}
+.primera img {
+  width: 80vw;
+}
+
+/*# sourceMappingURL=styleinicio.css.map */

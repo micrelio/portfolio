@@ -1,0 +1,20 @@
+@import "../mixins/mixins.scss";
+@import "../variables/variables.scss";
+.head {
+    @include head;
+}
+
+.primera {
+    padding: 0.5rem;
+    width: 100%;
+    background: {
+        color: white;
+    }
+}
+
+.segunda {
+    width: 100%;
+    background: {
+        // color: pink;
+    }
+}
