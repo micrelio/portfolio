@@ -51,8 +51,8 @@ body {
     display: flex;
     flex-direction: column;
 
-    // background-size: cover;
-    /* background-color: rosybrown; */
+    background-size: cover;
+    //  background-color: rosybrown; 
     /* margin: 0; no hace falta por el normalize*/
     /*haciendo esto 1 rem son 10 px*/
     /* Aquí irán los estilos que añada Jose Antonio*/
@@ -73,18 +73,23 @@ p {
 
 
 .primera {
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
     
+    //z-index:1000;
+   // margin-top:5rem;
+    display:flex;
+    flex-direction: column;
+    // flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     width: 100vw;
     padding: 5%;
     // height: 100vh;
     img {
+        // margin:5rem;
         width: 50vh;
     }
     background: {
-   //     color: ;
+      color:pink ;
     }
+    
 }
