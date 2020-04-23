@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../sass/galeria.css"],"names":[],"mappings":"AAAA;AACA;EACE;EACA;;;AAGF;EACE;;;AAGF;EACE;EACA;EACA;;;AAGF;EACE;;;AAGF;AAEA","file":"galeria.css"}
+{"version":3,"sourceRoot":"","sources":["../mixins/mixins.scss","../sass/galeria.scss"],"names":[],"mappings":"AA0FQ;ACxFR;EDCY;EAGI;;AAGJ;EACI;;;ACJhB;EACI;EACA;EAEI;;;AAIR;EACI","file":"galeria.css"}
