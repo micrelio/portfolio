@@ -1,12 +1,13 @@
               @media only screen and (max-width: 991.99px) {
                   .nav {
-                      border-bottom: 0.05rem solid #fff;
+                     // border-bottom: 0.05rem solid #fff;
                       display: none;
                   }
 
                   .movil {
                       border-bottom: 0.05rem solid #fff;
                       display: block;
+                      
                       display: flex;
                       flex-direction: column;
                       box-shadow: 0px 4px 3px rgba(0, 0, 0, .5);
@@ -18,7 +19,7 @@
                       }
 
                       .imagenes {
-                          border-bottom: 0.05rem solid #fff;
+                         // border-bottom: 0.05rem solid #fff;
                           padding: calc(0.5rem + 0.5vw);
                           // margin-top: calc(1rem + 1vw);
                           // margin-right: calc(1rem + 1vw);

@@ -97,7 +97,6 @@
 }
 * .info-main {
   width: 98%;
-  max-width: 100rem;
   margin: auto;
   text-align: center;
   padding: 3rem 20rem;
@@ -144,15 +143,20 @@
   padding: 0 2rem;
 }
 * .footer-main .footer-columna h3 {
-  font-size: 3.2rem;
+  font-size: 2rem;
   color: #00C6EE;
   margin-bottom: 2rem;
 }
+* .footer-main .footer-columna p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
 * .footer-main .footer-columna input[type=email] {
   border: none;
-  width: 100%;
+  width: 70%;
   border: 0.1rem solid #00C6EE;
-  font-size: 1.4rem;
+  font-size: 1rem;
   padding: 1rem;
   font-family: Raleway;
 }
@@ -161,7 +165,7 @@
   background: #00C6EE;
   color: #fff;
   padding: 1rem 4rem;
-  font-size: 1.8rem;
+  font-size: 1rem;
   margin-top: 1rem;
   cursor: pointer;
   font-family: Raleway;
