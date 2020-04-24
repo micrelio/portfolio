@@ -43,13 +43,52 @@
         menu();
 
     </script>
+
+<script>
+
+  
+$(function() {
+    /**** INICIO ZONA EDITABLE ****/
+    var sound_mp3 = "http://soundbible.com/mp3/A-Tone-His_Self-1266414414.mp3";
+    var sound_ogg = "http://vignette2.wikia.nocookie.net/monchbox/images/0/01/Beep-sound.ogg/revision/latest?cb=20110628200153";
+    /**** FIN ZONA EDITABLE ****/
+
+    $('body').prepend('<audio><source src="' + sound_mp3 + '"></source><source src="' + sound_ogg + '"></source></audio>');
+    var audio = $("audio")[0];
+    $("a").mouseenter(function() {
+        audio.play();
+    });
+});
+    
+    </script>
+
+
 </head>
 
 <body>
     <section class="head">
         <img src="src/images/banners/rocas.jpg">
 
-    </section>
+    </section> 
+    
+  
+        
+        <p align="left"  style="background-color: aliceblue">
+        <a onmouseover>JavaScript Kit</a></p>
+        
+        <!-- <p style="background-color: aliceblue">
+        <a  onclick="mouseoversound.playclip()">Link 3</a></p> -->
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -72,9 +111,7 @@
                         <button onclick="location.href='src/app/curriculum.html'" class="nav-link">Curriculum</button>
                         <button onclick="location.href='src/app/contacto.html'" class="nav-link">Contacto</button>
                     </div>
-
                 </div>
-
             </div>
         </div>
         <div class="movil">
@@ -82,14 +119,15 @@
                 <div class="foto">
                     <img src="src/images/dracula-man.jpg">
                 </div>
-                <div class="botones">
-                    <button id="boton1" type="button"><img src="src/images/icons/menu.png" id="pull" href="#"
-                            alt="menu"></button>
+                <div class="botones" >
+                    <span  id="boton1" ><img src="src/images/icons/menu.png" id="pull" href="#"
+                        alt="menu"></span>
                     <!-- <button id="boton2" type="button" (click)="ocultar()"><img  src="src/images/icons/menu.png"
               alt="menu"></button> -->
                 </div>
             </div>
-            <div class="desplegable" id="desplegable">
+            <div ></div>
+            <div style="display: none;" class="desplegable" id="desplegable">
                 <button onclick="location.href='index.html'" class="mnav-link">Inicio</button>
                 <button onclick="location.href='src/app/web.html'" class="mnav-link">Webs</button>
                 <button onclick="location.href='src/app/galeria.html'" class="mnav-link">Galery</button>
@@ -98,7 +136,7 @@
                 <button onclick="location.href='src/app/contacto.html'" class="mnav-link">Contacto</button>
 
             </div>
-
+            
         </div>
         <div class="mode">
             <img src="src/images/buttons/noche.png">

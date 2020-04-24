@@ -25,7 +25,7 @@
   margin-left: calc(10px + 1vw);
   border-radius: 75%;
   border: 3px double #000000;
-  width: calc(4vw + 4rem);
+  width: calc(3vw + 3rem);
   box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
 }
 .stick .nav .navbar .menu {
