@@ -31,12 +31,15 @@
                 z-index: 1;
 
                 img {
+                   
+
                     margin-top: calc(10px + 1vw);
                     margin-left: calc(10px + 1vw);
                     border-radius: 75%;
-                    border: 3px double #000000;
+                    border: 0.05rem solid #fff;
                     width: calc(3vw + 3rem);
                     box-shadow: 0px 4px 3px rgba(0, 0, 0, .5);
+                   
                 }
             }
 
