@@ -1,14 +1,14 @@
-<!DOCTYPE html PUBLIC" -//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Micro | Desarrollador web</title>
-    <link rel="stylesheet" href="src/style/css/font-awesome.min.css">
-    <link rel="stylesheet" href="src/style/css/fijos.css" media="screen" />
-    <link rel="stylesheet" href="src/style/css/style.css" media="screen" />
+    <link rel="stylesheet" href="../style/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style/css/fijos.css" media="screen" />
+    <link rel="stylesheet" href="../style/css/style.css" media="screen" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script type="text/javascript" src="src/funciones/menu.js"></script>
+    <script type="text/javascript" src="../funciones/menu.js"></script>
 
 
 
@@ -17,8 +17,7 @@
     <meta name="author" content="micro" />
     <meta name="copyright" content="micro" />
 
-    <meta name="viewport" content="width=device-width, user-scalable=no,
-            initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
     <meta name="twitter:site" content="@">
     <link rel="alternate" hreflang="es" href="https://.com/" />
     <meta name="Title" content="" />
@@ -55,7 +54,7 @@ $(function() {
 
     $('body').prepend('<audio><source src="' + sound_mp3 + '"></source><source src="' + sound_ogg + '"></source></audio>');
     var audio = $("audio")[0];
-    $("a").mouseenter(function() {
+    $("s").mouseenter(function() {
         audio.play();
     });
 });
@@ -67,7 +66,7 @@ $(function() {
 
 <body>
     <section class="head">
-        <img src="src/images/banners/rocas.jpg">
+        <img src="../images/banners/rocas.jpg">
 
     </section> 
     
@@ -100,16 +99,16 @@ $(function() {
 
             <div class="navbar">
                 <div class="foto">
-                    <img src="src/images/dracula-man.jpg">
+                    <img src="../images/dracula-man.jpg">
                 </div>
                 <div class="menu">
                     <div class="links">
-                        <button onclick="location.href='index.html'" class="nav-link"><a onmouseover>Inicio</a></button>
-                        <button onclick="location.href='src/app/webs.html'" class="nav-link"><a onmouseover>Webs</a></button>
-                        <button onclick="location.href='src/app/galeria.html'" class="nav-link"><a onmouseover>Galery</a></button>
-                        <button onclick="location.href='src/app/videos.html'" class="nav-link"><a onmouseover>Videos</a></button>
-                        <button onclick="location.href='src/app/curriculum.html'" class="nav-link"><a onmouseover>Curriculum</a></button>
-                        <button onclick="location.href='src/app/contacto.html'" class="nav-link"><a onmouseover>Contacto</a></button>
+                        <s onmouseover><button onclick="location.href='index.html'" class="nav-link">Inicio</button></s>
+                        <s onmouseover><button onclick="location.href='webs.html'" class="nav-link">Webs</button></s>
+                        <s onmouseover><button onclick="location.href='galeria.html'" class="nav-link">Galery</button></s>
+                        <s onmouseover><button onclick="location.href='videos.html'" class="nav-link">Videos</button></s>
+                        <s onmouseover><button onclick="location.href='curriculum.html'" class="nav-link">Curriculum</button></s>
+                        <s onmouseover><button onclick="location.href='contacto.html'" class="nav-link">Contacto</button></s>
                     </div>
                 </div>
             </div>
@@ -117,10 +116,10 @@ $(function() {
         <div class="movil">
             <div class="imagenes">
                 <div class="foto">
-                    <img src="src/images/dracula-man.jpg">
+                    <img src="../images/dracula-man.jpg">
                 </div>
                 <div class="botones" >
-                    <span  id="boton1" ><img src="src/images/icons/menu.png" id="pull" href="#"
+                    <span  id="boton1" ><img src="../images/icons/menu.png" id="pull" href="#"
                         alt="menu"></span>
                     <!-- <button id="boton2" type="button" (click)="ocultar()"><img  src="src/images/icons/menu.png"
               alt="menu"></button> -->
@@ -129,17 +128,20 @@ $(function() {
             <div ></div>
             <div style="display: none;" class="desplegable" id="desplegable">
                 <button onclick="location.href='index.html'" class="mnav-link">Inicio</button>
-                <button onclick="location.href='src/app/web.html'" class="mnav-link">Webs</button>
-                <button onclick="location.href='src/app/galeria.html'" class="mnav-link">Galery</button>
-                <button onclick="location.href='src/app/videos.html'" class="mnav-link">Videos</button>
-                <button onclick="location.href='src/app/curriculum.html'" class="mnav-link">Curriculum</button>
-                <button onclick="location.href='src/app/contacto.html'" class="mnav-link">Contacto</button>
+                <button onclick="location.href='web.html'" class="mnav-link">Webs</button>
+                <button onclick="location.href='galeria.html'" class="mnav-link">Galery</button>
+                <button onclick="location.href='videos.html'" class="mnav-link">Videos</button>
+                <button onclick="location.href='curriculum.html'" class="mnav-link">Curriculum</button>
+                <button onclick="location.href='contacto.html'" class="mnav-link">Contacto</button>
 
             </div>
             
         </div>
         <div class="mode">
-            <img src="src/images/buttons/noche.png">
+           
+        <!-- <audio src="../sonidos/ping.mp4" autoplay loop></audio> -->
+            <img src="../images/buttons/noche.png">
+            
         </div>
     </section>
 
@@ -147,38 +149,38 @@ $(function() {
     <section class="primera">
         <h>Presentacion</h>
         <div>
-            <img src="src/images/mountain2.jpg">
+            <img src="../images/mountain2.jpg">
         </div>
     </section>
 
     <section class="primera">
         <h>Webs</h>
         <div>
-            <img src="src/images/mountain2.jpg">
+            <img src="../images/mountain2.jpg">
         </div>
     </section>
     <section class="primera">
         <h>Galeria</h>
         <div>
-            <img src="src/images/mountain2.jpg">
+            <img src="../images/mountain2.jpg">
         </div>
     </section>
     <section class="primera">
         <h>Videos</h>
         <div>
-            <img src="src/images/mountain2.jpg">
+            <img src="../images/mountain2.jpg">
         </div>
     </section>
     <section class="primera">
         <h>Curriculum</h>
         <div>
-            <img src="src/images/mountain2.jpg">
+            <img src="../images/mountain2.jpg">
         </div>
     </section>
     <section class="primera">
         <h>Contacto</h>
         <div>
-            <img src="src/images/mountain2.jpg">
+            <img src="../images/mountain2.jpg">
         </div>
     </section>
 
