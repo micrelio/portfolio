@@ -16,6 +16,14 @@ class miMenu extends HTMLElement {
                 </div>
                 <div class="menu">
                     <div class="links">
+
+
+
+
+
+
+
+
                     <s onmouseover>  <button class="nav-link" type="button" onclick="navegar('inicio');"> inicio </button> </s>
                     <s onmouseover>  <button class="nav-link" type="button" onclick="navegar('webs'); "> Webs </button></s>
                     <s onmouseover>  <button class="nav-link" type="button" onclick="navegar('galeria');"> galeria </button></s>
@@ -52,12 +60,39 @@ class miMenu extends HTMLElement {
         <div class="mode">
            
         <!-- <audio src="../sonidos/ping.mp4" autoplay loop></audio> -->
-            <img src="../images/buttons/noche.png">
+            <img src="../../images/buttons/noche.png">
             
         </div>
     </section>
+
+
+
+
+
+    
+
+
+
+
                 `;
        }
     }
   //  window.customElements.define('mi-Menu', minenu);
   customElements.define('mi-menu', miMenu);
+ 
+      window.onload = function() {
+          window.router.init([{
+              path: "/list",
+              view: "<mi-galeria><mi-galeria>"
+          }, {
+              path: "/edit",
+              view: "<h1>Edición</h1>"
+          }, {
+              path: "/templateA",
+              view: "#list"
+          }, {
+              path: "/templateB",
+              view: "#edit"
+          }]);
+      };
+ 
