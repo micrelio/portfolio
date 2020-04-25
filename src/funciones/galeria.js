@@ -28,8 +28,7 @@ for (var indice in logos) {
     console.log("En el índice '" + indice + "' hay este valor: " + logos[indice]);
     
 
-    document.getElementById("caja").innerHTML = "<img src=../../"+ logos[indice]+">";
-
+    document.getElementById("caja").innerHTML = "<img style='width:100%' src=../../"+ logos[indice]+">";
 
     
    // document.write("<img src=../../"+ logos[indice]+">")
