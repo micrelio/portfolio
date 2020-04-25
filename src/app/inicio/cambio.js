@@ -23,6 +23,7 @@
         break;
 
         case 'videos':
+          console.log('videos')
       document.getElementById("componente").innerHTML = "<mi-videos></mi-videos>";
 
       break;
