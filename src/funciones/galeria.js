@@ -21,15 +21,24 @@ var pngs = ["assets/images/png/antonia.png",
 // inputValue = 0;
 
 function cambiar(id) {
-var i = logos.length
-console.log(logos);
-imag = logos;
-for (i=1;i<=3;i++) {
-   console.log(imag)
-imag[i] = i.toString()+'.jpg';
-document.write('<img src="'+imag[i]+'">')
+ var i =0;
+console.log(logos.length);
+
+for (var indice in logos) {
+    console.log("En el índice '" + indice + "' hay este valor: " + logos[indice]);
+    
+    
+    document.write("<img src=../../"+ logos[indice]+">")
+  }
+      
+  
+//imag = logos;
+//for (i;i<=logos.length;i++) {
+  // console.log(i)
+//imag[i] = i.toString()+'.jpg';
+//document.write('<img src="'+imag[i]+'">')
 //document.write("<br>");
-}
+//}
 }
 
 function reset(){
