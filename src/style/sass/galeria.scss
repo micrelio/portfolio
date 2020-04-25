@@ -6,17 +6,49 @@
 button{
     cursor: pointer;
 }
-.primera {
-    padding: 0.5rem;
-    width: 100%;
-    background: {
-        color: white;
-    }
-}
 
-.segunda {
-    width: 100%;
+.repertorio {
+    padding: 1rem;
     background: {
-        // color: pink;
+        color: lightblue;
+    }
+    p {
+        font: {
+            color: black;
+            size: 3.0rem;
+        }
+    }
+    hr {
+        background: {
+            color: black;
+        }
+        height: 0.25rem;
+    }
+    .tipo {
+        overflow: auto;
+        margin-bottom: 3rem;
+        display: flex;
+        width: 100%;
+        // margin: 20px auto;
+        list-style: none;
+        background: {
+            // color: white;
+        }
+    }
+    .fila {
+        display: flex;
+        margin: 0.6rem;
+        border: 0.4rem solid #eeeeee;
+        box-shadow: $sombreadoTotal;
+        background: {
+            // color: yellow;
+        }
+        .tn {
+            cursor: pointer;
+            height: 15rem;
+            background: {
+                // color: black;
+            }
+        }
     }
 }

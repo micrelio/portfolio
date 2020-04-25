@@ -3,20 +3,20 @@ var count = 0;
 var res = 0;
 var seleccion = 'todos';
 var logos = ["src/images/logos/igr.jpg",
-    "assets/images/logos/igre.png",
-    "assets/images/logos/john.png",];
-var posters = ["assets/images/posters/quiromasajista.jpg"];
-var publicidad = [ "assets/images/publi/igreCampaña2019.jpg",
-"assets/images/publi/igreAntoniaCampaña2019.jpg",
-"assets/images/publi/igreCampaña2019B.jpg",
-"assets/images/publi/unChalecoUnaVida.jpg",];
-var postales = ["assets/images/postales/postalIgre.jpg",
-"assets/images/postales/postalIgreCorreo.jpg",];
-var pngs = ["assets/images/png/antonia.png",
-"assets/images/png/banderaEuropaDesvanecida.png",
-"assets/images/png/banderaEsquina.png",
-"assets/images/png/europaRedondo.png",
-"assets/images/png/igreNavidad.png",];
+    "src/images/logos/igre.png",
+    "src/images/logos/john.png",];
+var posters = ["src/images/posters/quiromasajista.jpg"];
+var publicidad = [ "src/images/publi/igreCampaña2019.jpg",
+"src/images/publi/igreAntoniaCampaña2019.jpg",
+"src/images/publi/igreCampaña2019B.jpg",
+"src/images/publi/unChalecoUnaVida.jpg",];
+var postales = ["src/images/postales/postalIgre.jpg",
+"src/images/postales/postalIgreCorreo.jpg",];
+var pngs = ["src/images/png/antonia.png",
+"src/images/png/banderaEuropaDesvanecida.png",
+"src/images/png/banderaEsquina.png",
+"src/images/png/europaRedondo.png",
+"src/images/png/igreNavidad.png",];
 // @Input() sum = true;
 // inputValue = 0;
 
@@ -27,18 +27,13 @@ console.log(logos.length);
 for (var indice in logos) {
     console.log("En el índice '" + indice + "' hay este valor: " + logos[indice]);
     
+
+    document.getElementById("caja").innerHTML = "<img src=../../"+ logos[indice]+">";
+
+
     
-    document.write("<img src=../../"+ logos[indice]+">")
+   // document.write("<img src=../../"+ logos[indice]+">")
   }
-      
-  
-//imag = logos;
-//for (i;i<=logos.length;i++) {
-  // console.log(i)
-//imag[i] = i.toString()+'.jpg';
-//document.write('<img src="'+imag[i]+'">')
-//document.write("<br>");
-//}
 }
 
 function reset(){

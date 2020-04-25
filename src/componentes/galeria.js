@@ -20,22 +20,23 @@ class miGaleria extends HTMLElement {
     </div>
     
 </section>
-
-<section class="segunda" <!--[ngSwitch]="true"--> >
-    <div <!--*ngSwitchCase=" this.seleccion ==='todos'"--> >
-
-        <app-repertorio [tipo]="seleccion" [logos]="logos" [publicidad]="publicidad" [posters]="posters" [postales]="postales" [pngs]="pngs"></app-repertorio>
-    </div>
-    <!-- "options === 'd' || options === 'e' || options === 'f'" -->
-    
+<section>
+<div id="caja"></div>
 </section>
+
                
                 `;
        }
     }
-  //  window.customElements.define('mi-menu', miGaleria);
   customElements.define('mi-galeria', miGaleria);
+//   <section class="segunda" <!--[ngSwitch]="true"--> >
+//   <div <!--*ngSwitchCase=" this.seleccion ==='todos'"--> >
 
+//       <app-repertorio [tipo]="seleccion" [logos]="logos" [publicidad]="publicidad" [posters]="posters" [postales]="postales" [pngs]="pngs"></app-repertorio>
+//   </div>
+//   <!-- "options === 'd' || options === 'e' || options === 'f'" -->
+  
+// </section>
 //   <div *ngSwitchCase="this.seleccion ==='logos'">
 //         <app-logos></app-logos>
 //         <!-- <app-slider [res]=0 [count]="0" [tipo]="seleccion" [logos]="logos" [publicidad]="publicidad" [posters]="posters" [postales]="postales" [pngs]="pngs"></app-slider> -->

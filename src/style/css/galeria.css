@@ -11,14 +11,34 @@ button {
   cursor: pointer;
 }
 
-.primera {
-  padding: 0.5rem;
-  width: 100%;
-  background-color: white;
+.repertorio {
+  padding: 1rem;
+  background-color: lightblue;
 }
-
-.segunda {
+.repertorio p {
+  font-color: black;
+  font-size: 3rem;
+}
+.repertorio hr {
+  background-color: black;
+  height: 0.25rem;
+}
+.repertorio .tipo {
+  overflow: auto;
+  margin-bottom: 3rem;
+  display: flex;
   width: 100%;
+  list-style: none;
+}
+.repertorio .fila {
+  display: flex;
+  margin: 0.6rem;
+  border: 0.4rem solid #eeeeee;
+  box-shadow: #555 1px 1px 8px 1px;
+}
+.repertorio .fila .tn {
+  cursor: pointer;
+  height: 15rem;
 }
 
 /*# sourceMappingURL=galeria.css.map */
