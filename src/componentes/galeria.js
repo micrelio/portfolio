@@ -1,17 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class miGaleria extends HTMLElement {
     constructor () {
       super();

@@ -7,6 +7,10 @@
   width: 100%;
 }
 
+button {
+  cursor: pointer;
+}
+
 .primera {
   padding: 0.5rem;
   width: 100%;
