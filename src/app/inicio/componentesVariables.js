@@ -1,6 +1,6 @@
 
 
-  function menu(id) {
+  function navegar(id) {
    var render = id;
    console.log(render);
    
@@ -37,13 +37,13 @@
         break;
     default:
     //  render='inicio';
-      console.log('default');
-      document.write ("<mi-inicio></mi-inicio>");
-      document.close();
+      // console.log('default');
+      // document.write ("<mi-inicio></mi-inicio>");
+      // document.close();
 
     //  document.getElementById("componente").innerHTML = "<mi-inicio></mi-inicio>";
   
-      break;
+      
   }
    
 
