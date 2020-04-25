@@ -34,8 +34,7 @@ class miMenu extends HTMLElement {
                 <div class="botones" >
                     <span  id="boton1" ><img src="../images/icons/menu.png" id="pull" href="#"
                         alt="menu"></span>
-                    <!-- <button id="boton2" type="button" (click)="ocultar()"><img  src="src/images/icons/menu.png"
-              alt="menu"></button> -->
+                   
                 </div>
             </div>
             <div ></div>
