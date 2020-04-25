@@ -20,7 +20,17 @@ var pngs = ["assets/images/png/antonia.png",
 // @Input() sum = true;
 // inputValue = 0;
 
-
+function cambiar(id) {
+var i = logos.length
+console.log(logos);
+imag = logos;
+for (i=1;i<=3;i++) {
+   console.log(imag)
+imag[i] = i.toString()+'.jpg';
+document.write('<img src="'+imag[i]+'">')
+//document.write("<br>");
+}
+}
 
 function reset(){
     console.log('WWWWWWWWWWWWWWWWWWW');
@@ -29,16 +39,17 @@ function reset(){
 }
 
 //timer para que cambie la imagen a la vez que se carga si no carga la foto y despues la cambia, retrasando la aparicion de alguna
-function cambiar(id) {
-    let h = id;
+//function cambiar(id) {
+    
+  //  let h = id;
     //  setTimeout(() => {
-    time(h);
+ //   time(h);
     // }, 3000);
-}
-function time(j){
-    seleccion = j;
-    console.log(this.seleccion);
-}
+//}
+//function time(j){
+//    seleccion = j;
+//    console.log(seleccion);
+//}
 
 
 
