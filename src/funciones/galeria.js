@@ -24,7 +24,7 @@ var pngs = ["assets/images/png/antonia.png",
 
 function reset(){
     console.log('WWWWWWWWWWWWWWWWWWW');
-    this.count = 0;
+    count = 0;
 
 }
 
@@ -32,11 +32,11 @@ function reset(){
 function cambiar(id) {
     let h = id;
     //  setTimeout(() => {
-    this.time(h);
+    time(h);
     // }, 3000);
 }
 function time(j){
-    this.seleccion = j;
+    seleccion = j;
     console.log(this.seleccion);
 }
 
