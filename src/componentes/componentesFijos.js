@@ -16,13 +16,13 @@ class miMenu extends HTMLElement {
                 </div>
                 <div class="menu">
                     <div class="links">
-                        <s onmouseover><button onclick="location.href='inicio.html'" class="nav-link">Inicio</button></s>
-                        <s onmouseover><button onclick="location.href='webs.html'" class="nav-link">Webs</button></s>
-                        <s onmouseover><button onclick="location.href='galeria.html'" class="nav-link">Galery</button></s>
-                        <s onmouseover><button onclick="location.href='videos.html'" class="nav-link">Videos</button></s>
-                        <s onmouseover><button onclick="location.href='curriculum.html'" class="nav-link">Curriculum</button></s>
-                        <s onmouseover><button onclick="location.href='contacto.html'" class="nav-link">Contacto</button></s>
-                    </div>
+                    <s onmouseover>  <button class="nav-link" type="button" onclick="menu('inicio');"> inicio </button> </s>
+                    <s onmouseover>  <button class="nav-link" type="button" onclick="menu('webs');"> Webs </button></s>
+                    <s onmouseover>  <button class="nav-link" type="button" onclick="menu('galeria');"> galeria </button></s>
+                    <s onmouseover>  <button class="nav-link" type="button" onclick="menu('videos');"> Videos </button></s>
+                    <s onmouseover>  <button class="nav-link" type="button" onclick="menu('curriculum');"> Curriculum </button></s>
+                    <s onmouseover>  <button class="nav-link" type="button" onclick="menu('contacto');"> Contacto </button></s>
+                  </div>
                 </div>
             </div>
         </div>
