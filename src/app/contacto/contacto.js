@@ -8,10 +8,9 @@ class miContacto extends HTMLElement {
                 `
     <p style="color: white">Contacto runing</p>
     <section class="primera">
-    <img src="../../images/boat1.jpg">
+    <img src="../../assets/images/boat1.jpg">
 </section>
-               
-                `;
+           `;
        }
     }
   customElements.define('mi-contacto', miContacto);

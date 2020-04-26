@@ -1,15 +1,12 @@
 class miVideos extends HTMLElement {
-    constructor () {
-      super();
-       }
-       connectedCallback (){
-           this.innerHTML =
-                `
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    this.innerHTML =
+      `
     <p style="color: white">Videos runing</p>
-
-
-               
-                `;
-       }
-    }
-  customElements.define('mi-videos', miVideos);
+          `;
+  }
+}
+customElements.define('mi-videos', miVideos);

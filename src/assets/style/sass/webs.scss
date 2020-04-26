@@ -1,5 +1,6 @@
 @import "../mixins/mixins.scss";
 @import "../variables/variables.scss";
+
 @font-face {
     font-family: "supercell";
     src: url(../../assets/fonts/supercell-magic-webfont.ttf) format('truetype');
@@ -10,53 +11,77 @@
 }
 
 .web {
+
+    // background-image: src='../images/banners/primeros.jpg';
     display: flex;
-    // align-items: center;
-    justify-content: space-around;
-    margin-top: 3rem;
-    height: 50vh;
-    width: 100%;
+   // align-items: center;
+  //  justify-content: space-around;
+    // margin-top: 3rem;
+    height: 30vh;
+margin:5rem;
+
+    //  width: 100%;
     // width: 100vw;
     // padding: 5rem;
     // height: 30vh;
     // background: white url('../assets/images/banners/primeros.jpg');
     background: {
-        // image: url('../../assets/images/banners/primeros.jpg');
-        // color: red;
+        //color: red;
+       // size: cover;
+       // repeat: no-repeat, no-repeat;
+        
+        //position: left, right;
+
     }
+
     .banner {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width: 50%;
-        background: {
+
+        //position: relative;
+      //  display: flex;
+        //align-items: center;
+       // justify-content: space-around;
+        width: 100%;
+        border-radius: 40px;
+        border: 0.05rem solid #fff;
+                background: {
+            image: url('../../images/banners/primeros.jpg');
             color: gold;
+            size: cover;
+        repeat: no-repeat, no-repeat;
+        position: left, right;
+        
         }
+
         .imagen {
-            display: flex;
-            justify-content: space-around;
-            width: 50%;
-            position: absolute;
+           // display: flex;
+           // justify-content: space-around;
+            width: 100%;
+
+            //position: absolute;
             img {
                 width: 100%;
                 // height: 40vh;
             }
         }
+
         .titulo {
-            position: absolute;
+
+            // position: absolute;
             background: {
-                color: red;
+                //  color: red;
             }
+
             h1 {
                 height: 0 auto;
                 -webkit-text-stroke: 1.5px black;
                 text-shadow: 0.1em 0.1em brown;
                 color: orange;
+
                 font: {
                     family: supercell;
-                    size: 1.7rem;
+                    size: 7rem;
                 }
+
                 background: {
                     // color: purple;
                 }

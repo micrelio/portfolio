@@ -13,7 +13,6 @@ class miFooter extends HTMLElement {
                 <input type="email" placeholder="Escriba su Correo">
                 <input type="submit" value=" Suscribirse">
             </div>
-
             <div class="footer-columna">
                 <h3>Dirección</h3>
                 <span class="fa fa-map-marker">
@@ -26,7 +25,6 @@ class miFooter extends HTMLElement {
                     <p>microa4@gmail.com</p>
                 </span>
             </div>
-
             <div class="footer-columna">
                 <h3>Sobre Mi</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur repellat autem, error iste
@@ -34,7 +32,6 @@ class miFooter extends HTMLElement {
             </div>
         </div>
     </div>
-
     <div class="footer-copy-redes">
         <div class="main-copy-redes">
             <div class="footer-copy">
@@ -51,8 +48,6 @@ class miFooter extends HTMLElement {
                 <a target="blank" class="fa fa-youtube-play"
                     href="https://www.youtube.com/channel/UCMEv1Jj16ypsAXmZXOkKrQA"> </a>
                 <a target="blank" class="fa fa-github" href="https://github.com/micrelio"> </a>
-
-
             </div>
         </div>
     </div>
@@ -63,22 +58,9 @@ class miFooter extends HTMLElement {
   //  window.customElements.define('mi-menu', miFooter);
   customElements.define('mi-footer', miFooter);
 
-
-
-
-
-
-
-
-
   /*************************/
 
   /*************************/
-
-
-
-
-
 
 class MiBoton extends HTMLElement {
   constructor () {

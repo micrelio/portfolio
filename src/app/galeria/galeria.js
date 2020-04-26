@@ -9,41 +9,26 @@ class miGaleria extends HTMLElement {
       `
             <section id="galeria" class="primera" >
     <div class="">
-        <button type="button" onclick="cambiar('todos'), cargaTodas();"> Todos </button>
-        <button type="button" onclick="cambiar('logos'), cargaLogos();"> Logos </button>
-        <button type="button" onclick="cambiar('folletos'), cargaFolletos();"> Folletos </button>
-        <button type="button" onclick="cambiar('posters'), cargaPosters();"> Posters </button>
-        <button type="button" onclick="cambiar('postales'), cargaPostales();"> Postales </button>
-        <button type="button" onclick="cambiar('pngs'), cargaPngs();"> Pngs </button>
+        <button type="button" onclick="cambiar('todos'), cargaTodo();"> Todos </button>
+        <button type="button" onclick="cambiar('logos');"> Logos </button>
+        <button type="button" onclick="cambiar('folletos');"> Folletos </button>
+        <button type="button" onclick="cambiar('posters');"> Posters </button>
+        <button type="button" onclick="cambiar('postales');"> Postales </button>
+        <button type="button" onclick="cambiar('pngs');"> Pngs </button>
     </div>
  </section>
 <section id="content">
 <mi-imagenes></mi-imagenes>
 </section>
                 `;
-    cargaTodas();
+    cargaTodo();
   }
-
 }
 customElements.define('mi-galeria', miGaleria);
-function cargaTodas() {
-  cargaLogos();
-  cargaFolletos();
-  cargaPosters();
-  cargaPostales();
-  cargaPngs();
-}
-function r() {
-  console.log('cara higo')
-  var contenedor = document.createElement('div');
-  document.body.appendChild(contenedor);
-  contenedor.innerHTML = 'Hola chachi';
-}
 function myFunction() {
   console.log('Hello World');
 }
 function cambiar(id) {
-  //console.log('funcion');
   switch (id) {
     case 'todos':
       document.getElementById("content").innerHTML = "<mi-imagenes></mi-imagenes>";
@@ -68,6 +53,13 @@ function cambiar(id) {
 }
 /////funciona
 //  function maquetar() {
-
-//    console.log('eeeeee')
-
+function f() {
+  for (let i = 0; i < logos.length; i++) {
+    var path = "../../" + logos[i];
+    var img = document.createElement('img');
+    img.setAttribute("src", path);
+    img.setAttribute("width", "");
+    img.setAttribute("height", "500rem");
+    document.getElementById("logos").appendChild(img);
+  }
+}
