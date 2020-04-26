@@ -1,21 +1,7 @@
 
 class miGaleria extends HTMLElement {
   constructor() {
-    var logos = ["images/logos/igr.jpg",
-      "images/logos/igre.png",
-      "/images/logos/john.png",];
-    var posters = ["images/posters/quiromasajista.jpg"];
-    var publicidad = ["images/publi/igreCampaña2019.jpg",
-      "images/publi/igreAntoniaCampaña2019.jpg",
-      "images/publi/igreCampaña2019B.jpg",
-      "images/publi/unChalecoUnaVida.jpg",];
-    var postales = ["images/postales/postalIgre.jpg",
-      "images/postales/postalIgreCorreo.jpg",];
-    var pngs = ["images/png/antonia.png",
-      "images/png/banderaEuropaDesvanecida.png",
-      "images/png/banderaEsquina.png",
-      "images/png/europaRedondo.png",
-      "images/png/igreNavidad.png",];
+  //  puedes poner argumentos
     super();
     myFunction();
   }
@@ -26,7 +12,7 @@ class miGaleria extends HTMLElement {
     <div class="">
         <button type="button" onclick="cambiar('todos'), cargaTodas();"> Todos </button>
         <button type="button" onclick="cambiar('logos'), cargaLogos();"> Logos </button>
-        <button type="button" onclick="cambiar('publicidad'), cargaPublicidad();"> Publicidad </button>
+        <button type="button" onclick="cambiar('folletos'), cargafolletos();"> Folletos </button>
         <button type="button" onclick="cambiar('posters'), cargaPosters();"> Posters </button>
         <button type="button" onclick="cambiar('postales'), cargaPostales();"> Postales </button>
         <button type="button" onclick="cambiar('pngs'), cargaPngs();"> Pngs </button>
@@ -43,10 +29,10 @@ class miGaleria extends HTMLElement {
 customElements.define('mi-galeria', miGaleria);
 function cargaTodas() {
   cargaLogos();
-  cargaPublicidad()
-  cargaPosters()
-  cargaPostales()
-  cargaPngs()
+  cargaFolletos();
+  cargaPosters();
+  cargaPostales();
+  cargaPngs();
 }
 function r() {
   console.log('cara higo')
@@ -69,7 +55,7 @@ function cambiar(id) {
     case 'logos':
       document.getElementById("content").innerHTML = "<mi-imagenes></mi-imagenes>";
       break;
-    case 'publicidad':
+    case 'folletos':
       document.getElementById("content").innerHTML = "<mi-imagenes></mi-imagenes>";
       break;
     case 'postales':
@@ -84,11 +70,6 @@ function cambiar(id) {
     default:
   }
 }
-
-
-
-
-
 /////funciona 
 //  function maquetar() {
 
@@ -112,10 +93,10 @@ function cambiar(id) {
 //    console.log('me cago en la puta')
 
 
-//    for (let i = 0; i < publicidad.length; i++) {
-//      console.log(publicidad.length)
-//      console.log(publicidad[i])
-//      var path = "../../" + publicidad[i];
+//    for (let i = 0; i < folletos.length; i++) {
+//      console.log(folletos.length)
+//      console.log(folletos[i])
+//      var path = "../../" + folletos[i];
 //      var img = document.createElement('img');
 //      img.setAttribute("src", path);
 //      img.setAttribute("width", "100");
@@ -189,11 +170,11 @@ function cambiar(id) {
 //       console.log('me cago en la puta')
 //       break;
 
-//  case 'publicidad':
-//       for (let i = 0; i < publicidad.length; i++) {
-//         console.log(publicidad.length)
-//         console.log(publicidad[i])
-//         var path = "../../" + publicidad[i];
+//  case 'folletos':
+//       for (let i = 0; i < folletos.length; i++) {
+//         console.log(folletos.length)
+//         console.log(folletos[i])
+//         var path = "../../" + folletos[i];
 //         var img = document.createElement('img');
 //         img.setAttribute("src", path);
 //         img.setAttribute("width", "100");
@@ -343,17 +324,17 @@ function cambiar(id) {
 //    <section class="segunda" <!--[ngSwitch]="true"--> >
 //    <div <!--*ngSwitchCase=" this.seleccion ==='todos'"--> >
 
-//        <app-repertorio [tipo]="seleccion" [logos]="logos" [publicidad]="publicidad" [posters]="posters" [postales]="postales" [pngs]="pngs"></app-repertorio>
+//        <app-repertorio [tipo]="seleccion" [logos]="logos" [folletos]="folletos" [posters]="posters" [postales]="postales" [pngs]="pngs"></app-repertorio>
 //    </div>
 //    <!-- "options === 'd' || options === 'e' || options === 'f'" -->
 
 //  </section>
 //    <div *ngSwitchCase="this.seleccion ==='logos'">
 //          <app-logos></app-logos>
-//          <!-- <app-slider [res]=0 [count]="0" [tipo]="seleccion" [logos]="logos" [publicidad]="publicidad" [posters]="posters" [postales]="postales" [pngs]="pngs"></app-slider> -->
+//          <!-- <app-slider [res]=0 [count]="0" [tipo]="seleccion" [logos]="logos" [folletos]="folletos" [posters]="posters" [postales]="postales" [pngs]="pngs"></app-slider> -->
 //      </div>
-//      <div *ngSwitchCase="this.seleccion === 'publicidad'">
-//          <app-publicidad></app-publicidad>
+//      <div *ngSwitchCase="this.seleccion === 'folletos'">
+//          <app-folletos></app-folletos>
 //      </div>
 //      <div *ngSwitchCase="this.seleccion === 'postales'">
 //          <app-postales></app-postales>

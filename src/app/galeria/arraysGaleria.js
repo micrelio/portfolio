@@ -1,4 +1,3 @@
-var pathi = 'images/logos/';
 var count = 0;
 var res = 0;
 var seleccion = 'todos';
@@ -6,10 +5,10 @@ var logos = ["images/logos/igr.jpg",
     "images/logos/igre.png",
     "/images/logos/john.png",];
 var posters = ["images/posters/quiromasajista.jpg"];
-var publicidad = [ "images/publi/igreCampaña2019.jpg",
-"images/publi/igreAntoniaCampaña2019.jpg",
-"images/publi/igreCampaña2019B.jpg",
-"images/publi/unChalecoUnaVida.jpg",];
+var folletos = ["images/folletos/igreCampana2019.jpg",
+"images/folletos/igreAntoniaCampaña2019.jpg",
+"images/folletos/igreCampaña2019B.jpg",
+"images/folletos/unChalecoUnaVida.jpg",];
 var postales = ["images/postales/postalIgre.jpg",
 "images/postales/postalIgreCorreo.jpg",];
 var pngs = ["images/png/antonia.png",
