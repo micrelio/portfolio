@@ -19,11 +19,12 @@
     <script type="text/javascript" src="cambio.js"></script>
     <script type="text/javascript" src="inicio.js"></script>
     <script type="text/javascript" src="../galeria/galeria.js"></script>
+    <script type="text/javascript" src="../galeria/arraysGaleria.js"></script>
     <script type="text/javascript" src="../webs/webs.js"></script>
     <script type="text/javascript" src="../videos/videos.js"></script>
     <script type="text/javascript" src="../curriculum/curriculum.js"></script>
     <script type="text/javascript" src="../contacto/contacto.js"></script>
-    <script src="../nav/simpleRotuer.js"></script>
+    <script type="text/javascript" src="../galeria/logos.js"></script>
 
     <!-- <script type="text/javascript" src="../funciones/inicio.js"></script> -->
     <script type="text/javascript" src="../../funciones/galeria.js"></script>
@@ -62,23 +63,7 @@
 
     </script>
 
-    <script>
-
-
-        $(function () {
-            /**** INICIO ZONA EDITABLE ****/
-            var sound_mp3 = "http://soundbible.com/mp3/A-Tone-His_Self-1266414414.mp3";
-            var sound_ogg = "http://vignette2.wikia.nocookie.net/monchbox/images/0/01/Beep-sound.ogg/revision/latest?cb=20110628200153";
-            /**** FIN ZONA EDITABLE ****/
-
-            $('body').prepend('<audio><source src="' + sound_mp3 + '"></source><source src="' + sound_ogg + '"></source></audio>');
-            var audio = $("audio")[0];
-            $("s").mouseenter(function () {
-                audio.play();
-            });
-        });
-
-    </script>
+   
 
 
 </head>
@@ -86,88 +71,21 @@
 
 
 
-<body><!-- <body id="body" onload="navegar('inicio')"> -->
+<body id="body" onload="navegar('galeria')"> 
     <!-- <mi-inicio></mi-inicio> -->
 
     <section class="head">
         <img src="../../images/banners/rocas.jpg">
 
     </section>
-  
-
-
-
-
-
-
-    <ul>
-        <li><a href="#list">List</a></li>
-        <li><a href="#edit">Edit</a></li>
-        <li><a href="#templateA">TemplateA</a></li>
-        <li><a href="#templateB">TemplateB</a></li>
-    </ul>
-    <data-route-view></data-route-view>
-    <template id="list">
-        <h1>LISTADO</h1>
-        <ul>
-            <li>A</li>
-            <li>B</li>
-            <li>C</li>
-            <li>D</li>
-        </ul>
-    </template>
-    <template id="edit">
-        <h1>LISTADO</h1>
-        <ul>
-            <li><input type="text" value="A"></li>
-            <li><input type="text" value="B"></li>
-            <li><input type="text" value="C"></li>
-            <li><input type="text" value="D"></li>
-        </ul>
-    </template>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <section id="componente" >
+    <section id="componente" >
     </section>
-    <script>
-        // function nuevoContenido() {
-        //   alert("carga el contenido nuevo");
-        //   document.open();
-        //   document.write("<h1>Quita el contenido viejo - Agrega el contenido nuevo!</h1>");
-        //   document.close();
-        // }
-</script>
+    
 <!-- 
     <kkk onload="nuevoContenido();">
 <p>Algo de contenido original del documento</p>
 </kkk>
  -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!-- <p align="left"  style="background-color: aliceblue">
     <a onmouseover>JavaScript Kit</a></p>
@@ -181,3 +99,16 @@
 
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+

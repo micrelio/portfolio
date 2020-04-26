@@ -1,10 +1,10 @@
 class miMenu extends HTMLElement {
-    constructor () {
-      super();
-       }
-       connectedCallback (){
-           this.innerHTML =
-                `
+    constructor() {
+        super();
+    }
+    connectedCallback() {
+        this.innerHTML =
+            `
                 <section class="stick">
         <div class="nav" id="nav">
 
@@ -16,14 +16,6 @@ class miMenu extends HTMLElement {
                 </div>
                 <div class="menu">
                     <div class="links">
-
-
-
-
-
-
-
-
                     <s onmouseover>  <button class="nav-link" type="button" onclick="navegar('inicio');"> inicio </button> </s>
                     <s onmouseover>  <button class="nav-link" type="button" onclick="navegar('webs'); "> Webs </button></s>
                     <s onmouseover>  <button class="nav-link" type="button" onclick="navegar('galeria');"> galeria </button></s>
@@ -42,8 +34,7 @@ class miMenu extends HTMLElement {
                 <div class="botones" >
                     <span  id="boton1" ><img src="../images/icons/menu.png" id="pull" href="#"
                         alt="menu"></span>
-                   
-                </div>
+                             </div>
             </div>
             <div ></div>
             <div style="display: none;" class="desplegable" id="desplegable">
@@ -53,46 +44,16 @@ class miMenu extends HTMLElement {
                 <button onclick="location.href='videos.html'" class="mnav-link">Videos</button>
                 <button onclick="location.href='curriculum.html'" class="mnav-link">Curriculum</button>
                 <button onclick="location.href='contacto.html'" class="mnav-link">Contacto</button>
-
             </div>
-            
-        </div>
+              </div>
         <div class="mode">
            
         <!-- <audio src="../sonidos/ping.mp4" autoplay loop></audio> -->
             <img src="../../images/buttons/noche.png">
-            
-        </div>
+                 </div>
     </section>
-
-
-
-
-
-    
-
-
-
-
                 `;
-       }
     }
-  //  window.customElements.define('mi-Menu', minenu);
-  customElements.define('mi-menu', miMenu);
- 
-      window.onload = function() {
-          window.router.init([{
-              path: "/list",
-              view: "<mi-galeria><mi-galeria>"
-          }, {
-              path: "/edit",
-              view: "<h1>Edición</h1>"
-          }, {
-              path: "/templateA",
-              view: "#list"
-          }, {
-              path: "/templateB",
-              view: "#edit"
-          }]);
-      };
- 
+}
+//  window.customElements.define('mi-Menu', minenu);
+customElements.define('mi-menu', miMenu);

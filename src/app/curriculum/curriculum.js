@@ -5,9 +5,11 @@ class miCurriculum extends HTMLElement {
        connectedCallback (){
            this.innerHTML =
                 `
+
+                
     <p style="color: white">Curriculum runing</p>
 
-
+    <button onclick="window.print()">Print this page</button>
                
                 `;
        }
