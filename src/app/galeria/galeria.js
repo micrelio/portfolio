@@ -1,9 +1,6 @@
 
 class miGaleria extends HTMLElement {
-
-
   constructor() {
-
     var logos = ["images/logos/igr.jpg",
       "images/logos/igre.png",
       "/images/logos/john.png",];
@@ -19,79 +16,38 @@ class miGaleria extends HTMLElement {
       "images/png/banderaEsquina.png",
       "images/png/europaRedondo.png",
       "images/png/igreNavidad.png",];
-
     super();
     myFunction();
-
   }
-
-
-
-
-
-
   connectedCallback() {
     this.innerHTML =
       `
             <section id="galeria" class="primera" >
     <div class="">
-                
         <button type="button" onclick="cambiar('todos'), cargaTodas();"> Todos </button>
         <button type="button" onclick="cambiar('logos'), cargaLogos();"> Logos </button>
-        <button type="button" onclick="cambiar('publicidad');"> Publicidad </button>
-        <button type="button" onclick="cambiar('posters');"> Posters </button>
-        <button type="button" onclick="cambiar('postales');"> Postales </button>
-        <button type="button" onclick="cambiar('pngs');"> Pngs </button>
+        <button type="button" onclick="cambiar('publicidad'), cargaPublicidad();"> Publicidad </button>
+        <button type="button" onclick="cambiar('posters'), cargaPosters();"> Posters </button>
+        <button type="button" onclick="cambiar('postales'), cargaPostales();"> Postales </button>
+        <button type="button" onclick="cambiar('pngs'), cargaPngs();"> Pngs </button>
     </div>
-    
-</section>
+ </section>
 <section id="content">
 <mi-imagenes></mi-imagenes>
 </section>
-
-
-               
                 `;
-                cargaTodas()
-
-    //maquetar();
-
-    // cargaLogos(); 
-    // cargaPublicidad()
-    // cargaPosters()
-    // cargaPostales()
-    // cargaPngs()
+    cargaTodas();
   }
 
-
-
-
 }
-
 customElements.define('mi-galeria', miGaleria);
 function cargaTodas() {
-  cargaLogos(); 
+  cargaLogos();
   cargaPublicidad()
   cargaPosters()
   cargaPostales()
   cargaPngs()
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function r() {
   console.log('cara higo')
   var contenedor = document.createElement('div');
@@ -111,19 +67,19 @@ function cambiar(id) {
       document.getElementById("content").innerHTML = "<mi-imagenes></mi-imagenes>";
       break;
     case 'logos':
-           document.getElementById("content").innerHTML = "<mi-imagenes></mi-imagenes>";
+      document.getElementById("content").innerHTML = "<mi-imagenes></mi-imagenes>";
       break;
     case 'publicidad':
-      document.getElementById("content").innerHTML = "<mi-galeria></mi-galeria>";
+      document.getElementById("content").innerHTML = "<mi-imagenes></mi-imagenes>";
       break;
     case 'postales':
-      document.getElementById("content").innerHTML = "<mi-videos></mi-videos>";
+      document.getElementById("content").innerHTML = "<mi-imagenes></mi-imagenes>";
       break;
     case 'posters':
-      document.getElementById("content").innerHTML = "<mi-curriculum></mi-curriculum>";
+      document.getElementById("content").innerHTML = "<mi-imagenes></mi-imagenes>";
       break;
     case 'pngs':
-      document.getElementById("content").innerHTML = "<mi-contacto></mi-contacto>";
+      document.getElementById("content").innerHTML = "<mi-imagenes></mi-imagenes>";
       break;
     default:
   }
