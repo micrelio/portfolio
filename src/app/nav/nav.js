@@ -18,7 +18,7 @@ class miMenu extends HTMLElement {
                     <div class="links">
                     <s onmouseover>  <button class="nav-link" type="button" onclick="navegar('inicio');"> inicio </button> </s>
                     <s onmouseover>  <button class="nav-link" type="button" onclick="navegar('webs'); "> Webs </button></s>
-                    <s onmouseover>  <button class="nav-link" type="button" onclick="navegar('galeria');"> galeria </button></s>
+                    <s onmouseover>  <button class="nav-link" type="button" onclick="navegar('galeria'), maquetar();"> galeria </button></s>
                     <s onmouseover>  <button class="nav-link" type="button" onclick="navegar('videos');"> Videos </button></s>
                     <s onmouseover>  <button class="nav-link" type="button" onclick="navegar('curriculum');"> Curriculum </button></s>
                     <s onmouseover>  <button class="nav-link" type="button" onclick="navegar('contacto');"> Contacto </button></s>

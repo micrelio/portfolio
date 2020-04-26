@@ -5,59 +5,68 @@ class miGaleria extends HTMLElement {
   constructor() {
 
     var logos = ["images/logos/igr.jpg",
-    "images/logos/igre.png",
-    "/images/logos/john.png",];
-var posters = ["images/posters/quiromasajista.jpg"];
-var publicidad = [ "images/publi/igreCampaña2019.jpg",
-"images/publi/igreAntoniaCampaña2019.jpg",
-"images/publi/igreCampaña2019B.jpg",
-"images/publi/unChalecoUnaVida.jpg",];
-var postales = ["images/postales/postalIgre.jpg",
-"images/postales/postalIgreCorreo.jpg",];
-var pngs = ["images/png/antonia.png",
-"images/png/banderaEuropaDesvanecida.png",
-"images/png/banderaEsquina.png",
-"images/png/europaRedondo.png",
-"images/png/igreNavidad.png",];
+      "images/logos/igre.png",
+      "/images/logos/john.png",];
+    var posters = ["images/posters/quiromasajista.jpg"];
+    var publicidad = ["images/publi/igreCampaña2019.jpg",
+      "images/publi/igreAntoniaCampaña2019.jpg",
+      "images/publi/igreCampaña2019B.jpg",
+      "images/publi/unChalecoUnaVida.jpg",];
+    var postales = ["images/postales/postalIgre.jpg",
+      "images/postales/postalIgreCorreo.jpg",];
+    var pngs = ["images/png/antonia.png",
+      "images/png/banderaEuropaDesvanecida.png",
+      "images/png/banderaEsquina.png",
+      "images/png/europaRedondo.png",
+      "images/png/igreNavidad.png",];
 
     super();
     myFunction();
+
   }
 
-  
 
 
- 
-  
+
+
+
   connectedCallback() {
     this.innerHTML =
       `
-            <section id="galeria" class="primera">
+            <section id="galeria" class="primera" >
     <div class="">
                 
         <button type="button" onclick="cambiar('todos'), maquetar();"> Todos </button>
-        <button type="button" onclick="cambiar('logos')"> Logos </button>
-        <button type="button" onclick="cambiar('publicidad')"> Publicidad </button>
-        <button type="button" onclick="cambiar('posters')"> Posters </button>
-        <button type="button" onclick="cambiar('postales')"> Postales </button>
-        <button type="button" onclick="cambiar('pngs')"> Pngs </button>
+        <button type="button" onclick="cambiar('logos'), maquetar();"> Logos </button>
+        <button type="button" onclick="cambiar('publicidad'), maquetar()"> Publicidad </button>
+        <button type="button" onclick="cambiar('posters'), maquetar()"> Posters </button>
+        <button type="button" onclick="cambiar('postales'), maquetar()"> Postales </button>
+        <button type="button" onclick="cambiar('pngs'), maquetar()"> Pngs </button>
     </div>
     
 </section>
 <section id="content">
 <mi-imagenes></mi-imagenes>
+<mi-logos></mi-logos>
 
 </section>
 
 
                
                 `;
+
+
+    //maquetar();
+    cargaLogos(); 
+    cargaPublicidad()
+    cargaPosters()
+    cargaPostales()
+    cargaPngs()
   }
 
 
-  
 
-  
+
 }
 
 customElements.define('mi-galeria', miGaleria);
@@ -65,12 +74,13 @@ customElements.define('mi-galeria', miGaleria);
 
 
 
-function myFunction() {
-  console.log('Hello World');
+
+function r() {
+  console.log('cara higo')
+  var contenedor = document.createElement('div');
+  document.body.appendChild(contenedor);
+  contenedor.innerHTML = 'Hola chachi';
 }
-
-
-
 
 function cambiar(id) {
   //console.log('funcion');
@@ -80,8 +90,9 @@ function cambiar(id) {
       document.getElementById("content").innerHTML = "<mi-imagenes></mi-imagenes>";
       break;
     case 'logos':
+      cargaLogos(); 
       //console.log('llegamos a logos');
-      document.getElementById("content").innerHTML = "<mi-logos></mi-logos>";
+     //document.getElementById("content").innerHTML = "<mi-imagenes></mi-imagenes>";
 
       break;
     case 'publicidad':
@@ -107,76 +118,76 @@ function cambiar(id) {
 
 
 /////funciona 
-//  function maquetar() {
+  function maquetar() {
 
-//    console.log('eeeeee')
-
-
+    console.log('eeeeee')
 
 
 
 
-//    for (let i = 0; i < logos.length; i++) {
-//      console.log(logos.length)
-//      console.log(logos[i])
-//      var path = "../../" + logos[i];
-//      var img = document.createElement('img');
-//      img.setAttribute("src", path);
-//      img.setAttribute("width", "100");
-//      img.setAttribute("height", "");
-//      document.getElementById("content").appendChild(img);
-//    }
-//    console.log('me cago en la puta')
-  
 
-//    for (let i = 0; i < publicidad.length; i++) {
-//      console.log(publicidad.length)
-//      console.log(publicidad[i])
-//      var path = "../../" + publicidad[i];
-//      var img = document.createElement('img');
-//      img.setAttribute("src", path);
-//      img.setAttribute("width", "100");
-//      img.setAttribute("height", "");
-//      document.getElementById("content").appendChild(img);
-//    }
-//    console.log('me cago en la puta')
 
-//    for (let i = 0; i < posters.length; i++) {
-//      console.log(posters.length)
-//      console.log(posters[i])
-//      var path = "../../" + posters[i];
-//      var img = document.createElement('img');
-//      img.setAttribute("src", path);
-//      img.setAttribute("width", "100");
-//      img.setAttribute("height", "");
-//      document.getElementById("content").appendChild(img);
-//    }
-//    console.log('me cago en la puta')
+    for (let i = 0; i < logos.length; i++) {
+      console.log(logos.length)
+      console.log(logos[i])
+      var path = "../../" + logos[i];
+      var img = document.createElement('img');
+      img.setAttribute("src", path);
+      img.setAttribute("width", "100");
+      img.setAttribute("height", "");
+      document.getElementById("content").appendChild(img);
+    }
+    console.log('me cago en la puta')
 
-//    for (let i = 0; i < postales.length; i++) {
-//      console.log(postales.length)
-//      console.log(postales[i])
-//      var path = "../../" + postales[i];
-//      var img = document.createElement('img');
-//      img.setAttribute("src", path);
-//      img.setAttribute("width", "100");
-//      img.setAttribute("height", "");
-//      document.getElementById("content").appendChild(img);
-//    }
-//    console.log('me cago en la puta')
 
-//    for (let i = 0; i < pngs.length; i++) {
-//      console.log(pngs.length)
-//      console.log(pngs[i])
-//      var path = "../../" + pngs[i];
-//      var img = document.createElement('img');
-//      img.setAttribute("src", path);
-//      img.setAttribute("width", "100");
-//      img.setAttribute("height", "");
-//      document.getElementById("content").appendChild(img);
-//    }
-//    console.log('me cago en la puta')
-//  }
+    for (let i = 0; i < publicidad.length; i++) {
+      console.log(publicidad.length)
+      console.log(publicidad[i])
+      var path = "../../" + publicidad[i];
+      var img = document.createElement('img');
+      img.setAttribute("src", path);
+      img.setAttribute("width", "100");
+      img.setAttribute("height", "");
+      document.getElementById("content").appendChild(img);
+    }
+    console.log('me cago en la puta')
+
+    for (let i = 0; i < posters.length; i++) {
+      console.log(posters.length)
+      console.log(posters[i])
+      var path = "../../" + posters[i];
+      var img = document.createElement('img');
+      img.setAttribute("src", path);
+      img.setAttribute("width", "100");
+      img.setAttribute("height", "");
+      document.getElementById("content").appendChild(img);
+    }
+    console.log('me cago en la puta')
+
+    for (let i = 0; i < postales.length; i++) {
+      console.log(postales.length)
+      console.log(postales[i])
+      var path = "../../" + postales[i];
+      var img = document.createElement('img');
+      img.setAttribute("src", path);
+      img.setAttribute("width", "100");
+      img.setAttribute("height", "");
+      document.getElementById("content").appendChild(img);
+    }
+    console.log('me cago en la puta')
+
+    for (let i = 0; i < pngs.length; i++) {
+      console.log(pngs.length)
+      console.log(pngs[i])
+      var path = "../../" + pngs[i];
+      var img = document.createElement('img');
+      img.setAttribute("src", path);
+      img.setAttribute("width", "100");
+      img.setAttribute("height", "");
+      document.getElementById("content").appendChild(img);
+    }
+    console.log('me cago en la puta')
+  }
 
 
 
