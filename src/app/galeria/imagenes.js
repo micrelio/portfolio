@@ -64,7 +64,7 @@ function cargaLogos() {
 function cargaFolletos() {
   for (let i = 0; i < folletos.length; i++) {
     var path = "../../" + folletos[i];
-   
+   console.log('tefollen')
     var img = document.createElement('img');
     img.setAttribute("src", path);
     img.setAttribute("width", "50rem");

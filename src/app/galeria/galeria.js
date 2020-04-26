@@ -1,7 +1,6 @@
-
 class miGaleria extends HTMLElement {
   constructor() {
-  //  puedes poner argumentos
+    //  puedes poner argumentos
     super();
     myFunction();
   }
@@ -12,7 +11,7 @@ class miGaleria extends HTMLElement {
     <div class="">
         <button type="button" onclick="cambiar('todos'), cargaTodas();"> Todos </button>
         <button type="button" onclick="cambiar('logos'), cargaLogos();"> Logos </button>
-        <button type="button" onclick="cambiar('folletos'), cargafolletos();"> Folletos </button>
+        <button type="button" onclick="cambiar('folletos'), cargaFolletos();"> Folletos </button>
         <button type="button" onclick="cambiar('posters'), cargaPosters();"> Posters </button>
         <button type="button" onclick="cambiar('postales'), cargaPostales();"> Postales </button>
         <button type="button" onclick="cambiar('pngs'), cargaPngs();"> Pngs </button>
@@ -40,316 +39,35 @@ function r() {
   document.body.appendChild(contenedor);
   contenedor.innerHTML = 'Hola chachi';
 }
-
 function myFunction() {
   console.log('Hello World');
 }
-
 function cambiar(id) {
   //console.log('funcion');
-
   switch (id) {
     case 'todos':
       document.getElementById("content").innerHTML = "<mi-imagenes></mi-imagenes>";
       break;
     case 'logos':
-      document.getElementById("content").innerHTML = "<mi-imagenes></mi-imagenes>";
+      document.getElementById("content").innerHTML = "<mi-logos></mi-logos>";
       break;
     case 'folletos':
-      document.getElementById("content").innerHTML = "<mi-imagenes></mi-imagenes>";
+      document.getElementById("content").innerHTML = "<mi-folletos></mi-folletos>";
       break;
     case 'postales':
-      document.getElementById("content").innerHTML = "<mi-imagenes></mi-imagenes>";
+      document.getElementById("content").innerHTML = "<mi-postales></mi-postales>";
       break;
     case 'posters':
-      document.getElementById("content").innerHTML = "<mi-imagenes></mi-imagenes>";
+      document.getElementById("content").innerHTML = "<mi-posters></mi-posters>";
       break;
     case 'pngs':
-      document.getElementById("content").innerHTML = "<mi-imagenes></mi-imagenes>";
+      document.getElementById("content").innerHTML = "<mi-pngs></mi-pngs>";
       break;
     default:
   }
 }
-/////funciona 
+/////funciona
 //  function maquetar() {
 
 //    console.log('eeeeee')
 
-
-
-
-
-
-//    for (let i = 0; i < logos.length; i++) {
-//      console.log(logos.length)
-//      console.log(logos[i])
-//      var path = "../../" + logos[i];
-//      var img = document.createElement('img');
-//      img.setAttribute("src", path);
-//      img.setAttribute("width", "100");
-//      img.setAttribute("height", "");
-//      document.getElementById("content").appendChild(img);
-//    }
-//    console.log('me cago en la puta')
-
-
-//    for (let i = 0; i < folletos.length; i++) {
-//      console.log(folletos.length)
-//      console.log(folletos[i])
-//      var path = "../../" + folletos[i];
-//      var img = document.createElement('img');
-//      img.setAttribute("src", path);
-//      img.setAttribute("width", "100");
-//      img.setAttribute("height", "");
-//      document.getElementById("content").appendChild(img);
-//    }
-//    console.log('me cago en la puta')
-
-//    for (let i = 0; i < posters.length; i++) {
-//      console.log(posters.length)
-//      console.log(posters[i])
-//      var path = "../../" + posters[i];
-//      var img = document.createElement('img');
-//      img.setAttribute("src", path);
-//      img.setAttribute("width", "100");
-//      img.setAttribute("height", "");
-//      document.getElementById("content").appendChild(img);
-//    }
-//    console.log('me cago en la puta')
-
-//    for (let i = 0; i < postales.length; i++) {
-//      console.log(postales.length)
-//      console.log(postales[i])
-//      var path = "../../" + postales[i];
-//      var img = document.createElement('img');
-//      img.setAttribute("src", path);
-//      img.setAttribute("width", "100");
-//      img.setAttribute("height", "");
-//      document.getElementById("content").appendChild(img);
-//    }
-//    console.log('me cago en la puta')
-
-//    for (let i = 0; i < pngs.length; i++) {
-//      console.log(pngs.length)
-//      console.log(pngs[i])
-//      var path = "../../" + pngs[i];
-//      var img = document.createElement('img');
-//      img.setAttribute("src", path);
-//      img.setAttribute("width", "100");
-//      img.setAttribute("height", "");
-//      document.getElementById("content").appendChild(img);
-//    }
-//    console.log('me cago en la puta')
-//  }
-
-
-
-
-
-
-
- //function cambiar(id) {
-
-//   console.log(id)
-//   switch (id) {
-
-
-
-
-//     case 'logos':
-//       for (let i = 0; i < logos.length; i++) {
-//         console.log(logos.length)
-//         console.log(logos[i])
-//         var path = "../../" + logos[i];
-//         var img = document.createElement('img');
-//         img.setAttribute("src", path);
-//         img.setAttribute("width", "100");
-//         img.setAttribute("height", "");
-//         document.getElementById("content").appendChild(img);
-//       }
-//       console.log('me cago en la puta')
-//       break;
-
-//  case 'folletos':
-//       for (let i = 0; i < folletos.length; i++) {
-//         console.log(folletos.length)
-//         console.log(folletos[i])
-//         var path = "../../" + folletos[i];
-//         var img = document.createElement('img');
-//         img.setAttribute("src", path);
-//         img.setAttribute("width", "100");
-//         img.setAttribute("height", "");
-//         document.getElementById("content").appendChild(img);
-//       }
-//       console.log('me cago en la puta')
-//       break;
-
-//       case 'posters':
-//         for (let i = 0; i < posters.length; i++) {
-//           console.log(posters.length)
-//           console.log(posters[i])
-//           var path = "../../" + posters[i];
-//           var img = document.createElement('img');
-//           img.setAttribute("src", path);
-//           img.setAttribute("width", "100");
-//           img.setAttribute("height", "");
-//           document.getElementById("content").appendChild(img);
-//         }
-//         console.log('me cago en la puta')
-//         break;
-//         case 'postales':
-//           for (let i = 0; i < postales.length; i++) {
-//             console.log(postales.length)
-//             console.log(postales[i])
-//             var path = "../../" + postales[i];
-//             var img = document.createElement('img');
-//             img.setAttribute("src", path);
-//             img.setAttribute("width", "100");
-//             img.setAttribute("height", "");
-//             document.getElementById("content").appendChild(img);
-//           }
-//           console.log('me cago en la puta')
-//           break;
-
-//           case 'pngs':
-//             for (let i = 0; i < pngs.length; i++) {
-//               console.log(pngs.length)
-//               console.log(pngs[i])
-//               var path = "../../" + pngs[i];
-//               var img = document.createElement('img');
-//               img.setAttribute("src", path);
-//               img.setAttribute("width", "100");
-//               img.setAttribute("height", "");
-//               document.getElementById("content").appendChild(img);
-//             }
-//             console.log('me cago en la puta')
-//             break;
-
-
-
-//     default:
-//       break;
-//   }
-
-
-
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-// function cambiar() {
-
-
-
-// var doubles = pngs.map(
-//   function(){
-//     var path= "../../"+pngs;
-//            var img=document.createElement('img'); 
-//            img.setAttribute("src",path);
-//            img.setAttribute("width","35");
-//            img.setAttribute("height","24");
-//   }
-// );
-// console.log()
-// }
-
-
-
-
-
-
-
-
-
-//   document.body.onload = addElement;
-//   function cambiar () { 
-//     for (var indice in logos) {
-//       console.log("En el índice '" + indice + "' hay este valor: " + logos[indice]);
-//     // crea un nuevo div 
-//     // y añade contenido 
-//     var newDiv = document.createElement("div"); 
-//     var newContent = document.getElementById("images").innerHTML =  "<img style='width:20%' src=../../"+ logos[indice]+">";
-//     newDiv.appendChild(newContent); //añade texto al div creado. 
-
-//     // añade el elemento creado y su contenido al DOM 
-//     var currentDiv = document.getElementById("div1"); 
-//     document.body.insertBefore(newDiv, currentDiv); 
-//   }
-// }
-
-// function cambiar(id) {
-
-
-
-//  for (let i = 0; i < pngs.length; i++) {
-//    const element = pngs[i];
-//    console.log( pngs[i])
-//   }
-
-
-// for (var indice in logos) {
-//   console.log("En el índice '" + indice + "' hay este valor: " + logos[indice]);
-
-//   console.log(logos.length)
-//document.getElementById("images").innerHTML = "<div><img style='width:20%' src=../../"+ logos[indice]+">, <img style='width:20%' src=../../"+ logos[indice-1]+">,<img style='width:20%' src=../../"+ logos[indice-2]+"></div>";
-// document.getElementById("images").innerHTML =  "<div><img style='width:20%' src=../../"+ logos[indice]+">, <img style='width:20%' src=../../"+ logos[indice-1]+">,<img style='width:20%' src=../../"+ logos[indice-2]+"></div>";
-
-// "<div><img style='width:20%' src=../../"+ logos[indice]+"></div>"
-
-
-
-//     console.log(logos[indice]);
-// document.createElement(tagName, [options]);
-//document.getElementById("images").innerHTML = "<div><img style='width:20%' src=../../"+ logos[indice]+"></div>";
-//document.getElementById("images").innerHTML = "<mi-logos></mi-logos>";
-//document.getElementById("images").innerHTML = "<mi-curriculum></mi-curriculum>";
-//document.write("<img "style="whidth:50rem"+" src=../../"+ logos[indice]+">")
-// document.write("<br>")
-//   }
-//  }
-
-
-
-
-
-//    <section class="segunda" <!--[ngSwitch]="true"--> >
-//    <div <!--*ngSwitchCase=" this.seleccion ==='todos'"--> >
-
-//        <app-repertorio [tipo]="seleccion" [logos]="logos" [folletos]="folletos" [posters]="posters" [postales]="postales" [pngs]="pngs"></app-repertorio>
-//    </div>
-//    <!-- "options === 'd' || options === 'e' || options === 'f'" -->
-
-//  </section>
-//    <div *ngSwitchCase="this.seleccion ==='logos'">
-//          <app-logos></app-logos>
-//          <!-- <app-slider [res]=0 [count]="0" [tipo]="seleccion" [logos]="logos" [folletos]="folletos" [posters]="posters" [postales]="postales" [pngs]="pngs"></app-slider> -->
-//      </div>
-//      <div *ngSwitchCase="this.seleccion === 'folletos'">
-//          <app-folletos></app-folletos>
-//      </div>
-//      <div *ngSwitchCase="this.seleccion === 'postales'">
-//          <app-postales></app-postales>
-//      </div>
-//      <div *ngSwitchCase="this.seleccion === 'posters'">
-//          <app-posters></app-posters>
-//      </div>
-//      <div *ngSwitchCase="this.seleccion === 'pngs'">
-//          <app-pngs></app-pngs>
-//      </div>
-
-
-
-
-
-
-//****************************************//
-//********arrays**************************//
