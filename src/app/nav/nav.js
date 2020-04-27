@@ -46,7 +46,7 @@ class miMenu extends HTMLElement {
         <div class="mode">
            
         <!-- <audio src="../sonidos/ping.mp4" autoplay loop></audio> -->
-            <img src="../../images/buttons/noche.png">
+            <img src="../../assets/images/buttons/noche.png">
                  </div>
     </section>
                 `;

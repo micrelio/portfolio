@@ -1,128 +1,128 @@
-              @media only screen and (max-width: 500px) {
-                  .nav {
-                     // border-bottom: 0.05rem solid #fff;
-                      display: none;
-                  }
+@media only screen and (max-width: 800px) {
+    .nav {
+       // border-bottom: 0.05rem solid #fff;
+        display: none;
+    }
 
-                  .movil {
-                      border-bottom: 0.05rem solid #fff;
-                      display: block;
-                      
-                      display: flex;
-                      flex-direction: column;
-                      box-shadow: 0px 4px 3px rgba(0, 0, 0, .5);
+    .movil {
+        border-bottom: 0.05rem solid #fff;
+        display: block;
+        
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 4px 3px rgba(0, 0, 0, .5);
 
-                      background: {
-                          // image: url('../../assets/images/backgrounds/nav.png');
-                          // color: rgba(180, 12, 116, 0.438);
-                          color: rgba(0, 0, 0, 0.438);
-                      }
+        background: {
+            // image: url('../../assets/images/backgrounds/nav.png');
+            // color: rgba(180, 12, 116, 0.438);
+            color: rgba(0, 0, 0, 0.438);
+        }
 
-                      .imagenes {
-                         // border-bottom: 0.05rem solid #fff;
-                          padding: calc(0.5rem + 0.5vw);
-                          // margin-top: calc(1rem + 1vw);
-                          // margin-right: calc(1rem + 1vw);
-                          display: flex;
-                          flex-direction: row;
-                          flex-wrap: wrap;
-                          justify-content: space-between;
-                          align-items: center;
+        .imagenes {
+           // border-bottom: 0.05rem solid #fff;
+            padding: calc(0.5rem + 0.5vw);
+            // margin-top: calc(1rem + 1vw);
+            // margin-right: calc(1rem + 1vw);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
 
-                          background: {
-                              // color: blue;
-                          }
+            background: {
+                // color: blue;
+            }
 
-                          .foto {
-                              cursor: pointer;
+            .foto {
+                cursor: pointer;
 
-                              background: {
-                                  // color: green;
-                              }
+                background: {
+                    // color: green;
+                }
 
-                              img {
-                                  display: block;
-                                  border-radius: 75%;
-                                  border: 3px double #000000;
-                                  width: calc(4vw + 5rem);
-                                  box-shadow: 0px 4px 3px rgba(0, 0, 0, .5);
-                              }
-                          }
+                img {
+                    display: block;
+                    border-radius: 75%;
+                    border: 3px double #000000;
+                    width: calc(4vw + 5rem);
+                    box-shadow: 0px 4px 3px rgba(0, 0, 0, .5);
+                }
+            }
 
-                          .botones {
-                              
-                              border: 0;
-                              outline: 0 none;
+            .botones {
+                
+                border: 0;
+                outline: 0 none;
 
-                              background: {
-                                  color: transparent;
-                              }
+                background: {
+                    color: transparent;
+                }
 
-                              #boton1 {
-                                //display: block;
-                                  outline: none;
-                                  cursor: pointer;
-                                  border: none;
-                                  background-color: Transparent;
+                #boton1 {
+                  //display: block;
+                    outline: none;
+                    cursor: pointer;
+                    border: none;
+                    background-color: Transparent;
 
-                                  img {
-                                                                            display: block;
-                                      width: calc(4vw + 5rem);
-                                  }
-                              }
-                          }
-                      }
+                    img {
+                                                              display: block;
+                        width: calc(4vw + 5rem);
+                    }
+                }
+            }
+        }
 
-                      .desplegable {
-                          display: none;
-                          display: flex;
-                          flex-direction: column;
-                          align-items: flex-start;
+        .desplegable {
+            display: none;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
 
-                          button {
-                              display: none;
-                              margin: 1rem;
-                              border: 0;
-                              color: white;
+            button {
+                display: none;
+                margin: 1rem;
+                border: 0;
+                color: white;
 
-                              background: {
-                                  color: transparent;
-                              }
-                          }
+                background: {
+                    color: transparent;
+                }
+            }
 
-                          .mnav-link {
-                              //width: 100%;
-                              display: block;
+            .mnav-link {
+                //width: 100%;
+                display: block;
 
-                              background: {
-                                  //color: red;
-                              }
+                background: {
+                    //color: red;
+                }
 
-                              ;
-                          }
-                      }
+                ;
+            }
+        }
 
-                  }
-
-
+    }
 
 
-                  /* Y finalmente las animaciones */
-                  // @-webkit-keyframes fade {
-                  //     from {
-                  //         opacity: .4
-                  //     }
-                  //     to {
-                  //         opacity: 1
-                  //     }
-                  // }
-                  // @keyframes fade {
-                  //     from {
-                  //         opacity: .4
-                  //     }
-                  //     to {
-                  //         opacity: 1
-                  //     }
-                  // }
-                  // /* Todo con CSS y HTML. */
-              }
+
+
+    /* Y finalmente las animaciones */
+    // @-webkit-keyframes fade {
+    //     from {
+    //         opacity: .4
+    //     }
+    //     to {
+    //         opacity: 1
+    //     }
+    // }
+    // @keyframes fade {
+    //     from {
+    //         opacity: .4
+    //     }
+    //     to {
+    //         opacity: 1
+    //     }
+    // }
+    // /* Todo con CSS y HTML. */
+}
