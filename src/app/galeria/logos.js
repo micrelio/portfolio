@@ -11,7 +11,7 @@ class miLogos extends HTMLElement {
 
         <section  class="principal">
         <div  class="logos" >
-            <button onclick="res()">-</button>
+            <button onclick="sum()">-</button>
             <div id="activo" class="imgG" ></div>
             <button  onclick="sum()">+</button>
         </div>
@@ -125,62 +125,50 @@ function cambio(a, b) {
 }
 
 function sum() {
-  //console.log('contador', count)
-  //console.log('final', final)
-
-  if (count >= final-1) {
-    //console.log('ya')
-   
-    retorno =logos[0]
+    if (count >= final-1) {
+   retorno =logos[0]
     count = 0;
     cambio(retorno);
-    //cambio();
   }
   else {
-    // puesto= logos[count];
     count++;
     nuevo = logos[count];
-    ////console.log(activo)
     cambio(nuevo);
-   // console.log(nuevo)
   }
-  //console.log('contador fuera', count)
-
 }
-
-
-
-
-
-
-
-
-
-function intervalo() {
-  let r = setInterval(() => {
-    sum();
-  }, 3000);
-}
-
-
-
-
-
 
 function res() {
+  console.log('resta')
   if (count <= 0) {
     count = final;
   }
   else {
     count--;
-    activo = logos[count];
+    nuevo = logos[count];
+    //cambio(nuevo);
   }
 }
+
+
+
 function reset() {
   //console.log('reset')
   count = 0;
   //console.log(count)
 }
+
+function intervalo() {
+  let r = setInterval(() => {
+    sum();
+  }, 300000);
+}
+
+
+
+
+
+
+
 
 
 
