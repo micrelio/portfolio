@@ -17,7 +17,7 @@ class miLogos extends HTMLElement {
         </div>
                 <div>
             <div class="miniatura">
-                <div id="logos" class="imgM">
+                <div id="mini" class="imgM">
                 </div>
      </div>
         </div>
@@ -65,7 +65,7 @@ function cargaLogos(e) {
       index = total;
     }
     activar(a);
-
+miniaturas(a);
     }    
 }
 function intervalo() {
@@ -81,7 +81,7 @@ function sum() {
     count++;
     activo = logos[count];
     console.log(activo)
-
+    activar(activo);
   }
 }
 function res() {
@@ -105,10 +105,20 @@ function activar(a){
     var img = document.createElement('img');
     img.setAttribute("src", path);
     img.setAttribute("width", "");
-    img.setAttribute("height", "50");
+    img.setAttribute("height", "500rem");
     document.getElementById("activo").appendChild(img);
 }
 
+function miniaturas(a){
+  console.log()
+
+  var path = "../../" + a;
+    var img = document.createElement('img');
+    img.setAttribute("src", path);
+    img.setAttribute("width", "");
+    img.setAttribute("height", "50rem");
+    document.getElementById("mini").appendChild(img);
+}
 
 
 

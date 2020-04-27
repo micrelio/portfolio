@@ -1,7 +1,7 @@
 /* hovers*/
 @font-face {
   font-family: "supercell";
-  src: url(../../assets/fonts/supercell-magic-webfont.ttf) format("truetype");
+  src: url(../../fuentes/supercell-magic-webfont.ttf) format("truetype");
 }
 .head {
   width: 100%;
