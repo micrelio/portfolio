@@ -28,7 +28,8 @@ class miLogos extends HTMLElement {
     <button onclick="reset()">reset conteo</button>
                 `;
                 
-    cargaLogos()
+    cargaLogos();
+    
   }
 }
 customElements.define('mi-logos', miLogos);
@@ -56,21 +57,16 @@ function cargaLogos(e) {
   
   for (let index = 0; index < total; index++) {
     let a = logos[index];
-    console.log(logos[index])
+   // console.log(logos[index])
     if (a != e) {
       
       activo = e;
       count = index;
       index = total;
-
     }
-    var path = "../../" + a;
-    var img = document.createElement('img');
-    img.setAttribute("src", path);
-    img.setAttribute("width", "");
-    img.setAttribute("height", "50");
-    document.getElementById("logos").appendChild(img);
-  }
+    activar(a);
+
+    }    
 }
 function intervalo() {
   let r = setInterval(() => {
@@ -78,17 +74,17 @@ function intervalo() {
   }, 3000);
 }
 function sum() {
-  console.log(count)
   if (count >= final) {
     reset();
   }
   else {
     count++;
     activo = logos[count];
+    console.log(activo)
+
   }
 }
 function res() {
-  console.log(count)
   if (count <= 0) {
     count = final;
   }
@@ -102,7 +98,16 @@ function reset() {
   count = 0;
 }
 
+function activar(a){
+  console.log()
 
+  var path = "../../" + a;
+    var img = document.createElement('img');
+    img.setAttribute("src", path);
+    img.setAttribute("width", "");
+    img.setAttribute("height", "50");
+    document.getElementById("activo").appendChild(img);
+}
 
 
 
