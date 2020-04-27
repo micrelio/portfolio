@@ -1,106 +1,109 @@
 class miLogos extends HTMLElement {
+  
   constructor() {
     super();
+    
+
   }
   connectedCallback() {
     this.innerHTML =
       `
- <h>EEEEEEEEEEEEEEEEEE</h>
-<section id="logos" class="principal">
-        <div class="muestra" >
-            <button (click)="res()">-</button>
-            <img class="imgG">
-            <button (click)="sum()">+</button>
+
+        <section  class="principal">
+        <div  class="logos" >
+            <button onclick="res()">-</button>
+            <div id="activo" class="imgG" ></div>
+            <button onclick="sum()">+</button>
         </div>
-               <div>
+                <div>
             <div class="miniatura">
-                        <div >
-                  <img class="imgM" (click)="mostrar(logo)" >
+                <div id="logos" class="imgM">
                 </div>
-    </div>
+     </div>
         </div>
     </section>
-    <button (click)="intervalo()">auto</button>
-    <button (click)="reset()">reset conteo</button>
+    
+    
+    <button onclick="intervalo()">auto</button>
+    <button onclick="reset()">reset conteo</button>
                 `;
+                
     cargaLogos()
   }
 }
 customElements.define('mi-logos', miLogos);
-function cargaLogos() {
-  console.log('puta madre')
-  for (let i = 0; i < logos.length; i++) {
-    var path = "../../" + logos[i];
+
+
+// buena
+//   function cargaLogos() {
+//     console.log('puta madre')
+//   for (let i = 0; i < logos.length; i++) {
+//     var path = "../../" + logos[i];
+//     var img = document.createElement('img');
+//     img.setAttribute("src", path);
+//      img.setAttribute("width", "");
+//      img.setAttribute("height", "500rem");
+//     document.getElementById("logos").appendChild(img);
+
+//   }
+// }
+
+//var total=0;
+var final=logos.length -1;
+function cargaLogos(e) {
+  
+  var total = logos.length;
+  
+  for (let index = 0; index < total; index++) {
+    let a = logos[index];
+    console.log(logos[index])
+    if (a != e) {
+      
+      activo = e;
+      count = index;
+      index = total;
+
+    }
+    var path = "../../" + a;
     var img = document.createElement('img');
     img.setAttribute("src", path);
     img.setAttribute("width", "");
-    img.setAttribute("height", "500rem");
+    img.setAttribute("height", "50");
     document.getElementById("logos").appendChild(img);
   }
 }
-function mostrar(e) {
-  // this.activo = e;
-  // this.count=e;
-  for (let index = 0; index < this.total; index++) {
-    // const element = array[index];
-    let a = this.DatosService.logos[index];
-    // console.log(this.DatosService.logos[index])
-    // console.log(index)
-    if (a != e) {
-      console.log(index)
-      this.activo = e;
-      this.count = index;
-      index = this.total;
-      // return;
-    }
-    // console.log(e)
-  }
-  // console.log(this.count)
-}
 function intervalo() {
   let r = setInterval(() => {
-    this.sum();
+    sum();
   }, 3000);
 }
 function sum() {
-  console.log(this.count)
-  // console.log(this.count)
-  // console.log(final)
-  if (this.count >= this.final) {
-    this.reset();
-    // this.count=0;
+  console.log(count)
+  if (count >= final) {
+    reset();
   }
   else {
-    this.count++;
-    this.activo = this.DatosService.logos[this.count];
+    count++;
+    activo = logos[count];
   }
 }
 function res() {
-  // console.log(this.final)
-  console.log(this.count)
-  // console.log(final)
-  if (this.count <= 0) {
-    // this.reset();
-    this.count = this.final;
+  console.log(count)
+  if (count <= 0) {
+    count = final;
   }
   else {
-    // console.log(this.tipo);
-    this.count--;
-    this.activo = this.DatosService.logos[this.count];
-    // this.total + 1;
+    count--;
+    activo = logos[count];
   }
 }
-// reset() {
-//   this.count = 0;
-// }
-// izquierda(){
-//   for (let index = this.count; index < array.length; index++) {
-//     const element = array[index];
-//     this.count
-//   }
-// }
 function reset() {
   console.log('reset')
-  this.count = 0;
+  count = 0;
 }
+
+
+
+
+
 

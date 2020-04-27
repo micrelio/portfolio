@@ -22,6 +22,7 @@ class miGaleria extends HTMLElement {
 </section>
                 `;
     cargaTodo();
+  
   }
 }
 customElements.define('mi-galeria', miGaleria);
