@@ -18,7 +18,8 @@ class miGaleria extends HTMLElement {
     </div>
  </section>
 <section id="content">
-<mi-imagenes></mi-imagenes>
+<mi-logos></mi-logos>
+<!-- <mi-imagenes></mi-imagenes> -->
 </section>
                 `;
     cargaTodo();
@@ -35,6 +36,7 @@ function cambiar(id) {
       document.getElementById("content").innerHTML = "<mi-imagenes></mi-imagenes>";
       break;
     case 'logos':
+      console.log('logogogogog')
       document.getElementById("content").innerHTML = "<mi-logos></mi-logos>";
       break;
     case 'folletos':

@@ -1,6 +1,6 @@
 
-var count = 0;
-var res = 0;
+//var count = 0;
+//var res = 0;
 var seleccion = 'todos';
 var logos = ["assets/images/logos/igr.jpg",
   "assets/images/logos/igre.png",
