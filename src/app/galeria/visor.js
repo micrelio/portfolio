@@ -50,7 +50,7 @@ function cambiar(id) {
       break;
     case 'logos':
       document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
-      carga(todos[0]);
+      carga(logos);
       
       break;
     case 'folletos':
@@ -83,7 +83,6 @@ function carga(e) {
   total = i.length;
   console.log('total', e)
   for (let index = 0; index < total; index++) {
-    
     let indice = e[index];
     console.log('index', e[index])
     if (indice != e) {
