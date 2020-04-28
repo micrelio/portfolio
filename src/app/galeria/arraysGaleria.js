@@ -5,7 +5,7 @@ var seleccion = 'todos';
 var logos = ["assets/images/logos/igr.jpg",
   "assets/images/logos/igre.png",
   "assets//images/logos/john.png",];
-var posters = ["assets/images/posters/quiromasajista.jpg"];
+var posters = ["assets/images/posters/quiromasajista.jpg",];
 var folletos = ["assets/images/folletos/igreCampana2019.jpg",
   "assets/images/folletos/igreAntoniaCampaña2019.jpg",
   "assets/images/folletos/igreCampaña2019B.jpg",

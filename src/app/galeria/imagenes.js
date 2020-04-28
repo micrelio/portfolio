@@ -60,14 +60,29 @@ function cargaTodo() {
     img.setAttribute("height", "250rem");
         document.getElementById("folletos").appendChild(img);
   }
+
+
   for (let i = 0; i < posters.length; i++) {
     var path = "../../" + posters[i];
     var img = document.createElement('img');
     img.setAttribute("src", path);
     img.setAttribute("width", "");
     img.setAttribute("height", "250rem");
-    document.getElementById("posters").appendChild(img);
+        document.getElementById("posters").appendChild(img);
   }
+
+
+
+  // for (let i = 0; i < posters.length; i++) {
+  //   var path = "../../" + posters[i];
+  //   var img = document.createElement('img');
+  //   img.setAttribute("src", path);
+  //   img.setAttribute("width", "");
+  //   img.setAttribute("height", "250rem");
+  //   document.getElementById("posters").appendChild(img);
+  // }
+
+
   for (let i = 0; i < postales.length; i++) {
     var path = "../../" + postales[i];
     var img = document.createElement('img');

@@ -18,11 +18,11 @@ class miGaleria extends HTMLElement {
     </div>
  </section>
 <section id="content">
-<mi-logos></mi-logos>
+<mi-imagenes></mi-imagenes>
 <!-- <mi-imagenes></mi-imagenes> -->
 </section>
                 `;
-    //cargaTodo();
+    cargaTodo();
 
 
 

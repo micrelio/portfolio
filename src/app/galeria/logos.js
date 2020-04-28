@@ -1,6 +1,7 @@
 class miLogos extends HTMLElement {
 
   constructor() {
+
     super();
 
 
@@ -25,61 +26,73 @@ class miLogos extends HTMLElement {
     
     
     <button onclick="intervalo()">auto</button>
-    <button onclick="reset()">reset conteo</button>
+       <button onclick="stop()">stop </button>
+       <button onclick="reset()">reset </button>
                 `;
 
-    carga();
-
+    // esto arranca automatico  
+    //carga();
+    //  console.log(id)
   }
 }
+
 customElements.define('mi-logos', miLogos);
 
 
+
 function cambiar(id) {
+  //var vision =id;
   console.log('tenemos', id);
   switch (id) {
     case 'todos':
       document.getElementById("content").innerHTML = "<mi-imagenes></mi-imagenes>";
       break;
     case 'logos':
-     
       document.getElementById("content").innerHTML = "<mi-logos></mi-logos>";
+      carga(logos);
       break;
     case 'folletos':
       document.getElementById("content").innerHTML = "<mi-logos></mi-logos>";
+      carga(folletos);
       break;
     case 'postales':
       document.getElementById("content").innerHTML = "<mi-logos></mi-logos>";
+      carga(postales);
       break;
     case 'posters':
       document.getElementById("content").innerHTML = "<mi-logos></mi-logos>";
+      carga(posters);
       break;
     case 'pngs':
       document.getElementById("content").innerHTML = "<mi-logos></mi-logos>";
+      carga(pngs);
       break;
     default:
+      document.getElementById("content").innerHTML = "<mi-logos></mi-logos>";
+      break;
+
   }
 }
 
 
-
-var total = logos.length;
-
-
 function carga(e) {
- console.log('total',)
+  i = e
+  total = i.length;
+  console.log('total', i)
   for (let index = 0; index < total; index++) {
-    let indice = logos[index];
-    //console.log('index', logos[index])
+    let indice = e[index];
+    console.log('index', e[index])
     if (indice != e) {
 
       activo = e;
       count = index;
-      index = total;
+      index = total - 1;
     }
     activar(indice);
-   // miniaturas(indice);
+
+    // miniaturas(indice);
   }
+
 }
 
 // function miniaturas(a) {
@@ -116,7 +129,7 @@ function activar(a) {
 
 }
 
-function cambio(a, b) {
+function cambio(a) {
   //console.log('imagen1', document.getElementById('kk'))
   var path = "../../" + a;
   var img = document.createElement('img');
@@ -137,14 +150,15 @@ function cambio(a, b) {
 }
 
 function sum() {
-    if (count >= total-1) {
-   retorno =logos[0]
+  //console.log(i)
+  if (count >= total - 1) {
+    retorno = i[0]
     count = 0;
     cambio(retorno);
   }
   else {
     count++;
-    nuevo = logos[count];
+    nuevo = i[count];
     cambio(nuevo);
   }
 }
@@ -152,29 +166,33 @@ function sum() {
 function res() {
   console.log('resta')
   if (count <= 0) {
-    retorno =logos[total-1]
-    count = total-1;
+    retorno = i[total - 1]
+    count = total - 1;
     cambio(retorno);
   }
   else {
     count--;
-  nuevo = logos[count];
-  console.log(nuevo);
+    nuevo = i[count];
+    console.log(nuevo);
 
     cambio(nuevo);
   }
 }
 
-
-
 function reset() {
-  //console.log('reset')
-  count = 0;
-  //console.log(count)
+  clearInterval(r);
+  count=0;
+var cero=i[0];
+  cambio(cero)
+}
+
+function stop() {
+  console.log('stop')
+    clearInterval(r);
 }
 
 function intervalo() {
-  let r = setInterval(() => {
+  r = setInterval(() => {
     sum();
   }, 3000);
 }
