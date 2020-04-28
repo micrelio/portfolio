@@ -5,7 +5,7 @@
         "ng": "ng",
        
     },
-    "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+    "publishConfig": { "registry": "https://npm.pkg.github.com/" },
 
     "private": true,
     "dependencies": {
