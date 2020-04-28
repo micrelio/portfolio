@@ -31,7 +31,6 @@ class miVisor extends HTMLElement {
 
     // esto arranca automatico  
     //carga();
-    //  console.log(id)
   }
 }
 
@@ -40,7 +39,6 @@ customElements.define('mi-visor', miVisor);
 
 
 function cambiar(id) {
-  console.log('tenemos', id);
   switch (id) {
     case 'todos':
       document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
@@ -49,7 +47,6 @@ function cambiar(id) {
     case 'logos':
       document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
       carga(logos);
-
       break;
     case 'folletos':
       document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
@@ -74,25 +71,21 @@ function cambiar(id) {
 }
 
 function carga(e) {
-  console.log('llega a funcion principal', e)
   preVista = e;
   total = preVista.length;
   switch (preVista) {
     case todos:
-      console.log('total', total)
       vista = [].concat.apply([], preVista);
       console.log('todos', vista);
       renderizar(vista)
       //   acaparados.forEach(elemente => renderizar(elemente));
-      // console.log('nuevo', nuevo);
-      //  console.log(element)
       break;
     case logos:
     case folletos:
     case posters:
     case postales:
     case pngs:
-      vista=preVista;
+      vista = preVista;
       renderizar(vista);
       break;
     default:
@@ -102,20 +95,21 @@ function carga(e) {
 function renderizar(e) {
   console.log('llega a render', e)
   for (let index = 0; index < total; index++) {
-    console.log(total)
-    //console.log('1111111', indice);
     let indice = e[index];
-    //  console.log('index', e[index])
+
     if (indice != e) {
       activo = e;
       count = index;
       index = total - 1;
-    } console.log('e')
-    activar(indice);
-    console.log(indice)
+      console.log('dentro')
+    }
+    console.log('vista', vista)
+    console.log('indice', indice)
+    activar(indice, vista);
+
   }
 }
-function activar(a) {
+function activar(a, b) {
   count = 0;
   var path = "../../" + a;
   var img = document.createElement('img');
@@ -125,12 +119,30 @@ function activar(a) {
   img.setAttribute("id", "kk");
   document.getElementById("activo").appendChild(img);
 
-  var img2 = document.createElement('img');
-  img2.setAttribute("src", path);
-  img2.setAttribute("width", "");
-  img2.setAttribute("height", "50rem");
-  img2.setAttribute("id", "min");
-  document.getElementById("mini").appendChild(img2);
+
+  console.log('dato1', a)
+  console.log('mini1', b)
+
+
+  // for (let i = 0; i < logos.length; i++) {
+  //   var path = "../../" + logos[i]; 
+  //   var img = document.createElement('img');
+  //   img.setAttribute("src", path);
+  //   img.setAttribute("width", "");
+  //   img.setAttribute("height", "250rem");
+  //   document.getElementById("logos").appendChild(img);
+
+  for (let i = 0; i < b.length; i++) {
+    
+    var miniPath = "../../" + b[i];
+    var img2 = document.createElement('img');
+    img2.setAttribute("src", miniPath);
+    img2.setAttribute("width", "");
+    img2.setAttribute("height", "50rem");
+    img2.setAttribute("id", "min");
+    document.getElementById("mini").appendChild(img2);
+    console.log('mini2', b)
+  }
 }
 function cambio(a) {
   console.log(a)

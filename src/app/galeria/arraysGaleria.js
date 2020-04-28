@@ -29,7 +29,6 @@
 //}
 //function time(j){
 //    seleccion = j;
-//    console.log(seleccion);
 //}
 
 

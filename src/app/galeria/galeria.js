@@ -29,14 +29,14 @@ class miGaleria extends HTMLElement {
     // const logosy = document.querySelector('#bLogos');
     // logosy.addEventListener('mousemove', function() {
   
-    //   console.log('eeeeeeeee');
+    //   
     // });
   
   }
 }
 customElements.define('mi-galeria', miGaleria);
 function myFunction() {
-  console.log('Hello World');
+ 
 }
 
 
@@ -45,7 +45,7 @@ function myFunction() {
 
 //document.getElementById("bLogos").addEventListener("Click", myFuncti); 
 // function myFuncti() {
-//  console.log('tttttttttttttttt')
+//  
 // }
 
 
@@ -62,5 +62,4 @@ function myFunction() {
 
 // const button = document.querySelector('#dataSender');
 // button.addEventListener('click', function(event) { 
-//   console.log('button clicked');
 // });

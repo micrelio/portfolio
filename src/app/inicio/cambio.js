@@ -1,9 +1,7 @@
   function navegar(id) {
    var render = id;
-   console.log(render);
-  switch (render) {
+   switch (render) {
     case 'inicio':
-      console.log('no');
    document.getElementById("componente").innerHTML = "<mi-inicio></mi-inicio>";
     break;
     case 'webs':
@@ -18,7 +16,6 @@
        // location.replace("src/app/galeria/galeria.js");
         break;
         case 'videos':
-          console.log('videos')
       document.getElementById("componente").innerHTML = "<mi-videos></mi-videos>";
   break;
       case 'curriculum':
