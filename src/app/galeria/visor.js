@@ -1,16 +1,11 @@
 class miVisor extends HTMLElement {
-
   constructor() {
-
     super();
-
-
   }
   connectedCallback() {
     this.innerHTML =
       `
-
-        <section  class="principal">
+ <section  class="principal">
         <div  class="logos" >
             <button onclick="res()">-</button>
             <div id="activo" class="imgG" ></div>
@@ -18,26 +13,21 @@ class miVisor extends HTMLElement {
         </div>
                 <div>
             <div class="miniatura">
-                <div id="mini" class="imgM">
-                </div>
+            <div id="miniDerecha" class="imgM">
+            <div id="mini" class="imgM">
+            <div id="miniIzquierda" class="imgM">
+               </div>
      </div>
         </div>
     </section>
-        
     <button onclick="intervalo()">auto</button>
        <button onclick="stop()">stop </button>
        <button onclick="reset()">reset </button>
                 `;
-
     // esto arranca automatico  
-    //carga();
   }
 }
-
 customElements.define('mi-visor', miVisor);
-
-
-
 function cambiar(id) {
   switch (id) {
     case 'todos':
@@ -69,7 +59,6 @@ function cambiar(id) {
       break;
   }
 }
-
 function carga(e) {
   preVista = e;
   total = preVista.length;
@@ -118,30 +107,33 @@ function activar(a, b) {
   img.setAttribute("height", "500rem");
   img.setAttribute("id", "kk");
   document.getElementById("activo").appendChild(img);
+  
+   var centralPath = "../../" + a;
+   var img3 = document.createElement('img');
+     img3.setAttribute("src", centralPath);
+     img3.setAttribute("width", "");
+     img3.setAttribute("height", "50rem");
+     img3.setAttribute("id", "min");
+     document.getElementById("mini").appendChild(img3);
+     console.log('mini3', path)
+ 
 
-
-  console.log('dato1', a)
-  console.log('mini1', b)
-
-
-  // for (let i = 0; i < logos.length; i++) {
-  //   var path = "../../" + logos[i]; 
-  //   var img = document.createElement('img');
-  //   img.setAttribute("src", path);
-  //   img.setAttribute("width", "");
-  //   img.setAttribute("height", "250rem");
-  //   document.getElementById("logos").appendChild(img);
 
   for (let i = 0; i < b.length; i++) {
-    
     var miniPath = "../../" + b[i];
     var img2 = document.createElement('img');
     img2.setAttribute("src", miniPath);
     img2.setAttribute("width", "");
     img2.setAttribute("height", "50rem");
     img2.setAttribute("id", "min");
-    document.getElementById("mini").appendChild(img2);
-    console.log('mini2', b)
+    document.getElementById("miniDerecha").appendChild(img2);
+   
+    var img3 = document.createElement('img');
+    img3.setAttribute("src", miniPath);
+    img3.setAttribute("width", "");
+    img3.setAttribute("height", "50rem");
+    img3.setAttribute("id", "min");
+    document.getElementById("miniIzquierda").appendChild(img3);
   }
 }
 function cambio(a) {
@@ -160,7 +152,7 @@ function cambio(a) {
   img2.setAttribute("width", "");
   img2.setAttribute("height", "50rem");
   img2.setAttribute("id", "min");
-  document.getElementById("mini").replaceChild(img2, min);
+  document.getElementById("miniDerecha").replaceChild(img2, min);
 }
 function sum() {
   //console.log(i)
