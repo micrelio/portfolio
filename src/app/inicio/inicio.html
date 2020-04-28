@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../../assets/style/css/webs.css" media="screen" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script type="text/javascript" src="../../assets/funciones/menu.js"></script>
+    <script type="text/javascript" src="../../assets/funciones/nav.js"></script>
     <script type="text/javascript" src="../nav/nav.js"></script>
     <script type="text/javascript" src="../footer/footer.js"></script>
 
@@ -27,12 +27,8 @@
     <script type="text/javascript" src="../galeria/galeria.js"></script>
     <script type="text/javascript" src="../galeria/arraysGaleria.js"></script>
     <script type="text/javascript" src="../galeria/imagenes.js"></script>
-    <script type="text/javascript" src="../galeria/logos.js"></script>
-    <script type="text/javascript" src="../galeria/folletos.js"></script>
-    <script type="text/javascript" src="../galeria/posters.js"></script>
-    <script type="text/javascript" src="../galeria/postales.js"></script>
-    <script type="text/javascript" src="../galeria/pngs.js"></script>
-
+    <script type="text/javascript" src="../galeria/visor.js"></script>
+   
     <script type="text/javascript" src="../webs/webs.js"></script>
     <script type="text/javascript" src="../videos/videos.js"></script>
     <script type="text/javascript" src="../curriculum/curriculum.js"></script>
@@ -72,7 +68,7 @@
 
 
     <script type="text/javascript">
-        menu();
+        nav();
 
     </script>
 
@@ -80,11 +76,12 @@
 
 
 </head>
-<mi-menu></mi-menu>
+<mi-nav></mi-nav>
 
 
-
-<body id="body" onload="navegar('galeria')"> 
+<body id="body">
+    
+<!-- <body id="body" onload="navegar('galeria')">  -->
     <!-- <mi-inicio></mi-inicio> -->
 
     <section class="head">
@@ -92,6 +89,7 @@
 
     </section>
     <section id="componente" >
+        <mi-inicio></mi-inicio>
     </section>
     
 <!-- 

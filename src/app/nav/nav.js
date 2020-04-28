@@ -1,4 +1,4 @@
-class miMenu extends HTMLElement {
+class miNav extends HTMLElement {
     constructor() {
         super();
     }
@@ -15,7 +15,7 @@ class miMenu extends HTMLElement {
                     <div class="links">
                     <s onmouseover>  <button class="nav-link" type="button" onclick="navegar('inicio');"> inicio </button> </s>
                     <s onmouseover>  <button class="nav-link" type="button" onclick="navegar('webs'); "> Webs </button></s>
-                    <s onmouseover>  <button class="nav-link" type="button" onclick="navegar('galeria'), maquetar();"> galeria </button></s>
+                    <s onmouseover>  <button class="nav-link" type="button" onclick="navegar('galeria');"> galeria </button></s>
                     <s onmouseover>  <button class="nav-link" type="button" onclick="navegar('videos');"> Videos </button></s>
                     <s onmouseover>  <button class="nav-link" type="button" onclick="navegar('curriculum');"> Curriculum </button></s>
                     <s onmouseover>  <button class="nav-link" type="button" onclick="navegar('contacto');"> Contacto </button></s>
@@ -38,6 +38,7 @@ class miMenu extends HTMLElement {
                 <button  onclick="navegar('inicio');" class="mnav-link">Inicio</button>
                 <button  onclick="navegar('webs');" class="mnav-link">Webs</button>
                 <button  onclick="navegar('galeria');" class="mnav-link">Galery</button>
+
                 <button  onclick="navegar('videos');" class="mnav-link">Videos</button>
                 <button  onclick="navegar('curriculum');" class="mnav-link">Curriculum</button>
                 <button  onclick="navegar('contacto');" class="mnav-link">Contacto</button>
@@ -53,4 +54,4 @@ class miMenu extends HTMLElement {
     }
 }
 //  window.customElements.define('mi-Menu', minenu);
-customElements.define('mi-menu', miMenu);
+customElements.define('mi-nav', miNav);
