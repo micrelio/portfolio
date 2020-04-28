@@ -3,12 +3,16 @@
 
 .principal {
     @include principal;
-
+    .botonGaley {
+        @include botonGaley;
+    }
     .visor {
         @include visor;
-
-        .imgG {
-            @include imgG;
+        .imgCentral {
+            @include imgCentral;
+        }
+        .botonGaley {
+            @include botonGaley;
         }
     }
 

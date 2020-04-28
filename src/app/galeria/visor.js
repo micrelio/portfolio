@@ -107,12 +107,12 @@ function activar(a, b) {
   document.getElementById("activo").appendChild(img);
   
    var centralPath = "../../" + a;
-   var img3 = document.createElement('img');
-     img3.setAttribute("src", centralPath);
-     img3.setAttribute("width", "");
-     img3.setAttribute("height", "");
-     img3.setAttribute("class", "mini");
-     document.getElementById("mini").appendChild(img3);
+   var img1 = document.createElement('img');
+     img1.setAttribute("src", centralPath);
+     img1.setAttribute("width", "");
+     img1.setAttribute("height", "");
+     img1.setAttribute("id", "mini");
+     document.getElementById("mini").appendChild(img1);
      console.log('mini3', path)
  
 
@@ -123,14 +123,14 @@ function activar(a, b) {
     img2.setAttribute("src", miniPath);
     img2.setAttribute("width", "");
     img2.setAttribute("height", "");
-    img2.setAttribute("class", "miniDerecha");
+    img2.setAttribute("id", "miniDerecha");
     document.getElementById("miniDerecha").appendChild(img2);
    
     var img3 = document.createElement('img');
     img3.setAttribute("src", miniPath);
     img3.setAttribute("width", "");
     img3.setAttribute("height", "");
-    img3.setAttribute("class", "miniIzquierda");
+    img3.setAttribute("id", "miniIzquierda");
     document.getElementById("miniIzquierda").appendChild(img3);
   }
 }
@@ -150,7 +150,7 @@ function cambio(a) {
   img2.setAttribute("width", "");
   img2.setAttribute("height", "50rem");
   img2.setAttribute("id", "min");
-  document.getElementById("miniDerecha").replaceChild(img2, min);
+  document.getElementById("mini").replaceChild(img2, mini);
 }
 function sum() {
   //console.log(i)
