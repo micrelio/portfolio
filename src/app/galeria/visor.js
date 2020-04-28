@@ -6,23 +6,21 @@ class miVisor extends HTMLElement {
     this.innerHTML =
       `
  <section  class="principal">
-        <div  class="logos" >
-            <button onclick="res()">-</button>
-            <div id="activo" class="imgG" ></div>
-            <button  onclick="sum()">+</button>
-        </div>
-                <div>
-            <div class="miniatura">
-            <div id="miniDerecha" class="imgM">
-            <div id="mini" class="imgM">
-            <div id="miniIzquierda" class="imgM">
-               </div>
-     </div>
-        </div>
-    </section>
-    <button onclick="intervalo()">auto</button>
-       <button onclick="stop()">stop </button>
-       <button onclick="reset()">reset </button>
+    <div  class="visor" >
+        <button class="imgG" onclick="res()">-</button>
+        <div id="activo" class="imgG" ></div>
+        <button class="imgG" onclick="sum()">+</button>
+    </div>
+
+    <div class="cajonMini">
+        <div id="miniDerecha" class=""></div>
+        <div id="mini" class=""></div>
+        <div id="miniIzquierda" class=""></div>
+    </div>
+</section>
+<button onclick="intervalo()">auto</button>
+<button onclick="stop()">stop </button>
+<button onclick="reset()">reset </button>
                 `;
     // esto arranca automatico  
   }
@@ -112,8 +110,8 @@ function activar(a, b) {
    var img3 = document.createElement('img');
      img3.setAttribute("src", centralPath);
      img3.setAttribute("width", "");
-     img3.setAttribute("height", "50rem");
-     img3.setAttribute("id", "min");
+     img3.setAttribute("height", "");
+     img3.setAttribute("class", "mini");
      document.getElementById("mini").appendChild(img3);
      console.log('mini3', path)
  
@@ -124,15 +122,15 @@ function activar(a, b) {
     var img2 = document.createElement('img');
     img2.setAttribute("src", miniPath);
     img2.setAttribute("width", "");
-    img2.setAttribute("height", "50rem");
-    img2.setAttribute("id", "min");
+    img2.setAttribute("height", "");
+    img2.setAttribute("class", "miniDerecha");
     document.getElementById("miniDerecha").appendChild(img2);
    
     var img3 = document.createElement('img');
     img3.setAttribute("src", miniPath);
     img3.setAttribute("width", "");
-    img3.setAttribute("height", "50rem");
-    img3.setAttribute("id", "min");
+    img3.setAttribute("height", "");
+    img3.setAttribute("class", "miniIzquierda");
     document.getElementById("miniIzquierda").appendChild(img3);
   }
 }

@@ -13,14 +13,8 @@
         }
 
         @mixin principal {
-            // display: flex;
-            // flex-direction: column;
-            // flex-wrap: nowrap;
-            // align-items: center;
-            // justify-content: space-around;
-            // width: 100%;
-            // height: 55vh;
-            padding: 3rem;
+       
+           // padding: 3rem;
             overflow: auto;
 
             background: {
@@ -33,63 +27,60 @@
             // color: #0000ff;
         }
 
-        @mixin muestra {
-            overflow: hidden;
+        @mixin visor {
             display: flex;
-            // flex-direction: row;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
             justify-content: space-around;
-            margin-bottom: 1rem;
+            width: 100%;
+            overflow: hidden;
 
-            // width: 100vw;
-            // margin: 3rem;
             background: {
                 color: black;
             }
         }
 
         @mixin imgG {
-            height: 70vh;
-            // max-width: 90vw;
+            max-width: 90vw;
             // width: 100%;
             // margin: 0.8rem;
             border: $marcoFoto;
             box-shadow: $sombreadoTotal;
-            cursor: pointer;
+            //     cursor: pointer;
 
             background: {
                 color: lightblue;
             }
         }
 
-        @mixin miniatura {
+        @mixin cajonMini {
             display: flex;
             flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
             justify-content: center;
-
-            // max-height: 0.3rem;
             background: {
                 color: purple;
             }
         }
-
-        @mixin imgM {
-            // display: flex;
-            // flex-direction: row;
-            // justify-content: space-around;
-            // margin: 1rem;
-            // width: 5%;
-            margin: 0.3rem;
+        @mixin mini {
             cursor: pointer;
+            margin: 0.3rem;
             height: 15rem;
-            height: 5rem;
-
-            background: {
-                color: black;
-            }
+            height: 8rem
         }
-
+        @mixin miniDerecha {
+            cursor: pointer;
+            margin: 0.3rem;
+            height: 5rem;
+        }
+        @mixin miniIzquierda {
+            cursor: pointer;
+            margin: 0.3rem;
+            height: 5rem;
+        }
         /* hovers*/
-
         @mixin mediaImagen {
             -webkit-transform: scale(1.3);
             transform: scale(1.3);

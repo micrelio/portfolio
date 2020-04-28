@@ -1,0 +1,42 @@
+@import "../mixins/mixins.scss";
+@import "../variables/variables.scss";
+
+.principal {
+    @include principal;
+
+    .visor {
+        @include visor;
+
+        .imgG {
+            @include imgG;
+        }
+    }
+
+    .cajonMini {
+        @include cajonMini;
+
+        .mini {
+            @include mini;
+
+            &:hover {
+                @include mediaImagen;
+            }
+        }
+
+        .miniDerecha {
+            @include miniDerecha;
+
+            &:hover {
+                @include mediaImagen;
+            }
+        }
+
+        .miniIzquierda {
+            @include miniIzquierda;
+
+            &:hover {
+                @include mediaImagen;
+            }
+        }
+    }
+}
