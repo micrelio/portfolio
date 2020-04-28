@@ -1,4 +1,4 @@
-class miLogos extends HTMLElement {
+class miVisor extends HTMLElement {
 
   constructor() {
 
@@ -36,7 +36,7 @@ class miLogos extends HTMLElement {
   }
 }
 
-customElements.define('mi-logos', miLogos);
+customElements.define('mi-visor', miVisor);
 
 
 
@@ -45,30 +45,32 @@ function cambiar(id) {
   console.log('tenemos', id);
   switch (id) {
     case 'todos':
-      document.getElementById("content").innerHTML = "<mi-imagenes></mi-imagenes>";
+      document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
+      carga(todos);
       break;
     case 'logos':
-      document.getElementById("content").innerHTML = "<mi-logos></mi-logos>";
-      carga(logos);
+      document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
+      carga(todos[0]);
+      
       break;
     case 'folletos':
-      document.getElementById("content").innerHTML = "<mi-logos></mi-logos>";
+      document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
       carga(folletos);
       break;
     case 'postales':
-      document.getElementById("content").innerHTML = "<mi-logos></mi-logos>";
+      document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
       carga(postales);
       break;
     case 'posters':
-      document.getElementById("content").innerHTML = "<mi-logos></mi-logos>";
+      document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
       carga(posters);
       break;
     case 'pngs':
-      document.getElementById("content").innerHTML = "<mi-logos></mi-logos>";
+      document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
       carga(pngs);
       break;
     default:
-      document.getElementById("content").innerHTML = "<mi-logos></mi-logos>";
+      document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
       break;
 
   }
@@ -76,10 +78,12 @@ function cambiar(id) {
 
 
 function carga(e) {
+  console.log('e', e)
   i = e
   total = i.length;
-  console.log('total', i)
+  console.log('total', e)
   for (let index = 0; index < total; index++) {
+    
     let indice = e[index];
     console.log('index', e[index])
     if (indice != e) {

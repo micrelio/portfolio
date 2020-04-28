@@ -9,7 +9,7 @@ class miGaleria extends HTMLElement {
       `
             <section id="galeria" class="primera" >
     <div class="">
-        <button type="button" onclick="cambiar('todos'), cargaTodo();"> Todos </button>
+        <button type="button" onclick="cambiar('todos');"> Todos </button>
         <button id="bLogos" type="button"onclick="cambiar('logos');" > Logos </button>                                       <!-- -->
         <button id="bFolletos" type="button" onclick="cambiar('folletos');"> Folletos </button>
         <button id="bPosters" type="button" onclick="cambiar('posters');"> Posters </button>
