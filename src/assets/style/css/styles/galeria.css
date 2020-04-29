@@ -16,37 +16,4 @@ button {
   cursor: pointer;
 }
 
-.repertorio {
-  padding: 1rem;
-  background-color: lightblue;
-}
-
-p {
-  font-size: 3rem;
-}
-
-hr {
-  background-color: black;
-  height: 0.25rem;
-}
-
-.tipo {
-  overflow: auto;
-  margin-bottom: 3rem;
-  display: flex;
-  width: 100%;
-  list-style: none;
-}
-
-.fila {
-  display: flex;
-  margin: 0.6rem;
-  border: 0.4rem solid #eeeeee;
-  box-shadow: #555 1px 1px 8px 1px;
-}
-.fila .tn {
-  cursor: pointer;
-  height: 15rem;
-}
-
 /*# sourceMappingURL=galeria.css.map */

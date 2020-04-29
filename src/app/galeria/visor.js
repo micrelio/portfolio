@@ -18,6 +18,7 @@ class miVisor extends HTMLElement {
         <div id="cajonCentral" class=""></div>
         <div id="cajonIzquierda" class=""></div>
     </div>
+    
 </section>
 <button onclick="intervalo()">auto</button>
 <button onclick="stop()">stop </button>
