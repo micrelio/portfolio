@@ -24,7 +24,7 @@ class miGaleria extends HTMLElement {
                 `;
     cargaTodo();
 
-
+    cambiar('todos') //quitar al acabar
 
     // const logosy = document.querySelector('#bLogos');
     // logosy.addEventListener('mousemove', function() {
