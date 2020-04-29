@@ -1,4 +1,4 @@
-        @import "./variables.scss";
+        @import "../variables/variables.scss";
 
         @mixin head {
             width: 100%;
@@ -14,8 +14,8 @@
 
         @mixin principal {
             // padding: 3rem;
-            overflow: auto;
-            //width:100%;
+            //overflow: auto;
+          //  height: 70vh;
             padding: 1rem;
 
             background: {
@@ -28,23 +28,14 @@
             // color: #0000ff;
         }
 
-        @mixin botonGaley {
-            width: 100%;
-            height: 70vh;
-
-            background: {
-                color: purple;
-                size: cover;
-            }
-        }
-
+     
         @mixin visor {
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
             align-items: center;
             justify-content: space-around;
-            height: 70vh;
+            //height: 70vh;
 
             overflow: hidden;
 
@@ -52,23 +43,30 @@
                 color: red;
             }
         }
+
+        @mixin botonGalery {
+            width: 15vw;
+            height: 100%;
+
+            background: {
+                color: purple;
+                size: cover;
+            }
+        }
+
         
-        @mixin imgCentral {
+        @mixin divCentral {
             // max-width: 90vw;
-            width: 70vw;
+            width: 85vw;
             // margin: 0.8rem;
             border: $marcoFoto;
             box-shadow: $sombreadoTotal;
-            //     cursor: pointer;
-            //height: 70vh;
-
-            background: {
+               background: {
                 color: lightblue;
             }
         }
-        @mixin imgG {
-            heigth:70vh;
-            
+        @mixin muestra {
+            width:75vw;
         }
 
         @mixin cajonMini {
@@ -77,16 +75,16 @@
             flex-wrap: nowrap;
             align-items: center;
             justify-content: center;
-
+height: 15rem;
             background: {
                 color: purple;
             }
         }
 
-        @mixin mini {
+        @mixin minicentral {
             cursor: pointer;
             margin: 0.3rem;
-            height: 15rem;
+           // height: 15rem;
             height: 8rem
         }
 
@@ -99,7 +97,7 @@
         @mixin miniIzquierda {
             cursor: pointer;
             margin: 0.3rem;
-            height: 5rem;
+            height: 50rem;
         }
 
         /* hovers*/

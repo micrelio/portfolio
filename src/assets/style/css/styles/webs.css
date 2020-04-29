@@ -1,7 +1,7 @@
 /* hovers*/
 @font-face {
   font-family: "supercell";
-  src: url(../../fuentes/supercell-magic-webfont.ttf) format("truetype");
+  src: url(../../../fuentes/supercell-magic-webfont.ttf) format("truetype");
 }
 .head {
   width: 100%;
@@ -20,7 +20,7 @@
   width: 100%;
   border-radius: 40px;
   border: 0.05rem solid #fff;
-  background-image: url("../../images/banners/primeros.jpg");
+  background-image: url("../../../images/banners/primeros.jpg");
   background-color: gold;
   background-size: cover;
   background-repeat: no-repeat, no-repeat;

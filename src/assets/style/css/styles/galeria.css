@@ -12,6 +12,7 @@
 }
 
 button {
+  height: 5rem;
   cursor: pointer;
 }
 

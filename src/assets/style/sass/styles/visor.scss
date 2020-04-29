@@ -3,31 +3,33 @@
 
 .principal {
     @include principal;
-    .botonGaley {
-        @include botonGaley;
-    }
+  
     .visor {
         @include visor;
-        .imgCentral {
-            @include imgCentral;
+               .botonGalery {
+            @include botonGalery;
         }
-        .botonGaley {
-            @include botonGaley;
+        .divCentral {
+            @include divCentral;
+            #muestra {
+                @include muestra;
+            }
         }
+        
     }
 
     .cajonMini {
         @include cajonMini;
 
-        .mini {
-            @include mini;
+        #minicentral {
+            @include minicentral;
 
             &:hover {
                 @include mediaImagen;
             }
         }
 
-        .miniDerecha {
+        #miniDerecha {
             @include miniDerecha;
 
             &:hover {
@@ -35,7 +37,7 @@
             }
         }
 
-        .miniIzquierda {
+        #miniIzquierda {
             @include miniIzquierda;
 
             &:hover {

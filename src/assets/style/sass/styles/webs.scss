@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: "supercell";
-    src: url(../../fuentes/supercell-magic-webfont.ttf) format('truetype');
+    src: url(../../../fuentes/supercell-magic-webfont.ttf) format('truetype');
 }
 
 .head {
@@ -44,7 +44,7 @@ margin:5rem;
         border-radius: 40px;
         border: 0.05rem solid #fff;
                 background: {
-            image: url('../../images/banners/primeros.jpg');
+            image: url('../../../images/banners/primeros.jpg');
             color: gold;
             size: cover;
         repeat: no-repeat, no-repeat;

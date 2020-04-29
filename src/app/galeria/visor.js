@@ -7,15 +7,16 @@ class miVisor extends HTMLElement {
       `
  <section  class="principal">
     <div  class="visor" >
-        <button class="imgG" onclick="res()">-</button>
-        <div id="activo" class="imgG" ></div>
-        <button class="imgG" onclick="sum()">+</button>
+        <button class="botonGalery" onclick="res()">-</button>
+        <div id="activo" class="divCentral" >
+        </div>
+        <button class="botonGalery" onclick="sum()">+</button>
     </div>
 
     <div class="cajonMini">
-        <div id="miniDerecha" class=""></div>
+        <div id="cajonDerecha" class=""></div>
         <div id="mini" class=""></div>
-        <div id="miniIzquierda" class=""></div>
+        <div id="cajonIzquierda" class=""></div>
     </div>
 </section>
 <button onclick="intervalo()">auto</button>
@@ -102,18 +103,17 @@ function activar(a, b) {
   var img = document.createElement('img');
   img.setAttribute("src", path);
   img.setAttribute("width", "");
-  img.setAttribute("height", "500rem");
-  img.setAttribute("id", "kk");
+  img.setAttribute("height", "");
+  img.setAttribute("id", "muestra");
   document.getElementById("activo").appendChild(img);
   
    var centralPath = "../../" + a;
    var img1 = document.createElement('img');
      img1.setAttribute("src", centralPath);
      img1.setAttribute("width", "");
-     img1.setAttribute("height", "");
-     img1.setAttribute("id", "mini");
+     img1.setAttribute("height", "5");
+     img1.setAttribute("id", "minicentral");
      document.getElementById("mini").appendChild(img1);
-     console.log('mini3', path)
  
 
 
@@ -122,33 +122,33 @@ function activar(a, b) {
     var img2 = document.createElement('img');
     img2.setAttribute("src", miniPath);
     img2.setAttribute("width", "");
-    img2.setAttribute("height", "");
+    img2.setAttribute("height", "5");
     img2.setAttribute("id", "miniDerecha");
-    document.getElementById("miniDerecha").appendChild(img2);
+    document.getElementById("cajonDerecha").appendChild(img2);
    
     var img3 = document.createElement('img');
     img3.setAttribute("src", miniPath);
     img3.setAttribute("width", "");
-    img3.setAttribute("height", "");
+    img3.setAttribute("height", "5");
     img3.setAttribute("id", "miniIzquierda");
-    document.getElementById("miniIzquierda").appendChild(img3);
+    document.getElementById("cajonIzquierda").appendChild(img3);
   }
 }
 function cambio(a) {
   console.log(a)
-  //console.log('imagen1', document.getElementById('kk'))
+  //console.log('imagen1', document.getElementById('muestra'))
   var path = "../../" + a;
   var img = document.createElement('img');
   img.setAttribute("src", path);
   img.setAttribute("width", "");
-  img.setAttribute("height", "500rem");
-  img.setAttribute("id", "kk");
-  document.getElementById("activo").replaceChild(img, kk);
+  img.setAttribute("height", "");
+  img.setAttribute("id", "muestra");
+  document.getElementById("activo").replaceChild(img, muestra);
 
   var img2 = document.createElement('img');
   img2.setAttribute("src", path);
   img2.setAttribute("width", "");
-  img2.setAttribute("height", "50rem");
+  img2.setAttribute("height", "");
   img2.setAttribute("id", "min");
   document.getElementById("mini").replaceChild(img2, mini);
 }

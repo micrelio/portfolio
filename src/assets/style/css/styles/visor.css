@@ -1,14 +1,7 @@
 /* hovers*/
 .principal {
-  overflow: auto;
   padding: 1rem;
   background-color: #df0174;
-}
-.principal .botonGaley {
-  width: 100%;
-  height: 70vh;
-  background-color: purple;
-  background-size: cover;
 }
 .principal .visor {
   display: flex;
@@ -16,21 +9,23 @@
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-around;
-  height: 70vh;
   overflow: hidden;
   background-color: red;
 }
-.principal .visor .imgCentral {
-  width: 70vw;
+.principal .visor .botonGalery {
+  width: 15vw;
+  height: 100%;
+  background-color: purple;
+  background-size: cover;
+}
+.principal .visor .divCentral {
+  width: 85vw;
   border: 0.8rem solid #eeeeee;
   box-shadow: #555 1px 1px 8px 1px;
   background-color: lightblue;
 }
-.principal .visor .botonGaley {
-  width: 100%;
-  height: 70vh;
-  background-color: purple;
-  background-size: cover;
+.principal .visor .divCentral #muestra {
+  width: 75vw;
 }
 .principal .cajonMini {
   display: flex;
@@ -38,33 +33,33 @@
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
+  height: 15rem;
   background-color: purple;
 }
-.principal .cajonMini .mini {
+.principal .cajonMini #minicentral {
   cursor: pointer;
   margin: 0.3rem;
-  height: 15rem;
   height: 8rem;
 }
-.principal .cajonMini .mini:hover {
+.principal .cajonMini #minicentral:hover {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
-.principal .cajonMini .miniDerecha {
+.principal .cajonMini #miniDerecha {
   cursor: pointer;
   margin: 0.3rem;
   height: 5rem;
 }
-.principal .cajonMini .miniDerecha:hover {
+.principal .cajonMini #miniDerecha:hover {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
-.principal .cajonMini .miniIzquierda {
+.principal .cajonMini #miniIzquierda {
   cursor: pointer;
   margin: 0.3rem;
-  height: 5rem;
+  height: 50rem;
 }
-.principal .cajonMini .miniIzquierda:hover {
+.principal .cajonMini #miniIzquierda:hover {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
