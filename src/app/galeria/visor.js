@@ -27,8 +27,8 @@ class miVisor extends HTMLElement {
 <button onclick="reset()">reset </button>
                 `;
     // esto arranca automatico 
-    
-    
+
+
   }
 }
 customElements.define('mi-visor', miVisor);
@@ -68,8 +68,10 @@ function carga(e) {
   total = preVista.length;
   switch (preVista) {
     case todos:
+      //Enviamos un solo array
+      //creamos vista como variable global
       vista = [].concat.apply([], preVista);
-      renderizar(vista)
+      renderizar()
       //   acaparados.forEach(elemente => renderizar(elemente));
       break;
     case logos:
@@ -77,51 +79,34 @@ function carga(e) {
     case posters:
     case postales:
     case pngs:
-      vista = preVista;
-      renderizar(vista);
+            // Opcion 2 creamos vista como variable global
+    vista = preVista;
+      renderizar();
       break;
     default:
       break;
   }
 }
-function renderizar(e) {
+function renderizar() {
   for (let index = 0; index < total; index++) {
-    let indice = e[index];
-
-    if (indice) {
-      console.log('delante', e);
-
-    }
-   if (indice<index) {
-      console.log('detraas');
-
-    }
-
-
-    if (indice != e) {
-      activo = e;
+    let indice = vista[index];
+    console.log('array', vista);
+    if (indice != vista) {
+      //reseteamos al llegar al ultimo dato del array
+      activo = vista;
       count = index;
       index = total - 1;
       console.log('dentro')
-      
+
     }
-  
-    activar(indice, vista);
- }
-for (let index = 0; index < total; index++) {
-    console.log()
-    let indice = e[index];
-    
-  //  activarMini()
+    //vista son los arrays que enviamos a leer
+    //Indice es el dato a renderizar
+    activar(indice);
+    activarMiniLaterales()
   }
 
-
-
-
-
-
 }
-function activar(a, b) {
+function activar(a) {
   count = 0;
   var path = "../../" + a;
   var img = document.createElement('img');
@@ -140,24 +125,43 @@ function activar(a, b) {
   document.getElementById("cajonCentral").appendChild(img1);
 }
 
-function activarMini() {
-  var miniPath = "../../" + b[i];
-  var img2 = document.createElement('img');
-  img2.setAttribute("src", miniPath);
-  img2.setAttribute("width", "");
-  img2.setAttribute("height", "5");
-  img2.setAttribute("id", "miniDerecha");
-  document.getElementById("cajonDerecha").appendChild(img2);
+function activarMiniLaterales() {
+  console.log('vista', vista)
+  console.log('preVista', preVista)
+
+  console.log('total', total)
+  for (let index = 0; index < total; index++) {
+    //     console.log()
+    //     let indice = e[index];
+    //     //  activarMini()
+    //   }
+    //   if () {
+
+    //     var pos = e.indexOf('indice');
+    //     console.log('delante', pos);
+    //   }
+    //  if (indice<index) {
+    //     console.log('detraas');
+    //    // var pos = frutas.indexOf('Banana');
+    //   }
+
+    //   var miniPath = "../../" + b[i];
+    //   var img2 = document.createElement('img');
+    //   img2.setAttribute("src", miniPath);
+    //   img2.setAttribute("width", "");
+    //   img2.setAttribute("height", "5");
+    //   img2.setAttribute("id", "miniDerecha");
+    //   document.getElementById("cajonDerecha").appendChild(img2);
 
 
-  var img3 = document.createElement('img');
-  img3.setAttribute("src", miniPath);
-  img3.setAttribute("width", "");
-  img3.setAttribute("height", "5");
-  img3.setAttribute("id", "miniIzquierda");
-  document.getElementById("cajonIzquierda").appendChild(img3);
+    //   var img3 = document.createElement('img');
+    //   img3.setAttribute("src", miniPath);
+    //   img3.setAttribute("width", "");
+    //   img3.setAttribute("height", "5");
+    //   img3.setAttribute("id", "miniIzquierda");
+    //   document.getElementById("cajonIzquierda").appendChild(img3);
+  }
 }
-
 
 function sum() {
   //console.log(i)
