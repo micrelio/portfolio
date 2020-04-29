@@ -112,7 +112,7 @@ function activar(a, b) {
    var img1 = document.createElement('img');
      img1.setAttribute("src", centralPath);
      img1.setAttribute("width", "");
-     img1.setAttribute("height", "5");
+     img1.setAttribute("height", "");
      img1.setAttribute("id", "miniCentral");
      document.getElementById("cajonCentral").appendChild(img1);
  
@@ -135,24 +135,8 @@ function activar(a, b) {
     document.getElementById("cajonIzquierda").appendChild(img3);
   }
 }
-function cambio(a) {
-  console.log(a)
-  //console.log('imagen1', document.getElementById('muestra'))
-  var path = "../../" + a;
-  var img = document.createElement('img');
-  img.setAttribute("src", path);
-  img.setAttribute("width", "");
-  img.setAttribute("height", "");
-  img.setAttribute("id", "muestra");
-  document.getElementById("activo").replaceChild(img, muestra);
 
-  var img2 = document.createElement('img');
-  img2.setAttribute("src", path);
-  img2.setAttribute("width", "");
-  img2.setAttribute("height", "");
-  img2.setAttribute("id", "min");
-  document.getElementById("mini").replaceChild(img2, mini);
-}
+
 function sum() {
   //console.log(i)
   if (count >= total - 1) {
@@ -166,6 +150,29 @@ function sum() {
     cambio(nuevo);
   }
 }
+
+
+
+function cambio(a) {
+  console.log(a)
+  //console.log('imagen1', document.getElementById('muestra'))
+  var path = "../../" + a;
+  var img = document.createElement('img');
+  img.setAttribute("src", path);
+  img.setAttribute("width", "");
+  img.setAttribute("height", "");
+  img.setAttribute("id", "muestra");
+  document.getElementById("activo").replaceChild(img, muestra);
+  
+  var centralPath = "../../" + a;
+  var img1 = document.createElement('img');
+    img1.setAttribute("src", centralPath);
+    img1.setAttribute("width", "");
+    img1.setAttribute("height", "");
+    img1.setAttribute("id", "miniCentral");
+    document.getElementById("cajonCentral").replaceChild(img1, miniCentral); 
+}
+
 function res() {
   console.log('resta')
   if (count <= 0) {
