@@ -1,4 +1,5 @@
 function nav() {
+    console.log("77777777777777");
     $(function () {
         console.log("8888888888888888888");
         var pull = $('#pull');
