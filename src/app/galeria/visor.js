@@ -15,7 +15,7 @@ class miVisor extends HTMLElement {
 
     <div class="cajonMini">
         <div id="cajonDerecha" class=""></div>
-        <div id="mini" class=""></div>
+        <div id="cajonCentral" class=""></div>
         <div id="cajonIzquierda" class=""></div>
     </div>
 </section>
@@ -112,8 +112,8 @@ function activar(a, b) {
      img1.setAttribute("src", centralPath);
      img1.setAttribute("width", "");
      img1.setAttribute("height", "5");
-     img1.setAttribute("id", "minicentral");
-     document.getElementById("mini").appendChild(img1);
+     img1.setAttribute("id", "miniCentral");
+     document.getElementById("cajonCentral").appendChild(img1);
  
 
 

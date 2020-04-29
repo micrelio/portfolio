@@ -21,28 +21,34 @@
     .cajonMini {
         @include cajonMini;
 
-        #minicentral {
-            @include minicentral;
+        #cajonCentral {
+            @include cajonCentral;
+#miniCentral{
+    @include miniCentral;
+                &:hover {
+                @include mediaImagen;
+            }
+        }
+        }
 
+        #cajonDerecha {
+            @include cajonDerecha;
+            #miniDerecha{
+                @include miniDerecha;
             &:hover {
                 @include mediaImagen;
             }
         }
+        }
 
-        #miniDerecha {
-            @include miniDerecha;
-
+        #cajonIzquierda {
+            @include cajonIzquierda;
+            #miniIzquierda{
+                @include miniIzquierda;
             &:hover {
                 @include mediaImagen;
             }
         }
-
-        #miniIzquierda {
-            @include miniIzquierda;
-
-            &:hover {
-                @include mediaImagen;
-            }
-        }
+    }
     }
 }
