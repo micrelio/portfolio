@@ -61,9 +61,6 @@ function navegar(id) {
        //     view: "<mi-galeria><mi-galeria>"
        // },])
   document.getElementById("componente").innerHTML = "<mi-galeria></mi-galeria>";
-
-
-  
         // location.replace("src/app/galeria/galeria.js");
          break;
          case 'videos':
