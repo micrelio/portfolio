@@ -1,4 +1,4 @@
-class miNavegador extends HTMLElement {
+class miNav extends HTMLElement {
     constructor() {
         super();
     }
@@ -52,4 +52,4 @@ class miNavegador extends HTMLElement {
     }
 }
 //  window.customElements.define('mi-Menu', minenu);
-customElements.define('mi-navegador', miNavegador);
+customElements.define('mi-nav', miNav);
