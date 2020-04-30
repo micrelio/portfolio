@@ -79,27 +79,30 @@ function carga(e) {
     case posters:
     case postales:
     case pngs:
-            // Opcion 2 creamos vista como variable global
-    vista = preVista;
+      // Opcion 2 creamos vista como variable global
+      vista = preVista;
       renderizar();
       break;
     default:
       break;
   }
+  //Idexamos indice
+ 
 }
 function renderizar() {
+  //Lempos el array
   for (let index = 0; index < total; index++) {
     let indice = vista[index];
     console.log('array', vista);
     if (indice != vista) {
-      //reseteamos al llegar al ultimo dato del array
+      //Reseteamos al llegar al ultimo dato del array
       activo = vista;
       count = index;
       index = total - 1;
       console.log('dentro')
 
     }
-    //vista son los arrays que enviamos a leer
+
     //Indice es el dato a renderizar
     activar(indice);
     activarMiniLaterales()
@@ -107,13 +110,17 @@ function renderizar() {
 
 }
 function activar(a) {
+  //primero ponemos el contador a cero para empezar por el primer puesto del array
   count = 0;
+  
   var path = "../../" + a;
+  //La img es igual a un elemento que creamos del tipo imagen
   var img = document.createElement('img');
   img.setAttribute("src", path);
   img.setAttribute("width", "");
   img.setAttribute("height", "");
   img.setAttribute("id", "muestra");
+  //En el elemento llamado activo renderizamos la imagen
   document.getElementById("activo").appendChild(img);
 
   var centralPath = "../../" + a;
@@ -126,11 +133,12 @@ function activar(a) {
 }
 
 function activarMiniLaterales() {
-  console.log('vista', vista)
-  console.log('preVista', preVista)
-
+  //console.log('vista', vista)
+  // posicion = a.indexOf('todos');
+  // console.log('posicion',posicion)
   console.log('total', total)
   for (let index = 0; index < total; index++) {
+   
     //     console.log()
     //     let indice = e[index];
     //     //  activarMini()
@@ -169,11 +177,13 @@ function sum() {
     retorno = vista[0]
     count = 0;
     cambio(retorno);
+    
   }
   else {
     count++;
     nuevo = vista[count];
     cambio(nuevo);
+    activarMiniLaterales();
   }
 }
 
@@ -181,6 +191,8 @@ function sum() {
 
 function cambio(a) {
   console.log(a)
+  posicion = vista.indexOf(a);
+  console.log('posicion',posicion)
   //console.log('imagen1', document.getElementById('muestra'))
   var path = "../../" + a;
   var img = document.createElement('img');
