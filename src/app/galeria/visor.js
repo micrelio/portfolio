@@ -65,7 +65,7 @@ function cambiar(id) {
 }
 function carga(e) {
   preVista = e;
-  total = preVista.length;
+  console.log('pevista', preVista.length)
   switch (preVista) {
     case todos:
       //Enviamos un solo array
@@ -90,16 +90,21 @@ function carga(e) {
  
 }
 function renderizar() {
+  console.log(vista)
   //Lempos el array
+  total = vista.length;
+
   for (let index = 0; index < total; index++) {
     let indice = vista[index];
-    console.log('array', vista);
+ 
     if (indice != vista) {
+      console.log('array', indice);
       //Reseteamos al llegar al ultimo dato del array
       activo = vista;
       count = index;
-      index = total - 1;
+      index = total ;
       console.log('dentro')
+
 
     }
 
