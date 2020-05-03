@@ -29,6 +29,7 @@
   background-color: lightblue;
 }
 .principal .visor .divCentral #muestra {
+  position: relative;
   max-height: 70vh;
   width: 100%;
 }
@@ -76,6 +77,25 @@
 .principal .cajonMini #cajonIzquierda #miniIzquierda:hover {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
+}
+
+.move-right {
+  transform: translate(35rem, 0);
+  -webkit-transform: translate(-62.51rem, 0);
+  -o-transform: translate(35rem, 0);
+  /** Opera **/
+  -moz-transform: translate(35rem, 0);
+  /** Firefox **/
+}
+
+.object {
+  transition: all 2s ease-in-out;
+  -webkit-transition: all 2s ease-in-out;
+  /** Chrome & Safari **/
+  -moz-transition: all 2s ease-in-out;
+  /** Firefox **/
+  -o-transition: all 2s ease-in-out;
+  /** Opera **/
 }
 
 /*# sourceMappingURL=visor.css.map */

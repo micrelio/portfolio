@@ -4,7 +4,7 @@
  todos = [
  logos = ["assets/images/logos/igr.jpg",
   "assets/images/logos/igre.png",
-  "assets//images/logos/john.png",],
+  "assets/images/logos/john.png",],
  posters = ["assets/images/posters/quiromasajista.jpg",],
  folletos = ["assets/images/folletos/igreCampana2019.jpg",
   "assets/images/folletos/igreAntoniaCampaña2019.jpg",

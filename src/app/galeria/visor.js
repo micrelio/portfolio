@@ -5,13 +5,27 @@ class miVisor extends HTMLElement {
   connectedCallback() {
     this.innerHTML =
       `
+   <!--   <div id="axis" class="one">
+      <img class="object van move-right" src="../../assets/images/logos/john.png"/>
+      </div>
+     -->
+     
  <section  class="principal">
+
+
+
+
     <div  class="visor" >
         <button class="botonGalery" onclick="res()">-</button>
         <div id="activo" class="divCentral" >
         </div>
         <button class="botonGalery" onclick="sum()">+</button>
     </div>
+
+
+  
+
+
 
     <div class="cajonMini">
     <div id="cajonIzquierda" class=""></div>
@@ -20,6 +34,8 @@ class miVisor extends HTMLElement {
         
         
     </div>
+
+ 
     
 </section>
 <button onclick="intervalo()">auto</button>
@@ -90,7 +106,6 @@ function carga(e) {
  
 }
 function renderizar() {
-  console.log(vista)
   //Lempos el array
   total = vista.length;
 
@@ -125,6 +140,10 @@ function activar(a) {
   img.setAttribute("width", "");
   img.setAttribute("height", "");
   img.setAttribute("id", "muestra");
+ // img.setAttribute("margin-left", "-2000");
+
+  img.setAttribute("class", "object  move-right");
+
   //En el elemento llamado activo renderizamos la imagen
   document.getElementById("activo").appendChild(img);
 
@@ -205,6 +224,11 @@ function cambio(a) {
   img.setAttribute("width", "");
   img.setAttribute("height", "");
   img.setAttribute("id", "muestra");
+  //img.setAttribute("class", "object  move-right");
+  img.setAttribute("margin-left", "-360px");
+  img.setAttribute("position", "absolute");
+
+ // img.setAttribute("margin-left", "-2000");
   document.getElementById("activo").replaceChild(img, muestra);
 
   var centralPath = "../../" + a;
