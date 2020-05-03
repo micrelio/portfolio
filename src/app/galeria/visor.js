@@ -30,7 +30,7 @@ class miVisor extends HTMLElement {
     <div class="cajonMini">
     <div id="cajonIzquierda" class=""></div>
     <div id="cajonCentral" class=""></div>
-     <div id="cajonDerecha" class=""></div>
+     <div id="cajonDerecha" class="point"></div>
         
         
     </div>
@@ -43,8 +43,12 @@ class miVisor extends HTMLElement {
 <button onclick="reset()">reset </button>
                 `;
     // esto arranca automatico 
-
-
+    console.log('holaaaa')
+  const mos = document.querySelector('#cajonDerecha');
+  cajonDerecha.getAttribute('class');   
+  // element.setAttribute('href', 'index.html');
+  
+  console.log('atributo',mos)
   }
 }
 customElements.define('mi-visor', miVisor);
@@ -130,6 +134,22 @@ function renderizar() {
 
 }
 function activar(a) {
+
+
+
+ 
+  
+
+
+
+
+
+
+
+
+
+
+
   //primero ponemos el contador a cero para empezar por el primer puesto del array
   count = 0;
   
@@ -225,8 +245,8 @@ function cambio(a) {
   img.setAttribute("height", "");
   img.setAttribute("id", "muestra");
   //img.setAttribute("class", "object  move-right");
-  img.setAttribute("margin-left", "-360px");
-  img.setAttribute("position", "absolute");
+ img.setAttribute("rigth", "62000rem");
+ // img.setAttribute("position", "absolute");
 
  // img.setAttribute("margin-left", "-2000");
   document.getElementById("activo").replaceChild(img, muestra);
@@ -270,11 +290,6 @@ function intervalo() {
     sum();
   }, 3000);
 }
-
-
-
-
-
 
 
 
