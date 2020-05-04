@@ -16,12 +16,12 @@ class miVisor extends HTMLElement {
      <img class="visible" src="../../assets/images/logos/igre.png" >
    </div>
 -->
- <section  class="principal">
+ <section  class="principal" >
     <div  class="visor" >
-        <button class="botonGalery" onclick="res()">-</button>
+        <button class="botonGalery" ontouchstart="sum()" onclick="sum()">-</button>
         <div id="activo"  >
           <div id="divAnterior"></div>
-          <div id="divCentral"></div>
+          <div id="divCentral" onclick='sum()' ></div>
           <div id="divSiguiente"></div>
         </div>
         <button class="botonGalery" onclick="sum()">+</button>
@@ -47,6 +47,7 @@ class miVisor extends HTMLElement {
 
     // cajonDerecha.getAttribute('class');   
     // element.setAttribute('href', 'index.html');
+    
   }
 }
 customElements.define('mi-visor', miVisor);
@@ -201,9 +202,12 @@ console.log('img', imgS)
 function keyEvent(event){
   console.log(event.key);
   switch (event.key) {
-    case 'ArrowLeft':
+    case  ' ':; case 'ArrowLeft':
       res();
       break;
+      // case  'ArrowLeft':
+      //   res();
+      //   break;
   
     default:
       sum();
