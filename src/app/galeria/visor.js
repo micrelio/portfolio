@@ -18,10 +18,10 @@ class miVisor extends HTMLElement {
 -->
  <section  class="principal" >
     <div  class="visor" >
-        <button class="botonGalery" >-</button>
+        <button class="botonGalery" onclick="res()">-</button>
         <div id="activo"  >
           <div id="divAnterior"></div>
-          <div id="divCentral" onswiperight="sum()" onswipeleft="res()" ontouchstart="sum()" onclick="sum()" ></div>
+          <div id="divCentral" <!-- onswiperight="sum()"--> onswipeleft="res()" ontouchstart="sum()" onclick="sum()" ></div>
           <div id="divSiguiente"></div>
         </div>
         <button class="botonGalery" onclick="sum()">+</button>
@@ -83,25 +83,25 @@ function cambiar(id) {
   }
 }
 
-// function keyEvent(event){
-//   console.log(event.key);
-//   switch (event.key) {
-//     //case  ' ':
-//      case 'ArrowLeft':
-//       res();
-//       break;
-//       // case  'ArrowLeft':
-//       //   res();
-//       //   break;
-//       case  ' ':
-//         case 'ArrowRight':
-//          sum();
-//          break;
-//     default:
-//      // sum();
-//       break;
-//   }
-// }
+function keyEvent(event){
+  console.log(event.key);
+  switch (event.key) {
+    //case  ' ':
+     case 'ArrowLeft':
+      res();
+      break;
+      // case  'ArrowLeft':
+      //   res();
+      //   break;
+      case  ' ':
+        case 'ArrowRight':
+         sum();
+         break;
+    default:
+     // sum();
+      break;
+  }
+}
 
 function carga(e) {
   preVista = e;
@@ -207,9 +207,9 @@ function activar(a, b, c) {
   //En el elemento llamado activo renderizamos la imagen
 
 console.log('img', imgS)
-  document.getElementById("divAnterior").appendChild(imgA);
+ // document.getElementById("divAnterior").appendChild(imgA);
   document.getElementById("divCentral").appendChild(img);
-  document.getElementById("divSiguiente").appendChild(imgS);
+//  document.getElementById("divSiguiente").appendChild(imgS);
 
   var centralPath = "../../" + a;
   var img1 = document.createElement('img');
