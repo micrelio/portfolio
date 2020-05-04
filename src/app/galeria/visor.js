@@ -18,7 +18,7 @@ class miVisor extends HTMLElement {
 -->
  <section  class="principal" >
     <div  class="visor" >
-        <button class="botonGalery" ontouchstart="sum()" onclick="sum()">-</button>
+        <button class="botonGalery" swiperight"sum()" swipeleft="res()" ontouchstart="sum()" onclick="sum()">-</button>
         <div id="activo"  >
           <div id="divAnterior"></div>
           <div id="divCentral" onclick='sum()' ></div>
@@ -202,15 +202,19 @@ console.log('img', imgS)
 function keyEvent(event){
   console.log(event.key);
   switch (event.key) {
-    case  ' ':; case 'ArrowLeft':
+    //case  ' ':
+     case 'ArrowLeft':
       res();
       break;
       // case  'ArrowLeft':
       //   res();
       //   break;
-  
+      case  ' ':
+        case 'ArrowRight':
+         sum();
+         break;
     default:
-      sum();
+     // sum();
       break;
   }
 }
