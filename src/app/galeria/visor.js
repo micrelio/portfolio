@@ -18,7 +18,7 @@ class miVisor extends HTMLElement {
 -->
  <section  class="principal" >
     <div  class="visor" >
-        <button class="botonGalery" swiperight"sum()" swipeleft="res()" ontouchstart="sum()" onclick="sum()">-</button>
+        <button class="botonGalery"  ontouchstart="sum()" onclick="sum()">-</button>
         <div id="activo"  >
           <div id="divAnterior"></div>
           <div id="divCentral" onclick='sum()' ></div>
