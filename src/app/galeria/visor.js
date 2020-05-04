@@ -199,10 +199,10 @@ console.log('img', imgS)
 }
 
 function keyEvent(event){
-  console.log(event);
-  switch (event) {
+  console.log(event.key);
+  switch (event.key) {
     case 'ArrowLeft':
-      rest();
+      res();
       break;
   
     default:
@@ -211,9 +211,21 @@ function keyEvent(event){
   }
 }
 
-
-
-
+function res() {
+  var central;
+  var anterior;
+  var siguiente;
+  if (count <= 0) {
+    central = vista[total - 1]
+    count = total - 1;
+    cambio(central);
+  }
+  else {
+    count--;
+    central = vista[count];
+    cambio(central);
+  }
+}
 function sum() {
   //console.log(i)
   var central;
@@ -318,18 +330,7 @@ function activarMiniLaterales() {
 
 
 
-function res() {
-  if (count <= 0) {
-    retorno = vista[total - 1]
-    count = total - 1;
-    cambio(retorno);
-  }
-  else {
-    count--;
-    nuevo = vista[count];
-    cambio(nuevo);
-  }
-}
+
 function reset() {
   clearInterval(r);
   count = 0;
