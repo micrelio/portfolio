@@ -19,7 +19,10 @@ class miVisor extends HTMLElement {
  <section  class="principal">
     <div  class="visor" >
         <button class="botonGalery" onclick="res()">-</button>
-          <div id="activo" class="divCentral" >
+        <div id="activo"  >
+          <div id="divAnterior"></div>
+          <div id="divCentral"></div>
+          <div id="divSiguiente"></div>
         </div>
         <button class="botonGalery" onclick="sum()">+</button>
     </div>
@@ -40,11 +43,10 @@ class miVisor extends HTMLElement {
 <button onclick="reset()">reset </button>
                 `;
     // esto arranca automatico 
-    const mos = document.querySelector('#muestra');
+    const mos = document.querySelector('#central');
 
     // cajonDerecha.getAttribute('class');   
     // element.setAttribute('href', 'index.html');
-    count = 0;
   }
 }
 customElements.define('mi-visor', miVisor);
@@ -104,30 +106,32 @@ function carga(e) {
   //Idexamos indice
 }
 function renderizar(vista) {
+  count = 0;
+
   //Lempos el array
   total = vista.length;
   for (let index = 0; index < total; index++) {
     let indice = vista[index];
     let siguiente = vista[index + 1];
-let anterior;
-console.log(index);
+    let anterior;
+    console.log(index);
 
     switch (index) {
       case 0:
-         anterior = vista[total - 1];
+        anterior = vista[total - 1];
 
         break;
-    
+
       default:
         anterior = vista[index - 1];
 
         break;
     }
-   // 
-  
+    // 
 
 
-   // console.log(anterior);
+
+    // console.log(anterior);
     if (indice != vista) {
       //Reseteamos al llegar al ultimo dato del array
       activo = vista;
@@ -138,6 +142,7 @@ console.log(index);
     }
 
     //Indice es el dato a renderizar
+    console.log('siguiente', siguiente)
     activar(indice, anterior, siguiente);
     activarMiniLaterales()
   }
@@ -145,7 +150,7 @@ console.log(index);
 }
 function activar(a, b, c) {
   //primero ponemos el contador a cero para empezar por el primer puesto del array
-  
+
 
   var path = "../../" + a;
   var pathAnterior = "../../" + b;
@@ -154,12 +159,11 @@ function activar(a, b, c) {
   //La img es igual a un elemento que creamos del tipo imagen
   var img = document.createElement('img');
   var imgA = document.createElement('img');
-  var imgA2 = document.createElement('img');
   var imgS = document.createElement('img');
   img.setAttribute("src", path);
   img.setAttribute("width", "");
   img.setAttribute("height", "");
-  img.setAttribute("id", "muestra");
+  img.setAttribute("id", "central");
 
 
 
@@ -172,22 +176,18 @@ function activar(a, b, c) {
   imgA.setAttribute("width", "");
   imgA.setAttribute("height", "");
   imgA.setAttribute("id", "anterior");
-    
+
 
   // img.setAttribute("margin-left", "-2000");
 
   //img.setAttribute("class", "object  move-right");
 
   //En el elemento llamado activo renderizamos la imagen
-  
 
-      document.getElementById("activo").appendChild(imgA);
-      
-  
-
-  
-  document.getElementById("activo").appendChild(img);
-  document.getElementById("activo").appendChild(imgS);
+console.log('img', imgS)
+  document.getElementById("divAnterior").appendChild(imgA);
+  document.getElementById("divCentral").appendChild(img);
+  document.getElementById("divSiguiente").appendChild(imgS);
 
   var centralPath = "../../" + a;
   var img1 = document.createElement('img');
@@ -198,39 +198,75 @@ function activar(a, b, c) {
   document.getElementById("cajonCentral").appendChild(img1);
 }
 
+function keyEvent(event){
+  console.log(event);
+  switch (event) {
+    case 'ArrowLeft':
+      rest();
+      break;
+  
+    default:
+      sum();
+      break;
+  }
+}
+
+
+
+
 function sum() {
   //console.log(i)
+  var central;
+  var anterior;
+  var siguiente;
   if (count >= total - 1) {
-    retorno = vista[0]
+    central = vista[0]
     count = 0;
-    //cambio(retorno);
-
+    cambio(central, anterior, siguiente);
   }
   else {
     count++;
-    nuevo = vista[count];
-  //  cambio(nuevo);
-  //  activarMiniLaterales();
+    central = vista[count];
+    anterior = vista[count - 1];
+    siguiente = vista[count + 1];
+    cambio(central, anterior, siguiente);
+    //  activarMiniLaterales();
   }
 }
 
 function cambio(a, b, c) {
   posicion = vista.indexOf(a);
   console.log(posicion)
-  //console.log('imagen1', document.getElementById('muestra'))
+  //console.log('imagen1', document.getElementById('central'))
   var path = "../../" + a;
+  var pathAnterior = "../../" + b;
+  var pathSiguiente = "../../" + c;
+
   var img = document.createElement('img');
+  var imgA = document.createElement('img');
+  var imgS = document.createElement('img');
+
   img.setAttribute("src", path);
   img.setAttribute("width", "");
   img.setAttribute("height", "");
-  img.setAttribute("id", "muestra");
+  img.setAttribute("id", "central");
   //img.setAttribute("class", "object  move-right");
   //img.setAttribute("rigth", "62000rem");
   //img.setAttribute('class', 'object move-right');
   // img.setAttribute("position", "absolute");
 
+  imgS.setAttribute("src", pathSiguiente);
+  imgS.setAttribute("width", "");
+  imgS.setAttribute("height", "");
+  imgS.setAttribute("id", "siguiente");
+
+  imgA.setAttribute("src", pathAnterior);
+  imgA.setAttribute("width", "");
+  imgA.setAttribute("height", "");
+  imgA.setAttribute("id", "anterior");
+
   // img.setAttribute("margin-left", "-2000");
-  document.getElementById("activo").replaceChild(img, muestra);
+  document.getElementById("divCentral").replaceChild(img, central);
 
   var centralPath = "../../" + a;
   var img1 = document.createElement('img');
@@ -277,7 +313,6 @@ function activarMiniLaterales() {
     //   document.getElementById("cajonIzquierda").appendChild(img3);
   }
 }
-
 
 
 

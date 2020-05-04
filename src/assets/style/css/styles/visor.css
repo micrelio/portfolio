@@ -11,6 +11,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
+  justify-content: space-around;
   height: 90%;
   width: 100%;
   background-color: red;
@@ -21,26 +22,41 @@
   background-color: purple;
   background-size: cover;
 }
-.principal .visor .divCentral {
+.principal .visor #activo {
   display: flex;
-  max-width: 100%;
-  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
   border: 0.8rem solid #eeeeee;
   box-shadow: #555 1px 1px 8px 1px;
   background-color: lightblue;
 }
-.principal .visor .divCentral #anterior {
-  position: relative;
-  max-height: 70vh;
-}
-.principal .visor .divCentral #muestra {
+.principal .visor #activo #divAnterior {
   position: relative;
   max-height: 70vh;
   width: 100%;
+  background-color: green;
 }
-.principal .visor .divCentral #siguiente {
+.principal .visor #activo #divAnterior #anterior {
+  height: 70vh;
+}
+.principal .visor #activo #divCentral {
   position: relative;
   max-height: 70vh;
+  width: 100%;
+  background-color: green;
+}
+.principal .visor #activo #divCentral #central {
+  height: 70vh;
+}
+.principal .visor #activo #divSiguiente {
+  position: relative;
+  max-height: 70vh;
+  width: 100%;
+  background-color: green;
+}
+.principal .visor #activo #divSiguiente #siguiente {
+  height: 70vh;
 }
 .principal .cajonMini {
   display: flex;

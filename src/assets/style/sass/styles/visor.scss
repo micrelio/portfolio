@@ -9,16 +9,30 @@
                .botonGalery {
             @include botonGalery;
         }
-        .divCentral {
-            #anterior {   
-                @include anterior
+        #activo {
+            @include activo;
+            #divAnterior {   
+                @include divAnterior;
+                #anterior {
+                   // width: 100%;
+                   height: 70vh;
+                }
             }
-            @include divCentral;
-            #muestra {
-                @include muestra;
+              #divCentral {
+                @include divCentral;
+                #central {
+                 //   width: 100%;
+                 height: 70vh;
+
+                }
             }
-             #siguiente {   
-                @include siguiente
+             #divSiguiente {   
+                @include divSiguiente;
+                #siguiente {
+                //    width:100%;
+                height: 70vh;
+
+                }
             }
 
         }
