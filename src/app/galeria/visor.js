@@ -10,22 +10,19 @@ class miVisor extends HTMLElement {
       </div>
      -->
      
+
+   <!--  <div id="animacion">
+     <img class="novisible" src="../../assets/images/logos/john.png" >
+     <img class="visible" src="../../assets/images/logos/igre.png" >
+   </div>
+-->
  <section  class="principal">
-
-
-
-
     <div  class="visor" >
         <button class="botonGalery" onclick="res()">-</button>
-        <div id="activo" class="divCentral" >
+          <div id="activo" class="divCentral" >
         </div>
         <button class="botonGalery" onclick="sum()">+</button>
     </div>
-
-
-  
-
-
 
     <div class="cajonMini">
     <div id="cajonIzquierda" class=""></div>
@@ -43,12 +40,11 @@ class miVisor extends HTMLElement {
 <button onclick="reset()">reset </button>
                 `;
     // esto arranca automatico 
-    console.log('holaaaa')
-  const mos = document.querySelector('#cajonDerecha');
-  cajonDerecha.getAttribute('class');   
-  // element.setAttribute('href', 'index.html');
-  
-  console.log('atributo',mos)
+    const mos = document.querySelector('#muestra');
+
+    // cajonDerecha.getAttribute('class');   
+    // element.setAttribute('href', 'index.html');
+    count = 0;
   }
 }
 customElements.define('mi-visor', miVisor);
@@ -85,13 +81,12 @@ function cambiar(id) {
 }
 function carga(e) {
   preVista = e;
-  console.log('pevista', preVista.length)
   switch (preVista) {
     case todos:
       //Enviamos un solo array
       //creamos vista como variable global
       vista = [].concat.apply([], preVista);
-      renderizar()
+      renderizar(vista)
       //   acaparados.forEach(elemente => renderizar(elemente));
       break;
     case logos:
@@ -101,71 +96,98 @@ function carga(e) {
     case pngs:
       // Opcion 2 creamos vista como variable global
       vista = preVista;
-      renderizar();
+      renderizar(vista);
       break;
     default:
       break;
   }
   //Idexamos indice
- 
 }
-function renderizar() {
+function renderizar(vista) {
   //Lempos el array
   total = vista.length;
-
   for (let index = 0; index < total; index++) {
     let indice = vista[index];
- 
+    let siguiente = vista[index + 1];
+let anterior;
+console.log(index);
+
+    switch (index) {
+      case 0:
+         anterior = vista[total - 1];
+
+        break;
+    
+      default:
+        anterior = vista[index - 1];
+
+        break;
+    }
+   // 
+  
+
+
+   // console.log(anterior);
     if (indice != vista) {
-      console.log('array', indice);
       //Reseteamos al llegar al ultimo dato del array
       activo = vista;
       count = index;
-      index = total ;
-      console.log('dentro')
+      index = total;
 
 
     }
 
     //Indice es el dato a renderizar
-    activar(indice);
+    activar(indice, anterior, siguiente);
     activarMiniLaterales()
   }
 
 }
-function activar(a) {
-
-
-
- 
-  
-
-
-
-
-
-
-
-
-
-
-
+function activar(a, b, c) {
   //primero ponemos el contador a cero para empezar por el primer puesto del array
-  count = 0;
   
+
   var path = "../../" + a;
+  var pathAnterior = "../../" + b;
+  var pathSiguiente = "../../" + c;
+
   //La img es igual a un elemento que creamos del tipo imagen
   var img = document.createElement('img');
+  var imgA = document.createElement('img');
+  var imgA2 = document.createElement('img');
+  var imgS = document.createElement('img');
   img.setAttribute("src", path);
   img.setAttribute("width", "");
   img.setAttribute("height", "");
   img.setAttribute("id", "muestra");
- // img.setAttribute("margin-left", "-2000");
 
-  img.setAttribute("class", "object  move-right");
+
+
+  imgS.setAttribute("src", pathSiguiente);
+  imgS.setAttribute("width", "");
+  imgS.setAttribute("height", "");
+  imgS.setAttribute("id", "siguiente");
+
+  imgA.setAttribute("src", pathAnterior);
+  imgA.setAttribute("width", "");
+  imgA.setAttribute("height", "");
+  imgA.setAttribute("id", "anterior");
+    
+
+  // img.setAttribute("margin-left", "-2000");
+
+  //img.setAttribute("class", "object  move-right");
 
   //En el elemento llamado activo renderizamos la imagen
+  
+
+      document.getElementById("activo").appendChild(imgA);
+      
+  
+
+  
   document.getElementById("activo").appendChild(img);
+  document.getElementById("activo").appendChild(imgS);
 
   var centralPath = "../../" + a;
   var img1 = document.createElement('img');
@@ -176,24 +198,65 @@ function activar(a) {
   document.getElementById("cajonCentral").appendChild(img1);
 }
 
+function sum() {
+  //console.log(i)
+  if (count >= total - 1) {
+    retorno = vista[0]
+    count = 0;
+    //cambio(retorno);
+
+  }
+  else {
+    count++;
+    nuevo = vista[count];
+  //  cambio(nuevo);
+  //  activarMiniLaterales();
+  }
+}
+
+function cambio(a, b, c) {
+  posicion = vista.indexOf(a);
+  console.log(posicion)
+  //console.log('imagen1', document.getElementById('muestra'))
+  var path = "../../" + a;
+  var img = document.createElement('img');
+  img.setAttribute("src", path);
+  img.setAttribute("width", "");
+  img.setAttribute("height", "");
+  img.setAttribute("id", "muestra");
+  //img.setAttribute("class", "object  move-right");
+  //img.setAttribute("rigth", "62000rem");
+  //img.setAttribute('class', 'object move-right');
+  // img.setAttribute("position", "absolute");
+
+  // img.setAttribute("margin-left", "-2000");
+  document.getElementById("activo").replaceChild(img, muestra);
+
+  var centralPath = "../../" + a;
+  var img1 = document.createElement('img');
+  img1.setAttribute("src", centralPath);
+  img1.setAttribute("width", "");
+  img1.setAttribute("height", "");
+  img1.setAttribute("id", "miniCentral");
+  document.getElementById("cajonCentral").replaceChild(img1, miniCentral);
+}
+
+
+
+
 function activarMiniLaterales() {
   //console.log('vista', vista)
   // posicion = a.indexOf('todos');
-  // console.log('posicion',posicion)
-  console.log('total', total)
+
   for (let index = 0; index < total; index++) {
-   
-    //     console.log()
     //     let indice = e[index];
     //     //  activarMini()
     //   }
     //   if () {
 
     //     var pos = e.indexOf('indice');
-    //     console.log('delante', pos);
     //   }
     //  if (indice<index) {
-    //     console.log('detraas');
     //    // var pos = frutas.indexOf('Banana');
     //   }
 
@@ -215,53 +278,12 @@ function activarMiniLaterales() {
   }
 }
 
-function sum() {
-  //console.log(i)
-  if (count >= total - 1) {
-    retorno = vista[0]
-    count = 0;
-    cambio(retorno);
-    
-  }
-  else {
-    count++;
-    nuevo = vista[count];
-    cambio(nuevo);
-    activarMiniLaterales();
-  }
-}
 
 
 
-function cambio(a) {
-  console.log(a)
-  posicion = vista.indexOf(a);
-  console.log('posicion',posicion)
-  //console.log('imagen1', document.getElementById('muestra'))
-  var path = "../../" + a;
-  var img = document.createElement('img');
-  img.setAttribute("src", path);
-  img.setAttribute("width", "");
-  img.setAttribute("height", "");
-  img.setAttribute("id", "muestra");
-  //img.setAttribute("class", "object  move-right");
- img.setAttribute("rigth", "62000rem");
- // img.setAttribute("position", "absolute");
 
- // img.setAttribute("margin-left", "-2000");
-  document.getElementById("activo").replaceChild(img, muestra);
-
-  var centralPath = "../../" + a;
-  var img1 = document.createElement('img');
-  img1.setAttribute("src", centralPath);
-  img1.setAttribute("width", "");
-  img1.setAttribute("height", "");
-  img1.setAttribute("id", "miniCentral");
-  document.getElementById("cajonCentral").replaceChild(img1, miniCentral);
-}
 
 function res() {
-  console.log('resta')
   if (count <= 0) {
     retorno = vista[total - 1]
     count = total - 1;
@@ -270,8 +292,6 @@ function res() {
   else {
     count--;
     nuevo = vista[count];
-    console.log(nuevo);
-
     cambio(nuevo);
   }
 }
@@ -282,7 +302,6 @@ function reset() {
   cambio(cero)
 }
 function stop() {
-  console.log('stop')
   clearInterval(r);
 }
 function intervalo() {

@@ -54,6 +54,9 @@ width: 100%;
        }
 
        @mixin divCentral {
+           display: flex;
+           
+
             max-width: 100%;
           width: 100%;
 // size: cover;
@@ -71,17 +74,29 @@ width: 100%;
     
        @mixin muestra {
          position: relative;
+        // z-index:-1;
+         // margin-left: 300px;
+        max-height: 70vh;
+       width:100%;
+       }
+       @mixin anterior{
+      // display: none;
+      position: relative;
+      // z-index:-1;
+       // margin-left: 300px;
+      max-height: 70vh;
+     // width:100%;
 
-
-
-
-         
-
-          // z-index:-1;
+       }
+       @mixin siguiente{
+      //   display: none;
+        position: relative;
+        // z-index:-1;
          // margin-left: 300px;
         max-height: 70vh;
        // width:100%;
-       }
+  
+         }
 
        @mixin cajonMini {
            display: flex;
