@@ -18,10 +18,10 @@ class miVisor extends HTMLElement {
 -->
  <section  class="principal" >
     <div  class="visor" >
-        <button class="botonGalery" onswiperight="sum()" onswipeleft="res()"  onclick="sum()">-</button>
+        <button class="botonGalery" >-</button>
         <div id="activo"  >
           <div id="divAnterior"></div>
-          <div id="divCentral" onclick='sum()' ></div>
+          <div id="divCentral" onswiperight="sum()" onswipeleft="res()"  onclick="sum()" ></div>
           <div id="divSiguiente"></div>
         </div>
         <button class="botonGalery" onclick="sum()">+</button>
@@ -82,6 +82,27 @@ function cambiar(id) {
       break;
   }
 }
+
+// function keyEvent(event){
+//   console.log(event.key);
+//   switch (event.key) {
+//     //case  ' ':
+//      case 'ArrowLeft':
+//       res();
+//       break;
+//       // case  'ArrowLeft':
+//       //   res();
+//       //   break;
+//       case  ' ':
+//         case 'ArrowRight':
+//          sum();
+//          break;
+//     default:
+//      // sum();
+//       break;
+//   }
+// }
+
 function carga(e) {
   preVista = e;
   switch (preVista) {
@@ -199,25 +220,7 @@ console.log('img', imgS)
   document.getElementById("cajonCentral").appendChild(img1);
 }
 
-function keyEvent(event){
-  console.log(event.key);
-  switch (event.key) {
-    //case  ' ':
-     case 'ArrowLeft':
-      res();
-      break;
-      // case  'ArrowLeft':
-      //   res();
-      //   break;
-      case  ' ':
-        case 'ArrowRight':
-         sum();
-         break;
-    default:
-     // sum();
-      break;
-  }
-}
+
 
 function res() {
   var central;
