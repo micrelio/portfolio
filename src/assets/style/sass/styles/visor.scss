@@ -7,9 +7,9 @@
        .visor {
         @include visor;
             
-        #activo {
+        .activo {
             @include activo;
-            #imagen{
+            .imagen{
                 @include imagen
             }
     }

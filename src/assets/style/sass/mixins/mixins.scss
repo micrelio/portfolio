@@ -14,30 +14,31 @@
 
        @mixin principal {
            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-             height: 85vh;
-          background: {
-               color: $bg-color;
-               color:yellow;
-           }
-                }
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
 
-//       @mixin visor {
-//            display: flex;
-//            flex-direction: row;
-//            flex-wrap: nowrap;
-//            align-items: center;
-//          justify-content: center;
-//           height: 90%;
-//         //  overflow: hidden;
-// width: 100%;
-//           background: {
-//               color: red;
-//           }
-//       }
+           //   height: 85vh;
+           background: {
+               color: $bg-color;
+               color: yellow;
+           }
+       }
+
+       //       @mixin visor {
+       //            display: flex;
+       //            flex-direction: row;
+       //            flex-wrap: nowrap;
+       //            align-items: center;
+       //          justify-content: center;
+       //           height: 90%;
+       //         //  overflow: hidden;
+       // width: 100%;
+       //           background: {
+       //               color: red;
+       //           }
+       //       }
 
        @mixin botonGalery {
            width: 100%;
@@ -48,71 +49,70 @@
                size: cover;
            }
        }
+
        @mixin visor {
-       // overflow:hidden;
-              display: flex;
+           // overflow:hidden;
+           display: flex;
            flex-direction: row;
            flex-wrap: nowrap;
-           justify-content:center;
-         //  align-items: flex-start;
+           justify-content: center;
+           //  align-items: flex-start;
 
            align-items: center;
-        //    max-width: 100%;
-            width: 300vw;
-           height: 90%;
-// size: cover;
+           //    max-width: 100%;
+           width: 300vw;
+           // height: 90vw;
+           // size: cover;
            // margin: 0.8rem;
-          
-
+           border: $marcoFoto;
+           box-shadow: $sombreadoTotal;
            background: {
                color: lightblue;
            }
        }
 
-     
-         @mixin activo {
-   // position: absolute;
-    //display:block;
-        display: flex;
-        flex-direction: row;
-       // flex-grow: 100vw;
-        justify-content: center;
-        align-items: center;
-   overflow: hidden;
-        // z-index:-1;
-         // margin-left: 300px;
-        height: 60vh;
-       // max-height: 70vh;
-      // min-width:100vw;
-   //   width:100vw;
-   border: $marcoFoto;
-   box-shadow: $sombreadoTotal;
-  width: 100vw;
-        background: {
-                color:green;
-       }
-       };
-      
-       @mixin imagen{
-      //  display: flex;
-      //  flex-direction: row;
-       // flex-grow: 100vw;
-     //  justify-content: center;
-    //   align-items: center;
-      //  display: none;
-    //  position: absolute;
-        // z-index:-1;
-         // margin-left: 1000vw;
-        height: 80vh;
-       // width: 100%;
 
-    //   width:100vw;
-       background: {
-        color:yellow;
+       @mixin activo {
+           // position: absolute;
+           //display:block;
+           display: flex;
+           flex-direction: row;
+           // flex-grow: 100vw;
+           justify-content: center;
+           align-items: center;
+           overflow: hidden;
+           height: 80vh;
+           
+           width: 100vw;
+          //width: 30vw;
+
+           background: {
+               color: green;
+           }
+       }
+
+       ;
+
+       @mixin imagen {
+           //  display: flex;
+           //  flex-direction: row;
+           // flex-grow: 100vw;
+           //  justify-content: center;
+           //   align-items: center;
+           //  display: none;
+           //  position: absolute;
+           // z-index:-1;
+           // margin-left: 1000vw;
+           height: 100%;
+           // width: 100%;
+
+           //   width:100vw;
+           background: {
+               color: yellow;
+
+           }
 
        }
-  
-         }
 
        @mixin cajonMini {
            display: flex;
@@ -124,7 +124,7 @@
 
            background: {
                color: purple;
-               
+
            }
        }
 
