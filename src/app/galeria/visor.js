@@ -135,11 +135,11 @@ function renderizar(vista) {
    for (let index = 0; index < total; index++) {
      indice = vista[index];
      siguiente = vista[index + 1];
-    siguiente2 = vista[index + 2];
 
 
     div = document.createElement('div');
-  
+    
+    div.setAttribute("name", "");
     div.setAttribute("width", "");
     div.setAttribute("height", "");
     div.setAttribute("id", "activo");
