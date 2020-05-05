@@ -3,75 +3,103 @@
 
 .principal {
     @include principal;
-  
-    .visor {
-        @include visor;
-               .botonGalery {
-            @include botonGalery;
-        }
-        #activo {
-            @include activo;
-            #divAnterior {   
-                @include divAnterior;
-                #anterior {
-                   // width: 100%;
-                   height: 70vh;
-                }
-            }
-              #divCentral {
-                @include divCentral;
-                #central {
-                 //   width: 100%;
-                 height: 70vh;
 
-                }
+    //    .visor {
+    //        @include visor;
+    .botonGalery {
+        @include botonGalery;
+    }
+
+    #activo {
+        @include activo;
+
+        #divAnterior {
+            @include divAnterior;
+
+            #anterior {
+                // width: 100%;
+                height: 70vh;
+                //width: 100%;
+
             }
-             #divSiguiente {   
-                @include divSiguiente;
-                #siguiente {
+        }
+
+        #divCentral {
+            @include divCentral;
+
+            #central {
+                //   width: 100%;
+                height: 70vh;
+                //width: 100%;
+
+            }
+        }
+
+        #divSiguiente {
+            @include divSiguiente;
+
+            #siguiente {
+                //    width:100%;
+                height: 70vh;
+                //width: 100%;
+
+            }
+        }
+
+        #divSiguiente2 {
+            @include divSiguiente;
+
+            //  display: none;
+            #siguiente2 {
                 //    width:100%;
                 height: 70vh;
 
-                }
             }
-
         }
-        
+
+        //     }
+
     }
-   
+
 
     .cajonMini {
         @include cajonMini;
 
         #cajonCentral {
             @include cajonCentral;
-#miniCentral{
-    @include miniCentral;
+
+            #miniCentral {
+                @include miniCentral;
+
                 &:hover {
-                @include mediaImagen;
+                    @include mediaImagen;
+                }
             }
-        }
         }
 
         #cajonDerecha {
             @include cajonDerecha;
-            #miniDerecha{
+
+            #miniDerecha {
                 @include miniDerecha;
-            &:hover {
-                @include mediaImagen;
+
+                &:hover {
+                    @include mediaImagen;
+                }
             }
-        }
         }
 
         #cajonIzquierda {
             @include cajonIzquierda;
-            #miniIzquierda{
+
+            #miniIzquierda {
                 @include miniIzquierda;
-            &:hover {
-                @include mediaImagen;
+
+                &:hover {
+                    @include mediaImagen;
+                }
             }
         }
-    }
     }
 }
 
@@ -85,24 +113,13 @@
 //       top: 45%;
 //       left: 44%;
 //   }
-//   .move-right  {
-//     transform: translate(35rem,0);
-//     -webkit-transform: translate(-63rem,0); /** Chrome & Safari **/
-//     -webkit-transform: translate(-62.51rem,0);
 
 
 
-//     -o-transform: translate(35rem,0); /** Opera **/
-//     -moz-transform: translate(35rem,0); /** Firefox **/
-// }
-// .object {
-//    // position: absolute;
-//     transition: all 10s ease-in-out;
-//     -webkit-transition: all 10s ease-in-out; /** Chrome & Safari **/
 
-//     -moz-transition: all 10s ease-in-out; /** Firefox **/
-//     -o-transition: all 10s ease-in-out; /** Opera **/
-// }
+
+
+
 
 
 
@@ -112,7 +129,7 @@
 // .novisible, .visible{
 //    //height: 30rem;
 // 	width: 30rem;
- 
+
 // }
 
 
@@ -120,27 +137,26 @@
 // 	margin:0 auto;
 // 	height: 3rem;
 // 	width: 3rem;}
- 
+
 // #animacion img{ position:absolute;
 // 	top: 0;
 // 	-moz-transition: all 1s ease-in-out;
 // 	-webkit-transition: all 1s ease-in-out;
 // 	-o-transition: all 1s ease-in-out;
 // 	transition: all 1s ease-in-out;}
- 
+
 // #animacion img.novisible{
 // 	opacity:0;
 // 	filter:alpha(opacity=0);}
- 
+
 // #animacion:hover img.novisible{
 // 	opacity:1;
 // 	filter:alpha(opacity=100);}
- 
+
 // #animacion:hover img.visible {
 // 	opacity:0;
 // 	filter:alpha(opacity=0);}
- 
+
 // #animacion img.visible:hover {
 // 	opacity:0;
 // 	filter:alpha(opacity=0);}
-

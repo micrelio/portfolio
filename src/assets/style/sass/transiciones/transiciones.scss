@@ -1,6 +1,48 @@
 @import "../mixins/mixins.scss";
 @import "../variables/variables.scss";
 
+.move-right  {
+    transform: translate(-100vw,0);
+    //-webkit-transform: translate(-63rem,0); /** Chrome & Safari **/
+    //-webkit-transform: translate(-62.51rem,0);
+
+
+
+   // -o-transform: translate(35rem,0); /** Opera **/
+  //  -moz-transform: translate(35rem,0); /** Firefox **/
+}
+.object {
+   // position: absolute;
+    transition: all 3s ease-in-out;
+    -webkit-transition: all 3s ease-in-out; /** Chrome & Safari **/
+
+    -moz-transition: all 3s ease-in-out; /** Firefox **/
+    -o-transition: all 3s ease-in-out; /** Opera **/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//----------------------------------------------------
 .novisible, .visible{
    //height: 30rem;
 	width: 30rem;
