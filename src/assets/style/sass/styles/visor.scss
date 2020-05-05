@@ -4,62 +4,17 @@
 .principal {
     @include principal;
 
-    //    .visor {
-    //        @include visor;
-    .botonGalery {
-        @include botonGalery;
+       .visor {
+        @include visor;
+            
+        .activo {
+            @include activo;
+            #imagen{
+                @include imagen
+            }
     }
 
-    #activo {
-        @include activo;
-
-        #divAnterior {
-            @include divAnterior;
-
-            #anterior {
-                // width: 100%;
-                height: 70vh;
-                //width: 100%;
-
-            }
-        }
-
-        #divCentral {
-            @include divCentral;
-
-            #central {
-                //   width: 100%;
-                height: 70vh;
-                //width: 100%;
-
-            }
-        }
-
-        #divSiguiente {
-            @include divSiguiente;
-
-            #siguiente {
-                //    width:100%;
-                height: 70vh;
-                //width: 100%;
-
-            }
-        }
-
-        #divSiguiente2 {
-            @include divSiguiente;
-
-            //  display: none;
-            #siguiente2 {
-                //    width:100%;
-                height: 70vh;
-
-            }
-        }
-
-        //     }
-
-    }
+       }
 
 
     .cajonMini {

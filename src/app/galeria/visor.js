@@ -17,28 +17,18 @@ class miVisor extends HTMLElement {
    </div>
 -->
  <section  class="principal" >
-    <div  id="activo" >
-    <!--    <button class="botonGalery" onclick="res()">-</button>
-    -->
-   <!--     <div id="activo" onclick="sum()" >
-   -->
-        <!-- onswiperight="sum()"-->
-          <div id="divCentral" onswipeleft="res()" ontouchstart="sum()" onclick="sum()" >
-          
-          </div>
+    <div  class="visor" id="visor" onswiperight="sum()" onswipeleft="res()" ontouchstart="sum()" onclick="sum()">
+  
+        <!-- -->
          
-      <!--  </div>
-      -->
-        <!--    <button class="botonGalery" onclick="sum()">+</button>
-        -->
+         
+    
     </div>
 
     <div class="cajonMini">
-    <div id="cajonIzquierda2" class=""></div>
     <div id="cajonIzquierda" class=""></div>
     <div id="cajonCentral" class=""></div>
      <div id="cajonDerecha" class="point"></div>
-     <div id="cajonDerecha2" class="point"></div>
  
         
     </div>
@@ -51,7 +41,12 @@ class miVisor extends HTMLElement {
 <button onclick="reset()">reset </button>
                 `;
     // esto arranca automatico 
-    const mos = document.querySelector('#central');
+
+    
+
+
+
+    const mos = document.querySelector('#imagen');
 
     // cajonDerecha.getAttribute('class');   
     // element.setAttribute('href', 'index.html');
@@ -155,8 +150,6 @@ function renderizar(vista) {
         anterior2 = vista[index - 2];
         break;
     }
-    // 
-    // console.log(anterior);
     if (indice != vista) {
       //Reseteamos al llegar al ultimo dato del array
       activo = vista;
@@ -165,66 +158,68 @@ function renderizar(vista) {
     }
     //Indice es el dato a renderizar
     console.log('siguiente', siguiente)
-    activar(indice, anterior, anterior2, siguiente, siguiente2);
+    activar(indice, anterior, siguiente);
     activarMiniLaterales()
   }
 }
-function activar(a, b, b2, c, c2) {
+function activar(a, b,  c, ) {
   console.log('b2')
   //primero ponemos el contador a cero para empezar por el primer puesto del array
   var path = "../../" + a;
   var pathAnterior = "../../" + b;
   var pathSiguiente = "../../" + c;
-  var pathAnterior2 = "../../" + b2;
-  var pathSiguiente2 = "../../" + c2;
+ 
   //La img es igual a un elemento que creamos del tipo imagen
   img = document.createElement('img');
   imgA = document.createElement('img');
   imgS = document.createElement('img');
-  imgA2 = document.createElement('img');
-  imgS2 = document.createElement('img');
   
+ 
+
+  div1 = document.createElement('div');
+  
+    div1.setAttribute("width", "");
+    div1.setAttribute("height", "");
+    div1.setAttribute("id", "activo");
+    div1.setAttribute("class", "activo");
+
+
+//-----------------------------------------------
   img.setAttribute("src", path);
   img.setAttribute("width", "");
   img.setAttribute("height", "");
-  img.setAttribute("id", "central");
+  img.setAttribute("id", "imagen");
   //img.setAttribute("class", "object  move-right");
   imgS.setAttribute("src", pathSiguiente);
   imgS.setAttribute("width", "");
   imgS.setAttribute("height", "");
-  imgS.setAttribute("id", "central");
-//--------------------------------------------
-  imgS2.setAttribute("src", pathSiguiente2);
-  imgS2.setAttribute("width", "");
-  imgS2.setAttribute("height", "");
-  imgS2.setAttribute("id", "siguiente2");
+  imgS.setAttribute("id", "imagen");
  //---------------------------------------------- 
   imgA.setAttribute("src", pathAnterior);
   imgA.setAttribute("width", "");
   imgA.setAttribute("height", "");
-  imgA.setAttribute("id", "central");
+  imgA.setAttribute("id", "imagen");
   //------------------------------------------------
-  imgA2.setAttribute("src", pathAnterior2);
-  imgA2.setAttribute("width", "");
-  imgA2.setAttribute("height", "");
-  imgA2.setAttribute("id", "anterior2");
+
 
   // img.setAttribute("margin-left", "-2000");
   //img.setAttribute("class", "object  move-right");
   //En el elemento llamado activo renderizamos la imagen
   console.log('img', imgS)
-  document.getElementById("divCentral").appendChild(imgA);
-  document.getElementById("divCentral").appendChild(img);
-  document.getElementById("divCentral").appendChild(imgS);
-  // document.getElementById("divSiguiente2").appendChild(imgS2);
+  document.getElementById("visor").appendChild(div1);
+ document.getElementById("activo").appendChild(imgA);
+  document.getElementById("visor").appendChild(div1);
+  document.getElementById("activo").appendChild(img);
+  document.getElementById("visor").appendChild(div1);
+  document.getElementById("activo").appendChild(imgS);
 
-  var centralPath = "../../" + a;
+  var imagenPath = "../../" + a;
   var img1 = document.createElement('img');
-  img1.setAttribute("src", centralPath);
+  img1.setAttribute("src", imagenPath);
   img1.setAttribute("width", "");
   img1.setAttribute("height", "");
-  img1.setAttribute("id", "miniCentral");
-  document.getElementById("cajonCentral").appendChild(img1);
+  img1.setAttribute("id", "miniImagen");
+ // document.getElementById("cajonImagen").appendChild(img1);
 }
 function sum() {
   //console.log(i)
@@ -247,7 +242,7 @@ function sum() {
 
     //setTimeout(document.getElementById("divSiguiente2").appendChild(imgS2), 3000000)
    // divAnterior.removeChild(imgA);
-   divCentral.setAttribute("class", "object  move-right");
+   div1.setAttribute("class", "object  move-right");
 
    //divSiguiente.setAttribute("class", "object  move-right");
 
@@ -258,8 +253,8 @@ console.log(imgA)
     setTimeout(retraso, 3000);
     function retraso(){  
     console.log('retraso')
-    var t = document.getElementById("divAnterior");
-     t.removeChild(imgA);
+  //  var t = document.getElementById("divAnterior");
+   //  t.removeChild(imgA);
     //  divCentral.setAttribute("id", "");
 
     //  divSiguiente.setAttribute("id", "");

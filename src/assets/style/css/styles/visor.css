@@ -1,79 +1,39 @@
 /* hovers*/
 .principal {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
   height: 85vh;
   background-color: #df0174;
   background-color: yellow;
 }
-.principal .botonGalery {
-  width: 100%;
-  height: 100%;
-  background-color: purple;
-  background-size: cover;
-}
-.principal #activo {
-  overflow: hidden;
+.principal .visor {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  width: 300%;
+  width: 300vw;
   height: 90%;
-  border: 0.8rem solid #eeeeee;
-  box-shadow: #555 1px 1px 8px 1px;
   background-color: lightblue;
 }
-.principal #activo #divAnterior {
+.principal .visor .activo {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 80vh;
-  width: 100%;
-  background-color: red;
-}
-.principal #activo #divAnterior #anterior {
-  height: 70vh;
-}
-.principal #activo #divCentral {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
-  width: 100%;
+  overflow: hidden;
+  height: 60vh;
   border: 0.8rem solid #eeeeee;
   box-shadow: #555 1px 1px 8px 1px;
+  width: 100vw;
   background-color: green;
-  background-size: cover;
 }
-.principal #activo #divCentral #central {
-  height: 70vh;
-}
-.principal #activo #divSiguiente {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.principal .visor .activo #imagen {
   height: 80vh;
-  width: 100%;
   background-color: yellow;
-}
-.principal #activo #divSiguiente #siguiente {
-  height: 70vh;
-}
-.principal #activo #divSiguiente2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
-  width: 100%;
-  background-color: yellow;
-}
-.principal #activo #divSiguiente2 #siguiente2 {
-  height: 70vh;
 }
 .principal .cajonMini {
   display: flex;
