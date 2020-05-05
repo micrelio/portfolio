@@ -19,7 +19,7 @@
   height: 90%;
   background-color: lightblue;
 }
-.principal .visor .activo {
+.principal .visor #activo {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -31,7 +31,7 @@
   width: 100vw;
   background-color: green;
 }
-.principal .visor .activo #imagen {
+.principal .visor #activo #imagen {
   height: 80vh;
   background-color: yellow;
 }
