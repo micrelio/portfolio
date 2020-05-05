@@ -136,6 +136,17 @@ function renderizar(vista) {
      indice = vista[index];
      siguiente = vista[index + 1];
     siguiente2 = vista[index + 2];
+
+
+    div = document.createElement('div');
+  
+    div.setAttribute("width", "");
+    div.setAttribute("height", "");
+    div.setAttribute("id", "activo");
+    div.setAttribute("class", "activo");
+
+
+
     console.log('siguiente2',siguiente )
     // anterior = vista[total - 1];
     //    anterior2 = vista[total - 2];
@@ -176,12 +187,7 @@ function activar(a, b,  c, ) {
   
  
 
-  div1 = document.createElement('div');
-  
-    div1.setAttribute("width", "");
-    div1.setAttribute("height", "");
-    div1.setAttribute("id", "activo");
-    div1.setAttribute("class", "activo");
+
 
 
 //-----------------------------------------------
@@ -206,11 +212,11 @@ function activar(a, b,  c, ) {
   //img.setAttribute("class", "object  move-right");
   //En el elemento llamado activo renderizamos la imagen
   console.log('img', imgS)
-  document.getElementById("visor").appendChild(div1);
+  document.getElementById("visor").appendChild(div);
  document.getElementById("activo").appendChild(imgA);
-  document.getElementById("visor").appendChild(div1);
+  document.getElementById("visor").appendChild(div);
   document.getElementById("activo").appendChild(img);
-  document.getElementById("visor").appendChild(div1);
+  document.getElementById("visor").appendChild(div);
   document.getElementById("activo").appendChild(imgS);
 
   var imagenPath = "../../" + a;
@@ -242,7 +248,7 @@ function sum() {
 
     //setTimeout(document.getElementById("divSiguiente2").appendChild(imgS2), 3000000)
    // divAnterior.removeChild(imgA);
-   div1.setAttribute("class", "object  move-right");
+   div.setAttribute("class", "object  move-right");
 
    //divSiguiente.setAttribute("class", "object  move-right");
 
