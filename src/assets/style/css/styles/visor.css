@@ -13,6 +13,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
+  overflow: hidden;
   align-items: center;
   width: 300vw;
   border: 0.8rem solid #eeeeee;
@@ -24,14 +25,13 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
   height: 80vh;
-  width: 100vw;
+  min-width: 100vw;
   background-color: green;
 }
 .principal .visor .activo .imagen {
   height: 100%;
-  background-color: yellow;
+  background-color: pink;
 }
 .principal .cajonMini {
   display: flex;

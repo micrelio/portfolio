@@ -57,6 +57,7 @@
            flex-wrap: nowrap;
            justify-content: center;
            //  align-items: flex-start;
+           overflow: hidden;
 
            align-items: center;
            //    max-width: 100%;
@@ -73,17 +74,17 @@
 
 
        @mixin activo {
-           // position: absolute;
+            //position: absolute;
            //display:block;
+          // display: block;
            display: flex;
            flex-direction: row;
            // flex-grow: 100vw;
            justify-content: center;
            align-items: center;
-           overflow: hidden;
            height: 80vh;
            
-           width: 100vw;
+          min-width: 100vw;
           //width: 30vw;
 
            background: {
@@ -108,7 +109,7 @@
 
            //   width:100vw;
            background: {
-               color: yellow;
+               color: pink;
 
            }
 

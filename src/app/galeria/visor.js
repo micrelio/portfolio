@@ -42,7 +42,7 @@ class miVisor extends HTMLElement {
                 `;
     // esto arranca automatico 
 
-
+   // count = 0;
 
 
 
@@ -129,7 +129,7 @@ function carga(e) {
   //Idexamos indice
 }
 function renderizar(vista) {
-  count = 0;
+ 
   total = vista.length;
   //----Leemos el array
   for (let index = 0; index < total; index++) {
@@ -173,8 +173,9 @@ function activar(a, b, c, ) {
   var pathAnterior = "../../" + b;
   var pathSiguiente = "../../" + c;
 
+//console.log('imagen', imagen)
   //La img es igual a un elemento que creamos del tipo imagen
-   img = document.createElement('img');
+   var img = document.createElement('img');
    imgA = document.createElement('img');
    imgS = document.createElement('img');
 
@@ -223,13 +224,13 @@ function activar(a, b, c, ) {
   //img.setAttribute("class", "object  move-right");
   //En el elemento llamado activo renderizamos la imagen
   console.log('img', imgS)
-  document.getElementById("visor").appendChild(divA);
-  document.getElementById("imgA").appendChild(imgA);
+ // document.getElementById("visor").appendChild(divA);
+//  document.getElementById("imgA").appendChild(imgA);
   document.getElementById("visor").appendChild(div);
   document.getElementById("img").appendChild(img);
   
-  document.getElementById("visor").appendChild(divS);
-  document.getElementById("imgS").appendChild(imgS);
+//  document.getElementById("visor").appendChild(divS);
+//  document.getElementById("imgS").appendChild(imgS);
 
   var imagenPath = "../../" + a;
   var img1 = document.createElement('img');
@@ -240,10 +241,9 @@ function activar(a, b, c, ) {
   // document.getElementById("cajonImagen").appendChild(img1);
 }
 function sum() {
-  //console.log(i)
+  console.log('lllllllll')
   var central;
-  var anterior;
-  var siguiente;
+ 
   if (count >= total - 1) {
     central = vista[0]
     count = 0;
@@ -253,20 +253,38 @@ function sum() {
     count++;
   //  central = vista[count];
  //   anterior = vista[count - 1];
-  siguiente = vista[count + 1];
-    // var techo = document.getElementById("divCentral");
-    //  techo.removeChild(img);
+//  var proximo = vista[count + 1];
+//  console.log('proximo', proximo)
+//     // var techo = document.getElementById("divCentral");
+//     //  techo.removeChild(img);
   
-    //setTimeout(document.getElementById("divSiguiente2").appendChild(imgS2), 3000000)
-    // divAnterior.removeChild(imgA);
-    divA.setAttribute("class", "activo object  move-right");
-    
-    div.setAttribute("class", "activo object  move-right");
-    divS.setAttribute("class", "activo object  move-right");
+//     //setTimeout(document.getElementById("divSiguiente2").appendChild(imgS2), 3000000)
+//     // divAnterior.removeChild(imgA);
+   
+//     var path = "../../" + proximo;
+// var img = document.createElement('img');
+// var div = document.createElement('div');
+// img.setAttribute("src", path);
+//   img.setAttribute("width", "");
+//   img.setAttribute("height", "");
+//   img.setAttribute("id", "imagen");
+//   img.setAttribute("class", "imagen");
+//   img.setAttribute("width", "100vw");
+
+//   div.setAttribute("id", "img");
+//   div.setAttribute("width", "100vw");
+
+//   div.setAttribute("class", "activo")
+//  document.getElementById("visor").appendChild(div);
+//  document.getElementById("img").appendChild(img);
+//  console.log('img', img)
+
+ div.setAttribute("class", "activo object  move-right");
+ 
 
     
 
-    console.log(imgA)
+    //console.log(imgA)
  //   setTimeout(retraso, 3000);
     function retraso() {
       console.log('retraso')
@@ -275,26 +293,26 @@ function sum() {
       //  divCentral.setAttribute("id", "");
 
       //  divSiguiente.setAttribute("id", "");
-      var  imgX = document.createElement('img');
+//       var  imgX = document.createElement('img');
 
-      var divX = document.createElement('div');
+//       var divX = document.createElement('div');
   
-       var path = "../../" + siguiente;
-console.log('sigiente2', path)
-imgX.setAttribute("src", path);
-imgX.setAttribute("width", "");
-imgX.setAttribute("height", "");
-imgX.setAttribute("id", "imagen");
-imgX.setAttribute("class", "imagen");
+//        var path = "../../" + siguiente;
+// console.log('sigiente2', path)
+// imgX.setAttribute("src", path);
+// imgX.setAttribute("width", "");
+// imgX.setAttribute("height", "");
+// imgX.setAttribute("id", "imagen");
+// imgX.setAttribute("class", "imagen");
 
-divX.setAttribute("id", "imgX");
-divX.setAttribute("class", "activo ");
+// divX.setAttribute("id", "imgX");
+// divX.setAttribute("class", "activo ");
 
-divX.setAttribute("class", "activo object  move-right");
+// divX.setAttribute("class", "activo object  move-right");
 
 
-       document.getElementById("visor").appendChild(divX);
-       document.getElementById("imgX").appendChild(imgx);
+//        document.getElementById("visor").appendChild(divX);
+//        document.getElementById("imgX").appendChild(imgx);
 
       // img.setAttribute("class", " ");
 
