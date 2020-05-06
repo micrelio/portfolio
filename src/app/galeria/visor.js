@@ -6,7 +6,7 @@ class miVisor extends HTMLElement {
     this.innerHTML =
       `
    <!--   <div id="axis" class="one">
-      <img class="object van move-right" src="../../assets/images/logos/john.png"/>
+      <img class="object van move-left" src="../../assets/images/logos/john.png"/>
       </div>
      -->
 
@@ -150,8 +150,6 @@ function renderizar(vista) {
   activar();
   //  activarMiniLaterales()
 }
-
-
 function activar() {
   console.log('count', count)
   // siguiente = vista[index + 1];
@@ -171,9 +169,6 @@ function activar() {
   console.log(img)
   document.getElementById('activo').appendChild(img);
 }
-
-
-
 function sum() {
   if(count>=total-1){
 count=0;
@@ -191,14 +186,14 @@ count=0;
     document.getElementById('activoS').appendChild(imgS);
 
 
-    img.setAttribute("class", "imagen object  move-right");
+    img.setAttribute("class", "imagen object  move-left");
     setTimeout(function t() {
       //borramos la imagen para crear una en div central y luego mover desde allí
      var techo = document.getElementById("activo");
       techo.removeChild(img); img = null;
     }, 500);
     
-    setTimeout(function cx() { imgS.setAttribute("class", "imagen object  move-right"); }, 0);
+    setTimeout(function cx() { imgS.setAttribute("class", "imagen object  move-left"); }, 0);
     setTimeout(function cxv() { 
       console.log('chachacha', activo);
 
@@ -225,13 +220,13 @@ count=0;
     img.setAttribute("id", "imagen");
     img.setAttribute("class", "imagen");
     document.getElementById('activoS').appendChild(img);
-        imgS.setAttribute("class", "imagen object  move-right");
+        imgS.setAttribute("class", "imagen object  move-left");
     setTimeout(function t() {
          var techo = document.getElementById("activo");
       techo.removeChild(imgS); imgS = null;
     }, 500);
  
-    setTimeout(function cx() { img.setAttribute("class", "imagen object  move-right"); }, 0);
+    setTimeout(function cx() { img.setAttribute("class", "imagen object  move-left"); }, 0);
      setTimeout(function cxv() { 
     var techo = document.getElementById("activoS");
        techo.removeChild(img);
@@ -242,22 +237,102 @@ count=0;
       img.setAttribute("height", "");
       img.setAttribute("id", "imagen");
     img.setAttribute("class", "imagen");
-            
-
-      document.getElementById('activo').appendChild(img);
+       document.getElementById('activo').appendChild(img);
      }, 500);
-    
-
-
-
-
-
-    
-
-
-  }
-
+    }
 }
+function res() {
+  
+  if(count<=0){
+    count=total;
+      }
+    
+      if (img != null) {
+        count--;
+        imgS = document.createElement('img');
+        var path = "../../" + vista[count];
+        imgS.setAttribute("src", path);
+        imgS.setAttribute("width", "");
+        imgS.setAttribute("height", "");
+        imgS.setAttribute("id", "imagen");
+        imgS.setAttribute("class", "imagen");
+        document.getElementById('activoA').appendChild(imgS);
+    
+    
+        img.setAttribute("class", "imagen object  move-rigth");
+        setTimeout(function t() {
+          //borramos la imagen para crear una en div central y luego mover desde allí
+         var techo = document.getElementById("activo");
+          techo.removeChild(img); img = null;
+        }, 500);
+        
+        setTimeout(function cx() { imgS.setAttribute("class", "imagen object  move-rigth"); }, 0);
+        setTimeout(function cxv() { 
+          console.log('chachacha', activo);
+    
+           var techo = document.getElementById("activoA");
+          techo.removeChild(imgS);
+          imgS.removeAttribute("class");
+          imgS.setAttribute("src", path);
+          imgS.setAttribute("width", "");
+          imgS.setAttribute("height", "");
+          imgS.setAttribute("id", "imagen");
+          imgS.setAttribute("class", "imagen");
+                document.getElementById('activo').appendChild(imgS);
+         }, 500);
+         }
+       
+      else if (imgS != null) {
+    
+        count--;
+        img = document.createElement('img');
+       var path = "../../" + vista[count];
+        img.setAttribute("src", path);
+        img.setAttribute("width", "");
+        img.setAttribute("height", "");
+        img.setAttribute("id", "imagen");
+        img.setAttribute("class", "imagen");
+        document.getElementById('activoA').appendChild(img);
+            imgS.setAttribute("class", "imagen object  move-rigth");
+        setTimeout(function t() {
+             var techo = document.getElementById("activo");
+          techo.removeChild(imgS); imgS = null;
+        }, 500);
+     
+        setTimeout(function cx() { img.setAttribute("class", "imagen object  move-rigth"); }, 0);
+         setTimeout(function cxv() { 
+        var techo = document.getElementById("activoA");
+           techo.removeChild(img);
+           img.removeAttribute("class");
+    
+          img.setAttribute("src", path);
+          img.setAttribute("width", "");
+          img.setAttribute("height", "");
+          img.setAttribute("id", "imagen");
+        img.setAttribute("class", "imagen");
+           document.getElementById('activo').appendChild(img);
+         }, 500);
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function activ(a) {
   //primero ponemos el contador a cero para empezar por el primer puesto del array
@@ -344,21 +419,21 @@ function retraso() {
 //  activarMiniLaterales();
 
 
-function res() {
-  var central;
-  var anterior;
-  var siguiente;
-  if (count <= 0) {
-    central = vista[total - 1]
-    count = total - 1;
-    cambio(central);
-  }
-  else {
-    count--;
-    central = vista[count];
-    cambio(central);
-  }
-}
+// function res() {
+//   var central;
+//   var anterior;
+//   var siguiente;
+//   if (count <= 0) {
+//     central = vista[total - 1]
+//     count = total - 1;
+//     cambio(central);
+//   }
+//   else {
+//     count--;
+//     central = vista[count];
+//     cambio(central);
+//   }
+// }
 
 function cambi(a, b, c) {
   posicion = vista.indexOf(a);
