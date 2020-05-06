@@ -10,7 +10,7 @@
   background-color: yellow;
 }
 .principal .visor {
-  overflow: hidden;
+  overflow: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -20,7 +20,6 @@
   background-color: lightblue;
 }
 .principal .visor .activoA {
-  overflow: hidden;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -34,7 +33,6 @@
   background-color: pink;
 }
 .principal .visor .activo {
-  overflow: hidden;
   display: flex;
   flex-direction: row;
   justify-content: center;

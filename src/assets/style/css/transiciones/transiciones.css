@@ -10,28 +10,12 @@
 }
 
 .object {
-  transition: all 1s ease-in-out;
-  -webkit-transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
   /** Chrome & Safari **/
-  -moz-transition: all 1s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
   /** Firefox **/
-  -o-transition: all 1s ease-in-out;
-  /** Opera **/
-}
-
-.move-right2 {
-  transform: translate(-300vw, 0);
-  -webkit-transform: translate(-300vw, 0);
-  /** Chrome & Safari **/
-}
-
-.object2 {
-  transition: all 3s ease-in-out;
-  -webkit-transition: all 3s ease-in-out;
-  /** Chrome & Safari **/
-  -moz-transition: all 3s ease-in-out;
-  /** Firefox **/
-  -o-transition: all 3s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   /** Opera **/
 }
 

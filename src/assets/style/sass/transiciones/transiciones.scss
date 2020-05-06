@@ -1,7 +1,7 @@
 @import "../mixins/mixins.scss";
 @import "../variables/variables.scss";
 
-
+//-----transiciones galeria
 
 .object {
    // position: absolute;
@@ -21,29 +21,12 @@
 }
 .object {
    // position: absolute;
-    transition: all 1s ease-in-out;
-    -webkit-transition: all 1s ease-in-out; /** Chrome & Safari **/
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out; /** Chrome & Safari **/
 
-    -moz-transition: all 1s ease-in-out; /** Firefox **/
-    -o-transition: all 1s ease-in-out; /** Opera **/
+    -moz-transition: all 0.5s ease-in-out; /** Firefox **/
+    -o-transition: all 0.5s ease-in-out; /** Opera **/
 }
-
-.move-right2  {
-   transform: translate(-300vw, 0);
-   -webkit-transform: translate(-300vw,0); /** Chrome & Safari **/
-   //-webkit-transform: translate(-62.51rem,0);
-  // -o-transform: translate(35rem,0); /** Opera **/
- //  -moz-transform: translate(35rem,0); /** Firefox **/
-}
-.object2 {
-  // position: absolute;
-   transition: all 3s ease-in-out;
-   -webkit-transition: all 3s ease-in-out; /** Chrome & Safari **/
-
-   -moz-transition: all 3s ease-in-out; /** Firefox **/
-   -o-transition: all 3s ease-in-out; /** Opera **/
-}
-
 
 
 
