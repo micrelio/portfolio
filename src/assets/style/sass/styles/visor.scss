@@ -6,14 +6,25 @@
 
        .visor {
         @include visor;
+        .activoA {
+            @include activoA;
+            .imagen{
+                @include imagen
+            }
             
+    } 
         .activo {
             @include activo;
             .imagen{
                 @include imagen
             }
     }
-
+    .activoS {
+        @include activoS;
+        .imagen{
+            @include imagen
+        }
+}
        }
 
 
@@ -60,14 +71,6 @@
 
 
 
-// .object {
-//     position: absolute;
-//   }
-//   .van {
-//       width: 10rem;
-//       top: 45%;
-//       left: 44%;
-//   }
 
 
 

@@ -13,12 +13,13 @@
        }
 
        @mixin principal {
-           overflow: hidden;
+
+         //overflow: hidden;
            display: flex;
            flex-direction: column;
            align-items: center;
            justify-content: center;
-
+width: 300vw;
            //   height: 85vh;
            background: {
                color: $bg-color;
@@ -51,22 +52,23 @@
        }
 
        @mixin visor {
-           // overflow:hidden;
-           display: flex;
-           flex-direction: row;
-           flex-wrap: nowrap;
-           justify-content: center;
-           //  align-items: flex-start;
-           overflow: hidden;
+        overflow:auto;
+//overflow: visible;
+           //overflow:hidden;
+          display: flex;
+flex-direction: row;
+          flex-wrap: nowrap;
+         justify-content: center;
+            align-items: flex-start;
+          // overflow: hidden;
 
-           align-items: center;
-           //    max-width: 100%;
+    //      align-items: center;
+          //    max-width: 100%;
            width: 300vw;
            // height: 90vw;
            // size: cover;
            // margin: 0.8rem;
-           border: $marcoFoto;
-           box-shadow: $sombreadoTotal;
+          
            background: {
                color: lightblue;
            }
@@ -74,41 +76,84 @@
 
 
        @mixin activo {
-            //position: absolute;
-           //display:block;
+        //   overflow: auto;
+         //   position: relative;
+          // display:block;
           // display: block;
-           display: flex;
+          display: flex;
            flex-direction: row;
+        //    flex-wrap: nowrap;
            // flex-grow: 100vw;
-           justify-content: center;
+          justify-content: center;
            align-items: center;
            height: 80vh;
-           
-          min-width: 100vw;
+            min-width: 100vw;
           //width: 30vw;
-
+           border: $marcoFoto;
+           box-shadow: $sombreadoTotal;
            background: {
                color: green;
            }
-       }
-
-       ;
-
+       };
+       @mixin activoA {
+        //   overflow: auto;
+         //   position: relative;
+          // display:block;
+          // display: block;
+          display: flex;
+           flex-direction: row;
+        //    flex-wrap: nowrap;
+           // flex-grow: 100vw;
+          justify-content: center;
+           align-items: center;
+           height: 80vh;
+            min-width: 100vw;
+          //width: 30vw;
+           border: $marcoFoto;
+           box-shadow: $sombreadoTotal;
+           background: {
+               color: green;
+           }
+       };
+       @mixin activoS {
+        //   overflow: auto;
+         //   position: relative;
+          // display:block;
+          // display: block;
+          display: flex;
+           flex-direction: row;
+        //    flex-wrap: nowrap;
+           // flex-grow: 100vw;
+          justify-content: center;
+           align-items: center;
+           height: 80vh;
+            min-width: 100vw;
+          //width: 30vw;
+           border: $marcoFoto;
+           box-shadow: $sombreadoTotal;
+           background: {
+               color: green;
+           }
+       };
        @mixin imagen {
+        //   z-index:4;
            //  display: flex;
            //  flex-direction: row;
            // flex-grow: 100vw;
            //  justify-content: center;
            //   align-items: center;
            //  display: none;
-           //  position: absolute;
+        //     position: relative;
            // z-index:-1;
            // margin-left: 1000vw;
            height: 100%;
-           // width: 100%;
-
+         //  margin-left: 200vw;
+        // width: 100%;
+//position: absolute;
            //   width:100vw;
            background: {
+             //  size:100vw;
+             //width: 100vw;
                color: pink;
 
            }

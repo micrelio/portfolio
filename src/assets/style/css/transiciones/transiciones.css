@@ -1,6 +1,12 @@
 /* hovers*/
+.van {
+  left: 0%;
+}
+
 .move-right {
   transform: translate(-100vw, 0);
+  -webkit-transform: translate(-100vw, 0);
+  /** Chrome & Safari **/
 }
 
 .object {

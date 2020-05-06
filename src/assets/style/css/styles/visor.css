@@ -1,24 +1,37 @@
 /* hovers*/
 .principal {
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 300vw;
   background-color: #df0174;
   background-color: yellow;
 }
 .principal .visor {
+  overflow: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  overflow: hidden;
-  align-items: center;
+  align-items: flex-start;
   width: 300vw;
+  background-color: lightblue;
+}
+.principal .visor .activoA {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  min-width: 100vw;
   border: 0.8rem solid #eeeeee;
   box-shadow: #555 1px 1px 8px 1px;
-  background-color: lightblue;
+  background-color: green;
+}
+.principal .visor .activoA .imagen {
+  height: 100%;
+  background-color: pink;
 }
 .principal .visor .activo {
   display: flex;
@@ -27,9 +40,26 @@
   align-items: center;
   height: 80vh;
   min-width: 100vw;
+  border: 0.8rem solid #eeeeee;
+  box-shadow: #555 1px 1px 8px 1px;
   background-color: green;
 }
 .principal .visor .activo .imagen {
+  height: 100%;
+  background-color: pink;
+}
+.principal .visor .activoS {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  min-width: 100vw;
+  border: 0.8rem solid #eeeeee;
+  box-shadow: #555 1px 1px 8px 1px;
+  background-color: green;
+}
+.principal .visor .activoS .imagen {
   height: 100%;
   background-color: pink;
 }
