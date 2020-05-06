@@ -117,44 +117,44 @@ function carga(e) {
   //Idexamos indice
 }
 function renderizar(vista) {
-  count=0;
- console.log(vista[1])
-// console.log(vista[count])
+  count = 0;
+  console.log(vista[1])
+  // console.log(vista[count])
 
 
   total = vista.length;
   //----Leemos el array
   for (index = 0; index < total; index++) {
-    
+
     indice = vista[index];
     // anterior = vista[total - 1];
     //    anterior2 = vista[total - 2];
-   //-----------------------------------------------
+    //-----------------------------------------------
   }
-    if (indice != vista) {
-      //Reseteamos al llegar al ultimo dato del array
-      activo = vista;
-     // count = index;
-      index = total;
-    }
-    //Indice es el dato a renderizar
-   console.log(indice)
+  if (indice != vista) {
+    //Reseteamos al llegar al ultimo dato del array
+    activo = vista;
+    // count = index;
+    index = total;
+  }
+  //Indice es el dato a renderizar
+  console.log(indice)
   //  div = document.createElement('div');
   // div.setAttribute("id", "como");
   //   div.setAttribute("class", "activo ");
   //   document.getElementById("visor").appendChild(div);
 
-   activar();
+  activar();
   //  activarMiniLaterales()
-  }
+}
 
 
-function activar(){
-console.log('count',count)
- // siguiente = vista[index + 1];
-   img = document.createElement('img');
- var path = "../../" + vista[count];
- img.setAttribute("src", path);
+function activar() {
+  console.log('count', count)
+  // siguiente = vista[index + 1];
+  img = document.createElement('img');
+  var path = "../../" + vista[count];
+  img.setAttribute("src", path);
 
   img.setAttribute("width", "");
   img.setAttribute("height", "");
@@ -163,90 +163,103 @@ console.log('count',count)
   //img1.setAttribute("magin-left", "1000vw");
 
   console.log('yyy', path)
-//img1.setAttribute("margin-left", '100vw');
+  //img1.setAttribute("margin-left", '100vw');
   //img1.setAttribute("display", "block");
-console.log(img)
-document.getElementById('activo').appendChild(img);
+  console.log(img)
+  document.getElementById('activo').appendChild(img);
 }
 
 
 
-  function sum() {
+function sum() {
 
-    if(img!=null){
-      console.log('suma img');
-   // var techo = document.getElementById("activo");
-  // console.log(techo)
+  if (img != null) {
+    console.log('suma img');
     img.setAttribute("class", "imagen object  move-right");
-    
-   setTimeout(function t(){ techo = document.getElementById("activo");
-   
-   techo.removeChild(img); img=null;}, 3000);
-   
-console.log('111111', img)
-
-  //  var techo = document.getElementById("activo");
-  //  techo.removeChild(img);
-       count++;
-      //  antes=count-1;
-      console.log('22222', img)
-
-
-        imgS = document.createElement('img');
-        var path = "../../" + vista[count];
-        imgS.setAttribute("src", path);
-         imgS.setAttribute("width", "");
-         imgS.setAttribute("height", "");
-         imgS.setAttribute("id", "imagen");
-         imgS.setAttribute("class", "imagen");
-         //img.setAttribute("magin-left", "1000vw");
-    
-       document.getElementById('activoS').appendChild(imgS);
-       setTimeout(function cx(){imgS.setAttribute("class", "imagen object  move-right");}, 0);
-  // img=null;
-
-
-   console.log('eeeee', document.getElementById(count));
-  // document.getElementById('count');
- //  div.removeChild(img);
-  // console.log(tras) 
-  //  setTimeout(function t(){cambio(vista[count], antes);}, 3000);
-   // divAnterior.removeChild(imgA);
-  //activar();
+    setTimeout(function t() {
+      techo = document.getElementById("activo");
+      techo.removeChild(img); img = null;
+    }, 3000);
+    console.log('111111', img)
+    count++;
+    console.log('22222', img)
+    imgS = document.createElement('img');
+    var path = "../../" + vista[count];
+    imgS.setAttribute("src", path);
+    imgS.setAttribute("width", "");
+    imgS.setAttribute("height", "");
+    imgS.setAttribute("id", "imagen");
+    imgS.setAttribute("class", "imagen");
+    document.getElementById('activoS').appendChild(imgS);
+    setTimeout(function cx() { imgS.setAttribute("class", "imagen object  move-right"); }, 0);
+    console.log('eeeee', document.getElementById(count));
   }
-  else if(imgS != null){
-console.log('TTTTTTTTTTTTTTTTTTTTTTTTT')
+  else if (imgS != null) {
+    console.log('TTTTTTTTTTTTTTTTTTTTTTTTT')
+
+
+
+
+
+    console.log('suma img');
+    img.setAttribute("class", "imagen object  move-right");
+    setTimeout(function t() {
+      techo = document.getElementById("activo");
+      techo.removeChild(img); img = null;
+    }, 3000);
+    console.log('111111', img)
+    count++;
+    console.log('22222', img)
+    imgS = document.createElement('img');
+    var path = "../../" + vista[count];
+    imgS.setAttribute("src", path);
+    imgS.setAttribute("width", "");
+    imgS.setAttribute("height", "");
+    imgS.setAttribute("id", "imagen");
+    imgS.setAttribute("class", "imagen");
+    document.getElementById('activoS').appendChild(imgS);
+    setTimeout(function cx() { imgS.setAttribute("class", "imagen object  move-right"); }, 0);
+    console.log('eeeee', document.getElementById(count));
+
+
+
+
+
+
+    
+
+
   }
-   
-    }
+
+}
 
 
 
 function cambio(t, c) {
- // div.setAttribute("class", "activo object  move-right");
- 
+  // div.setAttribute("class", "activo object  move-right");
 
 
-console.log('t', t)
+
+  console.log('t', t)
   img = document.createElement('img');
   div = document.createElement('div');
-var path = "../../" + t;
+  var path = "../../" + t;
 
-console.log('c', c)
+  console.log('c', c)
   img.setAttribute("src", path);
   img.setAttribute("width", "");
   img.setAttribute("height", "");
   img.setAttribute("id", c);
   img.setAttribute("class", "imagen");
- // img.setAttribute("", "");
+  // img.setAttribute("", "");
   div.setAttribute("id", c);
   div.setAttribute("class", "activo");
   div.setAttribute("clear", "both");
- div.setAttribute("float", "left");
+  div.setAttribute("float", "left");
 
-document.getElementById("visor").appendChild(div);
-document.getElementById(c).appendChild(img);
-//div.setAttribute("class", "activo object  move-right");
+  document.getElementById("visor").appendChild(div);
+  document.getElementById(c).appendChild(img);
+  //div.setAttribute("class", "activo object  move-right");
 
 }
 
@@ -273,10 +286,10 @@ function activ(a) {
   //console.log('imagen', imagen)
   //La img es igual a un elemento que creamos del tipo imagen
   var img = document.createElement('img');
- 
+
 
   div = document.createElement('div');
- //-----------------------------------------------
+  //-----------------------------------------------
   img.setAttribute("src", path);
   img.setAttribute("width", "");
   img.setAttribute("height", "");
@@ -286,9 +299,9 @@ function activ(a) {
   div.setAttribute("id", count);
   div.setAttribute("class", "activo");
   //img.setAttribute("class", "object  move-right");
- 
+
   //---------------------------------------------- 
-  
+
   // img.setAttribute("margin-left", "-2000");
   //img.setAttribute("class", "object  move-right");
   //En el elemento llamado activo renderizamos la imagen
@@ -323,13 +336,13 @@ function activ(a) {
 //     activar(proximo) 
 //     //  central = vista[count];
 //     //   anterior = vista[count - 1];
-  
+
 //    //     // var techo = document.getElementById("divCentral");
 //     //     //  techo.removeChild(img);
 
-   //     //setTimeout(document.getElementById("divSiguiente2").appendChild(imgS2), 3000000)
+//     //setTimeout(document.getElementById("divSiguiente2").appendChild(imgS2), 3000000)
 //     //     // divAnterior.removeChild(imgA);
- 
+
 
 //    // div.setAttribute("class", "activo object  move-right");
 //     //  console.log('img', img)
@@ -339,48 +352,48 @@ function activ(a) {
 
 
 
-    //console.log(imgA)
-    //   setTimeout(retraso, 3000);
-    function retraso() {
-      console.log('retraso')
-      //  var t = document.getElementById("divAnterior");
-      //  t.removeChild(imgA);
-      //  divCentral.setAttribute("id", "");
+//console.log(imgA)
+//   setTimeout(retraso, 3000);
+function retraso() {
+  console.log('retraso')
+  //  var t = document.getElementById("divAnterior");
+  //  t.removeChild(imgA);
+  //  divCentral.setAttribute("id", "");
 
-      //  divSiguiente.setAttribute("id", "");
-      //       var  imgX = document.createElement('img');
+  //  divSiguiente.setAttribute("id", "");
+  //       var  imgX = document.createElement('img');
 
-      //       var divX = document.createElement('div');
+  //       var divX = document.createElement('div');
 
-      //        var path = "../../" + siguiente;
-      // console.log('sigiente2', path)
-      // imgX.setAttribute("src", path);
-      // imgX.setAttribute("width", "");
-      // imgX.setAttribute("height", "");
-      // imgX.setAttribute("id", "imagen");
-      // imgX.setAttribute("class", "imagen");
+  //        var path = "../../" + siguiente;
+  // console.log('sigiente2', path)
+  // imgX.setAttribute("src", path);
+  // imgX.setAttribute("width", "");
+  // imgX.setAttribute("height", "");
+  // imgX.setAttribute("id", "imagen");
+  // imgX.setAttribute("class", "imagen");
 
-      // divX.setAttribute("id", "imgX");
-      // divX.setAttribute("class", "activo ");
+  // divX.setAttribute("id", "imgX");
+  // divX.setAttribute("class", "activo ");
 
-      // divX.setAttribute("class", "activo object  move-right");
+  // divX.setAttribute("class", "activo object  move-right");
 
 
-      //        document.getElementById("visor").appendChild(divX);
-      //        document.getElementById("imgX").appendChild(imgx);
+  //        document.getElementById("visor").appendChild(divX);
+  //        document.getElementById("imgX").appendChild(imgx);
 
-      // img.setAttribute("class", " ");
+  // img.setAttribute("class", " ");
 
-      // imgS.setAttribute("class", " ");
+  // imgS.setAttribute("class", " ");
 
-    }
-    // document.getElementById("divSiguiente").appendChild(imgS);
+}
+// document.getElementById("divSiguiente").appendChild(imgS);
 
-    // imgS2.setAttribute("class", "object  move-right");
+// imgS2.setAttribute("class", "object  move-right");
 
-    //cambio(central, anterior, siguiente);
-    //  activarMiniLaterales();
-  
+//cambio(central, anterior, siguiente);
+//  activarMiniLaterales();
+
 
 function res() {
   var central;
