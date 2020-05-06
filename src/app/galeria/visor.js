@@ -314,7 +314,31 @@ function res() {
          }, 500);
         }
     }
+function reset() {
+  var techo = document.getElementById("activo");
+       techo.removeChild(imgS || img);
+      count = 0;
+      img = document.createElement('img');
+      var path = "../../" + vista[count];
+       img.setAttribute("src", path);
+       img.setAttribute("width", "");
+       img.setAttribute("height", "");
+       img.setAttribute("id", "imagen");
+       img.setAttribute("class", "imagen");
+       document.getElementById('activo').appendChild(img);
+    }
 
+
+
+    
+    function stop() {
+      clearInterval(r);
+    }
+    function intervalo() {
+      r = setInterval(() => {
+        sum();
+      }, 500);
+    }
 
 
 
@@ -419,21 +443,6 @@ function retraso() {
 //  activarMiniLaterales();
 
 
-// function res() {
-//   var central;
-//   var anterior;
-//   var siguiente;
-//   if (count <= 0) {
-//     central = vista[total - 1]
-//     count = total - 1;
-//     cambio(central);
-//   }
-//   else {
-//     count--;
-//     central = vista[count];
-//     cambio(central);
-//   }
-// }
 
 function cambi(a, b, c) {
   posicion = vista.indexOf(a);
@@ -451,11 +460,7 @@ function cambi(a, b, c) {
   img.setAttribute("width", "");
   img.setAttribute("height", "");
   img.setAttribute("id", "central");
-  //img.setAttribute("class", "object  move-right");
-  //img.setAttribute("rigth", "62000rem");
-  //img.setAttribute('class', 'object move-right');
-  // img.setAttribute("position", "absolute");
-
+  
   imgS.setAttribute("src", pathSiguiente);
   imgS.setAttribute("width", "");
   imgS.setAttribute("height", "");
@@ -466,7 +471,6 @@ function cambi(a, b, c) {
   imgA.setAttribute("height", "");
   imgA.setAttribute("id", "anterior");
 
-  // img.setAttribute("margin-left", "-2000");
   document.getElementById("divCentral").replaceChild(img, central);
 
   var centralPath = "../../" + a;
@@ -477,9 +481,6 @@ function cambi(a, b, c) {
   img1.setAttribute("id", "miniCentral");
   document.getElementById("cajonCentral").replaceChild(img1, miniCentral);
 }
-
-
-
 
 function activarMiniLaterales() {
   //console.log('vista', vista)
@@ -519,21 +520,6 @@ function activarMiniLaterales() {
 
 
 
-
-function reset() {
-  clearInterval(r);
-  count = 0;
-  var cero = t[0];
-  cambio(cero)
-}
-function stop() {
-  clearInterval(r);
-}
-function intervalo() {
-  r = setInterval(() => {
-    sum();
-  }, 3000);
-}
 
 
 
