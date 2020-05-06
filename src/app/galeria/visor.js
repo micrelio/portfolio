@@ -129,9 +129,7 @@ function renderizar(vista) {
     indice = vista[index];
     // anterior = vista[total - 1];
     //    anterior2 = vista[total - 2];
-   
    //-----------------------------------------------
-      
   }
     if (indice != vista) {
       //Reseteamos al llegar al ultimo dato del array
@@ -152,56 +150,60 @@ function renderizar(vista) {
 
 
 function activar(){
-console.log('activar')
+console.log('count',count)
  // siguiente = vista[index + 1];
-   img1 = document.createElement('img');
+   img = document.createElement('img');
  var path = "../../" + vista[count];
- img1.setAttribute("src", path);
+ img.setAttribute("src", path);
 
-  img1.setAttribute("width", "");
-  img1.setAttribute("height", "");
-  img1.setAttribute("id", "imagen");
-  img1.setAttribute("class", "imagen");
+  img.setAttribute("width", "");
+  img.setAttribute("height", "");
+  img.setAttribute("id", "imagen");
+  img.setAttribute("class", "imagen");
   //img1.setAttribute("magin-left", "1000vw");
 
   console.log('yyy', path)
 //img1.setAttribute("margin-left", '100vw');
   //img1.setAttribute("display", "block");
-console.log(img1)
-document.getElementById('activo').appendChild(img1);
+console.log(img)
+document.getElementById('activo').appendChild(img);
 }
 
 
 
   function sum() {
-    
+
+    if(img!=null){
+      console.log('suma img');
    // var techo = document.getElementById("activo");
   // console.log(techo)
-    img1.setAttribute("class", "imagen object  move-right");
+    img.setAttribute("class", "imagen object  move-right");
+    
    setTimeout(function t(){ techo = document.getElementById("activo");
    
-   techo.removeChild(img1);}, 3000);
+   techo.removeChild(img); img=null;}, 3000);
    
-
+console.log('111111', img)
 
   //  var techo = document.getElementById("activo");
   //  techo.removeChild(img);
        count++;
       //  antes=count-1;
+      console.log('22222', img)
 
 
-        img = document.createElement('img');
+        imgS = document.createElement('img');
         var path = "../../" + vista[count];
-        img.setAttribute("src", path);
-         img.setAttribute("width", "");
-         img.setAttribute("height", "");
-         img.setAttribute("id", "imagen");
-         img.setAttribute("class", "imagen");
+        imgS.setAttribute("src", path);
+         imgS.setAttribute("width", "");
+         imgS.setAttribute("height", "");
+         imgS.setAttribute("id", "imagen");
+         imgS.setAttribute("class", "imagen");
          //img.setAttribute("magin-left", "1000vw");
     
-       document.getElementById('activoS').appendChild(img);
-       setTimeout(function cx(){img.setAttribute("class", "imagen object  move-right");}, 0);
-       
+       document.getElementById('activoS').appendChild(imgS);
+       setTimeout(function cx(){imgS.setAttribute("class", "imagen object  move-right");}, 0);
+  // img=null;
 
 
    console.log('eeeee', document.getElementById(count));
@@ -211,6 +213,10 @@ document.getElementById('activo').appendChild(img1);
   //  setTimeout(function t(){cambio(vista[count], antes);}, 3000);
    // divAnterior.removeChild(imgA);
   //activar();
+  }
+  else if(imgS != null){
+console.log('TTTTTTTTTTTTTTTTTTTTTTTTT')
+  }
    
     }
 
