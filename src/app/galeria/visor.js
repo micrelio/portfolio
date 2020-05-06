@@ -327,18 +327,15 @@ function reset() {
        img.setAttribute("class", "imagen");
        document.getElementById('activo').appendChild(img);
     }
-
-
-
-    
-    function stop() {
-      clearInterval(r);
-    }
     function intervalo() {
-      r = setInterval(() => {
+      run = setInterval(() => {
         sum();
-      }, 500);
+      }, 2000);
     }
+    function stop() {
+      clearInterval(run);
+    }
+   
 
 
 
