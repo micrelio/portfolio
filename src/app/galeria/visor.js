@@ -177,7 +177,8 @@ function sum() {
     console.log('suma img');
     img.setAttribute("class", "imagen object  move-right");
     setTimeout(function t() {
-      techo = document.getElementById("activo");
+      //borramos la imagen para crear una en div central y luego mover desde allí
+     var techo = document.getElementById("activo");
       techo.removeChild(img); img = null;
     }, 3000);
     console.log('111111', img)
@@ -191,36 +192,70 @@ function sum() {
     imgS.setAttribute("id", "imagen");
     imgS.setAttribute("class", "imagen");
     document.getElementById('activoS').appendChild(imgS);
+    
+    
+    
     setTimeout(function cx() { imgS.setAttribute("class", "imagen object  move-right"); }, 0);
-    console.log('eeeee', document.getElementById(count));
-  }
-  else if (imgS != null) {
+    setTimeout(function cxv() { 
+      console.log('chachacha', activo);
+
+       var techo = document.getElementById("activoS");
+      techo.removeChild(imgS);
+      imgS.removeAttribute("class");
+
+      imgS.setAttribute("src", path);
+      imgS.setAttribute("width", "");
+      imgS.setAttribute("height", "");
+      imgS.setAttribute("id", "imagen");
+      imgS.setAttribute("class", "imagen");
+            
+
+      document.getElementById('activo').appendChild(imgS);
+     }, 3000);
+     }
+  
+  
+  
+  
+  
+     else if (imgS != null) {
+    // document.getElementById('activo').appendChild(imgS);
     console.log('TTTTTTTTTTTTTTTTTTTTTTTTT')
-
-
-
-
-
-    console.log('suma img');
-    img.setAttribute("class", "imagen object  move-right");
+    imgS.setAttribute("class", "imagen object  move-right");
     setTimeout(function t() {
-      techo = document.getElementById("activo");
-      techo.removeChild(img); img = null;
+         var techo = document.getElementById("activo");
+      techo.removeChild(imgS); imgS = null;
     }, 3000);
-    console.log('111111', img)
     count++;
-    console.log('22222', img)
-    imgS = document.createElement('img');
-    var path = "../../" + vista[count];
-    imgS.setAttribute("src", path);
-    imgS.setAttribute("width", "");
-    imgS.setAttribute("height", "");
-    imgS.setAttribute("id", "imagen");
-    imgS.setAttribute("class", "imagen");
-    document.getElementById('activoS').appendChild(imgS);
-    setTimeout(function cx() { imgS.setAttribute("class", "imagen object  move-right"); }, 0);
-    console.log('eeeee', document.getElementById(count));
 
+
+     img = document.createElement('img');
+    var path = "../../" + vista[count];
+     img.setAttribute("src", path);
+     img.setAttribute("width", "");
+     img.setAttribute("height", "");
+     img.setAttribute("id", "imagen");
+     img.setAttribute("class", "imagen");
+     document.getElementById('activoS').appendChild(img);
+    
+    
+    
+    setTimeout(function cx() { img.setAttribute("class", "imagen object  move-right"); }, 0);
+     setTimeout(function cxv() { 
+    var techo = document.getElementById("activoS");
+       techo.removeChild(img);
+       img.removeAttribute("class");
+
+      img.setAttribute("src", path);
+      img.setAttribute("width", "");
+      img.setAttribute("height", "");
+      img.setAttribute("id", "imagen");
+    img.setAttribute("class", "imagen");
+            
+
+      document.getElementById('activo').appendChild(img);
+     }, 3000);
+    
 
 
 

@@ -19,6 +19,22 @@
   /** Opera **/
 }
 
+.move-right2 {
+  transform: translate(-300vw, 0);
+  -webkit-transform: translate(-300vw, 0);
+  /** Chrome & Safari **/
+}
+
+.object2 {
+  transition: all 3s ease-in-out;
+  -webkit-transition: all 3s ease-in-out;
+  /** Chrome & Safari **/
+  -moz-transition: all 3s ease-in-out;
+  /** Firefox **/
+  -o-transition: all 3s ease-in-out;
+  /** Opera **/
+}
+
 .novisible, .visible {
   width: 30rem;
 }

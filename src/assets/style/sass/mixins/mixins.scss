@@ -112,7 +112,7 @@ flex-direction: row;
            border: $marcoFoto;
            box-shadow: $sombreadoTotal;
            background: {
-               color: green;
+               color: yellow;
            }
        };
        @mixin activoS {
@@ -132,7 +132,7 @@ flex-direction: row;
            border: $marcoFoto;
            box-shadow: $sombreadoTotal;
            background: {
-               color: green;
+               color: red;
            }
        };
        @mixin imagen {

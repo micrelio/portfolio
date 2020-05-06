@@ -27,7 +27,7 @@
   min-width: 100vw;
   border: 0.8rem solid #eeeeee;
   box-shadow: #555 1px 1px 8px 1px;
-  background-color: green;
+  background-color: yellow;
 }
 .principal .visor .activoA .imagen {
   height: 100%;
@@ -57,7 +57,7 @@
   min-width: 100vw;
   border: 0.8rem solid #eeeeee;
   box-shadow: #555 1px 1px 8px 1px;
-  background-color: green;
+  background-color: red;
 }
 .principal .visor .activoS .imagen {
   height: 100%;
