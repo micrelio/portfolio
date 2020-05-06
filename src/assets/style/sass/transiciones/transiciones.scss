@@ -21,11 +21,11 @@
 }
 .object {
    // position: absolute;
-    transition: all 3s ease-in-out;
-    -webkit-transition: all 3s ease-in-out; /** Chrome & Safari **/
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out; /** Chrome & Safari **/
 
-    -moz-transition: all 3s ease-in-out; /** Firefox **/
-    -o-transition: all 3s ease-in-out; /** Opera **/
+    -moz-transition: all 1s ease-in-out; /** Firefox **/
+    -o-transition: all 1s ease-in-out; /** Opera **/
 }
 
 .move-right2  {

@@ -9,10 +9,13 @@ class miVisor extends HTMLElement {
       <img class="object van move-right" src="../../assets/images/logos/john.png"/>
       </div>
      -->
-    
+
+     <!--
+     onswiperight="sum()" onswipeleft="res()"
+     -->
 
  <section  class="principal" >
-    <div  class="visor" id="visor" onswiperight="sum()" onswipeleft="res()" ontouchstart="sum()" onclick="sum()">
+    <div  class="visor" id="visor" ontouchstart="sum()" onclick="sum()">
       <div id="activoA" class="activoA"></div>
       <div id="activo" class="activo"></div>
       <div id="activoS" class="activoS"></div>
@@ -180,7 +183,7 @@ function sum() {
       //borramos la imagen para crear una en div central y luego mover desde allí
      var techo = document.getElementById("activo");
       techo.removeChild(img); img = null;
-    }, 3000);
+    }, 1000);
     console.log('111111', img)
     count++;
     console.log('22222', img)
@@ -211,7 +214,7 @@ function sum() {
             
 
       document.getElementById('activo').appendChild(imgS);
-     }, 3000);
+     }, 1000);
      }
   
   
@@ -225,7 +228,7 @@ function sum() {
     setTimeout(function t() {
          var techo = document.getElementById("activo");
       techo.removeChild(imgS); imgS = null;
-    }, 3000);
+    }, 1000);
     count++;
 
 
@@ -254,7 +257,7 @@ function sum() {
             
 
       document.getElementById('activo').appendChild(img);
-     }, 3000);
+     }, 1000);
     
 
 
