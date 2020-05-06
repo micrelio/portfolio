@@ -15,7 +15,7 @@ class miVisor extends HTMLElement {
      -->
 
  <section  class="principal" >
-    <div  class="visor" id="visor" ontouchstart="sum()" onclick="sum()">
+    <div  class="visor" id="visor" ontouchcancel="sum()" onclick="sum()">
       <div id="activoA" class="activoA"></div>
       <div id="activo" class="activo"></div>
       <div id="activoS" class="activoS"></div>
