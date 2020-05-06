@@ -154,31 +154,38 @@ function renderizar(vista) {
 function activar(){
 console.log('activar')
  // siguiente = vista[index + 1];
-   img = document.createElement('img');
+   img1 = document.createElement('img');
  var path = "../../" + vista[count];
- img.setAttribute("src", path);
+ img1.setAttribute("src", path);
 
-  img.setAttribute("width", "");
-  img.setAttribute("height", "");
-  img.setAttribute("id", "imagen");
-  img.setAttribute("class", "imagen");
-  //img.setAttribute("magin-left", "1000vw");
+  img1.setAttribute("width", "");
+  img1.setAttribute("height", "");
+  img1.setAttribute("id", "imagen");
+  img1.setAttribute("class", "imagen");
+  //img1.setAttribute("magin-left", "1000vw");
 
   console.log('yyy', path)
-//img.setAttribute("margin-left", '100vw');
-  //img.setAttribute("display", "block");
-console.log(img)
-document.getElementById('activo').appendChild(img);
+//img1.setAttribute("margin-left", '100vw');
+  //img1.setAttribute("display", "block");
+console.log(img1)
+document.getElementById('activo').appendChild(img1);
 }
 
 
 
   function sum() {
     
-    img.setAttribute("class", "imagen object  move-right");
-   setTimeout(function t(){ var techo = document.getElementById("activo");
-   techo.removeChild(img);}, 3000);
+   // var techo = document.getElementById("activo");
+  // console.log(techo)
+    img1.setAttribute("class", "imagen object  move-right");
+   setTimeout(function t(){ techo = document.getElementById("activo");
    
+   techo.removeChild(img1);}, 3000);
+   
+
+
+  //  var techo = document.getElementById("activo");
+  //  techo.removeChild(img);
        count++;
       //  antes=count-1;
 
