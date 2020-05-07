@@ -38,7 +38,6 @@ timer=2000;
 total = 0;
 count = 0;
 marcha = ' ';
-img = null;
 imgS = null;
 activoS = ' ';
 customElements.define('mi-visor', miVisor);
@@ -165,7 +164,7 @@ function sum() {
       //borramos la imagen para crear una en div central y luego mover desde allí
       var techo = document.getElementById("activo");
       techo.removeChild(img);
-      img = null;
+     
     }, 1000);
 
     setTimeout(function cx() {
@@ -208,7 +207,6 @@ function sum() {
     setTimeout(function t() {
       var techo = document.getElementById("activo");
       techo.removeChild(imgS);
-      imgS = null;
     }, 1000);
 
     setTimeout(function cx() {
@@ -218,7 +216,6 @@ function sum() {
     setTimeout(function cxv() {
       var techo = document.getElementById("activoS");
       techo.removeChild(img);
-      img = null
 
       img.removeAttribute("class");
 
@@ -254,7 +251,6 @@ function reset() {
     var centro = document.getElementById('activo');
     // var centro= document.getElementById('activo');
     centro.removeChild(img);
-    img = null
 
   }
 
@@ -268,7 +264,6 @@ function reset() {
     sigiente.removeChild(imgS);
     // sigiente.removeChild(imgS);
 
-    imgS = null
 
   }
   clearInterval(marcha);
