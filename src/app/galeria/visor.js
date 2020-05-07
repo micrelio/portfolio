@@ -169,7 +169,7 @@ function sum() {
 
     setTimeout(function cx() {
       imgS.setAttribute("class", "imagen object  move-left");
-    }, 0.0000005);
+    }, 0.5);
 
     setTimeout(function cxv() {
         if (imgS != null) {
@@ -210,7 +210,7 @@ function sum() {
     setTimeout(function cx() {
       img.setAttribute("class", "imagen object  move-left");
 
-    }, 0);
+    }, 0.5);
     setTimeout(function cxv() {
       var techo = document.getElementById("activoS");
       techo.removeChild(img);
