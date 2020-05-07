@@ -7,6 +7,10 @@ class miVisor extends HTMLElement {
   connectedCallback() {
     this.innerHTML =
       `
+      <button onclick="intervalo()">auto</button>
+<button onclick="stop()">stop </button>
+<button onclick="reset()">reset </button>
+
   <section id="principal" class="principal" >
     <div  class="visor" id="visor" >
       <div id="activoA" class="activoA"></div>
@@ -19,14 +23,12 @@ class miVisor extends HTMLElement {
        <div id="cajonDerecha" class="point"></div>
      </div>
 </section>
-<button onclick="intervalo()">auto</button>
-<button onclick="stop()">stop </button>
-<button onclick="reset()">reset </button>
+
                 `;
     // esto arranca automatico 
   //  setInterval(() => {
   //  }, 2000);
-    setInterval( onkeyup="keyEvent(event)",100000);
+   // setInterval( onkeyup="keyEvent(event)",100000);
     const mos = document.querySelector('#imagen');
     // cajonDerecha.getAttribute('class');   
     // element.setAttribute('href', 'index.html');
@@ -68,10 +70,6 @@ function cambiar(id) {
       document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
       break;
   }
-}
-
-function espera() {
- 
 }
 function keyEvent(event) {
   console.log(event.key);
@@ -124,8 +122,7 @@ function carga(e) {
   //Idexamos indice
 }
 function renderizar(vista) {
-  
-  console.log(vista[1])
+   console.log(vista[1])
   // console.log(vista[count])
 
 
@@ -353,28 +350,54 @@ function res() {
   }
 }
 function reset() {
-
   clearInterval(marcha);
+  var centro = document.getElementById('activo').getElementsByTagName(img);
+  console.log(centro)
 
-  
-  var techo = document.getElementById("activo" || "activoS" || "activoA");
-  techo.removeChild(img || imgS);
-  count = 0;
-  img = document.createElement('img');
-  var path = "../../" + vista[count];
-  img.setAttribute("src", path);
-  img.setAttribute("width", "");
-  img.setAttribute("height", "");
-  img.setAttribute("id", "imagen");
-  img.setAttribute("class", "imagen");
-  img.setAttribute("onclick", "sum()");
-  document.getElementById('activo').appendChild(img);
+  var sigiente = document.getElementById('activoS');
+  if ( img!=null) {
+    document.getElementById('activo').img;
+    //    console.log('img existe')
+      //  if(){
+
+    //    }
+   // centro.removeChild(img);
+  //  centro.removeChild(imgS);
+  //  count = 0;
+// renderizar(vista);
+}
+// if (  imgS!=null) {
+//   var sigiente = document.getElementById('activo');
+//   console.log(sigiente)
+//   sigiente.removeChild(imgS);
+//   // count = 0;
+//  // renderizar(vista);
+// }
+
+
+  // var sigiente = document.getElementById('activoS');
+  // console.log(sigiente)
+  // sigiente.removeChild(imgS);
+
+
+
+ 
+  // count = 0;
+  // img = document.createElement('img');
+  // var path = "../../" + vista[count];
+  // img.setAttribute("src", path);
+  // img.setAttribute("width", "");
+  // img.setAttribute("height", "");
+  // img.setAttribute("id", "imagen");
+  // img.setAttribute("class", "imagen");
+  // img.setAttribute("onclick", "sum()");
+  // document.getElementById('activo').appendChild(img);
   
 }
 function intervalo() {
   marcha = setInterval(() => {
     sum();
-  }, 1000);
+  }, 1500);
 }
 function stop() {
   clearInterval(marcha);
@@ -403,20 +426,13 @@ function activarMiniLaterales() {
     imgMS.setAttribute("height", "5");
     imgMS.setAttribute("id", "miniDerecha");
     document.getElementById("cajonDerecha").appendChild(imgMS);
-
     //    }
     //  activarMini()
   }
   // if (d) {
-
   //    var pos = e.indexOf('indice');
   //  }
   console.log('dato', dato)
-
-
-
-
-
 }
 
 
@@ -443,8 +459,6 @@ function activ(a) {
   //console.log('imagen', imagen)
   //La img es igual a un elemento que creamos del tipo imagen
   var img = document.createElement('img');
-
-
   div = document.createElement('div');
   //-----------------------------------------------
   img.setAttribute("src", path);
@@ -452,13 +466,10 @@ function activ(a) {
   img.setAttribute("height", "");
   img.setAttribute("id", "imagen");
   img.setAttribute("class", "imagen");
-
   div.setAttribute("id", count);
   div.setAttribute("class", "activo");
   //img.setAttribute("class", "object  move-right");
-
   //---------------------------------------------- 
-
   // img.setAttribute("margin-left", "-2000");
   //img.setAttribute("class", "object  move-right");
   //En el elemento llamado activo renderizamos la imagen
@@ -466,10 +477,8 @@ function activ(a) {
   //  document.getElementById("imgA").appendChild(imgA);
   document.getElementById("visor").appendChild(div);
   document.getElementById(count).appendChild(img);
-
   //  document.getElementById("visor").appendChild(divS);
   //  document.getElementById("imgS").appendChild(imgS);
-
   var imagenPath = "../../" + a;
   var img1 = document.createElement('img');
   img1.setAttribute("src", imagenPath);
@@ -478,7 +487,6 @@ function activ(a) {
   img1.setAttribute("id", "miniImagen");
   // document.getElementById("cajonImagen").appendChild(img1);
 }
-
 //console.log(imgA)
 //   setTimeout(retraso, 3000);
 function retraso() {
@@ -486,12 +494,9 @@ function retraso() {
   //  var t = document.getElementById("divAnterior");
   //  t.removeChild(imgA);
   //  divCentral.setAttribute("id", "");
-
   //  divSiguiente.setAttribute("id", "");
   //       var  imgX = document.createElement('img');
-
   //       var divX = document.createElement('div');
-
   //        var path = "../../" + siguiente;
   // console.log('sigiente2', path)
   // imgX.setAttribute("src", path);
@@ -499,30 +504,18 @@ function retraso() {
   // imgX.setAttribute("height", "");
   // imgX.setAttribute("id", "imagen");
   // imgX.setAttribute("class", "imagen");
-
   // divX.setAttribute("id", "imgX");
   // divX.setAttribute("class", "activo ");
-
   // divX.setAttribute("class", "activo object  move-right");
-
-
   //        document.getElementById("visor").appendChild(divX);
   //        document.getElementById("imgX").appendChild(imgx);
-
   // img.setAttribute("class", " ");
-
   // imgS.setAttribute("class", " ");
-
 }
 // document.getElementById("divSiguiente").appendChild(imgS);
-
 // imgS2.setAttribute("class", "object  move-right");
-
 //cambio(central, anterior, siguiente);
 //  activarMiniLaterales();
-
-
-
 function cambi(a, b, c) {
   posicion = vista.indexOf(a);
   console.log(posicion)
@@ -560,7 +553,6 @@ function cambi(a, b, c) {
   img1.setAttribute("id", "miniCentral");
   document.getElementById("cajonCentral").replaceChild(img1, miniCentral);
 }
-
 function activarMiniLateralesvvv() {
   //console.log('vista', vista)
   // posicion = a.indexOf('todos');
