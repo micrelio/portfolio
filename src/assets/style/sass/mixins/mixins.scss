@@ -10,7 +10,7 @@
            }
        }
        @mixin principal {
-          // overflow: hidden;
+           overflow: hidden;
            display: flex;
            flex-direction: column;
            align-items: center;
@@ -31,7 +31,7 @@
            }
        }
        @mixin visor {
-      //   overflow: hidden;
+         overflow: hidden;
                    //overflow: auto;
            display: flex;
            flex-direction: row;
