@@ -35,16 +35,15 @@
   // -o-transform: translate(35rem,0); /** Opera **/
  //  -moz-transform: translate(35rem,0); /** Firefox **/
 }
-// .object {
-//   // position: absolute;
-//    transition: all 0.5s ease-in-out;
-//    -webkit-transition: all 0.5s ease-in-out; /** Chrome & Safari **/
-
-//    -moz-transition: all 0.5s ease-in-out; /** Firefox **/
-//    -o-transition: all 0.5s ease-in-out; /** Opera **/
-// }
 
 
+.miniCentral{
+   -moz-transform: scaleX(-1);
+   -webkit-transform: scaleX(-1);
+   transform: scaleX(-1);
+   filter: FlipH;
+   -ms-filter: "FlipH";
+ }
 
 
 

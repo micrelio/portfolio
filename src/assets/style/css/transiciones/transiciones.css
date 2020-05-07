@@ -25,6 +25,14 @@
   /** Chrome & Safari **/
 }
 
+.miniCentral {
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
 .novisible, .visible {
   width: 30rem;
 }
