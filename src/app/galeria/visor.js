@@ -172,9 +172,7 @@ function sum() {
     }, 0.0000005);
 
     setTimeout(function cxv() {
-      
-
-      if (imgS != null) {
+        if (imgS != null) {
         console.log('imgS', imgS)
         var techo = document.getElementById("activoS");
         techo.removeChild(imgS);
