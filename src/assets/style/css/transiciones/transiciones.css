@@ -1,12 +1,12 @@
 /* hovers*/
-.van {
-  left: 0%;
-}
-
 .move-left {
   transform: translate(-100vw, 0);
   -webkit-transform: translate(-100vw, 0);
   /** Chrome & Safari **/
+  -o-transform: translate(-100vw, 0);
+  /** Opera **/
+  -moz-transform: translate(-100vw, 0);
+  /** Firefox **/
 }
 
 .object {
@@ -23,6 +23,11 @@
   transform: translate(100vw, 0);
   -webkit-transform: translate(100vw, 0);
   /** Chrome & Safari **/
+  -webkit-transform: translate(100vw, 0);
+  -o-transform: translate(100vw, 0);
+  /** Opera **/
+  -moz-transform: translate(100vw, 0);
+  /** Firefox **/
 }
 
 .miniCentral {

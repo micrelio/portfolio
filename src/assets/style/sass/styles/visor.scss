@@ -9,20 +9,20 @@
         .activoA {
             @include activoA;
             .imagen{
-                @include imagen
+                @include imagen;
             }
             
     } 
         .activo {
             @include activo;
             .imagen{
-                @include imagen
+                @include imagen;
             }
     }
     .activoS {
         @include activoS;
         .imagen{
-            @include imagen
+            @include imagen;
         }
 }
        }
