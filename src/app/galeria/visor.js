@@ -218,18 +218,24 @@ function sum() {
       var techo = document.getElementById("activoS");
       techo.removeChild(imgS);
       imgS.removeAttribute("class");
-      
-      imgS.setAttribute("src", path);
-      imgS.setAttribute("width", "");
-      imgS.setAttribute("height", "");
-      imgS.setAttribute("id", "imgS");
-      imgS.setAttribute("class", "imagen");
-      imgS.setAttribute("onclick", "sum()");
+
+
+      img = document.createElement('img');
+
+var path= "../../" + vista[count];
+      //var y = document.getElementById("activo");
+
+      img.setAttribute("src", path);
+      img.setAttribute("width", "");
+      img.setAttribute("height", "");
+      img.setAttribute("id", "img");
+      img.setAttribute("class", "imagen");
+      img.setAttribute("onclick", "sum()");
 
 
 
       //ontouchcancel="sum()" onclick="sum()"
-      document.getElementById('activo').appendChild(imgS);
+      document.getElementById('activo').appendChild(img);
     }, 1000);
   }
 
