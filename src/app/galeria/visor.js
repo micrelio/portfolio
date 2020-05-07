@@ -81,7 +81,7 @@ function keyEvent(event) {
     //   //borramos la imagen para crear una en div central y luego mover desde allí
     //  var techo = document.getElementById("activo");
     //   techo.removeChild(img); img = null;
-    // }, 500);
+    // }, 1000);
 
     //case  ' ':
     case 'ArrowLeft':
@@ -209,7 +209,7 @@ function sum() {
       //borramos la imagen para crear una en div central y luego mover desde allí
       var techo = document.getElementById("activo");
       techo.removeChild(img); img = null;
-    }, 500);
+    }, 1000);
 
     setTimeout(function cx() {
       imgS.setAttribute("onclick", " ");
@@ -232,7 +232,7 @@ function sum() {
 
       //ontouchcancel="sum()" onclick="sum()"
       document.getElementById('activo').appendChild(imgS);
-    }, 500);
+    }, 1000);
   }
 
   else if (imgS != null) {
@@ -253,7 +253,7 @@ function sum() {
     setTimeout(function t() {
       var techo = document.getElementById("activo");
       techo.removeChild(imgS); imgS = null;
-    }, 500);
+    }, 1000);
 
     setTimeout(function cx() {
       img.setAttribute("onclick", " ");
@@ -276,7 +276,7 @@ function sum() {
 
       //ontouchcancel="sum()" onclick="sum()"
       document.getElementById('activo').appendChild(img);
-    }, 500);
+    }, 1000);
   }
 }
 function res() {
@@ -302,7 +302,7 @@ function res() {
       //borramos la imagen para crear una en div central y luego mover desde allí
       var techo = document.getElementById("activo");
       techo.removeChild(img); img = null;
-    }, 500);
+    }, 1000);
 
     setTimeout(function cx() { imgS.setAttribute("class", "imagen object  move-rigth"); }, 0);
     setTimeout(function cxv() {
@@ -317,7 +317,7 @@ function res() {
       imgS.setAttribute("id", "imagen");
       imgS.setAttribute("class", "imagen");
       document.getElementById('activo').appendChild(imgS);
-    }, 500);
+    }, 1000);
   }
 
   else if (imgS != null) {
@@ -335,7 +335,7 @@ function res() {
     setTimeout(function t() {
       var techo = document.getElementById("activo");
       techo.removeChild(imgS); imgS = null;
-    }, 500);
+    }, 1000);
 
     setTimeout(function cx() { img.setAttribute("class", "imagen object  move-rigth"); }, 0);
     setTimeout(function cxv() {
@@ -349,7 +349,7 @@ function res() {
       img.setAttribute("id", "imagen");
       img.setAttribute("class", "imagen");
       document.getElementById('activo').appendChild(img);
-    }, 500);
+    }, 1000);
   }
 }
 function reset() {
