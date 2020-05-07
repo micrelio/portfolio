@@ -211,13 +211,14 @@ function sum() {
     setTimeout(function cx() {
       imgS.setAttribute("onclick", " ");
       imgS.setAttribute("class", "imagen object  move-left");
-    }, 0);
+    }, 0.0000005);
     setTimeout(function cxv() {
       console.log('chachacha', activo);
 
       var techo = document.getElementById("activoS");
       techo.removeChild(imgS);
       imgS.removeAttribute("class");
+      
       imgS.setAttribute("src", path);
       imgS.setAttribute("width", "");
       imgS.setAttribute("height", "");

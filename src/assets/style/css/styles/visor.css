@@ -1,6 +1,5 @@
 /* hovers*/
 .principal {
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,7 +8,6 @@
   background-color: yellow;
 }
 .principal .visor {
-  overflow: hidden;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
