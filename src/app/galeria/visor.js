@@ -164,7 +164,7 @@ function activar() {
   img.setAttribute("src", path);
   img.setAttribute("width", "");
   img.setAttribute("height", "");
-  img.setAttribute("id", "imagen");
+  img.setAttribute("id", "img");
   img.setAttribute("class", "imagen");
   img.setAttribute("onclick", "sum()");
 
@@ -186,7 +186,7 @@ function sum() {
   if (count >= total - 1) {
     count = 0;
   }
-
+//---Si existe img
   if (img != null) {
     count++;
     imgS = document.createElement('img');
@@ -194,7 +194,7 @@ function sum() {
     imgS.setAttribute("src", path);
     imgS.setAttribute("width", "");
     imgS.setAttribute("height", "");
-    imgS.setAttribute("id", "imagen");
+    imgS.setAttribute("id", "imgS");
     imgS.setAttribute("class", "imagen");
     document.getElementById('activoS').appendChild(imgS);
 
@@ -221,7 +221,7 @@ function sum() {
       imgS.setAttribute("src", path);
       imgS.setAttribute("width", "");
       imgS.setAttribute("height", "");
-      imgS.setAttribute("id", "imagen");
+      imgS.setAttribute("id", "imgS");
       imgS.setAttribute("class", "imagen");
       imgS.setAttribute("onclick", "sum()");
 
@@ -240,7 +240,7 @@ function sum() {
     img.setAttribute("src", path);
     img.setAttribute("width", "");
     img.setAttribute("height", "");
-    img.setAttribute("id", "imagen");
+    img.setAttribute("id", "img");
     img.setAttribute("class", "imagen");
     document.getElementById('activoS').appendChild(img);
     imgS.setAttribute("onclick", " ");
@@ -265,7 +265,7 @@ function sum() {
       img.setAttribute("src", path);
       img.setAttribute("width", "");
       img.setAttribute("height", "");
-      img.setAttribute("id", "imagen");
+      img.setAttribute("id", "img");
       img.setAttribute("class", "imagen");
       img.setAttribute("onclick", "sum()");
 
@@ -289,7 +289,7 @@ function res() {
     imgS.setAttribute("src", path);
     imgS.setAttribute("width", "");
     imgS.setAttribute("height", "");
-    imgS.setAttribute("id", "imagen");
+    imgS.setAttribute("id", "imgS");
     imgS.setAttribute("class", "imagen");
     document.getElementById('activoA').appendChild(imgS);
 
@@ -311,7 +311,7 @@ function res() {
       imgS.setAttribute("src", path);
       imgS.setAttribute("width", "");
       imgS.setAttribute("height", "");
-      imgS.setAttribute("id", "imagen");
+      imgS.setAttribute("id", "imgS");
       imgS.setAttribute("class", "imagen");
       document.getElementById('activo').appendChild(imgS);
     }, 1000);
@@ -325,7 +325,7 @@ function res() {
     img.setAttribute("src", path);
     img.setAttribute("width", "");
     img.setAttribute("height", "");
-    img.setAttribute("id", "imagen");
+    img.setAttribute("id", "img");
     img.setAttribute("class", "imagen");
     document.getElementById('activoA').appendChild(img);
     imgS.setAttribute("class", "imagen object  move-rigth");
@@ -343,7 +343,7 @@ function res() {
       img.setAttribute("src", path);
       img.setAttribute("width", "");
       img.setAttribute("height", "");
-      img.setAttribute("id", "imagen");
+      img.setAttribute("id", "img");
       img.setAttribute("class", "imagen");
       document.getElementById('activo').appendChild(img);
     }, 1000);
@@ -351,17 +351,17 @@ function res() {
 }
 function reset() {
   clearInterval(marcha);
-  var centro = document.getElementById('activo').getElementsByTagName(img);
+  var centro = document.getElementById('img');
   console.log(centro)
 
   var sigiente = document.getElementById('activoS');
-  if ( img!=null) {
-    document.getElementById('activo').img;
+  if ( imgS!=null) {
+  var siguiente= document.getElementById('activoS');
     //    console.log('img existe')
       //  if(){
 
     //    }
-   // centro.removeChild(img);
+   siguiente.removeChild(imgS);
   //  centro.removeChild(imgS);
   //  count = 0;
 // renderizar(vista);
