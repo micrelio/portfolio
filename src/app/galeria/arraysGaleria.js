@@ -17,10 +17,11 @@ todos = [
     "assets/images/png/banderaEsquina.png",
     "assets/images/png/europaRedondo.png",
     "assets/images/png/igreNavidad.png"],
+
 ];
 
 
-Todos1 = {
+Local = {
   Logos: ["assets/images/logos/igr.jpg",
     "assets/images/logos/igre.png",
     "assets/images/logos/john.png"],
@@ -36,9 +37,13 @@ Todos1 = {
     "assets/images/png/banderaEsquina.png",
     "assets/images/png/europaRedondo.png",
     "assets/images/png/igreNavidad.png",],
-
+  },
+Online={
+  Llacer:["https://www.instagram.com/p/B-B0-GrKC-5/?utm_source=ig_web_copy_link",
+  "https://www.instagram.com/p/B98g4FhKPVj/?utm_source=ig_web_copy_link",
+  "https://www.instagram.com/p/Bq6Z6xXgPft/?utm_source=ig_web_copy_link",
+"https://www.instagram.com/p/BsooJeVAac3/?utm_source=ig_web_copy_link",],
 },
-
   Nombres = ["Logos", "Posters", "Folletos", "Postales", "Pngs",];
 
 
