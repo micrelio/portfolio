@@ -8,13 +8,11 @@ class miImagenes extends HTMLElement {
   connectedCallback() {
     this.innerHTML =
       `
-  <section class="repertorio">
-  <p>Logos</p>
+  <section id="repertorio" class="repertorio">
+  <p>'tipo'</p> 
   <hr>
-  <section class="tipo">
-      <div  id="logos" class="fila" >   
+      
 </div>
-</section>
 
 
 
@@ -48,8 +46,8 @@ class miImagenes extends HTMLElement {
   -->
 </section>
               `;
- }
- 
+  }
+
 }
 
 customElements.define('mi-imagenes', miImagenes);
@@ -67,39 +65,101 @@ function cargaTodo() {
   //   console.log(Todos[0])
   // });
   //console.log(Todos1)
-  
 
-  //---Valores de cada objeto
+  //---Numero de valores que contiene cada objeto
   console.log(Object.values(Todos1));
   //---Claves del objeto
   console.log(Object.keys(Todos1));
-  //---No se
+  //---devuelve una matriz de pares propios de una propiedad enumerable [key, value] de un objeto dado, en el mismo orden que es proporcionado por for...in (La diferencia es que un bucle for-in enumera las propiedades en la cadena de prototipos).
   console.log(Object.entries(Todos1));
   //---Si es numerable devuelve true de lo contrario false
   console.log(Object.prototype.propertyIsEnumerable(Todos1));
+  //---crea un objeto nuevo, utilizando un objeto existente como el prototipo del nuevo objeto creado.
   console.log(Object.create(Todos1));
+  //---devuelve un array con todas las propiedades (numerables o no) encontradas en un objeto dado.
   console.log(Object.getOwnPropertyNames(Todos1));
+  //---
+  console.log(Object.entries(Todos1));
 
 
-  
-for (let index = 0; index < Todos1; index++) {
-const dato = Todos[index];
+  //--- A pelo
+  console.log(Todos1);
+  //---Entrar en un dato en concreto del objeto
+  console.log(Todos1.Logos);
 
 
-//   for (let i = 0; i < dato.length; i++) {
-//     var path = "../../" + dato[i]; 
-//     var img = document.createElement('img');
-//     var div = document.createElement('div');
 
+  llaves = Object.keys(Todos1);
+  console.log(llaves.length);
+  // console.log('pruebas', Todos1.type)
+  //---Leemos las claves
+
+
+  for (let index = 0; index < llaves.length; index++) {
+    const tipo = llaves[index];
+    const dato = Todos1[tipo];
+     console.log(tipo);
+     var div = document.createElement('div');
+
+     div.setAttribute("class", "fila");
+
+     document.getElementById("repertorio").appendChild(div);
+
+   
     
-    
-//     img.setAttribute("src", path);
-//     img.setAttribute("width", "");
-//     img.setAttribute("height", "100rem");
-//     document.getElementById("logos").appendChild(img);
-//   }
+    for (let index2 = 0; index2 < dato.length; index2++) {
 
- }
+     // const path = dato[index2];
+      //  console.log(dato);
+      //  console.log(dato.length);
+      //  console.log(dato);
+     // console.log(ww);
+     var img = document.createElement('img');
+ 
+      var path = "../../" + dato[index2];
+      img.setAttribute("src", path);
+      img.setAttribute("height", "200rem");
+      img.setAttribute("class", " ");
+      img.setAttribute("id", tipo);
+
+      div.setAttribute("id", tipo);
+
+      //  console.log(llaves)
+
+      document.getElementById(tipo).appendChild(img);
+
+
+
+
+    }
+
+
+
+
+  }
+
+
+
+
+
+  // for (let index = 0; index < llaves; index++) {
+  //   const dato = llaves;
+  //   console.log(dato);
+
+  //   for (let i = 0; i < dato.length; i++) {
+  //     var path = "../../" + dato[i]; 
+  //     var img = document.createElement('img');
+  //     var div = document.createElement('div');
+
+
+
+  //     img.setAttribute("src", path);
+  //     img.setAttribute("width", "");
+  //     img.setAttribute("height", "100rem");
+  //     document.getElementById("logos").appendChild(img);
+  //   }
+
+  // }
 
 
 
