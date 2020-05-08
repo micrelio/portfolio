@@ -47,20 +47,23 @@ function cargaTodo() {
     var t = document.createTextNode(tipo); 
     h.setAttribute("class", "title");
     h.setAttribute("id", "i ");
-    document.getElementById('repertorio').appendChild(h);
-    document.getElementById('repertorio').appendChild(hr);
     div.setAttribute("id", tipo);
     div.setAttribute("class", "fila");
+    hr.setAttribute("class", "raya");
+
+    document.getElementById('repertorio').appendChild(h);
+    h.appendChild(t);
+    document.getElementById('repertorio').appendChild(hr);
     document.getElementById("repertorio").appendChild(div);
 //---LEEMOS EL ARRAY DENTRO DE CADA CLAVE---
     for (let index2 = 0; index2 < dato.length; index2++) {
       var img = document.createElement('img');
-           h.appendChild(t);
       var path = "../../" + dato[index2];
       img.setAttribute("src", path);
       img.setAttribute("height", "120rem");
       img.setAttribute("class", "imagenPresentacion");
       img.setAttribute("id", tipo);
+
  document.getElementById(tipo).appendChild(img);
     }
   }

@@ -7,7 +7,7 @@ class miGaleria extends HTMLElement {
   connectedCallback() {
     this.innerHTML =
       `
-            <section id="galeria" class="galeria" >
+                  <section id="galeria" class="galeria" >
     <div class="">
         <button type="button" onclick="cambiar('todos');"> Todos </button>
         <button id="bLogos" type="button"onclick="cambiar('logos');" > Logos </button>                                       <!-- -->
@@ -23,32 +23,21 @@ class miGaleria extends HTMLElement {
 </section>
                 `;
     cargaTodo();
-
     //cambiar('todos') //quitar al acabar
-
     // const logosy = document.querySelector('#bLogos');
     // logosy.addEventListener('mousemove', function() {
-  
     //   
     // });
-  
   }
 }
 customElements.define('mi-galeria', miGaleria);
 function myFunction() {
- 
 }
-
-
-
-
 
 //document.getElementById("bLogos").addEventListener("Click", myFuncti); 
 // function myFuncti() {
 //  
 // }
-
-
 
 // const buttons = document.querySelectorAll("#select .button")
 // for (const button of buttons) {
@@ -56,9 +45,6 @@ function myFunction() {
 //     //...
 //   })
 // }
-
-
-
 
 // const button = document.querySelector('#dataSender');
 // button.addEventListener('click', function(event) { 
