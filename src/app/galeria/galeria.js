@@ -2,7 +2,8 @@ class miGaleria extends HTMLElement {
   constructor() {
     //  puedes poner argumentos
     super();
-    myFunction();
+    //  cargaBoton();
+    //  myFunction();
   }
   connectedCallback() {
     this.innerHTML =
@@ -24,6 +25,7 @@ class miGaleria extends HTMLElement {
 <!-- <mi-imagenes></mi-imagenes> -->
 </section>
                 `;
+    cargaBoton()
     cargaTodo();
     //cambiar('todos') //quitar al acabar
     // const logosy = document.querySelector('#bLogos');
@@ -33,8 +35,53 @@ class miGaleria extends HTMLElement {
   }
 }
 customElements.define('mi-galeria', miGaleria);
-function myFunction() {
+
+function cargaBoton() {
+  //---imagenes en imagenes------------------------
+  llaves = Object.keys(imagenes);
+  console.log(llaves.length);
+  //---Leemos las claves
+  for (let index = 0; index < llaves.length; index++) {
+    const tipo = llaves[index];
+    const dato = imagenes[tipo];
+    console.log('tipo', tipo);
+    console.log('dato', dato);
+       var boton = document.createElement('button');
+    var hr = document.createElement('hr');
+    var h = document.createElement('h');
+    //---CREAMOS UN TEXTO---
+    var t = document.createTextNode(tipo);
+    h.setAttribute("class", "title");
+    h.setAttribute("id", "i ");
+    div.setAttribute("id", tipo);
+    div.setAttribute("class", "fila");
+    hr.setAttribute("class", "raya");
+
+    document.getElementById('repertorio').appendChild(h);
+    h.appendChild(t);
+    document.getElementById('repertorio').appendChild(hr);
+    document.getElementById("repertorio").appendChild(div);
+    //---LEEMOS EL ARRAY DENTRO DE CADA CLAVE---
+    for (let index2 = 0; index2 < dato.length; index2++) {
+      
+    }
+  }
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //document.getElementById("bLogos").addEventListener("Click", myFuncti); 
 // function myFuncti() {
