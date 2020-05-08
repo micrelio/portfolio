@@ -1,7 +1,7 @@
 
 //var count = 0;
 //var res = 0;
-todos = [
+var todos = [
   logos = ["assets/images/logos/igr.jpg",
     "assets/images/logos/igre.png",
     "assets/images/logos/john.png"],
@@ -21,7 +21,7 @@ todos = [
 ];
 
 
-Local = {
+var imagenes = {
   Logos: ["/src/assets/images/logos/igr.jpg",
     "/src/assets/images/logos/igre.png",
     "/src/assets/images/logos/john.png"],

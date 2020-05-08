@@ -19,36 +19,36 @@ class miImagenes extends HTMLElement {
 customElements.define('mi-imagenes', miImagenes);
 function cargaTodo() {
   //---Numero de valores que contiene cada objeto
-  console.log(Object.values(Local));
+  console.log(Object.values(imagenes));
   //---Claves del objeto
-  console.log(Object.keys(Local));
+  console.log(Object.keys(imagenes));
   //---devuelve una matriz de pares propios de una propiedad enumerable [key, value] de un objeto dado, en el mismo orden que es proporcionado por for...in (La diferencia es que un bucle for-in enumera las propiedades en la cadena de prototipos).
-  console.log(Object.entries(Local));
+  console.log(Object.entries(imagenes));
   //---Si es numerable devuelve true de lo contrario false
-  console.log(Object.prototype.propertyIsEnumerable(Local));
+  console.log(Object.prototype.propertyIsEnumerable(imagenes));
   //---crea un objeto nuevo, utilizando un objeto existente como el prototipo del nuevo objeto creado.
-  console.log(Object.create(Local));
+  console.log(Object.create(imagenes));
   //---devuelve un array con todas las propiedades (numerables o no) encontradas en un objeto dado.
-  console.log(Object.getOwnPropertyNames(Local));
+  console.log(Object.getOwnPropertyNames(imagenes));
   //---
-  console.log(Object.entries(Local));
+  console.log(Object.entries(imagenes));
   //--- A pelo
-  console.log(Local);
+  console.log(imagenes);
   //---Entrar en un dato en concreto del objeto
-  console.log(Local.Logos);
+  console.log(imagenes.Logos);
   //--------------------------------------------------------------------------------
 
   //console.log('objeto vacio', onLine);
 
 
 
-//---imagenes en local------------------------
-  llaves = Object.keys(Local);
+//---imagenes en imagenes------------------------
+  llaves = Object.keys(imagenes);
   console.log(llaves.length);
   //---Leemos las claves
  for (let index = 0; index < llaves.length; index++) {
     const tipo = llaves[index];
-    const dato = Local[tipo];
+    const dato = imagenes[tipo];
     console.log(tipo);
     var div = document.createElement('div');
     var hr = document.createElement('hr');
@@ -70,7 +70,7 @@ function cargaTodo() {
       var img = document.createElement('img');
       var path = dato[index2];
       img.setAttribute("src", path);
-      img.setAttribute("height", "120rem");
+      img.setAttribute("height", "70rem");
       img.setAttribute("class", "imagenPresentacion");
       img.setAttribute("id", tipo);
 
