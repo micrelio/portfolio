@@ -6,7 +6,7 @@
   background-color: lightblue;
 }
 
-p {
+h {
   font-size: 3rem;
 }
 
@@ -23,7 +23,12 @@ hr {
 }
 
 .fila {
+  overflow: auto;
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.fila .imagenPresentacion {
   margin: 0.6rem;
   border: 0.4rem solid #eeeeee;
   box-shadow: #555 1px 1px 8px 1px;

@@ -7,7 +7,7 @@ class miGaleria extends HTMLElement {
   connectedCallback() {
     this.innerHTML =
       `
-            <section id="galeria" class="" >
+            <section id="galeria" class="galeria" >
     <div class="">
         <button type="button" onclick="cambiar('todos');"> Todos </button>
         <button id="bLogos" type="button"onclick="cambiar('logos');" > Logos </button>                                       <!-- -->
