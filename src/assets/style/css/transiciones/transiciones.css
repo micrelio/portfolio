@@ -10,12 +10,12 @@
 }
 
 .object {
-  transition: all 1s ease-in-out;
-  -webkit-transition: all 1s ease-in-out;
+  transition: all 1.5s ease-in-out;
+  -webkit-transition: all 1.5s ease-in-out;
   /** Chrome & Safari **/
-  -moz-transition: all 1s ease-in-out;
+  -moz-transition: all 1.5s ease-in-out;
   /** Firefox **/
-  -o-transition: all 1s ease-in-out;
+  -o-transition: all 1.5s ease-in-out;
   /** Opera **/
 }
 

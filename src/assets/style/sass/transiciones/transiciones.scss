@@ -9,10 +9,10 @@
    -moz-transform: translate(-100vw,0); /** Firefox **/
 }
 .object {
-    transition: all 1s ease-in-out;
-    -webkit-transition: all 1s ease-in-out; /** Chrome & Safari **/
-    -moz-transition: all 1s ease-in-out; /** Firefox **/
-    -o-transition: all 1s ease-in-out; /** Opera **/
+    transition: all 1.5s ease-in-out;
+    -webkit-transition: all 1.5s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 1.5s ease-in-out; /** Firefox **/
+    -o-transition: all 1.5s ease-in-out; /** Opera **/
 }
 .move-rigth  {
    transform: translate(100vw, 0);

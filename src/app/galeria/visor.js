@@ -165,7 +165,7 @@ function sum() {
       var techo = document.getElementById("activo");
       techo.removeChild(img);
      
-    }, 1000);
+    }, 1500);
 
     setTimeout(function cx() {
       imgS.setAttribute("class", "imagen object  move-left");
@@ -187,7 +187,7 @@ function sum() {
       img.setAttribute("onclick", "sum()");
       //ontouchcancel="sum()" onclick="sum()"
       document.getElementById('activo').appendChild(img);
-    }, 1000);
+    }, 1500);
   }
 
   else if (imgS != null && img == null) {
@@ -205,7 +205,7 @@ function sum() {
     setTimeout(function t() {
       var techo = document.getElementById("activo");
       techo.removeChild(imgS);
-    }, 1000);
+    }, 1500);
 
     setTimeout(function cx() {
       img.setAttribute("class", "imagen object  move-left");
@@ -226,7 +226,7 @@ function sum() {
 
       //ontouchcancel="sum()" onclick="sum()"
       document.getElementById('activo').appendChild(img);
-    }, 1000);
+    }, 1500);
   }
 }
 function res() {
