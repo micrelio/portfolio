@@ -15,6 +15,8 @@ class miGaleria extends HTMLElement {
         <button id="bPosters" type="button" onclick="cambiar('posters');"> Posters </button>
         <button id="bPostales" type="button" onclick="cambiar('postales');"> Postales </button>
         <button id="bPngs" type="button" onclick="cambiar('pngs');"> Pngs </button>
+        <button id="bPngs" type="button" onclick="cambiar('Google');"> Google </button>
+
     </div>
  </section>
 <section id="content">

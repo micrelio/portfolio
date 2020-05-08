@@ -133,7 +133,7 @@ function activar() {
   imgMA = document.createElement('img');
   imgMS = document.createElement('img');
 
-  var path = "../../" + vista[count];
+  var path =  vista[count];
   img.setAttribute("src", path);
   img.setAttribute("id", "img");
   img.setAttribute("class", "imagen");
@@ -153,7 +153,7 @@ function sum() {
   if (img != null && imgS == null) {
     count++;
     imgS = document.createElement('img');
-    var path = "../../" + vista[count];
+    var path =  vista[count];
     imgS.setAttribute("src", path);
     imgS.setAttribute("id", "imgS");
     imgS.setAttribute("class", "imagen");
@@ -180,7 +180,7 @@ function sum() {
       // imgS.removeAttribute("class");
       imgS = null
       img = document.createElement('img');
-      var path = "../../" + vista[count];
+      var path =  vista[count];
       img.setAttribute("src", path);
       img.setAttribute("id", "img");
       img.setAttribute("class", "imagen");
@@ -194,7 +194,7 @@ function sum() {
 
     count++;
     img = document.createElement('img');
-    var path = "../../" + vista[count];
+    var path =  vista[count];
     img.setAttribute("src", path);
     img.setAttribute("id", "img");
     img.setAttribute("class", "imagen");
@@ -286,7 +286,7 @@ function activarMiniLaterales() {
     //  console.log('visat', vista)
     //  console.log('dato', dato)
     //      if (indice<count) {
-    var path = "../../" + vista[indice];
+    var path =  vista[indice];
     var imgMA = document.createElement('img');
     imgMA.setAttribute("src", path);
     imgMA.setAttribute("height", "5");
@@ -326,7 +326,7 @@ function activarMiniLaterales() {
 
 function activ(a) {
   //primero ponemos el contador a cero para empezar por el primer puesto del array
-  var path = "../../" + a;
+  var path =  a;
   //console.log('imagen', imagen)
   //La img es igual a un elemento que creamos del tipo imagen
   var img = document.createElement('img');
@@ -350,7 +350,7 @@ function activ(a) {
   document.getElementById(count).appendChild(img);
   //  document.getElementById("visor").appendChild(divS);
   //  document.getElementById("imgS").appendChild(imgS);
-  var imagenPath = "../../" + a;
+  var imagenPath =  a;
   var img1 = document.createElement('img');
   img1.setAttribute("src", imagenPath);
   img1.setAttribute("width", "");
@@ -368,7 +368,7 @@ function retraso() {
   //  divSiguiente.setAttribute("id", "");
   //       var  imgX = document.createElement('img');
   //       var divX = document.createElement('div');
-  //        var path = "../../" + siguiente;
+  //        var path =  siguiente;
   // console.log('sigiente2', path)
   // imgX.setAttribute("src", path);
   // imgX.setAttribute("width", "");
@@ -391,9 +391,9 @@ function cambi(a, b, c) {
   posicion = vista.indexOf(a);
   console.log(posicion)
   //console.log('imagen1', document.getElementById('central'))
-  var path = "../../" + a;
-  var pathAnterior = "../../" + b;
-  var pathSiguiente = "../../" + c;
+  var path =  a;
+  var pathAnterior =  b;
+  var pathSiguiente =  c;
 
   var img = document.createElement('img');
   var imgA = document.createElement('img');
@@ -416,7 +416,7 @@ function cambi(a, b, c) {
 
   document.getElementById("divCentral").replaceChild(img, central);
 
-  var centralPath = "../../" + a;
+  var centralPath =  a;
   var img1 = document.createElement('img');
   img1.setAttribute("src", centralPath);
   img1.setAttribute("width", "");
@@ -440,7 +440,7 @@ function activarMiniLateralesvvv() {
     //    // var pos = frutas.indexOf('Banana');
     //   }
 
-    //   var miniPath = "../../" + b[i];
+    //   var miniPath =  b[i];
     //   var img2 = document.createElement('img');
     //   img2.setAttribute("src", miniPath);
     //   img2.setAttribute("width", "");
