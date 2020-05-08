@@ -8,12 +8,17 @@ class miImagenes extends HTMLElement {
   connectedCallback() {
     this.innerHTML =
       `
+      <!--<link  type="text/css" rel="stylesheet" href='css/'+nombreDocumento+'.css'/>
+-->
   <section id="repertorio" class="repertorio">
-  <p>'tipo'</p> 
-  <hr>
-      
-</div>
+ 
 
+  <!--    
+</div>
+document.body.innerHTML = "<h1>Time right now is:  " + d.getHours() + 
+":" + d.getMinutes() + ":" + d.getSeconds()
+"</h1>"
+-->
 
 
 
@@ -100,7 +105,16 @@ function cargaTodo() {
     const dato = Todos1[tipo];
      console.log(tipo);
      var div = document.createElement('div');
+     var h =document.createElement('h');
+var hr =document.createElement('hr');
 
+
+
+h.setAttribute("class", " ");
+
+ document.getElementById('repertorio').appendChild(h);
+      document.getElementById('repertorio').appendChild(hr);
+     div.setAttribute("id", tipo);
      div.setAttribute("class", "fila");
 
      document.getElementById("repertorio").appendChild(div);
@@ -117,15 +131,15 @@ function cargaTodo() {
      var img = document.createElement('img');
  
       var path = "../../" + dato[index2];
-      img.setAttribute("src", path);
-      img.setAttribute("height", "200rem");
-      img.setAttribute("class", " ");
-      img.setAttribute("id", tipo);
 
-      div.setAttribute("id", tipo);
+      img.setAttribute("src", path);
+      img.setAttribute("height", "120rem");
+      img.setAttribute("class", "imagenPresentacion");
+      img.setAttribute("id", tipo);
+      
 
       //  console.log(llaves)
-
+     
       document.getElementById(tipo).appendChild(img);
 
 
