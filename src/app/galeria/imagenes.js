@@ -7,8 +7,11 @@ class miImagenes extends HTMLElement {
   }
   connectedCallback() {
     this.innerHTML =
-      `
-  <section id="repertorio" class="repertorio">
+     `
+    <!--
+     <img src="https://ep01.epimg.net/elpais/imagenes/2019/10/30/album/1572424649_614672_1572453030_noticia_normal.jpg" alt="">
+     -->  
+     <section id="repertorio" class="repertorio">
   </section>
   `;
   }
@@ -33,6 +36,13 @@ function cargaTodo() {
   console.log(Local);
   //---Entrar en un dato en concreto del objeto
   console.log(Local.Logos);
+  //--------------------------------------------------------------------------------
+
+  console.log('objeto vacio', onLine);
+
+
+
+//---imagenes en local------------------------
   llaves = Object.keys(Local);
   console.log(llaves.length);
   //---Leemos las claves
@@ -59,6 +69,43 @@ function cargaTodo() {
     for (let index2 = 0; index2 < dato.length; index2++) {
       var img = document.createElement('img');
       var path = "../../" + dato[index2];
+      img.setAttribute("src", path);
+      img.setAttribute("height", "120rem");
+      img.setAttribute("class", "imagenPresentacion");
+      img.setAttribute("id", tipo);
+
+ document.getElementById(tipo).appendChild(img);
+    }
+  }
+
+
+  //---IMAGENES ONLINE--------------------------------------
+  llavesWeb = Object.keys(onLine);
+  console.log(llavesWeb.length);
+  //---Leemos las claves
+ for (let index = 0; index < llavesWeb.length; index++) {
+    const tipo = llavesWeb[index];
+    const dato = onLine[tipo];
+    console.log(tipo);
+    var div = document.createElement('div');
+    var hr = document.createElement('hr');
+    var h = document.createElement('h');
+    //---CREAMOS UN TEXTO---
+    var t = document.createTextNode(tipo); 
+    h.setAttribute("class", "title");
+    h.setAttribute("id", "i ");
+    div.setAttribute("id", tipo);
+    div.setAttribute("class", "fila");
+    hr.setAttribute("class", "raya");
+
+    document.getElementById('repertorio').appendChild(h);
+    h.appendChild(t);
+    document.getElementById('repertorio').appendChild(hr);
+    document.getElementById("repertorio").appendChild(div);
+//---LEEMOS EL ARRAY DENTRO DE CADA CLAVE---
+    for (let index2 = 0; index2 < dato.length; index2++) {
+      var img = document.createElement('img');
+      var path = dato[index2];
       img.setAttribute("src", path);
       img.setAttribute("height", "120rem");
       img.setAttribute("class", "imagenPresentacion");

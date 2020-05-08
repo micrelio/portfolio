@@ -38,11 +38,11 @@ Local = {
     "assets/images/png/europaRedondo.png",
     "assets/images/png/igreNavidad.png",],
   },
-Online={
-  Llacer:["https://www.instagram.com/p/B-B0-GrKC-5/?utm_source=ig_web_copy_link",
-  "https://www.instagram.com/p/B98g4FhKPVj/?utm_source=ig_web_copy_link",
-  "https://www.instagram.com/p/Bq6Z6xXgPft/?utm_source=ig_web_copy_link",
-"https://www.instagram.com/p/BsooJeVAac3/?utm_source=ig_web_copy_link",],
+onLine={
+  Google:["https://ep01.epimg.net/elpais/imagenes/2019/10/30/album/1572424649_614672_1572453030_noticia_normal.jpg",
+  "https://cnnespanol2.files.wordpress.com/2019/12/mejores-imagenes-del-ancc83o-noticias-2019-galeria10.jpg?quality=100&strip=info&w=320&h=240&crop=1",
+  "https://i.blogs.es/3650f5/eclipsed-moon-trail-c-chuanjin-su/450_1000.jpg",
+"https://us.123rf.com/450wm/nexusplexus/nexusplexus1803/nexusplexus180301586/97569029-imagen-de-fondo-abstracto-con-planetas-espaciales-y-paisaje-natural-.jpg?ver=6",],
 },
   Nombres = ["Logos", "Posters", "Folletos", "Postales", "Pngs",];
 
