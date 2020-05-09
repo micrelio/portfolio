@@ -3,17 +3,16 @@
   color: white;
 }
 
+.galeria {
+  overflow: auto;
+}
+
 .head {
   width: 100%;
   background-color: pink;
 }
 .head img {
   width: 100%;
-}
-
-button {
-  height: 5rem;
-  cursor: pointer;
 }
 
 /*# sourceMappingURL=galeria.css.map */

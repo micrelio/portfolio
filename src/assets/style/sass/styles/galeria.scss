@@ -4,13 +4,10 @@
     color:white;
 }
 .galeria{
-   // overflow: auto;
+    overflow: auto;
+   // display:flex;
+   // flex-direction: column;
 }
 .head {
     @include head;
-}
-
-button {
-    height: 5rem;
-    cursor: pointer;
 }

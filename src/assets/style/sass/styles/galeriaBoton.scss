@@ -1,0 +1,20 @@
+@import "../mixins/mixins.scss";
+@import "../variables/variables.scss";
+
+
+.botonesGaleria{
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: yellowgreen;
+}
+.boton {
+    width: 5rem;
+    cursor: pointer;
+    background-color: pink;;
+   // color: pink;
+    margin: 2rem 2rem 2rem 2rem;
+}
