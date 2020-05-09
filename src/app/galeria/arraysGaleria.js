@@ -26,18 +26,18 @@ var todos = [
 ];
 
 
-var imagenes = {
-  logos: ["/src/assets/images/logos/igr.jpg",
+var Galeria = {
+  Logos: ["/src/assets/images/logos/igr.jpg",
     "/src/assets/images/logos/igre.png",
     "/src/assets/images/logos/john.png"],
-  posters: ["/src/assets/images/posters/quiromasajista.jpg",],
-  folletos: ["/src/assets/images/folletos/igreCampana2019.jpg",
+  Posters: ["/src/assets/images/posters/quiromasajista.jpg",],
+  Folletos: ["/src/assets/images/folletos/igreCampana2019.jpg",
     "/src/assets/images/folletos/igreAntoniaCampaña2019.jpg",
     "/src/assets/images/folletos/igreCampaña2019B.jpg",
     "/src/assets/images/folletos/unChalecoUnaVida.jpg",],
- postales: ["/src/assets/images/postales/postalIgre.jpg",
+ Postales: ["/src/assets/images/postales/postalIgre.jpg",
     "/src/assets/images/postales/postalIgreCorreo.jpg",],
-  pngs: ["/src/assets/images/png/antonia.png",
+  Pngs: ["/src/assets/images/png/antonia.png",
     "/src/assets/images/png/banderaEuropaDesvanecida.png",
     "/src/assets/images/png/banderaEsquina.png",
     "/src/assets/images/png/europaRedondo.png",

@@ -23,7 +23,10 @@ class miBotonera extends HTMLElement {
                           // Código que se ejecuta al hacer click.
                           console.log(e.target.value);
                           var valor = e.target.value;
-                          cambiar(valor);
+                           document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
+                           console.log(valor);
+
+                          cargar(valor);
                       }
                   });
 
@@ -60,8 +63,8 @@ class miBotonera extends HTMLElement {
 
  
   function cargaBoton() {
-    //---imagenes en imagenes------------------------
-    var llaves = Object.keys(imagenes);
+    //---imagenes en Galeria------------------------
+    var llaves = Object.keys(Galeria);
     //console.log(llaves.length);
     //---Leemos las claves
     for (let index = 0; index < llaves.length; index++) {
@@ -82,7 +85,7 @@ class miBotonera extends HTMLElement {
       boto.setAttribute("class", "boton");
       boto.setAttribute("type", "button");
       boto.setAttribute("value", tipo);
-
+console.log(boto)
      
  // console.log(boto);
  // console.log(p);

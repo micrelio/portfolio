@@ -36,85 +36,78 @@ class miVisor extends HTMLElement {
   }
 }
 timer=2000;
-total = 0;
-count = 0;
-marcha = ' ';
-imgS = null;
-activoS = ' ';
 customElements.define('mi-visor', miVisor);
-function cambiar(id) {
-    console.log(id)
 
-  count = 0;
-  switch (id) {
+
+
+
+// function cambiar(id) {
+//     console.log(id)
+
+//   count = 0;
+//   switch (id) {
     
-    case 'todos':
-      document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
-      carga(todos);
-      break;
-    case 'logos':
-      document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
-      carga(logos);
-      break;
-    case 'folletos':
-      document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
-      carga(folletos);
-      break;
-    case 'postales':
-      document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
-      carga(postales);
-      break;
-    case 'posters':
-      document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
-      carga(posters);
-      break;
-    case 'pngs':
-      document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
-      carga(pngs);
-      break;
-      case 'Google':
-      document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
-      carga(Google);
-      break;
-      case 'Mas':
-      document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
-      carga(todos);
-      break;
-    default:
-      document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
-      break;
-  }
-}
-function keyEvent(event) {
-  switch (event.key) {
-    case 'ArrowLeft':
-      res();
-      break;
-       case ' ':
-    case 'ArrowRight':
-      sum();
-      break;
-    default:
-      // sum();
-      break;
-  }
-}
-function carga(e) {
-  preVista = e;
+//     case 'todos':
+//       document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
+//       carga(todos);
+//       break;
+//     case 'logos':
+//       document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
+//       carga(logos);
+//       break;
+//     case 'folletos':
+//       document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
+//       carga(folletos);
+//       break;
+//     case 'postales':
+//       document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
+//       carga(postales);
+//       break;
+//     case 'posters':
+//       document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
+//       carga(posters);
+//       break;
+//     case 'pngs':
+//       document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
+//       carga(pngs);
+//       break;
+//       case 'Google':
+//       document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
+//       carga(Google);
+//       break;
+//       case 'Mas':
+//       document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
+//       carga(todos);
+//       break;
+//     default:
+//       document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
+//       break;
+//   }
+// }
+
+
+function cargar(preVista) {
+ 
+  console.log(preVista)
   switch (preVista) {
-    case todos:
+    case 'Galeria':
       //Enviamos un solo array
       //creamos vista como variable global
       vista = [].concat.apply([], preVista);
       renderizar(vista)
       //   acaparados.forEach(elemente => renderizar(elemente));
       break;
-    case logos:
-    case folletos:
-    case posters:
-    case postales:
-    case pngs:
-    case Google:
+
+    case 'Logos':
+      console.log('?¿?¿?¿?¿')
+
+    case 'Folletos':
+    case 'Posters':
+    case 'Postales':
+    case 'Pngs':
+    case 'Google':
+    case 'Mas':
+      console.log('?¿?¿?¿?¿')
 
       // Opcion 2 creamos vista como variable global
       vista = preVista;
@@ -269,7 +262,7 @@ function stop() {
 function activarMiniLaterales() {
   //console.log('vista', vista)
   // posicion = a.indexOf('todos');
-  
+
 
   for (let indice = 0; indice < total; indice++) {
     dato = vista[indice];
@@ -329,9 +322,19 @@ function activarMiniLaterales() {
 
 
 //---VIEJO----------------------------------------
+// timer=2000;
+// total = 0;
+// count = 0;
+// marcha = ' ';
+// imgS = null;
+// activoS = ' ';
+// customElements.define('mi-visor', miVisor);
 // function cambiar(id) {
+//     console.log(id)
+
 //   count = 0;
 //   switch (id) {
+    
 //     case 'todos':
 //       document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
 //       carga(todos);
@@ -359,6 +362,10 @@ function activarMiniLaterales() {
 //       case 'Google':
 //       document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
 //       carga(Google);
+//       break;
+//       case 'Mas':
+//       document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
+//       carga(todos);
 //       break;
 //     default:
 //       document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
@@ -550,6 +557,7 @@ function activarMiniLaterales() {
 //   //console.log('vista', vista)
 //   // posicion = a.indexOf('todos');
 
+
 //   for (let indice = 0; indice < total; indice++) {
 //     dato = vista[indice];
 //     //  console.log('visat', vista)
@@ -574,4 +582,3 @@ function activarMiniLaterales() {
 //   //    var pos = e.indexOf('indice');
 //   //  }
 // }
-

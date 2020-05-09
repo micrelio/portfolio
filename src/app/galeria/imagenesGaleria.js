@@ -43,11 +43,11 @@ function cargaTodo() {
 
 
 //---imagenes en imagenes------------------------
- var llaves = Object.keys(imagenes);
+ var llaves = Object.keys(Galeria);
   //---Leemos las claves
  for (let index = 0; index < llaves.length; index++) {
     const tipo = llaves[index];
-    const dato = imagenes[tipo];
+    const dato = Galeria[tipo];
     var div = document.createElement('div');
     var hr = document.createElement('hr');
     var h = document.createElement('h');
