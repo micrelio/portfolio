@@ -11,17 +11,17 @@ class miBotonera extends HTMLElement {
       this.innerHTML =
         `
               <section id="botonesGaleria" class="botonesGaleria" >
-              <button class="bubbly" id="bubbly"  >Click me!</button>
                </section>
               
                   `;
                   
 
      // cargaTodo();
-  
-      
-     
+   
+     cambio();
+
       cargaBoton() ;
+      //cambio();
       }
   
 
@@ -45,8 +45,7 @@ class miBotonera extends HTMLElement {
     //console.log(llaves.length);
     //---Leemos las claves
     for (let index = 0; index < llaves.length; index++) {
-      const tipo = llaves[index];
-      const dato = imagenes[tipo];
+       tipo = llaves[index];
     //  console.log('tipo', tipo);
    //   console.log('dato', dato);
       var boto = document.createElement('button');
@@ -66,25 +65,30 @@ class miBotonera extends HTMLElement {
      document.getElementById('boton'+tipo).appendChild(p);
       p.appendChild(t);
 //---RECOGEMOS LA VARIABLE EN CADA VUELTA
- var seleccion='boton'+ tipo;
+  seleccion='boton'+ tipo;
 
       //---LEEMOS EL ARRAY DENTRO DE CADA CLAVE---
       // for (let index2 = 0; index2 < dato.length; index2++) {
   
       // }
-      cambio(seleccion, tipo);
+   
+//console.log(tipo)
+
     } 
+    //console.log(this.tipo)
         }
   
 
-    
-
+        
+console.log(dato)
   
-    function cambio(dato, tipo) {
-
-      document.getElementById(dato).addEventListener('click',function() {
+    function cambio() {
+ //console.log(seleccion)
+ document.getElementById(seleccion).addEventListener('click',function() {
         document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
-        console.log(tipo);
+        console.log('tipo')
+       cambiar(e);
+       
 
         });
       };

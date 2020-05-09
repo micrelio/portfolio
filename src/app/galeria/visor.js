@@ -32,6 +32,7 @@ class miVisor extends HTMLElement {
     const mos = document.querySelector('#imagen');
     // cajonDerecha.getAttribute('class');   
     // element.setAttribute('href', 'index.html');
+    cambiar(logos)
   }
 }
 timer=2000;
@@ -42,8 +43,12 @@ imgS = null;
 activoS = ' ';
 customElements.define('mi-visor', miVisor);
 function cambiar(id) {
+
   count = 0;
+  console.log(id)
+
   switch (id) {
+    
     case 'todos':
       document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
       carga(todos);
@@ -74,6 +79,8 @@ function cambiar(id) {
       break;
     default:
       document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
+      carga(Mas);
+
       break;
   }
 }
