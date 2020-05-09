@@ -21,9 +21,17 @@ class miBotonera extends HTMLElement {
                   
                       if (e.target !== this) {
                           // Código que se ejecuta al hacer click.
-                          console.log(e.target.value)
+                          console.log(e.target.value);
+                          var valor = e.target.value;
+                          cambiar(valor);
                       }
                   });
+
+
+
+
+
+
      // cargaTodo();
    
      setTimeout(function cx() {

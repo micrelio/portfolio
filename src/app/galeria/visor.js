@@ -32,7 +32,7 @@ class miVisor extends HTMLElement {
     const mos = document.querySelector('#imagen');
     // cajonDerecha.getAttribute('class');   
     // element.setAttribute('href', 'index.html');
-    cambiar(logos)
+  //  cambiar(e)
   }
 }
 timer=2000;
@@ -43,10 +43,9 @@ imgS = null;
 activoS = ' ';
 customElements.define('mi-visor', miVisor);
 function cambiar(id) {
+    console.log(id)
 
   count = 0;
-  console.log(id)
-
   switch (id) {
     
     case 'todos':
@@ -77,10 +76,12 @@ function cambiar(id) {
       document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
       carga(Google);
       break;
+      case 'Mas':
+      document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
+      carga(todos);
+      break;
     default:
       document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
-      carga(Mas);
-
       break;
   }
 }
@@ -268,6 +269,7 @@ function stop() {
 function activarMiniLaterales() {
   //console.log('vista', vista)
   // posicion = a.indexOf('todos');
+  
 
   for (let indice = 0; indice < total; indice++) {
     dato = vista[indice];
