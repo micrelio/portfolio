@@ -96,30 +96,24 @@ class miBotonera extends HTMLElement {
      document.getElementById('boton'+tipo).appendChild(p);
       p.appendChild(t);
 //---RECOGEMOS LA VARIABLE EN CADA VUELTA
-gg='boton'+ tipo;
-       bubblyButtons = document.getElementsByClassName(gg);
-      console.log(gg);
-      console.log(bubblyButtons)
+ var seleccion='boton'+ tipo;
 
       //---LEEMOS EL ARRAY DENTRO DE CADA CLAVE---
       // for (let index2 = 0; index2 < dato.length; index2++) {
   
       // }
-      caca();
-    }
-    
-    console.log(bubblyButtons)
-    }
+      cambio(seleccion, tipo);
+    } 
+        }
   
 
     
 
   
-    function caca() {
+    function cambio(dato, tipo) {
 
-      document.getElementById(gg).addEventListener('click',function() {
-        console.log('yyyyyyyyyyyyyyyyyyyyyy')
-        console.log(gg);
+      document.getElementById(dato).addEventListener('click',function() {
+        console.log(tipo);
 
         });
       };

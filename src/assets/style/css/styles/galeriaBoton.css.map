@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../sass/mixins/mixins.scss","../../sass/styles/galeriaBoton.scss"],"names":[],"mappings":"AAwIO;ACpIP;EACI;EACA;EACA;EACA;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EAEA","file":"galeriaboton.css"}
+{"version":3,"sourceRoot":"","sources":["../../sass/mixins/mixins.scss","../../sass/styles/galeriaBoton.scss"],"names":[],"mappings":"AAwIO;ACpIP;EACI;EACA;EACA;EACA;EACA;EACA;EACA;;;AAEJ;EAAQ;EAEJ;EACA;EAEA","file":"galeriaboton.css"}
