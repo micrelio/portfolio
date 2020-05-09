@@ -19,40 +19,10 @@ class miBotonera extends HTMLElement {
 
      // cargaTodo();
   
-      //cambiar('todos') //quitar al acabar
-  
-      // const logosy = document.querySelector('#bLogos');
-     //lkfvkd.addEventListener('mousemove', function() {
-    
-      //   
-      // });
+      
      
       cargaBoton() ;
-      
-
-
-
-      
-    //  var bubblyButtons = document.getElementsByClassName("bubbly");
-
-//for (var i = 0; i < bubblyButtons.length; i++) {
-  //bubblyButtons[1].addEventListener('click', function() {
- //   console.log('yyyyyyyyyyyyyyyyyyyyyy')
- //     
- //   });
-//}
-
-
-//caca();
-
-
-
-
-
-
-
-
-    }
+      }
   
 
 
@@ -113,12 +83,10 @@ class miBotonera extends HTMLElement {
     function cambio(dato, tipo) {
 
       document.getElementById(dato).addEventListener('click',function() {
+        document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
         console.log(tipo);
 
         });
       };
 
-  var esto = Logos;
-  bubbly-button.addEventListener('mousemove', function() {
-    console.log(eeeeeeeeeeee);
-    });
+  
