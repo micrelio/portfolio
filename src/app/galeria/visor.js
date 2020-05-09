@@ -88,7 +88,6 @@ customElements.define('mi-visor', miVisor);
 
 function cargar(preVista) {
   document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
-  console.log(preVista)
   switch (preVista) {
     case 'Galeria':
       //Enviamos un solo array
@@ -105,8 +104,6 @@ function cargar(preVista) {
     case 'Pngs':
     case 'Google':
     case 'Mas':
-      console.log('?¿?¿?¿?¿')
-
       // Opcion 2 creamos vista como variable global
        
       renderizar(preVista);
@@ -116,38 +113,130 @@ function cargar(preVista) {
   }
   //Idexamos indice
 }
+
+
+
+
+
 function renderizar(vista) {
-  total = vista.length;
-  //----Leemos el array
-  for (index = 0; index < total; index++) {
-    indice = vista[index];
-  }
-  if (indice != vista) {
-    //Reseteamos al llegar al ultimo dato del array
-    activo = vista;
-    index = total;
+var count= 0;
+  var llaves = Object.keys(Galeria);
+  console.log(llaves.length);
+  //---Leemos las claves
+
+  
+  //renderizar(vista)
+  //   acaparados.forEach(elemente => renderizar(elemente));
+
+  for (let indice = 0; indice < llaves.length; indice++) {
+
+  console.log(llaves[indice])
+for (let index = 0; index < array.length; index++) {
+  const element = array[index];
+  
+
+
+}
+
+
+//console.log(vista[indice])
+    img = document.createElement('img');
+    imgM = document.createElement('img');
+    var path =  vista[count];
+
+
+  // img.setAttribute("src", path);
+  //   img.setAttribute("id", "img");
+  //   img.setAttribute("class", "imagen");
+  //   img.setAttribute("onclick", "sum()");
+  //   imgM.setAttribute("src", path);
+  //   imgM.setAttribute("id", "miniCentral");
+//  document.getElementById('activo').appendChild(img);
+ //   document.getElementById('cajonCentral').appendChild(imgM);
+
+
+  // vista1 = [].concat.apply([], tipo);
+  // console.log(vista1)
+
+
+
+    //
+    //   const element = tipo[indice];
+    //   console.log(element)
+      
+      
+
+    
+  
   }
  // activar();
   //  activarMiniLaterales()
+
+
+
+
+  // console.log('PUNTO DE CONTROL 1')
+  // total = vista.length;
+  // //----Leemos el array
+  // for (index = 0; index < total; index++) {
+  //   indice = vista[index];
+  // }
+  // if (indice != vista) {
+  //   //Reseteamos al llegar al ultimo dato del array
+  //   activo = vista;
+  //   index = total;
+  // }
+  // console.log('PUNTO DE CONTROL 2')
+ 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function activar() {
   //activarMiniLaterales();
   // siguiente = vista[index + 1];
-  img = document.createElement('img');
-  imgM = document.createElement('img');
+  
   imgMA = document.createElement('img');
   imgMS = document.createElement('img');
 
-  var path =  vista[count];
-  img.setAttribute("src", path);
-  img.setAttribute("id", "img");
-  img.setAttribute("class", "imagen");
-  img.setAttribute("onclick", "sum()");
-  imgM.setAttribute("src", path);
-  imgM.setAttribute("id", "miniCentral");
 
-  document.getElementById('activo').appendChild(img);
-  document.getElementById('cajonCentral').appendChild(imgM);
+  
+
+  
 }
 function sum() {
   if (count >= total - 1) {

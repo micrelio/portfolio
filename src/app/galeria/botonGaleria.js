@@ -1,106 +1,114 @@
 class miBotonera extends HTMLElement {
-    constructor() {
-      //  puedes poner argumentos
-      
+  constructor() {
+    //  puedes poner argumentos
 
-      super();
+
+    super();
     //myFunction();
-    
-    }
-    connectedCallback() {
-      this.innerHTML =
-        `
+
+  }
+  connectedCallback() {
+    this.innerHTML =
+      `
               <section id="botonesGaleria" class="botonesGaleria" >
+              <button class="boton" value="Galeria">Galeria</button>
                </section>
               
                   `;
-                  
 
 
 
 
 
 
-                  cargar('logos')
 
-                  var elementos = document.querySelector('#botonesGaleria');
-                  elementos.addEventListener('click', function(e){
-                    //console.log(e.target.value)
-                  
-                      if (e.target !== this) {
-                          // Código que se ejecuta al hacer click.
-                          console.log(e.target.value);
-                          var valor = e.target.value;
-                          //  document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
-                           console.log(valor);
+    cargar('logos')
 
-                          cargar(valor);
-                      }
-                  });
+    //RECORREMOS LA SECCION ESPERANDO CUALQUIER EVENTO DEL MISMO, THIS ES EL ELEMENTO SOBRE EL QUE SE
+    //APLICA EL EVENTO, CON ESTO VEMOS QUE SE HA HECHO CLICK SOBRE UN ELEMENTO DISTINTO DEL PRINCIPAL
+    //SI HHAY SUBELEMENTOS NO VA BIEN
+    //CON ESTE OCUPAMOS MENOS RAM, YA QUE SOLO CREA UN EVENTO
+    var elementos = document.querySelector('#botonesGaleria');
+    elementos.addEventListener('click', function (e) {
+      //console.log(e.target.value)
+
+      if (e.target !== this) {
+        // Código que se ejecuta al hacer click.
+        console.log(e.target.value);
+        var valor = e.target.value;
+        //  document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
+        console.log(valor);
+
+        cargar(valor);
+      }
+    });
 
 
 
-                 
 
 
-     // cargaTodo();
-   
-     setTimeout(function cx() {
+
+    // cargaTodo();
+
+    setTimeout(function cx() {
       cambio();
 
     }, 0);
-    
-    
-      cargaBoton() ;
-      //cambio();
-      }
-  
 
 
-    
-    
- //   animateButton();
+    cargaBoton();
+    //cambio();
   }
-  
-  customElements.define('mi-botonera', miBotonera);
 
 
- 
- 
-  //elemento_que_se_escuchaba.removeEventListener('evento',función_a_anular,booleano);
 
- 
-  function cargaBoton() {
-    //---imagenes en Galeria------------------------
-    var llaves = Object.keys(Galeria);
-    //console.log(llaves.length);
-    //---Leemos las claves
-    for (let index = 0; index < llaves.length; index++) {
-       tipo = llaves[index];
+
+
+  //   animateButton();
+}
+
+customElements.define('mi-botonera', miBotonera);
+
+
+
+
+//elemento_que_se_escuchaba.removeEventListener('evento',función_a_anular,booleano);
+
+
+function cargaBoton() {
+  //---imagenes en Galeria------------------------
+  var llaves = Object.keys(Galeria);
+  //console.log(llaves.length);
+  //---Leemos las claves
+  for (let index = 0; index < llaves.length; index++) {
+    tipo = llaves[index];
     //  console.log('tipo', tipo);
-   //   console.log('dato', dato);
-      var boto = document.createElement('button');
-      var p = document.createElement('p');
-  
-      //---CREAMOS UN TEXTO---
-      var t = document.createTextNode(tipo);
+    //   console.log('dato', dato);
+    var boto = document.createElement('button');
+    var p = document.createElement('p');
+
+    //---CREAMOS UN TEXTO---
+    var t = document.createTextNode(tipo);
     //  p.setAttribute("class", "nombre");
     //  p.setAttribute("id", "p");
-   //  p.setAttribute("value", tipo);
+    //  p.setAttribute("value", tipo);
 
-      //---CREAMOS UN BOTON---
-      boto.setAttribute("id", 'boton'+ tipo);
-      boto.setAttribute("class", "boton");
-      boto.setAttribute("type", "button");
-      boto.setAttribute("value", tipo);
-console.log(boto)
-     
- // console.log(boto);
- // console.log(p);
- //---RENDERIZAMOS TODO
+    //---CREAMOS UN BOTON---
+    boto.setAttribute("id", 'boton' + tipo);
+    boto.setAttribute("class", "boton");
+    boto.setAttribute("type", "button");
+    boto.setAttribute("value", tipo);
+    console.log(boto)
+
+    // console.log(boto);
+    // console.log(p);
+    //---RENDERIZAMOS TODO
     document.getElementById("botonesGaleria").appendChild(boto);
-  //   document.getElementById('boton'+tipo).appendChild(p);
-  boto.appendChild(t);
+    //   document.getElementById('boton'+tipo).appendChild(p);
+    boto.appendChild(t);
+
+  }
+}
 
 
 
@@ -108,22 +116,16 @@ console.log(boto)
 
 
 
-
- 
 
 
 //---mirar aqui
 //    https://abalozz.es/optimiza-el-manejo-de-eventos-del-dom-en-javascript/
 //   https://es.stackoverflow.com/questions/98239/c%C3%B3mo-agregar-un-event-listener-para-varios-elementos      
-    
 
 
 
 
-//RECORREMOS LA SECCION ESPERANDO CUALQUIER EVENTO DEL MISMO, THIS ES EL ELEMENTO SOBRE EL QUE SE
-//APLICA EL EVENTO, CON ESTO VEMOS QUE SE HA HECHO CLICK SOBRE UN ELEMENTO DISTINTO DEL PRINCIPAL
-//SI HHAY SUBELEMENTOS NO VA BIEN
-//CON ESTE OCUPAMOS MENOS RAM, YA QUE SOLO CREA UN EVENTO
+
 
 
 
@@ -150,32 +152,29 @@ console.log(boto)
 //--------------------------------------------------------
 
 //---RECOGEMOS LA VARIABLE EN CADA VUELTA
- // seleccion='boton'+ tipo;
+// seleccion='boton'+ tipo;
 
-      //---LEEMOS EL ARRAY DENTRO DE CADA CLAVE---
-      // for (let index2 = 0; index2 < dato.length; index2++) {
-  
-      // }
-   
+//---LEEMOS EL ARRAY DENTRO DE CADA CLAVE---
+// for (let index2 = 0; index2 < dato.length; index2++) {
+
+// }
+
 //console.log(tipo)
 
-    } 
-    //console.log(this.tipo)
-        }
-  
 
-        
+
+
+
 console.log(dato)
-  
-    function cambio() {
- //console.log(seleccion)
-//  document.getElementById(seleccion).addEventListener('click',function() {
-//         document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
-//         console.log('tipo')
-//        cambiar(e);
-       
 
-//         });
-      };
+function cambio() {
+  //console.log(seleccion)
+  //  document.getElementById(seleccion).addEventListener('click',function() {
+  //         document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
+  //         console.log('tipo')
+  //        cambiar(e);
 
-  
+
+  //         });
+};
+
