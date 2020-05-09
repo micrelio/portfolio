@@ -15,6 +15,14 @@ class miBotonera extends HTMLElement {
               
                   `;
                   
+
+
+
+
+
+
+                  cargar('logos')
+
                   var elementos = document.querySelector('#botonesGaleria');
                   elementos.addEventListener('click', function(e){
                     //console.log(e.target.value)
@@ -23,7 +31,7 @@ class miBotonera extends HTMLElement {
                           // Código que se ejecuta al hacer click.
                           console.log(e.target.value);
                           var valor = e.target.value;
-                           document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
+                          //  document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
                            console.log(valor);
 
                           cargar(valor);
@@ -32,7 +40,7 @@ class miBotonera extends HTMLElement {
 
 
 
-
+                 
 
 
      // cargaTodo();
@@ -42,7 +50,7 @@ class miBotonera extends HTMLElement {
 
     }, 0);
     
-
+    
       cargaBoton() ;
       //cambio();
       }

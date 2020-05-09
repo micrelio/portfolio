@@ -87,7 +87,7 @@ customElements.define('mi-visor', miVisor);
 
 
 function cargar(preVista) {
- 
+  document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
   console.log(preVista)
   switch (preVista) {
     case 'Galeria':
@@ -99,9 +99,7 @@ function cargar(preVista) {
       break;
 
     case 'Logos':
-      console.log('?¿?¿?¿?¿')
-
-    case 'Folletos':
+        case 'Folletos':
     case 'Posters':
     case 'Postales':
     case 'Pngs':
@@ -110,8 +108,8 @@ function cargar(preVista) {
       console.log('?¿?¿?¿?¿')
 
       // Opcion 2 creamos vista como variable global
-      vista = preVista;
-      renderizar(vista);
+       
+      renderizar(preVista);
       break;
     default:
       break;
@@ -129,11 +127,11 @@ function renderizar(vista) {
     activo = vista;
     index = total;
   }
-  activar();
+ // activar();
   //  activarMiniLaterales()
 }
 function activar() {
-  activarMiniLaterales();
+  //activarMiniLaterales();
   // siguiente = vista[index + 1];
   img = document.createElement('img');
   imgM = document.createElement('img');
