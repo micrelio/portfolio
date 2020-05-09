@@ -15,13 +15,22 @@ class miBotonera extends HTMLElement {
               
                   `;
                   
-
+                  var elementos = document.querySelector('#botonesGaleria');
+                  elementos.addEventListener('click', function(e){
+                    //console.log(e.target.value)
+                  
+                      if (e.target !== this) {
+                          // Código que se ejecuta al hacer click.
+                          console.log(e.target.value)
+                      }
+                  });
      // cargaTodo();
    
      setTimeout(function cx() {
       cambio();
 
     }, 0);
+    
 
       cargaBoton() ;
       //cambio();
@@ -56,19 +65,23 @@ class miBotonera extends HTMLElement {
   
       //---CREAMOS UN TEXTO---
       var t = document.createTextNode(tipo);
-      p.setAttribute("class", "nombre");
-      p.setAttribute("id", "p");
+    //  p.setAttribute("class", "nombre");
+    //  p.setAttribute("id", "p");
+   //  p.setAttribute("value", tipo);
+
       //---CREAMOS UN BOTON---
-     boto.setAttribute("id", 'boton'+ tipo);
+      boto.setAttribute("id", 'boton'+ tipo);
       boto.setAttribute("class", "boton");
       boto.setAttribute("type", "button");
+      boto.setAttribute("value", tipo);
+
      
  // console.log(boto);
  // console.log(p);
  //---RENDERIZAMOS TODO
     document.getElementById("botonesGaleria").appendChild(boto);
-     document.getElementById('boton'+tipo).appendChild(p);
-      p.appendChild(t);
+  //   document.getElementById('boton'+tipo).appendChild(p);
+  boto.appendChild(t);
 
 
 
@@ -88,7 +101,10 @@ class miBotonera extends HTMLElement {
 
 
 
-
+//RECORREMOS LA SECCION ESPERANDO CUALQUIER EVENTO DEL MISMO, THIS ES EL ELEMENTO SOBRE EL QUE SE
+//APLICA EL EVENTO, CON ESTO VEMOS QUE SE HA HECHO CLICK SOBRE UN ELEMENTO DISTINTO DEL PRINCIPAL
+//SI HHAY SUBELEMENTOS NO VA BIEN
+//CON ESTE OCUPAMOS MENOS RAM, YA QUE SOLO CREA UN EVENTO
 
 
 
@@ -98,15 +114,21 @@ class miBotonera extends HTMLElement {
 
 
 //---- OPCION PARA CREAR UNA ALERTA
-var seleccion= 'boton'+ tipo;
-      document.getElementById(seleccion).addEventListener('click',function() {
-        document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
-        console.log(seleccion);
-       cambiar(seleccion);
-               });
+// var seleccion= 'boton'+ tipo;
+//       document.getElementById(seleccion).addEventListener('click',function() {
+//         document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
+//         console.log(seleccion);
+//        cambiar(seleccion);
+//                });
 //------------------------------------------------
 //--- OPCION PARA CREAR UNA ALERTA QUE APUNTE A VARIOS ELEMENTOS DE LA MISMA LISTA
-
+// var elementos = document.querySelectorAll('#lista .item-lista');
+// elementos.forEach(function(el, i){
+//     el.addEventListener('click', function(e){
+//         // Código que se ejecuta al hacer click.
+//     });
+// });
+//--------------------------------------------------------
 
 //---RECOGEMOS LA VARIABLE EN CADA VUELTA
  // seleccion='boton'+ tipo;
