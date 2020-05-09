@@ -58,26 +58,56 @@ class miBotonera extends HTMLElement {
       var t = document.createTextNode(tipo);
       p.setAttribute("class", "nombre");
       p.setAttribute("id", "p");
+      //---CREAMOS UN BOTON---
      boto.setAttribute("id", 'boton'+ tipo);
       boto.setAttribute("class", "boton");
       boto.setAttribute("type", "button");
      
  // console.log(boto);
  // console.log(p);
+ //---RENDERIZAMOS TODO
     document.getElementById("botonesGaleria").appendChild(boto);
      document.getElementById('boton'+tipo).appendChild(p);
       p.appendChild(t);
 
 
 
+
+
+
+
+
+ 
+
+
 //---mirar aqui
+//    https://abalozz.es/optimiza-el-manejo-de-eventos-del-dom-en-javascript/
 //   https://es.stackoverflow.com/questions/98239/c%C3%B3mo-agregar-un-event-listener-para-varios-elementos      
-      var seleccion= 'boton'+ tipo;
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+//---- OPCION PARA CREAR UNA ALERTA
+var seleccion= 'boton'+ tipo;
       document.getElementById(seleccion).addEventListener('click',function() {
         document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
         console.log(seleccion);
        cambiar(seleccion);
                });
+//------------------------------------------------
+//--- OPCION PARA CREAR UNA ALERTA QUE APUNTE A VARIOS ELEMENTOS DE LA MISMA LISTA
+
+
 //---RECOGEMOS LA VARIABLE EN CADA VUELTA
  // seleccion='boton'+ tipo;
 
