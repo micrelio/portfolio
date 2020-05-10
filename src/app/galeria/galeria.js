@@ -22,7 +22,7 @@ class miGaleria extends HTMLElement {
 
 
                 `;
-    cargaTodo();
+   // cargaTodo();
 
     //cambiar('todos') //quitar al acabar
 

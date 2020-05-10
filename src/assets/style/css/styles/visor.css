@@ -1,4 +1,22 @@
 /* hovers*/
+.botoneraMultimedia {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.botoneraMultimedia .multimediaControl .multimediaImagen {
+  width: 5rem;
+}
+.botoneraMultimedia .multimediaSound {
+  margin-left: auto;
+}
+.botoneraMultimedia .multimediaSound .multimediaImagen {
+  width: 5rem;
+}
+
 .principal {
   overflow: hidden;
   display: flex;
@@ -7,9 +25,6 @@
   justify-content: center;
   background-color: #df0174;
   background-color: yellow;
-}
-.principal .multimedia {
-  width: 5rem;
 }
 .principal .visor {
   overflow: hidden;

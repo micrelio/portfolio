@@ -1,33 +1,60 @@
 @import "../mixins/mixins.scss";
 @import "../variables/variables.scss";
 
+
+.botoneraMultimedia {
+    @include botoneraMultimedia;
+
+    .multimediaControl {
+        @include multimediaControl;
+
+        .multimediaImagen {
+            @include multimediaImagen;
+        }
+    }
+
+        .multimediaSound{
+            @include multimediaSound;
+        .multimediaImagen{
+            @include multimediaImagen;
+        }
+    }
+
+}
+
 .principal {
     @include principal;
-.multimedia {
-width:5rem;
-}
-       .visor {
+
+
+
+    .visor {
         @include visor;
+
         .activoA {
             @include activoA;
-            .imagen{
+
+            .imagen {
                 @include imagen;
             }
-            
-    } 
+
+        }
+
         .activo {
             @include activo;
-            .imagen{
+
+            .imagen {
                 @include imagen;
             }
-    }
-    .activoS {
-        @include activoS;
-        .imagen{
-            @include imagen;
         }
-}
-       }
+
+        .activoS {
+            @include activoS;
+
+            .imagen {
+                @include imagen;
+            }
+        }
+    }
 
 
     .cajonMini {

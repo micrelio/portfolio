@@ -7,31 +7,28 @@ class miVisor extends HTMLElement {
   connectedCallback() {
     this.innerHTML =
       `
-      <button onclick="intervalo()">auto</button>
+    <!--
+    <button onclick="intervalo()">auto</button>
 <button onclick="stop()">stop </button>
 <button onclick="reset()">reset </button>
+-->
 
-
-
-
-
-  <section id="principal" class="principal" >
-
-  <div>
-  <div>
-    <img id="multimedia" class="multimedia" value="stop" src="../../assets/images/buttons/multimedia/anterior.png">
-    <img id="multimedia" class="multimedia" value="play" src="../../assets/images/buttons/multimedia/play.png">
-    <img id="multimedia" class="multimedia" value="pause"src="../../assets/images/buttons/multimedia/pause.png">
-    <img id="multimedia" class="multimedia" value="stop" src="../../assets/images/buttons/multimedia/stop.png">
-    <img id="multimedia" class="multimedia" value="stop" src="../../assets/images/buttons/multimedia/siguiente.png">
+<section id="botoneraMultimedia" class="botoneraMultimedia" >
+  <div id="multimediaControl" class="multimediaControl">
+    <img id="multimediaImagen" class="multimediaImagen" value="stop" src="../../assets/images/buttons/multimedia/anterior.png">
+    <img id="multimediaImagen" class="multimediaImagen" value="play" src="../../assets/images/buttons/multimedia/play.png">
+    <img id="multimediaImagen" class="multimediaImagen" value="pause"src="../../assets/images/buttons/multimedia/pause.png">
+    <img id="multimediaImagen" class="multimediaImagen" value="stop" src="../../assets/images/buttons/multimedia/stop.png">
+    <img id="multimediaImagen" class="multimediaImagen" value="stop" src="../../assets/images/buttons/multimedia/siguiente.png">
   </div>
-  <div>
-    <img id="multimedia" class="multimedia" value="stop" src="../../assets/images/buttons/multimedia/soundOn.png">
-    <img id="multimedia" class="multimedia" value="play" src="../../assets/images/buttons/multimedia/soundOff.png">
-    <img id="multimedia" class="multimedia" value="pause"src="../../assets/images/buttons/multimedia/soundMin.png">
-    <img id="multimedia" class="multimedia" value="stop" src="../../assets/images/buttons/multimedia/soundMax.png">
-  </div>
-</div>
+
+</section>
+
+
+<section id="principal" class="principal" >
+
+
+ 
 
 
     <div  class="visor" id="visor" >
@@ -45,6 +42,13 @@ class miVisor extends HTMLElement {
        <div id="cajonDerecha" class="point"></div>
      </div>
 </section>
+<section id="botoneraMultimedia" class="botoneraMultimedia" >
+   <div id="multimediaSound" class="multimediaSound">
+    <img id="multimediaImagen" class="multimediaImagen" value="stop" src="../../assets/images/buttons/multimedia/soundOn.png">
+    <img id="multimediaImagen" class="multimediaImagen" value="play" src="../../assets/images/buttons/multimedia/soundOff.png">
+  <div>
+</section>
+
 
                 `;
     // esto arranca automatico 
@@ -54,10 +58,10 @@ class miVisor extends HTMLElement {
     const mos = document.querySelector('#imagen');
     // cajonDerecha.getAttribute('class');   
     // element.setAttribute('href', 'index.html');
-  //  cambiar(e)
+    //  cambiar(e)
   }
 }
-timer=2000;
+timer = 2000;
 customElements.define('mi-visor', miVisor);
 
 
@@ -68,7 +72,7 @@ customElements.define('mi-visor', miVisor);
 
 //   count = 0;
 //   switch (id) {
-    
+
 //     case 'todos':
 //       document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
 //       carga(todos);
@@ -120,14 +124,14 @@ function cargar(preVista) {
       break;
 
     case 'Logos':
-        case 'Folletos':
+    case 'Folletos':
     case 'Posters':
     case 'Postales':
     case 'Pngs':
     case 'Google':
     case 'Mas':
       // Opcion 2 creamos vista como variable global
-       
+
       renderizar(preVista);
       break;
     default:
@@ -141,58 +145,58 @@ function cargar(preVista) {
 
 
 function renderizar(vista) {
-var count= 0;
+  var count = 0;
   var llaves = Object.keys(Galeria);
   console.log(llaves.length);
   //---Leemos las claves
   console.log(Galeria);
 
-  
+
   //renderizar(vista)
   //   acaparados.forEach(elemente => renderizar(elemente));
 
   for (let indice = 0; indice < llaves.length; indice++) {
-const dato=llaves[indice]
-//  console.log(vista[indice])
-for (let index = 0; index < dato.length; index++) {
-  const element = dato[index];
-  console.log(element)
+    const dato = llaves[indice]
+    //  console.log(vista[indice])
+    for (let index = 0; index < dato.length; index++) {
+      const element = dato[index];
+      console.log(element)
 
 
-}
+    }
 
 
-//console.log(vista[indice])
+    //console.log(vista[indice])
     img = document.createElement('img');
     imgM = document.createElement('img');
-    var path =  vista[count];
+    var path = vista[count];
 
 
-  // img.setAttribute("src", path);
-  //   img.setAttribute("id", "img");
-  //   img.setAttribute("class", "imagen");
-  //   img.setAttribute("onclick", "sum()");
-  //   imgM.setAttribute("src", path);
-  //   imgM.setAttribute("id", "miniCentral");
-//  document.getElementById('activo').appendChild(img);
- //   document.getElementById('cajonCentral').appendChild(imgM);
+    // img.setAttribute("src", path);
+    //   img.setAttribute("id", "img");
+    //   img.setAttribute("class", "imagen");
+    //   img.setAttribute("onclick", "sum()");
+    //   imgM.setAttribute("src", path);
+    //   imgM.setAttribute("id", "miniCentral");
+    //  document.getElementById('activo').appendChild(img);
+    //   document.getElementById('cajonCentral').appendChild(imgM);
 
 
-  // vista1 = [].concat.apply([], tipo);
-  // console.log(vista1)
+    // vista1 = [].concat.apply([], tipo);
+    // console.log(vista1)
 
 
 
     //
     //   const element = tipo[indice];
     //   console.log(element)
-      
-      
 
-    
-  
+
+
+
+
   }
- // activar();
+  // activar();
   //  activarMiniLaterales()
 
 
@@ -210,7 +214,7 @@ for (let index = 0; index < dato.length; index++) {
   //   index = total;
   // }
   // console.log('PUNTO DE CONTROL 2')
- 
+
 }
 
 
@@ -252,14 +256,14 @@ for (let index = 0; index < dato.length; index++) {
 function activar() {
   //activarMiniLaterales();
   // siguiente = vista[index + 1];
-  
+
   imgMA = document.createElement('img');
   imgMS = document.createElement('img');
 
 
-  
 
-  
+
+
 }
 function sum() {
   if (count >= total - 1) {
@@ -269,7 +273,7 @@ function sum() {
   if (img != null && imgS == null) {
     count++;
     imgS = document.createElement('img');
-    var path =  vista[count];
+    var path = vista[count];
     imgS.setAttribute("src", path);
     imgS.setAttribute("id", "imgS");
     imgS.setAttribute("class", "imagen");
@@ -279,12 +283,12 @@ function sum() {
       //borramos la imagen para crear una en div central y luego mover desde allí
       var techo = document.getElementById("activo");
       techo.removeChild(img);
-   }, 1500);
+    }, 1500);
     setTimeout(function cx() {
       imgS.setAttribute("class", "imagen object  move-left");
     }, 0.5);
     setTimeout(function cxv() {
-        if (imgS != null) {
+      if (imgS != null) {
         console.log('imgS', imgS)
         var techo = document.getElementById("activoS");
         techo.removeChild(imgS);
@@ -292,7 +296,7 @@ function sum() {
       // imgS.removeAttribute("class");
       imgS = null
       img = document.createElement('img');
-      var path =  vista[count];
+      var path = vista[count];
       img.setAttribute("src", path);
       img.setAttribute("id", "img");
       img.setAttribute("class", "imagen");
@@ -302,9 +306,9 @@ function sum() {
     }, 1500);
   }
   else if (imgS != null && img == null) {
-   count++;
+    count++;
     img = document.createElement('img');
-    var path =  vista[count];
+    var path = vista[count];
     img.setAttribute("src", path);
     img.setAttribute("id", "img");
     img.setAttribute("class", "imagen");
@@ -338,9 +342,9 @@ function res() {
   }
 }
 function reset() {
- 
+
   count = 0;
-   if (img != null) {
+  if (img != null) {
     var centro = document.getElementById('activo');
     // var centro= document.getElementById('activo');
     centro.removeChild(img);
@@ -379,7 +383,7 @@ function activarMiniLaterales() {
     //  console.log('visat', vista)
     //  console.log('dato', dato)
     //      if (indice<count) {
-    var path =  vista[indice];
+    var path = vista[indice];
     var imgMA = document.createElement('img');
     imgMA.setAttribute("src", path);
     imgMA.setAttribute("height", "5");
@@ -444,7 +448,7 @@ function activarMiniLaterales() {
 
 //   count = 0;
 //   switch (id) {
-    
+
 //     case 'todos':
 //       document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
 //       carga(todos);
@@ -632,7 +636,7 @@ function activarMiniLaterales() {
 //   }
 // }
 // function reset() {
- 
+
 //   count = 0;
 //    if (img != null) {
 //     var centro = document.getElementById('activo');
