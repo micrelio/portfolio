@@ -10,6 +10,14 @@ class miVisor extends HTMLElement {
       <button onclick="intervalo()">auto</button>
 <button onclick="stop()">stop </button>
 <button onclick="reset()">reset </button>
+<div>
+  <img id="multimedia" class="multimedia" value="play" src="../../assets/images/buttons/multimedia/play.png">
+  <img id="multimedia" class="multimedia" value="pause"src="../../assets/images/buttons/multimedia/pause.png">
+  <img id="multimedia" class="multimedia" value="stop" src="../../assets/images/buttons/multimedia/stop.png">
+</div>
+
+
+
 
   <section id="principal" class="principal" >
     <div  class="visor" id="visor" >
@@ -123,17 +131,18 @@ var count= 0;
   var llaves = Object.keys(Galeria);
   console.log(llaves.length);
   //---Leemos las claves
+  console.log(Galeria);
 
   
   //renderizar(vista)
   //   acaparados.forEach(elemente => renderizar(elemente));
 
   for (let indice = 0; indice < llaves.length; indice++) {
-
-  console.log(llaves[indice])
-for (let index = 0; index < array.length; index++) {
-  const element = array[index];
-  
+const dato=llaves[indice]
+//  console.log(vista[indice])
+for (let index = 0; index < dato.length; index++) {
+  const element = dato[index];
+  console.log(element)
 
 
 }
