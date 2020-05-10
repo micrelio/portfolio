@@ -1,6 +1,7 @@
 /* hovers*/
 .botoneraMultimedia {
   display: flex;
+  position: relative;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
@@ -20,7 +21,7 @@
 }
 
 .principal {
-  overflow: hidden;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;

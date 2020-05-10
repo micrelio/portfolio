@@ -2,6 +2,7 @@
 /* hovers*/
 .head {
   width: 100%;
+  position: relative;
   background-color: pink;
 }
 .head img {

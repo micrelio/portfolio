@@ -27,6 +27,8 @@ class miNav extends HTMLElement {
             </div>
         </div>
     </div>
+    
+
     <div class="movil">
         <div class="imagenes">
             <div class="foto">
@@ -52,8 +54,11 @@ class miNav extends HTMLElement {
             <img src="../../assets/images/buttons/noche.png">
     </div>
 </section>
+
+
                 `;
     }
 }
+
 //  window.customElements.define('mi-Menu', minenu);
 customElements.define('mi-nav', miNav);

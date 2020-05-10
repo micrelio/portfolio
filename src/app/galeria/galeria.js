@@ -7,13 +7,12 @@ class miGaleria extends HTMLElement {
   connectedCallback() {
     this.innerHTML =
       `
-      <section>
+     
       <mi-botonera></mi-botonera>
- </section>
- 
+
       <section id="galeria" class="galeria" >
- 
  </section>
+
 
 <section id="content">
 

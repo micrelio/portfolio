@@ -2,7 +2,7 @@
 
        @mixin head {
            width: 100%;
-
+position: relative;
            background: {
                color: pink;
            }
@@ -13,7 +13,8 @@
        }
 
        @mixin principal {
-           overflow: hidden;
+           position: relative;
+          // overflow: hidden;
            display: flex;
            flex-direction: column;
            align-items: center;
@@ -58,7 +59,7 @@
        //---BOTONERA MULTIMEDIA----------------------
        @mixin botoneraMultimedia {
            display: flex;
-          // position: absolute;
+           position: relative;
  flex-direction: row;
  flex-wrap: nowrap;
  align-items: center;

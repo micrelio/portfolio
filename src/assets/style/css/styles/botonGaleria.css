@@ -2,18 +2,27 @@
 .botonesGaleria {
   display: flex;
   flex-direction: row;
-  height: 10vh;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  width: 100%;
   background-color: yellowgreen;
 }
 
 .boton {
-  padding: 2rem;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
   cursor: pointer;
   background-color: pink;
-  margin: 2rem 2rem 2rem 2rem;
+  margin: 0.3rem 0.3rem 0.3rem 0.3rem;
 }
 
 /*# sourceMappingURL=botonGaleria.css.map */
