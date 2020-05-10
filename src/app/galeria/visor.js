@@ -10,16 +10,30 @@ class miVisor extends HTMLElement {
       <button onclick="intervalo()">auto</button>
 <button onclick="stop()">stop </button>
 <button onclick="reset()">reset </button>
-<div>
-  <img id="multimedia" class="multimedia" value="play" src="../../assets/images/buttons/multimedia/play.png">
-  <img id="multimedia" class="multimedia" value="pause"src="../../assets/images/buttons/multimedia/pause.png">
-  <img id="multimedia" class="multimedia" value="stop" src="../../assets/images/buttons/multimedia/stop.png">
-</div>
+
 
 
 
 
   <section id="principal" class="principal" >
+
+  <div>
+  <div>
+    <img id="multimedia" class="multimedia" value="stop" src="../../assets/images/buttons/multimedia/anterior.png">
+    <img id="multimedia" class="multimedia" value="play" src="../../assets/images/buttons/multimedia/play.png">
+    <img id="multimedia" class="multimedia" value="pause"src="../../assets/images/buttons/multimedia/pause.png">
+    <img id="multimedia" class="multimedia" value="stop" src="../../assets/images/buttons/multimedia/stop.png">
+    <img id="multimedia" class="multimedia" value="stop" src="../../assets/images/buttons/multimedia/siguiente.png">
+  </div>
+  <div>
+    <img id="multimedia" class="multimedia" value="stop" src="../../assets/images/buttons/multimedia/soundOn.png">
+    <img id="multimedia" class="multimedia" value="play" src="../../assets/images/buttons/multimedia/soundOff.png">
+    <img id="multimedia" class="multimedia" value="pause"src="../../assets/images/buttons/multimedia/soundMin.png">
+    <img id="multimedia" class="multimedia" value="stop" src="../../assets/images/buttons/multimedia/soundMax.png">
+  </div>
+</div>
+
+
     <div  class="visor" id="visor" >
       <div id="activoA" class="activoA"></div>
       <div id="activo" class="activo"></div>
