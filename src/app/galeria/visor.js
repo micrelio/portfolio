@@ -63,6 +63,7 @@ class miVisor extends HTMLElement {
     });
   }
 }
+var count = 0;
 timer = 2000;
 customElements.define('mi-visor', miVisor);
 
@@ -94,12 +95,12 @@ function cargar(preVista) {
   //Idexamos indice
 }
 function seleccionar(vista) {
-  var count = 0;
+  
   var llaves = Object.keys(Galeria);
   console.log(vista);
   //---Leemos las claves
- var render=Galeria[vista][0];
-  var siguiente=Galeria[vista][1];
+ var render=Galeria[vista][count];
+  var siguiente=Galeria[vista][count+1];
    console.log(render);
    console.log(siguiente);
 
@@ -143,14 +144,18 @@ img = document.createElement('img');
     }
 
 function sum() {
+  count ++;
   img.setAttribute("class", "imagen object  move-left");
   imgS.setAttribute("class", "imagen object  move-left");
-  
-  //borramos la imagen para crear una en div central y luego mover desde allí
-  //     var techo = document.getElementById("activo");
  // document.getElementById('activoS').appendChild(imgS);
 
+ setTimeout(function t() {
+      //borramos la imagen para crear una en div central y luego mover desde allí
+      var techo = document.getElementById("activo");
+      techo.removeChild(img);
+      document.getElementById('activo').appendChild(img)
 
+    }, 1500);
 
   // if (count >= total - 1) {
   //   count = 0;
