@@ -3,7 +3,9 @@
 
 .principal {
     @include principal;
-
+.multimedia {
+width:5rem;
+}
        .visor {
         @include visor;
         .activoA {

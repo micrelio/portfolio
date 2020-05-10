@@ -8,6 +8,9 @@
   background-color: #df0174;
   background-color: yellow;
 }
+.principal .multimedia {
+  width: 5rem;
+}
 .principal .visor {
   overflow: hidden;
   display: flex;
