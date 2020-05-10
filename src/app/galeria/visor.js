@@ -7,30 +7,16 @@ class miVisor extends HTMLElement {
   connectedCallback() {
     this.innerHTML =
       `
-    <!--
-    <button onclick="intervalo()">auto</button>
-<button onclick="stop()">stop </button>
-<button onclick="reset()">reset </button>
--->
-
-<section id="botoneraMultimedia" class="botoneraMultimedia" >
+ <section id="botoneraMultimedia" class="botoneraMultimedia" >
   <div id="multimediaControl" class="multimediaControl">
-    <img id="multimediaImagen" class="multimediaImagen" value="stop" src="../../assets/images/buttons/multimedia/anterior.png">
-    <img id="multimediaImagen" class="multimediaImagen" value="play" src="../../assets/images/buttons/multimedia/play.png">
-    <img id="multimediaImagen" class="multimediaImagen" value="pause"src="../../assets/images/buttons/multimedia/pause.png">
-    <img id="multimediaImagen" class="multimediaImagen" value="stop" src="../../assets/images/buttons/multimedia/stop.png">
-    <img id="multimediaImagen" class="multimediaImagen" value="stop" src="../../assets/images/buttons/multimedia/siguiente.png">
+    <img id="previous" class="multimediaImagen"  src="../../assets/images/buttons/multimedia/previous.png">
+    <img id="pause" class="multimediaImagen" src="../../assets/images/buttons/multimedia/pause.png">
+    <img id="play" class="multimediaImagen"  src="../../assets/images/buttons/multimedia/play.png">
+    <img id="stop" class="multimediaImagen"  src="../../assets/images/buttons/multimedia/stop.png">
+    <img id="next" class="multimediaImagen"  src="../../assets/images/buttons/multimedia/next.png">
   </div>
-
 </section>
-
-
 <section id="principal" class="principal" >
-
-
- 
-
-
     <div  class="visor" id="visor" >
       <div id="activoA" class="activoA"></div>
       <div id="activo" class="activo"></div>
@@ -48,69 +34,36 @@ class miVisor extends HTMLElement {
     <img id="multimediaImagen" class="multimediaImagen" value="play" src="../../assets/images/buttons/multimedia/soundOff.png">
   <div>
 </section>
-
-
-                `;
+             `;
     // esto arranca automatico 
-    //  setInterval(() => {
-    //  }, 2000);
-    // setInterval( onkeyup="keyEvent(event)",100000);
-    const mos = document.querySelector('#imagen');
-    // cajonDerecha.getAttribute('class');   
-    // element.setAttribute('href', 'index.html');
-    //  cambiar(e)
+    var multimedia = document.querySelector('#multimediaControl');
+    multimedia.addEventListener('click', function (e) {
+      console.log(e.target)
+      var h = e.target.id;
+      console.log(h)
+      if (e.target !== this) {
+        switch (h) {
+          case 'previous':
+            console.log(h);
+            break;
+          case 'play':
+            console.log(h);
+            break;
+          case 'pause':
+            console.log(h);
+            break;
+          case 'reset':
+            console.log(h);
+            break;
+          case 'next':
+            break;
+        }
+      }
+    });
   }
 }
 timer = 2000;
 customElements.define('mi-visor', miVisor);
-
-
-
-
-// function cambiar(id) {
-//     console.log(id)
-
-//   count = 0;
-//   switch (id) {
-
-//     case 'todos':
-//       document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
-//       carga(todos);
-//       break;
-//     case 'logos':
-//       document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
-//       carga(logos);
-//       break;
-//     case 'folletos':
-//       document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
-//       carga(folletos);
-//       break;
-//     case 'postales':
-//       document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
-//       carga(postales);
-//       break;
-//     case 'posters':
-//       document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
-//       carga(posters);
-//       break;
-//     case 'pngs':
-//       document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
-//       carga(pngs);
-//       break;
-//       case 'Google':
-//       document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
-//       carga(Google);
-//       break;
-//       case 'Mas':
-//       document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
-//       carga(todos);
-//       break;
-//     default:
-//       document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
-//       break;
-//   }
-// }
-
 
 function cargar(preVista) {
   document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
@@ -132,7 +85,7 @@ function cargar(preVista) {
     case 'Mas':
       // Opcion 2 creamos vista como variable global
 
-      renderizar(preVista);
+      seleccionar(preVista);
       break;
     default:
       break;
@@ -144,64 +97,87 @@ function cargar(preVista) {
 
 
 
-function renderizar(vista) {
+function seleccionar(vista) {
   var count = 0;
   var llaves = Object.keys(Galeria);
-  console.log(llaves.length);
+  console.log(vista);
   //---Leemos las claves
-  console.log(Galeria);
+ var render=Galeria[vista][0];
+  var siguiente=Galeria[vista][1];
+   console.log(render);
+   console.log(siguiente);
+
+img = document.createElement('img');
+  imgS = document.createElement('img');
+   img.setAttribute("src", render);
+   img.setAttribute("id", "img");
+     img.setAttribute("class", "imagen");
+     img.setAttribute("onclick", "sum()");
+     imgS.setAttribute("src", siguiente);
+     imgS.setAttribute("id", "imgS");
+     imgS.setAttribute("class", "imagen");
+
+    document.getElementById('activo').appendChild(img);
+     document.getElementById('activoS').appendChild(imgS);
 
 
-  //renderizar(vista)
-  //   acaparados.forEach(elemente => renderizar(elemente));
+  // vista1 = [].concat.apply([], tipo);
+  // console.log(vista1)
+  //
+  //   const element = tipo[indice];
+  //   console.log(element)
 
-  for (let indice = 0; indice < llaves.length; indice++) {
-    const dato = llaves[indice]
-    //  console.log(vista[indice])
-    for (let index = 0; index < dato.length; index++) {
-      const element = dato[index];
-      console.log(element)
+// activar();
+//  activarMiniLaterales()
+// console.log('PUNTO DE CONTROL 1')
+// total = vista.length;
+// //----Leemos el array
+// for (index = 0; index < total; index++) {
+//   indice = vista[index];
+// }
+// if (indice != vista) {
+//   //Reseteamos al llegar al ultimo dato del array
+//   activo = vista;
+//   index = total;
+// }
+// console.log('PUNTO DE CONTROL 2')
 
 
+
+
+  //Galeria.forEach(elemente => console.log(Galeria));
+
+  // for (let indice = 0; indice < render.length; indice++) {
+  //   const dato = render[indice];
+  //  console.log(dato);
+  //  renderizar(dato)
+  //   }
     }
 
 
-    //console.log(vista[indice])
-    img = document.createElement('img');
-    imgM = document.createElement('img');
-    var path = vista[count];
 
-
-    // img.setAttribute("src", path);
-    //   img.setAttribute("id", "img");
-    //   img.setAttribute("class", "imagen");
-    //   img.setAttribute("onclick", "sum()");
+function renderizar(renderizado){
+//console.log(vista[indice])
+ img = document.createElement('img');
+  //  imgM = document.createElement('img');
+     img.setAttribute("src", renderizado);
+     img.setAttribute("id", "img");
+       img.setAttribute("class", "imagen");
+       img.setAttribute("onclick", "sum()");
     //   imgM.setAttribute("src", path);
     //   imgM.setAttribute("id", "miniCentral");
-    //  document.getElementById('activo').appendChild(img);
+      document.getElementById('activo').appendChild(img);
     //   document.getElementById('cajonCentral').appendChild(imgM);
 
 
     // vista1 = [].concat.apply([], tipo);
     // console.log(vista1)
-
-
-
     //
     //   const element = tipo[indice];
     //   console.log(element)
-
-
-
-
-
-  }
+  
   // activar();
   //  activarMiniLaterales()
-
-
-
-
   // console.log('PUNTO DE CONTROL 1')
   // total = vista.length;
   // //----Leemos el array
@@ -214,12 +190,7 @@ function renderizar(vista) {
   //   index = total;
   // }
   // console.log('PUNTO DE CONTROL 2')
-
 }
-
-
-
-
 
 
 

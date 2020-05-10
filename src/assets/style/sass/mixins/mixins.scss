@@ -39,7 +39,7 @@
 
        //---VISOR       
        @mixin visor {
-           overflow: hidden;
+          // overflow: hidden;
            //overflow: auto;
            display: flex;
            flex-direction: row;
@@ -97,6 +97,7 @@
 
        @mixin multimediaImagen {
        //    position: relative;
+       cursor: pointer;
            width: 5rem;
        }
 

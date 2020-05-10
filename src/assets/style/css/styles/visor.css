@@ -8,12 +8,14 @@
   width: 100%;
 }
 .botoneraMultimedia .multimediaControl .multimediaImagen {
+  cursor: pointer;
   width: 5rem;
 }
 .botoneraMultimedia .multimediaSound {
   margin-left: auto;
 }
 .botoneraMultimedia .multimediaSound .multimediaImagen {
+  cursor: pointer;
   width: 5rem;
 }
 
@@ -27,7 +29,6 @@
   background-color: yellow;
 }
 .principal .visor {
-  overflow: hidden;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
