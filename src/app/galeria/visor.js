@@ -10,11 +10,10 @@ class miVisor extends HTMLElement {
  <section id="botoneraMultimedia" class="botoneraMultimedia" >
   <div id="multimediaControl" class="multimediaControl">
     <img id="previous" class="multimediaImagen"  src="../../assets/images/buttons/multimedia/previous.png">
-    <img id="pause" class="multimediaImagen" src="../../assets/images/buttons/multimedia/pause.png">
     <img id="play-" class="multimediaImagen"  src="../../assets/images/buttons/multimedia/play-.png">
-
-    <img id="play+" class="multimediaImagen"  src="../../assets/images/buttons/multimedia/play+.png">
+    <img id="pause" class="multimediaImagen" src="../../assets/images/buttons/multimedia/pause.png">
     <img id="stop" class="multimediaImagen"  src="../../assets/images/buttons/multimedia/stop.png">
+    <img id="play+" class="multimediaImagen"  src="../../assets/images/buttons/multimedia/play+.png">
     <img id="next" class="multimediaImagen"  src="../../assets/images/buttons/multimedia/next.png">
   </div>
 </section>
@@ -57,7 +56,8 @@ class miVisor extends HTMLElement {
           case 'pause':
             pause();
             break;
-          case 'reset':
+          case 'stop':
+            stop();
             console.log(h);
             break;
           case 'next':
@@ -77,8 +77,8 @@ customElements.define('mi-visor', miVisor);
 //---COMIENZO----------------------------
 function cargar(preVista) {
   console.log('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')
-  if(typeof marcha !== 'undefined'){
-  clearInterval(marcha);
+  if (typeof marcha !== 'undefined') {
+    clearInterval(marcha);
   }
   count = 0;
   document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
@@ -91,7 +91,6 @@ function cargar(preVista) {
       seleccionar()
       //   acaparados.forEach(elemente => renderizar(elemente));
       break;
-
     case 'Logos':
     case 'Folletos':
     case 'Posters':
@@ -101,7 +100,7 @@ function cargar(preVista) {
     case 'Mas':
       // Opcion 2 creamos vista como variable global
       vista = preVista;
-//count = 0;
+      //count = 0;
       seleccionar();
       break;
     default:
@@ -110,18 +109,15 @@ function cargar(preVista) {
   //Idexamos indice
 }
 function seleccionar() {
- 
   // console.log(img)
   var longitud = Galeria[vista].length;
   var render = Galeria[vista][count];
   var siguiente = Galeria[vista][count + 1];
   var anterior = Galeria[vista][longitud - 1];
-
   img = document.createElement('img');
   imgS = document.createElement('img');
   imgA = document.createElement('img');
 
-  console.log(anterior)
   imgS.setAttribute("src", siguiente);
   imgS.setAttribute("id", "imgS");
   imgS.setAttribute("class", "imagen");
@@ -184,17 +180,17 @@ function sum() {
     imgA.setAttribute("class", "imagen object  move-rigth")
   }, 1);
   setTimeout(function t() {
-    var techo = document.getElementById("activoA");
-    techo.removeChild(imgA);
+    var eliminar = document.getElementById("activoA");
+    eliminar.removeChild(imgA);
     imgA = img
-    var techo1 = document.getElementById("activo");
-    techo1.removeChild(img);
+    var eliminar1 = document.getElementById("activo");
+    eliminar1.removeChild(img);
     imgA.setAttribute("id", "imgA");
     imgA.setAttribute("class", "imagen");
     document.getElementById('activoA').appendChild(imgA);
     img = imgS
-    var techo1 = document.getElementById("activoS");
-    techo1.removeChild(imgS);
+    var eliminar1 = document.getElementById("activoS");
+    eliminar1.removeChild(imgS);
     img.setAttribute("id", "img");
     img.setAttribute("class", "imagen");
     document.getElementById('activo').appendChild(img);
@@ -221,17 +217,17 @@ function res() {
     imgA.setAttribute("class", "imagen object  move-left")
   }, 1);
   setTimeout(function t() {
-    var techo = document.getElementById("activoS");
-    techo.removeChild(imgS);
+    var eliminar = document.getElementById("activoS");
+    eliminar.removeChild(imgS);
     imgS = img
-    var techo1 = document.getElementById("activo");
-    techo1.removeChild(img);
+    var eliminar1 = document.getElementById("activo");
+    eliminar1.removeChild(img);
     imgS.setAttribute("id", "imgA");
     imgS.setAttribute("class", "imagen");
     document.getElementById('activoS').appendChild(imgS);
     img = imgA
-    var techo1 = document.getElementById("activoA");
-    techo1.removeChild(imgA);
+    var eliminar1 = document.getElementById("activoA");
+    eliminar1.removeChild(imgA);
     img.setAttribute("id", "img");
     img.setAttribute("class", "imagen");
     document.getElementById('activo').appendChild(img);
@@ -265,16 +261,16 @@ function intervalo(h) {
 
   setTimeout(() => {
     console.log('alerta')
-   // window.alert("Tiempo de visualizacion excedido, Si quieres continuar viendo imagenes pulsa Aceptar.");
+    // window.alert("Tiempo de visualizacion excedido, Si quieres continuar viendo imagenes pulsa Aceptar.");
 
-   // window.alert("Excedido el tiempo de visualizacion, se paró la secuencia de imagenes.<br>Para continuar pulse: <img id="multimediaImagen" class="multimediaImagen" value="soundOff" src="../../assets/images/buttons/multimedia/soundOff.png">");
- //   clearInterval(marcha);
-  }, 120000); 
+    // window.alert("Excedido el tiempo de visualizacion, se paró la secuencia de imagenes.<br>Para continuar pulse: <img id="multimediaImagen" class="multimediaImagen" value="soundOff" src="../../assets/images/buttons/multimedia/soundOff.png">");
+    //   clearInterval(marcha);
+  }, 120000);
 
   marcha = setInterval(() => {
 
-   // console.log(target.value)
-   console.log(h)
+    // console.log(target.value)
+    console.log(h)
 
     switch (h) {
       case 'play+':
@@ -294,7 +290,7 @@ function intervalo(h) {
     // }
 
     // sum();
-  
+
   }, timer);
 }
 
@@ -304,8 +300,19 @@ function pause() {
 }
 
 function stop() {
+  clearInterval(marcha)
+  var eliminar1 = document.getElementById("activo");
+  eliminar1.removeChild(img);
+
+  var eliminar2 = document.getElementById("activoA");
+  eliminar2.removeChild(imgA);
+
+  var eliminar3 = document.getElementById("activoS");
+  eliminar3.removeChild(imgS);
+
+  count = 0;
   console.log('pause')
-  cargar(valor);
+  seleccionar();
 }
 
 
@@ -362,8 +369,8 @@ function stop() {
 //     img.setAttribute("class", "imagen object  move-left");
 //     setTimeout(function t() {
 //       //borramos la imagen para crear una en div central y luego mover desde allí
-//       var techo = document.getElementById("activo");
-//       techo.removeChild(img);
+//       var eliminar = document.getElementById("activo");
+//       eliminar.removeChild(img);
 //     }, 1500);
 //     setTimeout(function cx() {
 //       imgS.setAttribute("class", "imagen object  move-left");
@@ -371,8 +378,8 @@ function stop() {
 //     setTimeout(function cxv() {
 //       if (imgS != null) {
 //         console.log('imgS', imgS)
-//         var techo = document.getElementById("activoS");
-//         techo.removeChild(imgS);
+//         var eliminar = document.getElementById("activoS");
+//         eliminar.removeChild(imgS);
 //       }
 //       // imgS.removeAttribute("class");
 //       imgS = null
@@ -396,16 +403,16 @@ function stop() {
 //     document.getElementById('activoS').appendChild(img);
 //     imgS.setAttribute("class", "imagen object  move-left");
 //     setTimeout(function t() {
-//       var techo = document.getElementById("activo");
-//       techo.removeChild(imgS);
+//       var eliminar = document.getElementById("activo");
+//       eliminar.removeChild(imgS);
 //     }, 1500);
 //     setTimeout(function cx() {
 //       img.setAttribute("class", "imagen object  move-left");
 
 //     }, 0.5);
 //     setTimeout(function cxv() {
-//       var techo = document.getElementById("activoS");
-//       techo.removeChild(img);
+//       var eliminar = document.getElementById("activoS");
+//       eliminar.removeChild(img);
 //       img.removeAttribute("class");
 //       img.setAttribute("src", path);
 //       img.setAttribute("id", "img");
@@ -649,8 +656,8 @@ function stop() {
 //     img.setAttribute("class", "imagen object  move-left");
 //     setTimeout(function t() {
 //       //borramos la imagen para crear una en div central y luego mover desde allí
-//       var techo = document.getElementById("activo");
-//       techo.removeChild(img);
+//       var eliminar = document.getElementById("activo");
+//       eliminar.removeChild(img);
 //    }, 1500);
 //     setTimeout(function cx() {
 //       imgS.setAttribute("class", "imagen object  move-left");
@@ -658,8 +665,8 @@ function stop() {
 //     setTimeout(function cxv() {
 //         if (imgS != null) {
 //         console.log('imgS', imgS)
-//         var techo = document.getElementById("activoS");
-//         techo.removeChild(imgS);
+//         var eliminar = document.getElementById("activoS");
+//         eliminar.removeChild(imgS);
 //       }
 //       // imgS.removeAttribute("class");
 //       imgS = null
@@ -683,16 +690,16 @@ function stop() {
 //     document.getElementById('activoS').appendChild(img);
 //     imgS.setAttribute("class", "imagen object  move-left");
 //     setTimeout(function t() {
-//       var techo = document.getElementById("activo");
-//       techo.removeChild(imgS);
+//       var eliminar = document.getElementById("activo");
+//       eliminar.removeChild(imgS);
 //     }, 1500);
 //     setTimeout(function cx() {
 //       img.setAttribute("class", "imagen object  move-left");
 
 //     }, 0.5);
 //     setTimeout(function cxv() {
-//       var techo = document.getElementById("activoS");
-//       techo.removeChild(img);
+//       var eliminar = document.getElementById("activoS");
+//       eliminar.removeChild(img);
 //       img.removeAttribute("class");
 //       img.setAttribute("src", path);
 //       img.setAttribute("id", "img");

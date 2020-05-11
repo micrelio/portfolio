@@ -7,23 +7,17 @@ class miGaleria extends HTMLElement {
   connectedCallback() {
     this.innerHTML =
       `
-     
-      <mi-botonera></mi-botonera>
+<mi-botonera></mi-botonera>
+<section id="galeria" class="galeria" >
 
-      <section id="galeria" class="galeria" >
- </section>
-
-
-<section id="content">
-
- <mi-imagenes></mi-imagenes> 
 </section>
+<section id="content">
+  <mi-imagenes></mi-imagenes> 
+</section>
+     `;
+cargaTodo();
 
-
-                `;
-   // cargaTodo();
-
-    //cambiar('todos') //quitar al acabar
+   //cambiar('todos') //quitar al acabar
 
     // const logosy = document.querySelector('#bLogos');
     // logosy.addEventListener('mousemove', function() {
