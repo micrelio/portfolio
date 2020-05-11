@@ -71,14 +71,23 @@ class miVisor extends HTMLElement {
 //var vista ='Galeria';
 timer = 2000;
 customElements.define('mi-visor', miVisor);
+
+
+
+//---COMIENZO----------------------------
 function cargar(preVista) {
+  console.log('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')
+  if(typeof marcha !== 'undefined'){
+  clearInterval(marcha);
+  }
+  count = 0;
   document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
   switch (preVista) {
     case 'Galeria':
       //Enviamos un solo array
       //creamos vista como variable global
       vista = [].concat.apply([], preVista);
-      count = 0;
+      //count = 0;
       seleccionar()
       //   acaparados.forEach(elemente => renderizar(elemente));
       break;
@@ -92,7 +101,7 @@ function cargar(preVista) {
     case 'Mas':
       // Opcion 2 creamos vista como variable global
       vista = preVista;
-      count = 0;
+//count = 0;
       seleccionar();
       break;
     default:
@@ -101,8 +110,7 @@ function cargar(preVista) {
   //Idexamos indice
 }
 function seleccionar() {
-
-
+ 
   // console.log(img)
   var longitud = Galeria[vista].length;
   var render = Galeria[vista][count];
@@ -203,7 +211,7 @@ function sum() {
     imgS.setAttribute("id", "imgS");
     imgS.setAttribute("class", "imagen");
     document.getElementById('activoS').appendChild(imgS);
-  }, 1500);
+  }, 500);
 }
 function res() {
   setTimeout(() => {
@@ -240,7 +248,7 @@ function res() {
     imgA.setAttribute("id", "imgA");
     imgA.setAttribute("class", "imagen");
     document.getElementById('activoA').appendChild(imgA);
-  }, 1500);
+  }, 500);
 }
 
 
@@ -257,11 +265,11 @@ function intervalo(h) {
 
   setTimeout(() => {
     console.log('alerta')
-    window.alert("Tiempo de visualizacion excedido, Si quieres continuar viendo imagenes pulsa Aceptar.");
+   // window.alert("Tiempo de visualizacion excedido, Si quieres continuar viendo imagenes pulsa Aceptar.");
 
    // window.alert("Excedido el tiempo de visualizacion, se paró la secuencia de imagenes.<br>Para continuar pulse: <img id="multimediaImagen" class="multimediaImagen" value="soundOff" src="../../assets/images/buttons/multimedia/soundOff.png">");
  //   clearInterval(marcha);
-  }, 6000); 
+  }, 120000); 
 
   marcha = setInterval(() => {
 
@@ -295,9 +303,9 @@ function pause() {
   clearInterval(marcha);
 }
 
-function reset() {
+function stop() {
   console.log('pause')
-  clearInterval(marcha);
+  cargar(valor);
 }
 
 
