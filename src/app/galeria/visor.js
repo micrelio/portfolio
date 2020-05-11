@@ -20,9 +20,9 @@ class miVisor extends HTMLElement {
 </section>
 <section id="principal" class="principal" >
     <div  class="visor" id="visor" >
-      <div id="activoS" class="activoA"></div>
+      <div id="activoS" class="activoS"></div>
       <div id="activo" class="activo"></div>
-      <div id="activoA" class="activoS"></div>
+      <div id="activoA" class="activoA"></div>
     </div>
     <div class="cajonMini">
        <div id="cajonIzquierda" class=""></div>
@@ -32,8 +32,8 @@ class miVisor extends HTMLElement {
 </section>
 <section id="botoneraMultimedia" class="botoneraMultimedia" >
    <div id="multimediaSound" class="multimediaSound">
-    <img id="multimediaImagen" class="multimediaImagen" value="stop" src="../../assets/images/buttons/multimedia/soundOn.png">
-    <img id="multimediaImagen" class="multimediaImagen" value="play" src="../../assets/images/buttons/multimedia/soundOff.png">
+    <img id="multimediaImagen" class="multimediaImagen" value="soundOn" src="../../assets/images/buttons/multimedia/soundOn.png">
+    <img id="multimediaImagen" class="multimediaImagen" value="soundOff" src="../../assets/images/buttons/multimedia/soundOff.png">
   <div>
 </section>
              `;
@@ -68,11 +68,9 @@ class miVisor extends HTMLElement {
     });
   }
 }
-
 //var vista ='Galeria';
 timer = 2000;
 customElements.define('mi-visor', miVisor);
-
 function cargar(preVista) {
   document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
   switch (preVista) {
@@ -102,7 +100,6 @@ function cargar(preVista) {
   }
   //Idexamos indice
 }
-
 function seleccionar() {
 
 
@@ -142,24 +139,9 @@ console.log(anterior)
   document.getElementById('activo').appendChild(img);
      document.getElementById('activoS').appendChild(imgS);
      document.getElementById('activoA').appendChild(imgA);
-
   count++;
   //  }
   console.log('oododododo')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   // vista1 = [].concat.apply([], tipo);
   // console.log(vista1)
   //
@@ -186,7 +168,6 @@ console.log(anterior)
   //  renderizar(dato)
   //   }
 }
-
 function sum() {
    setTimeout(() => {
  
@@ -224,44 +205,42 @@ function sum() {
     document.getElementById('activoS').appendChild(imgS);
   }, 1500);
 }
-
-
 function res() {
   setTimeout(() => {
-
-   img.setAttribute("class", "imagen object  move-left");
-   imgS.setAttribute("class", "imagen object  move-left");
-   imgA.setAttribute("class", "imagen object  move-left")   
- }, 1);
- setTimeout(function t() {
-    var techo=document.getElementById("activoS");
-   techo.removeChild(imgS); 
-   img = imgA
-  var techo1 = document.getElementById("activoA");
-   techo1.removeChild(imgA);
-   img.setAttribute("id", "img");
-   img.setAttribute("class", "imagen");
-   document.getElementById('activo').appendChild(img);
-         imgA = img
-   var techo1 = document.getElementById("activoA");
-   techo1.removeChild(imgA);
-   imgA.setAttribute("id", "imgA");
-   img.setAttribute("class", "imagen");
-   document.getElementById('activoA').appendChild(imgA);
-   count--;
-  longitud = Galeria[vista].length;
-   if (count >= longitud) {
-     console.log('pppuuuuummmm')
-     count = 0;
-   }
-   var prox = Galeria[vista][count];
-   console.log(prox)
-   imgS = document.createElement('img');
-   imgS.setAttribute("src", prox);
-   imgS.setAttribute("id", "imgS");
+ 
+    img.setAttribute("class", "imagen object  move-left");
+    imgS.setAttribute("class", "imagen object  move-left");
+    imgA.setAttribute("class", "imagen object  move-left")   
+  }, 1);
+  setTimeout(function t() {
+     var techo=document.getElementById("activoS");
+    techo.removeChild(imgS); 
+     imgS = img
+        var techo1 = document.getElementById("activo");
+    techo1.removeChild(img);
+     imgS.setAttribute("id", "imgA");
    imgS.setAttribute("class", "imagen");
-   document.getElementById('activoS').appendChild(imgS);
- }, 1500);
+     document.getElementById('activoS').appendChild(imgS);
+          img = imgA
+    var techo1 = document.getElementById("activoA");
+    techo1.removeChild(imgA);
+    img.setAttribute("id", "img");
+    img.setAttribute("class", "imagen");
+     document.getElementById('activo').appendChild(img);
+    count++;
+    longitud = Galeria[vista].length;
+     if (count >= longitud) {
+       console.log('pppuuuuummmm')
+       count = 0;
+     }
+     var prox = Galeria[vista][count];
+    console.log(prox)
+    imgA = document.createElement('img');
+   imgA.setAttribute("src", prox);
+    imgA.setAttribute("id", "imgA");
+    imgA.setAttribute("class", "imagen");
+    document.getElementById('activoA').appendChild(imgA);
+   }, 1500);
 }
 
 
@@ -272,7 +251,14 @@ function res() {
 
 function intervalo() {
   marcha = setInterval(() => {
-    sum();
+var direccion= target.value;
+if (direccion==='next') {
+  sum();
+} else if (direccion==='previous') {
+  res(); 
+}
+
+   // sum();
   }, timer);
 }
 
