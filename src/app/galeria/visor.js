@@ -38,13 +38,13 @@ class miVisor extends HTMLElement {
     // esto arranca automatico 
     var multimedia = document.querySelector('#multimediaControl');
     multimedia.addEventListener('click', function (e) {
-      console.log(e.target)
+      console.log(e)
       var h = e.target.id;
       console.log(h)
       if (e.target !== this) {
         switch (h) {
           case 'previous':
-            console.log(h);
+            cambio(h);
             break;
           case 'play':
             intervalo();
@@ -56,7 +56,7 @@ class miVisor extends HTMLElement {
             console.log(h);
             break;
           case 'next':
-            sum();
+            cambio(h);
             break;
         }
       }
@@ -168,7 +168,17 @@ function seleccionar() {
   //   }
 }
 
-function sum() {
+function cambio(e) {
+  console.log(e)
+  switch (e) {
+    case 'next':
+      direccion= '++';
+      break;
+      case 'previous':
+        direccion= '--';
+        break;
+    
+  }
   setTimeout(() => {
     img.setAttribute("class", "imagen object  move-left");
     imgS.setAttribute("class", "imagen object  move-left");
