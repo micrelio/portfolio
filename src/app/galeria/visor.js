@@ -203,17 +203,18 @@ function sum() {
     //borramos la imagen para crear una en div central y luego mover desde allí
     //  console.log(activoS)
 
-    var techo = document.getElementById("activoA");
-    techo.removeChild(imgA);
+    var techo=document.getElementById("activoA");
+    techo.removeChild(imgA); 
     imgA = img
+    
     var techo1 = document.getElementById("activo");
     techo1.removeChild(img);
-    img.setAttribute("id", "img");
-    img.setAttribute("class", "imagen");
+    
+    imgA.setAttribute("id", "imgA");
+    imgA.setAttribute("class", "imagen");
     document.getElementById('activoA').appendChild(imgA);
     
-    var techo = document.getElementById("activo");
-    techo.removeChild(img);
+    
     img = imgS
     var techo1 = document.getElementById("activoS");
     techo1.removeChild(imgS);
@@ -254,7 +255,7 @@ function sum() {
 function intervalo() {
   marcha = setInterval(() => {
     
-    cambio();
+    sum();
   }, timer);
 }
 function pause() {
