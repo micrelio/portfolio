@@ -48,11 +48,11 @@ class miVisor extends HTMLElement {
           case 'previous':
             res();
             break;
-            case 'play-':
-            intervalo();
+          case 'play-':
+            intervalo(h);
             break;
           case 'play+':
-            intervalo();
+            intervalo(h);
             break;
           case 'pause':
             pause();
@@ -78,7 +78,7 @@ function cargar(preVista) {
       //Enviamos un solo array
       //creamos vista como variable global
       vista = [].concat.apply([], preVista);
-       count = 0;
+      count = 0;
       seleccionar()
       //   acaparados.forEach(elemente => renderizar(elemente));
       break;
@@ -92,7 +92,7 @@ function cargar(preVista) {
     case 'Mas':
       // Opcion 2 creamos vista como variable global
       vista = preVista;
-       count = 0;
+      count = 0;
       seleccionar();
       break;
     default:
@@ -103,17 +103,17 @@ function cargar(preVista) {
 function seleccionar() {
 
 
- // console.log(img)
+  // console.log(img)
   var longitud = Galeria[vista].length;
   var render = Galeria[vista][count];
-var  siguiente = Galeria[vista][count + 1];
-var  anterior = Galeria[vista][longitud-1];
+  var siguiente = Galeria[vista][count + 1];
+  var anterior = Galeria[vista][longitud - 1];
 
-   img = document.createElement('img');
+  img = document.createElement('img');
   imgS = document.createElement('img');
-    imgA = document.createElement('img');
-   
-console.log(anterior)
+  imgA = document.createElement('img');
+
+  console.log(anterior)
   imgS.setAttribute("src", siguiente);
   imgS.setAttribute("id", "imgS");
   imgS.setAttribute("class", "imagen");
@@ -130,15 +130,15 @@ console.log(anterior)
   console.log('hola')
   console.log(img);
 
- 
+
   console.log(longitud)
   if (count >= longitud) {
     console.log('pppuuuuummmm')
     count = 0;
   }
   document.getElementById('activo').appendChild(img);
-     document.getElementById('activoS').appendChild(imgS);
-     document.getElementById('activoA').appendChild(imgA);
+  document.getElementById('activoS').appendChild(imgS);
+  document.getElementById('activoA').appendChild(imgA);
   count++;
   //  }
   console.log('oododododo')
@@ -169,29 +169,29 @@ console.log(anterior)
   //   }
 }
 function sum() {
-   setTimeout(() => {
- 
+  setTimeout(() => {
+
     img.setAttribute("class", "imagen object  move-rigth");
     imgS.setAttribute("class", "imagen object  move-rigth");
-    imgA.setAttribute("class", "imagen object  move-rigth")   
+    imgA.setAttribute("class", "imagen object  move-rigth")
   }, 1);
   setTimeout(function t() {
-     var techo=document.getElementById("activoA");
-    techo.removeChild(imgA); 
+    var techo = document.getElementById("activoA");
+    techo.removeChild(imgA);
     imgA = img
-        var techo1 = document.getElementById("activo");
+    var techo1 = document.getElementById("activo");
     techo1.removeChild(img);
     imgA.setAttribute("id", "imgA");
     imgA.setAttribute("class", "imagen");
     document.getElementById('activoA').appendChild(imgA);
-          img = imgS
+    img = imgS
     var techo1 = document.getElementById("activoS");
     techo1.removeChild(imgS);
     img.setAttribute("id", "img");
     img.setAttribute("class", "imagen");
     document.getElementById('activo').appendChild(img);
     count++;
-   longitud = Galeria[vista].length;
+    longitud = Galeria[vista].length;
     if (count >= longitud) {
       console.log('pppuuuuummmm')
       count = 0;
@@ -207,40 +207,40 @@ function sum() {
 }
 function res() {
   setTimeout(() => {
- 
+
     img.setAttribute("class", "imagen object  move-left");
     imgS.setAttribute("class", "imagen object  move-left");
-    imgA.setAttribute("class", "imagen object  move-left")   
+    imgA.setAttribute("class", "imagen object  move-left")
   }, 1);
   setTimeout(function t() {
-     var techo=document.getElementById("activoS");
-    techo.removeChild(imgS); 
-     imgS = img
-        var techo1 = document.getElementById("activo");
+    var techo = document.getElementById("activoS");
+    techo.removeChild(imgS);
+    imgS = img
+    var techo1 = document.getElementById("activo");
     techo1.removeChild(img);
-     imgS.setAttribute("id", "imgA");
-   imgS.setAttribute("class", "imagen");
-     document.getElementById('activoS').appendChild(imgS);
-          img = imgA
+    imgS.setAttribute("id", "imgA");
+    imgS.setAttribute("class", "imagen");
+    document.getElementById('activoS').appendChild(imgS);
+    img = imgA
     var techo1 = document.getElementById("activoA");
     techo1.removeChild(imgA);
     img.setAttribute("id", "img");
     img.setAttribute("class", "imagen");
-     document.getElementById('activo').appendChild(img);
+    document.getElementById('activo').appendChild(img);
     count++;
     longitud = Galeria[vista].length;
-     if (count >= longitud) {
-       console.log('pppuuuuummmm')
-       count = 0;
-     }
-     var prox = Galeria[vista][count];
+    if (count >= longitud) {
+      console.log('pppuuuuummmm')
+      count = 0;
+    }
+    var prox = Galeria[vista][count];
     console.log(prox)
     imgA = document.createElement('img');
-   imgA.setAttribute("src", prox);
+    imgA.setAttribute("src", prox);
     imgA.setAttribute("id", "imgA");
     imgA.setAttribute("class", "imagen");
     document.getElementById('activoA').appendChild(imgA);
-   }, 1500);
+  }, 1500);
 }
 
 
@@ -249,16 +249,44 @@ function res() {
 
 
 
-function intervalo() {
+function intervalo(h) {
+
+  if (typeof marcha !== "undefined") {
+    clearInterval(marcha);
+  }
+
+  setTimeout(() => {
+    console.log('alerta')
+    window.alert("Tiempo de visualizacion excedido, Si quieres continuar viendo imagenes pulsa Aceptar.");
+
+   // window.alert("Excedido el tiempo de visualizacion, se paró la secuencia de imagenes.<br>Para continuar pulse: <img id="multimediaImagen" class="multimediaImagen" value="soundOff" src="../../assets/images/buttons/multimedia/soundOff.png">");
+ //   clearInterval(marcha);
+  }, 6000); 
+
   marcha = setInterval(() => {
-var direccion= target.value;
-if (direccion==='next') {
-  sum();
-} else if (direccion==='previous') {
-  res(); 
-}
 
-   // sum();
+   // console.log(target.value)
+   console.log(h)
+
+    switch (h) {
+      case 'play+':
+        sum();
+        break;
+      case 'play-':
+        res();
+        break;
+
+      default:
+        break;
+    }
+    // if (direccion==='next') {
+    //   sum();
+    // } else if (direccion==='previous') {
+    //   res(); 
+    // }
+
+    // sum();
+  
   }, timer);
 }
 
@@ -267,7 +295,10 @@ function pause() {
   clearInterval(marcha);
 }
 
-
+function reset() {
+  console.log('pause')
+  clearInterval(marcha);
+}
 
 
 

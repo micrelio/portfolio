@@ -22,6 +22,7 @@
 
 .principal {
   position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,6 +34,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
   width: 100vw;
   border: 0.8rem solid #eeeeee;
   box-shadow: #555 1px 1px 8px 1px;
@@ -44,11 +47,11 @@
   justify-content: center;
   align-items: center;
   height: 70vh;
-  min-width: 33vw;
+  min-width: 100vw;
   background-color: yellow;
 }
 .principal .visor .activoA .imagen {
-  width: 100%;
+  height: 100%;
   background-color: pink;
 }
 .principal .visor .activo {
@@ -57,11 +60,11 @@
   justify-content: center;
   align-items: center;
   height: 70vh;
-  min-width: 33vw;
+  min-width: 100vw;
   background-color: green;
 }
 .principal .visor .activo .imagen {
-  width: 100%;
+  height: 100%;
   background-color: pink;
 }
 .principal .visor .activoS {
@@ -70,11 +73,11 @@
   justify-content: center;
   align-items: center;
   height: 70vh;
-  min-width: 33vw;
+  min-width: 100vw;
   background-color: red;
 }
 .principal .visor .activoS .imagen {
-  width: 100%;
+  height: 100%;
   background-color: pink;
 }
 .principal .cajonMini {

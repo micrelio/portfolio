@@ -2,8 +2,7 @@
 
        @mixin head {
            width: 100%;
-           position: relative;
-
+position: relative;
            background: {
                color: pink;
            }
@@ -15,7 +14,7 @@
 
        @mixin principal {
            position: relative;
-//quitar         overflow: hidden;
+           overflow: hidden;
            display: flex;
            flex-direction: column;
            align-items: center;
@@ -41,13 +40,13 @@
 
        //---VISOR       
        @mixin visor {
-           // overflow: hidden;
+          // overflow: hidden;
            //overflow: auto;
            display: flex;
            flex-direction: row;
            flex-wrap: nowrap;
-// quitar          justify-content: center;
-//quitar           align-items: flex-start;
+          justify-content: center;
+          align-items: flex-start;
            width: 100vw;
            border: $marcoFoto;
            box-shadow: $sombreadoTotal;
@@ -61,45 +60,45 @@
        @mixin botoneraMultimedia {
            display: flex;
            position: relative;
-           flex-direction: row;
-           flex-wrap: nowrap;
-           align-items: center;
-           justify-content: center;
-           width: 100%;
+ flex-direction: row;
+ flex-wrap: nowrap;
+ align-items: center;
+ justify-content: center;
+ width: 100%;
 
-           // height: 10vh;
-           background: {
-               //    color: pink;
-           }
+ // height: 10vh;
+ background: {
+     //    color: pink;
+ }
 
-           ;
-       }
+ ;
+ }
 
-       @mixin multimediaControl {
+ @mixin multimediaControl {
 
-           //   position: relative;
-           //    display: flex;
-           //    justify-content: center;
-           //   width: 90%;
-           background: {
-               //  color: black;
-           }
-       }
+     //   position: relative;
+     //    display: flex;
+     //    justify-content: center;
+     //   width: 90%;
+     background: {
+       //  color: black;
+     }
+ }
 
-       @mixin multimediaSound {
-           // position: relative;
-           // width: 10%;
+ @mixin multimediaSound {
+     // position: relative;
+     // width: 10%;
 
-           margin-left: auto;
+     margin-left: auto;
 
-           background: {
-               //   color: white;
-           }
+     background: {
+     //   color: white;
+    }
        }
 
        @mixin multimediaImagen {
-           //    position: relative;
-           cursor: pointer;
+       //    position: relative;
+       cursor: pointer;
            width: 5rem;
        }
 
@@ -112,13 +111,13 @@
 
 
        @mixin activo {
-           // overflow: hidden;
+          // overflow: hidden;
            display: flex;
            flex-direction: row;
            justify-content: center;
            align-items: center;
            height: 70vh;
-           min-width: 33vw;//quitar poner 100
+           min-width: 100vw;
 
            background: {
                color: green;
@@ -134,7 +133,7 @@
            justify-content: center;
            align-items: center;
            height: 70vh;
-           min-width: 33vw; //quitar poner 100
+           min-width: 100vw;
 
            //    border: $marcoFoto;
            //    box-shadow: $sombreadoTotal;
@@ -151,7 +150,7 @@
            justify-content: center;
            align-items: center;
            height: 70vh;
-           min-width: 33vw;//quitar poner 100
+           min-width: 100vw;
 
            background: {
                color: red;
@@ -161,8 +160,8 @@
        ;
 
        @mixin imagen {
-    //cambiar       height: 100%;
-width: 100%; //quitar
+           height: 100%;
+
            background: {
                color: pink;
            }
