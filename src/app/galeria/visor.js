@@ -123,7 +123,7 @@ function seleccionar() {
   console.log('hola')
   console.log(img);
   document.getElementById('activo').appendChild(img);
-  //   document.getElementById('activoS').appendChild(imgS);
+     document.getElementById('activoS').appendChild(imgS);
   count++;
   //  }
   console.log('oododododo')
@@ -169,11 +169,10 @@ function seleccionar() {
 }
 
 function sum() {
-  document.getElementById('activoS').appendChild(imgS);
   setTimeout(() => {
     img.setAttribute("class", "imagen object  move-left");
     imgS.setAttribute("class", "imagen object  move-left");
-  }, 0);
+  }, 1);
 
   setTimeout(function t() {
     //--cambia imgS x img no entiendo--------------
