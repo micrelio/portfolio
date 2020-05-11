@@ -99,7 +99,7 @@ function cargar(preVista) {
 function seleccionar() {
 
   
-  var imgS = document.createElement('img');
+   imgS = document.createElement('img');
   console.log(img)
   var render = Galeria[vista][count];
   siguiente = Galeria[vista][count + 1];
@@ -123,10 +123,23 @@ img.setAttribute("src", render);
     console.log('hola')
     console.log(img);
     document.getElementById('activo').appendChild(img);
-    document.getElementById('activoS').appendChild(imgS);
-
+ //   document.getElementById('activoS').appendChild(imgS);
+count ++;
 //  }
  console.log('oododododo')
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   // vista1 = [].concat.apply([], tipo);
   // console.log(vista1)
@@ -156,51 +169,40 @@ img.setAttribute("src", render);
 }
 
 function sum() {
-  img.setAttribute("class", "imagen object  move-left");
-  imgS.setAttribute("class", "imagen object  move-left");
+  document.getElementById('activoS').appendChild(imgS);
+  setTimeout(() => {
+    img.setAttribute("class", "imagen object  move-left");
+    imgS.setAttribute("class", "imagen object  move-left");
+  }, 0);
+ 
   setTimeout(function t() {
     //--cambia imgS x img no entiendo--------------
     //imgS.setAttribute("id", "imgS");
     //borramos la imagen para crear una en div central y luego mover desde allí
-    console.log(activoS)
+  //  console.log(activoS)
 
     var techo = document.getElementById("activo");
     techo.removeChild(img);
-  // img = undefined;
-    console.log(activoS)
-
-    img=imgS
+     img=imgS
     var techo1 = document.getElementById("activoS");
-    //    console.log(imgS)
     techo1.removeChild(imgS);
-   //  imgS = undefined;
-
-       console.log(img)
       img.setAttribute("id", "img");
       img.setAttribute("class", "imagen");
-   //    console.log(imgS)
     document.getElementById('activo').appendChild(img);
-     
-
-    //     console.log(imgS)
-    //  
-      //  console.log(img)
-     
-      //     console.log(imgS)
- longitud=    Galeria[vista].length;
+    count ++;
+   
+ longitud= Galeria[vista].length;
 if (count>=longitud) {
+  console.log('pppuuuuummmm')
   count=0;
 }
-else{
-  count ++;
-}     
-     
-     console.log(img)
-       var siguiente = Galeria[vista][count];
-
+   
+    
+       var prox = Galeria[vista][count];
+       console.log(prox)
         // console.log(imgS)
          imgS = document.createElement('img');
-        imgS.setAttribute("src", siguiente);
+        imgS.setAttribute("src", prox);
          imgS.setAttribute("id", "imgS");
          imgS.setAttribute("class", "imagen");
        document.getElementById('activoS').appendChild(imgS);
