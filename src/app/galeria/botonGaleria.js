@@ -95,7 +95,7 @@ function cargaBoton() {
 // for (let index2 = 0; index2 < dato.length; index2++) {
 // }
 //console.log(tipo)
-console.log(dato)
+//console.log(dato)
 function cambio() {
   //console.log(seleccion)
   //  document.getElementById(seleccion).addEventListener('click',function() {
