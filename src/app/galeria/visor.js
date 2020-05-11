@@ -18,9 +18,9 @@ class miVisor extends HTMLElement {
 </section>
 <section id="principal" class="principal" >
     <div  class="visor" id="visor" >
-      <div id="activoA" class="activoA"></div>
+      <div id="activoS" class="activoA"></div>
       <div id="activo" class="activo"></div>
-      <div id="activoS" class="activoS"></div>
+      <div id="activoA" class="activoS"></div>
     </div>
     <div class="cajonMini">
        <div id="cajonIzquierda" class=""></div>
@@ -180,8 +180,8 @@ function cambio(e) {
     
   }
   setTimeout(() => {
-    img.setAttribute("class", "imagen object  move-left");
-    imgS.setAttribute("class", "imagen object  move-left");
+    img.setAttribute("class", "imagen object  move-rigth");
+    imgS.setAttribute("class", "imagen object  move-rigth");
   }, 1);
 
   setTimeout(function t() {
@@ -228,11 +228,12 @@ function cambio(e) {
 
 function intervalo() {
   marcha = setInterval(() => {
-    sum();
+    
+    cambio();
   }, timer);
 }
 function pause() {
-  clearInterval(marcha);
+  clearInterval();
 }
 
 
