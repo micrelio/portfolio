@@ -47,10 +47,10 @@ class miVisor extends HTMLElement {
             console.log(h);
             break;
           case 'play':
-            console.log(h);
+            intervalo();
             break;
           case 'pause':
-            console.log(h);
+            pause();
             break;
           case 'reset':
             console.log(h);
@@ -98,35 +98,35 @@ function cargar(preVista) {
 
 function seleccionar() {
 
-  
-   imgS = document.createElement('img');
+
+  imgS = document.createElement('img');
   console.log(img)
   var render = Galeria[vista][count];
   siguiente = Galeria[vista][count + 1];
   var img = document.createElement('img');
-console.log(Galeria[vista].length)
+  console.log(Galeria[vista].length)
 
   imgS.setAttribute("src", siguiente);
   imgS.setAttribute("id", "imgS");
   imgS.setAttribute("class", "imagen");
   console.log(img)
-  
-  
+
+
   //var llaves = Object.keys(Galeria);
   //---Leemos las claves
- // if ( img == undefined) {
-    
-img.setAttribute("src", render);
+  // if ( img == undefined) {
+
+  img.setAttribute("src", render);
   img.setAttribute("id", "img");
   img.setAttribute("class", "imagen");
-   //  document.getElementById('activoS').appendChild(imgS);
-    console.log('hola')
-    console.log(img);
-    document.getElementById('activo').appendChild(img);
- //   document.getElementById('activoS').appendChild(imgS);
-count ++;
-//  }
- console.log('oododododo')
+  //  document.getElementById('activoS').appendChild(imgS);
+  console.log('hola')
+  console.log(img);
+  document.getElementById('activo').appendChild(img);
+  //   document.getElementById('activoS').appendChild(imgS);
+  count++;
+  //  }
+  console.log('oododododo')
 
 
 
@@ -174,38 +174,38 @@ function sum() {
     img.setAttribute("class", "imagen object  move-left");
     imgS.setAttribute("class", "imagen object  move-left");
   }, 0);
- 
+
   setTimeout(function t() {
     //--cambia imgS x img no entiendo--------------
     //imgS.setAttribute("id", "imgS");
     //borramos la imagen para crear una en div central y luego mover desde allí
-  //  console.log(activoS)
+    //  console.log(activoS)
 
     var techo = document.getElementById("activo");
     techo.removeChild(img);
-     img=imgS
+    img = imgS
     var techo1 = document.getElementById("activoS");
     techo1.removeChild(imgS);
-      img.setAttribute("id", "img");
-      img.setAttribute("class", "imagen");
+    img.setAttribute("id", "img");
+    img.setAttribute("class", "imagen");
     document.getElementById('activo').appendChild(img);
-    count ++;
-   
- longitud= Galeria[vista].length;
-if (count>=longitud) {
-  console.log('pppuuuuummmm')
-  count=0;
-}
-   
-    
-       var prox = Galeria[vista][count];
-       console.log(prox)
-        // console.log(imgS)
-         imgS = document.createElement('img');
-        imgS.setAttribute("src", prox);
-         imgS.setAttribute("id", "imgS");
-         imgS.setAttribute("class", "imagen");
-       document.getElementById('activoS').appendChild(imgS);
+    count++;
+
+    longitud = Galeria[vista].length;
+    if (count >= longitud) {
+      console.log('pppuuuuummmm')
+      count = 0;
+    }
+
+
+    var prox = Galeria[vista][count];
+    console.log(prox)
+    // console.log(imgS)
+    imgS = document.createElement('img');
+    imgS.setAttribute("src", prox);
+    imgS.setAttribute("id", "imgS");
+    imgS.setAttribute("class", "imagen");
+    document.getElementById('activoS').appendChild(imgS);
 
 
 
@@ -215,76 +215,16 @@ if (count>=longitud) {
 
   }, 1500);
 
-  // if (count >= total - 1) {
-  //   count = 0;
-  // }
-  // //---Si existe img
-  // if (img != null && imgS == null) {
-  //   count++;
-  //   imgS = document.createElement('img');
-  //   var path = vista[count];
-  //   imgS.setAttribute("src", path);
-  //   imgS.setAttribute("id", "imgS");
-  //   imgS.setAttribute("class", "imagen");
-  //   document.getElementById('activoS').appendChild(imgS);
-  //   img.setAttribute("class", "imagen object  move-left");
-  //   setTimeout(function t() {
-  //     //borramos la imagen para crear una en div central y luego mover desde allí
-  //     var techo = document.getElementById("activo");
-  //     techo.removeChild(img);
-  //   }, 1500);
-  //   setTimeout(function cx() {
-  //     imgS.setAttribute("class", "imagen object  move-left");
-  //   }, 0.5);
-  //   setTimeout(function cxv() {
-  //     if (imgS != null) {
-  //       console.log('imgS', imgS)
-  //       var techo = document.getElementById("activoS");
-  //       techo.removeChild(imgS);
-  //     }
-  //     // imgS.removeAttribute("class");
-  //     imgS = null
-  //     img = document.createElement('img');
-  //     var path = vista[count];
-  //     img.setAttribute("src", path);
-  //     img.setAttribute("id", "img");
-  //     img.setAttribute("class", "imagen");
-  //     img.setAttribute("onclick", "sum()");
-  //     //ontouchcancel="sum()" onclick="sum()"
-  //     document.getElementById('activo').appendChild(img);
-  //   }, 1500);
-  // }
-  // else if (imgS != null && img == null) {
-  //   count++;
-  //   img = document.createElement('img');
-  //   var path = vista[count];
-  //   img.setAttribute("src", path);
-  //   img.setAttribute("id", "img");
-  //   img.setAttribute("class", "imagen");
-  //   document.getElementById('activoS').appendChild(img);
-  //   imgS.setAttribute("class", "imagen object  move-left");
-  //   setTimeout(function t() {
-  //     var techo = document.getElementById("activo");
-  //     techo.removeChild(imgS);
-  //   }, 1500);
-  //   setTimeout(function cx() {
-  //     img.setAttribute("class", "imagen object  move-left");
-
-  //   }, 0.5);
-  //   setTimeout(function cxv() {
-  //     var techo = document.getElementById("activoS");
-  //     techo.removeChild(img);
-  //     img.removeAttribute("class");
-  //     img.setAttribute("src", path);
-  //     img.setAttribute("id", "img");
-  //     img.setAttribute("class", "imagen");
-  //     img.setAttribute("onclick", "sum()");
-  //     //ontouchcancel="sum()" onclick="sum()"
-  //     document.getElementById('activo').appendChild(img);
-  //   }, 1500);
-  // }
 }
 
+function intervalo() {
+  marcha = setInterval(() => {
+    sum();
+  }, timer);
+}
+function pause() {
+  clearInterval(marcha);
+}
 
 
 
@@ -425,14 +365,7 @@ if (count>=longitud) {
 //   renderizar(vista);
 // }
 
-// function intervalo() {
-//   marcha = setInterval(() => {
-//     sum();
-//   }, timer);
-// }
-// function stop() {
-//   clearInterval(marcha);
-// }
+
 
 // function activarMiniLaterales() {
 //   //console.log('vista', vista)
