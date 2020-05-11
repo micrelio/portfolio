@@ -258,8 +258,10 @@ function intervalo() {
     sum();
   }, timer);
 }
+
 function pause() {
-  clearInterval();
+  console.log('pause')
+  clearInterval(marcha);
 }
 
 
