@@ -188,73 +188,90 @@ console.log(anterior)
 }
 
 function sum() {
- 
-  setTimeout(() => {
+   setTimeout(() => {
  
     img.setAttribute("class", "imagen object  move-rigth");
     imgS.setAttribute("class", "imagen object  move-rigth");
     imgA.setAttribute("class", "imagen object  move-rigth")   
-
   }, 1);
-
   setTimeout(function t() {
-    //--cambia imgS x img no entiendo--------------
-    //imgS.setAttribute("id", "imgS");
-    //borramos la imagen para crear una en div central y luego mover desde allí
-    //  console.log(activoS)
-
-    var techo=document.getElementById("activoA");
+     var techo=document.getElementById("activoA");
     techo.removeChild(imgA); 
     imgA = img
-    
-    var techo1 = document.getElementById("activo");
+        var techo1 = document.getElementById("activo");
     techo1.removeChild(img);
-    
     imgA.setAttribute("id", "imgA");
     imgA.setAttribute("class", "imagen");
     document.getElementById('activoA').appendChild(imgA);
-    
-    
-    img = imgS
+          img = imgS
     var techo1 = document.getElementById("activoS");
     techo1.removeChild(imgS);
     img.setAttribute("id", "img");
     img.setAttribute("class", "imagen");
     document.getElementById('activo').appendChild(img);
     count++;
-
-
-
-
-    longitud = Galeria[vista].length;
+   longitud = Galeria[vista].length;
     if (count >= longitud) {
       console.log('pppuuuuummmm')
       count = 0;
     }
-
-
     var prox = Galeria[vista][count];
     console.log(prox)
-    // console.log(imgS)
     imgS = document.createElement('img');
     imgS.setAttribute("src", prox);
     imgS.setAttribute("id", "imgS");
     imgS.setAttribute("class", "imagen");
     document.getElementById('activoS').appendChild(imgS);
-
-
-
-    // document.getElementById('activoS').appendChild(imgS);
-
-    // seleccionar();
-
   }, 1500);
-
 }
+
+
+function res() {
+  setTimeout(() => {
+
+   img.setAttribute("class", "imagen object  move-left");
+   imgS.setAttribute("class", "imagen object  move-left");
+   imgA.setAttribute("class", "imagen object  move-left")   
+ }, 1);
+ setTimeout(function t() {
+    var techo=document.getElementById("activoS");
+   techo.removeChild(imgS); 
+   img = imgA
+  var techo1 = document.getElementById("activoA");
+   techo1.removeChild(imgA);
+   img.setAttribute("id", "img");
+   img.setAttribute("class", "imagen");
+   document.getElementById('activo').appendChild(img);
+         imgA = img
+   var techo1 = document.getElementById("activoA");
+   techo1.removeChild(imgA);
+   imgA.setAttribute("id", "imgA");
+   img.setAttribute("class", "imagen");
+   document.getElementById('activoA').appendChild(imgA);
+   count--;
+  longitud = Galeria[vista].length;
+   if (count >= longitud) {
+     console.log('pppuuuuummmm')
+     count = 0;
+   }
+   var prox = Galeria[vista][count];
+   console.log(prox)
+   imgS = document.createElement('img');
+   imgS.setAttribute("src", prox);
+   imgS.setAttribute("id", "imgS");
+   imgS.setAttribute("class", "imagen");
+   document.getElementById('activoS').appendChild(imgS);
+ }, 1500);
+}
+
+
+
+
+
+
 
 function intervalo() {
   marcha = setInterval(() => {
-    
     sum();
   }, timer);
 }
