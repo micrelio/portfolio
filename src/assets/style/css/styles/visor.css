@@ -33,8 +33,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: center;
-  align-items: flex-start;
   width: 100vw;
   border: 0.8rem solid #eeeeee;
   box-shadow: #555 1px 1px 8px 1px;
@@ -54,7 +52,6 @@
   background-color: pink;
 }
 .principal .visor .activo {
-  overflow: hidden;
   display: flex;
   flex-direction: row;
   justify-content: center;
