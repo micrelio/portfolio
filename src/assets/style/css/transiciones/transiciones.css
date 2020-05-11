@@ -20,13 +20,13 @@
 }
 
 .move-rigth {
-  transform: translate(100vw, 0);
-  -webkit-transform: translate(100vw, 0);
+  transform: translate(33vw, 0);
+  -webkit-transform: translate(33vw, 0);
   /** Chrome & Safari **/
-  -webkit-transform: translate(100vw, 0);
-  -o-transform: translate(100vw, 0);
+  -webkit-transform: translate(33vw, 0);
+  -o-transform: translate(33vw, 0);
   /** Opera **/
-  -moz-transform: translate(100vw, 0);
+  -moz-transform: translate(33vw, 0);
   /** Firefox **/
 }
 

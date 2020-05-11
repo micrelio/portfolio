@@ -11,7 +11,9 @@ class miVisor extends HTMLElement {
   <div id="multimediaControl" class="multimediaControl">
     <img id="previous" class="multimediaImagen"  src="../../assets/images/buttons/multimedia/previous.png">
     <img id="pause" class="multimediaImagen" src="../../assets/images/buttons/multimedia/pause.png">
-    <img id="play" class="multimediaImagen"  src="../../assets/images/buttons/multimedia/play.png">
+    <img id="play-" class="multimediaImagen"  src="../../assets/images/buttons/multimedia/play-.png">
+
+    <img id="play+" class="multimediaImagen"  src="../../assets/images/buttons/multimedia/play+.png">
     <img id="stop" class="multimediaImagen"  src="../../assets/images/buttons/multimedia/stop.png">
     <img id="next" class="multimediaImagen"  src="../../assets/images/buttons/multimedia/next.png">
   </div>
@@ -44,9 +46,12 @@ class miVisor extends HTMLElement {
       if (e.target !== this) {
         switch (h) {
           case 'previous':
-            cambio(h);
+            res();
             break;
-          case 'play':
+            case 'play-':
+            intervalo();
+            break;
+          case 'play+':
             intervalo();
             break;
           case 'pause':
@@ -56,14 +61,14 @@ class miVisor extends HTMLElement {
             console.log(h);
             break;
           case 'next':
-            cambio(h);
+            sum();
             break;
         }
       }
     });
   }
 }
-var count = 0;
+
 //var vista ='Galeria';
 timer = 2000;
 customElements.define('mi-visor', miVisor);
@@ -75,7 +80,8 @@ function cargar(preVista) {
       //Enviamos un solo array
       //creamos vista como variable global
       vista = [].concat.apply([], preVista);
-      renderizar(vista)
+       count = 0;
+      seleccionar()
       //   acaparados.forEach(elemente => renderizar(elemente));
       break;
 
@@ -88,6 +94,7 @@ function cargar(preVista) {
     case 'Mas':
       // Opcion 2 creamos vista como variable global
       vista = preVista;
+       count = 0;
       seleccionar();
       break;
     default:
@@ -99,31 +106,43 @@ function cargar(preVista) {
 function seleccionar() {
 
 
-  imgS = document.createElement('img');
-  console.log(img)
+ // console.log(img)
+  var longitud = Galeria[vista].length;
   var render = Galeria[vista][count];
-  siguiente = Galeria[vista][count + 1];
-  var img = document.createElement('img');
-  console.log(Galeria[vista].length)
+var  siguiente = Galeria[vista][count + 1];
+var  anterior = Galeria[vista][longitud-1];
 
+   img = document.createElement('img');
+  imgS = document.createElement('img');
+    imgA = document.createElement('img');
+   
+console.log(anterior)
   imgS.setAttribute("src", siguiente);
   imgS.setAttribute("id", "imgS");
   imgS.setAttribute("class", "imagen");
-  console.log(img)
-
-
-  //var llaves = Object.keys(Galeria);
-  //---Leemos las claves
-  // if ( img == undefined) {
-
   img.setAttribute("src", render);
   img.setAttribute("id", "img");
   img.setAttribute("class", "imagen");
+  imgS.setAttribute("src", siguiente);
+  imgS.setAttribute("id", "imgS");
+  imgS.setAttribute("class", "imagen");
+  imgA.setAttribute("src", anterior);
+  imgA.setAttribute("id", "imgA");
+  imgA.setAttribute("class", "imagen");
   //  document.getElementById('activoS').appendChild(imgS);
   console.log('hola')
   console.log(img);
+
+ 
+  console.log(longitud)
+  if (count >= longitud) {
+    console.log('pppuuuuummmm')
+    count = 0;
+  }
   document.getElementById('activo').appendChild(img);
      document.getElementById('activoS').appendChild(imgS);
+     document.getElementById('activoA').appendChild(imgA);
+
   count++;
   //  }
   console.log('oododododo')
@@ -168,20 +187,14 @@ function seleccionar() {
   //   }
 }
 
-function cambio(e) {
-  console.log(e)
-  switch (e) {
-    case 'next':
-      direccion= '++';
-      break;
-      case 'previous':
-        direccion= '--';
-        break;
-    
-  }
+function sum() {
+ 
   setTimeout(() => {
+ 
     img.setAttribute("class", "imagen object  move-rigth");
     imgS.setAttribute("class", "imagen object  move-rigth");
+    imgA.setAttribute("class", "imagen object  move-rigth")   
+
   }, 1);
 
   setTimeout(function t() {
@@ -190,6 +203,15 @@ function cambio(e) {
     //borramos la imagen para crear una en div central y luego mover desde allí
     //  console.log(activoS)
 
+    var techo = document.getElementById("activoA");
+    techo.removeChild(imgA);
+    imgA = img
+    var techo1 = document.getElementById("activo");
+    techo1.removeChild(img);
+    img.setAttribute("id", "img");
+    img.setAttribute("class", "imagen");
+    document.getElementById('activoA').appendChild(imgA);
+    
     var techo = document.getElementById("activo");
     techo.removeChild(img);
     img = imgS
@@ -199,6 +221,9 @@ function cambio(e) {
     img.setAttribute("class", "imagen");
     document.getElementById('activo').appendChild(img);
     count++;
+
+
+
 
     longitud = Galeria[vista].length;
     if (count >= longitud) {
