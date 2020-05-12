@@ -1,18 +1,31 @@
 /* hovers*/
-.head {
-  width: 100%;
-  position: relative;
-  background-color: pink;
-}
-.head img {
-  width: 100%;
+.datosPersonales {
+  border-bottom: 0.3rem solid black;
+  padding: 3rem;
 }
 
-.segunda {
+.empresa {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
   width: 100vw;
-  padding: 5%;
-  height: 80vh;
+  height: 20vh;
+  border-bottom: 0.3rem solid black;
   background-color: white;
+}
+.empresa .logotipo {
+  height: 10vw;
+  width: 50%;
+}
+.empresa .logotipo .corporativo {
+  height: 90%;
+}
+.empresa .descripcion {
+  height: 10vw;
+  width: 50%;
 }
 
 /*# sourceMappingURL=curriculum.css.map */
