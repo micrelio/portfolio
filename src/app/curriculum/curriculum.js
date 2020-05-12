@@ -9,10 +9,14 @@ class miCurriculum extends HTMLElement {
 
 
   
-      
+      <div class="titulo">
+  <h1>Datos personales</h1>
+  </div>
+
       
       <section class="datos">
-      <div  class="datosPersonales">
+
+    <div  class="datosPersonales">
           <h>José Antonio López Baena</h>
           <p>
               Nacido el 27 de julio de 1982 en Valencia (España).
@@ -37,18 +41,18 @@ class miCurriculum extends HTMLElement {
 
   <div class="experiencia">
   <div class="logotipo">
-      <img id="" class="corporativo" src="../../assets/images/logoEmpresa/.jpg">
+    <a href="https://geekshubs.com/"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/GeeksHubs.jpg"></a>
   </div>
   <div class="descripcion">
       <p>2019</p>
-      <p>BootCamp fullstack developer, en Greekshubs Valencia (Valencia).</p>
+      <p>BootCamp fullstack developer, en GeeksHubs Valencia (Valencia).</p>
   </div>
 </div>
 
 
 <div class="experiencia">
 <div class="logotipo">
-    <img id="" class="corporativo" src="../../assets/images/logoEmpresa/.jpg">
+<a href="https://www.tobalcaide.com/"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/.jpg"></a>
 </div>
 <div class="descripcion">
 <p>2018</p>
@@ -58,7 +62,7 @@ class miCurriculum extends HTMLElement {
 
 <div class="experiencia">
 <div class="logotipo">
-    <img id="" class="corporativo" src="../../assets/images/logoEmpresa/.jpg">
+    <img id="" class="corporativo" src="../../assets/images/logoEmpresa/ingles.png">
 </div>
 <div class="descripcion">
 <p>2013-2017</p>
@@ -79,7 +83,7 @@ class miCurriculum extends HTMLElement {
 
 <div class="experiencia">
 <div class="logotipo">
-    <img id="" class="corporativo" src="../../assets/images/logoEmpresa/cover.jpg">
+<a href="https://www.coversa.com/"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/cover.jpg"></a> 
 </div>
 <div class="descripcion">
 <p>2002</p>
@@ -151,23 +155,23 @@ class miCurriculum extends HTMLElement {
   
       <div class="experiencia">
           <div class="logotipo">
-              <img id="" class="corporativo" src="../../assets/images/logoEmpresa/trolli.jpg">
+          <a href="https://www.trolli.es/"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/trolli.jpg"></a>
           </div>
           <div class="descripcion">
               <p>2015</p>
               <p>Trolli: Técnico de sistemas industriales, responsable de turno.
-                  https://www.trolli.es/
+                  
               </p>
           </div>
       </div>
   
       <div class="experiencia">
           <div class="logotipo">
-              <img id="" class="corporativo" src="../../assets/images/logoEmpresa/power.jpg">
+          <a href="https://power-electronics.com/es/"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/power.jpg"></a>
           </div>
           <div class="descripcion">
               <p>2013</p>
-              <p>Tour Electric: Revisión y mejoras en plantas fotovoltaicas, trabajos en inversores y centros de
+              <p>Tour Electric & Power Electronics: Revisión y mejoras en plantas fotovoltaicas, trabajos en inversores y centros de
                   transformación en Inglaterra.
               </p>
           </div>
@@ -175,12 +179,11 @@ class miCurriculum extends HTMLElement {
   
       <div class="experiencia">
           <div class="logotipo">
-              <img id="" class="corporativo" src="../../assets/images/logoEmpresa/grupoSiro.jpg">
+          <a href="https://www.cerealtosirofoods.com/es/"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/grupoSiro.jpg"></a>
           </div>
           <div class="descripcion">
               <p>2013</p>
-              <p>Grupo Siro: Técnico de sistemas industriales.
-                  https://www.cerealtosirofoods.com/es/</p>
+              <p>Grupo Siro: Técnico de sistemas industriales.</p>
           </div>
       </div>
   
@@ -198,12 +201,11 @@ class miCurriculum extends HTMLElement {
   
       <div class="experiencia">
           <div class="logotipo">
-              <img id="" class="corporativo" src="../../assets/images/logoEmpresa/diselcom.jpg">
+          <a href="http://www.diselcom.com/"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/diselcom.jpg"></a>
           </div>
           <div class="descripcion">
               <p>2008</p>
-              <p>Diselcom: Montaje de cuadros electrónicos en época de estudios.
-                  http://www.diselcom.com/</p>
+              <p>Diselcom: Montaje de cuadros electrónicos en época de estudios.</p>
           </div>
       </div>
   
@@ -215,18 +217,16 @@ class miCurriculum extends HTMLElement {
           <div class="descripcion">
               <p>2005</p>
               <p>Martínez Loriente: Ayudante técnico de sistemas.
-                  http://www.delisano.es/es/</p>
           </div>
       </div>
   
       <div class="experiencia">
           <div class="logotipo">
-              <img id="" class="corporativo" src="../../assets/images/logoEmpresa/cover.jpg">
+          <a href=" https://www.coversa.com/"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/cover.jpg"></a>
           </div>
           <div class="descripcion">
               <p>2002</p>
-              <p>Cover: Mantenimiento en centros de transformación y subestaciones industriales de alta y media tensión.
-                  https://www.coversa.com/</p>
+              <p>Cover: Mantenimiento en centros de transformación y subestaciones industriales de alta y media tensión.</p>
           </div>
       </div>
   
