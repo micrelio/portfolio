@@ -28,10 +28,13 @@ class miCurriculum extends HTMLElement {
   
   
   
-  
+  <div class="titulo">
+  <h1>Formación académica</h1>
+  </div>
+
+
   <section class="datos">
   <div  class="datosPersonales">
-      <h>Formación académica</h>
   
       <p>2019
           BootCamp fullstack developer, en Greekshubs Valencia (Valencia).</p>
@@ -59,11 +62,9 @@ class miCurriculum extends HTMLElement {
           </div>
   </section>
   
-  <section class="datos">
-      <div class="experiencia">
+      <div class="titulo">
           <h1>Experiencia laboral</h1>
       </div>
-  </section>
   
   <section class="datos">
       <div class="experiencia">
@@ -187,9 +188,12 @@ class miCurriculum extends HTMLElement {
   
   </section>
  
+  <div class="titulo">
+  <h1>Datos de interés</h1>
+</div>
+
 <section class="datos">
   <div  class="datosPersonales">
-    <h>Datos de interés:</h>
 	  <p>Facilidad en asimilación y manejo de programas informáticos.</p>
     <p>Diseño de páginas web.</p>
     <p>Disponibilidad geográfica total e inmediata.</p>

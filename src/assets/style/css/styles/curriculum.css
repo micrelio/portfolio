@@ -3,6 +3,16 @@ section {
   background-color: black;
 }
 
+.titulo {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  color: #00C6EE;
+}
+
 .datosPersonales {
   color: white;
   padding: 3rem;
