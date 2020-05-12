@@ -1,7 +1,7 @@
 /* hovers*/
 .datosPersonales {
-  border-bottom: 0.3rem solid black;
   padding: 3rem;
+  border-bottom: 0.3rem solid black;
 }
 
 .empresa {
@@ -12,19 +12,18 @@
   align-items: center;
   justify-content: start;
   width: 100vw;
-  height: 20vh;
+  height: 19vh;
   border-bottom: 0.3rem solid black;
   background-color: white;
 }
 .empresa .logotipo {
   height: 10vw;
-  width: 50%;
 }
 .empresa .logotipo .corporativo {
   height: 90%;
 }
 .empresa .descripcion {
-  height: 10vw;
+  padding: 3rem;
   width: 50%;
 }
 

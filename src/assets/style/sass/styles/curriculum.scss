@@ -5,10 +5,13 @@
     // @include head;
 }
 .datosPersonales{
-    border-bottom: 0.3rem solid black;
     padding: 3rem;
+
+    border-bottom: 0.3rem solid black;
 }
 .empresa {
+   // padding: 3rem;
+
     margin: 0 auto;
 
     display: flex;
@@ -18,13 +21,13 @@ align-items: center;
 justify-content: start;
     width: 100vw;
     //padding: 5%;
-    height: 20vh;
+    height: 19vh;
     border-bottom: 0.3rem solid black;
 
     // overflow: hidden;
     .logotipo {
-        height: 10vw;
-        width: 50%;
+       height: 10vw;
+       // width: 50%;
         .corporativo{
             height: 90%;
 
@@ -32,7 +35,9 @@ justify-content: start;
         
     }
     .descripcion{
-        height: 10vw;
+        
+        padding: 3rem;
+     //   height: 10vw;
         width: 50%;
 
     }
