@@ -52,31 +52,31 @@ class miCurriculum extends HTMLElement {
 
 <div class="experiencia">
 <div class="logotipo">
-<a href="https://www.tobalcaide.com/"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/.jpg"></a>
+<a href="https://www.tobalcaide.com/"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/tobalcaide.jpg"></a>
 </div>
 <div class="descripcion">
 <p>2018</p>
-<p>Grado superior ASIR (administración de sistemas informáticos en red) academia Tobalcaide, Quart de Poblet (Valencia).</p>
+<p>Grado superior ASIR (administración de sistemas informáticos en red): Academia Tobalcaide, Quart de Poblet (Valencia).</p>
 </div>
 </div>
 
 <div class="experiencia">
 <div class="logotipo">
-    <img id="" class="corporativo" src="../../assets/images/logoEmpresa/ingles.png">
+<a href="http://mestreacasa.gva.es/web/iesrodrigobotet"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/rodrigoBotet.jpg"></a>
 </div>
 <div class="descripcion">
 <p>2013-2017</p>
-<p>Curso de inglés, instituto Rodrigo Botet, instituto Manises (Valencia).</p>
+<p>Curso de inglés: IES Rodrigo Botet, instituto Manises (Valencia).</p>
 </div>
 </div>
 
 <div class="experiencia">
 <div class="logotipo">
-    <img id="" class="corporativo" src="../../assets/images/logoEmpresa/.jpg">
+<a href="http://iessalvadorgadea.edu.gva.es/web/"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/salvadorGadea.jpg"></a>
 </div>
 <div class="descripcion">
 <p>2008</p>
-<p>Grado superior de Control y regulación de sistemas autocontrolados, instituto Salvador Gadea, Aldaya (Valencia).
+<p>Grado superior de Control y regulación de sistemas autocontrolados: IES Salvador Gadea, Aldaya (Valencia).
 </p>
 </div>
 </div>
@@ -93,21 +93,21 @@ class miCurriculum extends HTMLElement {
 
 <div class="experiencia">
 <div class="logotipo">
-    <img id="" class="corporativo" src="../../assets/images/logoEmpresa/.jpg">
+<a href="http://institutofaitanar.edu.gva.es/"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/faitanar.jpg"></a>
 </div>
 <div class="descripcion">
 <p>2000</p>
-<p> Grado medio: Electricidad en Aldaya (Valencia).</p>
+<p> Grado medio Electricidad: IES Faitanar, Quart de Poblet (Valencia).</p>
 </div>
 </div>
 
 <div class="experiencia">
 <div class="logotipo">
-    <img id="" class="corporativo" src="../../assets/images/logoEmpresa/.jpg">
+<a href="https://web.iesgonzaloanaya.es/"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/gonzaloAnaya.jpg"></a>
 </div>
 <div class="descripcion">
 <p>1997</p>
-<p>FP 1electrónica, instituto Gonzalo Anaya, Xirivella (Valencia).</p>
+<p>FP E1electrónica: IES Gonzalo Anaya, Xirivella (Valencia).</p>
 </div>
 </div>
 
@@ -121,7 +121,7 @@ class miCurriculum extends HTMLElement {
   <section class="datos">
       <div class="experiencia">
           <div class="logotipo">
-              <img id="" class="corporativo" src="../../assets/images/logoEmpresa/yoigo.png">
+              <img id="" class="corporativo" src="../../assets/images/logoEmpresa/yoigo.jpg">
           </div>
           <div class="descripcion">
               <p>2018</p>
