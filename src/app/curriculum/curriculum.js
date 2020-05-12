@@ -143,13 +143,11 @@ class miCurriculum extends HTMLElement {
   
       <div class="experiencia">
           <div class="logotipo">
-              <img id="" class="corporativo" src="../../assets/images/logoEmpresa/frusa.jpg">
+          <a href="https://www.alimarket.es/alimentacion/empresa/209431"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/frusa.jpg"></a>
           </div>
           <div class="descripcion">
               <p>2016</p>
-              <p>Frusa Coca Cola: Técnico de sistemas industriales.
-                  https://www.alimarket.es/alimentacion/empresa/209431
-              </p>
+              <p>Frusa Coca Cola: Técnico de sistemas industriales.</p>
           </div>
       </div>
   

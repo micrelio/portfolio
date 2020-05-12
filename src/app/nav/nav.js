@@ -40,7 +40,7 @@ class miNav extends HTMLElement {
         </div>
         <div >
         </div>
-        <div style="display: none;" class="desplegable" id="desplegable">
+        <div style="display: none" class="desplegable" id="desplegable">
             <button  onclick="navegar('inicio');" class="mnav-link">Inicio</button>
             <button  onclick="navegar('webs');" class="mnav-link">Webs</button>
             <button  onclick="navegar('galeria');" class="mnav-link">Galery</button>
