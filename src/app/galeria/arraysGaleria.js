@@ -1,6 +1,6 @@
 
-//var count = 0;
-//var res = 0;
+var count = 0;
+var res = 0;
 // var todos = [
 //   logos = ["/src/assets/images/logos/igr.jpg",
 //     "/src/assets/images/logos/igre.png",
@@ -27,21 +27,21 @@
 
 
 var Galeria = {
-  Logos: ["../../assets/images/logos/igr.jpg",
-    "../..//assets/images/logos/igre.png",
-    "../../assets/images/logos/john.png"],
-  Posters: ["../../assets/images/posters/quiromasajista.jpg",],
-  Folletos: ["../../assets/images/folletos/igreCampana2019.jpg",
-    "../../assets/images/folletos/igreAntoniaCampaña2019.jpg",
-    "../../assets/images/folletos/igreCampaña2019B.jpg",
-    "../../assets/images/folletos/unChalecoUnaVida.jpg",],
- Postales: ["../../assets/images/postales/postalIgre.jpg",
-    "../../assets/images/postales/postalIgreCorreo.jpg",],
-  Pngs: ["../..//assets/images/png/antonia.png",
-    "../../assets/images/png/banderaEuropaDesvanecida.png",
-    "../../assets/images/png/banderaEsquina.png",
-    "../../assets/images/png/europaRedondo.png",
-    "../../assets/images/png/igreNavidad.png",],
+  Logos: ["../../assets/images/imagenesPropias/logos/igr.jpg",
+    "../../assets/images/imagenesPropias/logos/igre.png",
+    "../../assets/images/imagenesPropias/logos/john.png"],
+  Posters: ["../../assets/images/imagenesPropias/posters/quiromasajista.jpg",],
+  Folletos: ["../../assets/images/imagenesPropias/folletos/igreCampana2019.jpg",
+    "../../assets/images/imagenesPropias/folletos/igreAntoniaCampaña2019.jpg",
+    "../../assets/images/imagenesPropias/folletos/igreCampaña2019B.jpg",
+    "../../assets/images/imagenesPropias/folletos/unChalecoUnaVida.jpg",],
+ Postales: ["../../assets/images/imagenesPropias/postales/postalIgre.jpg",
+    "../../assets/images/postales/imagenesPropias/postalIgreCorreo.jpg",],
+  Pngs: ["../..//assets/images/imagenesPropias/png/antonia.png",
+    "../../assets/images/imagenesPropias/png/banderaEuropaDesvanecida.png",
+    "../../assets/images/imagenesPropias/png/banderaEsquina.png",
+    "../../assets/images/imagenesPropias/png/europaRedondo.png",
+    "../../assets/images/imagenesPropias/png/igreNavidad.png",],
     Google:["https://ep01.epimg.net/elpais/imagenes/2019/10/30/album/1572424649_614672_1572453030_noticia_normal.jpg",
   "https://cnnespanol2.files.wordpress.com/2019/12/mejores-imagenes-del-ancc83o-noticias-2019-galeria10.jpg?quality=100&strip=info&w=320&h=240&crop=1",
   "https://i.blogs.es/3650f5/eclipsed-moon-trail-c-chuanjin-su/450_1000.jpg",
