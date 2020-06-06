@@ -125,7 +125,7 @@ class miCurriculum extends HTMLElement {
         </div>
         <div class="descripcion">
             <p>2020</p>
-            <p>HostingMicro.com: Creación de servidor para WordPress en VPS, adquisición de licencia DIVI comienzo de creación y alquiler de hosting de forma privada. .</p>
+            <p>HostingMicro.com: Creación de servidor para WordPress en VPS, adquisición de licencia DIVI comienzo en creación y alquiler de hosting de forma privada.</p>
         </div>
     </div>
     <div class="experiencia">
