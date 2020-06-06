@@ -14,33 +14,35 @@ class miImagenes extends HTMLElement {
      <section id="repertorio" class="repertorio">
   </section>
   `;
-        //RECORREMOS LA SECCION ESPERANDO CUALQUIER EVENTO DEL MISMO, THIS ES EL ELEMENTO SOBRE EL QUE SE
-        //APLICA EL EVENTO, CON ESTO VEMOS QUE SE HA HECHO CLICK SOBRE UN ELEMENTO DISTINTO DEL PRINCIPAL
-        //SI HHAY SUBELEMENTOS NO VA BIEN
-        //CON ESTE OCUPAMOS MENOS RAM, YA QUE SOLO CREA UN EVENTO
-        var elementos = document.querySelector('#repertorio');
-        elementos.addEventListener('click', function(e) {
-
-            console.log(e.target.value)
-            if (e.target !== this) {
-                // Código que se ejecuta al hacer click.
-                console.log(e.target.value);
-                var valor = e.target.value;
-                //  document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
-                console.log(valor);
-                cargar(valor);
-            }
-        });
 
 
+
+        // var elementos = document.querySelector('#repertorio');
+        // elementos.addEventListener('click', function(e) {
+
+        //     console.log(e.target.value)
+        //     if (e.target !== this) {
+        //         // Código que se ejecuta al hacer click.
+        //         console.log(e.target.value);
+        //         var valor = e.target.value;
+        //         cargar(valor);
+        //     }
+        // });
+
+        // var elementos = document.querySelector('#repertorio');
+        // elementos.addEventListener('click', function(e) {
+
+        //     console.log(e.target.value)
+        //     if (e.target !== this) {
+        //         // Código que se ejecuta al hacer click.
+        //         console.log(e.target.value);
+        //         var valor = e.target.value;
+        //         cargar(valor);
+        //     }
+        // });
 
     }
 }
-
-
-
-
-
 customElements.define('mi-imagenes', miImagenes);
 
 function cargaTodo() {
@@ -66,8 +68,6 @@ function cargaTodo() {
 
     // //console.log('objeto vacio', onLine);
 
-
-
     //---imagenes en imagenes------------------------
     var llaves = Object.keys(Galeria);
     //---Leemos las claves
@@ -77,32 +77,18 @@ function cargaTodo() {
         var div = document.createElement('div');
         var hr = document.createElement('hr');
         var h = document.createElement('button');
+        h.addEventListener("click", function() {
+            cargar(tipo);
+        });
         //---CREAMOS UN TEXTO---
         var t = document.createTextNode(tipo);
         h.setAttribute("class", "title");
-        h.setAttribute("id", "i ");
+        h.setAttribute("id", "i");
         h.setAttribute("value", tipo);
         div.setAttribute("id", tipo);
+
         div.setAttribute("class", "fila");
         hr.setAttribute("class", "raya");
-
-
-
-        // var t = document.createTextNode(tipo);
-        // //  p.setAttribute("class", "nombre");
-        // //  p.setAttribute("id", "p");
-        // //  p.setAttribute("value", tipo);
-        // //---CREAMOS UN BOTON---
-        // boto.setAttribute("id", 'boton' + tipo);
-        // boto.setAttribute("class", "boton");
-        // boto.setAttribute("type", "button");
-        // boto.setAttribute("value", tipo);
-        // console.log(boto)
-
-
-
-
-
 
         document.getElementById('repertorio').appendChild(h);
         h.appendChild(t);
@@ -112,14 +98,23 @@ function cargaTodo() {
         for (let index2 = 0; index2 < dato.length; index2++) {
             var img = document.createElement('img');
             var path = dato[index2];
+            img.addEventListener("click", function() {
+                cargar(tipo);
+            });
             img.setAttribute("src", path);
             img.setAttribute("height", "70rem");
             img.setAttribute("class", "imagenPresentacion");
             img.setAttribute("id", tipo);
 
             document.getElementById(tipo).appendChild(img);
+
         }
+
+
+
     }
+
+
 
 
 }
