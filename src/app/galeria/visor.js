@@ -1,12 +1,12 @@
 class miVisor extends HTMLElement {
 
-  constructor() {
+    constructor() {
 
-    super();
-  }
-  connectedCallback() {
-    this.innerHTML =
-      `
+        super();
+    }
+    connectedCallback() {
+        this.innerHTML =
+            `
  <section id="botoneraMultimedia" class="botoneraMultimedia" >
   <div id="multimediaControl" class="multimediaControl">
     <img id="previous" class="multimediaImagen"  src="../../assets/images/buttons/multimedia/previous.png">
@@ -36,37 +36,37 @@ class miVisor extends HTMLElement {
   <div>
 </section>
              `;
-    // esto arranca automatico 
-    var multimedia = document.querySelector('#multimediaControl');
-    multimedia.addEventListener('click', function (e) {
-      console.log(e)
-      var h = e.target.id;
-      console.log(h)
-      if (e.target !== this) {
-        switch (h) {
-          case 'previous':
-            res();
-            break;
-          case 'play-':
-            intervalo(h);
-            break;
-          case 'play+':
-            intervalo(h);
-            break;
-          case 'pause':
-            pause();
-            break;
-          case 'stop':
-            stop();
-            console.log(h);
-            break;
-          case 'next':
-            sum();
-            break;
-        }
-      }
-    });
-  }
+        // esto arranca automatico 
+        var multimedia = document.querySelector('#multimediaControl');
+        multimedia.addEventListener('click', function(e) {
+            console.log(e)
+            var h = e.target.id;
+            console.log(h)
+            if (e.target !== this) {
+                switch (h) {
+                    case 'previous':
+                        res();
+                        break;
+                    case 'play-':
+                        intervalo(h);
+                        break;
+                    case 'play+':
+                        intervalo(h);
+                        break;
+                    case 'pause':
+                        pause();
+                        break;
+                    case 'stop':
+                        stop();
+                        console.log(h);
+                        break;
+                    case 'next':
+                        sum();
+                        break;
+                }
+            }
+        });
+    }
 }
 //var vista ='Galeria';
 timer = 2000;
@@ -76,175 +76,182 @@ customElements.define('mi-visor', miVisor);
 
 //---COMIENZO----------------------------
 function cargar(preVista) {
-  console.log('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')
-  if (typeof marcha !== 'undefined') {
-    clearInterval(marcha);
-  }
-  count = 0;
-  document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
-  switch (preVista) {
-    case 'Galeria':
-      //Enviamos un solo array
-      //creamos vista como variable global
-      vista = [].concat.apply([], preVista);
-      //count = 0;
-      seleccionar()
-      //   acaparados.forEach(elemente => renderizar(elemente));
-      break;
-    case 'Logos':
-    case 'Folletos':
-    case 'Posters':
-    case 'Postales':
-    case 'Pngs':
-    case 'Google':
-    case 'Mas':
-      // Opcion 2 creamos vista como variable global
-      vista = preVista;
-      //count = 0;
-      seleccionar();
-      break;
-    default:
-      break;
-  }
-  //Idexamos indice
-}
-function seleccionar() {
-  // console.log(img)
-  var longitud = Galeria[vista].length;
-  var render = Galeria[vista][count];
-  var siguiente = Galeria[vista][count + 1];
-  var anterior = Galeria[vista][longitud - 1];
-  img = document.createElement('img');
-  imgS = document.createElement('img');
-  imgA = document.createElement('img');
-
-  imgS.setAttribute("src", siguiente);
-  imgS.setAttribute("id", "imgS");
-  imgS.setAttribute("class", "imagen");
-  img.setAttribute("src", render);
-  img.setAttribute("id", "img");
-  img.setAttribute("class", "imagen");
-  imgS.setAttribute("src", siguiente);
-  imgS.setAttribute("id", "imgS");
-  imgS.setAttribute("class", "imagen");
-  imgA.setAttribute("src", anterior);
-  imgA.setAttribute("id", "imgA");
-  imgA.setAttribute("class", "imagen");
-  //  document.getElementById('activoS').appendChild(imgS);
-  console.log('hola')
-  console.log(img);
-
-
-  console.log(longitud)
-  if (count >= longitud) {
-    console.log('pppuuuuummmm')
-    count = 0;
-  }
-  document.getElementById('activo').appendChild(img);
-  document.getElementById('activoS').appendChild(imgS);
-  document.getElementById('activoA').appendChild(imgA);
-  count++;
-  //  }
-  console.log('oododododo')
-  // vista1 = [].concat.apply([], tipo);
-  // console.log(vista1)
-  //
-  //   const element = tipo[indice];
-  //   console.log(element)
-  // activar();
-  //  activarMiniLaterales()
-  // console.log('PUNTO DE CONTROL 1')
-  // total = vista.length;
-  // //----Leemos el array
-  // for (index = 0; index < total; index++) {
-  //   indice = vista[index];
-  // }
-  // if (indice != vista) {
-  //   //Reseteamos al llegar al ultimo dato del array
-  //   activo = vista;
-  //   index = total;
-  // }
-  // console.log('PUNTO DE CONTROL 2')
-  //Galeria.forEach(elemente => console.log(Galeria));
-  // for (let indice = 0; indice < render.length; indice++) {
-  //   const dato = render[indice];
-  //  console.log(dato);
-  //  renderizar(dato)
-  //   }
-}
-function sum() {
-  setTimeout(() => {
-
-    img.setAttribute("class", "imagen object  move-rigth");
-    imgS.setAttribute("class", "imagen object  move-rigth");
-    imgA.setAttribute("class", "imagen object  move-rigth")
-  }, 1);
-  setTimeout(function t() {
-    var eliminar = document.getElementById("activoA");
-    eliminar.removeChild(imgA);
-    imgA = img
-    var eliminar1 = document.getElementById("activo");
-    eliminar1.removeChild(img);
-    imgA.setAttribute("id", "imgA");
-    imgA.setAttribute("class", "imagen");
-    document.getElementById('activoA').appendChild(imgA);
-    img = imgS
-    var eliminar1 = document.getElementById("activoS");
-    eliminar1.removeChild(imgS);
-    img.setAttribute("id", "img");
-    img.setAttribute("class", "imagen");
-    document.getElementById('activo').appendChild(img);
-    count++;
-    longitud = Galeria[vista].length;
-    if (count >= longitud) {
-      console.log('pppuuuuummmm')
-      count = 0;
+    console.log('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')
+    if (typeof marcha !== 'undefined') {
+        clearInterval(marcha);
     }
-    var prox = Galeria[vista][count];
-    console.log(prox)
+    count = 0;
+    document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
+    switch (preVista) {
+        case 'Galeria':
+            //Enviamos un solo array
+            //creamos vista como variable global
+            vista = [].concat.apply([], preVista);
+            //count = 0;
+            seleccionar()
+                //   acaparados.forEach(elemente => renderizar(elemente));
+            break;
+        case 'Logos':
+        case 'Folletos':
+        case 'Posters':
+        case 'Postales':
+        case 'Pngs':
+        case 'Google':
+        case 'Mas':
+            // Opcion 2 creamos vista como variable global
+            vista = preVista;
+            //count = 0;
+            seleccionar();
+            break;
+        default:
+            // Opcion 2 creamos vista como variable global
+            vista = preVista;
+            //count = 0;
+            seleccionar();
+            break;
+    }
+    //Idexamos indice
+}
+
+function seleccionar() {
+    // console.log(img)
+    var longitud = Galeria[vista].length;
+    var render = Galeria[vista][count];
+    var siguiente = Galeria[vista][count + 1];
+    var anterior = Galeria[vista][longitud - 1];
+    img = document.createElement('img');
     imgS = document.createElement('img');
-    imgS.setAttribute("src", prox);
+    imgA = document.createElement('img');
+
+    imgS.setAttribute("src", siguiente);
     imgS.setAttribute("id", "imgS");
     imgS.setAttribute("class", "imagen");
-    document.getElementById('activoS').appendChild(imgS);
-  }, 500);
-}
-function res() {
-  setTimeout(() => {
-
-    img.setAttribute("class", "imagen object  move-left");
-    imgS.setAttribute("class", "imagen object  move-left");
-    imgA.setAttribute("class", "imagen object  move-left")
-  }, 1);
-  setTimeout(function t() {
-    var eliminar = document.getElementById("activoS");
-    eliminar.removeChild(imgS);
-    imgS = img
-    var eliminar1 = document.getElementById("activo");
-    eliminar1.removeChild(img);
-    imgS.setAttribute("id", "imgA");
-    imgS.setAttribute("class", "imagen");
-    document.getElementById('activoS').appendChild(imgS);
-    img = imgA
-    var eliminar1 = document.getElementById("activoA");
-    eliminar1.removeChild(imgA);
+    img.setAttribute("src", render);
     img.setAttribute("id", "img");
     img.setAttribute("class", "imagen");
-    document.getElementById('activo').appendChild(img);
-    count++;
-    longitud = Galeria[vista].length;
-    if (count >= longitud) {
-      console.log('pppuuuuummmm')
-      count = 0;
-    }
-    var prox = Galeria[vista][count];
-    console.log(prox)
-    imgA = document.createElement('img');
-    imgA.setAttribute("src", prox);
+    imgS.setAttribute("src", siguiente);
+    imgS.setAttribute("id", "imgS");
+    imgS.setAttribute("class", "imagen");
+    imgA.setAttribute("src", anterior);
     imgA.setAttribute("id", "imgA");
     imgA.setAttribute("class", "imagen");
+    //  document.getElementById('activoS').appendChild(imgS);
+    console.log('hola')
+    console.log(img);
+
+
+    console.log(longitud)
+    if (count >= longitud) {
+        console.log('pppuuuuummmm')
+        count = 0;
+    }
+    document.getElementById('activo').appendChild(img);
+    document.getElementById('activoS').appendChild(imgS);
     document.getElementById('activoA').appendChild(imgA);
-  }, 500);
+    count++;
+    //  }
+    console.log('oododododo')
+        // vista1 = [].concat.apply([], tipo);
+        // console.log(vista1)
+        //
+        //   const element = tipo[indice];
+        //   console.log(element)
+        // activar();
+        //  activarMiniLaterales()
+        // console.log('PUNTO DE CONTROL 1')
+        // total = vista.length;
+        // //----Leemos el array
+        // for (index = 0; index < total; index++) {
+        //   indice = vista[index];
+        // }
+        // if (indice != vista) {
+        //   //Reseteamos al llegar al ultimo dato del array
+        //   activo = vista;
+        //   index = total;
+        // }
+        // console.log('PUNTO DE CONTROL 2')
+        //Galeria.forEach(elemente => console.log(Galeria));
+        // for (let indice = 0; indice < render.length; indice++) {
+        //   const dato = render[indice];
+        //  console.log(dato);
+        //  renderizar(dato)
+        //   }
+}
+
+function sum() {
+    setTimeout(() => {
+
+        img.setAttribute("class", "imagen object  move-rigth");
+        imgS.setAttribute("class", "imagen object  move-rigth");
+        imgA.setAttribute("class", "imagen object  move-rigth")
+    }, 1);
+    setTimeout(function t() {
+        var eliminar = document.getElementById("activoA");
+        eliminar.removeChild(imgA);
+        imgA = img
+        var eliminar1 = document.getElementById("activo");
+        eliminar1.removeChild(img);
+        imgA.setAttribute("id", "imgA");
+        imgA.setAttribute("class", "imagen");
+        document.getElementById('activoA').appendChild(imgA);
+        img = imgS
+        var eliminar1 = document.getElementById("activoS");
+        eliminar1.removeChild(imgS);
+        img.setAttribute("id", "img");
+        img.setAttribute("class", "imagen");
+        document.getElementById('activo').appendChild(img);
+        count++;
+        longitud = Galeria[vista].length;
+        if (count >= longitud) {
+            console.log('pppuuuuummmm')
+            count = 0;
+        }
+        var prox = Galeria[vista][count];
+        console.log(prox)
+        imgS = document.createElement('img');
+        imgS.setAttribute("src", prox);
+        imgS.setAttribute("id", "imgS");
+        imgS.setAttribute("class", "imagen");
+        document.getElementById('activoS').appendChild(imgS);
+    }, 500);
+}
+
+function res() {
+    setTimeout(() => {
+
+        img.setAttribute("class", "imagen object  move-left");
+        imgS.setAttribute("class", "imagen object  move-left");
+        imgA.setAttribute("class", "imagen object  move-left")
+    }, 1);
+    setTimeout(function t() {
+        var eliminar = document.getElementById("activoS");
+        eliminar.removeChild(imgS);
+        imgS = img
+        var eliminar1 = document.getElementById("activo");
+        eliminar1.removeChild(img);
+        imgS.setAttribute("id", "imgA");
+        imgS.setAttribute("class", "imagen");
+        document.getElementById('activoS').appendChild(imgS);
+        img = imgA
+        var eliminar1 = document.getElementById("activoA");
+        eliminar1.removeChild(imgA);
+        img.setAttribute("id", "img");
+        img.setAttribute("class", "imagen");
+        document.getElementById('activo').appendChild(img);
+        count++;
+        longitud = Galeria[vista].length;
+        if (count >= longitud) {
+            console.log('pppuuuuummmm')
+            count = 0;
+        }
+        var prox = Galeria[vista][count];
+        console.log(prox)
+        imgA = document.createElement('img');
+        imgA.setAttribute("src", prox);
+        imgA.setAttribute("id", "imgA");
+        imgA.setAttribute("class", "imagen");
+        document.getElementById('activoA').appendChild(imgA);
+    }, 500);
 }
 
 
@@ -255,64 +262,64 @@ function res() {
 
 function intervalo(h) {
 
-  if (typeof marcha !== "undefined") {
-    clearInterval(marcha);
-  }
-
-  setTimeout(() => {
-    console.log('alerta')
-    // window.alert("Tiempo de visualizacion excedido, Si quieres continuar viendo imagenes pulsa Aceptar.");
-
-    // window.alert("Excedido el tiempo de visualizacion, se paró la secuencia de imagenes.<br>Para continuar pulse: <img id="multimediaImagen" class="multimediaImagen" value="soundOff" src="../../assets/images/buttons/multimedia/soundOff.png">");
-    //   clearInterval(marcha);
-  }, 120000);
-
-  marcha = setInterval(() => {
-
-    // console.log(target.value)
-    console.log(h)
-
-    switch (h) {
-      case 'play+':
-        sum();
-        break;
-      case 'play-':
-        res();
-        break;
-
-      default:
-        break;
+    if (typeof marcha !== "undefined") {
+        clearInterval(marcha);
     }
-    // if (direccion==='next') {
-    //   sum();
-    // } else if (direccion==='previous') {
-    //   res(); 
-    // }
 
-    // sum();
+    setTimeout(() => {
+        console.log('alerta')
+            // window.alert("Tiempo de visualizacion excedido, Si quieres continuar viendo imagenes pulsa Aceptar.");
 
-  }, timer);
+        // window.alert("Excedido el tiempo de visualizacion, se paró la secuencia de imagenes.<br>Para continuar pulse: <img id="multimediaImagen" class="multimediaImagen" value="soundOff" src="../../assets/images/buttons/multimedia/soundOff.png">");
+        //   clearInterval(marcha);
+    }, 120000);
+
+    marcha = setInterval(() => {
+
+        // console.log(target.value)
+        console.log(h)
+
+        switch (h) {
+            case 'play+':
+                sum();
+                break;
+            case 'play-':
+                res();
+                break;
+
+            default:
+                break;
+        }
+        // if (direccion==='next') {
+        //   sum();
+        // } else if (direccion==='previous') {
+        //   res(); 
+        // }
+
+        // sum();
+
+    }, timer);
 }
 
 function pause() {
-  console.log('pause')
-  clearInterval(marcha);
+    console.log('pause')
+    clearInterval(marcha);
 }
 
 function stop() {
-  clearInterval(marcha)
-  var eliminar1 = document.getElementById("activo");
-  eliminar1.removeChild(img);
+    clearInterval(marcha)
+    var eliminar1 = document.getElementById("activo");
+    eliminar1.removeChild(img);
 
-  var eliminar2 = document.getElementById("activoA");
-  eliminar2.removeChild(imgA);
+    var eliminar2 = document.getElementById("activoA");
+    eliminar2.removeChild(imgA);
 
-  var eliminar3 = document.getElementById("activoS");
-  eliminar3.removeChild(imgS);
+    var eliminar3 = document.getElementById("activoS");
+    eliminar3.removeChild(imgS);
 
-  count = 0;
-  console.log('pause')
-  seleccionar();
+    count = 0;
+    console.log('pause')
+    seleccionar();
 }
 
 

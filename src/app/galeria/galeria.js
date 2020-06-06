@@ -1,12 +1,12 @@
 class miGaleria extends HTMLElement {
-  constructor() {
-    //  puedes poner argumentos
-    super();
-    myFunction();
-  }
-  connectedCallback() {
-    this.innerHTML =
-      `
+    constructor() {
+        //  puedes poner argumentos
+        super();
+        myFunction();
+    }
+    connectedCallback() {
+        this.innerHTML =
+            `
 <mi-botonera></mi-botonera>
 <section id="galeria" class="galeria" >
 
@@ -15,21 +15,23 @@ class miGaleria extends HTMLElement {
   <mi-imagenes></mi-imagenes> 
 </section>
      `;
-cargaTodo();
+        cargaTodo();
 
-   //cambiar('todos') //quitar al acabar
 
-    // const logosy = document.querySelector('#bLogos');
-    // logosy.addEventListener('mousemove', function() {
-  
-    //   
-    // });
-  
-  }
+        //cambiar('todos') //quitar al acabar
+
+        // const logosy = document.querySelector('#bLogos');
+        // logosy.addEventListener('mousemove', function() {
+
+        //   
+        // });
+
+    }
 }
 customElements.define('mi-galeria', miGaleria);
+
 function myFunction() {
- 
+
 }
 
 
