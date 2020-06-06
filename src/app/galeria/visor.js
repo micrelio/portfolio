@@ -91,18 +91,18 @@ function cargar(preVista) {
             seleccionar()
                 //   acaparados.forEach(elemente => renderizar(elemente));
             break;
-        case 'Logos':
-        case 'Folletos':
-        case 'Posters':
-        case 'Postales':
-        case 'Pngs':
-        case 'Google':
-        case 'Mas':
-            // Opcion 2 creamos vista como variable global
-            vista = preVista;
-            //count = 0;
-            seleccionar();
-            break;
+            // case 'Logos':
+            // case 'Folletos':
+            // case 'Posters':
+            // case 'Postales':
+            // case 'Pngs':
+            // case 'Google':
+            // case 'Mas':
+            //     // Opcion 2 creamos vista como variable global
+            //     vista = preVista;
+            //     //count = 0;
+            //     seleccionar();
+            //     break;
         default:
             // Opcion 2 creamos vista como variable global
             vista = preVista;

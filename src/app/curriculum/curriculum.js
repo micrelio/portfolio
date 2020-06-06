@@ -1,10 +1,10 @@
 class miCurriculum extends HTMLElement {
-  constructor() {
-    super();
-  }
-  connectedCallback() {
-    this.innerHTML =
-      `
+    constructor() {
+        super();
+    }
+    connectedCallback() {
+        this.innerHTML =
+            `
 
 
 
@@ -119,114 +119,127 @@ class miCurriculum extends HTMLElement {
       </div>
   
   <section class="datos">
-      <div class="experiencia">
-          <div class="logotipo">
-              <img id="" class="corporativo" src="../../assets/images/logoEmpresa/yoigo.jpg">
-          </div>
-          <div class="descripcion">
-              <p>2018</p>
-              <p>Yoigo: Teleoperador como atención al cliente.</p>
-          </div>
-      </div>
+    <div class="experiencia">
+        <div class="logotipo">
+          <img id="" class="corporativo" src="../../assets/images/logoEmpresa/yoigo.jpg">
+        </div>
+        <div class="descripcion">
+            <p>2020</p>
+            <p>HostingMicro.com: Creación de servidor para WordPress en VPS, adquisición de licencia DIVI comienzo de creación y alquiler de hosting de forma privada. .</p>
+        </div>
+    </div>
+    <div class="experiencia">
+        <div class="logotipo">
+            <img id="" class="corporativo" src="../../assets/images/logoEmpresa/yoigo.jpg">
+        </div>
+        <div class="descripcion">
+            <p>2019</p>
+            <p>IGRE: Trabajo como community manager, creación de cartelería, publicidad, creación de eventos, estudio y desarrollo de propuestas para campaña medio ambiente y energías renovables 2019.</p>
+            <p>Candidatura propuesta como eurodiputado.</p>
+        </div>
+    </div>
+    <div class="experiencia">
+        <div class="logotipo">
+            <img id="" class="corporativo" src="../../assets/images/logoEmpresa/yoigo.jpg">
+        </div>
+        <div class="descripcion">
+            <p>2018</p>
+            <p>Yoigo: Teleoperador como atención al cliente.</p>
+        </div>
+    </div>
   
-      <div class="experiencia">
-          <div class="logotipo">
-              <img id="" class="corporativo" src="../../assets/images/logoEmpresa/quafis.jpg">
-          </div>
-          <div class="descripcion">
-              <p>2018</p>
-              <p>Quafis: Practicas grado superior ASIR, tareas como maquetación con WordPress DIVI, servicio técnico,
-                  montaje y puesta a punto de PC, servicio técnico online con TeamViewer.
-              </p>
-          </div>
-      </div>
+    <div class="experiencia">
+        <div class="logotipo">
+            <img id="" class="corporativo" src="../../assets/images/logoEmpresa/quafis.jpg">
+        </div>
+        <div class="descripcion">
+            <p>2018</p>
+            <p>Quafis: Practicas grado superior ASIR, tareas como maquetación con WordPress DIVI, servicio técnico,
+                montaje y puesta a punto de PC, servicio técnico online con TeamViewer.
+            </p>
+        </div>
+    </div>
   
-      <div class="experiencia">
-          <div class="logotipo">
-          <a href="https://www.alimarket.es/alimentacion/empresa/209431"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/frusa.jpg"></a>
-          </div>
-          <div class="descripcion">
-              <p>2016</p>
-              <p>Frusa Coca Cola: Técnico de sistemas industriales.</p>
-          </div>
-      </div>
+    <div class="experiencia">
+        <div class="logotipo">
+            <a href="https://www.alimarket.es/alimentacion/empresa/209431"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/frusa.jpg"></a>
+        </div>
+        <div class="descripcion">
+            <p>2016</p>
+            <p>Frusa Coca Cola: Técnico de sistemas industriales.</p>
+        </div>
+    </div>
   
-      <div class="experiencia">
-          <div class="logotipo">
-          <a href="https://www.trolli.es/"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/trolli.jpg"></a>
-          </div>
-          <div class="descripcion">
-              <p>2015</p>
-              <p>Trolli: Técnico de sistemas industriales, responsable de turno.
-                  
-              </p>
-          </div>
-      </div>
+    <div class="experiencia">
+        <div class="logotipo">
+            <a href="https://www.trolli.es/"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/trolli.jpg"></a>
+        </div>
+        <div class="descripcion">
+            <p>2015</p>
+            <p>Trolli: Técnico de sistemas industriales, responsable de turno.</p>
+        </div>
+    </div>
   
-      <div class="experiencia">
-          <div class="logotipo">
-          <a href="https://power-electronics.com/es/"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/power.jpg"></a>
-          </div>
-          <div class="descripcion">
-              <p>2013</p>
-              <p>Tour Electric & Power Electronics: Revisión y mejoras en plantas fotovoltaicas, trabajos en inversores y centros de
-                  transformación en Inglaterra.
-              </p>
-          </div>
-      </div>
+    <div class="experiencia">
+        <div class="logotipo">
+            <a href="https://power-electronics.com/es/"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/power.jpg"></a>
+        </div>
+        <div class="descripcion">
+            <p>2013</p>
+            <p>Tour Electric & Power Electronics: Revisión y mejoras en plantas fotovoltaicas, trabajos en inversores y centros de transformación en Inglaterra.</p>
+        </div>
+    </div>
   
-      <div class="experiencia">
-          <div class="logotipo">
-          <a href="https://www.cerealtosirofoods.com/es/"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/grupoSiro.jpg"></a>
-          </div>
-          <div class="descripcion">
-              <p>2013</p>
-              <p>Grupo Siro: Técnico de sistemas industriales.</p>
-          </div>
-      </div>
+    <div class="experiencia">
+        <div class="logotipo">
+            <a href="https://www.cerealtosirofoods.com/es/"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/grupoSiro.jpg"></a>
+        </div>
+        <div class="descripcion">
+            <p>2013</p>
+            <p>Grupo Siro: Técnico de sistemas industriales.</p>
+        </div>
+    </div>
   
-      <div class="experiencia">
-          <div class="logotipo">
-              <img id="" class="corporativo" src="../../assets/images/logoEmpresa/dafsa.jpg">
-          </div>
-          <div class="descripcion">
-              <p>2009</p>
-              <p>Dafsa: Técnico de sistemas industriales, responsable de turno.
-                  www.dafsa.es
-              </p>
-          </div>
-      </div>
+    <div class="experiencia">
+        <div class="logotipo">
+            <img id="" class="corporativo" src="../../assets/images/logoEmpresa/dafsa.jpg">
+        </div>
+        <div class="descripcion">
+            <p>2009</p>
+            <p>Dafsa: Técnico de sistemas industriales, responsable de turno. www.dafsa.es</p>
+        </div>
+    </div>
   
-      <div class="experiencia">
-          <div class="logotipo">
-          <a href="http://www.diselcom.com/"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/diselcom.jpg"></a>
-          </div>
-          <div class="descripcion">
-              <p>2008</p>
-              <p>Diselcom: Montaje de cuadros electrónicos en época de estudios.</p>
-          </div>
-      </div>
+    <div class="experiencia">
+        <div class="logotipo">
+            <a href="http://www.diselcom.com/"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/diselcom.jpg"></a>
+        </div>
+        <div class="descripcion">
+            <p>2008</p>
+            <p>Diselcom: Montaje de cuadros electrónicos en época de estudios.</p>
+        </div>
+    </div>
   
   
-      <div class="experiencia">
-          <div class="logotipo">
-              <img id="" class="corporativo" src="../../assets/images/logoEmpresa/martinezLoriente.jpg">
-          </div>
-          <div class="descripcion">
-              <p>2005</p>
-              <p>Martínez Loriente: Ayudante técnico de sistemas.
-          </div>
-      </div>
+    <div class="experiencia">
+        <div class="logotipo">
+            <img id="" class="corporativo" src="../../assets/images/logoEmpresa/martinezLoriente.jpg">
+        </div>
+        <div class="descripcion">
+            <p>2005</p>
+            <p>Martínez Loriente: Ayudante técnico de sistemas.
+        </div>
+    </div>
   
-      <div class="experiencia">
-          <div class="logotipo">
-          <a href=" https://www.coversa.com/"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/cover.jpg"></a>
-          </div>
-          <div class="descripcion">
-              <p>2002</p>
-              <p>Cover: Mantenimiento en centros de transformación y subestaciones industriales de alta y media tensión.</p>
-          </div>
-      </div>
+    <div class="experiencia">
+        <div class="logotipo">
+            <a href=" https://www.coversa.com/"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/cover.jpg"></a>
+        </div>
+        <div class="descripcion">
+            <p>2002</p>
+            <p>Cover: Mantenimiento en centros de transformación y subestaciones industriales de alta y media tensión.</p>
+         </div>
+    </div>
   
   </section>
  
@@ -248,6 +261,6 @@ class miCurriculum extends HTMLElement {
 <button onclick="window.print()">Print this page</button>
 
                 `;
-  }
+    }
 }
 customElements.define('mi-curriculum', miCurriculum);
