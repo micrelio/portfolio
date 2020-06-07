@@ -8,7 +8,7 @@ class miBotonera extends HTMLElement {
             this.innerHTML =
                 `
               <section id="botonesGaleria" class="botonesGaleria" >
-              <button class="boton" value="Galeria">Galeria</button>
+              <button class="boton" value="Galeria"  >Galeria</button>
                </section>
               
                   `;
@@ -97,10 +97,5 @@ function cargaBoton() {
 //console.log(tipo)
 //console.log(dato)
 function cambio() {
-    //console.log(seleccion)
-    //  document.getElementById(seleccion).addEventListener('click',function() {
-    //         document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
-    //         console.log('tipo')
-    //        cambiar(e);
-    //         });
+
 };
