@@ -99,7 +99,7 @@ function cargaTodo() {
             var img = document.createElement('img');
             var path = dato[index2];
             img.addEventListener("click", function() {
-                cargar(tipo);
+                cargar2(tipo, index2);
             });
             img.setAttribute("src", path);
             img.setAttribute("height", "70rem");
@@ -107,14 +107,6 @@ function cargaTodo() {
             img.setAttribute("id", tipo);
 
             document.getElementById(tipo).appendChild(img);
-
         }
-
-
-
     }
-
-
-
-
 }

@@ -113,6 +113,83 @@ function cargar(preVista) {
     //Idexamos indice
 }
 
+
+function cargar2(preVista, imagen) {
+    document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
+    switch (preVista) {
+        case 'Galeria':
+            //Enviamos un solo array
+            //creamos vista como variable global
+            vista = [].concat.apply([], preVista);
+            //count = 0;
+            seleccionar()
+                //   acaparados.forEach(elemente => renderizar(elemente));
+            break;
+            // case 'Logos':
+            // case 'Folletos':
+            // case 'Posters':
+            // case 'Postales':
+            // case 'Pngs':
+            // case 'Google':
+            // case 'Mas':
+            //     // Opcion 2 creamos vista como variable global
+            //     vista = preVista;
+            //     //count = 0;
+            //     seleccionar();
+            //     break;
+        default:
+            // Opcion 2 creamos vista como variable global
+            vista = preVista;
+            //count = 0;
+            //seleccionar();
+            break;
+    }
+    count = imagen;
+
+    var longitud = Galeria[vista].length;
+    var render = Galeria[vista][count];
+    var siguiente = Galeria[vista][count + 1];
+    var anterior = Galeria[vista][longitud - 1];
+    console.log(longitud)
+    console.log(render)
+    console.log(siguiente)
+    console.log(anterior)
+    img = document.createElement('img');
+    imgS = document.createElement('img');
+    imgA = document.createElement('img');
+
+    imgS.setAttribute("src", siguiente);
+    imgS.setAttribute("id", "imgS");
+    imgS.setAttribute("class", "imagen");
+    img.setAttribute("src", render);
+    img.setAttribute("id", "img");
+    img.setAttribute("class", "imagen");
+    imgS.setAttribute("src", siguiente);
+    imgS.setAttribute("id", "imgS");
+    imgS.setAttribute("class", "imagen");
+    imgA.setAttribute("src", anterior);
+    imgA.setAttribute("id", "imgA");
+    imgA.setAttribute("class", "imagen");
+    //  document.getElementById('activoS').appendChild(imgS);
+    console.log('hola')
+    console.log(img);
+
+
+    console.log(longitud)
+    if (count >= longitud) {
+        console.log('pppuuuuummmm')
+        count = 0;
+    }
+    document.getElementById('activo').appendChild(img);
+    document.getElementById('activoS').appendChild(imgS);
+    document.getElementById('activoA').appendChild(imgA);
+    count++;
+}
+
+
+
+
+
 function seleccionar() {
     // console.log(img)
     var longitud = Galeria[vista].length;
