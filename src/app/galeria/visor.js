@@ -76,7 +76,6 @@ customElements.define('mi-visor', miVisor);
 
 //---COMIENZO----------------------------
 function cargar(preVista) {
-    console.log('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')
     if (typeof marcha !== 'undefined') {
         clearInterval(marcha);
     }
@@ -86,7 +85,7 @@ function cargar(preVista) {
         case 'Galeria':
             //Enviamos un solo array
             //creamos vista como variable global
-            vista = [].concat.apply([], preVista);
+            //  vista = [].concat.apply([], preVista);
             //count = 0;
             seleccionar()
                 //   acaparados.forEach(elemente => renderizar(elemente));
@@ -114,38 +113,11 @@ function cargar(preVista) {
 }
 
 
-function cargar2(preVista, imagen) {
+function cargar2(vista, imagen) {
     document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
-    switch (preVista) {
-        case 'Galeria':
-            //Enviamos un solo array
-            //creamos vista como variable global
-            vista = [].concat.apply([], preVista);
-            //count = 0;
-            seleccionar()
-                //   acaparados.forEach(elemente => renderizar(elemente));
-            break;
-            // case 'Logos':
-            // case 'Folletos':
-            // case 'Posters':
-            // case 'Postales':
-            // case 'Pngs':
-            // case 'Google':
-            // case 'Mas':
-            //     // Opcion 2 creamos vista como variable global
-            //     vista = preVista;
-            //     //count = 0;
-            //     seleccionar();
-            //     break;
-        default:
-            // Opcion 2 creamos vista como variable global
-            vista = preVista;
-            //count = 0;
-            //seleccionar();
-            break;
-    }
-    count = imagen;
 
+    count = imagen;
+    console.log(count)
     var longitud = Galeria[vista].length;
     var render = Galeria[vista][count];
     var siguiente = Galeria[vista][count + 1];

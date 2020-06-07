@@ -16,7 +16,7 @@ class miGaleria extends HTMLElement {
 </section>
      `;
         cargaTodo();
-
+        todasImagenes();
 
         //cambiar('todos') //quitar al acabar
 
@@ -33,9 +33,6 @@ customElements.define('mi-galeria', miGaleria);
 function myFunction() {
 
 }
-
-
-
 
 
 

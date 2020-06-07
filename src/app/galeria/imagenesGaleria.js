@@ -15,8 +15,6 @@ class miImagenes extends HTMLElement {
   </section>
   `;
 
-
-
         // var elementos = document.querySelector('#repertorio');
         // elementos.addEventListener('click', function(e) {
 
@@ -76,22 +74,22 @@ function cargaTodo() {
         const dato = Galeria[tipo];
         var div = document.createElement('div');
         var hr = document.createElement('hr');
-        var h = document.createElement('button');
-        h.addEventListener("click", function() {
+        var titulo = document.createElement('button');
+        titulo.addEventListener("click", function() {
             cargar(tipo);
         });
         //---CREAMOS UN TEXTO---
         var t = document.createTextNode(tipo);
-        h.setAttribute("class", "title");
-        h.setAttribute("id", "i");
-        h.setAttribute("value", tipo);
+        titulo.setAttribute("class", "title");
+        titulo.setAttribute("id", "i");
+        titulo.setAttribute("value", tipo);
         div.setAttribute("id", tipo);
 
         div.setAttribute("class", "fila");
         hr.setAttribute("class", "raya");
 
-        document.getElementById('repertorio').appendChild(h);
-        h.appendChild(t);
+        document.getElementById('repertorio').appendChild(titulo);
+        titulo.appendChild(t);
         document.getElementById('repertorio').appendChild(hr);
         document.getElementById("repertorio").appendChild(div);
         //---LEEMOS EL ARRAY DENTRO DE CADA CLAVE---
@@ -107,6 +105,58 @@ function cargaTodo() {
             img.setAttribute("id", tipo);
 
             document.getElementById(tipo).appendChild(img);
+        }
+    }
+}
+
+
+
+function todasImagenes() {
+    tipo = "Galeria";
+    console.log(tipo)
+    console.log(Object.values(Galeria));
+
+    var llaves = Object.keys(Galeria);
+    console.log(llaves);
+
+    var titulo = document.createElement('button');
+    titulo.addEventListener("click", function() { cargar(tipo); });
+    var t = document.createTextNode(tipo);
+    var hr = document.createElement('hr');
+    titulo.setAttribute("class", "title");
+    titulo.setAttribute("id", "i");
+    titulo.setAttribute("value", tipo);
+    hr.setAttribute("class", "raya");
+    document.getElementById('repertorio').appendChild(titulo);
+    titulo.appendChild(t);
+    document.getElementById('repertorio').appendChild(hr);
+
+
+    for (let index = 0; index < llaves.length; index++) {
+        const todas = llaves[index];
+        const dato = Galeria[todas];
+        var div = document.createElement('div');
+
+        div.setAttribute("id", tipo);
+
+        div.setAttribute("class", "fila");
+
+        document.getElementById("repertorio").appendChild(div);
+        //---LEEMOS EL ARRAY DENTRO DE CADA CLAVE---
+        for (let index2 = 0; index2 < dato.length; index2++) {
+            var img = document.createElement('img');
+            var path = dato[index2];
+            img.addEventListener("click", function() {
+                cargar(tipo);
+            });
+            img.setAttribute("src", path);
+            img.setAttribute("height", "70rem");
+            img.setAttribute("class", "imagenPresentacion");
+            img.setAttribute("id", tipo);
+            console.log(path);
+
+            document.getElementById(tipo).appendChild(img);
+
         }
     }
 }
