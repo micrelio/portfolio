@@ -85,7 +85,7 @@ function cargar(preVista) {
         case 'Galeria':
             //Enviamos un solo array
             //creamos vista como variable global
-            //  vista = [].concat.apply([], preVista);
+            vista = preVista;
             //count = 0;
             seleccionar()
                 //   acaparados.forEach(elemente => renderizar(elemente));
@@ -115,13 +115,13 @@ function cargar(preVista) {
 
 function cargar2(vista, imagen) {
     document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
-
+    console.log(vista.length)
     count = imagen;
     console.log(count)
-    var longitud = Galeria[vista].length;
-    var render = Galeria[vista][count];
-    var siguiente = Galeria[vista][count + 1];
-    var anterior = Galeria[vista][longitud - 1];
+    var longitud = vista.length;
+    var render = vista[count];
+    var siguiente = vista[count + 1];
+    var anterior = vista[longitud - 1];
     console.log(longitud)
     console.log(render)
     console.log(siguiente)
