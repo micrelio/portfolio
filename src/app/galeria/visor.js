@@ -80,13 +80,18 @@ function cargar(preVista) {
         clearInterval(marcha);
     }
     count = 0;
+    console.log(preVista)
+
     document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
     switch (preVista) {
         case 'Galeria':
             //Enviamos un solo array
             //creamos vista como variable global
+
             vista = preVista;
-            //count = 0;
+            // vista = [].concat.apply([], tipo);
+            console.log(total[1])
+                //count = 0;
             seleccionar()
                 //   acaparados.forEach(elemente => renderizar(elemente));
             break;
@@ -105,19 +110,13 @@ function cargar(preVista) {
         default:
             // Opcion 2 creamos vista como variable global
             vista = preVista;
-            //count = 0;
+            console.log(vista.length)
+                //count = 0;
             seleccionar();
             break;
     }
     //Idexamos indice
 }
-
-
-
-
-
-
-
 
 function cargar2(vista, imagen) {
     document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
@@ -164,13 +163,6 @@ function cargar2(vista, imagen) {
     count++;
 }
 
-
-
-
-
-
-
-
 function cargar3(vista, imagen) {
     document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
     console.log(vista.length)
@@ -216,21 +208,6 @@ function cargar3(vista, imagen) {
     count++;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function seleccionar() {
     // console.log(img)
     var longitud = Galeria[vista].length;
@@ -254,13 +231,13 @@ function seleccionar() {
     imgA.setAttribute("id", "imgA");
     imgA.setAttribute("class", "imagen");
     //  document.getElementById('activoS').appendChild(imgS);
-    console.log('hola')
-    console.log(img);
+    // console.log('hola')
+    // console.log(img);
 
 
     console.log(longitud)
     if (count >= longitud) {
-        console.log('pppuuuuummmm')
+        // console.log('pppuuuuummmm')
         count = 0;
     }
     document.getElementById('activo').appendChild(img);
@@ -268,32 +245,32 @@ function seleccionar() {
     document.getElementById('activoA').appendChild(imgA);
     count++;
     //  }
-    console.log('oododododo')
-        // vista1 = [].concat.apply([], tipo);
-        // console.log(vista1)
-        //
-        //   const element = tipo[indice];
-        //   console.log(element)
-        // activar();
-        //  activarMiniLaterales()
-        // console.log('PUNTO DE CONTROL 1')
-        // total = vista.length;
-        // //----Leemos el array
-        // for (index = 0; index < total; index++) {
-        //   indice = vista[index];
-        // }
-        // if (indice != vista) {
-        //   //Reseteamos al llegar al ultimo dato del array
-        //   activo = vista;
-        //   index = total;
-        // }
-        // console.log('PUNTO DE CONTROL 2')
-        //Galeria.forEach(elemente => console.log(Galeria));
-        // for (let indice = 0; indice < render.length; indice++) {
-        //   const dato = render[indice];
-        //  console.log(dato);
-        //  renderizar(dato)
-        //   }
+    // console.log('oododododo')
+    // vista1 = [].concat.apply([], tipo);
+    // console.log(vista1)
+    //
+    //   const element = tipo[indice];
+    //   console.log(element)
+    // activar();
+    //  activarMiniLaterales()
+    // console.log('PUNTO DE CONTROL 1')
+    // total = vista.length;
+    // //----Leemos el array
+    // for (index = 0; index < total; index++) {
+    //   indice = vista[index];
+    // }
+    // if (indice != vista) {
+    //   //Reseteamos al llegar al ultimo dato del array
+    //   activo = vista;
+    //   index = total;
+    // }
+    // console.log('PUNTO DE CONTROL 2')
+    //Galeria.forEach(elemente => console.log(Galeria));
+    // for (let indice = 0; indice < render.length; indice++) {
+    //   const dato = render[indice];
+    //  console.log(dato);
+    //  renderizar(dato)
+    //   }
 }
 
 function sum() {
@@ -321,11 +298,11 @@ function sum() {
         count++;
         longitud = Galeria[vista].length;
         if (count >= longitud) {
-            console.log('pppuuuuummmm')
+            // console.log('pppuuuuummmm')
             count = 0;
         }
         var prox = Galeria[vista][count];
-        console.log(prox)
+        // console.log(prox)
         imgS = document.createElement('img');
         imgS.setAttribute("src", prox);
         imgS.setAttribute("id", "imgS");
@@ -359,11 +336,11 @@ function res() {
         count++;
         longitud = Galeria[vista].length;
         if (count >= longitud) {
-            console.log('pppuuuuummmm')
+            // console.log('pppuuuuummmm')
             count = 0;
         }
         var prox = Galeria[vista][count];
-        console.log(prox)
+        // console.log(prox)
         imgA = document.createElement('img');
         imgA.setAttribute("src", prox);
         imgA.setAttribute("id", "imgA");
@@ -395,7 +372,7 @@ function intervalo(h) {
     marcha = setInterval(() => {
 
         // console.log(target.value)
-        console.log(h)
+        // console.log(h)
 
         switch (h) {
             case 'play+':
@@ -420,7 +397,7 @@ function intervalo(h) {
 }
 
 function pause() {
-    console.log('pause')
+    // console.log('pause')
     clearInterval(marcha);
 }
 
@@ -436,7 +413,7 @@ function stop() {
     eliminar3.removeChild(imgS);
 
     count = 0;
-    console.log('pause')
+    // console.log('pause')
     seleccionar();
 }
 
