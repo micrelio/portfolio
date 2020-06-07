@@ -122,7 +122,7 @@ function todasImagenes() {
     console.log(llaves);
 
     var titulo = document.createElement('button');
-    titulo.addEventListener("click", function() { cargar2(tipo, 0); });
+    titulo.addEventListener("click", function() { cargar3(total, 0); });
     var t = document.createTextNode(tipo);
     var hr = document.createElement('hr');
     titulo.setAttribute("class", "title");
