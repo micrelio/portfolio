@@ -44,11 +44,6 @@ class miImagenes extends HTMLElement {
 customElements.define('mi-imagenes', miImagenes);
 
 function cargaTodo() {
-
-
-
-
-
     // //---Numero de valores que contiene cada objeto
     // console.log(Object.values(imagenes));
     // //---Claves del objeto
@@ -82,7 +77,9 @@ function cargaTodo() {
         var div = document.createElement('div');
         var hr = document.createElement('hr');
         var titulo = document.createElement('button');
-        titulo.addEventListener("click", function() { cargar(tipo); });
+        titulo.addEventListener("click", function() {
+            cargar(tipo);
+        });
         //---CREAMOS UN TEXTO---
         var t = document.createTextNode(tipo);
         titulo.setAttribute("class", "title");
@@ -99,15 +96,6 @@ function cargaTodo() {
         document.getElementById("repertorio").appendChild(div);
         //---LEEMOS EL ARRAY DENTRO DE CADA CLAVE---
         for (let index2 = 0; index2 < dato.length; index2++) {
-
-
-
-
-
-
-
-
-
             var img = document.createElement('img');
             var path = dato[index2];
             img.addEventListener("click", function() {
@@ -153,7 +141,7 @@ function cargaTodo() {
         var imgT = document.createElement('img');
         var path = todas[index3];
         imgT.addEventListener("click", function() {
-            cargar2(tipo, index3);
+            cargar3(todas, index3);
         });
         imgT.setAttribute("src", path);
         imgT.setAttribute("height", "70rem");
@@ -164,6 +152,7 @@ function cargaTodo() {
         document.getElementById(tipo).appendChild(imgT);
 
         //      console.log(todas)
+
 
 
 
