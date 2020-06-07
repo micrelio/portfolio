@@ -92,7 +92,7 @@ function cargar(preVista) {
             // vista = [].concat.apply([], tipo);
             console.log(vista)
                 //count = 0;
-            seleccionarT()
+            seleccionar()
                 //   acaparados.forEach(elemente => renderizar(elemente));
             break;
             // case 'Logos':
@@ -109,7 +109,7 @@ function cargar(preVista) {
             //     break;
         default:
             // Opcion 2 creamos vista como variable global
-            vista = preVista;
+            vista = Galeria[preVista];
             console.log(vista)
                 //count = 0;
             seleccionar();
@@ -210,10 +210,10 @@ function cargar3(vista, imagen) {
 
 function seleccionar() {
     // console.log(img)
-    var longitud = Galeria[vista].length;
-    var render = Galeria[vista][count];
-    var siguiente = Galeria[vista][count + 1];
-    var anterior = Galeria[vista][longitud - 1];
+    var longitud = vista.length;
+    var render = vista[count];
+    var siguiente = vista[count + 1];
+    var anterior = vista[longitud - 1];
     img = document.createElement('img');
     imgS = document.createElement('img');
     imgA = document.createElement('img');
@@ -371,12 +371,12 @@ function sum() {
         img.setAttribute("class", "imagen");
         document.getElementById('activo').appendChild(img);
         count++;
-        longitud = Galeria[vista].length;
+        longitud = vista.length;
         if (count >= longitud) {
             // console.log('pppuuuuummmm')
             count = 0;
         }
-        var prox = Galeria[vista][count];
+        var prox = vista[count];
         // console.log(prox)
         imgS = document.createElement('img');
         imgS.setAttribute("src", prox);
@@ -409,12 +409,12 @@ function res() {
         img.setAttribute("class", "imagen");
         document.getElementById('activo').appendChild(img);
         count++;
-        longitud = Galeria[vista].length;
+        longitud = vista.length;
         if (count >= longitud) {
             // console.log('pppuuuuummmm')
             count = 0;
         }
-        var prox = Galeria[vista][count];
+        var prox = vista[count];
         // console.log(prox)
         imgA = document.createElement('img');
         imgA.setAttribute("src", prox);
