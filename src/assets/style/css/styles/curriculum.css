@@ -13,6 +13,10 @@ h1 {
   color: #00C6EE;
 }
 
+p {
+  font-size: 1.5rem;
+}
+
 .datosPersonales {
   color: white;
   padding: 3rem;
@@ -44,6 +48,8 @@ h1 {
   align-items: center;
   justify-content: start;
   border: 0.1rem solid #00C6EE;
+  height: 7vh;
+  min-width: 7vh;
   border-radius: 1rem;
   margin: 0.3rem;
   width: 95vw;
@@ -51,9 +57,10 @@ h1 {
 }
 .datos .experiencia .logotipo {
   overflow: hidden;
-  height: 6vw;
+  height: 7vh;
 }
 .datos .experiencia .logotipo img {
+  height: 100%;
   background-color: #00C6EE;
   border-radius: 1rem;
 }
@@ -64,6 +71,11 @@ h1 {
 }
 .datos .experiencia .descripcion {
   padding: 1rem;
+  width: 100%;
+}
+.datos .experiencia .titulo img {
+  height: 5vh;
+  width: 5vh;
 }
 
 /*# sourceMappingURL=curriculum.css.map */

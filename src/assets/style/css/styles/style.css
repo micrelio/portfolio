@@ -3,6 +3,7 @@
   width: 100%;
   position: relative;
   background-color: pink;
+  border-bottom: 0.05rem solid #00C6EE;
 }
 .head img {
   width: 100%;

@@ -1,116 +1,127 @@
 @import "../mixins/mixins.scss";
 @import "../variables/variables.scss";
-
 .head {
     // @include head;
 }
-section{
-    background: {
 
-color:black;
-       // color: #272727;
-    };
+section {
+    background: {
+        color: black;
+        // color: #272727;
+    }
+    ;
 }
-.titulo{
+
+.titulo {
     display: flex;
     justify-content: center;
 }
-h1{
+
+h1 {
     margin-top: 5rem;
-    color:#00C6EE;
-}
-.datosPersonales {
-    color: white;
-         padding: 3rem;
-     width: 100%;
-     border: 0.1rem solid #00C6EE;
-     margin: 0.3rem;
-     width: 95vw;
-     border: {
-      radius:1rem
-  }
-  background: {
-      color: #272727;
-    //color:black;
-}
-h{
-    color:#00C6EE;
+    color: #00C6EE;
 }
 
-  //   border: 0.1rem solid black;
- }
-.datos{
+p {
+    font-size: 1.5rem;
+}
+
+.datosPersonales {
+    color: white;
+    padding: 3rem;
+    width: 100%;
+    border: 0.1rem solid #00C6EE;
+    margin: 0.3rem;
+    width: 95vw;
+    border: {
+        radius: 1rem
+    }
+    background: {
+        color: #272727;
+        //color:black;
+    }
+    h {
+        color: #00C6EE;
+    }
+    //   border: 0.1rem solid black;
+}
+
+.datos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     //border: 0.1rem solid black;
-    
-
-
-   // max-height: 9rem;
+    // max-height: 9rem;
     width: 100%;
-//padding: 3rem;
-.experiencia {
-    color:white;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: start;
-   border: 0.1rem solid #00C6EE;
-   border: {
-    radius:1rem
-}
-
-    // padding: 3rem;
-     margin: 0.3rem;
-     width: 95vw;
-     background: {
-          color: #272727;
-        //color:black;
-    };
-    //padding: 5%;
-    //height: 10vh;
-   
-
-    // overflow: hidden;
-    .logotipo {
+    //padding: 3rem;
+    .experiencia {
+        color: white;
         overflow: hidden;
-        height: 6vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: start;
+        border: 0.1rem solid #00C6EE;
+        height: 7vh;
+        min-width: 7vh;
+        border: {
+            radius: 1rem
+        }
+        // padding: 3rem;
+        margin: 0.3rem;
+        width: 95vw;
         background: {
-           // color: #00C6EE;
-        };
-        
-        img{
+            color: #272727;
+            //color:black;
+        }
+        ;
+        //padding: 5%;
+        //height: 10vh;
+        // overflow: hidden;
+        .logotipo {
+            overflow: hidden;
+            height: 7vh;
             background: {
-                color: #00C6EE;
-            };
-            border: {
-                radius:1rem
+                // color: #00C6EE;
+            }
+            ;
+            img {
+                height: 100%;
+                background: {
+                    color: #00C6EE;
+                }
+                ;
+                border: {
+                    radius: 1rem
+                }
+            }
+            // color: #00C6EE;
+            // width: 50%;
+            .corporativo {
+                height: 100%;
+                // height: 100%;
+                border-right: 0.1rem solid #00C6EE;
+                padding: 0.5rem;
             }
         }
-       // color: #00C6EE;
-        // width: 50%;
-        .corporativo {
-            height: 100%;
-
-           // height: 100%;
-            border-right: 0.1rem solid #00C6EE;
-            padding: 0.5rem;
-
+        .descripcion {
+            padding: 1rem;
+            width: 100%;
+            //text-overflow: ellipsis;
+            //  white-space: nowrap;
+            //overflow: hidden;
+            //   height: 10vw;
+            //   width: 50%;
+            //
         }
-
+        .titulo {
+            img {
+                height: 5vh;
+                width: 5vh;
+            }
+        }
     }
-
-    .descripcion {
-
-        padding: 1rem;
-        //   height: 10vw;
-     //   width: 50%;
-//
-    }
-}
 }
