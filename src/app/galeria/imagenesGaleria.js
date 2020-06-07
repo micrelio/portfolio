@@ -134,7 +134,9 @@ function cargaTodo() {
     tituloT.setAttribute("class", "title");
     tituloT.setAttribute("id", "i");
     tituloT.setAttribute("value", tipo);
-    tituloT.addEventListener("click", function() { cargar(tipo); });
+    tituloT.addEventListener("click", function() {
+        cargar(tipo);
+    });
     tituloT.appendChild(t);
     document.getElementById('repertorio').appendChild(tituloT);
     hrT.setAttribute("class", "raya");
@@ -161,7 +163,7 @@ function cargaTodo() {
         document.getElementById("repertorio").appendChild(divT);
         document.getElementById(tipo).appendChild(imgT);
 
-
+        //      console.log(todas)
 
 
 

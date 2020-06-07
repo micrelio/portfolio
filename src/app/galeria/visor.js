@@ -87,12 +87,12 @@ function cargar(preVista) {
         case 'Galeria':
             //Enviamos un solo array
             //creamos vista como variable global
-
-            vista = preVista;
+            // console.log(todas[1])
+            vista = todas;
             // vista = [].concat.apply([], tipo);
-            //  console.log(total[1])
-            //count = 0;
-            seleccionar()
+            console.log(vista)
+                //count = 0;
+            seleccionarT()
                 //   acaparados.forEach(elemente => renderizar(elemente));
             break;
             // case 'Logos':
@@ -110,7 +110,7 @@ function cargar(preVista) {
         default:
             // Opcion 2 creamos vista como variable global
             vista = preVista;
-            console.log(vista.length)
+            console.log(vista)
                 //count = 0;
             seleccionar();
             break;
@@ -272,6 +272,81 @@ function seleccionar() {
     //  renderizar(dato)
     //   }
 }
+
+
+function seleccionarT() {
+    // console.log(img)
+    var longitud = vista.length;
+    console.log(longitud)
+    var render = vista[count];
+    console.log(render)
+    var siguiente = vista[count + 1];
+    console.log(siguiente)
+    var anterior = vista[longitud - 1];
+    console.log(anterior)
+    img = document.createElement('img');
+    imgS = document.createElement('img');
+    imgA = document.createElement('img');
+
+    imgS.setAttribute("src", siguiente);
+    imgS.setAttribute("id", "imgS");
+    imgS.setAttribute("class", "imagen");
+    img.setAttribute("src", render);
+    img.setAttribute("id", "img");
+    img.setAttribute("class", "imagen");
+    imgS.setAttribute("src", siguiente);
+    imgS.setAttribute("id", "imgS");
+    imgS.setAttribute("class", "imagen");
+    imgA.setAttribute("src", anterior);
+    imgA.setAttribute("id", "imgA");
+    imgA.setAttribute("class", "imagen");
+    //  document.getElementById('activoS').appendChild(imgS);
+    // console.log('hola')
+    // console.log(img);
+
+
+    console.log(longitud)
+    if (count >= longitud) {
+        // console.log('pppuuuuummmm')
+        count = 0;
+    }
+    document.getElementById('activo').appendChild(img);
+    document.getElementById('activoS').appendChild(imgS);
+    document.getElementById('activoA').appendChild(imgA);
+    count++;
+    //  }
+    // console.log('oododododo')
+    // vista1 = [].concat.apply([], tipo);
+    // console.log(vista1)
+    //
+    //   const element = tipo[indice];
+    //   console.log(element)
+    // activar();
+    //  activarMiniLaterales()
+    // console.log('PUNTO DE CONTROL 1')
+    // total = vista.length;
+    // //----Leemos el array
+    // for (index = 0; index < total; index++) {
+    //   indice = vista[index];
+    // }
+    // if (indice != vista) {
+    //   //Reseteamos al llegar al ultimo dato del array
+    //   activo = vista;
+    //   index = total;
+    // }
+    // console.log('PUNTO DE CONTROL 2')
+    //Galeria.forEach(elemente => console.log(Galeria));
+    // for (let indice = 0; indice < render.length; indice++) {
+    //   const dato = render[indice];
+    //  console.log(dato);
+    //  renderizar(dato)
+    //   }
+}
+
+
+
+
+
 
 function sum() {
     setTimeout(() => {
