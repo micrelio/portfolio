@@ -74,7 +74,8 @@ function cargaTodo() {
     //---imagenes en imagenes------------------------
     var llaves = Object.keys(Galeria);
     console.log(llaves)
-        //---Leemos las claves
+    todas = [];
+    //---Leemos las claves
     for (let index = 0; index < llaves.length; index++) {
         const tipo = llaves[index];
         const dato = Galeria[tipo];
@@ -98,6 +99,15 @@ function cargaTodo() {
         document.getElementById("repertorio").appendChild(div);
         //---LEEMOS EL ARRAY DENTRO DE CADA CLAVE---
         for (let index2 = 0; index2 < dato.length; index2++) {
+
+
+
+
+
+
+
+
+
             var img = document.createElement('img');
             var path = dato[index2];
             img.addEventListener("click", function() {
@@ -109,87 +119,139 @@ function cargaTodo() {
             img.setAttribute("id", tipo);
 
             document.getElementById(tipo).appendChild(img);
-        }
-    }
-}
 
 
-
-
-
-function todasImagenes() {
-    console.log(tipo)
-    console.log(Object.values(Galeria));
-    total = [];
-    tipo = 'total';
-
-    var llaves = Object.keys(Galeria);
-    console.log(llaves);
-
-    var titulo = document.createElement('button');
-    titulo.addEventListener("click", function() { cargar(tipo); });
-    var t = document.createTextNode('Galeria');
-    var hr = document.createElement('hr');
-    titulo.setAttribute("class", "title");
-    titulo.setAttribute("id", "i");
-    titulo.setAttribute("value", tipo);
-    hr.setAttribute("class", "raya");
-    document.getElementById('repertorio').appendChild(titulo);
-    titulo.appendChild(t);
-    document.getElementById('repertorio').appendChild(hr);
-
-
-    for (let index = 0; index < llaves.length; index++) {
-        const todas = llaves[index];
-        const dato = Galeria[todas];
-        //---LEEMOS EL ARRAY DENTRO DE CADA CLAVE---
-        for (let index2 = 0; index2 < dato.length; index2++) {
-            var path = dato[index2];
-            // console.log(path);
-            total.push(path);
-            //   console.log(total)
+            //     console.log(path);
+            todas.push(path);
         }
     }
 
+    tipo = 'Galeria';
+    var tituloT = document.createElement('button');
+    var hrT = document.createElement('hr');
+    var t = document.createTextNode(tipo);
 
+    tituloT.setAttribute("class", "title");
+    tituloT.setAttribute("id", "i");
+    tituloT.setAttribute("value", tipo);
+    tituloT.addEventListener("click", function() { cargar(tipo); });
+    tituloT.appendChild(t);
+    document.getElementById('repertorio').appendChild(tituloT);
+    hrT.setAttribute("class", "raya");
 
+    document.getElementById('repertorio').appendChild(hrT);
 
-    for (let index3 = 0; index3 < total.length; index3++) {
+    for (let index3 = 0; index3 < todas.length; index3++) {
+        const all = todas[index3];
+        console.log(all);
+        var divT = document.createElement('div');
+        divT.setAttribute("id", tipo);
 
-        //   console.log(total)
-        // console.log(index3)
-        all = total[index3];
-        //  console.log(all)
-
-        // const dato = index3[all];
-        //  console.log(all)
-        //   console.log(all)
-        var div = document.createElement('div');
-
-        div.setAttribute("id", tipo);
-
-        div.setAttribute("class", "fila");
-
-        document.getElementById("repertorio").appendChild(div);
-        // //---LEEMOS EL ARRAY DENTRO DE CADA CLAVE---
-        //for (let index4 = 0; index4 < all.length; index4++) {
-        var img = document.createElement('img');
-        var path = all
-            //     console.log(all)
-        img.addEventListener("click", function() {
-            cargar3(total, index3);
+        divT.setAttribute("class", "fila");
+        var imgT = document.createElement('img');
+        var path = todas[index3];
+        imgT.addEventListener("click", function() {
+            cargar2(tipo, index3);
         });
-        img.setAttribute("src", path);
-        img.setAttribute("height", "70rem");
-        img.setAttribute("class", "imagenPresentacion");
-        img.setAttribute("id", tipo);
+        imgT.setAttribute("src", path);
+        imgT.setAttribute("height", "70rem");
+        imgT.setAttribute("class", "imagenPresentacion");
+        imgT.setAttribute("id", tipo);
+
+        document.getElementById("repertorio").appendChild(divT);
+        document.getElementById(tipo).appendChild(imgT);
 
 
-        document.getElementById(tipo).appendChild(img);
+
+
+
+
     }
 
-
-
-
-
 }
+
+
+
+
+
+
+
+
+
+
+// function todasImagenes() {
+//     console.log(tipo)
+//     console.log(Object.values(Galeria));
+//     total = [];
+//     tipo = 'total';
+
+//     var llaves = Object.keys(Galeria);
+//     console.log(llaves);
+
+//     var titulo = document.createElement('button');
+//     titulo.addEventListener("click", function() { cargar(tipo); });
+//     var t = document.createTextNode('Galeria');
+//     var hr = document.createElement('hr');
+//     titulo.setAttribute("class", "title");
+//     titulo.setAttribute("id", "i");
+//     titulo.setAttribute("value", tipo);
+//     hr.setAttribute("class", "raya");
+//     document.getElementById('repertorio').appendChild(titulo);
+//     titulo.appendChild(t);
+//     document.getElementById('repertorio').appendChild(hr);
+
+
+//     for (let index = 0; index < llaves.length; index++) {
+//         const todas = llaves[index];
+//         const dato = Galeria[todas];
+//         //---LEEMOS EL ARRAY DENTRO DE CADA CLAVE---
+//         for (let index2 = 0; index2 < dato.length; index2++) {
+//             var path = dato[index2];
+//             // console.log(path);
+//             total.push(path);
+//             //   console.log(total)
+//         }
+//     }
+
+
+
+
+//     for (let index3 = 0; index3 < total.length; index3++) {
+
+//         //   console.log(total)
+//         // console.log(index3)
+//         all = total[index3];
+//         //  console.log(all)
+
+//         // const dato = index3[all];
+//         //  console.log(all)
+//         //   console.log(all)
+//         var div = document.createElement('div');
+
+//         div.setAttribute("id", tipo);
+
+//         div.setAttribute("class", "fila");
+
+//         document.getElementById("repertorio").appendChild(div);
+//         // //---LEEMOS EL ARRAY DENTRO DE CADA CLAVE---
+//         //for (let index4 = 0; index4 < all.length; index4++) {
+//         var img = document.createElement('img');
+//         var path = all
+//             //     console.log(all)
+//         img.addEventListener("click", function() {
+//             cargar3(total, index3);
+//         });
+//         img.setAttribute("src", path);
+//         img.setAttribute("height", "70rem");
+//         img.setAttribute("class", "imagenPresentacion");
+//         img.setAttribute("id", tipo);
+
+
+//         document.getElementById(tipo).appendChild(img);
+//     }
+
+
+
+
+
+// }

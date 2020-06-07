@@ -55,7 +55,7 @@ var Galeria = {
             "https://img.vixdata.io/pd/jpg-large/es/sites/default/files/d/dragon-ball-super-episode-goku-ultra-instinct.jpg",
             "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQuSWoybxjqh4_PnpKSpD9hxQwnb3SiPknNIyY-Atq1b_4Lfxfv&usqp=CAU",
         ],
-
+        // Galeria: [],
 
     },
 

@@ -90,8 +90,8 @@ function cargar(preVista) {
 
             vista = preVista;
             // vista = [].concat.apply([], tipo);
-            console.log(total[1])
-                //count = 0;
+            //  console.log(total[1])
+            //count = 0;
             seleccionar()
                 //   acaparados.forEach(elemente => renderizar(elemente));
             break;
