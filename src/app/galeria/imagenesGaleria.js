@@ -122,7 +122,7 @@ function todasImagenes() {
     console.log(llaves);
 
     var titulo = document.createElement('button');
-    titulo.addEventListener("click", function() { cargar(tipo); });
+    titulo.addEventListener("click", function() { cargar2(tipo, 0); });
     var t = document.createTextNode(tipo);
     var hr = document.createElement('hr');
     titulo.setAttribute("class", "title");
@@ -169,7 +169,7 @@ function todasImagenes() {
         var path = all
         console.log(all)
         img.addEventListener("click", function() {
-            cargar2(total, index3);
+            cargar3(total, index3);
         });
         img.setAttribute("src", path);
         img.setAttribute("height", "70rem");
