@@ -25,7 +25,15 @@ p {
     font-size: 1.5rem;
 }
 
+//A:hover { color: black; font-family: arial; text-decoration: none }
+a:visited {
+    color: black;
+    font-family: arial;
+    text-decoration: none
+}
+
 .datosPersonales {
+    // padding: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -33,7 +41,7 @@ p {
     color: white;
     // padding: 3rem;
     border: 0.1rem solid #00C6EE;
-    margin: 0.3rem;
+    // margin: 0.3rem;
     width: 95vw;
     height: 25vh;
     overflow: hidden;
@@ -61,7 +69,7 @@ p {
         justify-content: flex-start;
         // background-color: pink;
         p {
-            margin-top: 3rem;
+            margin-top: 1.5rem;
         }
     }
 }
@@ -135,7 +143,19 @@ p {
             //overflow: hidden;
             //   height: 10vw;
             //   width: 50%;
-            //
+        }
+        a:link {
+            color: #ffffff;
+            text-decoration: none
+        }
+        a:visited {
+            color: #ffffff;
+        }
+        a:active {
+            color: #ffffff;
+        }
+        a:hover {
+            color: #00C6EE;
         }
         .titulo {
             img {

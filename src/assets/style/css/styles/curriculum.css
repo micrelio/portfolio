@@ -13,6 +13,12 @@ p {
   font-size: 1.5rem;
 }
 
+a:visited {
+  color: black;
+  font-family: arial;
+  text-decoration: none;
+}
+
 .datosPersonales {
   display: flex;
   flex-direction: row;
@@ -20,7 +26,6 @@ p {
   align-items: center;
   color: white;
   border: 0.1rem solid #00C6EE;
-  margin: 0.3rem;
   width: 95vw;
   height: 25vh;
   overflow: hidden;
@@ -42,7 +47,7 @@ p {
   justify-content: flex-start;
 }
 .datosPersonales .direccion p {
-  margin-top: 3rem;
+  margin-top: 1.5rem;
 }
 
 .datos {
@@ -85,6 +90,19 @@ p {
 .datos .experiencia .descripcion {
   padding: 1rem;
   width: 100%;
+}
+.datos .experiencia a:link {
+  color: #ffffff;
+  text-decoration: none;
+}
+.datos .experiencia a:visited {
+  color: #ffffff;
+}
+.datos .experiencia a:active {
+  color: #ffffff;
+}
+.datos .experiencia a:hover {
+  color: #00C6EE;
 }
 .datos .experiencia .titulo img {
   height: 5vh;
