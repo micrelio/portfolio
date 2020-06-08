@@ -4,10 +4,9 @@
     // @include head;
 }
 
-section {
+body {
     background: {
         color: black;
-        // color: #272727;
     }
     ;
 }
@@ -27,23 +26,44 @@ p {
 }
 
 .datosPersonales {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
     color: white;
-    padding: 3rem;
-    width: 100%;
+    // padding: 3rem;
     border: 0.1rem solid #00C6EE;
     margin: 0.3rem;
     width: 95vw;
+    height: 25vh;
+    overflow: hidden;
     border: {
         radius: 1rem
     }
     background: {
         color: #272727;
-        //color:black;
     }
     h {
         color: #00C6EE;
     }
     //   border: 0.1rem solid black;
+    .dni {
+        margin-right: 5rem;
+        height: 25vh;
+        border: {
+            radius: 1rem;
+        }
+        border: 0.1rem solid #00C6EE;
+    }
+    .direccion {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        // background-color: pink;
+        p {
+            margin-top: 3rem;
+        }
+    }
 }
 
 .datos {
@@ -91,7 +111,7 @@ p {
             img {
                 height: 100%;
                 background: {
-                    color: #00C6EE;
+                    //     color: #00C6EE;
                 }
                 ;
                 border: {
@@ -103,8 +123,9 @@ p {
             .corporativo {
                 height: 100%;
                 // height: 100%;
+                margin-right: 1rem;
                 border-right: 0.1rem solid #00C6EE;
-                padding: 0.5rem;
+                // padding: 0.5rem;
             }
         }
         .descripcion {
@@ -121,6 +142,7 @@ p {
             img {
                 height: 5vh;
                 width: 5vh;
+                margin-right: 1rem;
             }
         }
     }

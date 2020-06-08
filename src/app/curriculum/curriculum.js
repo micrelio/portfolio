@@ -12,23 +12,38 @@ class miCurriculum extends HTMLElement {
       <div class="titulo">
   <h1>Datos personales</h1>
   </div>
+     
+<section class="">
+<div class="datosPersonales">
+  <div class="logotipo">
+    <img id="" class="dni" src="../../assets/images/fotos/dni.jpg">
+  </div>
+  <div class="direccion">
+  <h>José Antonio López Baena</h><br>
+  <p>
+      Nacido el 27 de julio de 1982 en Valencia (España).
+  </p>
+  <p>
+      Quart dePoblet 46930 (Valencia).
+  </p>
+  <p>
+      Email:microa4@gmail.com
+  </p>
+  </div>
 
-      
-      <section class="datos">
+</div>
 
-    <div  class="datosPersonales">
-          <h>José Antonio López Baena</h>
-          <p>
-              Nacido el 27 de julio de 1982 en Valencia (España).
-          </p>
-          <p>
-              Quart dePoblet 46930 (Valencia).
-          </p>
-          <p>
-              Email:microa4@gmail.com
-          </p>
-      </div>
-  </section>
+<!--
+<div  class="datosPersonales">
+    <div class="logotipo">
+        <img id="" class="dni" src="../../assets/images/fotos/dni.jpg">
+    </div>
+    <div class="direccion">
+        
+    </div>
+</div>
+-->
+</section>
   
   
   

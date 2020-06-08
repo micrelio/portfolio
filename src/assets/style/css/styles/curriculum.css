@@ -1,5 +1,5 @@
 /* hovers*/
-section {
+body {
   background-color: black;
 }
 
@@ -18,17 +18,35 @@ p {
 }
 
 .datosPersonales {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   color: white;
-  padding: 3rem;
-  width: 100%;
   border: 0.1rem solid #00C6EE;
   margin: 0.3rem;
   width: 95vw;
+  height: 25vh;
+  overflow: hidden;
   border-radius: 1rem;
   background-color: #272727;
 }
 .datosPersonales h {
   color: #00C6EE;
+}
+.datosPersonales .dni {
+  margin-right: 5rem;
+  height: 25vh;
+  border-radius: 1rem;
+  border: 0.1rem solid #00C6EE;
+}
+.datosPersonales .direccion {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.datosPersonales .direccion p {
+  margin-top: 3rem;
 }
 
 .datos {
@@ -61,13 +79,12 @@ p {
 }
 .datos .experiencia .logotipo img {
   height: 100%;
-  background-color: #00C6EE;
   border-radius: 1rem;
 }
 .datos .experiencia .logotipo .corporativo {
   height: 100%;
+  margin-right: 1rem;
   border-right: 0.1rem solid #00C6EE;
-  padding: 0.5rem;
 }
 .datos .experiencia .descripcion {
   padding: 1rem;
@@ -76,6 +93,7 @@ p {
 .datos .experiencia .titulo img {
   height: 5vh;
   width: 5vh;
+  margin-right: 1rem;
 }
 
 /*# sourceMappingURL=curriculum.css.map */
