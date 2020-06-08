@@ -58,6 +58,16 @@ a:visited {
   justify-content: center;
   width: 100%;
 }
+.datos .interes {
+  border: 0.1rem solid #00C6EE;
+  width: 95vw;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: black;
+}
+.datos .interes p {
+  margin-top: 1.5rem;
+}
 .datos .experiencia {
   color: white;
   overflow: hidden;

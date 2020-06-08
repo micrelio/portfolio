@@ -296,7 +296,7 @@ class miCurriculum extends HTMLElement {
 </div>
 
 <section class="datos">
-  <div  class="">
+  <div  class="interes">
 	  <p>Facilidad en asimilación y manejo de programas informáticos.</p>
     <p>Diseño de páginas web.</p>
     <p>Disponibilidad geográfica total e inmediata.</p>
