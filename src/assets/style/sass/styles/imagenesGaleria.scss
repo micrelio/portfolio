@@ -1,9 +1,17 @@
 @import "../mixins/mixins.scss";
 @import "../variables/variables.scss";
+.miniaturas {
+    display: flex;
+    justify-content: center;
+    //align-items: center;
+}
+
 .repertorio {
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    width: 95vw;
+    ;
     background: {
         // color: lightblue;
     }
@@ -15,13 +23,22 @@ h {
     }
 }
 
-.raya {
-    font-size: 10px;
-    //color: blue;
+.title {
+    margin-top: 3rem;
+    cursor: pointer;
     background: {
-        //       color: black;
+        //   color: red;
     }
-    height: 0.25rem;
+    ;
+}
+
+.raya {
+    border: 0 none #000000;
+    border-top: 1px solid #00C6EE;
+    height: 1px;
+    margin: 5px 0;
+    display: block;
+    clear: both;
 }
 
 .tipo {
@@ -40,6 +57,7 @@ h {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    cursor: pointer;
     background: {
         // color: yellow;
     }
