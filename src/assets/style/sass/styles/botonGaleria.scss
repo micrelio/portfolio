@@ -1,41 +1,36 @@
 @import "../mixins/mixins.scss";
 @import "../variables/variables.scss";
-
-
-.botonesGaleria{
+.botonesGaleria {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-   justify-content: center;
-   align-items: center;
-    z-index:1000;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
     position: sticky;
-   // position: -webkit-fixed;  // required for Safari
- top: 0;
+    // position: -webkit-fixed;  // required for Safari
+    top: 0;
     width: 100%;
-   // height: 10vh;
-
-       background-color: yellowgreen;
+    // height: 10vh;
+    background-color: #00C6EE;
 }
-.boton {
-  font-size:1.75rem;
-  font-family:Verdana,Helvetica;
-  font-weight:bold;
-  color:white;
-  //background:#638cb5;
-  border:0px;
-  
 
-  
-  background: none;
- // color: inherit;
- // border: none;
- // padding: 0;
- // font: inherit;
-  //outline: inherit;
-   //width: 5rem;
+.boton {
+    font-size: 1.75rem;
+    font-family: Verdana, Helvetica;
+    font-weight: bold;
+    color: white;
+    //background:#638cb5;
+    border: 0px;
+    background: none;
+    // color: inherit;
+    // border: none;
+    // padding: 0;
+    // font: inherit;
+    //outline: inherit;
+    //width: 5rem;
     cursor: pointer;
     //background-color: pink;;
-   // color: pink;
+    // color: pink;
     margin: 0.3rem 0.5rem 0.3rem 0.5rem;
 }

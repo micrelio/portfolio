@@ -1,8 +1,4 @@
 /* hovers*/
-body {
-  background-color: black;
-}
-
 .titulo {
   display: flex;
   justify-content: center;
@@ -29,7 +25,7 @@ p {
   height: 25vh;
   overflow: hidden;
   border-radius: 1rem;
-  background-color: #272727;
+  background-color: black;
 }
 .datosPersonales h {
   color: #00C6EE;
@@ -69,9 +65,9 @@ p {
   height: 7vh;
   min-width: 7vh;
   border-radius: 1rem;
-  margin: 0.3rem;
+  margin: 0.5rem;
   width: 95vw;
-  background-color: #272727;
+  background-color: black;
 }
 .datos .experiencia .logotipo {
   overflow: hidden;

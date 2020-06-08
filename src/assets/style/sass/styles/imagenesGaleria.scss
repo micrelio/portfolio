@@ -1,15 +1,13 @@
 @import "../mixins/mixins.scss";
 @import "../variables/variables.scss";
-
 .repertorio {
-    display:flex;
+    display: flex;
     flex-direction: column;
     padding: 1rem;
     background: {
-        color: lightblue;
+        // color: lightblue;
     }
 }
-
 
 h {
     font: {
@@ -19,12 +17,10 @@ h {
 
 .raya {
     font-size: 10px;
-//color: blue;
+    //color: blue;
     background: {
- //       color: black;
-       
+        //       color: black;
     }
-
     height: 0.25rem;
 }
 
@@ -34,7 +30,6 @@ h {
     width: 100%;
     // margin: 20px auto;
     list-style: none;
-
     background: {
         // color: white;
     }
@@ -42,15 +37,13 @@ h {
 
 .fila {
     overflow: auto;
-
     display: flex;
-   flex-direction: row;
-   flex-wrap: nowrap;
-
+    flex-direction: row;
+    flex-wrap: nowrap;
     background: {
         // color: yellow;
     }
-    .imagenPresentacion{
+    .imagenPresentacion {
         margin: 0.6rem;
         border: 0.4rem solid #eeeeee;
         box-shadow: $sombreadoTotal;
@@ -58,7 +51,6 @@ h {
     .tn {
         cursor: pointer;
         height: 15rem;
-
         background: {
             // color: black;
         }

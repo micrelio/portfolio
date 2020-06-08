@@ -13,7 +13,7 @@ class miCurriculum extends HTMLElement {
   <h1>Datos personales</h1>
   </div>
      
-<section class="">
+<section class="datos">
 <div class="datosPersonales">
   <div class="logotipo">
     <img id="" class="dni" src="../../assets/images/fotos/dni.jpg">
