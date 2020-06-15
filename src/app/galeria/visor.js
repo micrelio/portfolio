@@ -120,8 +120,8 @@ function cargar(preVista) {
     //Idexamos indice
 }
 //---carga al pinchar imagen
-function cargarimagen(vistaimagen, posicion, array) {
-    vista = array;
+function cargarimagen(vistaimagen, posicion) {
+    vista = Galeria[vistaimagen];
     document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
     console.log(vistaimagen)
     count = posicion;
