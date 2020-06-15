@@ -146,9 +146,7 @@ class miCurriculum extends HTMLElement {
 <p>1997</p>
 <p>FP Elelectrónica: <a href="https://web.iesgonzaloanaya.es/" target="_blank">IES Gonzalo Anaya </a>, Xirivella (Valencia).</p>
 </div>
-<div class="titulo">
-<a href="../../assets/images/banners/rocas.jpg" target="_blank"><img alt="" src="../../assets/images/icons/titulo.png"></a>
-</div>
+
 </div>
 
   
@@ -245,7 +243,7 @@ class miCurriculum extends HTMLElement {
         </div>
         <div class="descripcion">
             <p>2009 Dafsa</p>
-            <p>Técnico de sistemas industriales, responsable de turno. www.dafsa.es</p>
+            <p>Técnico de sistemas industriales, responsable de turno.</p>
         </div>
     </div>
   

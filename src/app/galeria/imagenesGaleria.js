@@ -56,6 +56,7 @@ function cargaTodo() {
         var hr = document.createElement('hr');
         var titulo = document.createElement('h');
         titulo.addEventListener("click", function() {
+            console.log(tipo)
             cargar(tipo);
         });
         //---CREAMOS UN TEXTO---
@@ -77,6 +78,7 @@ function cargaTodo() {
             var img = document.createElement('img');
             var path = dato[index2];
             img.addEventListener("click", function() {
+                console.log(tipo, index)
                 cargar2(tipo, index2);
             });
             img.setAttribute("src", path);
