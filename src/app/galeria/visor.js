@@ -39,9 +39,9 @@ class miVisor extends HTMLElement {
         // esto arranca automatico 
         var multimedia = document.querySelector('#multimediaControl');
         multimedia.addEventListener('click', function(e) {
-            console.log(e)
+            //  console.log(e)
             var h = e.target.id;
-            console.log(h)
+            //       console.log(h)
             if (e.target !== this) {
                 switch (h) {
                     case 'previous':
@@ -75,7 +75,9 @@ customElements.define('mi-visor', miVisor);
 
 
 //---COMIENZO----------------------------
+//--llamada menu con nombres de seccion
 function cargar(preVista) {
+    console.log('HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH')
     if (typeof marcha !== 'undefined') {
         clearInterval(marcha);
     }
@@ -117,16 +119,18 @@ function cargar(preVista) {
     }
     //Idexamos indice
 }
-
-function cargar2(vista, imagen) {
+//---carga al pinchar imagen
+function cargarimagen(vistaimagen, posicion, array) {
+    vista = array;
     document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
-
-    count = imagen;
+    console.log(vistaimagen)
+    count = posicion;
     console.log(count)
-    var longitud = Galeria[vista].length;
-    var render = Galeria[vista][count];
-    var siguiente = Galeria[vista][count + 1];
-    var anterior = Galeria[vista][longitud - 1];
+    console.log(count)
+    var longitud = Galeria[vistaimagen].length;
+    var render = Galeria[vistaimagen][count];
+    var siguiente = Galeria[vistaimagen][count + 1];
+    var anterior = Galeria[vistaimagen][longitud - 1];
     console.log(longitud)
     console.log(render)
     console.log(siguiente)
@@ -163,8 +167,14 @@ function cargar2(vista, imagen) {
     count++;
 }
 
+
+
+
+
 function cargar3(vistaT, imagen) {
+    console.log('EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE')
     vista = vistaT;
+    console.log('vista', vista)
     document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
     console.log(vistaT.length)
     count = imagen;

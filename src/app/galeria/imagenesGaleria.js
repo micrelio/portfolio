@@ -79,7 +79,7 @@ function cargaTodo() {
             var path = dato[index2];
             img.addEventListener("click", function() {
                 console.log(tipo, index)
-                cargar2(tipo, index2);
+                cargarimagen(tipo, index2);
             });
             img.setAttribute("src", path);
             img.setAttribute("height", "70rem");
