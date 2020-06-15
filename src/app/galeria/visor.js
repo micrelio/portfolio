@@ -75,7 +75,7 @@ customElements.define('mi-visor', miVisor);
 
 
 //---COMIENZO----------------------------
-//--llamada menu con nombres de seccion
+//--cargar imagen desde barra menu---
 function cargar(preVista) {
     console.log('HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH')
     if (typeof marcha !== 'undefined') {
@@ -119,13 +119,15 @@ function cargar(preVista) {
     }
     //Idexamos indice
 }
-//---carga al pinchar imagen
+//---carga al pinchar imagen---
 function cargarimagen(vistaimagen, posicion) {
+    if (typeof marcha !== "undefined") {
+        clearInterval(marcha);
+    }
     vista = Galeria[vistaimagen];
     document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
     console.log(vistaimagen)
     count = posicion;
-    console.log(count)
     console.log(count)
     var longitud = Galeria[vistaimagen].length;
     var render = Galeria[vistaimagen][count];
@@ -170,8 +172,8 @@ function cargarimagen(vistaimagen, posicion) {
 
 
 
-
-function cargar3(vistaT, imagen) {
+//--pinchando imagen galeria
+function cargarImgGaleria(vistaT, imagen) {
     console.log('EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE')
     vista = vistaT;
     console.log('vista', vista)
