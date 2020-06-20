@@ -337,6 +337,7 @@ function sum() {
     }, 500);
 }
 
+
 function res() {
     setTimeout(() => {
 
