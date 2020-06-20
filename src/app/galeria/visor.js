@@ -141,6 +141,7 @@ function cargarimagen(vistaimagen, posicion) {
     } else {
         var siguiente = Galeria[vistaimagen][count + 1];
         var anterior = Galeria[vistaimagen][count - 1];
+        count++;
     }
 
 
