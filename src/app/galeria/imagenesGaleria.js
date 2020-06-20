@@ -118,7 +118,7 @@ function cargaTodo() {
         var imgT = document.createElement('img');
         var path = todas[index3];
         imgT.addEventListener("click", function() {
-            cargar3(todas, index3);
+            cargarImgGaleria(todas, index3);
         });
         imgT.setAttribute("src", path);
         imgT.setAttribute("height", "70rem");

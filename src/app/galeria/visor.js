@@ -121,19 +121,30 @@ function cargar(preVista) {
 }
 //---carga al pinchar imagen---
 function cargarimagen(vistaimagen, posicion) {
-    if (typeof marcha !== "undefined") {
-        clearInterval(marcha);
-    }
+    // if (typeof marcha !== "undefined") {
+    //     clearInterval(marcha);
+    // }
     vista = Galeria[vistaimagen];
     document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
     console.log(vistaimagen)
     count = posicion;
     console.log(count)
-    var longitud = Galeria[vistaimagen].length;
+    var long = Galeria[vistaimagen].length;
     var render = Galeria[vistaimagen][count];
-    var siguiente = Galeria[vistaimagen][count + 1];
-    var anterior = Galeria[vistaimagen][longitud - 1];
-    console.log(longitud)
+    // var siguiente = Galeria[vistaimagen][count + 1];
+    console.log(long)
+    if (count >= long - 1) {
+        console.log('PPPPPPPPPPPPPPPPPPP')
+        var siguiente = Galeria[vistaimagen][0];
+        var anterior = Galeria[vistaimagen][count - 1];
+        count = long;
+    } else {
+        var siguiente = Galeria[vistaimagen][count + 1];
+        var anterior = Galeria[vistaimagen][count - 1];
+    }
+
+
+    console.log(long)
     console.log(render)
     console.log(siguiente)
     console.log(anterior)
@@ -158,15 +169,15 @@ function cargarimagen(vistaimagen, posicion) {
     console.log(img);
 
 
-    console.log(longitud)
-    if (count >= longitud) {
+    console.log(long)
+    if (count >= long) {
         console.log('pppuuuuummmm')
         count = 0;
     }
     document.getElementById('activo').appendChild(img);
     document.getElementById('activoS').appendChild(imgS);
     document.getElementById('activoA').appendChild(imgA);
-    count++;
+    //  count++;
 }
 
 
