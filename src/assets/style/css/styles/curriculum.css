@@ -121,10 +121,27 @@ a:visited {
   margin-right: 1rem;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1900px) {
   .titulo {
     display: flex;
     justify-content: center;
+  }
+
+  h1 {
+    font-size: calc(1.5rem + 1vw);
+    margin-top: 5rem;
+    color: #00C6EE;
+  }
+
+  p {
+    font-size: 1.5rem;
+    font-size: calc(0.5rem + 1vw);
+  }
+
+  a:visited {
+    color: black;
+    font-family: arial;
+    text-decoration: none;
   }
 
   .datos {
@@ -135,9 +152,39 @@ a:visited {
     justify-content: center;
     width: 100%;
   }
+  .datos .datosPersonales {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    border: 0.1rem solid #00C6EE;
+    width: 85vw;
+    height: auto;
+    overflow: hidden;
+    border-radius: 1rem;
+    background-color: black;
+  }
+  .datos .datosPersonales h {
+    color: #00C6EE;
+  }
+  .datos .datosPersonales .dni {
+    margin-right: 5rem;
+    height: auto;
+    border-radius: 1rem;
+    border: 0.1rem solid #00C6EE;
+  }
+  .datos .datosPersonales .direccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .datos .datosPersonales .direccion p {
+    margin-top: 1.5rem;
+  }
   .datos .interes {
     border: 0.1rem solid #00C6EE;
-    width: 95vw;
+    width: 85vw;
     padding: 2rem;
     border-radius: 1rem;
     background-color: black;
@@ -149,24 +196,22 @@ a:visited {
     color: white;
     overflow: hidden;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-direction: column;
     align-items: center;
     justify-content: start;
     border: 0.1rem solid #00C6EE;
-    height: 7vh;
+    height: auto;
     min-width: 7vh;
-    border-radius: 1rem;
     margin: 0.5rem;
-    width: 95vw;
+    width: 85vw;
+    border-radius: 1rem;
     background-color: black;
   }
   .datos .experiencia .logotipo {
     overflow: hidden;
-    height: 7vh;
+    height: auto;
   }
   .datos .experiencia .logotipo img {
-    height: 100%;
     border-radius: 1rem;
   }
   .datos .experiencia .logotipo .corporativo {
@@ -195,37 +240,6 @@ a:visited {
     height: 5vh;
     width: 5vh;
     margin-right: 1rem;
-  }
-
-  .datosPersonales {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    color: white;
-    border: 0.1rem solid #00C6EE;
-    width: 95vw;
-    height: 25vh;
-    overflow: hidden;
-    border-radius: 1rem;
-    background-color: black;
-  }
-  .datosPersonales h {
-    color: #00C6EE;
-  }
-  .datosPersonales .dni {
-    margin-right: 5rem;
-    height: 25vh;
-    border-radius: 1rem;
-    border: 0.1rem solid #00C6EE;
-  }
-  .datosPersonales .direccion {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-  .datosPersonales .direccion p {
-    margin-top: 1.5rem;
   }
 }
 
