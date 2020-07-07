@@ -5,56 +5,57 @@ class miNav extends HTMLElement {
     connectedCallback() {
         this.innerHTML =
             `
-<section class="stick">
-    <div class="nav" id="nav">
-        <div class="navbar">
-            <div class="foto">
-               <img src="../../assets/images/dracula-man.jpg">
-            </div>
-            <div class="menu">
-                <div class="links">
-                    <s onmouseover>  <button class="nav-link" type="button" onclick="navegar('inicio');"> inicio </button> </s>
-                    <s onmouseover>  <button class="nav-link" type="button" onclick="navegar('webs'); "> Webs </button></s>
-                    <s onmouseover>  <button class="nav-link" type="button" onclick="navegar('galeria');"> galeria </button></s>
-                    <s onmouseover>  <button class="nav-link" type="button" onclick="navegar('videos');"> Videos </button></s>
-                    <s onmouseover>  <button class="nav-link" type="button" onclick="navegar('curriculum');"> Curriculum </button></s>
-                    <s onmouseover>  <button class="nav-link" type="button" onclick="navegar('contacto');"> Contacto </button></s>
+            <section class="stick">
+            <div class="nav" id="nav">
+                <div class="navbar">
+                    <div class="foto">
+                        <img src="../../assets/images/dracula-man.jpg">
+                    </div>
+                    <div class="menu">
+                        <div class="links">
+                            <s onmouseover> <button class="nav-link" type="button" onclick="navegar('inicio');"> inicio
+                                </button> </s>
+                            <s onmouseover> <button class="nav-link" type="button" onclick="navegar('webs'); "> Webs
+                                </button></s>
+                            <s onmouseover> <button class="nav-link" type="button" onclick="navegar('galeria');"> galeria
+                                </button></s>
+                            <s onmouseover> <button class="nav-link" type="button" onclick="navegar('videos');"> Videos
+                                </button></s>
+                            <s onmouseover> <button class="nav-link" type="button" onclick="navegar('curriculum');">
+                                    Curriculum </button></s>
+                            <s onmouseover> <button class="nav-link" type="button" onclick="navegar('contacto');"> Contacto
+                                </button></s>
+                        </div>
+                    </div>
                 </div>
-
-
-
-
             </div>
-        </div>
-    </div>
+            <div class="movil">
+                <div class="imagenes">
+                    <div class="foto">
+                        <img src="../../assets/images/dracula-man.jpg">
+                    </div>
+                    <div class="botones">
+                        <span id="boton1"><img src="../../assets/images/icons/menu.png" id="pull" href="#"
+                                alt="menu"></span>
+                    </div>
+                </div>
+                <div>
+                </div>
+                <div style="display: none" class="desplegable" id="desplegable">
+                    <button onclick="navegar('inicio'); seleccionado();" class="mnav-link">Inicio</button>
+                    <button onclick="navegar('webs'); seleccionado();" class="mnav-link">Webs</button>
+                    <button onclick="navegar('galeria'); seleccionado();" class="mnav-link">Galery</button>
+                    <button onclick="navegar('videos'); seleccionado();" class="mnav-link">Videos</button>
+                    <button onclick="navegar('curriculum'); seleccionado();" class="mnav-link">Curriculum</button>
+                    <button onclick="navegar('contacto'); seleccionado();" class="mnav-link">Contacto</button>
+                </div>
+            </div>
+            <div class="mode">
+                <!-- <audio src="../sonidos/ping.mp4" autoplay loop></audio> -->
+                <img src="../../assets/images/buttons/noche.png">
+            </div>
+        </section>
     
-
-    <div class="movil">
-        <div class="imagenes">
-            <div class="foto">
-                <img src="../../assets/images/dracula-man.jpg">
-            </div>
-            <div class="botones" >
-                <button  id="boton1" id="pull"  ><img src="../../assets/images/icons/menu.png" href="#" alt="menu"></button>
-            </div>
-        </div>
-        <div >
-        </div>
-        <div style="display: none" class="desplegable" id="desplegable">
-            <button  onclick="navegar('inicio');" class="mnav-link">Inicio</button>
-            <button  onclick="navegar('webs');" class="mnav-link">Webs</button>
-            <button  onclick="navegar('galeria');" class="mnav-link">Galery</button>
-            <button  onclick="navegar('videos');" class="mnav-link">Videos</button>
-            <button  onclick="navegar('curriculum');" class="mnav-link">Curriculum</button>
-            <button  onclick="navegar('contacto');" class="mnav-link">Contacto</button>
-        </div>
-    </div>
-    <div class="mode">
-        <!-- <audio src="../sonidos/ping.mp4" autoplay loop></audio> -->
-            <img src="../../assets/images/buttons/noche.png">
-    </div>
-</section>
-
 
                 `;
     }
@@ -62,20 +63,26 @@ class miNav extends HTMLElement {
 
 //  window.customElements.define('mi-Menu', minenu);
 customElements.define('mi-nav', miNav);
+
+function seleccionado() {
+    console.log('kakakakakak')
+    menu.slideToggle();
+}
+
 function nav() {
     console.log("77777777777777");
-    $(function () {
+    $(function() {
         console.log("8888888888888888888");
         var pull = $('#pull');
         menu = $('.desplegable');
         menuHeight = menu.height();
-        $(pull).on('click', function (e) {
+        $(pull).on('click', function(e) {
             console.log("999999999");
             e.preventDefault();
             menu.slideToggle();
         });
     });
-    $(window).resize(function () {
+    $(window).resize(function() {
         var w = $(window).width();
         if (w > 320 && menu.is(':hidden')) {
             menu.removeAttr('style');
@@ -85,9 +92,10 @@ function nav() {
 //----------------
 // SCRIPT DE desplegable
 function desplegable() {
-    jQuery.fn.animateAuto = function (prop, speed, callback) {
+    console.log('PESTE')
+    jQuery.fn.animateAuto = function(prop, speed, callback) {
         var elem, height, width;
-        return this.each(function (i, el) {
+        return this.each(function(i, el) {
             el = jQuery(el), elem = el.clone().css({ "height": "auto", "width": "auto" }).appendTo("body");
             height = elem.css("height"),
                 width = elem.css("width"),
@@ -100,8 +108,8 @@ function desplegable() {
                 el.animate({ "width": width, "height": height }, speed, callback);
         });
     }
-    $(window).ready(function () {
-        $('h2').click(function () {
+    $(window).ready(function() {
+        $('h2').click(function() {
             if ($(this).next().hasClass('desplegado')) {
                 $(this).next().removeClass('desplegado').animate({ height: 0 }, 500);
             } else {
