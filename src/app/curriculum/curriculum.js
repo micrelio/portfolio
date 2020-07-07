@@ -65,7 +65,7 @@ class miCurriculum extends HTMLElement {
       <p>BootCamp fullstack developer, en <a href="https://geekshubs.com/" target="_blank">GeeksHubs</a> Valencia (Valencia).</p>
   </div>
   <div class="titulo">
-<a href="../../assets/images/banners/rocas.jpg" target="_blank"><img alt="" src="../../assets/images/icons/titulo.png"></a>
+<a href="../../assets/images/titulos/greekshubs.jpg" target="_blank"><img alt="" src="../../assets/images/icons/titulo.png"></a>
 </div>
 </div>
 
@@ -79,7 +79,7 @@ class miCurriculum extends HTMLElement {
 <p>Grado superior ASIR (administración de sistemas informáticos en red) <a href="https://www.tobalcaide.com/" target="_blank"> Academia Tobalcaide </a>, Quart de Poblet (Valencia).</p>
 </div>
 <div class="titulo">
-<a href="../../assets/images/banners/rocas.jpg" target="_blank"><img alt="" src="../../assets/images/icons/titulo.png"></a>
+<a href="../../assets/images/titulos/asir.jpg" target="_blank"><img alt="" src="../../assets/images/icons/titulo.png"></a>
 </div>
 </div>
 
@@ -92,7 +92,7 @@ class miCurriculum extends HTMLElement {
 <p>Curso de inglés: <a href="http://mestreacasa.gva.es/web/iesrodrigobotet" target="_blank">IES Rodrigo Botet</a>, instituto Manises (Valencia).</p>
 </div>
 <div class="titulo">
-<a href="../../assets/images/banners/rocas.jpg" target="_blank"><img alt="" src="../../assets/images/icons/titulo.png"></a>
+<a href="../../assets/images/titulos/ingles.jpg" target="_blank"><img alt="" src="../../assets/images/icons/titulo.png"></a>
 </div>
 </div>
 
@@ -119,7 +119,7 @@ class miCurriculum extends HTMLElement {
 <p> Curso de trabajos en alta tensión en <a href="https://www.coversa.com/" target="_blank"> COVER </a>, Manises (Valencia).</p>
 </div>
 <div class="titulo">
-<a href="../../assets/images/banners/rocas.jpg" target="_blank"><img alt="" src="../../assets/images/icons/titulo.png"></a>
+<a href="../../assets/images/titulos/cover.jpg" target="_blank"><img alt="" src="../../assets/images/icons/titulo.png"></a>
 </div>
 </div>
 
