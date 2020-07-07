@@ -212,6 +212,7 @@ a:visited {
     height: auto;
   }
   .datos .experiencia .logotipo img {
+    width: 100%;
     border-radius: 1rem;
   }
   .datos .experiencia .logotipo .corporativo {
