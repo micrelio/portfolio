@@ -1,0 +1,17 @@
+/* hovers*/
+.head {
+  width: 100%;
+  position: relative;
+}
+
+.head img {
+  width: 100%;
+}
+
+.segunda {
+  width: 100vw;
+  padding: 5%;
+  height: 80vh;
+  background-color: white;
+}
+/*# sourceMappingURL=videos.css.map */

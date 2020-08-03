@@ -1,0 +1,76 @@
+/* hovers*/
+.miniaturas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.repertorio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  width: 95vw;
+}
+
+h {
+  color: #00C6EE;
+  font-size: 2.5rem;
+}
+
+.title {
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+
+.raya {
+  border: 0 none #000000;
+  border-top: 1px solid #00C6EE;
+  height: 1px;
+  margin: 5px 0;
+  display: block;
+  clear: both;
+}
+
+.tipo {
+  margin-bottom: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  list-style: none;
+}
+
+.fila {
+  overflow: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  cursor: pointer;
+}
+
+.fila .imagenPresentacion {
+  margin: 0.6rem;
+  border: 0.4rem solid #eeeeee;
+  -webkit-box-shadow: #555 1px 1px 8px 1px;
+          box-shadow: #555 1px 1px 8px 1px;
+}
+
+.fila .tn {
+  cursor: pointer;
+  height: 15rem;
+}
+/*# sourceMappingURL=imagenesGaleria.css.map */

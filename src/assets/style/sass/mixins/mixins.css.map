@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAoMO,WAAW",
+    "sources": [
+        "mixins.scss",
+        "../variables/variables.scss"
+    ],
+    "names": [],
+    "file": "mixins.css"
+}

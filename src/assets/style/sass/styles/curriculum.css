@@ -1,0 +1,320 @@
+/* hovers*/
+.titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h1 {
+  font-size: calc(1.5rem + 1vw);
+  margin-top: 5rem;
+  color: #00C6EE;
+}
+
+p {
+  font-size: 1.5rem;
+  font-size: calc(0.5rem + 1vw);
+}
+
+a:visited {
+  color: black;
+  font-family: arial;
+  text-decoration: none;
+}
+
+.datos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.datos .datosPersonales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  border: 0.1rem solid #00C6EE;
+  width: 95vw;
+  height: 25vh;
+  overflow: hidden;
+  border-radius: 1rem;
+  background-color: black;
+}
+
+.datos .datosPersonales h {
+  color: #00C6EE;
+}
+
+.datos .datosPersonales .dni {
+  margin-right: 5rem;
+  height: 25vh;
+  border-radius: 1rem;
+  border: 0.1rem solid #00C6EE;
+}
+
+.datos .datosPersonales .direccion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.datos .datosPersonales .direccion p {
+  margin-top: 1.5rem;
+}
+
+.datos .interes {
+  border: 0.1rem solid #00C6EE;
+  width: 95vw;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: black;
+}
+
+.datos .interes p {
+  margin-top: 1.5rem;
+}
+
+.datos .experiencia {
+  color: white;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  border: 0.1rem solid #00C6EE;
+  height: 7vh;
+  min-width: 7vh;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  width: 95vw;
+  background-color: black;
+}
+
+.datos .experiencia .logotipo {
+  overflow: hidden;
+  height: 7vh;
+}
+
+.datos .experiencia .logotipo img {
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.datos .experiencia .logotipo .corporativo {
+  height: 100%;
+  margin-right: 1rem;
+  border-right: 0.1rem solid #00C6EE;
+}
+
+.datos .experiencia .descripcion {
+  padding: 1rem;
+  width: 100%;
+}
+
+.datos .experiencia a:link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.datos .experiencia a:visited {
+  color: #ffffff;
+}
+
+.datos .experiencia a:active {
+  color: #ffffff;
+}
+
+.datos .experiencia a:hover {
+  color: #00C6EE;
+}
+
+.datos .experiencia .titulo img {
+  height: 5vh;
+  width: 5vh;
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 1900px) {
+  .titulo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  h1 {
+    font-size: calc(1.5rem + 1vw);
+    margin-top: 5rem;
+    color: #00C6EE;
+  }
+  p {
+    font-size: 1.5rem;
+    font-size: calc(0.5rem + 1vw);
+  }
+  a:visited {
+    color: black;
+    font-family: arial;
+    text-decoration: none;
+  }
+  .datos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .datos .datosPersonales {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+    padding: 10%;
+    border: 0.1rem solid #00C6EE;
+    width: 85%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 1rem;
+    background-color: black;
+  }
+  .datos .datosPersonales h {
+    color: #00C6EE;
+  }
+  .datos .datosPersonales .dni {
+    height: auto;
+    width: 100%;
+    border-radius: 1rem;
+    border: 0.1rem solid #00C6EE;
+  }
+  .datos .datosPersonales .direccion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .datos .datosPersonales .direccion p {
+    margin-top: 1.5rem;
+  }
+  .datos .interes {
+    border: 0.1rem solid #00C6EE;
+    width: 85%;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: black;
+  }
+  .datos .interes p {
+    margin-top: 1.5rem;
+  }
+  .datos .experiencia {
+    color: white;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: 0.1rem solid #00C6EE;
+    height: auto;
+    min-width: 7vh;
+    margin: 0.5rem;
+    padding: 10%;
+    width: 85%;
+    border-radius: 1rem;
+    background-color: black;
+  }
+  .datos .experiencia .logotipo {
+    overflow: hidden;
+    height: auto;
+  }
+  .datos .experiencia .logotipo img {
+    width: 100%;
+    border-radius: 1rem;
+  }
+  .datos .experiencia .logotipo .corporativo {
+    height: 100%;
+    margin-right: 1rem;
+    border-right: none;
+  }
+  .datos .experiencia .descripcion {
+    padding: 1rem;
+    width: 100%;
+  }
+  .datos .experiencia a:link {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .datos .experiencia a:visited {
+    color: #ffffff;
+  }
+  .datos .experiencia a:active {
+    color: #ffffff;
+  }
+  .datos .experiencia a:hover {
+    color: #00C6EE;
+  }
+  .datos .experiencia .titulo img {
+    height: 5vh;
+    width: 5vh;
+    margin-right: 1rem;
+  }
+}
+/*# sourceMappingURL=curriculum.css.map */

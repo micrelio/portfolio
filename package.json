@@ -7,7 +7,7 @@
     },
     "private": true,
     "dependencies": {
-        "sass": "^1.26.8"
+        "sass": "^1.26.10"
     },
     "devDependencies": {}
 }

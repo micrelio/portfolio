@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "ACoMO,WAAW;ADlMlB,AAAA,eAAe,CAAC;EACZ,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,SAAS,EAAE,IAAI;EACf,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,OAAO,EAAE,IAAI;EACb,QAAQ,EAAE,MAAM;EAEhB,GAAG,EAAE,CAAC;EACN,KAAK,EAAE,IAAI;EAEX,gBAAgB,EAAE,OAAO;CAC5B;;AAED,AAAA,MAAM,CAAC;EACH,SAAS,EAAE,OAAO;EAClB,WAAW,EAAE,kBAAkB;EAC/B,WAAW,EAAE,IAAI;EACjB,KAAK,EAAE,KAAK;EAEZ,MAAM,EAAE,GAAG;EACX,UAAU,EAAE,IAAI;EAOhB,MAAM,EAAE,OAAO;EAGf,MAAM,EAAE,2BAA2B;CACtC",
+    "sources": [
+        "botonGaleria.scss",
+        "../mixins/mixins.scss",
+        "../variables/variables.scss",
+        "../variables/variables.scss"
+    ],
+    "names": [],
+    "file": "botonGaleria.css"
+}

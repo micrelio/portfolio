@@ -5,7 +5,7 @@ class miWebs extends HTMLElement {
     connectedCallback() {
         this.innerHTML =
             `
-               <section class="web">
+<section class="web">
     <div class="banner">
         <div class="imagen">
             <!-- <img src="../../assets/images/banners/primeros.jpg"> -->

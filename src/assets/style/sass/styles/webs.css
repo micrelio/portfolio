@@ -1,0 +1,51 @@
+/* hovers*/
+@font-face {
+  font-family: "supercell";
+  src: url(../../../fuentes/supercell-magic-webfont.ttf) format("truetype");
+}
+
+.head {
+  width: 100%;
+  position: relative;
+}
+
+.head img {
+  width: 100%;
+}
+
+.web {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30vh;
+  margin: 5rem;
+}
+
+.web .banner {
+  width: 100%;
+  border-radius: 40px;
+  border: 0.05rem solid #fff;
+  background-image: url("../../../images/banners/primeros.jpg");
+  background-color: gold;
+  background-size: cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: left, right;
+}
+
+.web .banner .imagen {
+  width: 100%;
+}
+
+.web .banner .imagen img {
+  width: 100%;
+}
+
+.web .banner .titulo h1 {
+  height: 0 auto;
+  -webkit-text-stroke: 1.5px black;
+  text-shadow: 0.1em 0.1em brown;
+  color: orange;
+  font-family: supercell;
+  font-size: 7rem;
+}
+/*# sourceMappingURL=webs.css.map */

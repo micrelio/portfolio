@@ -38,16 +38,16 @@ class miFooter extends HTMLElement {
                 &copy; 2020, Todos los derechos reservados - | Micro |.
             </div>
             <div class="footer-redes">
-                <a target="blank" class="fa fa-facebook" title="Facebook"
-                    href="https://www.facebook.com/micrelio.dev.3"></a>
-                <a target="blank" class="fa fa-twitter" href="https://twitter.com/Micrelio"> </a>
-                <a target="blank" class="fa fa-Whatsapp" href="https://wa.me/34653251983 "> </a>
-                <a target="blank" class="fa fa-Linkedin"
-                    href="https://www.linkedin.com/in/jos%C3%A9-antonio-l%C3%B3pez-baena-65833016a/"> </a>
-                <a target="blank" class="fa fa-Instagram" href="https://www.instagram.com/micrelio.dev/"> </a>
-                <a target="blank" class="fa fa-youtube-play"
-                    href="https://www.youtube.com/channel/UCMEv1Jj16ypsAXmZXOkKrQA"> </a>
-                <a target="blank" class="fa fa-github" href="https://github.com/micrelio"> </a>
+                <a target="blank" class="iconSocial" title="Facebook"
+                    href="https://www.facebook.com/micrelio.dev.3"><img style="height:100vh" src="/src/assets/images/gifs/goku.gif"></a>
+                <a target="blank" class="iconSocial" href="https://twitter.com/Micrelio"><img style="height:100vh" src="/src/assets/images/gifs/goku.gif"></a>
+                <a target="blank" class="iconSocial" href="https://wa.me/34653251983 <img style="height:100vh" src="/src/assets/images/gifs/goku.gif"></a>
+                <a target="blank" class="iconSocial"
+                    href="https://www.linkedin.com/in/jos%C3%A9-antonio-l%C3%B3pez-baena-65833016a<img style="height:100vh" src="/src/assets/images/gifs/goku.gif"></a>
+                <a target="blank" class="iconSocial" href="https://www.instagram.com/micrelio.dev/"><img style="height:100vh" src="/src/assets/images/gifs/goku.gif"></a>
+                <a target="blank" class="iconSocial"
+                    href="https://www.youtube.com/channel/UCMEv1Jj16ypsAXmZXOkKrQA"><img style="height:100vh" src="/src/assets/images/gifs/goku.gif"></a>
+                <a target="blank" class="iconSocial" href="https://github.com/micrelio"><img style="height:100vh" src="/src/assets/images/gifs/goku.gif"></a>
             </div>
         </div>
     </div>
