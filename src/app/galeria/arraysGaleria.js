@@ -28,16 +28,26 @@ var res = 0;
 var Galeria = {
         Logos: ["../../assets/images/imagenesPropias/logos/igr.jpg",
             "../../assets/images/imagenesPropias/logos/igre.png",
-            "../../assets/images/imagenesPropias/logos/john.png"
+            "../../assets/images/imagenesPropias/logos/john.png",
+            "../../assets/images/imagenesPropias/logos/hitman.png",
+            "../../assets/images/imagenesPropias/logos/titaniumFace.png",
+            "../../assets/images/imagenesPropias/logos/noticias.png",
+            "../../assets/images/imagenesPropias/logos/titanium.png",
+            "../../assets/images/imagenesPropias/logos/carPoint.png",
+            "../../assets/images/imagenesPropias/logos/mine.png",
         ],
         Posters: ["../../assets/images/imagenesPropias/posters/quiromasajista.jpg", ],
         Folletos: ["../../assets/images/imagenesPropias/folletos/igreCampana2019.jpg",
             "../../assets/images/imagenesPropias/folletos/igreAntoniaCampaña2019.jpg",
             "../../assets/images/imagenesPropias/folletos/igreCampaña2019B.jpg",
             "../../assets/images/imagenesPropias/folletos/unChalecoUnaVida.jpg",
+            "../../assets/images/imagenesPropias/folletos/micEu.jpg",
         ],
-        Postales: ["../../assets/images/imagenesPropias/postales/postalIgre.jpg",
-            "../../assets/images/imagenesPropias/postales/postalIgreCorreo.jpg",
+        Postales: ["../../assets/images/imagenesPropias/postales/igre2019.jpg",
+            "../../assets/images/imagenesPropias/postales/postalIgreCorreo19.jpg",
+            "../../assets/images/imagenesPropias/postales/aire2019.jpg",
+            "../../assets/images/imagenesPropias/postales/igre2020.jpg",
+            "../../assets/images/imagenesPropias/postales/aire2020.jpg",
 
             
 
