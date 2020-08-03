@@ -133,12 +133,23 @@ function cargarimagen(vistaimagen, posicion) {
     var render = Galeria[vistaimagen][count];
     // var siguiente = Galeria[vistaimagen][count + 1];
     console.log(long)
+
+console.log('cuenta', count)
+
+    
     if (count >= long - 1) {
         console.log('PPPPPPPPPPPPPPPPPPP')
         var siguiente = Galeria[vistaimagen][0];
         var anterior = Galeria[vistaimagen][count - 1];
         count = long;
-    } else {
+    }
+    else if (count == 0) {
+        console.log('menos')
+        var siguiente = Galeria[vistaimagen][count +1];
+        var anterior = Galeria[vistaimagen][long -1];
+        count = 0;
+    }
+     else {
         var siguiente = Galeria[vistaimagen][count + 1];
         var anterior = Galeria[vistaimagen][count - 1];
         count++;
@@ -260,9 +271,15 @@ function seleccionar() {
     // console.log(img);
 
 
+    console.log(longitud)
+    if (count >= longitud) {
+         console.log('long')
+        count = 0;
+    }
+
     // console.log(longitud)
-    // if (count >= longitud) {
-    //      console.log('pppuuuuummmm')
+    // if (longitud <= 0) {
+    //      console.log('low')
     //     count = 0;
     // }
     document.getElementById('activo').appendChild(img);
@@ -362,10 +379,11 @@ function res() {
         document.getElementById('activo').appendChild(img);
         count++;
         longitud = vista.length;
-        if (count >= longitud) {
-            // console.log('pppuuuuummmm')
-            count = 0;
-        }
+    //         console.log(longitud)
+    // if (count <= 0) {
+    //      console.log('menos')
+    //     count = 0;
+    // }
         var prox = vista[count];
         // console.log(prox)
         imgA = document.createElement('img');
