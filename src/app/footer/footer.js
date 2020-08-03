@@ -33,22 +33,23 @@ class miFooter extends HTMLElement {
         </div>
     </div>
     <div class="footer-copy-redes">
-        <div class="main-copy-redes">
-            <div class="footer-copy">
+        
+            
+            <div class="propiedad">
+                <div class="footer-copy">
                 &copy; 2020, Todos los derechos reservados - | Micro |.
-            </div>
-            <div class="footer-redes">
-                <a target="blank" class="iconSocial" title="Facebook"
-                    href="https://www.facebook.com/micrelio.dev.3"><img style="height:100vh" src="/src/assets/images/gifs/goku.gif"></a>
-                <a target="blank" class="iconSocial" href="https://twitter.com/Micrelio"><img style="height:100vh" src="/src/assets/images/gifs/goku.gif"></a>
-                <a target="blank" class="iconSocial" href="https://wa.me/34653251983 <img style="height:100vh" src="/src/assets/images/gifs/goku.gif"></a>
-                <a target="blank" class="iconSocial"
-                    href="https://www.linkedin.com/in/jos%C3%A9-antonio-l%C3%B3pez-baena-65833016a<img style="height:100vh" src="/src/assets/images/gifs/goku.gif"></a>
-                <a target="blank" class="iconSocial" href="https://www.instagram.com/micrelio.dev/"><img style="height:100vh" src="/src/assets/images/gifs/goku.gif"></a>
-                <a target="blank" class="iconSocial"
-                    href="https://www.youtube.com/channel/UCMEv1Jj16ypsAXmZXOkKrQA"><img style="height:100vh" src="/src/assets/images/gifs/goku.gif"></a>
-                <a target="blank" class="iconSocial" href="https://github.com/micrelio"><img style="height:100vh" src="/src/assets/images/gifs/goku.gif"></a>
-            </div>
+                </div>
+
+                <div class="socialmedia">
+               <a target="blank" class="iconSocial" title="Facebook" href="https://www.facebook.com/micro6"><img style="" src="/src/assets/images/icons/social/facebook.png"></a>
+              <a target="blank" class="iconSocial" href="https://twitter.com/Micrelio"><img style="" src="/src/assets/images/icons/social/twitter.png"></a>
+         <a target="blank" class="iconSocial" href="https://wa.me/34653251983"><img style="" src="/src/assets/images/icons/social/whatsapp.png"></a>
+               <a target="blank" class="iconSocial" href="https://www.linkedin.com/in/jos%C3%A9-antonio-l%C3%B3pez-baena-65833016a/"><img style="" src="/src/assets/images/icons/social/linkedin.png"></a>
+                <a target="blank" class="iconSocial" href="https://www.instagram.com/micrelio.dev/"><img style="" src="/src/assets/images/icons/social/instagram.png"></a>
+               <a target="blank" class="iconSocial" href="https://www.youtube.com/channel/UCMEv1Jj16ypsAXmZXOkKrQA"><img style="" src="/src/assets/images/icons/social/youtube.png"></a>
+                <a target="blank" class="iconSocial" href="https://github.com/micrelio"><img style="" src="/src/assets/images/icons/social/github.png"></a>
+                </div>
+
         </div>
     </div>
 </footer>
