@@ -121,6 +121,7 @@ function cargar(preVista) {
 }
 //---carga al pinchar imagen---
 function cargarimagen(vistaimagen, posicion) {
+    console.log('chupaaaaaaaaaaaaaaaaaaaaaaa')
     // if (typeof marcha !== "undefined") {
     //     clearInterval(marcha);
     // }
@@ -147,7 +148,7 @@ console.log('cuenta', count)
         console.log('menos')
         var siguiente = Galeria[vistaimagen][count +1];
         var anterior = Galeria[vistaimagen][long -1];
-        count = 0;
+        count --;
     }
      else {
         var siguiente = Galeria[vistaimagen][count + 1];
@@ -186,6 +187,10 @@ console.log('cuenta', count)
         console.log('pppuuuuummmm')
         count = 0;
     }
+    // if (count <= 0) {
+    //     console.log('mennnnnn')
+    //     count = long ;
+    // }
     document.getElementById('activo').appendChild(img);
     document.getElementById('activoS').appendChild(imgS);
     document.getElementById('activoA').appendChild(imgA);
@@ -194,57 +199,64 @@ console.log('cuenta', count)
 
 
 
+//COMENTADO PERO NO RECUERDO SI ESTÁ FUNCIONANDO O YA TIENE CAMBIO
+//----------------------------------------------------------------
+
 
 //--pinchando imagen galeria
-function cargarImgGaleria(vistaT, imagen) {
-    console.log('EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE')
-    vista = vistaT;
-    console.log('vista', vista)
-    document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
-    console.log(vistaT.length)
-    count = imagen;
-    console.log(count)
-    var longitud = vistaT.length;
-    var render = vistaT[count];
-    var siguiente = vistaT[count + 1];
-    var anterior = vistaT[longitud - 1];
-    console.log(longitud)
-    console.log(render)
-    console.log(siguiente)
-    console.log(anterior)
-    img = document.createElement('img');
-    imgS = document.createElement('img');
-    imgA = document.createElement('img');
+// function cargarImgGaleria(vistaT, imagen) {
+//     console.log('tititititititittitiititttiititititi')
+//     console.log('EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE')
+//     vista = vistaT;
+//     console.log('vista', vista)
+//     document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
+//     console.log(vistaT.length)
+//     count = imagen;
+//     console.log(count)
+//     var longitud = vistaT.length;
+//     var render = vistaT[count];
+//     var siguiente = vistaT[count + 1];
+//     var anterior = vistaT[longitud - 1];
+//     console.log(longitud)
+//     console.log(render)
+//     console.log(siguiente)
+//     console.log(anterior)
+//     img = document.createElement('img');
+//     imgS = document.createElement('img');
+//     imgA = document.createElement('img');
 
-    imgS.setAttribute("src", siguiente);
-    imgS.setAttribute("id", "imgS");
-    imgS.setAttribute("class", "imagen");
-    img.setAttribute("src", render);
-    img.setAttribute("id", "img");
-    img.setAttribute("class", "imagen");
-    imgS.setAttribute("src", siguiente);
-    imgS.setAttribute("id", "imgS");
-    imgS.setAttribute("class", "imagen");
-    imgA.setAttribute("src", anterior);
-    imgA.setAttribute("id", "imgA");
-    imgA.setAttribute("class", "imagen");
-    //  document.getElementById('activoS').appendChild(imgS);
-    console.log('hola')
-    console.log(img);
+//     imgS.setAttribute("src", siguiente);
+//     imgS.setAttribute("id", "imgS");
+//     imgS.setAttribute("class", "imagen");
+//     img.setAttribute("src", render);
+//     img.setAttribute("id", "img");
+//     img.setAttribute("class", "imagen");
+//     imgS.setAttribute("src", siguiente);
+//     imgS.setAttribute("id", "imgS");
+//     imgS.setAttribute("class", "imagen");
+//     imgA.setAttribute("src", anterior);
+//     imgA.setAttribute("id", "imgA");
+//     imgA.setAttribute("class", "imagen");
+//     //  document.getElementById('activoS').appendChild(imgS);
+//     console.log('hola')
+//     console.log(img);
 
 
-    console.log(longitud)
-    if (count >= longitud) {
-        console.log('pppuuuuummmm')
-        count = 0;
-    }
-    document.getElementById('activo').appendChild(img);
-    document.getElementById('activoS').appendChild(imgS);
-    document.getElementById('activoA').appendChild(imgA);
-    count++;
-}
+//     console.log(longitud)
+//     if (count >= longitud) {
+//         console.log('eeee')
+//         count = 0;
+//     }
+//     document.getElementById('activo').appendChild(img);
+//     document.getElementById('activoS').appendChild(imgS);
+//     document.getElementById('activoA').appendChild(imgA);
+//     count++;
+// }
 
+
+//----- SELECCIONADO DESDE MENÚ SECUNDARIO
 function seleccionar() {
+    console.log('SUPERññññññññññññññññññññññññññññññññññññññññññññññññ')
     // console.log(img)
     var longitud = vista.length;
     var render = vista[count];
@@ -273,9 +285,11 @@ function seleccionar() {
 
     console.log(longitud)
     if (count >= longitud) {
-         console.log('long')
+         console.log('lannnnnn')
         count = 0;
     }
+    
+   
 
     // console.log(longitud)
     // if (longitud <= 0) {
@@ -286,6 +300,9 @@ function seleccionar() {
     document.getElementById('activoS').appendChild(imgS);
     document.getElementById('activoA').appendChild(imgA);
     count++;
+
+
+ 
     //  }
     // console.log('oododododo')
     // vista1 = [].concat.apply([], tipo);
@@ -315,7 +332,18 @@ function seleccionar() {
     //   }
 }
 
+
+
+
+
+
+
+
+
 function sum() {
+    if(vista.length !=1){
+        console.log('sisisisisisisisi')
+    }
 
     setTimeout(() => {
 
@@ -340,10 +368,13 @@ function sum() {
         document.getElementById('activo').appendChild(img);
         count++;
         longitud = vista.length;
+        console.log(longitud)
         if (count >= longitud) {
             // console.log('pppuuuuummmm')
             count = 0;
+            console.log('pppuuuuummmm', longitud)
         }
+        
         var prox = vista[count];
         // console.log(prox)
         imgS = document.createElement('img');
@@ -379,6 +410,10 @@ function res() {
         document.getElementById('activo').appendChild(img);
         count++;
         longitud = vista.length;
+        if (count >= longitud) {
+            // console.log('pppuuuuummmm')
+            count = 0;
+        }
     //         console.log(longitud)
     // if (count <= 0) {
     //      console.log('menos')
