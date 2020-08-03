@@ -260,11 +260,11 @@ function seleccionar() {
     // console.log(img);
 
 
-    console.log(longitud)
-    if (count >= longitud) {
-        // console.log('pppuuuuummmm')
-        count = 0;
-    }
+    // console.log(longitud)
+    // if (count >= longitud) {
+    //      console.log('pppuuuuummmm')
+    //     count = 0;
+    // }
     document.getElementById('activo').appendChild(img);
     document.getElementById('activoS').appendChild(imgS);
     document.getElementById('activoA').appendChild(imgA);

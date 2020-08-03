@@ -37,7 +37,10 @@ var Galeria = {
             "../../assets/images/imagenesPropias/folletos/unChalecoUnaVida.jpg",
         ],
         Postales: ["../../assets/images/imagenesPropias/postales/postalIgre.jpg",
-            "../../assets/images/postales/imagenesPropias/postalIgreCorreo.jpg",
+            "../../assets/images/imagenesPropias/postales/postalIgreCorreo.jpg",
+
+            
+
         ],
         Pngs: ["../..//assets/images/imagenesPropias/png/antonia.png",
             "../../assets/images/imagenesPropias/png/banderaEuropaDesvanecida.png",
