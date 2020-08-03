@@ -8,7 +8,7 @@ class miBotonera extends HTMLElement {
             this.innerHTML =
                 `
               <section id="botonesGaleria" class="botonesGaleria" >
-              <button class="boton" value="Galeria"  >Galeria</button>
+              <button class="boton" value="Galeria"  >Todas</button>
                </section>
               
                   `;

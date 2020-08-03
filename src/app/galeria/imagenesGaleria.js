@@ -91,7 +91,7 @@ function cargaTodo() {
         }
     }
 
-    tipo = 'Galeria';
+    tipo = 'Todas';
     var tituloT = document.createElement('h');
     var hrT = document.createElement('hr');
     var t = document.createTextNode(tipo);

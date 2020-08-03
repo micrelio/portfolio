@@ -86,7 +86,7 @@ function cargar(preVista) {
 
     document.getElementById("content").innerHTML = "<mi-visor></mi-visor>";
     switch (preVista) {
-        case 'Galeria':
+        case 'Todas':
             //Enviamos un solo array
             //creamos vista como variable global
             // console.log(todas[1])
