@@ -5,7 +5,7 @@
   width: 100%;
 }
 .stick .nav {
-  border-bottom: 0.05rem solid #fff;
+  border-bottom: 0.05rem solid #00C6EE;
   box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
   background-color: rgba(0, 0, 0, 0.438);
 }
@@ -23,7 +23,7 @@
   margin-top: calc(10px + 1vw);
   margin-left: calc(10px + 1vw);
   border-radius: 75%;
-  border: 0.05rem solid #fff;
+  border: 0.05rem solid #00C6EE;
   width: calc(3vw + 3rem);
   box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
 }
@@ -47,10 +47,10 @@
 }
 .stick .nav .navbar .menu .links .nav-link {
   margin: 0 0.2rem 0 0.2rem;
-  color: gray;
+  color: #00C6EE;
   padding: 1.6rem;
   border-radius: 0.9rem;
-  border-color: gray;
+  border-color: #00C6EE;
   border-width: 0.05rem;
   background-color: rgba(0, 0, 0, 0.582);
   cursor: pointer;
