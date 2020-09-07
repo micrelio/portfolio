@@ -16,9 +16,14 @@
     bottom: 0;
     width: 100%;
     font-family: Raleway;
+    border-top: 0.1rem solid #00c6ee;
+
+    background: {
+        color: black;
+    }
     .footer-container {
       width: 100%;
-      background: #272727;
+      background: black;
       color: #fff;
       .footer-main {
         width: 98%;
@@ -28,52 +33,50 @@
         display: flex;
         flex-wrap: wrap;
         .footer-columna {
-            width: calc(100% / 3);
-            text-align: justify;
-          }
-        
-          .footer-columna:nth-child(2) {
-            padding: 0 2rem;
-          }
-        
-          .footer-columna h3 {
-            font-size: 2rem;
-            color: #00c6ee;
-            margin-bottom: 2rem;
-          }
-          .footer-columna p {
-            font-size: 2rem;
-            margin-bottom: 2rem;
-            font-size: 1rem;
-          }
-        
-          .footer-columna input[type="email"] {
-            border: none;
-            width: 70%;
-            border: 0.1rem solid #00c6ee;
-            font-size: 1rem;
-            padding: 1rem;
-            font-family: Raleway;
-          }
-        
-          .footer-columna input[type="submit"] {
-            border: none;
-            background: #00c6ee;
-            color: #fff;
-            padding: 1rem 4rem;
-            font-size: 1rem;
-            margin-top: 1rem;
-            cursor: pointer;
-            font-family: Raleway;
-          }
-        
-          .footer-columna span p {
-            display: inline-block;
-            margin-left: 0.5rem;
-            margin-bottom: 1.5rem;
-            font-family: Raleway;
-          }
-        
+          width: calc(100% / 3);
+          text-align: justify;
+        }
+
+        .footer-columna:nth-child(2) {
+          padding: 0 2rem;
+        }
+
+        .footer-columna h3 {
+          font-size: 4rem;
+          color: #00c6ee;
+          margin-bottom: 2rem;
+        }
+        .footer-columna p {
+          font-size: 1.7rem;
+          margin-bottom: 2rem;
+        }
+
+        .footer-columna input[type="email"] {
+          border: none;
+          width: 70%;
+          border: 0.1rem solid #00c6ee;
+          font-size: 1.7rem;
+          padding: 1rem;
+          font-family: Raleway;
+        }
+
+        .footer-columna input[type="submit"] {
+          border: none;
+          background: #00c6ee;
+          color: #fff;
+          padding: 1rem 4rem;
+          font-size: 1.7rem;
+          margin-top: 1rem;
+          cursor: pointer;
+          font-family: Raleway;
+        }
+
+        .footer-columna span p {
+          display: inline-block;
+          margin-left: 0.5rem;
+          margin-bottom: 1.5rem;
+          font-family: Raleway;
+        }
       }
     }
   }
@@ -110,13 +113,40 @@
     padding: 1.2rem 2rem;
   }
 
-  
-
-  
   .footer-copy-redes {
+    display: flex;
+    // flex-direction: column;
+    //justify-content: center;
+    // align-items: center;
+    padding: 1.5rem;
+    //
     width: 100%;
     background: #000;
-    border-top: 0.3rem solid #fff;
+    border-top: 0.3rem solid #00c6ee;
+    .propiedad {
+      width: 100%;
+      .footer-copy {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.7rem;
+        width: 100%;
+        color: #fff;
+      }
+      .socialmedia {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0rem;
+        .iconSocial {
+          img {
+            height:4rem;
+            margin: 0.2rem;
+          }
+          //width: 1rem;
+        }
+      }
+    }
   }
 
   .main-copy-redes {
@@ -131,12 +161,7 @@
     align-items: center;
   }
 
-  .main-copy-redes .footer-copy {
-    width: 70%;
-    color: #fff;
-  }
-
-  .main-copy-redes .footer-redes {
+  .main-copy-redes .main-copy-redes .footer-redes {
     width: 30%;
     display: flex;
     flex-wrap: wrap;

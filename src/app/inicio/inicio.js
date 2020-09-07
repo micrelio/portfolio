@@ -5,38 +5,38 @@ class miInicio extends HTMLElement {
     connectedCallback() {
         this.innerHTML =
             `
-                <section class="primera">
-        <h>Presentacion</h>
+    <section class="primera">
+        <h1>Presentacion</h1>
              <div>
             <img src="../../assets/images/mountain2.jpg">
         </div>
     </section>
     <section class="primera">
-        <h>Webs</h>
+        <h1>Webs</h1>
         <div>
             <img src="../../assets/images/mountain2.jpg">
         </div>
     </section>
     <section class="primera">
-        <h>Inicio</h>
+        <h1>Inicio</h1>
         <div>
             <img src="../../assets/images/mountain2.jpg">
         </div>
     </section>
     <section class="primera">
-        <h>Videos</h>
+        <h1>Videos</h1>
         <div>
             <img src="../../assets/images/mountain2.jpg">
         </div>
     </section>
     <section class="primera">
-        <h>Curriculum</h>
+        <h1>Curriculum</h1>
         <div>
             <img src="../../assets/images/mountain2.jpg">
         </div>
     </section>
     <section class="primera">
-        <h>Contacto</h>
+        <h1>Contacto</h1>
         <div>
             <img src="../../assets/images/mountain2.jpg">
         </div>
