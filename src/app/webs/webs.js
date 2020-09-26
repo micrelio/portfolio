@@ -27,6 +27,25 @@ class miWebs extends HTMLElement {
         <p>Creada con código por medio de una plantilla Bootstrap, para la comunidad de jugadores Titanium Gamers durante el confinamiernto 2020.</p>
     </div>
    
+    <div class="tiendaTitanium">
+       
+    <div class="titulo">
+        <a target="blank" href="https://titaniumgamers.com/tienda/samp/">
+            <h1>Tienda Titanium Gamers</h1>
+        </a>
+        </div>
+        <p>Creada con código por medio de una plantilla Bootstrap, para la comunidad de jugadores Titanium Gamers durante el confinamiernto 2020.</p>
+    </div>
+
+    <div class="tiendaTitanium">
+       
+    <div class="titulo">
+        <a target="blank" href="https://titaniumgamers.com/tienda/samp/">
+            <h1>Tienda Titanium Gamers</h1>
+        </a>
+        </div>
+        <p>Creada con código por medio de una plantilla Bootstrap, para la comunidad de jugadores Titanium Gamers durante el confinamiernto 2020.</p>
+    </div>
 </section>
 <section class="web">
     <div class="banner">
