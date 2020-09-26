@@ -20,7 +20,7 @@ class miWebs extends HTMLElement {
     <div class="tiendaTitanium">
        
     <div class="titulo">
-        <a target="blank" href=" https://titaniumgamers.com/">
+        <a target="blank" href="https://titaniumgamers.com/tienda/samp/">
             <h1>Tienda Titanium Gamers</h1>
         </a>
         </div>
