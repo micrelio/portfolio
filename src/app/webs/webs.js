@@ -7,15 +7,14 @@ class miWebs extends HTMLElement {
             `
             <section class="web">
     <div class="titanium">
-        <div class="imagen">
-            <!-- <img src="../../assets/images/imagenesPropias/folletos/bannerTitanium.jpg"> -->
-        </div>
+       
         <div class="titulo">
             <a target="blank" href=" https://titaniumgamers.com/">
                 <h1>Titanium Gamers</h1>
-                <p></p>
             </a>
-        </div>
+            </div>
+            <p>Creada con WordPress, tema DIVI para la comunidad propia de jugadores Titanium Gamers, creada durante el confinamiernto 2020.</p>
+        
     </div>
     
     <div class="tiendaTitanium">
