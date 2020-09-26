@@ -26,7 +26,10 @@
 //--webs
 @mixin webs {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
+
   height: 20vw;
   margin: 5rem;
   background: {
