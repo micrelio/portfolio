@@ -7,9 +7,9 @@
 }
 
 @font-face {
-    font-family: "titanium";
-    src: url(../../../fuentes/pricedow.ttf) format("truetype");
-  }
+  font-family: "titanium";
+  src: url(../../../fuentes/pricedow.ttf) format("truetype");
+}
 
 .head {
   @include head;
@@ -24,10 +24,9 @@
       position: left, right;
     }
     .titulo {
-        a{
-            text-decoration:none;
-
-        }
+      a {
+        text-decoration: none;
+      }
       @include titulo;
       h1 {
         margin-top: 0px;
@@ -39,21 +38,16 @@
         // color: #e3e4e5;
         font: {
           family: titanium;
-          size: 6rem;
-        }
-        background: {
-          //color: purple;
+          size: 4vw;
         }
       }
-          }
-          p {
-            font-size: 2rem;
-            color: black;
-            -webkit-text-fill-color: #e3e4e5;
-    -webkit-text-stroke: 0.1rem black;
-            font-weight:bold;
-    
-          }
+    }
+    p {
+      font-size: 1.7vw;
+      color: black;
+      -webkit-text-fill-color: black;
+      font-weight: bold;
+    }
   }
 }
 
