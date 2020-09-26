@@ -16,7 +16,7 @@
     bottom: 0;
     width: 100%;
     font-family: Raleway;
-    border-top: 0.1rem solid #00c6ee;
+    border-top: 0.1rem solid $azul;
 
     background: {
         color: black;
@@ -43,7 +43,7 @@
 
         .footer-columna h3 {
           font-size: 4rem;
-          color: #00c6ee;
+          color: $azul;
           margin-bottom: 2rem;
         }
         .footer-columna p {
@@ -54,7 +54,7 @@
         .footer-columna input[type="email"] {
           border: none;
           width: 70%;
-          border: 0.1rem solid #00c6ee;
+          border: 0.1rem solid $azul;
           font-size: 1.7rem;
           padding: 1rem;
           font-family: Raleway;
@@ -62,7 +62,7 @@
 
         .footer-columna input[type="submit"] {
           border: none;
-          background: #00c6ee;
+          background: $azul;
           color: #fff;
           padding: 1rem 4rem;
           font-size: 1.7rem;
@@ -96,7 +96,7 @@
   }
 
   .info-main h3 {
-    color: #00c6ee;
+    color: $azul;
     font-size: 4rem;
     text-align: center;
   }
@@ -122,7 +122,7 @@
     //
     width: 100%;
     background: #000;
-    border-top: 0.3rem solid #00c6ee;
+    border-top: 0.3rem solid $azul;
     .propiedad {
       width: 100%;
       .footer-copy {

@@ -10,7 +10,7 @@
   bottom: 0;
   width: 100%;
   font-family: Raleway;
-  border-top: 0.1rem solid #00c6ee;
+  border-top: 0.1rem solid #00C6EE;
   background-color: black;
 }
 * footer .footer-container {
@@ -35,7 +35,7 @@
 }
 * footer .footer-container .footer-main .footer-columna h3 {
   font-size: 4rem;
-  color: #00c6ee;
+  color: #00C6EE;
   margin-bottom: 2rem;
 }
 * footer .footer-container .footer-main .footer-columna p {
@@ -45,14 +45,14 @@
 * footer .footer-container .footer-main .footer-columna input[type=email] {
   border: none;
   width: 70%;
-  border: 0.1rem solid #00c6ee;
+  border: 0.1rem solid #00C6EE;
   font-size: 1.7rem;
   padding: 1rem;
   font-family: Raleway;
 }
 * footer .footer-container .footer-main .footer-columna input[type=submit] {
   border: none;
-  background: #00c6ee;
+  background: #00C6EE;
   color: #fff;
   padding: 1rem 4rem;
   font-size: 1.7rem;
@@ -78,7 +78,7 @@
   padding: 3rem 20rem;
 }
 * .info-main h3 {
-  color: #00c6ee;
+  color: #00C6EE;
   font-size: 4rem;
   text-align: center;
 }
@@ -97,7 +97,7 @@
   padding: 1.5rem;
   width: 100%;
   background: #000;
-  border-top: 0.3rem solid #00c6ee;
+  border-top: 0.3rem solid #00C6EE;
 }
 * .footer-copy-redes .propiedad {
   width: 100%;

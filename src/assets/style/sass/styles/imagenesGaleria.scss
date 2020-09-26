@@ -18,7 +18,7 @@
 }
 
 h {
-    color: #00C6EE;
+    color: $azul;
     font: {
         size: 2.5rem;
     }
@@ -35,7 +35,7 @@ h {
 
 .raya {
     border: 0 none #000000;
-    border-top: 1px solid #00C6EE;
+    border-top: 1px solid $azul;
     height: 1px;
     margin: 5px 0;
     display: block;
