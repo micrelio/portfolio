@@ -23,15 +23,14 @@
     //   color: yellow;
   }
 }
-//--webs
+
+//--webs-----------------------------------------------------------------------
 @mixin webs {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-
-  height: 20vw;
-  margin: 5rem;
+  //height: 20vw;
   background: {
     //  color: purple;
     size: cover;
@@ -40,16 +39,15 @@
 @mixin recuadro {
   padding: 1.5rem;
   width: 40%;
-  border-radius: 40px;
+  border-radius: 25px;
   border: 0.05rem solid $azul;
+  margin: 5rem;
 }
 @mixin titulo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-
 
 //--GALERIA
 @mixin botonGalery {
