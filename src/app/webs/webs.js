@@ -48,7 +48,7 @@ class miWebs extends HTMLElement {
             </a>
         </div>
         <p>
-        Diseñada como proyecto fin de curso ASIR durante el curso 2017-2018, a la comunidad de gamers &#xf006;<a target="blank" href="https://primeroscoc.titaniumgamers.com/">Primeros</a>&#xf006; jugadores de Clash of Clans.<br>
+        Diseñada como proyecto fin de curso ASIR durante el curso 2017-2018, a la comunidad de gamers <a target="blank" href="https://primeroscoc.titaniumgamers.com/">&#xf006;Primeros&#xf006;</a> jugadores de Clash of Clans.<br>
         API que sincroniza con el servidor y muestra los datos de los equipos en tiempo real<br>
         Lenguajes usados:</p>
         <p>
@@ -66,8 +66,8 @@ class miWebs extends HTMLElement {
             </a>
         </div>
         <p>
-        Esta página sincroniza con la API Clash of Clans, lee una hoja JSON, descarga los datos y muestra con imágenes imitando la estructura real del juego, con búsqueda y selección de equipos por medio de formulario.<br>
-        Datos cedidos por Supercell.<br> 
+        Esta página sincroniza con la <a target="blank" href="https://developer.clashofclans.com/#/"> API Clash of Clans</a>, lee una hoja JSON, descarga los datos y muestra con imágenes imitando la estructura real del juego, con búsqueda y selección de equipos por medio de formulario.<br>
+        Datos cedidos por <a target="blank" href="https://supercell.com/en/">Supercell</a>.<br> 
         Lenguajes usados:</p>
         <p>
         <i class="fa fa-check-circle verde"></i> HTML<br>
