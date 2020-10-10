@@ -4,6 +4,10 @@
   src: url(../../../fuentes/supercell-magic-webfont.ttf) format("truetype");
 }
 @font-face {
+  font-family: "FontAwesome";
+  src: url("fontawesome-webfont.woff");
+}
+@font-face {
   font-family: "titanium";
   src: url(../../../fuentes/pricedow.ttf) format("truetype");
 }
@@ -25,7 +29,7 @@
 .web .guerrasonline,
 .web .tiendaTitanium,
 .web .titanium {
-  width: 40%;
+  width: 80%;
   border-radius: 25px;
   border: 0.05rem solid #00C6EE;
   margin: 5rem;
@@ -39,7 +43,7 @@
   background-position: center;
   background-size: cover;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   border-radius: 25px 25px 0px 0px;
   background-size: cover;
@@ -67,6 +71,9 @@
 .web .guerrasonline p,
 .web .tiendaTitanium p,
 .web .titanium p {
+  font-family: "FontAwesome", sans-serif;
+  font-size: 200%;
+  padding: 1.5rem;
   font-size: 1.7vw;
   color: black;
   -webkit-text-fill-color: white;
@@ -100,7 +107,7 @@
   -webkit-text-stroke: 0.05rem black;
   text-shadow: 0.1em 0.1em brown;
   font-family: supercell;
-  font-size: 2vw;
+  font-size: 2.5vw;
 }
 .web .primeroscoc .titulo p,
 .web .guerrasonline .titulo p {
@@ -114,6 +121,9 @@
   background-image: url("../../../images/banners/guerrasonline.jpg");
   background-position: center;
   background-size: cover;
+}
+.web .guerrasonline .titulo h1 {
+  -webkit-text-fill-color: gold;
 }
 
 /*# sourceMappingURL=webs.css.map */

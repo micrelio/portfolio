@@ -3,6 +3,10 @@
 @font-face {
   font-family: "supercell";
   src: url(../../../fuentes/supercell-magic-webfont.ttf) format("truetype");
+  }
+@font-face {
+  font-family: "FontAwesome";
+  src: url("fontawesome-webfont.woff");
 }
 @font-face {
   font-family: "titanium";
@@ -49,6 +53,10 @@
       }
     }
     p {
+      font-family: "FontAwesome", sans-serif;
+      font-size: 200%;
+      padding: 1.5rem;
+
       font-size: 1.7vw;
       color: black;
       -webkit-text-fill-color: white;
@@ -91,7 +99,7 @@
         text-shadow: 0.1em 0.1em brown;
         font: {
           family: supercell;
-          size: 2vw;
+          size: 2.5vw;
         }
       }
       p {
@@ -109,6 +117,9 @@
         image: url("../../../images/banners/guerrasonline.jpg");
         position: center;
         size: cover;
+      }
+      h1 {
+        -webkit-text-fill-color: gold;
       }
     }
   }

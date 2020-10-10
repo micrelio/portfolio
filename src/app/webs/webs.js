@@ -1,10 +1,9 @@
 class miWebs extends HTMLElement {
-    constructor() {
-        super();
-    }
-    connectedCallback() {
-        this.innerHTML =
-            `
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    this.innerHTML = `
 <section class="web">
     <div class="titanium">
         <div class="titulo">
@@ -13,7 +12,9 @@ class miWebs extends HTMLElement {
             <h1>Titanium Gamers</h1>
             </a>
         </div>
-        <p>Creada con WordPress, tema DIVI para la comunidad propia de jugadores Titanium Gamers durante el confinamiernto 2020.</p>
+        <div>
+            <p>Creada con WordPress, tema DIVI para la comunidad propia de jugadores Titanium Gamers durante el confinamiernto 2020.</p>
+        </div>
     </div>
     <div class="tiendaTitanium">
         <div class="titulo">
@@ -31,8 +32,14 @@ class miWebs extends HTMLElement {
                 <h1>Clash of Clans</h1>
             </a>
         </div>
-        <p>Creada con código por medio de una plantilla Bootstrap, para la comunidad de jugadores Titanium Gamers durante el confinamiernto 2020.</p>
-    </div>
+        <p>
+        Creada como proyecto fin de curso ASIR durante el curso 2017-2018, a la comunidad de jugadores Primeros para el juego Clash of Clans.<br>
+        API que sincroniza con el servidor y muestra los datos de los equipos en tiempo real. 
+        Lenguajes usados:<br>
+        <p><i class="fa fa-check-circle verde"></i> HTML<br>
+        <i class="fa fa-check-circle verde"></i> SASS<br>
+        <i class="fa fa-check-circle verde"></i> PHP</p><br>
+        </div>
     <div class="guerrasonline">
         <div class="titulo">
             <a target="blank" href="https://clashofclansguerrasonline.titaniumgamers.com/">
@@ -46,6 +53,6 @@ class miWebs extends HTMLElement {
 
 
          `;
-    }
+  }
 }
-customElements.define('mi-webs', miWebs);
+customElements.define("mi-webs", miWebs);
