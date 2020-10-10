@@ -29,10 +29,10 @@
 .web .guerrasonline,
 .web .tiendaTitanium,
 .web .titanium {
-  width: 80%;
+  width: 95%;
   border-radius: 25px;
   border: 0.05rem solid #00C6EE;
-  margin: 5rem;
+  margin-top: 5rem;
   background-color: #000;
 }
 .web .primeroscoc .titulo,

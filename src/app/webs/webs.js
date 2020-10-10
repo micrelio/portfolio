@@ -24,10 +24,10 @@ class miWebs extends HTMLElement {
                 <h1>Titanium Gamers</h1>
             </a>
         </div>
-        <p>Creada con código por medio de una plantilla Bootstrap, para la comunidad de jugadores Titanium Gamers durante el confinamiernto 2020.<br>
+        <p>Tienda de donaciones PayPal creada durante el verano 2020 para la comunidad propia de jugadores Titanium Gamers.<br>
         Lenguajes usados:<br>
         <i class="fa fa-check-circle verde"></i> HTML<br>
-        <i class="fa fa-check-circle verde"></i> SCS<br>
+        <i class="fa fa-check-circle verde"></i> CSS<br>
         <i class="fa fa-check-circle verde"></i> JAVASCRIPT
         </p>
     </div>
@@ -44,7 +44,7 @@ class miWebs extends HTMLElement {
         Lenguajes usados:<br>
         
         <i class="fa fa-check-circle verde"></i> HTML<br>
-        <i class="fa fa-check-circle verde"></i> SCS<br>
+        <i class="fa fa-check-circle verde"></i> CSS<br>
         <i class="fa fa-check-circle verde"></i> PHP
         </p>
         </div>
@@ -60,7 +60,7 @@ class miWebs extends HTMLElement {
         Cedida por Supercell.<br> 
         Lenguajes usados:<br>
         <i class="fa fa-check-circle verde"></i> HTML<br>
-        <i class="fa fa-check-circle verde"></i> SCS<br>
+        <i class="fa fa-check-circle verde"></i> CSS<br>
         <i class="fa fa-check-circle verde"></i> PHP
         </p>
     </div>

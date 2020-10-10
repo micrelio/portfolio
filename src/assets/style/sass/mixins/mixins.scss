@@ -35,10 +35,10 @@
 }
 @mixin recuadro {
  // padding: 1.5rem;
-  width: 80%;
+  width: 95%;
   border-radius: 25px;
   border: 0.05rem solid $azul;
-  margin: 5rem;
+  margin-top: 5rem;
 }
 @mixin titulo {
   display: flex;
