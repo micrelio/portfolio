@@ -31,7 +31,7 @@ class miWebs extends HTMLElement {
                 <h1>Titanium Gamers</h1>
             </a>
         </div>
-        <p>Tienda de donaciones PayPal creada durante el verano 2020 para la comunidad propia de jugadores <a target="blank" href="https://titaniumgamers.com/">Titanium Gamers</a>.<br>
+        <p>Tienda de donaciones PayPal creada durante el verano 2020 para la comunidad propia de jugadores <a target="blank" href="https://tiendasamp.titaniumgamers.com/">Titanium Gamers</a>.<br>
         Estilos usados:<br>
         <i class="fa fa-check-circle verde">
         </i> Bootstrap </p>
@@ -41,7 +41,7 @@ class miWebs extends HTMLElement {
             <i class="fa fa-check-circle verde"></i> JAVASCRIPT
         </p>
         <p>
-            <a class="visitar" target="blank" href="https://titaniumgamers.com/">Visitar
+            <a class="visitar" target="blank" href="https://tiendasamp.titaniumgamers.com/">Visitar
             <i class="fas fa-arrow-alt-circle-right"></i></a>
         </p><br>
     </div>
@@ -62,7 +62,7 @@ class miWebs extends HTMLElement {
             <i class="fa fa-check-circle verde"></i> PHP
         </p>
         <p>
-            <a  class="visitar" target="blank" href="https://titaniumgamers.com/">Visitar
+            <a  class="visitar" target="blank" href="https://primeroscoc.titaniumgamers.com/">Visitar
             <i class="fas fa-arrow-alt-circle-right"></i></a>
         </p><br>
     </div>
@@ -83,7 +83,7 @@ class miWebs extends HTMLElement {
             <i class="fa fa-check-circle verde"></i> PHP
         </p>
         <p>
-            <a class="visitar" target="blank" href="https://titaniumgamers.com/">Visitar
+            <a class="visitar" target="blank" href="https://clashofclansguerrasonline.titaniumgamers.com/">Visitar
             <i class="fas fa-arrow-alt-circle-right"></i></a>
         </p><br>
     </div>
