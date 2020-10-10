@@ -102,8 +102,9 @@
 .web .tiendaTitanium .visitar,
 .web .titanium .visitar,
 .web .portfolio .visitar {
-  color: lightskyblue;
+  color: #00C6EE;
   font-size: 3rem;
+  margin-left: 0px;
 }
 .web .tiendaTitanium .titulo {
   background-image: url("../../../images/banners/TitaniumRoleplay.png");
