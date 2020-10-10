@@ -13,10 +13,14 @@ class miWebs extends HTMLElement {
             </a>
         </div>
         <div>
-            <p>Creada con WordPress tema DIVI (adquirida licencia desarrollador), para la comunidad propia de jugadores Titanium Gamers durante el confinamiento 2020.<br>
-            </p>
+            <p>Diseñada con WordPress tema DIVI (adquirida licencia desarrollador), para la comunidad propia de jugadores <a target="blank" href="https://titaniumgamers.com/">Titanium Gamers</a> durante el confinamiento 2020.<br>
+            Creada con:</p>
+            <p>
+        <i class="fa fa-check-circle verde"></i> WORDPRESS tema DIVI<br>
+            </p><br>
         </div>
     </div>
+
     <div class="tiendaTitanium">
         <div class="titulo">
             <a target="blank" href="https://tiendasamp.titaniumgamers.com/">
@@ -24,12 +28,17 @@ class miWebs extends HTMLElement {
                 <h1>Titanium Gamers</h1>
             </a>
         </div>
-        <p>Tienda de donaciones PayPal creada durante el verano 2020 para la comunidad propia de jugadores Titanium Gamers.<br>
-        Lenguajes usados:<br>
+        <p>Tienda de donaciones PayPal creada durante el verano 2020 para la comunidad propia de jugadores <a target="blank" href="https://titaniumgamers.com/">Titanium Gamers</a>.<br>
+        Estilos usados:</p>
+        <p>
+        <i class="fa fa-check-circle verde">
+        </i> Bootstrap </p>
+        <p>Lenguajes usados:</p>
+        <p>
         <i class="fa fa-check-circle verde"></i> HTML<br>
         <i class="fa fa-check-circle verde"></i> CSS<br>
         <i class="fa fa-check-circle verde"></i> JAVASCRIPT
-        </p>
+        </p><br>
     </div>
     <div class="primeroscoc">
         <div class="titulo">
@@ -39,15 +48,16 @@ class miWebs extends HTMLElement {
             </a>
         </div>
         <p>
-        Diseñada como proyecto fin de curso ASIR durante el curso 2017-2018, a la comunidad de jugadores Primeros para el juego Clash of Clans.<br>
+        Diseñada como proyecto fin de curso ASIR durante el curso 2017-2018, a la comunidad de gamers &#xf006;<a target="blank" href="https://primeroscoc.titaniumgamers.com/">Primeros</a>&#xf006; jugadores de Clash of Clans.<br>
         API que sincroniza con el servidor y muestra los datos de los equipos en tiempo real<br>
-        Lenguajes usados:<br>
-        
+        Lenguajes usados:</p>
+        <p>
         <i class="fa fa-check-circle verde"></i> HTML<br>
         <i class="fa fa-check-circle verde"></i> CSS<br>
         <i class="fa fa-check-circle verde"></i> PHP
-        </p>
+        </p><br>
         </div>
+
     <div class="guerrasonline">
         <div class="titulo">
             <a target="blank" href="https://clashofclansguerrasonline.titaniumgamers.com/">
@@ -57,12 +67,13 @@ class miWebs extends HTMLElement {
         </div>
         <p>
         Esta página sincroniza con la API Clash of Clans, lee una hoja JSON, descarga los datos y muestra con imágenes imitando la estructura real del juego, con búsqueda y selección de equipos por medio de formulario.<br>
-        Cedida por Supercell.<br> 
-        Lenguajes usados:<br>
+        Datos cedidos por Supercell.<br> 
+        Lenguajes usados:</p>
+        <p>
         <i class="fa fa-check-circle verde"></i> HTML<br>
         <i class="fa fa-check-circle verde"></i> CSS<br>
         <i class="fa fa-check-circle verde"></i> PHP
-        </p>
+        </p><br>
     </div>
 </section>
 

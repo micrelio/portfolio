@@ -3,7 +3,7 @@
 @font-face {
   font-family: "supercell";
   src: url(../../../fuentes/supercell-magic-webfont.ttf) format("truetype");
-  }
+}
 @font-face {
   font-family: "FontAwesome";
   src: url("fontawesome-webfont.woff");
@@ -54,15 +54,18 @@
     }
     p {
       font-family: "FontAwesome", sans-serif;
-      font-size: 200%;
       padding: 1.5rem;
-
       font-size: 1.7vw;
-      color: black;
-      -webkit-text-fill-color: white;
-      -webkit-text-stroke: 1px black;
-      font-weight: bold;
+      color: white;
+      a {
+        // text-decoration: none;
+        color: blue;
+      }
+      i {
+        color: green;
     }
+    }
+    
   }
   .tiendaTitanium {
     .titulo {
