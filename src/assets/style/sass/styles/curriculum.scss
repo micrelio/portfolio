@@ -1,371 +1,372 @@
-            @import "../mixins/mixins.scss";
-            @import "../variables/variables.scss";
-            .head {
-                // @include head;
-            }
-            
-            body {
-                background: {
-                    //color: black;
-                }
-                ;
-            }
-            
-            .titulo {
-                display: flex;
-                justify-content: center;
-            }
-            
-            h1 {
-                font-size: calc(1.5rem + 1vw);
-                margin-top: 5rem;
-                color: $azul;
-                //width: calc(0.1rem + 3vw);
-            }
-            
-            p {
-                font-size: 1.5rem;
-                font-size: calc(0.5rem + 1vw);
-            }
-            
-            //A:hover { color: black; font-family: arial; text-decoration: none }
-            a:visited {
-                color: black;
-                font-family: arial;
-                text-decoration: none
-            }
-            
-            .datos {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: center;
-                //border: 0.1rem solid black;
-                // max-height: 9rem;
-                width: 100%;
-                //padding: 3rem;
-                .datosPersonales {
-                    // padding: 2rem;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: flex-start;
-                    align-items: center;
-                    color: white;
-                    // padding: 3rem;
-                    border: 0.1rem solid $azul;
-                    // margin: 0.3rem;
-                    width: 95vw;
-                    height: 25vh;
-                    overflow: hidden;
-                    border: {
-                        radius: 1rem
-                    }
-                    background: {
-                        color: black;
-                    }
-                    h {
-                        color: $azul;
-                    }
-                    //   border: 0.1rem solid black;
-                    .dni {
-                        margin-right: 5rem;
-                        height: 25vh;
-                        border: {
-                            radius: 1rem;
-                        }
-                        border: 0.1rem solid $azul;
-                    }
-                    .direccion {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: flex-start;
-                        // background-color: pink;
-                        p {
-                            margin-top: 1.5rem;
-                        }
-                    }
-                }
-                .interes {
-                    border: 0.1rem solid $azul;
-                    width: 95vw;
-                    padding: 2rem;
-                    border: {
-                        radius: 1rem;
-                    }
-                    background: {
-                        color: black;
-                    }
-                    p {
-                        margin-top: 1.5rem;
-                    }
-                }
-                .experiencia {
-                    color: white;
-                    overflow: hidden;
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: nowrap;
-                    align-items: center;
-                    justify-content: start;
-                    border: 0.1rem solid $azul;
-                    height: 7vh;
-                    min-width: 7vh;
-                    border: {
-                        radius: 1rem
-                    }
-                    // padding: 3rem;
-                    margin: 0.5rem;
-                    width: 95vw;
-                    background: {
-                        color: black;
-                    }
-                    ;
-                    //padding: 5%;
-                    //height: 10vh;
-                    // overflow: hidden;
-                    .logotipo {
-                        overflow: hidden;
-                        height: 7vh;
-                        background: {
-                            // color: $azul;
-                        }
-                        ;
-                        img {
-                            height: 100%;
-                            background: {
-                                //     color: $azul;
-                            }
-                            ;
-                            border: {
-                                radius: 1rem
-                            }
-                        }
-                        // color: $azul;
-                        // width: 50%;
-                        .corporativo {
-                            height: 100%;
-                            // height: 100%;
-                            margin-right: 1rem;
-                            border-right: 0.1rem solid $azul;
-                            // padding: 0.5rem;
-                        }
-                    }
-                    .descripcion {
-                        padding: 1rem;
-                        width: 100%;
-                        //text-overflow: ellipsis;
-                        //  white-space: nowrap;
-                        //overflow: hidden;
-                        //   height: 10vw;
-                        //   width: 50%;
-                    }
-                    a:link {
-                        color: #ffffff;
-                        text-decoration: none
-                    }
-                    a:visited {
-                        color: #ffffff;
-                    }
-                    a:active {
-                        color: #ffffff;
-                    }
-                    a:hover {
-                        color: $azul;
-                    }
-                    .titulo {
-                        img {
-                            height: 5vh;
-                            width: 5vh;
-                            margin-right: 1rem;
-                        }
-                    }
-                }
-            }
-            
-            //------------------------\\
-            //  RESPONSIVE  \\
-            //------------------------\\
-            @media only screen and (max-width: 1900px) {
-                .head {
-                    // @include head;
-                }
-                body {
-                    background: {
-                        //color: black;
-                    }
-                    ;
-                }
-                .titulo {
-                    display: flex;
-                    justify-content: center;
-                }
-                h1 {
-                    font-size: calc(1.5rem + 1vw);
-                    margin-top: 5rem;
-                    color: $azul;
-                    //width: calc(0.1rem + 3vw);
-                }
-                p {
-                    font-size: 1.5rem;
-                    font-size: calc(0.5rem + 1vw);
-                }
-                //A:hover { color: black; font-family: arial; text-decoration: none }
-                a:visited {
-                    color: black;
-                    font-family: arial;
-                    text-decoration: none
-                }
-                .datos {
-                    display: flex;
-                    flex-direction: column;
-                    // align-items: center;
-                    // justify-content: center;
-                    //border: 0.1rem solid black;
-                    // max-height: 9rem;
-                    width: 100%;
-                    //padding: 3rem;
-                    .datosPersonales {
-                        // padding: 2rem;
-                        display: flex;
-                        flex-direction: column;
-                        // justify-content: center;
-                        align-items: center;
-                        color: white;
-                        padding: 10%;
-                        // padding: 3rem;
-                        border: 0.1rem solid $azul;
-                        // margin: 0.3rem;
-                        width: 85%;
-                        height: auto;
-                        overflow: hidden;
-                        border: {
-                            radius: 1rem
-                        }
-                        background: {
-                            color: black;
-                        }
-                        h {
-                            color: $azul;
-                        }
-                        //   border: 0.1rem solid black;
-                        .dni {
-                            height: auto;
-                            width: 100%;
-                            border: {
-                                radius: 1rem;
-                            }
-                            border: 0.1rem solid $azul;
-                        }
-                        .direccion {
-                            display: flex;
-                            flex-direction: column;
-                            //   justify-content: flex-start;
-                            // background-color: pink;
-                            // align-items: center;
-                            // align-items: center;
-                            // align-items: center;
-                            p {
-                                margin-top: 1.5rem;
-                            }
-                        }
-                    }
-                    .interes {
-                        border: 0.1rem solid $azul;
-                        width: 85%;
-                        padding: 2rem;
-                        border: {
-                            radius: 1rem;
-                        }
-                        background: {
-                            color: black;
-                        }
-                        p {
-                            margin-top: 1.5rem;
-                        }
-                    }
-                    .experiencia {
-                        color: white;
-                        overflow: hidden;
-                        display: flex;
-                        flex-direction: column;
-                        //flex-wrap: nowrap;
-                        // align-items: center;
-                        //  justify-content: start;
-                        border: 0.1rem solid $azul;
-                        height: auto;
-                        min-width: 7vh;
-                        margin: 0.5rem;
-                        padding: 10%;
-                        width: 85%;
-                        border: {
-                            radius: 1rem
-                        }
-                        // padding: 3rem;
-                        background: {
-                            color: black;
-                        }
-                        ;
-                        //padding: 5%;
-                        //height: 10vh;
-                        // overflow: hidden;
-                        .logotipo {
-                            overflow: hidden;
-                            height: auto;
-                            background: {
-                                // color: $azul;
-                            }
-                            ;
-                            img {
-                                width: 100%;
-                                //  height: 100%;
-                                background: {
-                                    //     color: $azul;
-                                }
-                                ;
-                                border: {
-                                    radius: 1rem
-                                }
-                            }
-                            // color: $azul;
-                            // width: 50%;
-                            .corporativo {
-                                height: 100%;
-                                // height: 100%;
-                                margin-right: 1rem;
-                                border-right: none;
-                                // padding: 0.5rem;
-                            }
-                        }
-                        .descripcion {
-                            padding: 1rem;
-                            width: 100%;
-                            //text-overflow: ellipsis;
-                            //  white-space: nowrap;
-                            //overflow: hidden;
-                            //   height: 10vw;
-                            //   width: 50%;
-                        }
-                        a:link {
-                            color: #ffffff;
-                            text-decoration: none
-                        }
-                        a:visited {
-                            color: #ffffff;
-                        }
-                        a:active {
-                            color: #ffffff;
-                        }
-                        a:hover {
-                            color: $azul;
-                        }
-                        .titulo {
-                            img {
-                                height: 5vh;
-                                width: 5vh;
-                                margin-right: 1rem;
-                            }
-                        }
-                    }
-                }
-            }
+@import "../mixins/mixins.scss";
+@import "../variables/variables.scss";
+.head {
+  // @include head;
+}
+
+body {
+  background: {
+    //color: black;
+  }
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-size: calc(1.5rem + 1vw);
+  margin-top: 5rem;
+  color: $azul;
+  //width: calc(0.1rem + 3vw);
+}
+
+p {
+  font-size: 1.5rem;
+  font-size: calc(0.5rem + 1vw);
+}
+
+//A:hover { color: black; font-family: arial; text-decoration: none }
+a:visited {
+  color: black;
+  font-family: arial;
+  text-decoration: none;
+}
+
+.datos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  //border: 0.1rem solid black;
+  // max-height: 9rem;
+  width: 100%;
+  //padding: 3rem;
+  .datosPersonales {
+    // padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    // padding: 3rem;
+    border: 0.2rem solid $azul;
+    // margin: 0.3rem;
+   // width: 95vw;
+    //height: 25vh;
+    overflow: hidden;
+    border: {
+      radius: 1rem;
+    }
+    background: {
+      color: #000;
+    }
+    h {
+      color: $azul;
+    }
+    //   border: 0.1rem solid black;
+    .foto {
+        height: auto;
+
+      //width: 40%;
+      .dni {
+        // margin-right: 3rem;
+       height: 25rem;
+        border: {
+          radius: 0.5rem;
+        }
+
+      }
+    }
+    .direccion {
+            padding: 3rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      p {
+        margin-top: 1.5rem;
+      }
+    }
+  }
+}
+
+
+
+.interes {
+  border: 0.1rem solid $azul;
+  width: 95vw;
+  padding: 2rem;
+  border: {
+    radius: 1rem;
+  }
+  background: {
+    color: black;
+  }
+  p {
+    margin-top: 1.5rem;
+  }
+}
+.experiencia {
+  color: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: start;
+  border: 0.1rem solid $azul;
+  height: 7vh;
+  min-width: 7vh;
+  border: {
+    radius: 1rem;
+  }
+  // padding: 3rem;
+  margin: 0.5rem;
+  width: 95vw;
+  background: {
+    color: black;
+  }
+  //padding: 5%;
+  //height: 10vh;
+  // overflow: hidden;
+  .logotipo {
+    overflow: hidden;
+    height: 7vh;
+    background: {
+      // color: $azul;
+    }
+    img {
+      height: 100%;
+      background: {
+        //     color: $azul;
+      }
+      border: {
+        radius: 1rem;
+      }
+    }
+    // color: $azul;
+    // width: 50%;
+    .corporativo {
+      height: 100%;
+      // height: 100%;
+      margin-right: 1rem;
+      border-right: 0.1rem solid $azul;
+      // padding: 0.5rem;
+    }
+  }
+  .descripcion {
+    padding: 1rem;
+    width: 100%;
+    //text-overflow: ellipsis;
+    //  white-space: nowrap;
+    //overflow: hidden;
+    //   height: 10vw;
+    //   width: 50%;
+  }
+  a:link {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  a:visited {
+    color: #ffffff;
+  }
+  a:active {
+    color: #ffffff;
+  }
+  a:hover {
+    color: $azul;
+  }
+  .titulo {
+    img {
+      height: 5vh;
+      width: 5vh;
+      margin-right: 1rem;
+    }
+  }
+}
+
+//------------------------\\
+//  RESPONSIVE  \\
+//------------------------\\
+@media only screen and (max-width: 1900) {
+  .head {
+    // @include head;
+  }
+  body {
+    background: {
+      //color: black;
+    }
+  }
+  .titulo {
+    display: flex;
+    justify-content: center;
+  }
+  h1 {
+    font-size: calc(1.5rem + 1vw);
+    margin-top: 5rem;
+    color: $azul;
+    //width: calc(0.1rem + 3vw);
+  }
+  p {
+    font-size: 1.5rem;
+    font-size: calc(0.5rem + 1vw);
+  }
+  //A:hover { color: black; font-family: arial; text-decoration: none }
+  a:visited {
+    color: black;
+    font-family: arial;
+    text-decoration: none;
+  }
+  .datos {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    //border: 0.1rem solid black;
+    // max-height: 9rem;
+    width: 100%;
+    //padding: 3rem;
+    .datosPersonales {
+      // padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+      align-items: center;
+      color: white;
+      padding: 10%;
+      // padding: 3rem;
+      border: 0.1rem solid $azul;
+      // margin: 0.3rem;
+      width: 85%;
+      height: auto;
+      overflow: hidden;
+      border: {
+        radius: 1rem;
+      }
+      background: {
+        color: black;
+      }
+      h {
+        color: $azul;
+      }
+      //   border: 0.1rem solid black;
+      .dni {
+        height: auto;
+        width: 100%;
+        border: {
+          radius: 1rem;
+        }
+        border: 0.1rem solid $azul;
+      }
+      .direccion {
+        display: flex;
+        flex-direction: column;
+        //   justify-content: flex-start;
+        // background-color: pink;
+        // align-items: center;
+        // align-items: center;
+        // align-items: center;
+        p {
+          margin-top: 1.5rem;
+        }
+      }
+    }
+    .interes {
+      border: 0.1rem solid $azul;
+      width: 85%;
+      padding: 2rem;
+      border: {
+        radius: 1rem;
+      }
+      background: {
+        color: black;
+      }
+      p {
+        margin-top: 1.5rem;
+      }
+    }
+    .experiencia {
+      color: white;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      //flex-wrap: nowrap;
+      // align-items: center;
+      //  justify-content: start;
+      border: 0.1rem solid $azul;
+      height: auto;
+      min-width: 7vh;
+      margin: 0.5rem;
+      padding: 10%;
+      width: 85%;
+      border: {
+        radius: 1rem;
+      }
+      // padding: 3rem;
+      background: {
+        color: black;
+      }
+      //padding: 5%;
+      //height: 10vh;
+      // overflow: hidden;
+      .logotipo {
+        overflow: hidden;
+        height: auto;
+        background: {
+          // color: $azul;
+        }
+        img {
+          width: 100%;
+          //  height: 100%;
+          background: {
+            //     color: $azul;
+          }
+          border: {
+            radius: 1rem;
+          }
+        }
+        // color: $azul;
+        // width: 50%;
+        .corporativo {
+          height: 100%;
+          // height: 100%;
+          margin-right: 1rem;
+          border-right: none;
+          // padding: 0.5rem;
+        }
+      }
+      .descripcion {
+        padding: 1rem;
+        width: 100%;
+        //text-overflow: ellipsis;
+        //  white-space: nowrap;
+        //overflow: hidden;
+        //   height: 10vw;
+        //   width: 50%;
+      }
+      a:link {
+        color: #ffffff;
+        text-decoration: none;
+      }
+      a:visited {
+        color: #ffffff;
+      }
+      a:active {
+        color: #ffffff;
+      }
+      a:hover {
+        color: $azul;
+      }
+      .titulo {
+        img {
+          height: 5vh;
+          width: 5vh;
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+}
