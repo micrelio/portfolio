@@ -16,7 +16,7 @@ class miWebs extends HTMLElement {
     </div>
     <div class="tiendaTitanium">
         <div class="titulo">
-            <a target="blank" href="https://titaniumgamers.com/tienda/samp/">
+            <a target="blank" href="https://tiendasamp.titaniumgamers.com/">
                 <h1>Tienda Titanium Gamers</h1>
             </a>
         </div>
@@ -24,15 +24,16 @@ class miWebs extends HTMLElement {
     </div>
     <div class="primeroscoc">
         <div class="titulo">
-            <a target="blank" href="https://titaniumgamers.com/tienda/samp/">
-                <h1>Primeros Clash of Clans</h1>
+            <a target="blank" href="https://primeroscoc.titaniumgamers.com/">
+                <h1>Primeros</h1>
+                <h1>Clash of Clans</h1>
             </a>
         </div>
         <p>Creada con código por medio de una plantilla Bootstrap, para la comunidad de jugadores Titanium Gamers durante el confinamiernto 2020.</p>
     </div>
     <div class="primeroscoc">
         <div class="titulo">
-            <a target="blank" href="https://titaniumgamers.com/tienda/samp/">
+            <a target="blank" href="https://clashofclansguerrasonline.titaniumgamers.com/">
                 <h1>Guerras onLine</h1>
                 <h1>Clash of Clans</h1>
             </a>

@@ -19,11 +19,14 @@
   .titanium {
     @include recuadro;
     background: {
-      image: url("../../../images/banners/vinewood.jpg");
-     position: center;
-     size: cover;
+      color: #000;
     }
     .titulo {
+      background: {
+        image: url("../../../images/banners/vinewood.jpg");
+       position: center;
+       size: cover;
+      }
       a {
         text-decoration: none;
       }
@@ -54,10 +57,14 @@
   .tiendaTitanium {
     @include recuadro;
     background: {
-      image: url("../../../images/banners/TitaniumRoleplay.png");
-      position: center;
-      size: cover;    }
+      color: #000;  
+    }
     .titulo {
+      background: {
+        image: url("../../../images/banners/TitaniumRoleplay.png");
+        position: center;
+        size: cover;    
+      }
       a {
         text-decoration: none;
       }
@@ -88,10 +95,17 @@
   .primeroscoc {
     @include recuadro;
     background: {
-      image: url("../../../images/banners/primeros.jpg");
-      position: center;
-      size: cover;    }
+      // image: url("../../../images/banners/primeros.jpg");
+      // position: center;
+      // size: cover;   
+      color: black;
+    }
     .titulo {
+      background: {
+        image: url("../../../images/banners/primeros.jpg");
+        position: center;
+        size: cover;   
+      }
       a {
         text-decoration: none;
       }

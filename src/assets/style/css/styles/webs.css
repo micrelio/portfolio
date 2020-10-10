@@ -20,22 +20,22 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-size: cover;
 }
 .web .titanium {
-  padding: 1.5rem;
   width: 40%;
   border-radius: 25px;
   border: 0.05rem solid #00C6EE;
   margin: 5rem;
+  background-color: #000;
+}
+.web .titanium .titulo {
   background-image: url("../../../images/banners/vinewood.jpg");
   background-position: center;
   background-size: cover;
-}
-.web .titanium .titulo {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  overflow: hidden;
+  border-radius: 25px 25px 0px 0px;
+  background-size: cover;
 }
 .web .titanium .titulo a {
   text-decoration: none;
@@ -55,19 +55,20 @@
   font-weight: bold;
 }
 .web .tiendaTitanium {
-  padding: 1.5rem;
   width: 40%;
   border-radius: 25px;
   border: 0.05rem solid #00C6EE;
   margin: 5rem;
+  background-color: #000;
+}
+.web .tiendaTitanium .titulo {
   background-image: url("../../../images/banners/TitaniumRoleplay.png");
   background-position: center;
   background-size: cover;
-}
-.web .tiendaTitanium .titulo {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  overflow: hidden;
+  border-radius: 25px 25px 0px 0px;
+  background-size: cover;
 }
 .web .tiendaTitanium .titulo a {
   text-decoration: none;
@@ -87,19 +88,20 @@
   font-weight: bold;
 }
 .web .primeroscoc {
-  padding: 1.5rem;
   width: 40%;
   border-radius: 25px;
   border: 0.05rem solid #00C6EE;
   margin: 5rem;
+  background-color: black;
+}
+.web .primeroscoc .titulo {
   background-image: url("../../../images/banners/primeros.jpg");
   background-position: center;
   background-size: cover;
-}
-.web .primeroscoc .titulo {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  overflow: hidden;
+  border-radius: 25px 25px 0px 0px;
+  background-size: cover;
 }
 .web .primeroscoc .titulo a {
   text-decoration: none;
