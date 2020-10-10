@@ -16,8 +16,12 @@ class miWebs extends HTMLElement {
             <p>Diseñada con WordPress tema DIVI (adquirida licencia desarrollador), para la comunidad propia de jugadores <a target="blank" href="https://titaniumgamers.com/">Titanium Gamers</a> durante el confinamiento 2020.<br>
             Creada con:</p>
             <p>
-        <i class="fa fa-check-circle verde"></i> WORDPRESS tema DIVI<br>
-            </p><br>
+        <i class="fa fa-check-circle verde"></i> WORDPRESS tema DIVI </p>
+        <p>
+        <a target="blank" href="https://titaniumgamers.com/">Visitar
+         <i class="fas fa-arrow-alt-circle-right"></i></a>
+                  </p><br>
+
         </div>
     </div>
 
@@ -38,7 +42,11 @@ class miWebs extends HTMLElement {
         <i class="fa fa-check-circle verde"></i> HTML<br>
         <i class="fa fa-check-circle verde"></i> CSS<br>
         <i class="fa fa-check-circle verde"></i> JAVASCRIPT
-        </p><br>
+        </p>
+        <p>
+        <a target="blank" href="https://titaniumgamers.com/">Visitar
+         <i class="fas fa-arrow-alt-circle-right"></i></a>
+                  </p><br>
     </div>
     <div class="primeroscoc">
         <div class="titulo">
@@ -55,7 +63,11 @@ class miWebs extends HTMLElement {
         <i class="fa fa-check-circle verde"></i> HTML<br>
         <i class="fa fa-check-circle verde"></i> CSS<br>
         <i class="fa fa-check-circle verde"></i> PHP
-        </p><br>
+        </p>
+        <p>
+        <a target="blank" href="https://titaniumgamers.com/">Visitar
+         <i class="fas fa-arrow-alt-circle-right"></i></a>
+                  </p><br>
         </div>
 
     <div class="guerrasonline">
@@ -73,7 +85,11 @@ class miWebs extends HTMLElement {
         <i class="fa fa-check-circle verde"></i> HTML<br>
         <i class="fa fa-check-circle verde"></i> CSS<br>
         <i class="fa fa-check-circle verde"></i> PHP
-        </p><br>
+        </p>
+        <p>
+        <a target="blank" href="https://titaniumgamers.com/">Visitar
+         <i class="fas fa-arrow-alt-circle-right"></i></a>
+                  </p><br>
     </div>
 </section>
 

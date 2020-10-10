@@ -59,7 +59,7 @@
       color: white;
       a {
         text-decoration: none;
-        color: #8a9597;
+        color: lightskyblue;
       }
       i {
         color: green;
@@ -102,7 +102,6 @@
       }
     }
     p {
-      font-size: 1.7vw;
      color: white;
       a {
         text-decoration: none;
@@ -110,6 +109,12 @@
       }
       i {
         color: green;
+      }
+      .fa-undo-alt{
+        color: red;
+
+        left:0px;
+        
       }
     }    
   }
