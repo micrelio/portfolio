@@ -20,7 +20,8 @@
   .primeroscoc,
   .guerrasonline,
   .tiendaTitanium,
-  .titanium {
+  .titanium,
+  .portfolio {
     @include recuadro;
     background: {
       color: #000;
@@ -133,7 +134,20 @@
       }
     }
   }
+  .portfolio {
+    .titulo {
+      background: {
+        image: url("../../../images/banners/micro-banner.jpg");
+        position: center;
+        size: cover;
+      }
+      h1 {
+        -webkit-text-fill-color: gold;
+      }
+    }
+  }
 }
+
 // .separador {
 //     margin: 3rem;
 //     // height: 10rem;

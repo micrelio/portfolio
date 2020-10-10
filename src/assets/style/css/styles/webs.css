@@ -28,7 +28,8 @@
 .web .primeroscoc,
 .web .guerrasonline,
 .web .tiendaTitanium,
-.web .titanium {
+.web .titanium,
+.web .portfolio {
   width: 95%;
   border-radius: 25px;
   border: 0.05rem solid #00C6EE;
@@ -38,7 +39,8 @@
 .web .primeroscoc .titulo,
 .web .guerrasonline .titulo,
 .web .tiendaTitanium .titulo,
-.web .titanium .titulo {
+.web .titanium .titulo,
+.web .portfolio .titulo {
   background-image: url("../../../images/banners/vinewood.jpg");
   background-position: center;
   background-size: cover;
@@ -52,13 +54,15 @@
 .web .primeroscoc .titulo a,
 .web .guerrasonline .titulo a,
 .web .tiendaTitanium .titulo a,
-.web .titanium .titulo a {
+.web .titanium .titulo a,
+.web .portfolio .titulo a {
   text-decoration: none;
 }
 .web .primeroscoc .titulo h1,
 .web .guerrasonline .titulo h1,
 .web .tiendaTitanium .titulo h1,
-.web .titanium .titulo h1 {
+.web .titanium .titulo h1,
+.web .portfolio .titulo h1 {
   display: flex;
   align-self: center;
   justify-content: center;
@@ -71,7 +75,8 @@
 .web .primeroscoc p,
 .web .guerrasonline p,
 .web .tiendaTitanium p,
-.web .titanium p {
+.web .titanium p,
+.web .portfolio p {
   font-family: "FontAwesome", sans-serif;
   padding: 1.5rem;
   font-size: 1.7rem;
@@ -80,20 +85,23 @@
 .web .primeroscoc p a,
 .web .guerrasonline p a,
 .web .tiendaTitanium p a,
-.web .titanium p a {
+.web .titanium p a,
+.web .portfolio p a {
   text-decoration: none;
   color: lightskyblue;
 }
 .web .primeroscoc p i,
 .web .guerrasonline p i,
 .web .tiendaTitanium p i,
-.web .titanium p i {
+.web .titanium p i,
+.web .portfolio p i {
   color: green;
 }
 .web .primeroscoc .visitar,
 .web .guerrasonline .visitar,
 .web .tiendaTitanium .visitar,
-.web .titanium .visitar {
+.web .titanium .visitar,
+.web .portfolio .visitar {
   color: lightskyblue;
   font-size: 3rem;
 }
@@ -148,6 +156,14 @@
   background-size: cover;
 }
 .web .guerrasonline .titulo h1 {
+  -webkit-text-fill-color: gold;
+}
+.web .portfolio .titulo {
+  background-image: url("../../../images/banners/micro-banner.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.web .portfolio .titulo h1 {
   -webkit-text-fill-color: gold;
 }
 

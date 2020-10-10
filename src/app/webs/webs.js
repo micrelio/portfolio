@@ -15,12 +15,12 @@ class miWebs extends HTMLElement {
         <div>
             <p>Diseñada con WordPress tema DIVI (adquirida licencia desarrollador), para la comunidad propia de jugadores <a target="blank" href="https://titaniumgamers.com/">Titanium Gamers</a> durante el confinamiento 2020.<br>
             Creada con:<br>
-        <i class="fa fa-check-circle verde"></i> WORDPRESS tema DIVI </p>
-        <p>
-        <a class="visitar" target="blank" href="https://titaniumgamers.com/">Visitar
-         <i class="fas fa-arrow-alt-circle-right"></i></a>
-                  </p><br>
-
+            <i class="fa fa-check-circle verde"></i> WORDPRESS tema DIVI.
+            </p>
+            <p>
+                <a class="visitar" target="blank" href="https://titaniumgamers.com/">Visitar
+                <i class="fas fa-arrow-alt-circle-right"></i></a>
+            </p><br>
         </div>
     </div>
 
@@ -36,15 +36,16 @@ class miWebs extends HTMLElement {
         <i class="fa fa-check-circle verde">
         </i> Bootstrap </p>
         <p>Lenguajes usados:<br>
-        <i class="fa fa-check-circle verde"></i> HTML<br>
-        <i class="fa fa-check-circle verde"></i> CSS<br>
-        <i class="fa fa-check-circle verde"></i> JAVASCRIPT
+            <i class="fa fa-check-circle verde"></i> HTML<br>
+            <i class="fa fa-check-circle verde"></i> CSS<br>
+            <i class="fa fa-check-circle verde"></i> JAVASCRIPT
         </p>
         <p>
-        <a class="visitar" target="blank" href="https://titaniumgamers.com/">Visitar
-         <i class="fas fa-arrow-alt-circle-right"></i></a>
-                  </p><br>
+            <a class="visitar" target="blank" href="https://titaniumgamers.com/">Visitar
+            <i class="fas fa-arrow-alt-circle-right"></i></a>
+        </p><br>
     </div>
+    
     <div class="primeroscoc">
         <div class="titulo">
             <a target="blank" href="https://primeroscoc.titaniumgamers.com/">
@@ -53,18 +54,18 @@ class miWebs extends HTMLElement {
             </a>
         </div>
         <p>
-        Diseñada como proyecto fin de curso ASIR durante el curso 2017-2018, a la comunidad de gamers <a target="blank" href="https://primeroscoc.titaniumgamers.com/">&#xf006;Primeros&#xf006;</a> jugadores de Clash of Clans.<br>
-        API que sincroniza con el servidor y muestra los datos de los equipos en tiempo real<br>
-        Lenguajes usados:<br>
-        <i class="fa fa-check-circle verde"></i> HTML<br>
-        <i class="fa fa-check-circle verde"></i> CSS<br>
-        <i class="fa fa-check-circle verde"></i> PHP
+            Diseñada como proyecto fin de curso ASIR durante el curso 2017-2018, a la comunidad de gamers <a target="blank" href="https://primeroscoc.titaniumgamers.com/">&#xf006;Primeros&#xf006;</a> jugadores de Clash of Clans.<br>
+            API que sincroniza con el servidor y muestra los datos de los equipos en tiempo real<br>
+            Lenguajes usados:<br>
+            <i class="fa fa-check-circle verde"></i> HTML<br>
+            <i class="fa fa-check-circle verde"></i> CSS<br>
+            <i class="fa fa-check-circle verde"></i> PHP
         </p>
         <p>
-        <a  class="visitar" target="blank" href="https://titaniumgamers.com/">Visitar
-         <i class="fas fa-arrow-alt-circle-right"></i></a>
-                  </p><br>
-        </div>
+            <a  class="visitar" target="blank" href="https://titaniumgamers.com/">Visitar
+            <i class="fas fa-arrow-alt-circle-right"></i></a>
+        </p><br>
+    </div>
 
     <div class="guerrasonline">
         <div class="titulo">
@@ -74,22 +75,20 @@ class miWebs extends HTMLElement {
             </a>
         </div>
         <p>
-        Esta página sincroniza con la <a target="blank" href="https://developer.clashofclans.com/#/"> API Clash of Clans</a>, lee una hoja JSON, descarga los datos y muestra con imágenes imitando la estructura real del juego, con búsqueda y selección de equipos por medio de formulario.<br>
-        Datos cedidos por <a target="blank" href="https://supercell.com/en/">Supercell</a>.<br> 
-        Lenguajes usados:<br>
-        <i class="fa fa-check-circle verde"></i> HTML<br>
-        <i class="fa fa-check-circle verde"></i> CSS<br>
-        <i class="fa fa-check-circle verde"></i> PHP
+            Esta página sincroniza con la <a target="blank" href="https://developer.clashofclans.com/#/"> API Clash of Clans</a>, lee una hoja JSON, descarga los datos y muestra con imágenes imitando la estructura real del juego, con búsqueda y selección de equipos por medio de formulario.<br>
+            Datos cedidos por <a target="blank" href="https://supercell.com/en/">Supercell</a>.<br> 
+            Lenguajes usados:<br>
+            <i class="fa fa-check-circle verde"></i> HTML<br>
+            <i class="fa fa-check-circle verde"></i> CSS<br>
+            <i class="fa fa-check-circle verde"></i> PHP
         </p>
         <p>
-        <a class="visitar" target="blank" href="https://titaniumgamers.com/">Visitar
-         <i class="fas fa-arrow-alt-circle-right"></i></a>
-                  </p><br>
+            <a class="visitar" target="blank" href="https://titaniumgamers.com/">Visitar
+            <i class="fas fa-arrow-alt-circle-right"></i></a>
+        </p><br>
     </div>
 </section>
-
-
-         `;
+`;
   }
 }
 customElements.define("mi-webs", miWebs);
