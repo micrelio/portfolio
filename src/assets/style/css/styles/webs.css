@@ -90,6 +90,13 @@
 .web .titanium p i {
   color: green;
 }
+.web .primeroscoc .visitar,
+.web .guerrasonline .visitar,
+.web .tiendaTitanium .visitar,
+.web .titanium .visitar {
+  color: lightskyblue;
+  font-size: 3rem;
+}
 .web .tiendaTitanium .titulo {
   background-image: url("../../../images/banners/TitaniumRoleplay.png");
   background-position: center;
