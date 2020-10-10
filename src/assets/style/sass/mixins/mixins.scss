@@ -42,9 +42,9 @@
 }
 @mixin titulo {
   display: flex;
-  // justify-content: center;
-  // align-items: center;
-  overflow: hidden;
+  justify-content: space-around;;
+  align-items: center;
+  //overflow: hidden;
   border-radius: 25px 25px 0px 0px;
 
 

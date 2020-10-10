@@ -1,21 +1,21 @@
 @import "../mixins/mixins.scss";
 @import "../variables/variables.scss";
-
 @font-face {
   font-family: "supercell";
   src: url(../../../fuentes/supercell-magic-webfont.ttf) format("truetype");
 }
-
 @font-face {
   font-family: "titanium";
   src: url(../../../fuentes/pricedow.ttf) format("truetype");
 }
-
 .head {
   @include head;
 }
 .web {
   @include webs;
+  .primeroscoc,
+  .guerrasonline,
+  .tiendaTitanium,
   .titanium {
     @include recuadro;
     background: {
@@ -24,14 +24,17 @@
     .titulo {
       background: {
         image: url("../../../images/banners/vinewood.jpg");
-       position: center;
-       size: cover;
+        position: center;
+        size: cover;
       }
       a {
         text-decoration: none;
       }
       @include titulo;
       h1 {
+        display: flex;
+        align-self: center;
+        justify-content: center;
         margin-top: 0px;
         -webkit-text-fill-color: #e3e4e5;
         -webkit-text-stroke: 1px black;
@@ -53,103 +56,63 @@
       font-weight: bold;
     }
   }
-
   .tiendaTitanium {
-    @include recuadro;
-    background: {
-      color: #000;  
-    }
     .titulo {
       background: {
         image: url("../../../images/banners/TitaniumRoleplay.png");
         position: center;
-        size: cover;    
+        size: cover;
       }
-      a {
-        text-decoration: none;
-      }
-      @include titulo;
       h1 {
-        margin-top: 0px;
         -webkit-text-fill-color: #8a9597;
         -webkit-text-stroke: 1px black;
-        //height: 0 auto;
-        // -webkit-text-stroke: 0.05rem black;
-        //  text-shadow: 0.1em 0.1em brown;
-        // color: #e3e4e5;
+        height: 0 auto;
+        -webkit-text-stroke: 0.05rem black;
         font: {
           family: titanium;
-          size: 3.5vw;
+          size: 4vw;
         }
       }
     }
-    p {
-      font-size: 1.7vw;
-      color: black;
-      -webkit-text-fill-color: white;
-      -webkit-text-stroke: 1px black;
-      font-weight: bold;
-    }
   }
-
-  .primeroscoc {
-    @include recuadro;
-    background: {
-      // image: url("../../../images/banners/primeros.jpg");
-      // position: center;
-      // size: cover;   
-      color: black;
-    }
+  .primeroscoc,
+  .guerrasonline {
     .titulo {
       background: {
         image: url("../../../images/banners/primeros.jpg");
         position: center;
-        size: cover;   
+        size: cover;
       }
-      a {
-        text-decoration: none;
-      }
-      @include titulo;
       h1 {
-        margin-top: 0px;
-        // -webkit-text-fill-color: #8a9597;
-        // -webkit-text-stroke: 1px black;
-        //height: 0 auto;
+        -webkit-text-fill-color: orange;
+        -webkit-text-stroke: 1px black;
+        height: 0 auto;
         -webkit-text-stroke: 0.05rem black;
-         text-shadow: 0.1em 0.1em brown;
-        color: orange;
+        text-shadow: 0.1em 0.1em brown;
         font: {
           family: supercell;
           size: 2vw;
         }
       }
-    }
-    p {
-      font-size: 1.7vw;
-      color: black;
-      -webkit-text-fill-color: white;
-      -webkit-text-stroke: 1px black;
-      font-weight: bold;
+      p {
+        font-size: 1.7vw;
+        color: black;
+        -webkit-text-fill-color: white;
+        -webkit-text-stroke: 1px black;
+        font-weight: bold;
+      }
     }
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .guerrasonline {
+    .titulo {
+      background: {
+        image: url("../../../images/banners/guerrasonline.jpg");
+        position: center;
+        size: cover;
+      }
+    }
+  }
 }
-
 // .separador {
 //     margin: 3rem;
 //     // height: 10rem;
