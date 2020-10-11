@@ -47,7 +47,7 @@ class miCurriculum extends HTMLElement {
     </div>
     <div class="experiencia">
         <div class="logotipo">
-            <a href="https://www.tobalcaide.com/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/tobalcaide.jpg"></a>
+            <a href="https://www.tobalcaide.com/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/tobalcaide.PNG"></a>
         </div>
         <div class="descripcion">
             <p>2018</p>

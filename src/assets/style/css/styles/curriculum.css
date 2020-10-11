@@ -75,6 +75,7 @@ a:visited {
 .datos .experiencia .logotipo img {
   width: calc(20rem + 10vw);
   border-right: 0.2rem solid #00C6EE;
+  background-color: black;
   border-radius: 1rem 0rem 0rem 1rem;
 }
 .datos .experiencia .descripcion {
