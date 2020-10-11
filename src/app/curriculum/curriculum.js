@@ -4,7 +4,7 @@ class miCurriculum extends HTMLElement {
   }
   connectedCallback() {
     this.innerHTML = `
-<div class="titulo">
+<div class="descripcion">
     <h1>Datos personales</h1>
 </div>
 <section class="datos">
@@ -34,7 +34,7 @@ class miCurriculum extends HTMLElement {
   
   
   
-  <div class="titulo">
+  <div class="descripcion">
   <h1>Formación académica</h1>
   </div>
 
@@ -123,7 +123,7 @@ class miCurriculum extends HTMLElement {
     </div>
 </section>
 
-<div class="titulo">
+<div class="descripcion">
     <h1>Experiencia laboral</h1>
 </div>
 <section class="datos">
@@ -247,7 +247,7 @@ class miCurriculum extends HTMLElement {
     </div>
   </section>
  
-<div class="titulo">
+<div class="descripcion">
     <h1>Datos de interés</h1>
 </div>
 <section class="datos">

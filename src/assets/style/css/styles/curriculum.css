@@ -1,18 +1,18 @@
 /* hovers*/
-.titulo {
+.descripcion {
   display: flex;
   justify-content: center;
 }
 
 h1 {
-  font-size: calc(1.5rem + 1vw);
+  font-size: calc(3rem + 1vw);
   margin-top: 5rem;
   color: #00C6EE;
 }
 
 p {
   font-size: 1.5rem;
-  font-size: calc(0.5rem + 1vw);
+  font-size: calc(1rem + 1vw);
 }
 
 a:visited {
@@ -28,6 +28,7 @@ a:visited {
   align-items: center;
   justify-content: center;
   width: 100%;
+  padding: 3rem;
 }
 .datos .datosPersonales {
   display: flex;
@@ -43,11 +44,8 @@ a:visited {
 .datos .datosPersonales h {
   color: #00C6EE;
 }
-.datos .datosPersonales .foto {
-  height: auto;
-}
 .datos .datosPersonales .foto .dni {
-  height: 25rem;
+  width: calc(20rem + 10vw);
   border-radius: 0.5rem;
 }
 .datos .datosPersonales .direccion {
@@ -59,68 +57,59 @@ a:visited {
 .datos .datosPersonales .direccion p {
   margin-top: 1.5rem;
 }
-
-.interes {
+.datos .experiencia {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 0.2rem solid #00C6EE;
+  margin-bottom: 5rem;
+  width: 95vw;
+  background-color: black;
+  border-radius: 1rem;
+}
+.datos .experiencia .logotipo {
+  border-radius: 1rem;
+  background-color: #00C6EE;
+}
+.datos .experiencia .logotipo img {
+  width: calc(20rem + 10vw);
+  border-right: 0.2rem solid #00C6EE;
+  border-radius: 1rem 0rem 0rem 1rem;
+}
+.datos .experiencia .descripcion {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.datos .experiencia .titulo img {
+  height: 5vh;
+  width: 5vh;
+  margin-right: 1rem;
+}
+.datos .interes {
   border: 0.1rem solid #00C6EE;
   width: 95vw;
   padding: 2rem;
   border-radius: 1rem;
   background-color: black;
 }
-.interes p {
+.datos .interes p {
   margin-top: 1.5rem;
 }
-
-.experiencia {
-  color: white;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: start;
-  border: 0.1rem solid #00C6EE;
-  height: 7vh;
-  min-width: 7vh;
-  border-radius: 1rem;
-  margin: 0.5rem;
-  width: 95vw;
-  background-color: black;
-}
-.experiencia .logotipo {
-  overflow: hidden;
-  height: 7vh;
-}
-.experiencia .logotipo img {
-  height: 100%;
-  border-radius: 1rem;
-}
-.experiencia .logotipo .corporativo {
-  height: 100%;
-  margin-right: 1rem;
-  border-right: 0.1rem solid #00C6EE;
-}
-.experiencia .descripcion {
-  padding: 1rem;
-  width: 100%;
-}
-.experiencia a:link {
+.datos a:link {
   color: #ffffff;
   text-decoration: none;
 }
-.experiencia a:visited {
+.datos a:visited {
   color: #ffffff;
 }
-.experiencia a:active {
+.datos a:active {
   color: #ffffff;
 }
-.experiencia a:hover {
+.datos a:hover {
   color: #00C6EE;
-}
-.experiencia .titulo img {
-  height: 5vh;
-  width: 5vh;
-  margin-right: 1rem;
 }
 
 @media only screen and (max-width: 1900) {

@@ -10,13 +10,13 @@ body {
   }
 }
 
-.titulo {
+.descripcion {
   display: flex;
   justify-content: center;
 }
 
 h1 {
-  font-size: calc(1.5rem + 1vw);
+  font-size: calc(3rem + 1vw);
   margin-top: 5rem;
   color: $azul;
   //width: calc(0.1rem + 3vw);
@@ -24,7 +24,7 @@ h1 {
 
 p {
   font-size: 1.5rem;
-  font-size: calc(0.5rem + 1vw);
+  font-size: calc(1rem + 1vw);
 }
 
 //A:hover { color: black; font-family: arial; text-decoration: none }
@@ -40,22 +40,15 @@ a:visited {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  //border: 0.1rem solid black;
-  // max-height: 9rem;
   width: 100%;
-  //padding: 3rem;
+  padding: 3rem;
   .datosPersonales {
-    // padding: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     color: white;
-    // padding: 3rem;
     border: 0.2rem solid $azul;
-    // margin: 0.3rem;
-   // width: 95vw;
-    //height: 25vh;
     overflow: hidden;
     border: {
       radius: 1rem;
@@ -68,21 +61,17 @@ a:visited {
     }
     //   border: 0.1rem solid black;
     .foto {
-        height: auto;
-
       //width: 40%;
       .dni {
         // margin-right: 3rem;
-       height: 25rem;
+        width: calc(20rem + 10vw);
         border: {
           radius: 0.5rem;
         }
-
       }
     }
     .direccion {
-            padding: 3rem;
-
+      padding: 3rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -91,81 +80,89 @@ a:visited {
       }
     }
   }
-}
-
-
-
-.interes {
-  border: 0.1rem solid $azul;
-  width: 95vw;
-  padding: 2rem;
-  border: {
-    radius: 1rem;
-  }
-  background: {
-    color: black;
-  }
-  p {
-    margin-top: 1.5rem;
-  }
-}
-.experiencia {
-  color: white;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: start;
-  border: 0.1rem solid $azul;
-  height: 7vh;
-  min-width: 7vh;
-  border: {
-    radius: 1rem;
-  }
-  // padding: 3rem;
-  margin: 0.5rem;
-  width: 95vw;
-  background: {
-    color: black;
-  }
-  //padding: 5%;
-  //height: 10vh;
-  // overflow: hidden;
-  .logotipo {
-    overflow: hidden;
-    height: 7vh;
+  .experiencia {
+    color: white;
+    // overflow: hidden;
+    display: flex;
+    flex-direction: row;
+   // flex-wrap: nowrap;
+    align-items: center;
+   /// justify-content: ;
+    border: 0.2rem solid $azul;
+    // height: 7vh;
+    //min-width: 7vh;
+    // padding: 3rem;
+    margin-bottom: 5rem;
+    width: 95vw;
     background: {
-      // color: $azul;
+      color: black;
     }
-    img {
-      height: 100%;
-      background: {
-        //     color: $azul;
-      }
+    border: {
+      radius: 1rem;
+    }
+    .logotipo {
+      // overflow: hidden;
+      //height: 7vh;
       border: {
         radius: 1rem;
       }
+      background: {
+         color: $azul;
+      }
+      img {
+        width: calc(20rem + 10vw);
+        border-right: 0.2rem solid $azul;
+
+        //height: 100%;
+        background: {
+          //     color: $azul;
+        }
+        border: {
+          radius: 1rem 0rem 0rem 1rem;
+        }
+      }
+         }
+    .descripcion {
+      padding: 1rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    //   height: 100%;
+      //text-overflow: ellipsis;
+      //  white-space: nowrap;
+      //overflow: hidden;
+      //   height: 10vw;
+      //   width: 50%;
+      //background-color: lime;
     }
-    // color: $azul;
-    // width: 50%;
-    .corporativo {
-      height: 100%;
-      // height: 100%;
-      margin-right: 1rem;
-      border-right: 0.1rem solid $azul;
-      // padding: 0.5rem;
+    .titulo {
+        img {
+          height: 5vh;
+          width: 5vh;
+          margin-right: 1rem;
+        }
+      }
+  }
+
+  .interes {
+    border: 0.1rem solid $azul;
+    width: 95vw;
+    padding: 2rem;
+    border: {
+      radius: 1rem;
+    }
+    background: {
+      color: black;
+    }
+    p {
+      margin-top: 1.5rem;
     }
   }
-  .descripcion {
-    padding: 1rem;
-    width: 100%;
-    //text-overflow: ellipsis;
-    //  white-space: nowrap;
-    //overflow: hidden;
-    //   height: 10vw;
-    //   width: 50%;
-  }
+
+  //padding: 5%;
+  //height: 10vh;
+  // overflow: hidden;
+
   a:link {
     color: #ffffff;
     text-decoration: none;
@@ -179,13 +176,7 @@ a:visited {
   a:hover {
     color: $azul;
   }
-  .titulo {
-    img {
-      height: 5vh;
-      width: 5vh;
-      margin-right: 1rem;
-    }
-  }
+ 
 }
 
 //------------------------\\

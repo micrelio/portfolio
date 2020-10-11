@@ -70,7 +70,7 @@ class miWebs extends HTMLElement {
             </a>
         </div>
         <p>
-            Esta página sincroniza con la <a target="blank" href="https://developer.clashofclans.com/#/"> API Clash of Clans</a>, lee una hoja JSON, descarga los datos y muestra con imágenes imitando la estructura real del juego, con búsqueda y selección de equipos por medio de formulario.<br>
+            Esta página sincroniza con la <a target="blank" href="https://developer.clashofclans.com/#/"> API Clash of Clans</a>, lee un archivo JSON, descarga los datos y muestra con imágenes imitando la estructura real del juego, con búsqueda y selección de equipos por medio de formulario.<br>
             Datos cedidos por <a target="blank" href="https://supercell.com/en/">Supercell</a>.<br> 
             Lenguajes usados:<br>
             <i class="fa fa-check-circle verde"></i> HTML.<br>
