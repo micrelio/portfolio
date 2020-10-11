@@ -83,7 +83,7 @@ class miCurriculum extends HTMLElement {
     </div>
     <div class="experiencia">
         <div class="logotipo">
-            <a href="https://www.coversa.com/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/cover.jpg"></a> 
+            <a href="https://www.coversa.com/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/cover.png"></a> 
         </div>
         <div class="descripcion">
             <p>2002</p>
@@ -118,14 +118,21 @@ class miCurriculum extends HTMLElement {
 <div class="descripcion">
     <h1>Experiencia laboral</h1>
 </div>
+
+
+
 <section class="datos">
     <div class="experiencia">
         <div class="logotipo">    
-            <a href="https://www.hostingmicro.com/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/yoigo.jpg"></a>
+            <a href="https://www.titaniumgamers.com/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/titaniumgamers.png"></a>
         </div>
         <div class="descripcion">
-            <p>2020 <a href="https://www.hostingmicro.com/" target="_blank">HostingMicro.com</a></p>
-            <p>  Creación de servidor para WordPress en VPS, adquisición de licencia DIVI comienzo en creación y alquiler de hosting de forma privada.</p>
+            <p>2020 <a href="https://www.titaniumgamers.com/" target="_blank">TitaniumGamers.com</a></p>
+            <p>Creación de servidor web y servidor de juegos en VPS.<br>
+                Adquisición de licencia DIVI de desarrollador.<br>
+                Edición de sistemas en juegos.<br>
+                Creación de hosting de forma privada.
+            </p>
         </div>
     </div>
     <div class="experiencia">
@@ -140,7 +147,7 @@ class miCurriculum extends HTMLElement {
     </div>
     <div class="experiencia">
         <div class="logotipo">
-            <a href=" https://www.yoigo.com/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/yoigo.jpg"></a>
+            <a href=" https://www.yoigo.com/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/yoigo.png"></a>
         </div>                                                                                         
         <div class="descripcion">
             <p>2018 <a href=" https://www.yoigo.com/" target="_blank">Yoigo</a></p>
@@ -221,7 +228,7 @@ class miCurriculum extends HTMLElement {
     </div>
     <div class="experiencia">
         <div class="logotipo">
-            <a href=" https://www.coversa.com/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/cover.jpg"></a>
+            <a href=" https://www.coversa.com/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/cover.png"></a>
         </div>
         <div class="descripcion">
             <p>2002 <a href=" https://www.coversa.com/" target="_blank">Cover</a></p>
