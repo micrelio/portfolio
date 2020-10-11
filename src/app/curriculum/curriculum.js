@@ -10,7 +10,7 @@ class miCurriculum extends HTMLElement {
 <section class="datos">
     <div class="datosPersonales">
         <div class="foto">
-            <img id="" class="dni" src="../../assets/images/fotos/dni.jpg">
+            <img id="" class="dni" src="../../assets/images/fotos/dni.png">
         </div>
         <div class="direccion">
             <h>José Antonio López Baena</h>
