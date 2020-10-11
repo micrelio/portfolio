@@ -28,16 +28,10 @@ class miCurriculum extends HTMLElement {
             </p>
         </div>
     </div>
-
-
 </section>
-  
-  
-  
-  <div class="descripcion">
-  <h1>Formación académica</h1>
-  </div>
-
+<div class="descripcion">
+    <h1>Formación académica</h1>
+</div>
 <section class="datos">
     <div class="experiencia">
         <div class="logotipo">
@@ -75,7 +69,6 @@ class miCurriculum extends HTMLElement {
             <a href="../../assets/images/titulos/ingles.jpg" target="_blank"><img alt="" src="../../assets/images/icons/titulo.png"></a>
         </div>
     </div>
-
     <div class="experiencia">
         <div class="logotipo">
             <a href="http://iessalvadorgadea.edu.gva.es/web/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/salvadorGadea.jpg"></a>
@@ -122,7 +115,6 @@ class miCurriculum extends HTMLElement {
         </div>
     </div>
 </section>
-
 <div class="descripcion">
     <h1>Experiencia laboral</h1>
 </div>
@@ -245,9 +237,8 @@ class miCurriculum extends HTMLElement {
             <p>Instalador electricista en diversas empresas y de forma privada.</p>
          </div>
     </div>
-  </section>
- 
-<div class="descripcion">
+ </section>
+ <div class="descripcion">
     <h1>Datos de interés</h1>
 </div>
 <section class="datos">
@@ -260,9 +251,7 @@ class miCurriculum extends HTMLElement {
         <p>Experiencia en reparación de múltiples componentes electrónicos.</p>
     </div>
 </section>
-
 <button onclick="window.print()">Print this page</button>
-
                 `;
   }
 }
@@ -271,7 +260,6 @@ function mostrarTitulo(titulo) {
   switch (titulo) {
     case "electricidad":
       '<a href="mipagina.html" target="_blank">Abre el enlace en una nueva ventana</a>';
-
       break;
     case "automatismos":
       //<img src="../../assets/images/banners/rocas.jpg"></img>
