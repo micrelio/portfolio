@@ -67,9 +67,26 @@
       }
     }
     .visitar {
+      display: flex;
+      flex-direction: row;
       color: $azul;
       font-size: 3rem;
       margin-left: 0px;
+      //background-color: lime;
+      .fa-arrow-alt-circle-right{
+
+        display: block;
+         
+        text-decoration: none;
+        margin-left: 1rem;
+        animation-name: parpadeo;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: parpadeo;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;      }
     }
   }
   .tiendaTitanium {

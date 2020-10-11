@@ -133,7 +133,22 @@ a:visited {
         height: 5vh;
         width: 5vh;
         margin-right: 1rem;
+
+        display: block;
+         
+          text-decoration: none;
+          margin-left: 30px;
+          animation-name: parpadeo;
+          animation-duration: 1s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          -webkit-animation-name: parpadeo;
+          -webkit-animation-duration: 2s;
+          -webkit-animation-timing-function: linear;
+          -webkit-animation-iteration-count: infinite;
+        
       }
+      
     }
   }
   .interes {

@@ -102,9 +102,28 @@
 .web .tiendaTitanium .visitar,
 .web .titanium .visitar,
 .web .portfolio .visitar {
+  display: flex;
+  flex-direction: row;
   color: #00C6EE;
   font-size: 3rem;
   margin-left: 0px;
+}
+.web .primeroscoc .visitar .fa-arrow-alt-circle-right,
+.web .guerrasonline .visitar .fa-arrow-alt-circle-right,
+.web .tiendaTitanium .visitar .fa-arrow-alt-circle-right,
+.web .titanium .visitar .fa-arrow-alt-circle-right,
+.web .portfolio .visitar .fa-arrow-alt-circle-right {
+  display: block;
+  text-decoration: none;
+  margin-left: 1rem;
+  animation-name: parpadeo;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: parpadeo;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
 }
 .web .tiendaTitanium .titulo {
   background-image: url("../../../images/banners/TitaniumRoleplay.png");
