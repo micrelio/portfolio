@@ -125,6 +125,17 @@
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
 }
+.web .primeroscoc .fa-arrow-alt-circle-right:hover,
+.web .guerrasonline .fa-arrow-alt-circle-right:hover,
+.web .tiendaTitanium .fa-arrow-alt-circle-right:hover,
+.web .titanium .fa-arrow-alt-circle-right:hover,
+.web .portfolio .fa-arrow-alt-circle-right:hover {
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5);
+}
 .web .tiendaTitanium .titulo {
   background-image: url("../../../images/banners/TitaniumRoleplay.png");
   background-position: center;

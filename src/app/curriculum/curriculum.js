@@ -42,8 +42,9 @@ class miCurriculum extends HTMLElement {
             <p>BootCamp fullstack developer, en <a href="https://geekshubs.com/" target="_blank">GeeksHubs</a> Valencia (Valencia).</p>
         </div>
         <div class="titulo">
-            <a href="../../assets/images/titulos/GreeksHubs.jpg" target="_blank"><img alt="" src="../../assets/images/icons/titulo.png"></a>
+                <a href="../../assets/images/titulos/GreeksHubs.jpg" target="_blank"><img alt="" src="../../assets/images/icons/titulo.png"></a>
         </div>
+        
     </div>
     <div class="experiencia">
         <div class="logotipo">

@@ -83,10 +83,19 @@ a:visited {
   width: 100%;
   display: flex;
   flex-direction: column;
+  height: 100%;
+}
+.datos .experiencia .titulo {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  bottom: 0px;
 }
 .datos .experiencia .titulo img {
-  height: 5vh;
-  width: 5vh;
+  height: 10rem;
+  width: 10rem;
   margin-right: 1rem;
   display: block;
   text-decoration: none;
@@ -99,6 +108,13 @@ a:visited {
   -webkit-animation-duration: 2s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
+}
+.datos .experiencia .titulo img:hover {
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
+  transform: scale(1.15);
 }
 .datos .interes {
   border: 0.1rem solid #00C6EE;
