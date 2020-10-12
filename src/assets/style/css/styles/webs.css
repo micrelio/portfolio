@@ -24,7 +24,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  min-width: 500px;
 }
 .web .primeroscoc,
 .web .guerrasonline,
@@ -39,7 +38,7 @@
   background-color: black;
   display: grid;
   grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5];
-  grid-template-rows: [y0] 1fr [y1] 1fr [y2] 0.05fr [y3];
+  grid-template-rows: [y0] 0.5fr [y1] 1fr [y2] 0.05fr [y3];
   margin-top: 5rem;
 }
 .web .primeroscoc a,
@@ -60,7 +59,7 @@
   background-size: cover;
   grid-column: x0/x5;
   grid-row: y0/y1;
-  height: 30vh;
+  height: 25vh;
 }
 .web .primeroscoc .titulo h1,
 .web .guerrasonline .titulo h1,
@@ -82,7 +81,8 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
+  align-items: baseline;
+  padding: 2rem;
 }
 .web .primeroscoc .descripcion p,
 .web .guerrasonline .descripcion p,
@@ -90,7 +90,6 @@
 .web .titaniumGamers .descripcion p,
 .web .portfolio .descripcion p {
   font-family: "FontAwesome", sans-serif;
-  margin: 1rem 3rem 3rem 3rem;
   font-size: 1.7rem;
   color: white;
 }
@@ -246,14 +245,6 @@
 .web .portfolio .descripcion {
     grid-column: x0/x5;
     grid-row: y1/y2;
-    margin-top: 0rem;
-  }
-  .web .primeroscoc .descripcion p,
-.web .guerrasonline .descripcion p,
-.web .tiendaTitanium .descripcion p,
-.web .titaniumGamers .descripcion p,
-.web .portfolio .descripcion p {
-    margin: 0rem 3rem 3rem 3rem;
   }
   .web .primeroscoc .visitar,
 .web .guerrasonline .visitar,
