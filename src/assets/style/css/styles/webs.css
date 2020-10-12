@@ -25,8 +25,8 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.web .titaniumGamers {
-  width: 95%;
+.web .titaniumGamers2 {
+  width: 90%;
   border-radius: 25px;
   border: 0.05rem solid #00C6EE;
   margin-top: 5rem;
@@ -35,32 +35,30 @@
   display: grid;
   grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 0.5fr [x5] 0.5fr [x6];
   grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3] 1fr [y4];
-  width: 90%;
-  height: 40vh;
   margin-top: 5rem;
 }
-.web .titaniumGamers a {
+.web .titaniumGamers2 a {
   text-decoration: none;
 }
-.web .titaniumGamers .logoWeb {
+.web .titaniumGamers2 .logoWeb {
   grid-column: x0/x2;
-  grid-row: y0/y3;
+  grid-row: y0/y4;
   background-color: wheat;
-  width: 100%;
-  background-image: url("../../../images/logoEmpresa/electricidad.jpg");
-  background-position: center;
-  background-size: cover;
 }
-.web .titaniumGamers .titulo {
+.web .titaniumGamers2 .logoWeb img {
+  grid-column: x0/x2;
+  grid-row: y0/y4;
+  width: 100%;
+}
+.web .titaniumGamers2 .titulo {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 0.05rem solid #00C6EE;
   background-size: cover;
   grid-column: x2/x6;
   grid-row: y0/y1;
 }
-.web .titaniumGamers .titulo h1 {
+.web .titaniumGamers2 .titulo h1 {
   display: flex;
   align-self: center;
   justify-content: center;
@@ -69,25 +67,27 @@
   -webkit-text-stroke: 1px black;
   font-family: titanium;
   font-size: 6rem;
+  background-color: chocolate;
 }
-.web .titaniumGamers .descripcion {
+.web .titaniumGamers2 .descripcion {
   grid-column: x2/x5;
   grid-row: y1/y4;
+  background-color: cornflowerblue;
 }
-.web .titaniumGamers .descripcion p {
+.web .titaniumGamers2 .descripcion p {
   font-family: "FontAwesome", sans-serif;
   padding: 1.5rem;
   font-size: 1.7rem;
   color: white;
 }
-.web .titaniumGamers .descripcion p a {
+.web .titaniumGamers2 .descripcion p a {
   text-decoration: none;
   color: lightskyblue;
 }
-.web .titaniumGamers .descripcion p i {
+.web .titaniumGamers2 .descripcion p i {
   color: green;
 }
-.web .titaniumGamers .visitar {
+.web .titaniumGamers2 .visitar {
   grid-column: x5/x6;
   grid-row: y1/y4;
   display: flex;
@@ -97,8 +97,9 @@
   color: #00C6EE;
   font-size: 3rem;
   margin-left: 0px;
+  background-color: lime;
 }
-.web .titaniumGamers .visitar .fa-arrow-alt-circle-right {
+.web .titaniumGamers2 .visitar .fa-arrow-alt-circle-right {
   display: block;
   text-decoration: none;
   margin-left: 1rem;
@@ -111,7 +112,7 @@
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
 }
-.web .titaniumGamers .visitar .fa-arrow-alt-circle-right:hover {
+.web .titaniumGamers2 .visitar .fa-arrow-alt-circle-right:hover {
   -webkit-transform: scale(1.5);
   -moz-transform: scale(1.5);
   -ms-transform: scale(1.5);
@@ -123,7 +124,7 @@
 .web .tiendaTitanium,
 .web .titanium,
 .web .portfolio {
-  width: 95%;
+  width: 90%;
   border-radius: 25px;
   border: 0.05rem solid #00C6EE;
   margin-top: 5rem;

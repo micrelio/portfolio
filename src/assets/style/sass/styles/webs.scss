@@ -17,13 +17,13 @@
 }
 .web {
   @include webs;
-  .titaniumGamers {
+  .titaniumGamers2 {
     @include recuadro;
     display: grid;
     grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 0.5fr [x5] 0.5fr [x6];
     grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3] 1fr [y4];
-    width: 90%;
-    height: 40vh;
+    // width: 90%;
+    // height: 40vh;
     margin-top: 5rem;
     background: {
       //image: url("../../../images/banners/vinewood.jpg");
@@ -35,17 +35,22 @@
     }
     .logoWeb {
       grid-column: x0 / x2;
-      grid-row: y0 / y3;
+      grid-row: y0 / y4;
       // width: 20%;
       background-color: wheat;
-      width: 100%;
-        background: {
-          image: url("../../../images/logoEmpresa/electricidad.jpg");
-          position: center;
-          size: cover;
-       // width: 90%;
+      //width: 100%;
+      // background: {
+      //   image: url("../../../images/logoEmpresa/electricidad.jpg");
+      //   position: center;
+      //   size: cover;
+      // width: 90%;
       //  height: 100%;
-       
+
+      // }
+      img {
+        grid-column: x0 / x2;
+        grid-row: y0 / y4;
+        width: 100%;
       }
     }
     .titulo {
@@ -53,7 +58,7 @@
 
       grid-column: x2 / x6;
       grid-row: y0 / y1;
-     // background-color: pink;
+      // background-color: pink;
       h1 {
         display: flex;
         align-self: center;
@@ -69,7 +74,7 @@
           family: titanium;
           size: 6rem;
         }
-      
+        background-color: chocolate;
       }
     }
     .descripcion {
@@ -89,12 +94,12 @@
           color: green;
         }
       }
-
+      background-color: cornflowerblue;
     }
     .visitar {
       grid-column: x5 / x6;
       grid-row: y1 / y4;
-     // background-color: red;
+      // background-color: red;
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -102,7 +107,7 @@
       color: $azul;
       font-size: 3rem;
       margin-left: 0px;
-      //background-color: lime;
+      background-color: lime;
       .fa-arrow-alt-circle-right {
         display: block;
 
