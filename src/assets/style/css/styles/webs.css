@@ -28,7 +28,7 @@
 .web .primeroscoc,
 .web .guerrasonline,
 .web .tiendaTitanium,
-.web .titanium,
+.web .titaniumGamers,
 .web .portfolio {
   width: 90%;
   border-radius: 25px;
@@ -36,70 +36,88 @@
   margin-top: 5rem;
   overflow: hidden;
   background-color: black;
-  background-color: #000;
+  display: grid;
+  grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 0.5fr [x5] 0.5fr [x6];
+  grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3];
+  margin-top: 5rem;
+}
+.web .primeroscoc a,
+.web .guerrasonline a,
+.web .tiendaTitanium a,
+.web .titaniumGamers a,
+.web .portfolio a {
+  text-decoration: none;
 }
 .web .primeroscoc .titulo,
 .web .guerrasonline .titulo,
 .web .tiendaTitanium .titulo,
-.web .titanium .titulo,
+.web .titaniumGamers .titulo,
 .web .portfolio .titulo {
-  background-image: url("../../../images/banners/vinewood.jpg");
-  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-size: cover;
-}
-.web .primeroscoc .titulo a,
-.web .guerrasonline .titulo a,
-.web .tiendaTitanium .titulo a,
-.web .titanium .titulo a,
-.web .portfolio .titulo a {
-  text-decoration: none;
+  grid-column: x0/x6;
+  grid-row: y0/y1;
 }
 .web .primeroscoc .titulo h1,
 .web .guerrasonline .titulo h1,
 .web .tiendaTitanium .titulo h1,
-.web .titanium .titulo h1,
+.web .titaniumGamers .titulo h1,
 .web .portfolio .titulo h1 {
   display: flex;
   align-self: center;
   justify-content: center;
-  margin-top: 0px;
-  -webkit-text-fill-color: #e3e4e5;
-  -webkit-text-stroke: 1px black;
-  font-family: titanium;
-  font-size: 6rem;
+  margin: 1rem;
 }
-.web .primeroscoc p,
-.web .guerrasonline p,
-.web .tiendaTitanium p,
-.web .titanium p,
-.web .portfolio p {
+.web .primeroscoc .descripcion,
+.web .guerrasonline .descripcion,
+.web .tiendaTitanium .descripcion,
+.web .titaniumGamers .descripcion,
+.web .portfolio .descripcion {
+  grid-column: x0/x4;
+  grid-row: y1/y3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.web .primeroscoc .descripcion p,
+.web .guerrasonline .descripcion p,
+.web .tiendaTitanium .descripcion p,
+.web .titaniumGamers .descripcion p,
+.web .portfolio .descripcion p {
   font-family: "FontAwesome", sans-serif;
-  padding: 1.5rem;
+  margin: 3rem;
   font-size: 1.7rem;
   color: white;
 }
-.web .primeroscoc p a,
-.web .guerrasonline p a,
-.web .tiendaTitanium p a,
-.web .titanium p a,
-.web .portfolio p a {
+.web .primeroscoc .descripcion p a,
+.web .guerrasonline .descripcion p a,
+.web .tiendaTitanium .descripcion p a,
+.web .titaniumGamers .descripcion p a,
+.web .portfolio .descripcion p a {
   text-decoration: none;
   color: lightskyblue;
 }
-.web .primeroscoc p i,
-.web .guerrasonline p i,
-.web .tiendaTitanium p i,
-.web .titanium p i,
-.web .portfolio p i {
+.web .primeroscoc .descripcion p i,
+.web .guerrasonline .descripcion p i,
+.web .tiendaTitanium .descripcion p i,
+.web .titaniumGamers .descripcion p i,
+.web .portfolio .descripcion p i {
   color: green;
 }
 .web .primeroscoc .visitar,
 .web .guerrasonline .visitar,
 .web .tiendaTitanium .visitar,
-.web .titanium .visitar,
+.web .titaniumGamers .visitar,
 .web .portfolio .visitar {
+  grid-column: x4/x6;
+  grid-row: y1/y3;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   color: #00C6EE;
   font-size: 3rem;
   margin-left: 0px;
@@ -107,8 +125,9 @@
 .web .primeroscoc .visitar .fa-arrow-alt-circle-right,
 .web .guerrasonline .visitar .fa-arrow-alt-circle-right,
 .web .tiendaTitanium .visitar .fa-arrow-alt-circle-right,
-.web .titanium .visitar .fa-arrow-alt-circle-right,
+.web .titaniumGamers .visitar .fa-arrow-alt-circle-right,
 .web .portfolio .visitar .fa-arrow-alt-circle-right {
+  color: green;
   display: block;
   text-decoration: none;
   margin-left: 1rem;
@@ -121,16 +140,27 @@
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
 }
-.web .primeroscoc .fa-arrow-alt-circle-right:hover,
-.web .guerrasonline .fa-arrow-alt-circle-right:hover,
-.web .tiendaTitanium .fa-arrow-alt-circle-right:hover,
-.web .titanium .fa-arrow-alt-circle-right:hover,
-.web .portfolio .fa-arrow-alt-circle-right:hover {
+.web .primeroscoc .visitar .fa-arrow-alt-circle-right:hover,
+.web .guerrasonline .visitar .fa-arrow-alt-circle-right:hover,
+.web .tiendaTitanium .visitar .fa-arrow-alt-circle-right:hover,
+.web .titaniumGamers .visitar .fa-arrow-alt-circle-right:hover,
+.web .portfolio .visitar .fa-arrow-alt-circle-right:hover {
   -webkit-transform: scale(1.5);
   -moz-transform: scale(1.5);
   -ms-transform: scale(1.5);
   -o-transform: scale(1.5);
   transform: scale(1.5);
+}
+.web .titaniumGamers .titulo {
+  background-image: url("../../../images/banners/vinewood.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.web .titaniumGamers .titulo h1 {
+  -webkit-text-fill-color: #e3e4e5;
+  -webkit-text-stroke: 1px black;
+  font-family: titanium;
+  font-size: 6rem;
 }
 .web .tiendaTitanium .titulo {
   background-image: url("../../../images/banners/TitaniumRoleplay.png");
@@ -140,8 +170,9 @@
 .web .tiendaTitanium .titulo h1 {
   -webkit-text-fill-color: #8a9597;
   -webkit-text-stroke: 1px black;
-  height: 0 auto;
   -webkit-text-stroke: 0.05rem black;
+  font-family: titanium;
+  font-size: 6rem;
 }
 .web .primeroscoc .titulo,
 .web .guerrasonline .titulo {
@@ -185,50 +216,23 @@
 .web .guerrasonline .titulo h1 {
   -webkit-text-fill-color: gold;
 }
-.web .portfolio .titulo {
-  background-image: url("../../../images/banners/micro-banner.jpg");
-  background-position: center;
-  background-size: cover;
-}
-.web .portfolio .titulo h1 {
-  -webkit-text-fill-color: gold;
-}
-.web .titaniumGamers2 {
+.web .portfolio2222 {
   width: 90%;
   border-radius: 25px;
   border: 0.05rem solid #00C6EE;
   margin-top: 5rem;
   overflow: hidden;
   background-color: black;
-  display: grid;
-  grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 0.5fr [x5] 0.5fr [x6];
-  grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3];
-  width: 90%;
-  height: 20%;
-  margin-top: 5rem;
+  background-color: #000;
 }
-.web .titaniumGamers2 a {
+.web .portfolio2222 .titulo {
+  background-position: center;
+  background-size: cover;
+}
+.web .portfolio2222 .titulo a {
   text-decoration: none;
 }
-.web .titaniumGamers2 .logoWeb {
-  grid-column: x0/x2;
-  grid-row: y0/y3;
-  background-color: wheat;
-}
-.web .titaniumGamers2 .logoWeb img {
-  grid-column: x0/x2;
-  grid-row: y0/y3;
-  width: 100%;
-}
-.web .titaniumGamers2 .titulo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  grid-column: x2/x6;
-  grid-row: y0/y1;
-}
-.web .titaniumGamers2 .titulo h1 {
+.web .portfolio2222 .titulo h1 {
   display: flex;
   align-self: center;
   justify-content: center;
@@ -237,43 +241,28 @@
   -webkit-text-stroke: 1px black;
   font-family: titanium;
   font-size: 6rem;
-  background-color: chocolate;
 }
-.web .titaniumGamers2 .descripcion {
-  grid-column: x2/x5;
-  grid-row: y1/y3;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: cornflowerblue;
-}
-.web .titaniumGamers2 .descripcion p {
+.web .portfolio2222 p {
   font-family: "FontAwesome", sans-serif;
   padding: 1.5rem;
   font-size: 1.7rem;
   color: white;
 }
-.web .titaniumGamers2 .descripcion p a {
+.web .portfolio2222 p a {
   text-decoration: none;
   color: lightskyblue;
 }
-.web .titaniumGamers2 .descripcion p i {
+.web .portfolio2222 p i {
   color: green;
 }
-.web .titaniumGamers2 .visitar {
-  grid-column: x5/x6;
-  grid-row: y1/y3;
+.web .portfolio2222 .visitar {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
   color: #00C6EE;
   font-size: 3rem;
   margin-left: 0px;
-  background-color: lime;
 }
-.web .titaniumGamers2 .visitar .fa-arrow-alt-circle-right {
+.web .portfolio2222 .visitar .fa-arrow-alt-circle-right {
   display: block;
   text-decoration: none;
   margin-left: 1rem;
@@ -286,12 +275,20 @@
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
 }
-.web .titaniumGamers2 .visitar .fa-arrow-alt-circle-right:hover {
+.web .portfolio2222 .fa-arrow-alt-circle-right:hover {
   -webkit-transform: scale(1.5);
   -moz-transform: scale(1.5);
   -ms-transform: scale(1.5);
   -o-transform: scale(1.5);
   transform: scale(1.5);
+}
+.web .portfolio .titulo {
+  background-image: url("../../../images/banners/micro-banner.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.web .portfolio .titulo h1 {
+  -webkit-text-fill-color: gold;
 }
 
 /*# sourceMappingURL=webs.css.map */
