@@ -24,8 +24,8 @@
   .portfolio {
     @include recuadro;
     display: grid;
-    grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 0.5fr [x5] 0.5fr [x6];
-    grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3];
+    grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5] ;
+    grid-template-rows: [y0] 1fr [y1] 1fr [y2] 0.05fr [y3];
     margin-top: 5rem;
     a {
       text-decoration: none;
@@ -34,9 +34,11 @@
       @include titulo;
       //padding: 0rem;
 
-      grid-column: x0 / x6;
+      grid-column: x0 / x5;
       grid-row: y0 / y1;
       // background-color: pink;
+      height: 30vh;
+
       h1 {
         display: flex;
         align-self: center;
@@ -49,8 +51,9 @@
       grid-row: y1 / y3;
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
+
       p {
         font-family: "FontAwesome", sans-serif;
         margin: 3rem;
@@ -67,8 +70,9 @@
       //   background-color: cornflowerblue;
     }
     .visitar {
-      grid-column: x4 / x6;
+      grid-column: x4 / x5;
       grid-row: y1 / y3;
+      padding: 1rem;
       // background-color: red;
       display: flex;
       flex-direction: row;
@@ -189,8 +193,68 @@
       }
     }
   }
-}
 
+@media only screen and (max-width: 700px) {
+  .primeroscoc,
+  .guerrasonline,
+  .tiendaTitanium,
+  .titaniumGamers,
+  .portfolio {
+     .titulo {
+      grid-column: x0 / x5;
+      grid-row: y0 / y1;
+      // background-color: pink;
+      h1 {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        margin: 1rem;
+      }
+    }
+    .descripcion {
+      grid-column: x0 / x5;
+      grid-row: y1 / y2;
+     
+      
+      //   background-color: cornflowerblue;
+    }
+    .visitar {
+      
+      grid-column: x0 / x5;
+      grid-row: y2 / y3;
+      // background-color: red;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      color: $azul;
+      font-size: 3rem;
+      margin-left: 0px;
+      .fa-arrow-alt-circle-right {
+        color: green;
+        display: block;
+        text-decoration: none;
+        margin-left: 1rem;
+        animation-name: parpadeo;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: parpadeo;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+      }
+      .fa-arrow-alt-circle-right:hover {
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        transform: scale(1.5);
+      }
+    }
+  }
+}
+}
 // .separador {
 //     margin: 3rem;
 //     // height: 10rem;

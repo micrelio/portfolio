@@ -15,7 +15,7 @@ class miWebs extends HTMLElement {
             <p>
                 Diseñada con WordPress tema DIVI (adquirida licencia desarrollador), para la comunidad propia de jugadores <a target="blank" href="https://titaniumgamers.com/">Titanium Gamers</a> durante el confinamiento 2020.<br>
                 Creada con:<br>
-                <i class="fa fa-check-circle verde"></i> WORDPRESS tema DIVI.<br><br>
+                <i class="fa fa-check-circle verde"></i> WORDPRESS tema DIVI.
             </p>
         </div>
         <div class="visitar">
@@ -41,7 +41,7 @@ class miWebs extends HTMLElement {
                 Lenguajes:<br>
                 <i class="fa fa-check-circle verde"></i> HTML.<br>
                 <i class="fa fa-check-circle verde"></i> CSS.<br>
-                <i class="fa fa-check-circle verde"></i> Javascript.<br><br>
+                <i class="fa fa-check-circle verde"></i> Javascript.
             </p>
         </div>
         <div class="visitar">
@@ -65,7 +65,7 @@ class miWebs extends HTMLElement {
                 Lenguajes:<br>
                 <i class="fa fa-check-circle verde"></i> HTML.<br>
                 <i class="fa fa-check-circle verde"></i> CSS.<br>
-                <i class="fa fa-check-circle verde"></i> PHP.<br><br>
+                <i class="fa fa-check-circle verde"></i> PHP.
             </p>
         </div>
         <div class="visitar">
@@ -89,7 +89,7 @@ class miWebs extends HTMLElement {
                 Lenguajes:<br>
                 <i class="fa fa-check-circle verde"></i> HTML.<br>
                 <i class="fa fa-check-circle verde"></i> CSS.<br>
-                <i class="fa fa-check-circle verde"></i> PHP.<br><br>
+                <i class="fa fa-check-circle verde"></i> PHP.
             </p>
         </div>
         <div class="visitar">
