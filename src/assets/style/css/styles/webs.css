@@ -26,7 +26,7 @@
   justify-content: space-around;
 }
 .web .primeroscoc,
-.web .guerrasonline,
+.web .guerrasOnline,
 .web .tiendaTitanium,
 .web .titaniumGamers,
 .web .portfolio {
@@ -42,14 +42,14 @@
   margin-top: 5rem;
 }
 .web .primeroscoc a,
-.web .guerrasonline a,
+.web .guerrasOnline a,
 .web .tiendaTitanium a,
 .web .titaniumGamers a,
 .web .portfolio a {
   text-decoration: none;
 }
 .web .primeroscoc .titulo,
-.web .guerrasonline .titulo,
+.web .guerrasOnline .titulo,
 .web .tiendaTitanium .titulo,
 .web .titaniumGamers .titulo,
 .web .portfolio .titulo {
@@ -62,7 +62,7 @@
   height: 25vh;
 }
 .web .primeroscoc .titulo h1,
-.web .guerrasonline .titulo h1,
+.web .guerrasOnline .titulo h1,
 .web .tiendaTitanium .titulo h1,
 .web .titaniumGamers .titulo h1,
 .web .portfolio .titulo h1 {
@@ -72,7 +72,7 @@
   margin: 1rem;
 }
 .web .primeroscoc .descripcion,
-.web .guerrasonline .descripcion,
+.web .guerrasOnline .descripcion,
 .web .tiendaTitanium .descripcion,
 .web .titaniumGamers .descripcion,
 .web .portfolio .descripcion {
@@ -85,7 +85,7 @@
   padding: 2rem;
 }
 .web .primeroscoc .descripcion p,
-.web .guerrasonline .descripcion p,
+.web .guerrasOnline .descripcion p,
 .web .tiendaTitanium .descripcion p,
 .web .titaniumGamers .descripcion p,
 .web .portfolio .descripcion p {
@@ -94,7 +94,7 @@
   color: white;
 }
 .web .primeroscoc .descripcion p a,
-.web .guerrasonline .descripcion p a,
+.web .guerrasOnline .descripcion p a,
 .web .tiendaTitanium .descripcion p a,
 .web .titaniumGamers .descripcion p a,
 .web .portfolio .descripcion p a {
@@ -102,14 +102,14 @@
   color: lightskyblue;
 }
 .web .primeroscoc .descripcion p i,
-.web .guerrasonline .descripcion p i,
+.web .guerrasOnline .descripcion p i,
 .web .tiendaTitanium .descripcion p i,
 .web .titaniumGamers .descripcion p i,
 .web .portfolio .descripcion p i {
   color: green;
 }
 .web .primeroscoc .visitar,
-.web .guerrasonline .visitar,
+.web .guerrasOnline .visitar,
 .web .tiendaTitanium .visitar,
 .web .titaniumGamers .visitar,
 .web .portfolio .visitar {
@@ -125,7 +125,7 @@
   margin-left: 0px;
 }
 .web .primeroscoc .visitar .fa-arrow-alt-circle-right,
-.web .guerrasonline .visitar .fa-arrow-alt-circle-right,
+.web .guerrasOnline .visitar .fa-arrow-alt-circle-right,
 .web .tiendaTitanium .visitar .fa-arrow-alt-circle-right,
 .web .titaniumGamers .visitar .fa-arrow-alt-circle-right,
 .web .portfolio .visitar .fa-arrow-alt-circle-right {
@@ -143,7 +143,7 @@
   -webkit-animation-iteration-count: infinite;
 }
 .web .primeroscoc .visitar .fa-arrow-alt-circle-right:hover,
-.web .guerrasonline .visitar .fa-arrow-alt-circle-right:hover,
+.web .guerrasOnline .visitar .fa-arrow-alt-circle-right:hover,
 .web .tiendaTitanium .visitar .fa-arrow-alt-circle-right:hover,
 .web .titaniumGamers .visitar .fa-arrow-alt-circle-right:hover,
 .web .portfolio .visitar .fa-arrow-alt-circle-right:hover {
@@ -177,13 +177,13 @@
   font-size: 6rem;
 }
 .web .primeroscoc .titulo,
-.web .guerrasonline .titulo {
+.web .guerrasOnline .titulo {
   background-image: url("../../../images/banners/primeros.jpg");
   background-position: center;
   background-size: cover;
 }
 .web .primeroscoc .titulo h1,
-.web .guerrasonline .titulo h1 {
+.web .guerrasOnline .titulo h1 {
   -webkit-text-fill-color: orange;
   -webkit-text-stroke: 1px black;
   height: 0 auto;
@@ -193,35 +193,35 @@
   font-size: 4rem;
 }
 .web .primeroscoc .descripcion p,
-.web .guerrasonline .descripcion p {
+.web .guerrasOnline .descripcion p {
   color: white;
 }
 .web .primeroscoc .descripcion p a,
-.web .guerrasonline .descripcion p a {
+.web .guerrasOnline .descripcion p a {
   text-decoration: none;
   color: gold;
 }
 .web .primeroscoc .descripcion p i,
-.web .guerrasonline .descripcion p i {
+.web .guerrasOnline .descripcion p i {
   color: green;
 }
 .web .primeroscoc .descripcion p .fa-undo-alt,
-.web .guerrasonline .descripcion p .fa-undo-alt {
+.web .guerrasOnline .descripcion p .fa-undo-alt {
   color: red;
   left: 0px;
 }
-.web .guerrasonline .titulo {
+.web .guerrasOnline .titulo {
   background-image: url("../../../images/banners/guerrasonline.jpg");
   background-position: center;
   background-size: cover;
 }
-.web .guerrasonline .titulo h1 {
+.web .guerrasOnline .titulo h1 {
   -webkit-text-fill-color: gold;
   font-size: 3.5rem;
 }
 @media only screen and (max-width: 700px) {
   .web .primeroscoc .titulo,
-.web .guerrasonline .titulo,
+.web .guerrasOnline .titulo,
 .web .tiendaTitanium .titulo,
 .web .titaniumGamers .titulo,
 .web .portfolio .titulo {
@@ -229,7 +229,7 @@
     grid-row: y0/y1;
   }
   .web .primeroscoc .titulo h1,
-.web .guerrasonline .titulo h1,
+.web .guerrasOnline .titulo h1,
 .web .tiendaTitanium .titulo h1,
 .web .titaniumGamers .titulo h1,
 .web .portfolio .titulo h1 {
@@ -239,7 +239,7 @@
     margin: 1rem;
   }
   .web .primeroscoc .descripcion,
-.web .guerrasonline .descripcion,
+.web .guerrasOnline .descripcion,
 .web .tiendaTitanium .descripcion,
 .web .titaniumGamers .descripcion,
 .web .portfolio .descripcion {
@@ -247,7 +247,7 @@
     grid-row: y1/y2;
   }
   .web .primeroscoc .visitar,
-.web .guerrasonline .visitar,
+.web .guerrasOnline .visitar,
 .web .tiendaTitanium .visitar,
 .web .titaniumGamers .visitar,
 .web .portfolio .visitar {

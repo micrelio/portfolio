@@ -18,7 +18,7 @@
 .web {
     @include webs;
   .primeroscoc,
-  .guerrasonline,
+  .guerrasOnline,
   .tiendaTitanium,
   .titaniumGamers,
   .portfolio {
@@ -144,7 +144,7 @@
     }
   }
   .primeroscoc,
-  .guerrasonline {
+  .guerrasOnline {
     .titulo {
       background: {
         image: url("../../../images/banners/primeros.jpg");
@@ -180,7 +180,7 @@
       }
     }
   }
-  .guerrasonline {
+  .guerrasOnline {
     .titulo {
       background: {
         image: url("../../../images/banners/guerrasonline.jpg");
@@ -196,7 +196,7 @@
 
 @media only screen and (max-width: 700px) {
   .primeroscoc,
-  .guerrasonline,
+  .guerrasOnline,
   .tiendaTitanium,
   .titaniumGamers,
   .portfolio {
@@ -211,7 +211,6 @@
         align-self: center;
         justify-content: center;
         margin: 1rem;
-      //  font-size: calc(3.7rem + 1vw);
 
       }
     }

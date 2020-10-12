@@ -75,7 +75,7 @@ class miWebs extends HTMLElement {
             </p>
         </div>
     </div>
-    <div class="guerrasonline">
+    <div class="guerrasOnline">
         <div class="titulo">
             <a target="blank" href="https://clashofclansguerrasonline.titaniumgamers.com/">
                 <h1>Guerras onLine</h1>
