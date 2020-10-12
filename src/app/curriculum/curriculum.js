@@ -13,7 +13,8 @@ class miCurriculum extends HTMLElement {
             <img id="" class="dni" src="../../assets/images/fotos/dni.png">
         </div>
         <div class="direccion">
-            <h>José Antonio López Baena</h>
+        <br>
+            <h><strong>José Antonio López Baena</strong></h>
             <p>
                 Nacido el 27 de julio de 1982 en Valencia (España).
             </p>
@@ -38,7 +39,7 @@ class miCurriculum extends HTMLElement {
             <a href="https://geekshubs.com/"target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/GeeksHubs.jpg"></a>
         </div>
         <div class="descripcion">
-            <p>2019</p>
+            <p class="año">2019</p><br>
             <p>BootCamp fullstack developer, en <a href="https://geekshubs.com/" target="_blank">GeeksHubs</a> Valencia (Valencia).</p>
         </div>
         <div class="titulo">
@@ -51,7 +52,7 @@ class miCurriculum extends HTMLElement {
             <a href="https://www.tobalcaide.com/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/tobalcaide.png"></a>
         </div>
         <div class="descripcion">
-            <p>2018</p>
+            <p class="año">2018</p><br>
             <p>Grado superior ASIR (administración de sistemas informáticos en red) <a href="https://www.tobalcaide.com/" target="_blank"> Academia Tobalcaide </a>, Quart de Poblet (Valencia).</p>
         </div>
         <div class="titulo">
@@ -63,7 +64,7 @@ class miCurriculum extends HTMLElement {
             <a href="http://mestreacasa.gva.es/web/iesrodrigobotet" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/rodrigoBotet.jpg"></a>
         </div>
         <div class="descripcion">
-            <p>2013-2017</p>
+            <p class="año">2013-2017</p><br>
             <p>Curso de inglés: <a href="http://mestreacasa.gva.es/web/iesrodrigobotet" target="_blank">IES Rodrigo Botet</a>, instituto Manises (Valencia).</p>
         </div>  
         <div class="titulo">
@@ -75,7 +76,7 @@ class miCurriculum extends HTMLElement {
             <a href="http://iessalvadorgadea.edu.gva.es/web/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/salvadorGadea.jpg"></a>
         </div>
         <div class="descripcion">
-            <p>2008</p>
+            <p  class="año">2008</p><br>
             <p>Grado superior de Control y regulación de sistemas autocontrolados: <a href="http://iessalvadorgadea.edu.gva.es/web/" target="_blank"> IES Salvador Gadea</a>, Aldaya (Valencia).</p>
         </div>
         <div class="titulo">
@@ -87,7 +88,7 @@ class miCurriculum extends HTMLElement {
             <a href="https://www.coversa.com/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/cover.png"></a> 
         </div>
         <div class="descripcion">
-            <p>2002</p>
+            <p class="año">2002</p><br>
             <p> Curso de trabajos en alta tensión en <a href="https://www.coversa.com/" target="_blank"> COVER </a>, Manises (Valencia).</p>
         </div>
         <div class="titulo">
@@ -99,7 +100,7 @@ class miCurriculum extends HTMLElement {
             <a href="http://institutofaitanar.edu.gva.es/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/faitanar.jpg"></a>
         </div>
         <div class="descripcion">
-            <p>2000</p>
+            <p class="año">2000</p><br>
             <p> Grado medio Electricidad: <a href="http://institutofaitanar.edu.gva.es/" target="_blank"> IES Faitanar </a>, Quart de Poblet (Valencia).</p>
         </div>
         <div class="titulo">
@@ -111,24 +112,25 @@ class miCurriculum extends HTMLElement {
             <a href="https://web.iesgonzaloanaya.es/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/gonzaloAnaya.jpg"></a>
         </div>
         <div class="descripcion">
-            <p>1997</p>
+            <p class="año">1997</p><br>
             <p>FP Elelectrónica: <a href="https://web.iesgonzaloanaya.es/" target="_blank">IES Gonzalo Anaya </a>, Xirivella (Valencia).</p>
         </div>
     </div>
 </section>
+
+
+
+
 <div class="descripcion">
     <h1>Experiencia laboral</h1>
 </div>
-
-
-
 <section class="datos">
     <div class="experiencia">
         <div class="logotipo">    
             <a href="https://www.titaniumgamers.com/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/titaniumgamers.png"></a>
         </div>
         <div class="descripcion">
-            <p>2020 <a href="https://www.titaniumgamers.com/" target="_blank">TitaniumGamers.com</a></p>
+            <p class="año">2020 <a href="https://www.titaniumgamers.com/" target="_blank"><strong>Titanium Gamers</strong></a></p><br>
             <p>Creación de servidor web y servidor de juegos en VPS.<br>
                 Adquisición de licencia DIVI de desarrollador.<br>
                 Edición de sistemas en juegos.<br>
@@ -141,7 +143,7 @@ class miCurriculum extends HTMLElement {
             <a href="https://www.igre.es/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/IGRE.png"></a>
         </div>
         <div class="descripcion">
-            <p>2019 <a href="https://www.igre.es/" target="_blank">IGRE</a></p>
+            <p class="año">2019 <a href="https://www.igre.es/" target="_blank"><strong>IGRE</strong></a></p><br>
             <p>Community manager, creación de cartelería, publicidad, creación de eventos, estudio y desarrollo de propuestas para campaña medio ambiente y energías renovables 2019.
             Candidatura propuesta como eurodiputado.</p>
         </div>
@@ -151,7 +153,7 @@ class miCurriculum extends HTMLElement {
             <a href=" https://www.yoigo.com/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/yoigo.png"></a>
         </div>                                                                                         
         <div class="descripcion">
-            <p>2018 <a href=" https://www.yoigo.com/" target="_blank">Yoigo</a></p>
+            <p class="año">2018 <a href=" https://www.yoigo.com/" target="_blank"><strong>Yoigo</strong></a></p><br>
             <p>Teleoperador como atención al cliente.</p>
         </div>
     </div>
@@ -160,7 +162,7 @@ class miCurriculum extends HTMLElement {
             <img id="" class="corporativo" src="../../assets/images/logoEmpresa/quafis.jpg">
         </div>
         <div class="descripcion">
-            <p>2018 Quafis</p>
+            <p class="año">2018 <strong>Quafis</strong></p><br>
             <p>Practicas grado superior ASIR, tareas como maquetación con WordPress DIVI, servicio técnico, montaje y puesta a punto de PC, servicio técnico online con TeamViewer.</p>
         </div>
     </div>
@@ -169,7 +171,7 @@ class miCurriculum extends HTMLElement {
             <a href="https://www.alimarket.es/alimentacion/empresa/209431" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/frusa.jpg"></a>
         </div>
         <div class="descripcion">
-            <p>2016 <a href="https://www.alimarket.es/alimentacion/empresa/209431" target="_blank">Frusa Coca Cola</a></p>
+            <p class="año">2016 <a href="https://www.alimarket.es/alimentacion/empresa/209431" target="_blank"><strong>Frusa Coca Cola</strong></a></p><br>
             <p>Técnico de sistemas industriales.</p>
         </div>
     </div>
@@ -178,7 +180,7 @@ class miCurriculum extends HTMLElement {
             <a href="https://www.trolli.es/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/trolli.jpg"></a>
         </div>
         <div class="descripcion">
-            <p>2015 <a href="https://www.trolli.es/" target="_blank">Trolli</a></p>
+            <p class="año">2015 <a href="https://www.trolli.es/" target="_blank"><strong>Trolli</strong></a></p><br>
             <p>Técnico de sistemas industriales, responsable de turno.</p>
         </div>
     </div>
@@ -187,7 +189,7 @@ class miCurriculum extends HTMLElement {
             <a href="https://power-electronics.com/es/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/power.jpg"></a>
         </div>
         <div class="descripcion">
-            <p>2013 <a href="https://power-electronics.com/es/" target="_blank">Tour Electric & Power Electronics</a></p>
+            <p class="año">2013 <a href="https://power-electronics.com/es/" target="_blank"><strong>Tour Electric&Power Electronics</strong></a></p><br>
             <p>Revisión y mejoras en plantas fotovoltaicas, trabajos en inversores y centros de transformación en Inglaterra.</p>
         </div>
     </div>
@@ -196,7 +198,7 @@ class miCurriculum extends HTMLElement {
             <a href="https://www.cerealtosirofoods.com/es/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/grupoSiro.jpg"></a>
         </div>
         <div class="descripcion">
-            <p>2013 <a href="https://www.cerealtosirofoods.com/es/" target="_blank">Grupo Siro</a></p>
+            <p class="año">2013 <a href="https://www.cerealtosirofoods.com/es/" target="_blank"><strong>Grupo Siro</strong></a></p><br>
             <p>Técnico de sistemas industriales.</p>
         </div>
     </div>
@@ -205,16 +207,16 @@ class miCurriculum extends HTMLElement {
             <img id="" class="corporativo" src="../../assets/images/logoEmpresa/dafsa.jpg">
         </div>
         <div class="descripcion">
-            <p>2009 Dafsa</p>
+            <p class="año">2009 <strong>Dafsa</strong></p><br>
             <p>Técnico de sistemas industriales, responsable de turno.</p>
         </div>
     </div>
     <div class="experiencia">
         <div class="logotipo">
-            <a href="http://www.diselcom.com/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/diselcom.jpg"></a>
+            <a href="http://www.diselcom.com/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/diselcom.jpg">
         </div>
         <div class="descripcion">
-            <p>2008 <a href="http://www.diselcom.com/" target="_blank">Diselcom</a></p>
+            <p class="año">2008 <a href="http://www.diselcom.com/" target="_blank"><strong>Diselcom</strong></a></p><br>
             <p>Montaje de cuadros electrónicos en época de estudios.</p>
         </div>
     </div>
@@ -223,7 +225,7 @@ class miCurriculum extends HTMLElement {
             <img id="" class="corporativo" src="../../assets/images/logoEmpresa/martinezLoriente.jpg">
         </div>
         <div class="descripcion">
-            <p>2005 Martínez Loriente</p>
+            <p class="año">2005 <strong>Martínez Loriente</strong></p><br>
             <p>Ayudante técnico de sistemas.
         </div>
     </div>
@@ -232,7 +234,7 @@ class miCurriculum extends HTMLElement {
             <a href=" https://www.coversa.com/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/cover.png"></a>
         </div>
         <div class="descripcion">
-            <p>2002 <a href=" https://www.coversa.com/" target="_blank">Cover</a></p>
+            <p class="año">2002 <a href=" https://www.coversa.com/" target="_blank"><strong>Cover</strong></a></p><br>
             <p>Mantenimiento en centros de transformación y subestaciones industriales de alta y media tensión.</p>
          </div>
     </div>
@@ -241,7 +243,7 @@ class miCurriculum extends HTMLElement {
             <img id="" class="corporativo" src="../../assets/images/logoEmpresa/electricidad.jpg">
         </div>
         <div class="descripcion">
-            <p>Tabajos como electricista</p>
+            <p class="año">T<strong>abajos como electricista</strong></p><br>
             <p>Instalador electricista en diversas empresas y de forma privada.</p>
          </div>
     </div>

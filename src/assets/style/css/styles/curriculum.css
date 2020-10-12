@@ -1,7 +1,11 @@
+@charset "UTF-8";
 /* hovers*/
 .descripcion {
   display: flex;
   justify-content: center;
+}
+.descripcion .año {
+  color: #00C6EE;
 }
 
 h1 {
@@ -16,7 +20,7 @@ p {
 }
 
 a:visited {
-  color: black;
+  color: #00C6EE;
   font-family: arial;
   text-decoration: none;
 }
@@ -73,7 +77,7 @@ a:visited {
   border-radius: 1rem 0rem 0rem 1rem;
 }
 .datos .experiencia .descripcion {
-  padding: 1rem;
+  padding: 3rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -121,20 +125,20 @@ a:visited {
   margin-top: 1.5rem;
 }
 .datos a:link {
-  color: #ffffff;
   text-decoration: none;
+  color: #00C6EE;
 }
 .datos a:visited {
-  color: #ffffff;
+  color: #00C6EE;
 }
 .datos a:active {
-  color: #ffffff;
+  color: #00C6EE;
 }
 .datos a:hover {
   color: #00C6EE;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
   .titulo {
     display: flex;
     justify-content: center;
@@ -226,14 +230,7 @@ a:visited {
     width: 100%;
   }
   .datos .experiencia a:link {
-    color: #ffffff;
     text-decoration: none;
-  }
-  .datos .experiencia a:visited {
-    color: #ffffff;
-  }
-  .datos .experiencia a:active {
-    color: #ffffff;
   }
   .datos .experiencia a:hover {
     color: #00C6EE;
