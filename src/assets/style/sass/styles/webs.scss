@@ -16,7 +16,7 @@
   @include head;
 }
 .web {
-    @include webs;
+  @include webs;
   .primeroscoc,
   .guerrasOnline,
   .tiendaTitanium,
@@ -24,7 +24,7 @@
   .portfolio {
     @include recuadro;
     display: grid;
-    grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5] ;
+    grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5];
     grid-template-rows: [y0] 0.5fr [y1] 1fr [y2] 0.05fr [y3];
     margin-top: 5rem;
     a {
@@ -35,14 +35,13 @@
       //padding: 0rem;
       grid-column: x0 / x5;
       grid-row: y0 / y1;
-      height: 25vh;
+      // height: 25vh;
 
       h1 {
         display: flex;
         align-self: center;
         justify-content: center;
         margin: 1rem;
-
       }
     }
     .descripcion {
@@ -52,11 +51,11 @@
       flex-direction: row;
       justify-content: flex-start;
       align-items: baseline;
-      padding: 2rem ;      
+      padding: 2rem;
       p {
         font-family: "FontAwesome", sans-serif;
-       
-        font-size: 1.7rem;
+
+        // font-size: 1.7rem;
         color: white;
         a {
           text-decoration: none;
@@ -78,14 +77,9 @@
       justify-content: center;
       align-items: center;
       color: $azul;
-      font-size: 3rem;
+     font-size: 2.5rem;
       margin-left: 0px;
-      .fa-arrow-alt-circle-right {
-        color: green;
-        display: block;
-        text-decoration: none;
-        margin-left: 1rem;
-        animation-name: parpadeo;
+      animation-name: parpadeo;
         animation-duration: 1s;
         animation-timing-function: linear;
         animation-iteration-count: infinite;
@@ -93,6 +87,12 @@
         -webkit-animation-duration: 2s;
         -webkit-animation-timing-function: linear;
         -webkit-animation-iteration-count: infinite;
+      .fa-arrow-alt-circle-right {
+        color: green;
+        display: block;
+        text-decoration: none;
+        margin-left: 1rem;
+        
       }
       .fa-arrow-alt-circle-right:hover {
         -webkit-transform: scale(1.5);
@@ -119,7 +119,6 @@
         // color: #e3e4e5;
         font: {
           family: titanium;
-          size: 6rem;
         }
         // background-color: chocolate;
       }
@@ -138,7 +137,6 @@
         -webkit-text-stroke: 0.05rem black;
         font: {
           family: titanium;
-          size: 6rem;
         }
       }
     }
@@ -159,7 +157,10 @@
         text-shadow: 0.1em 0.1em brown;
         font: {
           family: supercell;
-          size: 4rem;
+          //size: 5rem;
+          //width: calc(1rem + 3vw);
+
+          //size: 4rem;
         }
       }
     }
@@ -189,50 +190,48 @@
       }
       h1 {
         -webkit-text-fill-color: gold;
-        font-size: 3.5rem;
-              }
+      }
     }
   }
 
-@media only screen and (max-width: 700px) {
-  .primeroscoc,
-  .guerrasOnline,
-  .tiendaTitanium,
-  .titaniumGamers,
-  .portfolio {
- 
-     .titulo {
-      grid-column: x0 / x5;
-      grid-row: y0 / y1;
-      // background-color: pink;
-      
-      h1 {
-        display: flex;
-        align-self: center;
-        justify-content: center;
-        margin: 1rem;
+  @media only screen and (max-width: 700px) {
+    .primeroscoc,
+    .guerrasOnline,
+    .tiendaTitanium,
+    .titaniumGamers,
+    .portfolio {
+      .titulo {
+        grid-column: x0 / x5;
+        grid-row: y0 / y1;
+        // background-color: pink;
 
-      }
-    }
-    .descripcion {
-      grid-column: x0 / x5;
-      grid-row: y1 / y2;
-      p{
+        h1 {
+          display: flex;
+          align-self: center;
+          justify-content: center;
+          margin: 1rem;
+          font: {
+            //size: 5rem;
 
+            //size: 4rem;
+          }
+        }
       }
-     
-      
-      //   background-color: cornflowerblue;
-    }
-    .visitar {
-      
-      grid-column: x0 / x5;
-      grid-row: y2 / y3;
-      // background-color: red;
-      
+      .descripcion {
+        grid-column: x0 / x5;
+        grid-row: y1 / y2;
+        p {
+        }
+
+        //   background-color: cornflowerblue;
+      }
+      .visitar {
+        grid-column: x0 / x5;
+        grid-row: y2 / y3;
+        // background-color: red;
+      }
     }
   }
-}
 }
 // .separador {
 //     margin: 3rem;
