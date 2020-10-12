@@ -190,21 +190,21 @@
   font-family: supercell;
   font-size: 4rem;
 }
-.web .primeroscoc p,
-.web .guerrasonline p {
+.web .primeroscoc .descripcion p,
+.web .guerrasonline .descripcion p {
   color: white;
 }
-.web .primeroscoc p a,
-.web .guerrasonline p a {
+.web .primeroscoc .descripcion p a,
+.web .guerrasonline .descripcion p a {
   text-decoration: none;
   color: gold;
 }
-.web .primeroscoc p i,
-.web .guerrasonline p i {
+.web .primeroscoc .descripcion p i,
+.web .guerrasonline .descripcion p i {
   color: green;
 }
-.web .primeroscoc p .fa-undo-alt,
-.web .guerrasonline p .fa-undo-alt {
+.web .primeroscoc .descripcion p .fa-undo-alt,
+.web .guerrasonline .descripcion p .fa-undo-alt {
   color: red;
   left: 0px;
 }
@@ -214,80 +214,6 @@
   background-size: cover;
 }
 .web .guerrasonline .titulo h1 {
-  -webkit-text-fill-color: gold;
-}
-.web .portfolio2222 {
-  width: 90%;
-  border-radius: 25px;
-  border: 0.05rem solid #00C6EE;
-  margin-top: 5rem;
-  overflow: hidden;
-  background-color: black;
-  background-color: #000;
-}
-.web .portfolio2222 .titulo {
-  background-position: center;
-  background-size: cover;
-}
-.web .portfolio2222 .titulo a {
-  text-decoration: none;
-}
-.web .portfolio2222 .titulo h1 {
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  margin-top: 0px;
-  -webkit-text-fill-color: #e3e4e5;
-  -webkit-text-stroke: 1px black;
-  font-family: titanium;
-  font-size: 6rem;
-}
-.web .portfolio2222 p {
-  font-family: "FontAwesome", sans-serif;
-  padding: 1.5rem;
-  font-size: 1.7rem;
-  color: white;
-}
-.web .portfolio2222 p a {
-  text-decoration: none;
-  color: lightskyblue;
-}
-.web .portfolio2222 p i {
-  color: green;
-}
-.web .portfolio2222 .visitar {
-  display: flex;
-  flex-direction: row;
-  color: #00C6EE;
-  font-size: 3rem;
-  margin-left: 0px;
-}
-.web .portfolio2222 .visitar .fa-arrow-alt-circle-right {
-  display: block;
-  text-decoration: none;
-  margin-left: 1rem;
-  animation-name: parpadeo;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  -webkit-animation-name: parpadeo;
-  -webkit-animation-duration: 2s;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-}
-.web .portfolio2222 .fa-arrow-alt-circle-right:hover {
-  -webkit-transform: scale(1.5);
-  -moz-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  -o-transform: scale(1.5);
-  transform: scale(1.5);
-}
-.web .portfolio .titulo {
-  background-image: url("../../../images/banners/micro-banner.jpg");
-  background-position: center;
-  background-size: cover;
-}
-.web .portfolio .titulo h1 {
   -webkit-text-fill-color: gold;
 }
 
