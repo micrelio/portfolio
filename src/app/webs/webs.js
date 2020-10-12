@@ -5,32 +5,25 @@ class miWebs extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
 <section class="web">
-<div class="titaniumGamers">
+    <div class="titaniumGamers">
         <div class="logoWeb">
-        <a target="blank" href=" https://titaniumgamers.com/">
-        <img id="" class="corporativo" src="../../assets/images/logoEmpresa/electricidad.jpg">
+            <a target="blank" href=" https://titaniumgamers.com/">
+                <img id="" class="corporativo" src="../../assets/images/logoEmpresa/electricidad.jpg">
             </a>
         </div>
-        <div class="titulo">
-        <a target="blank" href=" https://titaniumgamers.com/">
-            <h1>Comunidad</h1>
-            <h1>Titanium Gamers</h1>
+        <div class="titular">
+            <a target="blank" href=" https://titaniumgamers.com/">
+                <h1>Comunidad <br>Titanium Gamers</h1>
             </a>
         </div>
         <div class="descripcion">
+            <p>Diseñada con WordPress tema DIVI (adquirida licencia desarrollador), para la comunidad propia de jugadores <a target="blank" href="https://titaniumgamers.com/">Titanium Gamers</a> durante el confinamiento 2020.<br>
+                Creada con:<br>
+                <i class="fa fa-check-circle verde"></i> WORDPRESS tema DIVI.<br><br>
+            </p>
         </div>
         <div class="visitar">
-        </div>
-            <a target="blank" href=" https://titaniumgamers.com/">
-            <h1>Comunidad</h1>
-            <h1>Titanium Gamers</h1>
-            </a>
-        
-        <div>
-            <p>Diseñada con WordPress tema DIVI (adquirida licencia desarrollador), para la comunidad propia de jugadores <a target="blank" href="https://titaniumgamers.com/">Titanium Gamers</a> durante el confinamiento 2020.<br>
-            Creada con:<br>
-            <i class="fa fa-check-circle verde"></i> WORDPRESS tema DIVI.<br><br>
-            <a class="visitar" target="blank" href="https://titaniumgamers.com/">Visitar
+                <a class="visitar" target="blank" href="https://titaniumgamers.com/">Visitar
                 <i class="fas fa-arrow-alt-circle-right"></i></a>
             </p>
         </div>
