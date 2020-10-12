@@ -8,12 +8,11 @@ class miWebs extends HTMLElement {
     <div class="titaniumGamers">
         <div class="logoWeb">
             <a target="blank" href=" https://titaniumgamers.com/">
-                <img id="" class="corporativo" src="../../assets/images/logoEmpresa/electricidad.jpg">
             </a>
         </div>
-        <div class="titular">
+        <div class="titulo">
             <a target="blank" href=" https://titaniumgamers.com/">
-                <h1>Comunidad <br>Titanium Gamers</h1>
+                <h1>Comunidad </h1><h1>Titanium Gamers</h1>
             </a>
         </div>
         <div class="descripcion">
