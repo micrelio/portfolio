@@ -119,7 +119,7 @@
   justify-content: center;
   align-items: center;
   color: #00C6EE;
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-left: 0px;
   animation-name: parpadeo;
   animation-duration: 1s;
@@ -136,6 +136,7 @@
 .web .titaniumGamers .visitar .fa-arrow-alt-circle-right,
 .web .portfolio .visitar .fa-arrow-alt-circle-right {
   color: green;
+  font-size: 5rem;
   display: block;
   text-decoration: none;
   margin-left: 1rem;
