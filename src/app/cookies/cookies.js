@@ -21,14 +21,11 @@ class miCookies extends HTMLElement {
    /* ésto se ejecuta cuando la web está cargada */
 
  $(document).ready(function () {
-    console.log('GILLLLLL')
   compruebaAceptaCookies();
 });
 
  /* ésto comprueba la localStorage si ya tiene la variable guardada */
  function compruebaAceptaCookies() {
-    console.log('compruebaAceptaCookies')
-
     if (localStorage.aceptaCookies == 'true') {
       cajacookies.style.display = 'none';
     }
