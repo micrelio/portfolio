@@ -23,6 +23,7 @@
   .titaniumGamers,
   .portfolio {
     @include recuadro;
+
     display: grid;
     grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5] ;
     grid-template-rows: [y0] 1fr [y1] 1fr [y2] 0.05fr [y3];
@@ -33,7 +34,6 @@
     .titulo {
       @include titulo;
       //padding: 0rem;
-
       grid-column: x0 / x5;
       grid-row: y0 / y1;
       // background-color: pink;
@@ -56,7 +56,7 @@
 
       p {
         font-family: "FontAwesome", sans-serif;
-        margin: 3rem;
+        margin: 1rem 3rem 3rem 3rem;
         font-size: 1.7rem;
         color: white;
         a {
@@ -190,7 +190,8 @@
       }
       h1 {
         -webkit-text-fill-color: gold;
-      }
+        font-size: 3.5rem;
+              }
     }
   }
 
@@ -204,16 +205,24 @@
       grid-column: x0 / x5;
       grid-row: y0 / y1;
       // background-color: pink;
+      
       h1 {
         display: flex;
         align-self: center;
         justify-content: center;
         margin: 1rem;
+      //  font-size: calc(3.7rem + 1vw);
+
       }
     }
     .descripcion {
       grid-column: x0 / x5;
       grid-row: y1 / y2;
+      margin-top: 0rem;
+      p{
+        margin: 0rem 3rem 3rem 3rem;
+
+      }
      
       
       //   background-color: cornflowerblue;
@@ -223,34 +232,7 @@
       grid-column: x0 / x5;
       grid-row: y2 / y3;
       // background-color: red;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      color: $azul;
-      font-size: 3rem;
-      margin-left: 0px;
-      .fa-arrow-alt-circle-right {
-        color: green;
-        display: block;
-        text-decoration: none;
-        margin-left: 1rem;
-        animation-name: parpadeo;
-        animation-duration: 1s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-        -webkit-animation-name: parpadeo;
-        -webkit-animation-duration: 2s;
-        -webkit-animation-timing-function: linear;
-        -webkit-animation-iteration-count: infinite;
-      }
-      .fa-arrow-alt-circle-right:hover {
-        -webkit-transform: scale(1.5);
-        -moz-transform: scale(1.5);
-        -ms-transform: scale(1.5);
-        -o-transform: scale(1.5);
-        transform: scale(1.5);
-      }
+      
     }
   }
 }

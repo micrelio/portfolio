@@ -24,6 +24,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  min-width: 500px;
 }
 .web .primeroscoc,
 .web .guerrasonline,
@@ -89,7 +90,7 @@
 .web .titaniumGamers .descripcion p,
 .web .portfolio .descripcion p {
   font-family: "FontAwesome", sans-serif;
-  margin: 3rem;
+  margin: 1rem 3rem 3rem 3rem;
   font-size: 1.7rem;
   color: white;
 }
@@ -217,6 +218,7 @@
 }
 .web .guerrasonline .titulo h1 {
   -webkit-text-fill-color: gold;
+  font-size: 3.5rem;
 }
 @media only screen and (max-width: 700px) {
   .web .primeroscoc .titulo,
@@ -244,6 +246,14 @@
 .web .portfolio .descripcion {
     grid-column: x0/x5;
     grid-row: y1/y2;
+    margin-top: 0rem;
+  }
+  .web .primeroscoc .descripcion p,
+.web .guerrasonline .descripcion p,
+.web .tiendaTitanium .descripcion p,
+.web .titaniumGamers .descripcion p,
+.web .portfolio .descripcion p {
+    margin: 0rem 3rem 3rem 3rem;
   }
   .web .primeroscoc .visitar,
 .web .guerrasonline .visitar,
@@ -252,42 +262,6 @@
 .web .portfolio .visitar {
     grid-column: x0/x5;
     grid-row: y2/y3;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: #00C6EE;
-    font-size: 3rem;
-    margin-left: 0px;
-  }
-  .web .primeroscoc .visitar .fa-arrow-alt-circle-right,
-.web .guerrasonline .visitar .fa-arrow-alt-circle-right,
-.web .tiendaTitanium .visitar .fa-arrow-alt-circle-right,
-.web .titaniumGamers .visitar .fa-arrow-alt-circle-right,
-.web .portfolio .visitar .fa-arrow-alt-circle-right {
-    color: green;
-    display: block;
-    text-decoration: none;
-    margin-left: 1rem;
-    animation-name: parpadeo;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    -webkit-animation-name: parpadeo;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-  }
-  .web .primeroscoc .visitar .fa-arrow-alt-circle-right:hover,
-.web .guerrasonline .visitar .fa-arrow-alt-circle-right:hover,
-.web .tiendaTitanium .visitar .fa-arrow-alt-circle-right:hover,
-.web .titaniumGamers .visitar .fa-arrow-alt-circle-right:hover,
-.web .portfolio .visitar .fa-arrow-alt-circle-right:hover {
-    -webkit-transform: scale(1.5);
-    -moz-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    -o-transform: scale(1.5);
-    transform: scale(1.5);
   }
 }
 

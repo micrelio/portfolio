@@ -31,6 +31,8 @@
   flex-wrap: wrap;
   justify-content: space-around;
   //height: 20vw;
+  min-width: 500px;
+
 }
 @mixin recuadro {
   width: 90%;
