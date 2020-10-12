@@ -17,10 +17,17 @@ class miWebs extends HTMLElement {
             </a>
         </div>
         <div class="descripcion">
-            <p>Diseñada con WordPress tema DIVI (adquirida licencia desarrollador), para la comunidad propia de jugadores <a target="blank" href="https://titaniumgamers.com/">Titanium Gamers</a> durante el confinamiento 2020.<br>
-                Creada con:<br>
-                <i class="fa fa-check-circle verde"></i> WORDPRESS tema DIVI.<br><br>
-            </p>
+        <p>Tienda de donaciones PayPal creada durante el verano 2020 para la comunidad propia de jugadores <a target="blank" href="https://tiendasamp.titaniumgamers.com/">Titanium Gamers</a>.<br>
+        Estilos:<br>
+        <i class="fa fa-check-circle verde"></i> Bootstrap.<br>
+        <i class="fa fa-check-circle verde"></i> Display Grid.<br>
+        <i class="fa fa-check-circle verde"></i> Display Flex.<br>
+        Lenguajes:<br>
+            <i class="fa fa-check-circle verde"></i> HTML.<br>
+            <i class="fa fa-check-circle verde"></i> CSS.<br>
+            <i class="fa fa-check-circle verde"></i> Javascript.<br><br>
+            
+        </p>
         </div>
         <div class="visitar">
             <p>
