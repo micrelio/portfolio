@@ -28,7 +28,6 @@ a:visited {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 3rem;
 }
 .datos .datosPersonales {
   display: flex;
@@ -49,7 +48,7 @@ a:visited {
   border-radius: 0.5rem;
 }
 .datos .datosPersonales .direccion {
-  padding: 3rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,6 +58,7 @@ a:visited {
 }
 .datos .experiencia {
   color: white;
+  overflow: hidden;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -66,9 +66,6 @@ a:visited {
   margin-bottom: 5rem;
   width: 95vw;
   background-color: black;
-  border-radius: 1rem;
-}
-.datos .experiencia .logotipo {
   border-radius: 1rem;
 }
 .datos .experiencia .logotipo img {
@@ -91,8 +88,8 @@ a:visited {
   margin-right: 3rem;
 }
 .datos .experiencia .titulo img {
-  height: 10rem;
-  width: 10rem;
+  height: 7rem;
+  width: 7rem;
   margin-right: 1rem;
   display: block;
   text-decoration: none;
@@ -169,7 +166,7 @@ a:visited {
     flex-direction: column;
     align-items: center;
     color: white;
-    padding: 10%;
+    padding: 3rem;
     border: 0.1rem solid #00C6EE;
     width: 85%;
     height: auto;
@@ -184,7 +181,6 @@ a:visited {
     height: auto;
     width: 100%;
     border-radius: 1rem;
-    border: 0.1rem solid #00C6EE;
   }
   .datos .datosPersonales .direccion {
     display: flex;
@@ -207,11 +203,9 @@ a:visited {
     color: white;
     display: flex;
     flex-direction: column;
-    border: 0.1rem solid #00C6EE;
     height: auto;
     min-width: 7vh;
     margin: 0.5rem;
-    padding: 10%;
     width: 85%;
     border-radius: 1rem;
     background-color: black;
@@ -226,11 +220,9 @@ a:visited {
   }
   .datos .experiencia .logotipo .corporativo {
     height: 100%;
-    margin-right: 1rem;
-    border-right: none;
   }
   .datos .experiencia .descripcion {
-    padding: 1rem;
+    padding: 3rem;
     width: 100%;
   }
   .datos .experiencia a:link {
@@ -246,10 +238,12 @@ a:visited {
   .datos .experiencia a:hover {
     color: #00C6EE;
   }
+  .datos .experiencia .titulo {
+    padding: 2rem;
+  }
   .datos .experiencia .titulo img {
-    height: 5vh;
-    width: 5vh;
-    margin-right: 1rem;
+    height: 7vh;
+    width: 7vh;
   }
 }
 

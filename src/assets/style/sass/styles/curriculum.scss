@@ -5,7 +5,6 @@
 }
 body {
   background: {
-    //color: black;
   }
 }
 .descripcion {
@@ -35,7 +34,6 @@ a:visited {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 3rem;
   .datosPersonales {
     display: flex;
     flex-direction: row;
@@ -53,11 +51,9 @@ a:visited {
     h {
       color: $azul;
     }
-    //   border: 0.1rem solid black;
     .foto {
       //width: 40%;
       .dni {
-        // margin-right: 3rem;
         width: calc(20rem + 10vw);
         border: {
           radius: 0.5rem;
@@ -65,7 +61,7 @@ a:visited {
       }
     }
     .direccion {
-      padding: 3rem;
+      width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -76,17 +72,12 @@ a:visited {
   }
   .experiencia {
     color: white;
-    // overflow: hidden;
+     overflow: hidden;
     display: flex;
     flex-direction: row;
-    // flex-wrap: nowrap;
     align-items: center;
-    /// justify-content: ;
     border: 0.2rem solid $azul;
-    // height: 7vh;
-    //min-width: 7vh;
-    // padding: 3rem;
-    margin-bottom: 5rem;
+        margin-bottom: 5rem;
     width: 95vw;
     background: {
       color: black;
@@ -97,18 +88,9 @@ a:visited {
     .logotipo {
       // overflow: hidden;
       //height: 7vh;
-      border: {
-        radius: 1rem;
-      }
-      background: {
-    //    color: $azul;
-      }
-      img {
+               img {
         width: calc(20rem + 10vw);
-      //  border-right: 0.2rem solid $azul;
-        //height: 100%;
-        background: {
-          //   color: black;
+             background: {
         }
         border: {
           radius: 1rem 0rem 0rem 1rem;
@@ -123,27 +105,20 @@ a:visited {
          height: 100%;
       //text-overflow: ellipsis;
       //  white-space: nowrap;
-      //overflow: hidden;
-      //   height: 10vw;
-      //   width: 50%;
-     // background-color: lime;
-    }
+          }
     .titulo {
       height: 100%;
       display: flex;
       flex-direction: column;
      align-items: center;
       justify-content: end;
-     // background-color: magenta;
       margin-right: 3rem;
       img {
-        height: 10rem;
-        width: 10rem;
+        height: 7rem;
+        width: 7rem;
         margin-right: 1rem;
-
         display: block;
-         
-          text-decoration: none;
+              text-decoration: none;
           margin-left: 30px;
           animation-name: parpadeo;
           animation-duration: 1s;
@@ -153,8 +128,7 @@ a:visited {
           -webkit-animation-duration: 2s;
           -webkit-animation-timing-function: linear;
           -webkit-animation-iteration-count: infinite;
-        
-      }
+             }
       img:hover {
         -webkit-transform: scale(1.15);
         -moz-transform: scale(1.15);
@@ -162,8 +136,7 @@ a:visited {
         -o-transform: scale(1.15);
         transform: scale(1.15);
       }
-      
-    }
+        }
   }
   .interes {
     border: 0.1rem solid $azul;
@@ -179,11 +152,7 @@ a:visited {
       margin-top: 1.5rem;
     }
   }
-  //padding: 5%;
-  //height: 10vh;
-  // overflow: hidden;
-
-  a:link {
+   a:link {
     color: #ffffff;
     text-decoration: none;
   }
@@ -221,7 +190,6 @@ a:visited {
   }
   p {
     font-size: 1.5rem;
-    //font-size: calc(0.5rem + 1vw);
   }
   //A:hover { color: black; font-family: arial; text-decoration: none }
   a:visited {
@@ -232,20 +200,13 @@ a:visited {
   .datos {
     display: flex;
     flex-direction: column;
-    // align-items: center;
-    // justify-content: center;
-    //border: 0.1rem solid black;
-    // max-height: 9rem;
-    width: 100%;
-    //padding: 3rem;
+        width: 100%;
     .datosPersonales {
-      // padding: 2rem;
       display: flex;
       flex-direction: column;
-      // justify-content: center;
       align-items: center;
       color: white;
-      padding: 10%;
+      padding: 3rem;
       // padding: 3rem;
       border: 0.1rem solid $azul;
       // margin: 0.3rem;
@@ -261,24 +222,17 @@ a:visited {
       h {
         color: $azul;
       }
-      //   border: 0.1rem solid black;
       .dni {
         height: auto;
         width: 100%;
         border: {
           radius: 1rem;
         }
-        border: 0.1rem solid $azul;
       }
       .direccion {
         display: flex;
         flex-direction: column;
-        //   justify-content: flex-start;
-        // background-color: pink;
-        // align-items: center;
-        // align-items: center;
-        // align-items: center;
-        p {
+                p {
           margin-top: 1.5rem;
         }
       }
@@ -299,63 +253,37 @@ a:visited {
     }
     .experiencia {
       color: white;
-      //overflow: hidden;
       display: flex;
       flex-direction: column;
-      //flex-wrap: nowrap;
-      // align-items: center;
-      //  justify-content: start;
-      border: 0.1rem solid $azul;
-      height: auto;
+           height: auto;
       min-width: 7vh;
       margin: 0.5rem;
-      padding: 10%;
       width: 85%;
       border: {
         radius: 1rem;
       }
-      // padding: 3rem;
       background: {
         color: black;
       }
-      //padding: 5%;
-      //height: 10vh;
-      // overflow: hidden;
-      .logotipo {
+           .logotipo {
         overflow: hidden;
         height: auto;
         background: {
-          // color: $azul;
         }
         img {
           width: 100%;
-          //  height: 100%;
-          background: {
-            //     color: $azul;
-          }
-          border: {
+                    border: {
             radius: 0rem;
           }
         }
-        // color: $azul;
-        // width: 50%;
-        .corporativo {
+                .corporativo {
           height: 100%;
-          // height: 100%;
-          margin-right: 1rem;
-          border-right: none;
-          // padding: 0.5rem;
-        }
+                }
       }
       .descripcion {
-        padding: 1rem;
+        padding: 3rem;
         width: 100%;
-        //text-overflow: ellipsis;
-        //  white-space: nowrap;
-        //overflow: hidden;
-        //   height: 10vw;
-        //   width: 50%;
-      }
+              }
       a:link {
         color: #ffffff;
         text-decoration: none;
@@ -370,10 +298,10 @@ a:visited {
         color: $azul;
       }
       .titulo {
+        padding: 2rem;
         img {
-          height: 5vh;
-          width: 5vh;
-          margin-right: 1rem;
+          height: 7vh;
+          width: 7vh;
         }
       }
     }
