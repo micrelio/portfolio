@@ -214,14 +214,14 @@ a:visited {
     justify-content: center;
   }
   h1 {
-    font-size: calc(1.5rem + 1vw);
+    font-size: calc(1.5rem + 4vw);
     margin-top: 5rem;
     color: $azul;
     //width: calc(0.1rem + 3vw);
   }
   p {
     font-size: 1.5rem;
-    font-size: calc(0.5rem + 1vw);
+    //font-size: calc(0.5rem + 1vw);
   }
   //A:hover { color: black; font-family: arial; text-decoration: none }
   a:visited {
