@@ -16,7 +16,6 @@ class miWebs extends HTMLElement {
                 Diseñada con WordPress tema DIVI (adquirida licencia desarrollador), para la comunidad propia de jugadores <a target="blank" href="https://titaniumgamers.com/">Titanium Gamers</a> durante el confinamiento 2020.<br>
                 Creada con:<br>
                 <i class="fa fa-check-circle verde"></i> WORDPRESS tema DIVI.<br><br>
-              
             </p>
         </div>
         <div class="visitar">
@@ -26,7 +25,6 @@ class miWebs extends HTMLElement {
             </p>
         </div>
     </div>
-    
     <div class="tiendaTitanium">
          <div class="titulo">
             <a target="blank" href=" https://tiendasamp.titaniumgamers.com/">
@@ -53,7 +51,6 @@ class miWebs extends HTMLElement {
             </p>
         </div>
     </div>
-
     <div class="primeroscoc">
          <div class="titulo">
             <a target="blank" href="https://primeroscoc.titaniumgamers.com/">
@@ -78,7 +75,6 @@ class miWebs extends HTMLElement {
             </p>
         </div>
     </div>
-
     <div class="guerrasonline">
         <div class="titulo">
             <a target="blank" href="https://clashofclansguerrasonline.titaniumgamers.com/">
