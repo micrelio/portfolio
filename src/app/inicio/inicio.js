@@ -52,7 +52,7 @@ customElements.define("mi-inicio", miInicio);
 
 
 
-
+// boton ir arriba
 $(document).ready(function(){
 
 	$('.ir-arriba').click(function(){
