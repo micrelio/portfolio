@@ -172,7 +172,7 @@ class miCurriculum extends HTMLElement {
         </div>
         <div class="descripcion">
             <p class="año">2016 <a href="https://www.alimarket.es/alimentacion/empresa/209431" target="_blank"><strong>Frusa Coca Cola</strong></a></p><br>
-            <p>Técnico de sistemas industriales.</p>
+            <p>Oficial de 1º como técnico eléctrico.</p>
         </div>
     </div>
     <div class="experiencia">
@@ -181,7 +181,7 @@ class miCurriculum extends HTMLElement {
         </div>
         <div class="descripcion">
             <p class="año">2015 <a href="https://www.trolli.es/" target="_blank"><strong>Trolli</strong></a></p><br>
-            <p>Técnico de sistemas industriales, responsable de turno.</p>
+            <p>Oficial de 1º como técnico de sistemas industriales, responsable de turno.</p>
         </div>
     </div>
     <div class="experiencia">
@@ -208,7 +208,7 @@ class miCurriculum extends HTMLElement {
         </div>
         <div class="descripcion">
             <p class="año">2009 <strong>Dafsa</strong></p><br>
-            <p>Técnico de sistemas industriales, responsable de turno.</p>
+            <p>Técnico de sistemas industriales.</p>
         </div>
     </div>
     <div class="experiencia">
