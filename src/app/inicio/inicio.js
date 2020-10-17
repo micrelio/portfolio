@@ -14,36 +14,7 @@ class miInicio extends HTMLElement {
             </p>
         </div>
     </section>
-    <section class="primera">
-        <h1>Webs</h1>
-        <div>
-            <img src="../../assets/images/mountain2.jpg">
-        </div>
-    </section>
-    <section class="primera">
-        <h1>Inicio</h1>
-        <div>
-            <img src="../../assets/images/mountain2.jpg">
-        </div>
-    </section>
-    <section class="primera">
-        <h1>Videos</h1>
-        <div>
-            <img src="../../assets/images/mountain2.jpg">
-        </div>
-    </section>
-    <section class="primera">
-        <h1>Curriculum</h1>
-        <div>
-            <img src="../../assets/images/mountain2.jpg">
-        </div>
-    </section>
-    <section class="primera">
-        <h1>Contacto</h1>
-        <div>
-            <img src="../../assets/images/mountain2.jpg">
-        </div>
-    </section>
+    
  `;
   }
 }
