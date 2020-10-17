@@ -4,6 +4,9 @@
     case 'inicio':
    document.getElementById("componente").innerHTML = "<mi-inicio></mi-inicio>";
     break;
+    case 'sobremi':
+      document.getElementById("componente").innerHTML = "<mi-sobremi></mi-sobremi>";
+ break;
     case 'webs':
       document.getElementById("componente").innerHTML = "<mi-webs></mi-webs>";
  break;

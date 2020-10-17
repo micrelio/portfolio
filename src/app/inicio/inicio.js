@@ -56,8 +56,9 @@ function navegar(id) {
       document.getElementById("componente").innerHTML =
         "<mi-inicio></mi-inicio>";
       break;
-      case "sobreMi":
-      document.getElementById("componente").innerHTML = "<mi-sobreMi></mi-sobreMi>";
+    case "sobremi":
+      document.getElementById("componente").innerHTML =
+        "<mi-sobremi></mi-sobremi>";
       break;
     case "webs":
       document.getElementById("componente").innerHTML = "<mi-webs></mi-webs>";

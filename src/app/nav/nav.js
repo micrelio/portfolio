@@ -14,7 +14,7 @@ class miNav extends HTMLElement {
                     <div class="menu">
                         <div class="links">
                             <s onmouseover> <button class="nav-link" type="button" onclick="navegar('inicio');"> Inicio </button></s>
-                            <s onmouseover> <button class="nav-link" type="button" onclick="navegar('sobreMi');"> Sobre mí </button> </s>
+                            <s onmouseover> <button class="nav-link" type="button" onclick="navegar('sobremi');"> Sobre mí </button> </s>
                             <s onmouseover> <button class="nav-link" type="button" onclick="navegar('webs'); "> Webs </button></s>
                             <s onmouseover> <button class="nav-link" type="button" onclick="navegar('galeria');"> Galeria </button></s>
                             <s onmouseover> <button class="nav-link" type="button" onclick="navegar('videos');"> Videos </button></s>
@@ -38,7 +38,7 @@ class miNav extends HTMLElement {
                 </div>
                 <div style="display: none" class="desplegable" id="desplegable">
                     <button onclick="navegar('inicio'); seleccionado();" class="mnav-link">Inicio</button>
-                    <button onclick="navegar('sobreMi'); seleccionado();" class="mnav-link">Sobre mí</button>
+                    <button onclick="navegar('sobremi'); seleccionado();" class="mnav-link">Sobre mí</button>
                     <button onclick="navegar('webs'); seleccionado();" class="mnav-link">Webs</button>
                     <button onclick="navegar('galeria'); seleccionado();" class="mnav-link">Galery</button>
                     <button onclick="navegar('videos'); seleccionado();" class="mnav-link">Videos</button>
@@ -61,7 +61,6 @@ class miNav extends HTMLElement {
 customElements.define('mi-nav', miNav);
 
 function seleccionado() {
-    console.log('kakakakakak')
     menu.slideToggle();
 }
 
@@ -71,7 +70,6 @@ function nav() {
         menu = $('.desplegable');
         menuHeight = menu.height();
         $(pull).on('click', function(e) {
-            console.log("999999999");
             e.preventDefault();
             menu.slideToggle();
         });
