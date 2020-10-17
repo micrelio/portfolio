@@ -13,18 +13,13 @@ class miNav extends HTMLElement {
                     </div>
                     <div class="menu">
                         <div class="links">
-                            <s onmouseover> <button class="nav-link" type="button" onclick="navegar('inicio');"> inicio
-                                </button> </s>
-                            <s onmouseover> <button class="nav-link" type="button" onclick="navegar('webs'); "> Webs
-                                </button></s>
-                            <s onmouseover> <button class="nav-link" type="button" onclick="navegar('galeria');"> galeria
-                                </button></s>
-                            <s onmouseover> <button class="nav-link" type="button" onclick="navegar('videos');"> Videos
-                                </button></s>
-                            <s onmouseover> <button class="nav-link" type="button" onclick="navegar('curriculum');">
-                                    Curriculum </button></s>
-                            <s onmouseover> <button class="nav-link" type="button" onclick="navegar('contacto');"> Contacto
-                                </button></s>
+                            <s onmouseover> <button class="nav-link" type="button" onclick="navegar('inicio');"> Inicio </button></s>
+                            <s onmouseover> <button class="nav-link" type="button" onclick="navegar('sobreMi');"> Sobre mí </button> </s>
+                            <s onmouseover> <button class="nav-link" type="button" onclick="navegar('webs'); "> Webs </button></s>
+                            <s onmouseover> <button class="nav-link" type="button" onclick="navegar('galeria');"> Galeria </button></s>
+                            <s onmouseover> <button class="nav-link" type="button" onclick="navegar('videos');"> Videos </button></s>
+                            <s onmouseover> <button class="nav-link" type="button" onclick="navegar('curriculum');"> Curriculum </button></s>
+                            <s onmouseover> <button class="nav-link" type="button" onclick="navegar('contacto');"> Contacto </button></s>
                         </div>
                     </div>
                 </div>
@@ -43,6 +38,7 @@ class miNav extends HTMLElement {
                 </div>
                 <div style="display: none" class="desplegable" id="desplegable">
                     <button onclick="navegar('inicio'); seleccionado();" class="mnav-link">Inicio</button>
+                    <button onclick="navegar('sobreMi'); seleccionado();" class="mnav-link">Sobre mí</button>
                     <button onclick="navegar('webs'); seleccionado();" class="mnav-link">Webs</button>
                     <button onclick="navegar('galeria'); seleccionado();" class="mnav-link">Galery</button>
                     <button onclick="navegar('videos'); seleccionado();" class="mnav-link">Videos</button>
