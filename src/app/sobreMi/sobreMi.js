@@ -7,9 +7,10 @@ class miSobremi extends HTMLElement {
             `
     <section class="primera">
         <h1>Presentación</h1>
-        <img src="../../assets/images/mountain2.jpg">
-
-        <div>
+        <p>
+            Mi experiencia laboral comenzó como instalador electricista en distintas empresas, al empezar como ayudante en la electrónica y mantenimiento industrial, tras empezar con este oficio me di cuenta que era necesario mejorar mi formación para este oficio y decidí formarme en automática industrial, con ello comencé una nueva etapa laboral, 
+        </p>
+            <div>
             
         </div>
     </section>
