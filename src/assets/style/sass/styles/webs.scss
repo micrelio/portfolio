@@ -1,17 +1,6 @@
 @import "../mixins/mixins.scss";
 @import "../variables/variables.scss";
-@font-face {
-  font-family: "supercell";
-  src: url(../../../fuentes/supercell-magic-webfont.ttf) format("truetype");
-}
-@font-face {
-  font-family: "FontAwesome";
-  src: url("fontawesome-webfont.woff");
-}
-@font-face {
-  font-family: "titanium";
-  src: url(../../../fuentes/pricedow.ttf) format("truetype");
-}
+
 .head {
   @include head;
 }
@@ -59,7 +48,7 @@
         color: white;
         a {
           text-decoration: none;
-          color: lightskyblue;
+          color: $azul;
         }
         i {
           color: green;

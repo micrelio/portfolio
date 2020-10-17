@@ -1,16 +1,4 @@
 /* hovers*/
-@font-face {
-  font-family: "supercell";
-  src: url(../../../fuentes/supercell-magic-webfont.ttf) format("truetype");
-}
-@font-face {
-  font-family: "FontAwesome";
-  src: url("fontawesome-webfont.woff");
-}
-@font-face {
-  font-family: "titanium";
-  src: url(../../../fuentes/pricedow.ttf) format("truetype");
-}
 .head {
   width: 100%;
   position: relative;
@@ -97,7 +85,7 @@
 .web .titaniumGamers .descripcion p a,
 .web .portfolio .descripcion p a {
   text-decoration: none;
-  color: lightskyblue;
+  color: #00C6EE;
 }
 .web .primeroscoc .descripcion p i,
 .web .guerrasOnline .descripcion p i,

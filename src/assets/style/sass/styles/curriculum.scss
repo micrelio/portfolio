@@ -1,7 +1,7 @@
 @import "../mixins/mixins.scss";
 @import "../variables/variables.scss";
 .head {
-  // @include head;
+   @include head;
 }
 body {
   background: {

@@ -1,12 +1,36 @@
 
-.ir-arriba {
-	display:none;
-	padding:20px;
-	background:green;
-	font-size:20px;
-	color:#fff;
-	cursor:pointer;
-	position: fixed;
-	bottom:20px;
-	right:20px;
+@import "../mixins/mixins.scss";
+@import "../variables/variables.scss";
+
+.head {
+  @include head;
+}
+//   .subir,
+//   .arrow-alt-circle-up {
+// 	display:none;
+// 	//padding:20px;
+// 	background:$azul;
+// 	font-size:20px;
+// 	color:#fff;
+// 	cursor:pointer;
+// 	position: fixed;
+// 	bottom:20px;
+//     right:20px;
+//     border: round 20px;
+// }
+
+.fa-arrow-alt-circle-up {
+    color: $azul;
+ 
+    font-size: 5rem;
+     display: block;
+    // text-decoration: none;
+     display:none;
+     cursor:pointer;
+     position: fixed;
+     bottom:20px;
+      right:20px;
+       border-radius: 100px;
+//   border: 0.25rem solid white;
+  background-color: white;
 }

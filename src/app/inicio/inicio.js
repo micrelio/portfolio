@@ -55,7 +55,7 @@ customElements.define("mi-inicio", miInicio);
 // boton ir arriba
 $(document).ready(function(){
 
-	$('.ir-arriba').click(function(){
+	$('.fas').click(function(){
 		$('body, html').animate({
 			scrollTop: '0px'
 		}, 300);
@@ -63,9 +63,9 @@ $(document).ready(function(){
 
 	$(window).scroll(function(){
 		if( $(this).scrollTop() > 0 ){
-			$('.ir-arriba').slideDown(300);
+			$('.fas').slideDown(300);
 		} else {
-			$('.ir-arriba').slideUp(300);
+			$('.fas').slideUp(300);
 		}
 	});
 

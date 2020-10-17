@@ -1,5 +1,13 @@
 @charset "UTF-8";
 /* hovers*/
+.head {
+  width: 100%;
+  position: relative;
+}
+.head img {
+  width: 100%;
+}
+
 .descripcion {
   display: flex;
   justify-content: center;
