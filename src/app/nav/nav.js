@@ -14,7 +14,7 @@ class miNav extends HTMLElement {
                     <div class="menu">
                         <div class="links">
                             <s onmouseover> <button class="nav-link" type="button" onclick="navegar('inicio');"> Inicio </button></s>
-                            <s onmouseover> <a href="#/sobremi/"><button class="nav-link" type="button" onclick="navegar('sobremi');"> Sobre mí </button> </s></a>
+                            <s onmouseover> <button class="nav-link" type="button" onclick="navegar('sobremi');"> Sobre mí </button> </s>
                             <s onmouseover> <button class="nav-link" type="button" onclick="navegar('webs'); "> Webs </button></s>
                             <s onmouseover> <button class="nav-link" type="button" onclick="navegar('galeria');"> Galeria </button></s>
                             <s onmouseover> <button class="nav-link" type="button" onclick="navegar('videos');"> Videos </button></s>
