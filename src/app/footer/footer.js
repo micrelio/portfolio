@@ -18,7 +18,7 @@ class miFooter extends HTMLElement {
                 <div class="footer-columna">
                     <h3>Dirección</h3>
                     <span class="fa fa-map-marker">
-                        <p>244 Av. Los Incas - Peru</p>
+                        <p>Valencia - España</p>
                     </span>
                     <span class="fa fa-phone">
                         <p>(+34) 653 251 983 </p>
@@ -28,7 +28,7 @@ class miFooter extends HTMLElement {
                     </span>
                 </div>
                 <div class="footer-columna">
-                    <h3>Sobre Mi</h3>
+                    <h3>Sobre Mí</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur repellat autem, error iste
                     odio atque eum assumenda rem aliquam, consequatur excepturi reiciendis corrupti velit aperiam?</p>
                 </div>

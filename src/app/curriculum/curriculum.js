@@ -16,17 +16,19 @@ class miCurriculum extends HTMLElement {
         <br>
             <h><strong>José Antonio López Baena</strong></h>
             <p>
-                Nacido el 27 de julio de 1982 en Valencia (España).
+                Nacido en julio de 1982 Valencia (España).
             </p>
             <p>
-                Quart dePoblet 46930 (Valencia).
+            <i class="fa fa-map-marker"> Quart dePoblet 46930 (Valencia).</i>
             </p>
             <p>
-                653 25 19 83
+            <i class="fa fa-phone">  653 25 19 83 </i>
             </p>
+           
             <p>
-                microa4@gmail.com
+            <i class="fa fa-envelope">  microa4@gmail.com </i>
             </p>
+            
         </div>
     </div>
 </section>

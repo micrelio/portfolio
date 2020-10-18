@@ -64,6 +64,7 @@ a:visited {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 3rem;
 }
 .datos .datosPersonales .direccion p {
   margin-top: 1.5rem;
