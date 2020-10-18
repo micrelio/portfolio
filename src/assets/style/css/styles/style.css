@@ -41,7 +41,6 @@ html {
 
 body {
   font-family: Arial;
-  /* line-height: 1.6; */
   background-color: #272727;
 }
 
@@ -61,7 +60,6 @@ p {
   justify-content: center;
   width: 100%;
   padding: 5%;
-  border-bottom: 0.05rem solid #00C6EE;
   background-color: #272727;
 }
 .primera img {
