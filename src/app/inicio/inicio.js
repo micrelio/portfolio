@@ -20,9 +20,6 @@ class miInicio extends HTMLElement {
 }
 customElements.define("mi-inicio", miInicio);
 
-
-
-
 // boton ir arriba
 $(document).ready(function(){
 
@@ -41,23 +38,6 @@ $(document).ready(function(){
 	});
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 function navegar(id) {
   var render = id;
