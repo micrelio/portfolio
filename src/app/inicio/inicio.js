@@ -14,8 +14,7 @@ class miInicio extends HTMLElement {
             </p>
         </div>
     </section>
-    
- `;
+  `;
   }
 }
 customElements.define("mi-inicio", miInicio);
