@@ -10,7 +10,7 @@ class miCurriculum extends HTMLElement {
 <section class="datos">
     <div class="datosPersonales">
         <div class="foto">
-            <img id="" class="dni" src="../../assets/images/fotos/dni.png">
+            <img id="" class="dni" src="/src/assets/images/fotos/dni.png">
         </div>
         <div class="direccion">
         <br>
@@ -38,80 +38,80 @@ class miCurriculum extends HTMLElement {
 <section class="datos">
     <div class="experiencia">
         <div class="logotipo">
-            <a href="https://geekshubs.com/"target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/GeeksHubs.jpg"></a>
+            <a href="https://geekshubs.com/"target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/GeeksHubs.jpg"></a>
         </div>
         <div class="descripcion">
             <p class="año">2019</p><br>
             <p>BootCamp fullstack developer, en <a href="https://geekshubs.com/" target="_blank">GeeksHubs</a> Valencia (Valencia).</p>
         </div>
         <div class="titulo">
-                <a href="../../assets/images/titulos/GreeksHubs.jpg" target="_blank"><img alt="" src="../../assets/images/icons/titulo.png"></a>
+                <a href="/src/assets/images/titulos/GreeksHubs.jpg" target="_blank"><img alt="" src="/src/assets/images/icons/titulo.png"></a>
         </div>
         
     </div>
     <div class="experiencia">
         <div class="logotipo">
-            <a href="https://www.tobalcaide.com/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/tobalcaide.png"></a>
+            <a href="https://www.tobalcaide.com/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/tobalcaide.png"></a>
         </div>
         <div class="descripcion">
             <p class="año">2018</p><br>
             <p>Grado superior ASIR (administración de sistemas informáticos en red) <a href="https://www.tobalcaide.com/" target="_blank"> Academia Tobalcaide </a>, Quart de Poblet (Valencia).</p>
         </div>
         <div class="titulo">
-            <a href="../../assets/images/titulos/ASIR.jpg" target="_blank"><img alt="" src="../../assets/images/icons/titulo.png"></a>
+            <a href="/src/assets/images/titulos/ASIR.jpg" target="_blank"><img alt="" src="/src/assets/images/icons/titulo.png"></a>
         </div>
     </div>
     <div class="experiencia">
         <div class="logotipo">
-            <a href="http://mestreacasa.gva.es/web/iesrodrigobotet" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/rodrigoBotet.jpg"></a>
+            <a href="http://mestreacasa.gva.es/web/iesrodrigobotet" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/rodrigoBotet.jpg"></a>
         </div>
         <div class="descripcion">
             <p class="año">2013-2017</p><br>
             <p>Curso de inglés: <a href="http://mestreacasa.gva.es/web/iesrodrigobotet" target="_blank">IES Rodrigo Botet</a>, instituto Manises (Valencia).</p>
         </div>  
         <div class="titulo">
-            <a href="../../assets/images/titulos/ingles.jpg" target="_blank"><img alt="" src="../../assets/images/icons/titulo.png"></a>
+            <a href="/src/assets/images/titulos/ingles.jpg" target="_blank"><img alt="" src="/src/assets/images/icons/titulo.png"></a>
         </div>
     </div>
     <div class="experiencia">
         <div class="logotipo">
-            <a href="http://iessalvadorgadea.edu.gva.es/web/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/salvadorGadea.jpg"></a>
+            <a href="http://iessalvadorgadea.edu.gva.es/web/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/salvadorGadea.jpg"></a>
         </div>
         <div class="descripcion">
             <p  class="año">2008</p><br>
             <p>Grado superior de Control y regulación de sistemas autocontrolados: <a href="http://iessalvadorgadea.edu.gva.es/web/" target="_blank"> IES Salvador Gadea</a>, Aldaya (Valencia).</p>
         </div>
         <div class="titulo">
-            <a href="../../assets/images/titulos/automatismos.jpg" target="_blank"><img alt="" src="../../assets/images/icons/titulo.png"></a>
+            <a href="/src/assets/images/titulos/automatismos.jpg" target="_blank"><img alt="" src="/src/assets/images/icons/titulo.png"></a>
         </div>
     </div>
     <div class="experiencia">
         <div class="logotipo">
-            <a href="https://www.coversa.com/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/cover.png"></a> 
+            <a href="https://www.coversa.com/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/cover.png"></a> 
         </div>
         <div class="descripcion">
             <p class="año">2002</p><br>
             <p> Curso de trabajos en alta tensión en <a href="https://www.coversa.com/" target="_blank"> COVER </a>, Manises (Valencia).</p>
         </div>
         <div class="titulo">
-            <a href="../../assets/images/titulos/Cover.jpg" target="_blank"><img alt="" src="../../assets/images/icons/titulo.png"></a>
+            <a href="/src/assets/images/titulos/Cover.jpg" target="_blank"><img alt="" src="/src/assets/images/icons/titulo.png"></a>
         </div>
     </div>
     <div class="experiencia">
         <div class="logotipo">
-            <a href="http://institutofaitanar.edu.gva.es/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/faitanar.jpg"></a>
+            <a href="http://institutofaitanar.edu.gva.es/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/faitanar.jpg"></a>
         </div>
         <div class="descripcion">
             <p class="año">2000</p><br>
             <p> Grado medio Electricidad: <a href="http://institutofaitanar.edu.gva.es/" target="_blank"> IES Faitanar </a>, Quart de Poblet (Valencia).</p>
         </div>
         <div class="titulo">
-            <a href="../../assets/images/titulos/electricidad.jpg" target="_blank"><img alt="" src="../../assets/images/icons/titulo.png"></a>
+            <a href="/src/assets/images/titulos/electricidad.jpg" target="_blank"><img alt="" src="/src/assets/images/icons/titulo.png"></a>
         </div>
     </div>
     <div class="experiencia">
         <div class="logotipo">
-            <a href="https://web.iesgonzaloanaya.es/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/gonzaloAnaya.jpg"></a>
+            <a href="https://web.iesgonzaloanaya.es/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/gonzaloAnaya.jpg"></a>
         </div>
         <div class="descripcion">
             <p class="año">1997</p><br>
@@ -129,7 +129,7 @@ class miCurriculum extends HTMLElement {
 <section class="datos">
     <div class="experiencia">
         <div class="logotipo">    
-            <a href="https://www.titaniumgamers.com/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/titaniumgamers.png"></a>
+            <a href="https://www.titaniumgamers.com/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/titaniumgamers.png"></a>
         </div>
         <div class="descripcion">
             <p class="año">2020 <a href="https://www.titaniumgamers.com/" target="_blank"><strong>Titanium Gamers</strong></a></p><br>
@@ -142,7 +142,7 @@ class miCurriculum extends HTMLElement {
     </div>
     <div class="experiencia">
         <div class="logotipo">
-            <a href="https://www.igre.es/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/IGRE.png"></a>
+            <a href="https://www.igre.es/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/IGRE.png"></a>
         </div>
         <div class="descripcion">
             <p class="año">2019 <a href="https://www.igre.es/" target="_blank"><strong>IGRE</strong></a></p><br>
@@ -152,7 +152,7 @@ class miCurriculum extends HTMLElement {
     </div>
     <div class="experiencia">
         <div class="logotipo">
-            <a href=" https://www.yoigo.com/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/yoigo.png"></a>
+            <a href=" https://www.yoigo.com/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/yoigo.png"></a>
         </div>                                                                                         
         <div class="descripcion">
             <p class="año">2018 <a href=" https://www.yoigo.com/" target="_blank"><strong>Yoigo</strong></a></p><br>
@@ -161,7 +161,7 @@ class miCurriculum extends HTMLElement {
     </div>
     <div class="experiencia">
         <div class="logotipo">
-            <img id="" class="corporativo" src="../../assets/images/logoEmpresa/quafis.jpg">
+            <img id="" class="corporativo" src="/src/assets/images/logoEmpresa/quafis.jpg">
         </div>
         <div class="descripcion">
             <p class="año">2018 <strong>Quafis</strong></p><br>
@@ -170,7 +170,7 @@ class miCurriculum extends HTMLElement {
     </div>
     <div class="experiencia">
         <div class="logotipo">
-            <a href="https://www.alimarket.es/alimentacion/empresa/209431" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/frusa.jpg"></a>
+            <a href="https://www.alimarket.es/alimentacion/empresa/209431" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/frusa.jpg"></a>
         </div>
         <div class="descripcion">
             <p class="año">2016 <a href="https://www.alimarket.es/alimentacion/empresa/209431" target="_blank"><strong>Frusa Coca Cola</strong></a></p><br>
@@ -179,7 +179,7 @@ class miCurriculum extends HTMLElement {
     </div>
     <div class="experiencia">
         <div class="logotipo">
-            <a href="https://www.trolli.es/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/trolli.jpg"></a>
+            <a href="https://www.trolli.es/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/trolli.jpg"></a>
         </div>
         <div class="descripcion">
             <p class="año">2015 <a href="https://www.trolli.es/" target="_blank"><strong>Trolli</strong></a></p><br>
@@ -188,7 +188,7 @@ class miCurriculum extends HTMLElement {
     </div>
     <div class="experiencia">
         <div class="logotipo">
-            <a href="https://power-electronics.com/es/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/power.jpg"></a>
+            <a href="https://power-electronics.com/es/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/power.jpg"></a>
         </div>
         <div class="descripcion">
             <p class="año">2013 <a href="https://power-electronics.com/es/" target="_blank"><strong>Tour Electric&Power Electronics</strong></a></p><br>
@@ -197,7 +197,7 @@ class miCurriculum extends HTMLElement {
     </div>
     <div class="experiencia">
         <div class="logotipo">
-            <a href="https://www.cerealtosirofoods.com/es/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/grupoSiro.jpg"></a>
+            <a href="https://www.cerealtosirofoods.com/es/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/grupoSiro.jpg"></a>
         </div>
         <div class="descripcion">
             <p class="año">2013 <a href="https://www.cerealtosirofoods.com/es/" target="_blank"><strong>Grupo Siro</strong></a></p><br>
@@ -206,7 +206,7 @@ class miCurriculum extends HTMLElement {
     </div>
     <div class="experiencia">
         <div class="logotipo">
-            <img id="" class="corporativo" src="../../assets/images/logoEmpresa/dafsa.jpg">
+            <img id="" class="corporativo" src="/src/assets/images/logoEmpresa/dafsa.jpg">
         </div>
         <div class="descripcion">
             <p class="año">2009 <strong>Dafsa</strong></p><br>
@@ -215,7 +215,7 @@ class miCurriculum extends HTMLElement {
     </div>
     <div class="experiencia">
         <div class="logotipo">
-            <a href="http://www.diselcom.com/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/diselcom.jpg">
+            <a href="http://www.diselcom.com/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/diselcom.jpg">
         </div>
         <div class="descripcion">
             <p class="año">2008 <a href="http://www.diselcom.com/" target="_blank"><strong>Diselcom</strong></a></p><br>
@@ -224,7 +224,7 @@ class miCurriculum extends HTMLElement {
     </div>
     <div class="experiencia">
         <div class="logotipo">
-            <img id="" class="corporativo" src="../../assets/images/logoEmpresa/martinezLoriente.jpg">
+            <img id="" class="corporativo" src="/src/assets/images/logoEmpresa/martinezLoriente.jpg">
         </div>
         <div class="descripcion">
             <p class="año">2005 <strong>Martínez Loriente</strong></p><br>
@@ -233,7 +233,7 @@ class miCurriculum extends HTMLElement {
     </div>
     <div class="experiencia">
         <div class="logotipo">
-            <a href=" https://www.coversa.com/" target="_blank"><img id="" class="corporativo" src="../../assets/images/logoEmpresa/cover.png"></a>
+            <a href=" https://www.coversa.com/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/cover.png"></a>
         </div>
         <div class="descripcion">
             <p class="año">2002 <a href=" https://www.coversa.com/" target="_blank"><strong>Cover</strong></a></p><br>
@@ -242,7 +242,7 @@ class miCurriculum extends HTMLElement {
     </div>
     <div class="experiencia">
         <div class="logotipo">
-            <img id="" class="corporativo" src="../../assets/images/logoEmpresa/electricidad.jpg">
+            <img id="" class="corporativo" src="/src/assets/images/logoEmpresa/electricidad.jpg">
         </div>
         <div class="descripcion">
             <p class="año">T<strong>abajos como electricista</strong></p><br>
@@ -274,7 +274,7 @@ function mostrarTitulo(titulo) {
       '<a href="mipagina.html" target="_blank">Abre el enlace en una nueva ventana</a>';
       break;
     case "automatismos":
-      //<img src="../../assets/images/banners/rocas.jpg"></img>
+      //<img src="/src/assets/images/banners/rocas.jpg"></img>
       break;
     default:
       break;

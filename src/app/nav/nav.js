@@ -9,7 +9,7 @@ class miNav extends HTMLElement {
             <div class="nav" id="nav">
                 <div class="navbar">
                     <div class="foto">
-                        <img src="../../assets/images/dracula-man.jpg">
+                        <img src="/src/assets/images/dracula-man.jpg">
                     </div>
                     <div class="menu">
                         <div class="links">
@@ -27,10 +27,10 @@ class miNav extends HTMLElement {
             <div class="movil">
                 <div class="imagenes">
                     <div class="foto">
-                        <img src="../../assets/images/dracula-man.jpg">
+                        <img src="/src/assets/images/dracula-man.jpg">
                     </div>
                     <div class="botones">
-                        <span id="boton1"><img src="../../assets/images/icons/menu.png" id="pull" href="#"
+                        <span id="boton1"><img src="/src/assets/images/icons/menu.png" id="pull" href="#"
                                 alt="menu"></span>
                     </div>
                 </div>
@@ -48,7 +48,7 @@ class miNav extends HTMLElement {
             </div>
             <div class="mode">
                 <!-- <audio src="../sonidos/ping.mp4" autoplay loop></audio> -->
-                <img src="../../assets/images/buttons/noche.png">
+                <img src="/src/assets/images/buttons/noche.png">
             </div>
         </section>
     

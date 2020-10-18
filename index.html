@@ -1,52 +1,71 @@
-<!DOCTYPE html PUBLIC" -//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
-<head webkit-playsinline="true">
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Micro | Desarrollador web</title>
-    <link rel="stylesheet" href="../../assets/style/fonts/FontAwesome.otf">
-    <link rel="stylesheet" href="src/assets/style/fonts/fontawesome-webfont.svg">
 
-   <link rel="stylesheet" href="/src/assets/style/fonts/FontAwesome.otf">
+
+    <link rel="stylesheet" href="/src/assets/style/fonts/FontAwesome.otf">
+    <link rel="stylesheet" href="/src/assets/style/fonts/fontawesome-webfont.svg">
+    <link rel="stylesheet" href="/src/assets/style/fonts/fontawesome-webfont.ttf">
+    <script src="https://kit.fontawesome.com/213ff71406.js" crossorigin="anonymous"></script>
+
+
     <link rel="stylesheet" href="/src/assets/style/css/styles/footer.css" media="screen" />
     <link rel="stylesheet" href="/src/assets/style/css/styles/nav.css" media="screen" />
     <link rel="stylesheet" href="/src/assets/style/css/styles/visor.css" media="screen" />
     <link rel="stylesheet" href="/src/assets/style/css/responsive/responsive.css" media="screen" />
+    <link rel="stylesheet" href="/src/assets/style/css/transiciones/transiciones.css" media="screen" />
+    <link rel="stylesheet" href="/src/assets/style/css/styles/sobremi.css" media="screen" />
+    <link rel="stylesheet" href="/src/assets/style/css/styles/inicio.css" media="screen" />
 
-<!--
+
+
+
+    <link rel="stylesheet" href="/src/assets/style/css/styles/style.css" media="screen" />
     <link rel="stylesheet" href="/src/assets/style/css/styles/galeria.css" media="screen" />
     <link rel="stylesheet" href="/src/assets/style/css/styles/webs.css" media="screen" />
     <link rel="stylesheet" href="/src/assets/style/css/styles/videos.css" media="screen" />
     <link rel="stylesheet" href="/src/assets/style/css/styles/curriculum.css" media="screen" />
     <link rel="stylesheet" href="/src/assets/style/css/styles/contacto.css" media="screen" />
+    <link rel="stylesheet" href="/src/assets/style/css/styles/imagenesGaleria.css" media="screen" />
+    <link rel="stylesheet" href="/src/assets/style/css/styles/botonGaleria.css" media="screen" />
+    <link rel="stylesheet" href="/src/assets/style/css/styles/cookies.css" media="screen" />
 
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script type="text/javascript" src="/src/app/nav/nav.js"></script>
-    <script type="text/javascript" src="/src/assets/funciones/funcNav.js"></script>
+    <script type="text/javascript" src="/src/assets/funciones/nav.js"></script>
     <script type="text/javascript" src="/src/assets/funciones/funciones.js"></script>
     <script type="text/javascript" src="/src/app/footer/footer.js"></script>
-   
+    <script type="text/javascript" src="/src/app/cookies/cookies.js"></script>
+
+    <script type="text/javascript" src="/src/app/sobremi/sobremi.js"></script>
 
     <script type="text/javascript" src="/src/app/inicio/cambio.js"></script>
-    <script type="text/javascript" src="/src/app/inicio/inicio.html"></script>
-    
+    <script type="text/javascript" src="/src/app/inicio/inicio.js"></script>
+
     <script type="text/javascript" src="/src/app/galeria/galeria.js"></script>
+    <script type="text/javascript" src="/src/app/galeria/botonGaleria.js"></script>
     <script type="text/javascript" src="/src/app/galeria/arraysGaleria.js"></script>
-    <script type="text/javascript" src="/src/app/galeria/imagenes.js"></script>
+    <script type="text/javascript" src="/src/app/galeria/imagenesGaleria.js"></script>
     <script type="text/javascript" src="/src/app/galeria/visor.js"></script>
-   
+
     <script type="text/javascript" src="/src/app/webs/webs.js"></script>
     <script type="text/javascript" src="/src/app/videos/videos.js"></script>
     <script type="text/javascript" src="/src/app/curriculum/curriculum.js"></script>
-    <script type="text/javascript" src="/src/app/contacto/contacto.js"></script> -->
-  
-  
+    <script type="text/javascript" src="/src/app/contacto/contacto.js"></script>
+
+    <!-- <script type="text/javascript" src="../funciones/inicio.js"></script> -->
+    <!-- <script type="text/javascript" src="../../assets/funciones/galeria.js"></script> -->
 
     <link rel="icon" href="https://i.ibb.co/sHmt0XZ/00001361.jpg" />
     <meta name="author" content="micro" />
     <meta name="copyright" content="micro" />
 
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <meta name="twitter:site" content="@">
     <link rel="alternate" hreflang="es" href="https://.com/" />
@@ -66,92 +85,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-
-
     <script type="text/javascript">
-        funcNav();
-
+        nav();
     </script>
-<script type="text/javascript">
 
 
-    var contador = 6;
-    var redirecciona = href ="src/app/inicio/inicio.html";
-    function temporizador() {
-        var mensaje = document.getElementById("mensaje");
-        if (contador==2){ retraso();} //setTimeout("playAudio()",500)
-        if (contador > 0) {
-                                    contador--;
-            mensaje.innerHTML = contador + " segundos.";
-            setTimeout("temporizador()", 000);
-        } else {
-             
-            
-           window.location.href = redirecciona;
-            
-        }
-    }
-</script>
+
 
 </head>
 
-<body style="color:white;">
-    
-    <audio id="myAudio">
-        <!-- <source src="horse.ogg" type="audio/ogg"> -->
-        <source src="ping.mp4" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-      
-      <!-- <p>Click the buttons to play or pause the audio.</p> -->
-      
-      <!-- <button onclick="playAudio()" type="button">Play Audio</button>
-      <button onclick="pauseAudio()" type="button">Pause Audio</button>  -->
-      
-      <script>
-function retraso(){
-        
-      var sonido = document.getElementById("myAudio"); 
-      var mierda = sonido.play();
-      if (mierda !== undefined) {
-        mierda.then(_ => {
-        
-      // Automatic playback started!
-      // Show playing UI.
-    })
-    .catch(error => {
-      // Auto-play was prevented
-      // Show paused UI.
-    });
-  }
+
+<mi-nav></mi-nav>
 
 
-    //   function playAudio() { 
-    //     sonido.play(); 
-    //   } 
-      
-    //   function pauseAudio() { 
-    //     sonido.pause(); 
-    //   } 
-}
-      </script>
-    
+<!-- <body id="body"> -->
+<!-- <section class="head">
+    <img src="../../assets/images/banners/rocas.jpg">
+</section> -->
 
-      <section  class="">
-        <h>Presentacion</h>
-        
-           
-            <!--webbot bot="HTMLMarkup" endspan -->
-            <span id="mensaje" >
-                <script type="text/javascript">temporizador();</script>
-            </span>
+<body id="body">
 
-        <div >
-            <!-- <img style="height:100vh" src="/src/assets/images/gifs/goku.gif"> -->
+    <!-- onload="navegar('galeria')" -->
+
+    <!-- <mi-inicio></mi-inicio> -->
+
+    <!-- Boton subir -->
+    <i class="fas fa-arrow-alt-circle-up"></i>
+
+    <section id="componente">
+        <div>
+            <button id="Home" onclick="ROUTER.load('home')">Home </button>
         </div>
+        <div>
+            <button id="About" onclick="ROUTER.load('about')">About</button>
+        </div>
+        <div>
+            <button id="Contact" onclick="ROUTER.load('contact')">Contact</button>
+        </div>
+    </section>
+    <section id="componente">
+        <div id="content"></div>
+        <script src="../router/router.js"></script>
+        <script src="../router/routes.js"></script>
+        <script src="../router/index.js"></script>
     </section>
 
 
+
+    <section id="componente">
+        <!-- <mi-inicio></mi-inicio> -->
+        <!-- <mi-inicio></mi-inicio> -->
+    </section>
+
+    <!-- <section id="content">
+        <mi-imagenes></mi-imagenes>
+    </section> -->
+
+    <!-- 
+    <kkk onload="nuevoContenido();">
+<p>Algo de contenido original del documento</p>
+</kkk>
+ -->
+
+    <!-- <p align="left"  style="background-color: aliceblue">
+    <a onmouseover>JavaScript Kit</a></p>
+     -->
+    <!-- <p style="background-color: aliceblue">
+    <a  onclick="mouseoversound.playclip()">Link 3</a></p> -->
+
+    <!-- <section class="stick">
+        <div class="nav" id="nav">
+            <div class="navbar">
+                <div class="foto">
+                    <img src="../../assets/images/dracula-man.jpg">
+                </div>
+                <div class="menu">
+                    <div class="links">
+                        <s onmouseover> <button class="nav-link" type="button" onclick="navegar('inicio');"> inicio
+                            </button> </s>
+                        <s onmouseover> <button class="nav-link" type="button" onclick="navegar('webs'); "> Webs
+                            </button></s>
+                        <s onmouseover> <button class="nav-link" type="button" onclick="navegar('galeria');"> galeria
+                            </button></s>
+                        <s onmouseover> <button class="nav-link" type="button" onclick="navegar('videos');"> Videos
+                            </button></s>
+                        <s onmouseover> <button class="nav-link" type="button" onclick="navegar('curriculum');">
+                                Curriculum </button></s>
+                        <s onmouseover> <button class="nav-link" type="button" onclick="navegar('contacto');"> Contacto
+                            </button></s>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="movil">
+            <div class="imagenes">
+                <div class="foto">
+                    <img src="../../assets/images/dracula-man.jpg">
+                </div>
+                <div class="botones">
+                    <span id="boton1"><img src="../../assets/images/icons/menu.png" id="pull" href="#"
+                            alt="menu"></span>
+                </div>
+            </div>
+            <div>
+            </div>
+            <div style="display: none" class="desplegable" id="desplegable">
+                <button onclick="navegar('inicio');" class="mnav-link">Inicio</button>
+                <button onclick="navegar('webs');" class="mnav-link">Webs</button>
+                <button onclick="navegar('galeria');" class="mnav-link">Galery</button>
+                <button onclick="navegar('videos');" class="mnav-link">Videos</button>
+                <button onclick="navegar('curriculum');" class="mnav-link">Curriculum</button>
+                <button onclick="navegar('contacto');" class="mnav-link">Contacto</button>
+            </div>
+        </div>
+        <div class="mode">
+        -->
+    <!-- <audio src="../sonidos/ping.mp4" autoplay loop></audio> -->
+    <!--   <img src="../../assets/images/buttons/noche.png">
+        </div>
+    </section> -->
+
+
 </body>
+
+<mi-footer></mi-footer>
+<mi-cookies></mi-cookies>
+
 
 </html>

@@ -9,12 +9,12 @@ class miVisor extends HTMLElement {
             `
  <section id="botoneraMultimedia" class="botoneraMultimedia" >
   <div id="multimediaControl" class="multimediaControl">
-    <img id="previous" class="multimediaImagen"  src="../../assets/images/buttons/multimedia/previous.png">
-    <img id="play-" class="multimediaImagen"  src="../../assets/images/buttons/multimedia/play-.png">
-    <img id="pause" class="multimediaImagen" src="../../assets/images/buttons/multimedia/pause.png">
-    <img id="stop" class="multimediaImagen"  src="../../assets/images/buttons/multimedia/stop.png">
-    <img id="play+" class="multimediaImagen"  src="../../assets/images/buttons/multimedia/play+.png">
-    <img id="next" class="multimediaImagen"  src="../../assets/images/buttons/multimedia/next.png">
+    <img id="previous" class="multimediaImagen"  src="/src/assets/images/buttons/multimedia/previous.png">
+    <img id="play-" class="multimediaImagen"  src="/src/assets/images/buttons/multimedia/play-.png">
+    <img id="pause" class="multimediaImagen" src="/src/assets/images/buttons/multimedia/pause.png">
+    <img id="stop" class="multimediaImagen"  src="/src/assets/images/buttons/multimedia/stop.png">
+    <img id="play+" class="multimediaImagen"  src="/src/assets/images/buttons/multimedia/play+.png">
+    <img id="next" class="multimediaImagen"  src="/src/assets/images/buttons/multimedia/next.png">
   </div>
 </section>
 <section id="principal" class="principal" >
@@ -31,8 +31,8 @@ class miVisor extends HTMLElement {
 </section>
 <section id="botoneraMultimedia" class="botoneraMultimedia" >
    <div id="multimediaSound" class="multimediaSound">
-    <img id="multimediaImagen" class="multimediaImagen" value="soundOn" src="../../assets/images/buttons/multimedia/soundOn.png">
-    <img id="multimediaImagen" class="multimediaImagen" value="soundOff" src="../../assets/images/buttons/multimedia/soundOff.png">
+    <img id="multimediaImagen" class="multimediaImagen" value="soundOn" src="/src/assets/images/buttons/multimedia/soundOn.png">
+    <img id="multimediaImagen" class="multimediaImagen" value="soundOff" src="/src/assets/images/buttons/multimedia/soundOff.png">
   <div>
 </section>
              `;
@@ -439,7 +439,7 @@ function intervalo(h) {
         console.log('alerta')
             // window.alert("Tiempo de visualizacion excedido, Si quieres continuar viendo imagenes pulsa Aceptar.");
 
-        // window.alert("Excedido el tiempo de visualizacion, se paró la secuencia de imagenes.<br>Para continuar pulse: <img id="multimediaImagen" class="multimediaImagen" value="soundOff" src="../../assets/images/buttons/multimedia/soundOff.png">");
+        // window.alert("Excedido el tiempo de visualizacion, se paró la secuencia de imagenes.<br>Para continuar pulse: <img id="multimediaImagen" class="multimediaImagen" value="soundOff" src="/src/assets/images/buttons/multimedia/soundOff.png">");
         //   clearInterval(marcha);
     }, 120000);
 
