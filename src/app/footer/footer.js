@@ -22,7 +22,7 @@ class miFooter extends HTMLElement {
                     </span>
                     <span class="fa fa-phone">
                         <p>(+34) 653 251 983 </p>
-                    </span></br>
+                    </span>
                     <span class="fa fa-envelope">
                         <p>microa4@gmail.com</p>
                     </span>
