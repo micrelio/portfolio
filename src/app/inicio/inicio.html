@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Micro | Desarrollador web</title>
 
-    
+
     <link rel="stylesheet" href="../../assets/style/fonts/FontAwesome.otf">
     <link rel="stylesheet" href="../../assets/style/fonts/fontawesome-webfont.svg">
     <link rel="stylesheet" href="../../assets/style/fonts/fontawesome-webfont.ttf">
@@ -109,14 +109,32 @@
 
     <!-- <mi-inicio></mi-inicio> -->
 
-<!-- Boton subir -->
-<i class="fas fa-arrow-alt-circle-up"></i>
+    <!-- Boton subir -->
+    <i class="fas fa-arrow-alt-circle-up"></i>
+
+    <section id="componente">
+        <div>
+            <button id="Home" onclick="ROUTER.load('home')">Home </button>
+        </div>
+        <div>
+            <button id="About" onclick="ROUTER.load('about')">About</button>
+        </div>
+        <div>
+            <button id="Contact" onclick="ROUTER.load('contact')">Contact</button>
+        </div>
+    </section>
+    <section id="componente">
+        <div id="content"></div>
+        <script src="../router/router.js"></script>
+        <script src="../router/routes.js"></script>
+        <script src="../router/index.js"></script>
+    </section>
 
 
 
     <section id="componente">
         <!-- <mi-inicio></mi-inicio> -->
-        <mi-inicio></mi-inicio>
+        <!-- <mi-inicio></mi-inicio> -->
     </section>
 
     <!-- <section id="content">
