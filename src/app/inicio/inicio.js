@@ -37,7 +37,7 @@ $(document).ready(function(){
 	});
 
 });
-
+//modificar para routing
 function navegar(id) {
   var render = id;
   switch (render) {
