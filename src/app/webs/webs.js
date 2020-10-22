@@ -93,8 +93,7 @@ class miWebs extends HTMLElement {
             </p>
         </div>
         <div class="visitar">
-            <p>
-            <a class="visitar" target="blank" href="https://clashofclansguerrasonline.titaniumgamers.com/">Visitar
+            <p><a class="visitar" target="blank" href="https://clashofclansguerrasonline.titaniumgamers.com/">Visitar
             <i class="fas fa-arrow-alt-circle-right"></i></a>
             </p>
         </div>
@@ -103,4 +102,5 @@ class miWebs extends HTMLElement {
 `;
   }
 }
+
 customElements.define("mi-webs", miWebs);
