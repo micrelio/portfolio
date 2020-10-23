@@ -41,6 +41,8 @@
   display: grid;
   grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5] 1fr [x6] 1fr [x7];
   grid-template-rows: [y0] 0.5fr [y1];
+  grid-column-gap: 0.2rem;
+  grid-row-gap: 1rem;
   width: 60%;
 }
 .stick .nav .navbar .menu .nuevo .enlace {
@@ -52,13 +54,11 @@
   margin: 0 0.2rem 0 0.2rem;
   color: #00C6EE;
   padding: 1.6rem;
-  border-radius: 0.9rem;
-  border-color: #00C6EE;
-  border-width: 0.05rem;
   background-color: rgba(0, 0, 0, 0.582);
-}
-.stick .nav .navbar .menu .nuevo .enlace font {
-  size: 1.6rem;
+  font-size: 1.6rem;
+  font-color: red;
+  border: 0.05rem solid #00C6EE;
+  border-radius: 0.9rem;
 }
 .stick .nav .navbar .menu .nuevo .uno {
   grid-column: x0/x1;
