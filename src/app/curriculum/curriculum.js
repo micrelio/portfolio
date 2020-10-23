@@ -19,14 +19,14 @@ class miCurriculum extends HTMLElement {
                 Nacido en julio de 1982 Valencia (España).
             </p>
             <p>
-            <i class="fa fa-map-marker"> Quart dePoblet 46930 (Valencia).</i>
+            <i class="fa fa-map-marker"></i> Quart dePoblet 46930 (Valencia).
             </p>
             <p>
-            <i class="fa fa-phone">  653 25 19 83 </i>
+            <i class="fa fa-phone"></i>  653 25 19 83 
             </p>
            
             <p>
-            <i class="fa fa-envelope">  microa4@gmail.com </i>
+            <i class="fa fa-envelope"></i>  microa4@gmail.com 
             </p>
             
         </div>
