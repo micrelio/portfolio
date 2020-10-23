@@ -49,38 +49,74 @@
           display: grid;
           grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5] 1fr [x6] 1fr [x7];
           grid-template-rows: [y0] 0.5fr [y1];
-          width:60%;
-        //   display: flex;
-        //   flex-direction: row;
-          background-color: lightcoral;
+          width: 60%;
+          //   display: flex;
+          //   flex-direction: row;
+          // background-color: lightcoral;
+          .enlace {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            margin: 0 auto;
+            margin: 0 0.2rem 0 0.2rem;
+            color: $azul; //gray
+            padding: 1.6rem;
+            font {
+              size: 1.6rem;
+            }
+            border: {
+              radius: 0.9rem;
+              color: $azul; // gray;
+              width: 0.05rem;
+            }
+            background: {
+              color: rgba(0, 0, 0, 0.582);
+            }
+          }
           .uno {
-            grid-column: x0 / x5;
+            grid-column: x0 / x1;
             grid-row: y0 / y1;
-            background-color: lightgray;
           }
-          .dos{
-            grid-column: x0 / x5;
-            grid-row: y0 / y1;  
+          .dos {
+            grid-column: x1 / x2;
+            grid-row: y0 / y1;
           }
-          .tres{
-            grid-column: x0 / x5;
-            grid-row: y0 / y1;  
+          .tres {
+            grid-column: x2 / x3;
+            grid-row: y0 / y1;
           }
-          .cuatro{
-            grid-column: x0 / x5;
-            grid-row: y0 / y1;  
+          .cuatro {
+            grid-column: x3 / x4;
+            grid-row: y0 / y1;
           }
-          .cinco{
-            grid-column: x0 / x5;
-            grid-row: y0 / y1;  
+          .cinco {
+            grid-column: x4 / x5;
+            grid-row: y0 / y1;
           }
-          .seis{
-            grid-column: x0 / x5;
-            grid-row: y0 / y1;  
+          .seis {
+            grid-column: x5 / x6;
+            grid-row: y0 / y1;
           }
-          .siete{
-            grid-column: x0 / x5;
-            grid-row: y0 / y1;  
+          .siete {
+            grid-column: x6 / x7;
+            grid-row: y0 / y1;
+          }
+          .uno:hover,
+          .dos:hover,
+          .tres:hover,
+          .cuatro:hover,
+          .cinco:hover,
+          .seis:hover,
+          .siete:hover,
+          .uno:focus,
+          .dos:focus,
+          .tres:focus,
+          .cuatro:focus,
+          .cinco:focus,
+          .seis:focus,
+          .siete:focus {
+            background-color: rgba(78, 78, 32, 0.582);
           }
         }
         .links {

@@ -13,7 +13,7 @@ class miNav extends HTMLElement {
                     </div>
                     <div class="menu">
                         <div class="links">
-                            <s onmouseover> <button class="nav-link" type="button" onclick="navegar('inicio');"> Inicio </button></s>
+                            <button class="nav-link" type="button" onclick="navegar('inicio');"> Inicio </button></s>
                             <s onmouseover> <button class="nav-link" type="button" onclick="navegar('sobremi');"> Sobre mí </button> </s>
                             <s onmouseover> <button class="nav-link" type="button" onclick="navegar('webs'); "> Webs </button></s>
                             <s onmouseover> <button class="nav-link" type="button" onclick="navegar('galeria');"> Galeria </button></s>
@@ -23,13 +23,13 @@ class miNav extends HTMLElement {
                         </div>
                     
                     <div class="nuevo">
-                            <div class="uno">Inicio</div>
-                            <div class="dos">Sobre mí</div>
-                            <div class="tres">Webs</div>
-                            <div class="cuatro">Galeria</div>
-                            <div class="cinco">Videos</div>
-                            <div class="seis">Curriculum</div>
-                            <div class="siete">Contacto</div>
+                            <div class="enlace uno">Inicio</div>
+                            <div class="enlace dos">Sobre mí</div>
+                            <div class="enlace tres">Webs</div>
+                            <div class="enlace cuatro">Galeria</div>
+                            <div class="enlace cinco">Videos</div>
+                            <div class="enlace seis">Curriculum</div>
+                            <div class="enlace siete">Contacto</div>
                     </div>
                     </div>
                 </div>
