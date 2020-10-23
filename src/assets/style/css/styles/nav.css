@@ -37,6 +37,42 @@
   position: relative;
   z-index: 1000;
 }
+.stick .nav .navbar .menu .nuevo {
+  display: grid;
+  grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5] 1fr [x6] 1fr [x7];
+  grid-template-rows: [y0] 0.5fr [y1];
+  width: 60%;
+  background-color: lightcoral;
+}
+.stick .nav .navbar .menu .nuevo .uno {
+  grid-column: x0/x5;
+  grid-row: y0/y1;
+  background-color: lightgray;
+}
+.stick .nav .navbar .menu .nuevo .dos {
+  grid-column: x0/x5;
+  grid-row: y0/y1;
+}
+.stick .nav .navbar .menu .nuevo .tres {
+  grid-column: x0/x5;
+  grid-row: y0/y1;
+}
+.stick .nav .navbar .menu .nuevo .cuatro {
+  grid-column: x0/x5;
+  grid-row: y0/y1;
+}
+.stick .nav .navbar .menu .nuevo .cinco {
+  grid-column: x0/x5;
+  grid-row: y0/y1;
+}
+.stick .nav .navbar .menu .nuevo .seis {
+  grid-column: x0/x5;
+  grid-row: y0/y1;
+}
+.stick .nav .navbar .menu .nuevo .siete {
+  grid-column: x0/x5;
+  grid-row: y0/y1;
+}
 .stick .nav .navbar .menu .links {
   z-index: 1000;
   display: flex;

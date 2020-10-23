@@ -21,6 +21,16 @@ class miNav extends HTMLElement {
                             <s onmouseover> <button class="nav-link" type="button" onclick="navegar('curriculum');"> Curriculum </button></s>
                             <s onmouseover> <button class="nav-link" type="button" onclick="navegar('contacto');"> Contacto </button></s>
                         </div>
+                    
+                    <div class="nuevo">
+                            <div class="uno">Inicio</div>
+                            <div class="dos">Sobre mí</div>
+                            <div class="tres">Webs</div>
+                            <div class="cuatro">Galeria</div>
+                            <div class="cinco">Videos</div>
+                            <div class="seis">Curriculum</div>
+                            <div class="siete">Contacto</div>
+                    </div>
                     </div>
                 </div>
             </div>
