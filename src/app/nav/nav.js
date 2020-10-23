@@ -11,7 +11,9 @@ class miNav extends HTMLElement {
                         <img src="/src/assets/images/dracula-man.jpg">
                     </div>
                     <div class="menu">
-                        <div class="links">
+                      <!-- 
+                      -->
+                       <div class="links">
                             <button class="nav-link" type="button" onclick="navegar('inicio');"> Inicio </button></s>
                             <s onmouseover> <button class="nav-link" type="button" onclick="navegar('conoceme');"> Sobre mí </button> </s>
                             <s onmouseover> <button class="nav-link" type="button" onclick="navegar('webs'); "> Webs </button></s>
