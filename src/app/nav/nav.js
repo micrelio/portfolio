@@ -57,13 +57,11 @@ class miNav extends HTMLElement {
     }
 }
 
-//  window.customElements.define('mi-Menu', minenu);
 customElements.define('mi-nav', miNav);
 
 function seleccionado() {
     menu.slideToggle();
 }
-
 function nav() {
     $(function() {
         var pull = $('#pull');
@@ -110,11 +108,6 @@ function desplegable() {
         })
     })
 }
-
-
-
-
-
 //----------------
 //sonido menu
 // $(function () {
@@ -129,6 +122,4 @@ function desplegable() {
 //         audio.play();
 //     });
 // });
-
-
 //----------------------------------------------------------
