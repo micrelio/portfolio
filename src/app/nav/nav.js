@@ -1,10 +1,9 @@
 class miNav extends HTMLElement {
-    constructor() {
-        super();
-    }
-    connectedCallback() {
-        this.innerHTML =
-            `
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    this.innerHTML = `
             <section class="stick">
             <div class="nav" id="nav">
                 <div class="navbar">
@@ -14,7 +13,7 @@ class miNav extends HTMLElement {
                     <div class="menu">
                         <div class="links">
                             <button class="nav-link" type="button" onclick="navegar('inicio');"> Inicio </button></s>
-                            <s onmouseover> <button class="nav-link" type="button" onclick="navegar('sobremi');"> Sobre mí </button> </s>
+                            <s onmouseover> <button class="nav-link" type="button" onclick="navegar('conoceme');"> Sobre mí </button> </s>
                             <s onmouseover> <button class="nav-link" type="button" onclick="navegar('webs'); "> Webs </button></s>
                             <s onmouseover> <button class="nav-link" type="button" onclick="navegar('galeria');"> Galeria </button></s>
                             <s onmouseover> <button class="nav-link" type="button" onclick="navegar('videos');"> Videos </button></s>
@@ -22,14 +21,14 @@ class miNav extends HTMLElement {
                             <s onmouseover> <button class="nav-link" type="button" onclick="navegar('contacto');"> Contacto </button></s>
                         </div>
                     
-                    <div class="nuevo">
-                            <div class="enlace uno">Inicio</div>
-                            <div class="enlace dos">Sobre mí</div>
-                            <div class="enlace tres">Webs</div>
-                            <div class="enlace cuatro">Galeria</div>
-                            <div class="enlace cinco">Videos</div>
-                            <div class="enlace seis">Curriculum</div>
-                            <div class="enlace siete">Contacto</div>
+                    <div id="nuevo" class="nuevo">
+                            <div id="inicio" class="enlace inicio">Inicio</div>
+                            <div id="conoceme" class="enlace conoceme">Conóceme</div>
+                            <div id="webs" class="enlace webs">Webs</div>
+                            <div id="galeria" class="enlace gal">Galeria</div>
+                            <div id="videos" class="enlace videos">Videos</div>
+                            <div id="curriculum" class="enlace curriculum">Curriculum</div>
+                            <div id="Contacto" class="enlace contacto">Contacto</div>
                     </div>
                     </div>
                 </div>
@@ -48,7 +47,7 @@ class miNav extends HTMLElement {
                 </div>
                 <div style="display: none" class="desplegable" id="desplegable">
                     <button onclick="navegar('inicio'); seleccionado();" class="mnav-link">Inicio</button>
-                    <button onclick="navegar('sobremi'); seleccionado();" class="mnav-link">Sobre mí</button>
+                    <button onclick="navegar('conoceme'); seleccionado();" class="mnav-link">Sobre mí</button>
                     <button onclick="navegar('webs'); seleccionado();" class="mnav-link">Webs</button>
                     <button onclick="navegar('galeria'); seleccionado();" class="mnav-link">Galery</button>
                     <button onclick="navegar('videos'); seleccionado();" class="mnav-link">Videos</button>
@@ -64,59 +63,91 @@ class miNav extends HTMLElement {
     
 
                 `;
-    }
+    // esto arranca automatico
+    var multimedia = document.querySelector("#nuevo");
+    multimedia.addEventListener("click", function (seleccion) {
+        console.log('dentro')
+      var h = seleccion.target.id;
+             console.log(h)
+      if (seleccion.target !== this) {
+        switch (h) {
+          case "inicio":
+            console.log("inicio");
+            break;
+          case "conoceme":
+            console.log("conoceme");
+            break;
+          case "webs":
+            console.log("webs");
+            break;
+          case "galeria":
+            console.log("galeria");
+            break;
+          case "videos":
+            console.log("videos");
+            break;
+          case "curriculum":
+            console.log("curriculum");
+            break;
+          case "contacto":
+            console.log("contacto");
+            break;
+        }
+      }
+    });
+  }
 }
 
-customElements.define('mi-nav', miNav);
+customElements.define("mi-nav", miNav);
 
 function seleccionado() {
-    menu.slideToggle();
+  menu.slideToggle();
 }
 function nav() {
-    $(function() {
-        var pull = $('#pull');
-        menu = $('.desplegable');
-        menuHeight = menu.height();
-        $(pull).on('click', function(e) {
-            e.preventDefault();
-            menu.slideToggle();
-        });
+  $(function () {
+    var pull = $("#pull");
+    menu = $(".desplegable");
+    menuHeight = menu.height();
+    $(pull).on("click", function (e) {
+      e.preventDefault();
+      menu.slideToggle();
     });
-    $(window).resize(function() {
-        var w = $(window).width();
-        if (w > 320 && menu.is(':hidden')) {
-            menu.removeAttr('style');
-        }
-    });
+  });
+  $(window).resize(function () {
+    var w = $(window).width();
+    if (w > 320 && menu.is(":hidden")) {
+      menu.removeAttr("style");
+    }
+  });
 }
 //----------------
 // SCRIPT DE desplegable
 function desplegable() {
-    console.log('PESTE')
-    jQuery.fn.animateAuto = function(prop, speed, callback) {
-        var elem, height, width;
-        return this.each(function(i, el) {
-            el = jQuery(el), elem = el.clone().css({ "height": "auto", "width": "auto" }).appendTo("body");
-            height = elem.css("height"),
-                width = elem.css("width"),
-                elem.remove();
-            if (prop === "height")
-                el.animate({ "height": height }, speed, callback);
-            else if (prop === "width")
-                el.animate({ "width": width }, speed, callback);
-            else if (prop === "both")
-                el.animate({ "width": width, "height": height }, speed, callback);
-        });
-    }
-    $(window).ready(function() {
-        $('h2').click(function() {
-            if ($(this).next().hasClass('desplegado')) {
-                $(this).next().removeClass('desplegado').animate({ height: 0 }, 500);
-            } else {
-                $(this).next().addClass('desplegado').animateAuto("height", 500);
-            }
-        })
-    })
+  console.log("PESTE");
+  jQuery.fn.animateAuto = function (prop, speed, callback) {
+    var elem, height, width;
+    return this.each(function (i, el) {
+      (el = jQuery(el)),
+        (elem = el
+          .clone()
+          .css({ height: "auto", width: "auto" })
+          .appendTo("body"));
+      (height = elem.css("height")), (width = elem.css("width")), elem.remove();
+      if (prop === "height") el.animate({ height: height }, speed, callback);
+      else if (prop === "width") el.animate({ width: width }, speed, callback);
+      else if (prop === "both")
+        el.animate({ width: width, height: height }, speed, callback);
+    });
+  };
+  $(window).ready(function () {
+    $("h2").click(function () {
+      if ($(this).next().hasClass("desplegado")) {
+        $(this).next().removeClass("desplegado").animate({ height: 0 }, 500);
+      } else {
+        $(this).next().addClass("desplegado").animateAuto("height", 500);
+      }
+    });
+  });
 }
 //----------------
 //sonido menu

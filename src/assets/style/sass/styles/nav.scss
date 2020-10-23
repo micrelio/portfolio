@@ -10,6 +10,8 @@
     //   color: rgba(0, 4, 255, 0.7);
   }
   .nav {
+     
+
     border-bottom: 0.05rem solid $azul;
     // display: block;
     // margin: 0vh 5vh 0vh 5vh;
@@ -21,10 +23,11 @@
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
-      width: 100%;
+     
       .foto {
         position: absolute;
         z-index: 1000;
+
         img {
           margin-top: calc(10px + 1vw);
           margin-left: calc(10px + 1vw);
@@ -40,7 +43,7 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        margin-left: calc(100px + 1vw);
+      //  margin-left: calc(100px + 1vw);
         width: 100%;
         //  height: 10vh;
         position: relative;
@@ -48,84 +51,83 @@
         .nuevo {
           display: grid;
           grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5] 1fr [x6] 1fr [x7];
-          grid-template-rows: [y0] 0.5fr [y1];
-          grid-column-gap: 0.2rem;
+          grid-template-rows: [y0] 1fr [y1];
+background-color: rosybrown;
+          grid-column-gap: 1rem;
           grid-row-gap: 1rem;
-          width: 60%;
+          width: 70%;
+         //  margin-right: calc(8vw + 3rem);;
           //   display: flex;
           //   flex-direction: row;
           // background-color: lightcoral;
-          
+
           .enlace {
             display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            margin: 0 auto;
-            margin: 0 0.2rem 0 0.2rem;
+            margin: 0 0 0 0;
             color: $azul; //gray
             padding: 1.6rem;
             background: {
-                color: rgba(0, 0, 0, 0.582);
-              }
+              color: rgba(0, 0, 0, 0.582);
+            }
             font: {
               size: 1.6rem;
-              color: red;
             }
             // border-radius: 0.9rem ;
             // border-color: blue;
             // border-width: 0.05rem;
             border: 0.05rem solid $azul;
-            border-radius:0.9rem;
+            border-radius: 0.9rem;
             // border: {
             //   radius: 0.9rem;
             //   color: $azul; // gray;
             //   width: 0.05rem;
             // }
-            
           }
-          .uno {
+          .inicio {
             grid-column: x0 / x1;
             grid-row: y0 / y1;
           }
-          .dos {
+          .conoceme {
             grid-column: x1 / x2;
             grid-row: y0 / y1;
           }
-          .tres {
+          .webs {
             grid-column: x2 / x3;
             grid-row: y0 / y1;
           }
-          .cuatro {
+          .gal {
             grid-column: x3 / x4;
             grid-row: y0 / y1;
           }
-          .cinco {
+          .videos {
             grid-column: x4 / x5;
             grid-row: y0 / y1;
           }
-          .seis {
+          .curriculum {
             grid-column: x5 / x6;
             grid-row: y0 / y1;
           }
-          .siete {
+          .contacto {
             grid-column: x6 / x7;
             grid-row: y0 / y1;
           }
-          .uno:hover,
-          .dos:hover,
-          .tres:hover,
-          .cuatro:hover,
-          .cinco:hover,
-          .seis:hover,
-          .siete:hover,
-          .uno:focus,
-          .dos:focus,
-          .tres:focus,
-          .cuatro:focus,
-          .cinco:focus,
-          .seis:focus,
-          .siete:focus {
+          .inicio:hover,
+          .conoceme:hover,
+          .webs:hover,
+          .galeria:hover,
+          .videos:hover,
+          .curriculum:hover,
+          .contacto:hover,
+          .inicio:focus,
+          .conoceme:focus,
+          .webs:focus,
+          .galeria:focus,
+          .videos:focus,
+          .curriculum:focus,
+          .contacto:focus {
             background-color: rgba(78, 78, 32, 0.582);
           }
         }

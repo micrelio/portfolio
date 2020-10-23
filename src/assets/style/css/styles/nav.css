@@ -12,7 +12,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  width: 100%;
 }
 .stick .nav .navbar .foto {
   position: absolute;
@@ -32,7 +31,6 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-left: calc(100px + 1vw);
   width: 100%;
   position: relative;
   z-index: 1000;
@@ -40,68 +38,67 @@
 .stick .nav .navbar .menu .nuevo {
   display: grid;
   grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5] 1fr [x6] 1fr [x7];
-  grid-template-rows: [y0] 0.5fr [y1];
-  grid-column-gap: 0.2rem;
+  grid-template-rows: [y0] 1fr [y1];
+  background-color: rosybrown;
+  grid-column-gap: 1rem;
   grid-row-gap: 1rem;
-  width: 60%;
+  width: 70%;
 }
 .stick .nav .navbar .menu .nuevo .enlace {
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  margin: 0 auto;
-  margin: 0 0.2rem 0 0.2rem;
+  margin: 0 0 0 0;
   color: #00C6EE;
   padding: 1.6rem;
   background-color: rgba(0, 0, 0, 0.582);
   font-size: 1.6rem;
-  font-color: red;
   border: 0.05rem solid #00C6EE;
   border-radius: 0.9rem;
 }
-.stick .nav .navbar .menu .nuevo .uno {
+.stick .nav .navbar .menu .nuevo .inicio {
   grid-column: x0/x1;
   grid-row: y0/y1;
 }
-.stick .nav .navbar .menu .nuevo .dos {
+.stick .nav .navbar .menu .nuevo .conoceme {
   grid-column: x1/x2;
   grid-row: y0/y1;
 }
-.stick .nav .navbar .menu .nuevo .tres {
+.stick .nav .navbar .menu .nuevo .webs {
   grid-column: x2/x3;
   grid-row: y0/y1;
 }
-.stick .nav .navbar .menu .nuevo .cuatro {
+.stick .nav .navbar .menu .nuevo .gal {
   grid-column: x3/x4;
   grid-row: y0/y1;
 }
-.stick .nav .navbar .menu .nuevo .cinco {
+.stick .nav .navbar .menu .nuevo .videos {
   grid-column: x4/x5;
   grid-row: y0/y1;
 }
-.stick .nav .navbar .menu .nuevo .seis {
+.stick .nav .navbar .menu .nuevo .curriculum {
   grid-column: x5/x6;
   grid-row: y0/y1;
 }
-.stick .nav .navbar .menu .nuevo .siete {
+.stick .nav .navbar .menu .nuevo .contacto {
   grid-column: x6/x7;
   grid-row: y0/y1;
 }
-.stick .nav .navbar .menu .nuevo .uno:hover,
-.stick .nav .navbar .menu .nuevo .dos:hover,
-.stick .nav .navbar .menu .nuevo .tres:hover,
-.stick .nav .navbar .menu .nuevo .cuatro:hover,
-.stick .nav .navbar .menu .nuevo .cinco:hover,
-.stick .nav .navbar .menu .nuevo .seis:hover,
-.stick .nav .navbar .menu .nuevo .siete:hover,
-.stick .nav .navbar .menu .nuevo .uno:focus,
-.stick .nav .navbar .menu .nuevo .dos:focus,
-.stick .nav .navbar .menu .nuevo .tres:focus,
-.stick .nav .navbar .menu .nuevo .cuatro:focus,
-.stick .nav .navbar .menu .nuevo .cinco:focus,
-.stick .nav .navbar .menu .nuevo .seis:focus,
-.stick .nav .navbar .menu .nuevo .siete:focus {
+.stick .nav .navbar .menu .nuevo .inicio:hover,
+.stick .nav .navbar .menu .nuevo .conoceme:hover,
+.stick .nav .navbar .menu .nuevo .webs:hover,
+.stick .nav .navbar .menu .nuevo .galeria:hover,
+.stick .nav .navbar .menu .nuevo .videos:hover,
+.stick .nav .navbar .menu .nuevo .curriculum:hover,
+.stick .nav .navbar .menu .nuevo .contacto:hover,
+.stick .nav .navbar .menu .nuevo .inicio:focus,
+.stick .nav .navbar .menu .nuevo .conoceme:focus,
+.stick .nav .navbar .menu .nuevo .webs:focus,
+.stick .nav .navbar .menu .nuevo .galeria:focus,
+.stick .nav .navbar .menu .nuevo .videos:focus,
+.stick .nav .navbar .menu .nuevo .curriculum:focus,
+.stick .nav .navbar .menu .nuevo .contacto:focus {
   background-color: rgba(78, 78, 32, 0.582);
 }
 .stick .nav .navbar .menu .links {
