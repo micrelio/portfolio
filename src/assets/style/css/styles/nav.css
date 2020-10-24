@@ -28,6 +28,7 @@
 .stick .nav .navbar .menu {
   padding: 0.5rem 0 0.5rem 0;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -39,10 +40,9 @@
   display: grid;
   grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5] 1fr [x6] 1fr [x7];
   grid-template-rows: [y0] 1fr [y1];
-  background-color: rosybrown;
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
-  width: 70%;
+  width: 50%;
 }
 .stick .nav .navbar .menu .nuevo .enlace {
   display: flex;
@@ -52,6 +52,7 @@
   margin: 0 0 0 0;
   color: #00C6EE;
   padding: 1.6rem 0 1.6rem 0;
+  min-width: 8rem;
   background-color: rgba(0, 0, 0, 0.582);
   font-size: 1.6rem;
   border: 0.05rem solid #00C6EE;
@@ -88,14 +89,14 @@
 .stick .nav .navbar .menu .nuevo .inicio:hover,
 .stick .nav .navbar .menu .nuevo .conoceme:hover,
 .stick .nav .navbar .menu .nuevo .webs:hover,
-.stick .nav .navbar .menu .nuevo .galeria:hover,
+.stick .nav .navbar .menu .nuevo .gal:hover,
 .stick .nav .navbar .menu .nuevo .videos:hover,
 .stick .nav .navbar .menu .nuevo .curriculum:hover,
 .stick .nav .navbar .menu .nuevo .contacto:hover,
 .stick .nav .navbar .menu .nuevo .inicio:focus,
 .stick .nav .navbar .menu .nuevo .conoceme:focus,
 .stick .nav .navbar .menu .nuevo .webs:focus,
-.stick .nav .navbar .menu .nuevo .galeria:focus,
+.stick .nav .navbar .menu .nuevo .gal:focus,
 .stick .nav .navbar .menu .nuevo .videos:focus,
 .stick .nav .navbar .menu .nuevo .curriculum:focus,
 .stick .nav .navbar .menu .nuevo .contacto:focus {

@@ -27,7 +27,7 @@ class miNav extends HTMLElement {
                             <div id="inicio" class="enlace inicio">Inicio</div>
                             <div id="conoceme" class="enlace conoceme">Conóceme</div>
                             <div id="webs" class="enlace webs">Webs</div>
-                            <div id="galeria" class="enlace gal">Galeria</div>
+                            <a href="#home"> <div id="gal" class="enlace gal">Galeria</div> </a>
                             <div id="videos" class="enlace videos">Videos</div>
                             <div id="curriculum" class="enlace curriculum">Curriculum</div>
                             <div id="Contacto" class="enlace contacto">Contacto</div>
@@ -82,8 +82,10 @@ class miNav extends HTMLElement {
           case "webs":
             console.log("webs");
             break;
-          case "galeria":
+          case "gal":
             console.log("galeria");
+            document.getElementById("componente").innerHTML =
+        "<mi-galeria></mi-galeria>";
             break;
           case "videos":
             console.log("videos");
@@ -101,6 +103,47 @@ class miNav extends HTMLElement {
 }
 
 customElements.define("mi-nav", miNav);
+
+//modificar para routing
+function navegar(id) {
+  var render = id;
+  switch (render) {
+    case "inicio":
+      document.getElementById("componente").innerHTML =
+        "<mi-inicio></mi-inicio>";
+      break;
+    case "sobremi":
+      document.getElementById("componente").innerHTML =
+        "<mi-conoceme></mi-conoceme>";
+      break;
+    case "webs":
+      document.getElementById("componente").innerHTML = "<mi-webs></mi-webs>";
+      break;
+    case "galeria":
+      //   window.router.init([{
+      //     path: "/list",
+      //     view: "<mi-galeria><mi-galeria>"
+      // },])
+      document.getElementById("componente").innerHTML =
+        "<mi-galeria></mi-galeria>";
+      // location.replace("src/app/galeria/galeria.js");
+      break;
+    case "videos":
+      document.getElementById("componente").innerHTML =
+        "<mi-videos></mi-videos>";
+      break;
+    case "curriculum":
+      document.getElementById("componente").innerHTML =
+        "<mi-curriculum></mi-curriculum>";
+      break;
+    case "contacto":
+      document.getElementById("componente").innerHTML =
+        "<mi-contacto></mi-contacto>";
+      break;
+    default:
+  }
+}
+
 
 function seleccionado() {
   menu.slideToggle();
