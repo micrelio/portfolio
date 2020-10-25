@@ -14,7 +14,7 @@ class miNav extends HTMLElement {
                       <!-- 
                       -->
                        <div class="links">
-                            <button class="nav-link" type="button" onclick="navegar('inicio');"> Inicio </button></s>
+                            <s onmouseover> <button class="nav-link" type="button" onclick="navegar('inicio');"> Inicio </button></s>
                             <s onmouseover> <button class="nav-link" type="button" onclick="navegar('conoceme');"> Sobre mí </button> </s>
                             <s onmouseover> <button class="nav-link" type="button" onclick="navegar('webs'); "> Webs </button></s>
                             <s onmouseover> <button class="nav-link" type="button" onclick="navegar('galeria');"> Galeria </button></s>
@@ -24,13 +24,13 @@ class miNav extends HTMLElement {
                         </div>
                     
                     <div id="nuevo" class="nuevo">
-                            <div id="inicio" class="enlace inicio">Inicio</div>
-                            <div id="conoceme" class="enlace conoceme">Conóceme</div>
-                            <div id="webs" class="enlace webs">Webs</div>
-                            <div id="gal" class="enlace gal">Galeria</div>
-                            <div id="videos" class="enlace videos">Videos</div>
-                            <div id="curriculum" class="enlace curriculum">Curriculum</div>
-                            <div id="Contacto" class="enlace contacto">Contacto</div>
+                            <div id="inicio" class="enlace inicio"><strong>Inicio</strong></div>
+                            <div id="conoceme" class="enlace conoceme"><strong>Conóceme</strong></div>
+                            <div id="webs" class="enlace webs"><strong>Webs</strong></div>
+                            <div id="gal" class="enlace gal"><strong>Galeria</strong></div>
+                            <div id="videos" class="enlace videos"><strong>Videos</strong></div>
+                            <div id="curriculum" class="enlace curriculum"><strong>Curriculum</strong></div>
+                            <div id="Contacto" class="enlace contacto"><strong>Contacto</strong></div>
                     </div>
                     </div>
                 </div>
@@ -84,7 +84,6 @@ class miNav extends HTMLElement {
             break;
           case "gal":
             console.log("galeria");
-           
             break;
           case "videos":
             console.log("videos");
