@@ -4,98 +4,107 @@ class miNav extends HTMLElement {
   }
   connectedCallback() {
     this.innerHTML = `
-            <section class="stick">
-            <div class="nav" id="nav">
-                <div class="navbar">
-                    <div class="foto">
-                        <img src="/src/assets/images/dracula-man.jpg">
-                    </div>
-                    <div class="menu">
-                      <!-- 
-                      -->
-                       <div class="links">
-                            <s onmouseover> <button class="nav-link" type="button" onclick="navegar('inicio');"> Inicio </button></s>
-                            <s onmouseover> <button class="nav-link" type="button" onclick="navegar('conoceme');"> Sobre mí </button> </s>
-                            <s onmouseover> <button class="nav-link" type="button" onclick="navegar('webs'); "> Webs </button></s>
-                            <s onmouseover> <button class="nav-link" type="button" onclick="navegar('galeria');"> Galeria </button></s>
-                            <s onmouseover> <button class="nav-link" type="button" onclick="navegar('videos');"> Videos </button></s>
-                            <s onmouseover> <button class="nav-link" type="button" onclick="navegar('curriculum');"> Curriculum </button></s>
-                            <s onmouseover> <button class="nav-link" type="button" onclick="navegar('contacto');"> Contacto </button></s>
-                        </div>
-                    
-                    <div id="nuevo" class="nuevo">
-                            <div id="inicio" class="enlace inicio"><strong>Inicio</strong></div>
-                            <div id="conoceme" class="enlace conoceme"><strong>Conóceme</strong></div>
-                            <div id="webs" class="enlace webs"><strong>Webs</strong></div>
-                            <div id="gal" class="enlace gal"><strong>Galeria</strong></div>
-                            <div id="videos" class="enlace videos"><strong>Videos</strong></div>
-                            <div id="curriculum" class="enlace curriculum"><strong>Curriculum</strong></div>
-                            <div id="Contacto" class="enlace contacto"><strong>Contacto</strong></div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            <div class="movil">
-                <div class="imagenes">
-                    <div class="foto">
-                        <img src="/src/assets/images/dracula-man.jpg">
-                    </div>
-                    <div class="botones">
-                        <span id="boton1"><img src="/src/assets/images/icons/menu.png" id="pull" href="#"
-                                alt="menu"></span>
-                    </div>
-                </div>
-                <div>
-                </div>
-                <div style="display: none" class="desplegable" id="desplegable">
-                    <button onclick="navegar('inicio'); seleccionado();" class="mnav-link">Inicio</button>
-                    <button onclick="navegar('conoceme'); seleccionado();" class="mnav-link">Sobre mí</button>
-                    <button onclick="navegar('webs'); seleccionado();" class="mnav-link">Webs</button>
-                    <button onclick="navegar('galeria'); seleccionado();" class="mnav-link">Galery</button>
-                    <button onclick="navegar('videos'); seleccionado();" class="mnav-link">Videos</button>
-                    <button onclick="navegar('curriculum'); seleccionado();" class="mnav-link">Curriculum</button>
-                    <button onclick="navegar('contacto'); seleccionado();" class="mnav-link">Contacto</button>
-                </div>
-            </div>
-            <div class="mode">
-                <!-- <audio src="../sonidos/ping.mp4" autoplay loop></audio> -->
-                <img src="/src/assets/images/buttons/noche.png">
-            </div>
-        </section>
-    
-
-                `;
+<section class="stick">
+  <div class="nav" id="nav">
+    <div class="navbar">
+      <div class="foto">
+        <img src="/src/assets/images/dracula-man.jpg">
+      </div>
+      <div class="menu">
+      <!--          
+        <div class="links">
+          <s onmouseover> <button class="nav-link" type="button" onclick="navegar('inicio');"> Inicio </button></s>
+          <s onmouseover> <button class="nav-link" type="button" onclick="navegar('conoceme');"> Sobre mí </button> </s>
+          <s onmouseover> <button class="nav-link" type="button" onclick="navegar('webs'); "> Webs </button></s>
+          <s onmouseover> <button class="nav-link" type="button" onclick="navegar('galeria');"> Galeria </button></s>
+          <s onmouseover> <button class="nav-link" type="button" onclick="navegar('videos');"> Videos </button></s>
+          <s onmouseover> <button class="nav-link" type="button" onclick="navegar('curriculum');"> Curriculum </button></s>
+          <s onmouseover> <button class="nav-link" type="button" onclick="navegar('contacto');"> Contacto </button></s>
+        </div>
+        -->
+        <div id="nuevo" class="nuevo">
+          <div id="inicio" class="enlace inicio">Inicio</div>
+          <div id="conoceme" class="enlace conoceme">Conóceme</div>
+          <div id="webs" class="enlace webs">Webs</div>
+          <div id="gal" class="enlace gal">Galeria</div>
+          <div id="videos" class="enlace videos">Videos</div>
+          <div id="curriculum" class="enlace curriculum">Curriculum</div>
+          <div id="contacto" class="enlace contacto">Contacto</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="movil">
+    <div class="imagenes">
+      <div class="foto">
+        <img src="/src/assets/images/dracula-man.jpg">
+      </div>
+      <div class="botones">
+        <span id="boton1"><img src="/src/assets/images/icons/menu.png" id="pull" href="#" alt="menu"></span>
+      </div>
+    </div>
+    <div>
+    </div>
+    <div style="display: none" class="desplegable" id="desplegable">
+      <button onclick="navegar('inicio'); seleccionado();" class="mnav-link">Inicio</button>
+      <button onclick="navegar('conoceme'); seleccionado();" class="mnav-link">Sobre mí</button>
+      <button onclick="navegar('webs'); seleccionado();" class="mnav-link">Webs</button>
+      <button onclick="navegar('galeria'); seleccionado();" class="mnav-link">Galery</button>
+      <button onclick="navegar('videos'); seleccionado();" class="mnav-link">Videos</button>
+      <button onclick="navegar('curriculum'); seleccionado();" class="mnav-link">Curriculum</button>
+      <button onclick="navegar('contacto'); seleccionado();" class="mnav-link">Contacto</button>
+    </div>
+  </div>
+  <div class="mode">
+    <!-- <audio src="../sonidos/ping.mp4" autoplay loop></audio> -->
+    <img src="/src/assets/images/buttons/noche.png">
+  </div>
+</section>
+      `;
     // esto arranca automatico
     var multimedia = document.querySelector("#nuevo");
     multimedia.addEventListener("click", function (seleccion) {
-        console.log('dentro')
+        console.log(seleccion)
       var h = seleccion.target.id;
-             console.log(h)
-      if (seleccion.target !== this) {
+             console.log('h es',h)
+     // if (seleccion.target !== this) {
         switch (h) {
           case "inicio":
             console.log("inicio");
+            document.getElementById("componente").innerHTML =
+        "<mi-inicio></mi-inicio>";
             break;
           case "conoceme":
             console.log("conoceme");
+            document.getElementById("componente").innerHTML =
+        "<mi-conoceme></mi-conoceme>";
             break;
           case "webs":
             console.log("webs");
+            document.getElementById("componente").innerHTML = "<mi-webs></mi-webs>";
             break;
           case "gal":
             console.log("galeria");
+            document.getElementById("componente").innerHTML =
+        "<mi-galeria></mi-galeria>";
             break;
           case "videos":
             console.log("videos");
+            document.getElementById("componente").innerHTML =
+            "<mi-videos></mi-videos>";
             break;
           case "curriculum":
             console.log("curriculum");
+            document.getElementById("componente").innerHTML =
+            "<mi-curriculum></mi-curriculum>";
             break;
           case "contacto":
             console.log("contacto");
+            document.getElementById("componente").innerHTML =
+            "<mi-contacto></mi-contacto>";
             break;
         }
-      }
+     // }
     });
   }
 }

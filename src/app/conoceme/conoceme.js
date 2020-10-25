@@ -1,4 +1,4 @@
-class miSobremi extends HTMLElement {
+class miConoceme extends HTMLElement {
     constructor() {
         super();
     }
@@ -18,5 +18,5 @@ class miSobremi extends HTMLElement {
  `;
     }
 }
-customElements.define('mi-sobremi', miSobremi);
+customElements.define('mi-conoceme', miConoceme);
 
