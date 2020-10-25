@@ -27,7 +27,7 @@ class miNav extends HTMLElement {
                             <div id="inicio" class="enlace inicio">Inicio</div>
                             <div id="conoceme" class="enlace conoceme">Conóceme</div>
                             <div id="webs" class="enlace webs">Webs</div>
-                            <a href="#home"> <div id="gal" class="enlace gal">Galeria</div> </a>
+                            <a href="#home" type="button" onclick="navegar('galeria');"> <div id="gal" class="enlace gal">Galeria</div> </a>
                             <div id="videos" class="enlace videos">Videos</div>
                             <div id="curriculum" class="enlace curriculum">Curriculum</div>
                             <div id="Contacto" class="enlace contacto">Contacto</div>
@@ -84,8 +84,7 @@ class miNav extends HTMLElement {
             break;
           case "gal":
             console.log("galeria");
-            document.getElementById("componente").innerHTML =
-        "<mi-galeria></mi-galeria>";
+           
             break;
           case "videos":
             console.log("videos");
