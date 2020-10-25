@@ -112,44 +112,44 @@ class miNav extends HTMLElement {
 customElements.define("mi-nav", miNav);
 
 //modificar para routing
-function navegar(id) {
-  var render = id;
-  switch (render) {
-    case "inicio":
-      document.getElementById("componente").innerHTML =
-        "<mi-inicio></mi-inicio>";
-      break;
-    case "sobremi":
-      document.getElementById("componente").innerHTML =
-        "<mi-conoceme></mi-conoceme>";
-      break;
-    case "webs":
-      document.getElementById("componente").innerHTML = "<mi-webs></mi-webs>";
-      break;
-    case "galeria":
+// function navegar(id) {
+//   var render = id;
+//   switch (render) {
+//     case "inicio":
+//       document.getElementById("componente").innerHTML =
+//         "<mi-inicio></mi-inicio>";
+//       break;
+//     case "sobremi":
+//       document.getElementById("componente").innerHTML =
+//         "<mi-conoceme></mi-conoceme>";
+//       break;
+//     case "webs":
+//       document.getElementById("componente").innerHTML = "<mi-webs></mi-webs>";
+//       break;
+//     case "galeria":
       //   window.router.init([{
       //     path: "/list",
       //     view: "<mi-galeria><mi-galeria>"
       // },])
-      document.getElementById("componente").innerHTML =
-        "<mi-galeria></mi-galeria>";
+      // document.getElementById("componente").innerHTML =
+        // "<mi-galeria></mi-galeria>";
       // location.replace("src/app/galeria/galeria.js");
-      break;
-    case "videos":
-      document.getElementById("componente").innerHTML =
-        "<mi-videos></mi-videos>";
-      break;
-    case "curriculum":
-      document.getElementById("componente").innerHTML =
-        "<mi-curriculum></mi-curriculum>";
-      break;
-    case "contacto":
-      document.getElementById("componente").innerHTML =
-        "<mi-contacto></mi-contacto>";
-      break;
-    default:
-  }
-}
+//       break;
+//     case "videos":
+//       document.getElementById("componente").innerHTML =
+//         "<mi-videos></mi-videos>";
+//       break;
+//     case "curriculum":
+//       document.getElementById("componente").innerHTML =
+//         "<mi-curriculum></mi-curriculum>";
+//       break;
+//     case "contacto":
+//       document.getElementById("componente").innerHTML =
+//         "<mi-contacto></mi-contacto>";
+//       break;
+//     default:
+//   }
+// }
 
 
 function seleccionado() {
