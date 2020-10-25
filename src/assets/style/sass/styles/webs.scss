@@ -42,8 +42,10 @@
       align-items: baseline;
       padding: 2rem;
       p {
-        font-family: "FontAwesome", sans-serif;
-
+        font: {
+          family: "FontAwesome", sans-serif;
+          size: 2.5rem;
+        }
         // font-size: 1.7rem;
         color: white;
         a {
@@ -109,6 +111,8 @@
         // color: #e3e4e5;
         font: {
           family: titanium;
+          size: 7rem;
+
         }
         // background-color: chocolate;
       }
@@ -127,6 +131,7 @@
         -webkit-text-stroke: 0.05rem black;
         font: {
           family: titanium;
+          size: 7rem;
         }
       }
     }
@@ -190,6 +195,8 @@
     .tiendaTitanium,
     .titaniumGamers,
     .portfolio {
+      grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5];
+    grid-template-rows: [y0] 0.5fr [y1] 1fr [y2] 0.05fr [y3];
       .titulo {
         grid-column: x0 / x5;
         grid-row: y0 / y1;
@@ -219,7 +226,7 @@
       .visitar {
         grid-column: x0 / x5;
         grid-row: y2 / y3;
-        // background-color: red;
+         //background-color: red;
       }
     }
   }

@@ -13,9 +13,9 @@ class miWebs extends HTMLElement {
         </div>
         <div class="descripcion">
             <p>
-                Diseñada con WordPress tema DIVI (adquirida licencia desarrollador), para la comunidad propia de jugadores <a target="blank" href="https://titaniumgamers.com/">Titanium Gamers</a> durante el confinamiento 2020.<br>
+                Diseñada con WordPress tema DIVI (adquirida licencia ilimitada de desarrollador), para la comunidad propia de jugadores <a target="blank" href="https://titaniumgamers.com/">Titanium Gamers</a> durante el confinamiento 2020.<br>
                 Creada con:<br>
-                <i class="fa fa-check-circle verde"></i> WORDPRESS tema DIVI.
+                <i class="fa fa-check-circle verde"></i> WordPress tema DIVI.
             </p>
         </div>
         <div class="visitar">
