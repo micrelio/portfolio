@@ -8,6 +8,7 @@
 }
 
 .fa-arrow-alt-circle-up {
+  z-index: 1000;
   color: #00C6EE;
   font-size: 5rem;
   display: block;

@@ -5,6 +5,7 @@
   @include head;
 }
 .fa-arrow-alt-circle-up {
+  z-index: 1000;
   color: $azul;
   font-size: 5rem;
   display: block;
