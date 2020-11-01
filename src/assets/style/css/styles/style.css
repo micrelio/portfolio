@@ -36,15 +36,15 @@ body {
 }
 html h1,
 body h1 {
-  font-size: 7rem;
+  font-size: 5rem;
 }
 html h2,
 body h2 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 html h3,
 body h3 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 html p,
 body p {
