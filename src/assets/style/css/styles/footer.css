@@ -22,22 +22,31 @@
   flex-wrap: nowrap;
   justify-content: space-around;
 }
-* footer .footerContainer .anunciosPie {
+* footer .footerContainer .contacto,
+* footer .footerContainer .direccion,
+* footer .footerContainer .paginas {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 30%;
+  margin: 0rem 2rem 0rem 2rem;
 }
-* footer .footerContainer .anunciosPie h3 {
+* footer .footerContainer .contacto h3,
+* footer .footerContainer .direccion h3,
+* footer .footerContainer .paginas h3 {
   font-size: 4rem;
   color: #00C6EE;
   margin-bottom: 1.5rem;
 }
-* footer .footerContainer .anunciosPie p {
-  font-size: 2.5rem;
+* footer .footerContainer .contacto p,
+* footer .footerContainer .direccion p,
+* footer .footerContainer .paginas p {
+  font-size: 2rem;
   margin-bottom: rem;
 }
-* footer .footerContainer .anunciosPie input[type=email] {
+* footer .footerContainer .contacto input[type=email],
+* footer .footerContainer .direccion input[type=email],
+* footer .footerContainer .paginas input[type=email] {
   border: none;
   width: 100%;
   border: 0.1rem solid #00C6EE;
@@ -45,7 +54,9 @@
   padding: 1.5rem;
   border-radius: 0.9rem;
 }
-* footer .footerContainer .anunciosPie input[type=submit] {
+* footer .footerContainer .contacto input[type=submit],
+* footer .footerContainer .direccion input[type=submit],
+* footer .footerContainer .paginas input[type=submit] {
   border: none;
   background: #00C6EE;
   color: #fff;
@@ -58,14 +69,20 @@
   border: 0.05rem solid white;
   border-radius: 0.9rem;
 }
-* footer .footerContainer .anunciosPie .fa {
+* footer .footerContainer .contacto .fa,
+* footer .footerContainer .direccion .fa,
+* footer .footerContainer .paginas .fa {
   color: red;
 }
-* footer .footerContainer .anunciosPie .datos p {
+* footer .footerContainer .contacto .datos p,
+* footer .footerContainer .direccion .datos p,
+* footer .footerContainer .paginas .datos p {
   margin-left: 0.5rem;
   margin-bottom: 1.5rem;
 }
-* footer .footerContainer .anunciosPie .diseños p {
+* footer .footerContainer .contacto .diseños p,
+* footer .footerContainer .direccion .diseños p,
+* footer .footerContainer .paginas .diseños p {
   display: inline-block;
   margin: 0rem 1rem 1.5rem 1rem;
 }
@@ -99,63 +116,115 @@
   padding: 2rem;
 }
 
-@media screen and (max-width: 800px) {
-  .info-main {
-    padding: 3rem 10rem;
-  }
-
-  .footer-main .anunciosPie {
-    padding: 0 1rem;
-  }
-
-  .footer-main .anunciosPie h3 {
-    font-size: 2.8rem;
-  }
-
-  .footer-main .anunciosPie p {
-    font-size: 1.4rem;
-  }
-}
-@media screen and (max-width: 800px) {
-  .info-main {
-    padding: 3rem 3rem;
-  }
-
-  .info-main h3 {
-    font-size: 3rem;
-  }
-
-  .footer-main {
-    padding: 1rem 0;
-  }
-
-  .footer-main .anunciosPie {
+@media screen and (max-width: 900px) {
+  footer {
+    display: inline-block;
+    bottom: 0;
     width: 100%;
-    text-align: center;
-    margin: 1rem 0;
+    border-top: 0.1rem solid #00C6EE;
+    background-color: black;
   }
-
-  .footer-main .anunciosPie h3 {
-    margin-bottom: 0.5rem;
-  }
-
-  .footer-main .anunciosPie span {
-    display: block;
-  }
-
-  .main-copy-redes .footer-copy {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-
-  .main-copy-redes .footer-redes {
-    width: 80%;
+  footer .footerContainer {
+    color: #fff;
+    padding: 5rem 0rem 5rem 0rem;
     margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
   }
-
-  .footer-redes a {
+  footer .footerContainer .contacto,
+footer .footerContainer .direccion,
+footer .footerContainer .paginas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    margin: 0rem 2rem 0rem 2rem;
+  }
+  footer .footerContainer .contacto h3,
+footer .footerContainer .direccion h3,
+footer .footerContainer .paginas h3 {
+    font-size: 4rem;
+    color: #00C6EE;
+    margin-bottom: 1.5rem;
+  }
+  footer .footerContainer .contacto p,
+footer .footerContainer .direccion p,
+footer .footerContainer .paginas p {
+    font-size: 2rem;
+    margin-bottom: rem;
+  }
+  footer .footerContainer .contacto input[type=email],
+footer .footerContainer .direccion input[type=email],
+footer .footerContainer .paginas input[type=email] {
+    border: none;
     width: 100%;
+    border: 0.1rem solid #00C6EE;
+    font-size: 2.5rem;
+    padding: 1.5rem;
+    border-radius: 0.9rem;
+  }
+  footer .footerContainer .contacto input[type=submit],
+footer .footerContainer .direccion input[type=submit],
+footer .footerContainer .paginas input[type=submit] {
+    border: none;
+    background: #00C6EE;
+    color: #fff;
+    width: 50%;
+    padding: 1rem;
+    border: 0.1rem solid #00C6EE;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    border: 0.05rem solid white;
+    border-radius: 0.9rem;
+  }
+  footer .footerContainer .contacto .fa,
+footer .footerContainer .direccion .fa,
+footer .footerContainer .paginas .fa {
+    color: red;
+  }
+  footer .footerContainer .contacto .datos p,
+footer .footerContainer .direccion .datos p,
+footer .footerContainer .paginas .datos p {
+    margin-left: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  footer .footerContainer .contacto .diseños p,
+footer .footerContainer .direccion .diseños p,
+footer .footerContainer .paginas .diseños p {
+    display: inline-block;
+    margin: 0rem 1rem 1.5rem 1rem;
+  }
+  footer .redes {
+    display: flex;
+    width: 100%;
+    background: #000;
+    border-top: 0.1rem solid #00C6EE;
+  }
+  footer .redes .propiedad {
+    width: 100%;
+  }
+  footer .redes .propiedad .socialmedia {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    padding: 2rem;
+  }
+  footer .redes .propiedad .socialmedia .iconSocial img {
+    height: 4rem;
+    margin: 0.2rem;
+  }
+  footer .redes .copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+    width: 100%;
+    color: #fff;
+    padding: 2rem;
   }
 }
 

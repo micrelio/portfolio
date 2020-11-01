@@ -8,14 +8,14 @@ class miFooter extends HTMLElement {
   <div class="separator">
   </div>
   <div class="footerContainer">
-    <div class="anunciosPie">
+    <div class="contacto">
       <h3>Contactar</h3>
       <span class="">
         <input type="email" placeholder="Escriba su Correo">
         <input type="submit" value=" Suscribirse">
       </span>
     </div>
-    <div class="anunciosPie"> 
+    <div class="direccion"> 
       <h3>Dirección</h3>
       <div class="datos">
         <div>
@@ -25,7 +25,7 @@ class miFooter extends HTMLElement {
         </div>
       </div>
     </div>
-    <div class="anunciosPie">
+    <div class="paginas">
       <h3>Diseños</h3>
       <span class="diseños">
         <div>
