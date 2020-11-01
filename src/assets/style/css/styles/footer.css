@@ -28,7 +28,7 @@
   flex-direction: column;
   align-items: center;
   width: 30%;
-  background-color: salmon;
+  background-color: gray;
 }
 * footer .footerContainer .footer-main .anunciosPie h3 {
   font-size: 5rem;
@@ -36,18 +36,16 @@
   margin-bottom: 1.5rem;
 }
 * footer .footerContainer .footer-main .anunciosPie p {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: rem;
-}
-* footer .footerContainer .footer-main .anunciosPie .contacto {
-  background-color: red;
 }
 * footer .footerContainer .footer-main .anunciosPie input[type=email] {
   border: none;
-  width: 85%;
+  width: 100%;
   border: 0.1rem solid #00C6EE;
-  font-size: 1.7rem;
+  font-size: 2.5rem;
   padding: 1rem;
+  border-radius: 0.9rem;
 }
 * footer .footerContainer .footer-main .anunciosPie input[type=submit] {
   border: none;
@@ -56,17 +54,27 @@
   width: 50%;
   padding: 1rem;
   border: 0.1rem solid #00C6EE;
-  font-size: 1.7rem;
+  font-size: 2.5rem;
   margin-top: 1rem;
   cursor: pointer;
+  border: 0.05rem solid white;
+  border-radius: 0.9rem;
 }
-* footer .footerContainer .footer-main .anunciosPie span p {
-  display: inline-block;
+* footer .footerContainer .footer-main .anunciosPie .fa {
+  color: red;
+}
+* footer .footerContainer .footer-main .anunciosPie .datos {
+  background-color: greenyellow;
+}
+* footer .footerContainer .footer-main .anunciosPie .datos p {
   margin-left: 0.5rem;
   margin-bottom: 1.5rem;
 }
-* footer .footerContainer .footer-main .fa {
-  color: red;
+* footer .footerContainer .footer-main .anunciosPie .anunciosPie span p {
+  display: inline-block;
+  margin-left: 0.5rem;
+  margin-bottom: 1.5rem;
+  background-color: greenyellow;
 }
 * .info-container {
   width: 100%;

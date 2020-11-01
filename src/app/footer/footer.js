@@ -12,23 +12,21 @@ class miFooter extends HTMLElement {
             <div class="anunciosPie">
              
                 <h3>Contactar</h3>
-              <span class="contacto">
+              <span class="">
                 <input type="email" placeholder="Escriba su Correo">
                 <input type="submit" value=" Suscribirse">
-              <span>
+              </span>
             </div>
             <div class="anunciosPie">
              
                 <h3>Dirección</h3>
-              <span>
+              <div class="datos">
+                <div>
                 <p><i class="fa fa-map-marker"></i> Valencia - España</p>
-              </span>
-              <span>
                 <p><i class="fa fa-phone"></i> (+34) 653 251 983 </p>
-              </span>
-              <span>
                 <p><i class="fa fa-envelope"></i> microa4@gmail.com</p>
-              </span>
+                </div>
+              </div>
             </div>
             <div class="anunciosPie">
              
