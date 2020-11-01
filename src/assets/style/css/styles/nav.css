@@ -147,7 +147,7 @@
   }
 
   .movil {
-    border-bottom: 0.05rem solid #fff;
+    border-bottom: 0.05rem solid #00C6EE;
     display: block;
     display: flex;
     flex-direction: column;
@@ -168,7 +168,7 @@
   .movil .imagenes .foto img {
     display: block;
     border-radius: 75%;
-    border: 3px double #000000;
+    border: 3px double #00C6EE;
     width: calc(4vw + 5rem);
     box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
   }
@@ -187,16 +187,13 @@
     display: block;
     width: calc(4vw + 5rem);
   }
-  .movil .desplegable {
-    display: none;
-  }
-  .movil .desplegable button {
-    display: none;
+  .movil .desplegable .enlace {
     margin: 1rem;
     border: 0;
-    color: white;
+    color: #00C6EE;
     cursor: pointer;
-    background-color: transparent;
+    font-size: 3rem;
+    font-color: #00C6EE;
   }
   .movil .desplegable .mnav-link {
     display: block;
