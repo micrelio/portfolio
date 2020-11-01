@@ -11,14 +11,14 @@ class miNav extends HTMLElement {
         <img src="/src/assets/images/dracula-man.jpg">
       </div>
       <div class="menu">
-      <!--          
+      <!--  ANTTIGUO MENÚ    
         <div class="links">
           <s onmouseover> <button class="nav-link" type="button" onclick="navegar('inicio');"> Inicio </button></s>
           <s onmouseover> <button class="nav-link" type="button" onclick="navegar('conoceme');"> Sobre mí </button> </s>
           <s onmouseover> <button class="nav-link" type="button" onclick="navegar('webs'); "> Webs </button></s>
           <s onmouseover> <button class="nav-link" type="button" onclick="navegar('galeria');"> Galeria </button></s>
-          <s onmouseover> <button class="nav-link" type="button" onclick="navegar('videos');"> Videos </button></s>
-          <s onmouseover> <button class="nav-link" type="button" onclick="navegar('curriculum');"> Curriculum </button></s>
+         <s onmouseover> <button class="nav-link" type="button" onclick="navegar('videos');"> Videos </button></s>
+         <s onmouseover> <button class="nav-link" type="button" onclick="navegar('curriculum');"> Curriculum </button></s>
           <s onmouseover> <button class="nav-link" type="button" onclick="navegar('contacto');"> Contacto </button></s>
         </div>
         -->
@@ -27,7 +27,6 @@ class miNav extends HTMLElement {
           <div id="conoceme" class="enlace conoceme">Conóceme</div>
           <div id="webs" class="enlace webs">Webs</div>
           <div id="gal" class="enlace gal">Galeria</div>
-          <div id="videos" class="enlace videos">Videos</div>
           <div id="curriculum" class="enlace curriculum">Curriculum</div>
           <div id="contacto" class="enlace contacto">Contacto</div>
         </div>
@@ -45,7 +44,8 @@ class miNav extends HTMLElement {
     </div>
     <div>
     </div>
-    <div style="display: none" class="desplegable" id="desplegable">
+    <div style="display: none" class="desplegable nuevo" id="desplegable">
+      <!--
       <button onclick="navegar('inicio'); seleccionado();" class="mnav-link">Inicio</button>
       <button onclick="navegar('conoceme'); seleccionado();" class="mnav-link">Sobre mí</button>
       <button onclick="navegar('webs'); seleccionado();" class="mnav-link">Webs</button>
@@ -53,6 +53,16 @@ class miNav extends HTMLElement {
       <button onclick="navegar('videos'); seleccionado();" class="mnav-link">Videos</button>
       <button onclick="navegar('curriculum'); seleccionado();" class="mnav-link">Curriculum</button>
       <button onclick="navegar('contacto'); seleccionado();" class="mnav-link">Contacto</button>
+      -->
+        <div id="inicio" class="enlace inicio">Inicio</div>
+        <div id="conoceme" class="enlace conoceme">Conóceme</div>
+        <div id="webs" class="enlace webs">Webs</div>
+        <div id="gal" class="enlace gal">Galeria</div>
+        <div id="curriculum" class="enlace curriculum">Curriculum</div>
+        <div id="contacto" class="enlace contacto">Contacto</div>
+
+
+
     </div>
   </div>
   <div class="mode">
@@ -62,7 +72,7 @@ class miNav extends HTMLElement {
 </section>
       `;
     // esto arranca automatico
-    var multimedia = document.querySelector("#nuevo");
+    var multimedia = document.querySelector("#nuevo; #desplegable");
     multimedia.addEventListener("click", function (seleccion) {
         console.log(seleccion)
       var h = seleccion.target.id;

@@ -37,7 +37,7 @@
 }
 .stick .nav .navbar .menu .nuevo {
   display: grid;
-  grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5] 1fr [x6] 1fr [x7];
+  grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5] 1fr [x6];
   grid-template-rows: [y0] 1fr [y1];
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
@@ -74,16 +74,12 @@
   grid-column: x3/x4;
   grid-row: y0/y1;
 }
-.stick .nav .navbar .menu .nuevo .videos {
+.stick .nav .navbar .menu .nuevo .curriculum {
   grid-column: x4/x5;
   grid-row: y0/y1;
 }
-.stick .nav .navbar .menu .nuevo .curriculum {
-  grid-column: x5/x6;
-  grid-row: y0/y1;
-}
 .stick .nav .navbar .menu .nuevo .contacto {
-  grid-column: x6/x7;
+  grid-column: x5/x6;
   grid-row: y0/y1;
 }
 .stick .nav .navbar .menu .nuevo .inicio:hover,
