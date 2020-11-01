@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -15,39 +16,36 @@
 * footer .footerContainer {
   color: #fff;
   padding: 5rem 0rem 5rem 0rem;
-}
-* footer .footerContainer .footer-main {
   margin: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
 }
-* footer .footerContainer .footer-main .anunciosPie {
+* footer .footerContainer .anunciosPie {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 30%;
-  background-color: gray;
 }
-* footer .footerContainer .footer-main .anunciosPie h3 {
-  font-size: 5rem;
+* footer .footerContainer .anunciosPie h3 {
+  font-size: 4rem;
   color: #00C6EE;
   margin-bottom: 1.5rem;
 }
-* footer .footerContainer .footer-main .anunciosPie p {
+* footer .footerContainer .anunciosPie p {
   font-size: 2.5rem;
   margin-bottom: rem;
 }
-* footer .footerContainer .footer-main .anunciosPie input[type=email] {
+* footer .footerContainer .anunciosPie input[type=email] {
   border: none;
   width: 100%;
   border: 0.1rem solid #00C6EE;
   font-size: 2.5rem;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 0.9rem;
 }
-* footer .footerContainer .footer-main .anunciosPie input[type=submit] {
+* footer .footerContainer .anunciosPie input[type=submit] {
   border: none;
   background: #00C6EE;
   color: #fff;
@@ -55,61 +53,43 @@
   padding: 1rem;
   border: 0.1rem solid #00C6EE;
   font-size: 2.5rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   cursor: pointer;
   border: 0.05rem solid white;
   border-radius: 0.9rem;
 }
-* footer .footerContainer .footer-main .anunciosPie .fa {
+* footer .footerContainer .anunciosPie .fa {
   color: red;
 }
-* footer .footerContainer .footer-main .anunciosPie .datos {
-  background-color: greenyellow;
-}
-* footer .footerContainer .footer-main .anunciosPie .datos p {
+* footer .footerContainer .anunciosPie .datos p {
   margin-left: 0.5rem;
   margin-bottom: 1.5rem;
 }
-* footer .footerContainer .footer-main .anunciosPie .anunciosPie span p {
+* footer .footerContainer .anunciosPie .diseños p {
   display: inline-block;
-  margin-left: 0.5rem;
-  margin-bottom: 1.5rem;
-  background-color: greenyellow;
+  margin: 0rem 1rem 1.5rem 1rem;
 }
-* .info-container {
-  width: 100%;
-  background: #f2f2f2;
-}
-* .info-main {
-  width: 98%;
-  margin: auto;
-  text-align: center;
-}
-* .info-main h3 {
-  color: #00C6EE;
-  font-size: 4rem;
-  text-align: center;
-}
-* .info-main p {
-  padding: 2rem 0;
-}
-* .info-main a {
-  display: inline-block;
-  background: #bf0026;
-  color: #fff;
-  text-decoration: none;
-  padding: 1.2rem 2rem;
-}
-* .footer-copy-redes {
+* footer .redes {
   display: flex;
   width: 100%;
   background: #000;
   border-top: 0.1rem solid #00C6EE;
 }
-* .footer-copy-redes .propiedad {
+* footer .redes .propiedad {
   width: 100%;
 }
-* .footer-copy-redes .propiedad .footer-copy {
+* footer .redes .propiedad .socialmedia {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+* footer .redes .propiedad .socialmedia .iconSocial img {
+  height: 4rem;
+  margin: 0.2rem;
+}
+* footer .redes .copy {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -117,45 +97,6 @@
   width: 100%;
   color: #fff;
   padding: 2rem;
-}
-* .footer-copy-redes .propiedad .socialmedia {
-  width: 100%;
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
-  padding: 2rem;
-}
-* .footer-copy-redes .propiedad .socialmedia .iconSocial img {
-  height: 4rem;
-  margin: 0.2rem;
-}
-* .main-copy-redes {
-  width: 98%;
-  max-width: 100rem;
-  padding: 1.5rem 0;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  -ms-align-items: center;
-  align-items: center;
-}
-* .main-copy-redes .main-copy-redes .footer-redes {
-  width: 30%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-* .main-copy-redes .footer-redes a {
-  display: inline-block;
-  text-decoration: none;
-  width: 4rem;
-  height: 4rem;
-  line-height: 4rem;
-  border-radius: 50%;
-  background: #fff;
-  color: #000;
-  text-align: center;
 }
 
 @media screen and (max-width: 800px) {

@@ -1,18 +1,13 @@
 @import "../responsive/responsive.scss";
 @import "../variables/variables.scss";
 * {
-  //z-index: 1000;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   footer {
-    // margin-top: 5rem;
-    // position: relative;
     display: inline-block;
-    // position: fixed;
-    // z-index: 1000;
     bottom: 0;
     width: 100%;
     border-top: 0.1rem solid $azul;
@@ -22,114 +17,87 @@
     .footerContainer {
       color: #fff;
       padding: 5rem 0rem 5rem 0rem;
-      .footer-main {
-        margin: auto;
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      .anunciosPie {
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        .anunciosPie {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          width: 30%;
-          background-color: gray;
-
-          h3 {
-            font-size: 5rem;
-            color: $azul;
-            margin-bottom: 1.5rem;
-          }
-
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        h3 {
+          font-size: 4rem;
+          color: $azul;
+          margin-bottom: 1.5rem;
+        }
+        p {
+          font-size: 2.5rem;
+          margin-bottom: rem;
+        }
+        input[type="email"] {
+          border: none;
+          width: 100%;
+          border: 0.1rem solid $azul;
+          font-size: 2.5rem;
+          padding: 1.5rem;
+          border-radius: 0.9rem;
+        }
+        input[type="submit"] {
+          border: none;
+          background: $azul;
+          color: #fff;
+          width: 50%;
+          padding: 1rem;
+          border: 0.1rem solid $azul;
+          font-size: 2.5rem;
+          margin-top: 2rem;
+          cursor: pointer;
+          border: 0.05rem solid white;
+          border-radius: 0.9rem;
+        }
+        .fa {
+          color: red;
+        }
+        .datos {
           p {
-            font-size: 2.5rem;
-            margin-bottom: rem;
-          }
-         
-          input[type="email"] {
-            border: none;
-            width: 100%;
-            border: 0.1rem solid $azul;
-            font-size: 2.5rem;
-            padding: 1rem;
-            border-radius: 0.9rem;
-          }
-          input[type="submit"] {
-            border: none;
-            background: $azul;
-            color: #fff;
-            width: 50%;
-            padding: 1rem;
-            border: 0.1rem solid $azul;
-            font-size: 2.5rem;
-            margin-top: 1rem;
-            cursor: pointer;
-            border: 0.05rem solid white;
-            border-radius: 0.9rem;
-          }
-          .fa {
-            color: red;
-          }
-          .datos {
-           // display: flex;
-            // flex-direction: column;
-            // align-items: flex-start;
-            // justify-content: center;
-            //display: inline-block;
-            //margin-left: 0.5rem;
-            // margin-bottom: 1.5rem;
-             background-color: greenyellow;
-             p{
-              margin-left: 0.5rem;
-              margin-bottom: 1.5rem;
-             }
-          }
-          .anunciosPie span p {
-            display: inline-block;
             margin-left: 0.5rem;
             margin-bottom: 1.5rem;
-            background-color: greenyellow;
           }
-
         }
-
-        
-       
+        .diseños {
+          p {
+            display: inline-block;
+            margin: 0rem 1rem 1.5rem 1rem;
+            // margin-bottom: 1.5rem;
+            // background-color: greenyellow;
+          }
+        }
       }
     }
-  }
-  .info-container {
-    width: 100%;
-    background: #f2f2f2;
-  }
-  .info-main {
-    width: 98%;
-    margin: auto;
-    text-align: center;
-  }
-  .info-main h3 {
-    color: $azul;
-    font-size: 4rem;
-    text-align: center;
-  }
-  .info-main p {
-    padding: 2rem 0;
-  }
-  .info-main a {
-    display: inline-block;
-    background: #bf0026;
-    color: #fff;
-    text-decoration: none;
-    padding: 1.2rem 2rem;
-  }
-  .footer-copy-redes {
-    display: flex;
-    width: 100%;
-    background: #000;
-    border-top: 0.1rem solid $azul;
-    .propiedad {
+    .redes {
+      display: flex;
       width: 100%;
-      .footer-copy {
+      background: #000;
+      border-top: 0.1rem solid $azul;
+      .propiedad {
+        width: 100%;
+              .socialmedia {
+          width: 100%;
+          display: flex;
+          flex-direction: row-reverse;
+          flex-wrap: wrap;
+          padding: 2rem;
+          .iconSocial {
+            img {
+              height: 4rem;
+              margin: 0.2rem;
+            }
+          }
+        }
+      }
+      .copy {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -138,49 +106,9 @@
         color: #fff;
         padding: 2rem;
       }
-      .socialmedia {
-        width: 100%;
-        display: flex;
-        flex-direction: row-reverse;
-        flex-wrap: wrap;
-        padding: 2rem;
-        .iconSocial {
-          img {
-            height: 4rem;
-            margin: 0.2rem;
-          }
-        }
-      }
     }
   }
-  .main-copy-redes {
-    width: 98%;
-    max-width: 100rem;
-    padding: 1.5rem 0;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    -ms-align-items: center;
-    align-items: center;
-  }
-  .main-copy-redes .main-copy-redes .footer-redes {
-    width: 30%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .main-copy-redes .footer-redes a {
-    display: inline-block;
-    text-decoration: none;
-    width: 4rem;
-    height: 4rem;
-    line-height: 4rem;
-    border-radius: 50%;
-    background: #fff;
-    color: #000;
-    text-align: center;
-  }
+
 }
 @media screen and (max-width: 800px) {
   .info-main {
