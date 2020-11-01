@@ -28,8 +28,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 30%;
-  margin: 0rem 2rem 0rem 2rem;
+  margin: 0rem 1rem 0rem 1rem;
 }
 * footer .footerContainer .contacto h3,
 * footer .footerContainer .direccion h3,
@@ -42,7 +41,7 @@
 * footer .footerContainer .direccion p,
 * footer .footerContainer .paginas p {
   font-size: 2rem;
-  margin-bottom: rem;
+  font-size: calc(1rem + 1vw);
 }
 * footer .footerContainer .contacto input[type=email],
 * footer .footerContainer .direccion input[type=email],
@@ -50,7 +49,7 @@
   border: none;
   width: 100%;
   border: 0.1rem solid #00C6EE;
-  font-size: 2.5rem;
+  font-size: calc(1rem + 1vw);
   padding: 1.5rem;
   border-radius: 0.9rem;
 }
@@ -63,7 +62,7 @@
   width: 50%;
   padding: 1rem;
   border: 0.1rem solid #00C6EE;
-  font-size: 2.5rem;
+  font-size: calc(1rem + 1vw);
   margin-top: 2rem;
   cursor: pointer;
   border: 0.05rem solid white;
@@ -85,6 +84,15 @@
 * footer .footerContainer .paginas .diseños p {
   display: inline-block;
   margin: 0rem 1rem 1.5rem 1rem;
+}
+* footer .footerContainer .contacto {
+  width: 30%;
+}
+* footer .footerContainer .direccion {
+  width: 30%;
+}
+* footer .footerContainer .paginas {
+  width: 40%;
 }
 * footer .redes {
   display: flex;
@@ -116,31 +124,9 @@
   padding: 2rem;
 }
 
-@media screen and (max-width: 900px) {
-  footer {
-    display: inline-block;
-    bottom: 0;
-    width: 100%;
-    border-top: 0.1rem solid #00C6EE;
-    background-color: black;
-  }
+@media screen and (max-width: 700px) {
   footer .footerContainer {
-    color: #fff;
-    padding: 5rem 0rem 5rem 0rem;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-  }
-  footer .footerContainer .contacto,
-footer .footerContainer .direccion,
-footer .footerContainer .paginas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 30%;
-    margin: 0rem 2rem 0rem 2rem;
+    flex-wrap: wrap;
   }
   footer .footerContainer .contacto h3,
 footer .footerContainer .direccion h3,
@@ -153,78 +139,32 @@ footer .footerContainer .paginas h3 {
 footer .footerContainer .direccion p,
 footer .footerContainer .paginas p {
     font-size: 2rem;
-    margin-bottom: rem;
   }
-  footer .footerContainer .contacto input[type=email],
-footer .footerContainer .direccion input[type=email],
-footer .footerContainer .paginas input[type=email] {
-    border: none;
-    width: 100%;
-    border: 0.1rem solid #00C6EE;
-    font-size: 2.5rem;
-    padding: 1.5rem;
-    border-radius: 0.9rem;
+  footer .footerContainer .contacto {
+    width: 40%;
   }
-  footer .footerContainer .contacto input[type=submit],
-footer .footerContainer .direccion input[type=submit],
-footer .footerContainer .paginas input[type=submit] {
-    border: none;
-    background: #00C6EE;
-    color: #fff;
-    width: 50%;
-    padding: 1rem;
-    border: 0.1rem solid #00C6EE;
-    font-size: 2.5rem;
-    margin-top: 2rem;
-    cursor: pointer;
-    border: 0.05rem solid white;
-    border-radius: 0.9rem;
+  footer .footerContainer .direccion {
+    width: 40%;
   }
-  footer .footerContainer .contacto .fa,
-footer .footerContainer .direccion .fa,
-footer .footerContainer .paginas .fa {
-    color: red;
+  footer .footerContainer .paginas {
+    margin-top: 5rem;
+    width: 90%;
   }
-  footer .footerContainer .contacto .datos p,
-footer .footerContainer .direccion .datos p,
-footer .footerContainer .paginas .datos p {
-    margin-left: 0.5rem;
-    margin-bottom: 1.5rem;
-  }
-  footer .footerContainer .contacto .diseños p,
-footer .footerContainer .direccion .diseños p,
-footer .footerContainer .paginas .diseños p {
-    display: inline-block;
-    margin: 0rem 1rem 1.5rem 1rem;
-  }
-  footer .redes {
-    display: flex;
-    width: 100%;
-    background: #000;
-    border-top: 0.1rem solid #00C6EE;
-  }
-  footer .redes .propiedad {
-    width: 100%;
-  }
-  footer .redes .propiedad .socialmedia {
-    width: 100%;
-    display: flex;
-    flex-direction: row-reverse;
+}
+@media screen and (max-width: 650px) {
+  footer .footerContainer {
     flex-wrap: wrap;
-    padding: 2rem;
   }
-  footer .redes .propiedad .socialmedia .iconSocial img {
-    height: 4rem;
-    margin: 0.2rem;
+  footer .footerContainer .contacto {
+    width: 90%;
   }
-  footer .redes .copy {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.7rem;
-    width: 100%;
-    color: #fff;
-    padding: 2rem;
+  footer .footerContainer .direccion {
+    margin-top: 5rem;
+    width: 90%;
+  }
+  footer .footerContainer .paginas {
+    margin-top: 5rem;
+    width: 90%;
   }
 }
 
