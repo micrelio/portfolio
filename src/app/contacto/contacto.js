@@ -8,7 +8,7 @@ class miContacto extends HTMLElement {
                 `
     <p style="color: white">Contacto runing</p>
     <section class="primera">
-    <img src="/src/assets/images/boat1.jpg">
+    <img src="/src/assets/images/constructor.png">
 </section>
            `;
        }
