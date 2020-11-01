@@ -16,14 +16,14 @@ class miFooter extends HTMLElement {
             </div>
             <div class="footer-columna">
                 <h3>Dirección</h3>
-                <span class="fa fa-map-marker">
-                   <p>Valencia - España</p>
+                <span >
+                   <p><i class="fa fa-map-marker"></i> Valencia - España</p>
                 </span>
-                <span class="fa fa-phone">
-                    <p>(+34) 653 251 983 </p>
+                <span>
+                    <p><i class="fa fa-phone"></i> (+34) 653 251 983 </p>
                 </span>
-                <span class="fa fa-envelope">
-                    <p>microa4@gmail.com</p>
+                <span>
+                    <p><i class="fa fa-envelope"></i> microa4@gmail.com</p>
                 </span>
             </div>
             <div class="footer-columna">

@@ -45,13 +45,7 @@
           font-size: 1.7rem;
           margin-bottom: 2rem;
         }
-        .footer-columna input[type="submit"] {
-          border: none;
-          width: 50%;
-          border: 0.1rem solid $azul;
-          font-size: 1.7rem;
-          padding: 1rem;
-        }
+
         .footer-columna input[type="email"] {
           border: none;
           width: 85%;
@@ -63,7 +57,9 @@
           border: none;
           background: $azul;
           color: #fff;
-          //  padding: 1rem 4rem;
+          width: 50%;
+          padding: 1rem;
+          border: 0.1rem solid $azul;
           font-size: 1.7rem;
           margin-top: 1rem;
           cursor: pointer;
@@ -72,6 +68,9 @@
           display: inline-block;
           margin-left: 0.5rem;
           margin-bottom: 1.5rem;
+        }
+        .fa {
+          color: red;
         }
       }
     }
