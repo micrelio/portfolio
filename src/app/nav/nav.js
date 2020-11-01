@@ -4,7 +4,7 @@ class miNav extends HTMLElement {
   }
   connectedCallback() {
     this.innerHTML = `
-<section class="stick">
+<section class="stick" id="stick">
   <div class="nav" id="nav">
     <div class="navbar">
       <div class="foto">
@@ -45,7 +45,7 @@ class miNav extends HTMLElement {
     <div>
     </div>
     <div style="display: none" class="desplegable nuevo" id="desplegable">
-      <!--
+ 
       <button onclick="navegar('inicio'); seleccionado();" class="mnav-link">Inicio</button>
       <button onclick="navegar('conoceme'); seleccionado();" class="mnav-link">Sobre mí</button>
       <button onclick="navegar('webs'); seleccionado();" class="mnav-link">Webs</button>
@@ -53,7 +53,7 @@ class miNav extends HTMLElement {
       <button onclick="navegar('videos'); seleccionado();" class="mnav-link">Videos</button>
       <button onclick="navegar('curriculum'); seleccionado();" class="mnav-link">Curriculum</button>
       <button onclick="navegar('contacto'); seleccionado();" class="mnav-link">Contacto</button>
-      -->
+     
         <div id="inicio" class="enlace inicio">Inicio</div>
         <div id="conoceme" class="enlace conoceme">Conóceme</div>
         <div id="webs" class="enlace webs">Webs</div>
@@ -72,7 +72,9 @@ class miNav extends HTMLElement {
 </section>
       `;
     // esto arranca automatico
-    var multimedia = document.querySelector("#nuevo; #desplegable");
+    
+
+    var multimedia = document.querySelector("#stick");
     multimedia.addEventListener("click", function (seleccion) {
         console.log(seleccion)
       var h = seleccion.target.id;
