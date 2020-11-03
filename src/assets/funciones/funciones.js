@@ -2,6 +2,7 @@
 // showSlides();
 
 // function showSlides() {
+    
 //     console.log('KKKKKK');
 //     var i;
 //     var slides = document.getElementsByClassName("mySlides");
