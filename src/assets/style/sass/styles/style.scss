@@ -12,6 +12,7 @@
   font-family: "titanium";
   src: url(../../../fuentes/pricedow.ttf) format("truetype");
 }
+
 .head {
   @include head;
   border-bottom: 0.05rem solid $azul;

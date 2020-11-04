@@ -9,6 +9,7 @@ class miContacto extends HTMLElement {
   <img src="/src/assets/images/constructor.png">
 </section>
 `;
+
   }
 }
 customElements.define("mi-contacto", miContacto);
