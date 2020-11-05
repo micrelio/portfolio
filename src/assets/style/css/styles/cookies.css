@@ -15,6 +15,9 @@
   height: 20vh;
   background-color: #fff6d5;
 }
+#cajacookies p {
+  color: black;
+}
 #cajacookies button {
   /* background-color: orangered;
       color: white;
@@ -22,7 +25,7 @@
   padding: 1rem;
   margin-left: 10px;
   border-radius: 1rem;
-  border-border: 2px solid #00C6EE;
+  border-border: 2px solid #00c6ee;
   background: orange;
   background-image: -webkit-linear-gradient(top, yellow, orangered);
   background-image: -moz-linear-gradient(top, yellow, orangered);

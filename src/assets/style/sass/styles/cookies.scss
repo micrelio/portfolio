@@ -16,6 +16,9 @@
   background: {
     color: #fff6d5;
   }
+  p{
+    color: black;
+  }
   button {
     /* background-color: orangered;
         color: white;
@@ -23,12 +26,11 @@
     // height:5vh;
     padding: 1rem;
     margin-left: 10px;
-border: {
-  radius: 1rem;
-  border: 2px solid #00C6EE;
-
-}
-// border-radius: 60px;
+    border: {
+      radius: 1rem;
+      border: 2px solid #00c6ee;
+    }
+    // border-radius: 60px;
     background: orange;
     // border: rgba(255, 166, 0, 0.329) 1px solid;
     background-image: -webkit-linear-gradient(top, yellow, orangered);

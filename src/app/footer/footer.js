@@ -46,7 +46,7 @@ class miFooter extends HTMLElement {
         <a target="blank" class="iconSocial" href="https://github.com/micrelio"><img style="" src="/src/assets/images/icons/social/github.png"></a>
       </div>
       <div class="copy">
-        &copy; 2020, Todos los derechos reservados - | Micro |.
+        &copy; 2020, Todos los derechos reservados - | Micro |
       </div>
     </div>
   </div>
