@@ -57,7 +57,8 @@ class miFooter extends HTMLElement {
 //  window.customElements.define('mi-menu', miFooter);
 customElements.define("mi-footer", miFooter);
 
-/*************************/
+/*************************\
+        funciones
 
 /*************************/
 
