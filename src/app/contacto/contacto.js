@@ -5,7 +5,7 @@ class miContacto extends HTMLElement {
   connectedCallback() {
     this.innerHTML = 
 `
-<section class="">
+<section class="primera">
   <div id="after_submit"></div>
 <form id="contact_form" action="/src/app/contacto/contacto.php" method="POST" enctype="multipart/form-data">
   <div class="row">
