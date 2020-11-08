@@ -1,17 +1,18 @@
 
-// ENLACE
-// https://www.templatemonster.com/help/es/how-create-contact-form-html.html
-
-
-// Ahora vamos a trabajar con el fichero contact.php que realmente recogerá los datos de los campos, creará un mensaje y enviarálo a su dirección de correo electrónico. Puede descargar el fichero contact.php. En este tutorial vamos a revisar el código del fichero con los comentarios a las secciones más importantes.
 <?php 
+ //ENLACE
+ // https://www.templatemonster.com/help/es/how-create-contact-form-html.html
+ 
+ 
+ // Ahora vamos a trabajar con el fichero contact.php que realmente recogerá los datos de los campos, creará un mensaje y enviarálo a su dirección de correo electrónico. Puede descargar el fichero contact.php. En este tutorial vamos a revisar el código del fichero con los comentarios a las secciones más importantes.
+ 
 // Asignar los datos enviados desde los campos del formulario de contacto (cf_name, cf_email, cf_message) a los variables php ($cf_message, $field_email, $field_message)
 $field_name = $_POST['cf_name'];
 $field_email = $_POST['cf_email'];
 $field_message = $_POST['cf_message'];
 //$mail_to contendrá la dirección de correo electrónico del propietario del sitio. Se puede especificar varios correos electrónicos, separándolos con comas (por ejemplo, mail-one@template-help.com, mail-two@template-help.com)
 
-$mail_to = 'test@test-mail.com';
+$mail_to = 'microa4@gmail.com';
 // Tema/Asunto del mensaje de correo electrónico que recibe
 
 $subject = 'Message from a site visitor ' . $field_name;
@@ -34,7 +35,7 @@ if ($mail_status) { ?>
 		// Print a message
  		alert('Thank you for the message. We will contact you shortly.');
 		// Redirect to some page of the site. You can also specify full URL, e.g. http://template-help.com
- 		window.location = 'contact_page.html';
+ 		window.location = 'contacto.js';
  	</script>
 <?php
 }
@@ -45,8 +46,7 @@ else { ?>
 // 		// Print a message
 		alert('Message failed. Please, send an email to gordon@template-help.com');
 // 		// Redirect to some page of the site. You can also specify full URL, e.g. http://template-help.com
-		window.location = 'contact_page.html';
+		window.location = 'contacto.js';
 	</script>
 <?php
 }?>
-// También Usted puede descargar los ficheros compilados compiled contact_form.html y contact.php en el paquete
