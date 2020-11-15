@@ -37,14 +37,26 @@ body {
 html h1,
 body h1 {
   font-size: 5rem;
+  color: #00C6EE;
+  margin: 5rem 0rem 1rem 0rem;
 }
 html h2,
 body h2 {
   font-size: 4rem;
+  color: #00C6EE;
+  margin: 5rem 0rem 1rem 0rem;
 }
 html h3,
 body h3 {
   font-size: 3rem;
+  color: #00C6EE;
+  margin: 5rem 0rem 1rem 0rem;
+}
+html h4,
+body h4 {
+  font-size: 2rem;
+  color: #00C6EE;
+  margin: 5rem 0rem 1rem 0rem;
 }
 html p,
 body p {
