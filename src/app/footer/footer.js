@@ -48,10 +48,30 @@ class miFooter extends HTMLElement {
       <div class="copy">
         &copy; 2020, Todos los derechos reservados - | Micro |
       </div>
+      <div class="politicas" id="politicas">
+       <p class="privacidad" id="privacidad"> Política de privacidad</p>
+      </div>
     </div>
   </div>
 </footer>
   `;
+  var multimedia = document.querySelector("#politicas");
+    multimedia.addEventListener("click", function (seleccion) {
+        console.log(seleccion)
+      var h = seleccion.target.id;
+             console.log('h es',h)
+     // if (seleccion.target !== this) {
+        switch (h) {
+          case "privacidad":
+            console.log("politicadeprivacidad");
+            document.getElementById("componente").innerHTML =
+        "<mi-politicadeprivacidad></mi-politicadeprivacidad>";
+            break;
+          
+        }
+     // }
+    });
+  
   }
 }
 //  window.customElements.define('mi-menu', miFooter);
