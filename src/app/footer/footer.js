@@ -19,7 +19,8 @@ class miFooter extends HTMLElement {
       <h3>Dirección</h3>
       <div class="datos">
         <div>
-          <p><i class="fa fa-map-marker"></i> Valencia - España</p>
+        
+          <p><i class="fa fa-map-marker"></i> <a href="https://goo.gl/maps/9UUDsgCz7YnERqvD6" target="_blank">Valencia - España</a></p> 
           <p><i class="fa fa-phone"></i> <a href="tel:+34653251983">(+34) 653 251 983</a> </p>
           <p><i class="fa fa-envelope"></i> microa4@gmail.com</p>
         </div>

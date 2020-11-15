@@ -43,6 +43,12 @@
   font-size: 2rem;
   font-size: calc(1rem + 1vw);
 }
+* footer .footerContainer .contacto a,
+* footer .footerContainer .direccion a,
+* footer .footerContainer .paginas a {
+  text-decoration: none;
+  color: blanchedalmond;
+}
 * footer .footerContainer .contacto input[type=email],
 * footer .footerContainer .direccion input[type=email],
 * footer .footerContainer .paginas input[type=email] {
