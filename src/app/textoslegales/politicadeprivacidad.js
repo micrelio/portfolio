@@ -4,9 +4,9 @@ class miPoliticadeprivacidad extends HTMLElement {
     }
     connectedCallback() {
       this.innerHTML = `
-<section class="primera">
+<section class="">
     <h1> Política de privacidad</h1>
-    <div>
+    <div id="legales">
         <p>
             Jose Antonio Lopez Baena te informa sobre su Política de Privacidad respecto del tratamiento y protección de
             los datos de carácter personal de los usuarios que puedan ser recabados durante la navegación a través del
@@ -132,7 +132,7 @@ class miPoliticadeprivacidad extends HTMLElement {
             Para apoyar y mejorar los servicios que ofrece este sitio Web.
             Para analizar la navegación de los usuarios. El Titular recoge otros datos no identificativos que se
             obtienen mediante el uso de cookies que se descargan en el ordenador del Usuario cuando navega por el sitio
-            Web cuyas características y finalidad están detalladas en la Política de Cookies .
+            Web cuyas características y finalidad están detalladas en la <e class="privacidad" id="cookies"> Política de Cookies</e>.
             Para gestionar las redes sociales. Jose Antonio Lopez Baena tiene presencia en redes sociales. Si te haces
             seguidor en las redes sociales del Titular el tratamiento de los datos personales se regirá por este
             apartado, así como por aquellas condiciones de uso, políticas de privacidad y normativas de acceso que
@@ -410,7 +410,31 @@ class miPoliticadeprivacidad extends HTMLElement {
     </div>
 </section>
     `;
-    
+    var multimedia = document.querySelector("#legales");
+    multimedia.addEventListener("click", function (seleccion) {
+      console.log(seleccion);
+      var h = seleccion.target.id;
+      console.log("h es", h);
+      // if (seleccion.target !== this) {
+      switch (h) {
+        case "privacidad":
+          console.log("politicadeprivacidad");
+          document.getElementById("componente").innerHTML =
+            "<mi-politicadeprivacidad></mi-politicadeprivacidad>";
+          break;
+        case "aviso":
+          console.log("aviso");
+          document.getElementById("componente").innerHTML =
+            "<mi-avisolegal></mi-avisolegal>";
+          break;
+          case "cookies":
+            console.log("cookies");
+            document.getElementById("componente").innerHTML =
+              "<mi-politicadecookies></mi-politicadecookies>";
+            break;
+      }
+      // }
+    });
     }
   }
   customElements.define("mi-politicadeprivacidad", miPoliticadeprivacidad);
