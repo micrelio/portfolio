@@ -50,6 +50,7 @@ class miFooter extends HTMLElement {
       </div>
       <div class="politicas" id="politicas">
        <p class="privacidad" id="privacidad"> Política de privacidad</p>
+       <p class="privacidad" id="aviso"> Aviso Legal</p>
       </div>
     </div>
   </div>
@@ -66,6 +67,11 @@ class miFooter extends HTMLElement {
             console.log("politicadeprivacidad");
             document.getElementById("componente").innerHTML =
         "<mi-politicadeprivacidad></mi-politicadeprivacidad>";
+            break;
+            case "aviso":
+            console.log("aviso");
+            document.getElementById("componente").innerHTML =
+        "<mi-avisolegal></mi-avisolegal>";
             break;
           
         }
