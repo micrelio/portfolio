@@ -51,7 +51,7 @@ class miFooter extends HTMLElement {
       <div class="politicas" id="politicas">
        <p class="privacidad" id="privacidad"> Política de privacidad</p>
        <p class="privacidad" id="aviso"> Aviso Legal</p>
-       <p class="privacidad" id="cookies"> Cookies</p>
+       <p class="privacidad" id="cookies"> Política de Cookies</p>
       </div>
     </div>
   </div>
@@ -77,7 +77,7 @@ class miFooter extends HTMLElement {
           case "cookies":
             console.log("cookies");
             document.getElementById("componente").innerHTML =
-              "<mi-avisolegal></mi-avisolegal>";
+              "<mi-politicadecookies></mi-politicadecookies>";
             break;
       }
       // }
