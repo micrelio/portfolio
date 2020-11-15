@@ -6,7 +6,7 @@ class miPoliticadeprivacidad extends HTMLElement {
       this.innerHTML = `
 <section class="">
     <h1> Política de privacidad</h1>
-    <div id="legales">
+    <div id="legales" class="legales">
         <p>
             Jose Antonio Lopez Baena te informa sobre su Política de Privacidad respecto del tratamiento y protección de
             los datos de carácter personal de los usuarios que puedan ser recabados durante la navegación a través del
@@ -139,13 +139,21 @@ class miPoliticadeprivacidad extends HTMLElement {
             pertenezcan a la red social que proceda en cada caso y que has aceptado previamente.
             Puedes consultar las políticas de privacidad de las principales redes sociales en estos enlaces:
         </p>
-        <p>
-            Facebook
-            Twitter
-            Linkedin
-            YouTube
-            Instagram
-        </p>
+  
+        <ul >
+    <li><a href="#"><p>Facebook</p></a></li>
+    <li><a href="#"><p>Twitter</p></a></li>
+    <li><a href="#"><p>Linkedin</p></a></li>
+    <li><a href="#"><p>YouTube</p></a></li>
+    <li><a href="#"><p>Instagram</p></a></li>
+
+</ul>
+            
+            
+            
+            
+            
+        
         <p>
 
             El Titular tratará tus datos personales con la finalidad de administrar correctamente su presencia en la red

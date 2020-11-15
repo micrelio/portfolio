@@ -1,8 +1,29 @@
 @import "../mixins/mixins.scss";
 @import "../variables/variables.scss";
-
-e{
+.legales{
+    padding: 5rem;
+}
+e {
     color:$azul;
     cursor: pointer;
 
+}
+
+   
+
+ul{
+    margin: 2rem 0rem 2rem 2rem;
+    li{
+        color:blanchedalmond;
+        font-size: 2.5rem;
+
+    
+a{
+    
+text-decoration: none; 
+p{
+    color:$azul;
+}
+}
+}
 }
