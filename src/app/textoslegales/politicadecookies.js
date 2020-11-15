@@ -27,7 +27,7 @@ class miPoliticadecookies extends HTMLElement {
             Cookies utilizadas en el sitio Web
         </h2>
         <p>
-            A continuación se clasifican las cookies utilizadas por el sitio Web https://titaniumgamers.com:
+            A continuación se clasifican las cookies utilizadas por el sitio Web https://microdeveloper.es:
         </p>
         <h4>
             Según la entidad que las gestiona
