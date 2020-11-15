@@ -51,13 +51,18 @@
           background: $azul;
           color: #fff;
           width: 50%;
-          padding: 1rem;
+          padding: 1rem 0rem 1rem 0rem;
           border: 0.1rem solid $azul;
           font-size: calc(1rem + 1vw);
           margin-top: 2rem;
           cursor: pointer;
           border: 0.05rem solid white;
           border-radius: 0.9rem;
+        }
+        
+        input[type="submit"]:hover {
+          background-color: rgba(78, 78, 32, 0.582);
+
         }
         .fa {
           color: red;
@@ -114,6 +119,7 @@
         width: 100%;
         color: #fff;
         padding: 2rem;
+        border-bottom: 0.1rem solid $azul;
       }
       .politicas {
         display: flex;

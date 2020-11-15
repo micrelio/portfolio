@@ -24,7 +24,7 @@ class miAvisolegal extends HTMLElement {
             Finalidad
         </h2>
         <p>
-            La finalidad del sitio Web https://microdeveloper.es es Comunidad gamer.
+            La finalidad del sitio Web https://microdeveloper.es es mostrar habilidades.
         </p>
         <h2>
             Condiciones de Uso
