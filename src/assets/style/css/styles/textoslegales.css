@@ -4,7 +4,7 @@
 }
 
 e {
-  color: #00C6EE;
+  color: gold;
   cursor: pointer;
 }
 
@@ -12,14 +12,14 @@ ul {
   margin: 2rem 0rem 2rem 2rem;
 }
 ul li {
-  color: blanchedalmond;
+  color: black;
   font-size: 2.5rem;
 }
 ul li a {
   text-decoration: none;
 }
 ul li a p {
-  color: #00C6EE;
+  color: gold;
 }
 
 /*# sourceMappingURL=textoslegales.css.map */

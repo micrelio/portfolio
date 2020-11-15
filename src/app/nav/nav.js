@@ -46,7 +46,7 @@ class miNav extends HTMLElement {
     </div>
     <div style="display: none" class="desplegable nuevo" id="desplegable">
     <!--
-      <button onclick="navegar('inicio'); seleccionado();" class="mnav-link">Inicio</button>
+      <button  onclick="navegar('inicio'); seleccionado();" class="mnav-link">Inicio</button>
       <button onclick="navegar('conoceme'); seleccionado();" class="mnav-link">Sobre mí</button>
       <button onclick="navegar('webs'); seleccionado();" class="mnav-link">Webs</button>
       <button onclick="navegar('galeria'); seleccionado();" class="mnav-link">Galery</button>
@@ -83,34 +83,42 @@ class miNav extends HTMLElement {
         switch (h) {
           case "inicio":
             console.log("inicio");
+            seleccionado();
             document.getElementById("componente").innerHTML =
         "<mi-inicio></mi-inicio>";
+        
             break;
           case "conoceme":
+            seleccionado();
             console.log("conoceme");
             document.getElementById("componente").innerHTML =
         "<mi-conoceme></mi-conoceme>";
             break;
           case "webs":
+            seleccionado();
             console.log("webs");
             document.getElementById("componente").innerHTML = "<mi-webs></mi-webs>";
             break;
           case "gal":
+            seleccionado();
             console.log("galeria");
             document.getElementById("componente").innerHTML =
         "<mi-galeria></mi-galeria>";
             break;
           case "videos":
+            seleccionado();
             console.log("videos");
             document.getElementById("componente").innerHTML =
             "<mi-videos></mi-videos>";
             break;
           case "curriculum":
+            seleccionado();
             console.log("curriculum");
             document.getElementById("componente").innerHTML =
             "<mi-curriculum></mi-curriculum>";
             break;
           case "contacto":
+            seleccionado();
             console.log("contacto");
             document.getElementById("componente").innerHTML =
             "<mi-contacto></mi-contacto>";
@@ -175,6 +183,7 @@ function nav() {
     $(pull).on("click", function (e) {
       e.preventDefault();
       menu.slideToggle();
+      
     });
   });
   $(window).resize(function () {
