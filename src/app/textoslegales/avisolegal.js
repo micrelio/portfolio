@@ -47,13 +47,13 @@ class miAvisolegal extends HTMLElement {
     </p>
                     <ul>
         <li>
-            <p><a href="#avisolegal"> Aviso Legal</a></p>
+            <p><a href="#"> Aviso Legal</a></p>
         </li>
         <li>
-            <p><e class="privacidad" id="privacidad"> Política de Privacidad</e></p>
+            <p><a href="#"><e class="privacidad" id="privacidad"> Política de Privacidad</e></a></p>
         </li>
         <li>
-            <p><e class="privacidad" id="cookies"> Política de Cookies</e></p>
+            <p><a href="#"><e class="privacidad" id="cookies"> Política de Cookies</e></a></p>
         </li>
     </ul>
     <p>
@@ -106,7 +106,7 @@ class miAvisolegal extends HTMLElement {
     </h2>
     <p>
         Puedes consultar toda la información relativa al tratamiento de datos personales que recoge el Titular en la
-        página de <e class="privacidad" id="privacidad">Política de Privacidad</e>.
+        página de <a href="#"><e class="privacidad" id="privacidad">Política de Privacidad</e></a>.
     </p>
     <h2>
         Contenidos
@@ -143,7 +143,7 @@ class miAvisolegal extends HTMLElement {
         Política de cookies
     </h2>
     <p>
-        En la página <e class="privacidad" id="cookies">Política de Cookies</e> puedes consultar toda la información relativa a la política de recogida y
+        En la página <a href="#"><e class="privacidad" id="cookies">Política de Cookies</e></a> puedes consultar toda la información relativa a la política de recogida y
         tratamiento de las cookies.
     </p>
     <h2>
