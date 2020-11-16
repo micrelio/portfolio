@@ -26,6 +26,9 @@
   color: #00C6EE;
   text-decoration: none;
 }
+.legales p {
+  text-shadow: 0.1em 0.1em 0.1em gray;
+}
 .legales ul {
   margin: 2rem 0rem 2rem 2rem;
 }

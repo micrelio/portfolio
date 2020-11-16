@@ -26,7 +26,11 @@
     color: $azul;
     text-decoration: none;
   }
-  ul {
+    p {
+        text-shadow: 0.1em 0.1em 0.1em gray;
+
+    }
+    ul {
     margin: 2rem 0rem 2rem 2rem;
     li {
       color: black;

@@ -4,6 +4,10 @@
 .head {
   @include head;
 }
+h1{
+  -webkit-text-stroke: 0.05rem #000;
+  text-shadow: 0.1rem 0.1rem 0.3rem white;
+}
 .fa-arrow-alt-circle-up {
   z-index: 1000;
   color: $azul;
@@ -16,6 +20,8 @@
   bottom: 15rem;
   right: 2rem;
   border-radius: 100px;
+  -webkit-text-stroke: 0.03rem rgb(221, 216, 216);
+  text-shadow: 0.2em 0.2em 0.5em black;
   //   border: 0.25rem solid white;
   background: {
     color: white;
