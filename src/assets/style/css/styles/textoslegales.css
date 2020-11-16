@@ -2,11 +2,7 @@
 .legales {
   padding: 5rem;
 }
-.legales h1,
-.legales h2,
-.legales h3,
-.legales h4 {
-  margin: auto;
+.legales h1 {
   text-align: center;
 }
 .legales e {

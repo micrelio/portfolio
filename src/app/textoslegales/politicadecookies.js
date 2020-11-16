@@ -142,8 +142,8 @@ class miPoliticadecookies extends HTMLElement {
         <li>
             <p>
                 <strong>Internet Explorer</strong> <a
-                    href="https://support.microsoft.com/es-es/help/17442/windows-internet-explorer-delete-manage-cookies#ie='ie-10'>https://support.microsoft.com/es-es/help/17442/windows-internet-explorer-delete-manage-cookies#ie="
-                    ie-10"</a>
+                    href="https://support.microsoft.com/es-es/help/17442/windows-internet-explorer-delete-manage-cookies#ie='ie-10'">https://support.microsoft.com/es-es/help/17442/windows-internet-explorer-delete-manage-cookies#ie="'
+                    ie-10'"</a>
             </p>
         </li>
         <li>
