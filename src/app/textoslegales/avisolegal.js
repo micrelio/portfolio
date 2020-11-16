@@ -232,28 +232,21 @@ class miAvisolegal extends HTMLElement {
     `;
     var multimedia = document.querySelector("#legales");
     multimedia.addEventListener("click", function (seleccion) {
-      console.log(seleccion);
       var h = seleccion.target.id;
-      console.log("h es", h);
-      // if (seleccion.target !== this) {
       switch (h) {
         case "privacidad":
-          console.log("politicadeprivacidad");
           document.getElementById("componente").innerHTML =
             "<mi-politicadeprivacidad></mi-politicadeprivacidad>";
           break;
         case "aviso":
-          console.log("aviso");
           document.getElementById("componente").innerHTML =
             "<mi-avisolegal></mi-avisolegal>";
           break;
         case "cookies":
-          console.log("cookies");
           document.getElementById("componente").innerHTML =
             "<mi-politicadecookies></mi-politicadecookies>";
           break;
       }
-      // }
     });    
     }
   }

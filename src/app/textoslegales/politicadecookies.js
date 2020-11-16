@@ -176,7 +176,24 @@ class miPoliticadecookies extends HTMLElement {
     </p> 
 </section>
     `;
-    
+    var multimedia = document.querySelector("#legales");
+    multimedia.addEventListener("click", function (seleccion) {
+      var h = seleccion.target.id;
+      switch (h) {
+        case "privacidad":
+          document.getElementById("componente").innerHTML =
+            "<mi-politicadeprivacidad></mi-politicadeprivacidad>";
+          break;
+        case "aviso":
+          document.getElementById("componente").innerHTML =
+            "<mi-avisolegal></mi-avisolegal>";
+          break;
+        case "cookies":
+          document.getElementById("componente").innerHTML =
+            "<mi-politicadecookies></mi-politicadecookies>";
+          break;
+      }
+    });
     }
   }
   customElements.define("mi-politicadecookies", miPoliticadecookies);
