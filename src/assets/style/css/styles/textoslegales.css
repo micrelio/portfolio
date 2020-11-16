@@ -2,24 +2,30 @@
 .legales {
   padding: 5rem;
 }
-
-e {
-  color: gold;
+.legales h1,
+.legales h2,
+.legales h3,
+.legales h4 {
+  margin: auto;
+  text-align: center;
+}
+.legales e {
+  color: #00C6EE;
   cursor: pointer;
 }
-
-ul {
+.legales a {
+  color: #00C6EE;
+  text-decoration: none;
+}
+.legales ul {
   margin: 2rem 0rem 2rem 2rem;
 }
-ul li {
+.legales ul li {
   color: black;
   font-size: 2.5rem;
 }
-ul li a {
-  text-decoration: none;
-}
-ul li a p {
-  color: gold;
+.legales ul li a {
+  color: #00C6EE;
 }
 
 /*# sourceMappingURL=textoslegales.css.map */
