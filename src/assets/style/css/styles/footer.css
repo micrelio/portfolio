@@ -147,6 +147,9 @@
   font-size: 1rem;
   cursor: pointer;
 }
+* footer .redes .politicas a {
+  text-decoration: none;
+}
 
 @media screen and (max-width: 700px) {
   footer .footerContainer {
