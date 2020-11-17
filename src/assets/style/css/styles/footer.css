@@ -36,6 +36,8 @@
   font-size: 4rem;
   color: #00C6EE;
   margin-bottom: 1.5rem;
+  -webkit-text-stroke: 0.05rem #000;
+  text-shadow: 0.1rem 0.1rem 0.3rem white;
 }
 * footer .footerContainer .contacto p,
 * footer .footerContainer .direccion p,
