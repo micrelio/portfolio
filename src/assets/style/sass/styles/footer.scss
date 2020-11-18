@@ -40,9 +40,9 @@
           font-size: 2rem;
           font-size: calc(1rem + 1vw);
         }
-        a{
+        a {
           text-decoration: none;
-          color:blanchedalmond;
+          color: blanchedalmond;
         }
         input[type="email"] {
           border: none;
@@ -65,10 +65,8 @@
           border: 0.05rem solid white;
           border-radius: 0.9rem;
         }
-        
         input[type="submit"]:hover {
           background-color: rgba(78, 78, 32, 0.582);
-
         }
         .fa {
           color: red;
@@ -140,9 +138,8 @@
           font-size: 1rem;
           cursor: pointer;
         }
-        a{
+        a {
           text-decoration: none;
-
         }
       }
     }

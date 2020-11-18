@@ -18,8 +18,7 @@ class miFooter extends HTMLElement {
     <div class="direccion"> 
       <h3>Dirección</h3>
       <div class="datos">
-        <div>
-        
+        <div>        
           <p><i class="fa fa-map-marker"></i> <a href="https://goo.gl/maps/9UUDsgCz7YnERqvD6" target="_blank">Valencia - España</a></p> 
           <p><i class="fa fa-phone"></i> <a href="tel:+34653251983">(+34) 653 251 983</a> </p>
           <p><i class="fa fa-envelope"></i> microa4@gmail.com</p>
@@ -88,12 +87,10 @@ class miFooter extends HTMLElement {
 }
 //  window.customElements.define('mi-menu', miFooter);
 customElements.define("mi-footer", miFooter);
-
 /*************************\
         funciones
 
 /*************************/
-
 class MiBoton extends HTMLElement {
   constructor() {
     super();
