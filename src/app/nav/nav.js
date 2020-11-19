@@ -72,65 +72,49 @@ class miNav extends HTMLElement {
 </section>
       `;
     // esto arranca automatico
-    
-
     var multimedia = document.querySelector("#stick");
     multimedia.addEventListener("click", function (seleccion) {
-        console.log(seleccion)
       var h = seleccion.target.id;
-             console.log('h es',h)
-     // if (seleccion.target !== this) {
         switch (h) {
           case "inicio":
-            console.log("inicio");
             seleccionado();
             document.getElementById("componente").innerHTML =
         "<mi-inicio></mi-inicio>";
-        
-            break;
+                    break;
           case "conoceme":
             seleccionado();
-            console.log("conoceme");
             document.getElementById("componente").innerHTML =
         "<mi-conoceme></mi-conoceme>";
             break;
           case "webs":
             seleccionado();
-            console.log("webs");
             document.getElementById("componente").innerHTML = "<mi-webs></mi-webs>";
             break;
           case "gal":
             seleccionado();
-            console.log("galeria");
             document.getElementById("componente").innerHTML =
         "<mi-galeria></mi-galeria>";
             break;
           case "videos":
             seleccionado();
-            console.log("videos");
             document.getElementById("componente").innerHTML =
             "<mi-videos></mi-videos>";
             break;
           case "curriculum":
             seleccionado();
-            console.log("curriculum");
             document.getElementById("componente").innerHTML =
             "<mi-curriculum></mi-curriculum>";
             break;
           case "contacto":
             seleccionado();
-            console.log("contacto");
             document.getElementById("componente").innerHTML =
             "<mi-contacto></mi-contacto>";
             break;
         }
-     // }
     });
   }
 }
-
 customElements.define("mi-nav", miNav);
-
 //modificar para routing
 // function navegar(id) {
 //   var render = id;
@@ -170,8 +154,6 @@ customElements.define("mi-nav", miNav);
 //     default:
 //   }
 // }
-
-
 function seleccionado() {
   menu.slideToggle();
 }
@@ -183,8 +165,7 @@ function nav() {
     $(pull).on("click", function (e) {
       e.preventDefault();
       menu.slideToggle();
-      
-    });
+          });
   });
   $(window).resize(function () {
     var w = $(window).width();
