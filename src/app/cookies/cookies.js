@@ -1,10 +1,9 @@
 class miCookies extends HTMLElement {
-    constructor() {
-        super();
-    }
-    connectedCallback() {
-        this.innerHTML =
-            `
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    this.innerHTML = `
   <section>          
     <div id="cajacookies">
       <p>
@@ -18,25 +17,25 @@ class miCookies extends HTMLElement {
   </section>
    
  `;
-   /* ésto se ejecuta cuando la web está cargada */
+    /* ésto se ejecuta cuando la web está cargada */
 
- $(document).ready(function () {
-  compruebaAceptaCookies();
-});
+    $(document).ready(function () {
+      compruebaAceptaCookies();
+    });
 
- /* ésto comprueba la localStorage si ya tiene la variable guardada */
- function compruebaAceptaCookies() {
-    if (localStorage.aceptaCookies == 'true') {
-      cajacookies.style.display = 'none';
+    /* ésto comprueba la localStorage si ya tiene la variable guardada */
+    function compruebaAceptaCookies() {
+      if (localStorage.aceptaCookies == "true") {
+        cajacookies.style.display = "none";
+      }
     }
   }
-    }
 }
- /* aquí guardamos la variable de que se ha
+/* aquí guardamos la variable de que se ha
   aceptado el uso de cookies así no mostraremos
   el mensaje de nuevo */
-  function aceptarCookies() {
-  localStorage.aceptaCookies = 'true';
-  cajacookies.style.display = 'none';
+function aceptarCookies() {
+  localStorage.aceptaCookies = "true";
+  cajacookies.style.display = "none";
 }
-customElements.define('mi-cookies', miCookies);
+customElements.define("mi-cookies", miCookies);
