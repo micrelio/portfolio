@@ -12,8 +12,7 @@ class miCookies extends HTMLElement {
         href="https://titaniumgamers.com/index.php/mas-informacion-sobre-las-cookies/" target="_blank" >política de privacidad</a>.
       </p>
       <button onclick="aceptarCookies()" class="pull-right"><i class="fa fa-times"></i> Aceptar cookies</button>
-      
-  </div>
+        </div>
   </section>
     `;
     /* ésto se ejecuta cuando la web está cargada */

@@ -27,14 +27,9 @@ class miContacto extends HTMLElement {
     <input id="submit_button" type="submit" value="Send" />
     <input id="reset_button" type="reset" value="Clear" />
 </form>
-
-	
-
 <img src="/src/assets/images/constructor.png">
-
 </section>
 `;
-
   }
 }
 customElements.define("mi-contacto", miContacto);
