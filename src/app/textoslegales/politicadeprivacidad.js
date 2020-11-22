@@ -209,19 +209,19 @@ class miPoliticadeprivacidad extends HTMLElement {
           </li>
       </ul>
       <ul>
-          <li><a href="https://www.facebook.com/micro6">
+          <li><a href="https://www.facebook.com/policies/cookies/">
                   <p>Facebook</p>
               </a></li>
-          <li><a href="https://twitter.com/Micrelio">
+          <li><a href="https://twitter.com/es/privacy">
                   <p>Twitter</p>
               </a></li>
-          <li><a href="https://www.linkedin.com/in/jos%C3%A9-antonio-l%C3%B3pez-baena-65833016a/">
+          <li><a href="https://es.linkedin.com/legal/cookie-policy?">
                   <p>Linkedin</p>
               </a></li>
           <li><a href="https://www.youtube.com/channel/UCMEv1Jj16ypsAXmZXOkKrQA">
                   <p>YouTube</p>
               </a></li>
-          <li><a href="https://www.instagram.com/micrelio.dev/">
+          <li><a href="https://help.instagram.com/519522125107875">
                   <p>Instagram</p>
               </a></li>
       </ul>
