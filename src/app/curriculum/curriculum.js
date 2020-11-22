@@ -47,7 +47,6 @@ class miCurriculum extends HTMLElement {
         <div class="titulo">
                 <a href="/src/assets/images/titulos/GreeksHubs.jpg" target="_blank"><img alt="" src="/src/assets/images/icons/titulo.png"></a>
         </div>
-        
     </div>
     <div class="experiencia">
         <div class="logotipo">
@@ -119,10 +118,6 @@ class miCurriculum extends HTMLElement {
         </div>
     </div>
 </section>
-
-
-
-
 <div class="descripcion">
     <h1>Experiencia laboral</h1>
 </div>

@@ -3,8 +3,7 @@ class miContacto extends HTMLElement {
     super();
   }
   connectedCallback() {
-    this.innerHTML = 
-`
+    this.innerHTML = `
 <section class="primera">
   <div id="after_submit"></div>
 <form id="contact_form" action="/src/app/contacto/contacto.php" method="POST" enctype="multipart/form-data">
@@ -33,4 +32,3 @@ class miContacto extends HTMLElement {
   }
 }
 customElements.define("mi-contacto", miContacto);
-
