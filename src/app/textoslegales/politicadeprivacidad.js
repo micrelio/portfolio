@@ -218,11 +218,14 @@ class miPoliticadeprivacidad extends HTMLElement {
           <li><a href="https://es.linkedin.com/legal/cookie-policy?">
                   <p>Linkedin</p>
               </a></li>
-          <li><a href="https://www.youtube.com/channel/UCMEv1Jj16ypsAXmZXOkKrQA">
+          <li><a href="https://policies.google.com/privacy?hl=es">
                   <p>YouTube</p>
               </a></li>
           <li><a href="https://help.instagram.com/519522125107875">
                   <p>Instagram</p>
+              </a></li>
+              <li><a href="https://docs.github.com/es/free-pro-team@latest/github/site-policy/github-privacy-statement">
+                  <p>GitHub</p>
               </a></li>
       </ul>
       <p>
