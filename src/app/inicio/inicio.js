@@ -22,8 +22,7 @@ El tema DIVI junto al constructor DIVI BUILDER.
 Empecé a crear paginas de muestra en todos los formatos conocidos para poder mostrar mi destreza y empecé a usar Git para dar muestra de ello.
 La primera página creada fue como proyecto de fin de grado superior A.S.I.R. para un equipo de juegos online, fue desarrollada con HTML, CSS y PHP, el uso del PHP fue elegido por mis conocimientos en C++ por lo que fue más fácil adaptarme este lenguaje en ese momento.
 Esta dispone de conexión con el servidor del juego y muestra equipos y guerras en tiempo real, esta conexión se crea con la API de Clash o Clans que cede el acceso a la lectura de una hoja JSON la que es adaptada y maquetada imitando al juego.
-       
-            </p>
+                 </p>
         </div>
     </section>
   `;
