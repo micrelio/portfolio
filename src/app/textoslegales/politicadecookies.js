@@ -37,7 +37,6 @@ class miPoliticadecookies extends HTMLElement {
                 Lopez Baena.</p>
         </li>
     </ul>
-
     <h4>
         Según su finalidad
     </h4>
@@ -114,7 +113,6 @@ class miPoliticadecookies extends HTMLElement {
             </p>
         </li>
     </ul>
-
     <h2>
         Eliminación de cookies
     </h2>
