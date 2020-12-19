@@ -6,7 +6,7 @@ class miBiografia extends HTMLElement {
         this.innerHTML =
             `
     <section class="inicio">
-        <h1>Presentación</h1>
+        <h1>Biografía</h1>
         <div>
             <p>
                 Mi vida laboral comenzó en el ámbito eléctrico y electrónico como instalador electricista, con el tiempo acabé centrándose en el mantenimiento de sistemas industriales y automatismos o PLC. Tras una lesión me vi obligado a reciclar mi rema laboral por lo que decidí empezar con el mundo de la informática del que poseía gran afición y conocimientos variados. Comencé a profesionalizarme en este sector.
