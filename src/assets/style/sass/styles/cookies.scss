@@ -1,3 +1,5 @@
+@import "../mixins/mixins.scss";
+@import "../variables/variables.scss";
 #cajacookies {
   display: flex;
   flex-direction: column;
@@ -16,7 +18,11 @@
   background: {
     color: #fff6d5;
   }
-  p{
+  a {
+    color: $azul;
+    //  text-decoration: none;
+  }
+  p {
     color: black;
   }
   button {
