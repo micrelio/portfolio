@@ -4,13 +4,14 @@
 .social-media {
   padding: 0;
   background-color: #00C6EE;
+  border: 0.05rem solid black;
 }
 
 .social-links {
   display: flex;
   flex-direction: row;
   flex-direction: row-reverse;
-  padding: 4px;
+  padding: 0.01rem;
   /* background-color: orangered; */
 }
 

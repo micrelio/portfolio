@@ -8,23 +8,7 @@
 }
 
 .inicio {
-  padding: 5rem;
-}
-.inicio h1 {
-  text-align: center;
-  color: #00C6EE;
-  -webkit-text-stroke: 0.05rem #ddd8d8;
-  text-shadow: 0.2em 0.2em 0.3em black;
-}
-.inicio h2,
-.inicio h3,
-.inicio h4 {
-  -webkit-text-stroke: 0.05rem #ddd8d8;
-  text-shadow: 0.2em 0.2em 0.3em black;
-}
-.inicio h4 {
-  -webkit-text-stroke: 0.03rem #ddd8d8;
-  text-shadow: 0.2em 0.2em 0.3em black;
+  padding: 0rem 5rem 5rem 5rem;
 }
 .inicio strong {
   -webkit-text-stroke: 0.03rem #ddd8d8;
@@ -37,9 +21,6 @@
 .inicio a {
   color: #00C6EE;
   text-decoration: none;
-}
-.inicio p {
-  text-shadow: 0.1em 0.1em 0.1em gray;
 }
 .inicio ul {
   margin: 2rem 0rem 2rem 2rem;

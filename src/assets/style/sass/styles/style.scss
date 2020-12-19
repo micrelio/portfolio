@@ -36,15 +36,16 @@ body {
   }
   h1 {
     font-size: 5rem;
+    text-align: center;
     color: $azul;
     margin: 5rem 0rem 1rem 0rem;
-    text-align:center;
+    -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
+    text-shadow: 0.2em 0.2em 0.3em black;
   }
   h2 {
     font-size: 4rem;
     color: $azul;
-    margin: 5rem 0rem 1rem 0rem;
-    
+    margin: 0rem 0rem 1rem 0rem;
   }
   h3 {
     font-size: 3rem;
@@ -56,9 +57,21 @@ body {
     color: $azul;
     margin: 5rem 0rem 1rem 0rem;
   }
+  h2,
+  h3,
+  h4 {
+    color: $azul;
+    -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
+    text-shadow: 0.2em 0.2em 0.3em black;
+  }
+  h4 {
+    -webkit-text-stroke: 0.03rem rgb(221, 216, 216);
+    text-shadow: 0.2em 0.2em 0.3em black;
+  }
   p {
-    font-size: 2rem;
     color: blanchedalmond;
+    font-size: 2rem;
+    text-shadow: 0.1em 0.1em 0.1em gray;
   }
   .primera {
     display: flex;
@@ -83,11 +96,11 @@ body {
     bottom: 15rem;
     right: 2rem;
     border-radius: 100px;
-     -webkit-text-stroke: 0.1rem gray;
+    -webkit-text-stroke: 0.1rem gray;
     text-shadow: 0.2rem 0.2rem 0.5rem black;
     //   border: 0.25rem solid white;
     background: {
-     color: white;
+      color: white;
     }
-    }
+  }
 }

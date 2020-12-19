@@ -94,6 +94,7 @@
 .web .titaniumGamers .descripcion p i,
 .web .portfolio .descripcion p i {
   color: green;
+  text-shadow: 0em 0em 0em;
 }
 .web .primeroscoc .visitar,
 .web .guerrasOnline .visitar,
@@ -141,6 +142,13 @@
   -o-transform: scale(1.5);
   transform: scale(1.5);
 }
+.web .primeroscoc .visitar i,
+.web .guerrasOnline .visitar i,
+.web .tiendaTitanium .visitar i,
+.web .titaniumGamers .visitar i,
+.web .portfolio .visitar i {
+  text-shadow: 0em 0em 0em;
+}
 .web .titaniumGamers .titulo {
   background-image: url("../../../images/banners/vinewood.jpg");
   background-position: center;
@@ -187,10 +195,6 @@
 .web .guerrasOnline .descripcion p a {
   text-decoration: none;
   color: gold;
-}
-.web .primeroscoc .descripcion p i,
-.web .guerrasOnline .descripcion p i {
-  color: green;
 }
 .web .primeroscoc .descripcion p .fa-undo-alt,
 .web .guerrasOnline .descripcion p .fa-undo-alt {

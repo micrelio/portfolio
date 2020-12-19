@@ -37,15 +37,17 @@ body {
 html h1,
 body h1 {
   font-size: 5rem;
+  text-align: center;
   color: #00C6EE;
   margin: 5rem 0rem 1rem 0rem;
-  text-align: center;
+  -webkit-text-stroke: 0.05rem #ddd8d8;
+  text-shadow: 0.2em 0.2em 0.3em black;
 }
 html h2,
 body h2 {
   font-size: 4rem;
   color: #00C6EE;
-  margin: 5rem 0rem 1rem 0rem;
+  margin: 0rem 0rem 1rem 0rem;
 }
 html h3,
 body h3 {
@@ -59,10 +61,26 @@ body h4 {
   color: #00C6EE;
   margin: 5rem 0rem 1rem 0rem;
 }
+html h2,
+html h3,
+html h4,
+body h2,
+body h3,
+body h4 {
+  color: #00C6EE;
+  -webkit-text-stroke: 0.05rem #ddd8d8;
+  text-shadow: 0.2em 0.2em 0.3em black;
+}
+html h4,
+body h4 {
+  -webkit-text-stroke: 0.03rem #ddd8d8;
+  text-shadow: 0.2em 0.2em 0.3em black;
+}
 html p,
 body p {
-  font-size: 2rem;
   color: blanchedalmond;
+  font-size: 2rem;
+  text-shadow: 0.1em 0.1em 0.1em gray;
 }
 html .primera,
 body .primera {
