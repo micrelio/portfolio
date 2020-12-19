@@ -14,18 +14,18 @@ class miInicio extends HTMLElement {
           La navegación se ha tratado de hacer intuitiva para el usuario donde puede distinguir entre las distintas secciones sin ninguna dificultad.
           </p>          
           <ul>
+          <a href="#"><e id="curriculum">Política de Privacidad</e></a>
             <li><p><strong>Biografía:</strong> Lugar donde describiré mi vida laboral y los caminos seguidos hasta el día de hoy.</p></li>
             <li><p><strong>Webs:</strong> Muestra los distintos tipos de páginas webs en diferentes tipos de programación en las que mostraré mis conocimientos en diferentes idiomas o frameworks.</p></li>
             <li><p><strong>Galería:</strong> Para la creación de webs y campañas en redes, tuve la necesidad de iniciarme en Photoshop, este apartado mostrará algunas de las imágenes editadas para estos trabajos.</p></li>
-            <li><p><strong>Currículum</strong> En el puedes encontrar tanto mi experiencia profesional y académica como verificar las titulaciones adquiridas.</p></li>
-            <li><p><strong>Contacto</strong> Formulario de contacto.</p></li>
+            <li><p><strong>Currículum:</strong> En el puedes encontrar tanto mi experiencia profesional y académica como verificar las titulaciones adquiridas.</p></li>
+            <li><p><strong>Contacto:</strong> Formulario de contacto.</p></li>
           </ul>
 
           
             
             
-            
-            
+                       
       
         </div>
     </section>

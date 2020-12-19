@@ -21,6 +21,11 @@
     -webkit-text-stroke: 0.03rem rgb(221, 216, 216);
     text-shadow: 0.2em 0.2em 0.3em black;
   }
+  strong {
+color: black;
+text-shadow: 0.1em 0.1em 0.1em gray;
+
+  }
   e {
     color: $azul;
     cursor: pointer;

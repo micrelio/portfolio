@@ -26,6 +26,10 @@
   -webkit-text-stroke: 0.03rem #ddd8d8;
   text-shadow: 0.2em 0.2em 0.3em black;
 }
+.inicio strong {
+  color: black;
+  text-shadow: 0.1em 0.1em 0.1em gray;
+}
 .inicio e {
   color: #00C6EE;
   cursor: pointer;
