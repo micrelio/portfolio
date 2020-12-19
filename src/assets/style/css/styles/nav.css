@@ -44,9 +44,10 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  align-items: center;
 }
 .stick .nav .navbar .foto img {
-  margin-top: calc(10px + 1vw);
+  height: 100%;
   margin-left: calc(10px + 1vw);
   border-radius: 75%;
   border: 0.05rem solid #00C6EE;

@@ -14,11 +14,11 @@ class miInicio extends HTMLElement {
           La navegación se ha tratado de hacer intuitiva para el usuario donde puede distinguir entre las distintas secciones sin ninguna dificultad.
           </p>          
           <ul>
-            <li><p><a href="#" onclick="navegar('biografia');" class="enlace" ><strong>Biografía:</strong></a> Lugar donde describiré mi vida laboral y los caminos seguidos hasta el día de hoy.</p></li>
-            <li><p><a href="#" onclick="navegar('webs');" class="enlace" ><strong>Webs:</strong></a> Muestra los distintos tipos de páginas webs en diferentes tipos de programación en las que mostraré mis conocimientos en diferentes idiomas o frameworks.</p></li>
-            <li><p><a href="#" onclick="navegar('galeria');" class="enlace" ><strong>Galería:</strong></a> Para la creación de webs y campañas en redes, tuve la necesidad de iniciarme en Photoshop, este apartado mostrará algunas de las imágenes editadas para estos trabajos.</p></li>
-            <li><p><a href="#" onclick="navegar('curriculum');" class="enlace" ><strong>Currículum:</strong></a> En el puedes encontrar tanto mi experiencia profesional y académica como verificar las titulaciones adquiridas.</p></li>
-            <li><p><a href="#" onclick="navegar('contacto');" class="enlace" ><strong>Contacto:</strong></a> Formulario de contacto.</p></li>
+            <li><p><a href="#" onclick="navegar('biografia');" class="enlace"><strong>Biografía:</strong></a> Lugar donde describiré mi vida laboral y los caminos seguidos hasta el día de hoy.</p></li>
+            <li><p><a href="#" onclick="navegar('webs');" class="enlace"><strong>Webs:</strong></a> Muestra los distintos tipos de páginas webs en diferentes tipos de programación en las que mostraré mis conocimientos en diferentes idiomas o frameworks.</p></li>
+            <li><p><a href="#" onclick="navegar('galeria');" class="enlace"><strong>Galería:</strong></a> Para la creación de webs y campañas en redes, tuve la necesidad de iniciarme en Photoshop, este apartado mostrará algunas de las imágenes editadas para estos trabajos.</p></li>
+            <li><p><a href="#" onclick="navegar('curriculum');" class="enlace"><strong>Currículum:</strong></a> En el puedes encontrar tanto mi experiencia profesional y académica como verificar las titulaciones adquiridas.</p></li>
+            <li><p><a href="#" onclick="navegar('contacto');" class="enlace"><strong>Contacto:</strong></a> Formulario de contacto.</p></li>
           </ul>
 
 
