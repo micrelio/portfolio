@@ -13,10 +13,6 @@
   flex-direction: row;
   flex-wrap: nowrap;
 }
-.stick .nav .navbar .foto {
-  position: absolute;
-  z-index: 1000;
-}
 .stick .nav .navbar .foto img {
   margin-top: calc(10px + 1vw);
   margin-left: calc(10px + 1vw);
