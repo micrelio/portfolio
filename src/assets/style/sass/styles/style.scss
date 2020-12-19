@@ -71,4 +71,23 @@ body {
       width: 50vh;
     }
   }
+  .fa-arrow-alt-circle-up {
+    z-index: 1000;
+    color: $azul;
+    font-size: 5rem;
+    display: block;
+    // text-decoration: none;
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 15rem;
+    right: 2rem;
+    border-radius: 100px;
+     -webkit-text-stroke: 0.1rem gray;
+    text-shadow: 0.2rem 0.2rem 0.5rem black;
+    //   border: 0.25rem solid white;
+    background: {
+     color: white;
+    }
+    }
 }

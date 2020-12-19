@@ -16,7 +16,7 @@ class miNav extends HTMLElement {
           <div id="biografia" class="enlace biografia">Biografía</div>
           <div id="webs" class="enlace webs">Webs</div>
           <div id="gal" class="enlace gal">Galería</div>
-          <div id="curriculum" class="enlace curriculum">Curriculum</div>
+          <div id="curriculum" class="enlace curriculum">Currículum</div>
           <div id="contacto" class="enlace contacto">Contacto</div>
         </div>
       </div>
@@ -38,7 +38,7 @@ class miNav extends HTMLElement {
         <div id="biografia" class="enlace biografia mnav-link">Biografía</div>
         <div id="webs" class="enlace webs mnav-link">Webs</div>
         <div id="gal" class="enlace gal mnav-link">Galería</div>
-        <div id="curriculum" class="enlace curriculum mnav-link">Curriculum</div>
+        <div id="curriculum" class="enlace curriculum mnav-link">Currículum</div>
         <div id="contacto" class="enlace contacto mnav-link">Contacto</div>
     </div>
   </div>

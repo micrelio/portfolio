@@ -77,5 +77,21 @@ html .primera img,
 body .primera img {
   width: 50vh;
 }
+html .fa-arrow-alt-circle-up,
+body .fa-arrow-alt-circle-up {
+  z-index: 1000;
+  color: #00C6EE;
+  font-size: 5rem;
+  display: block;
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 15rem;
+  right: 2rem;
+  border-radius: 100px;
+  -webkit-text-stroke: 0.1rem gray;
+  text-shadow: 0.2rem 0.2rem 0.5rem black;
+  background-color: white;
+}
 
 /*# sourceMappingURL=style.css.map */
