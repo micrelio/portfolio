@@ -45,21 +45,22 @@ class miNav extends HTMLElement {
     <div>
     </div>
     <div style="display: none" class="desplegable nuevo" id="desplegable">
-    <!--
-      <button  onclick="navegar('inicio'); seleccionado();" class="mnav-link">Inicio</button>
-      <button onclick="navegar('biografia'); seleccionado();" class="mnav-link">Sobre mí</button>
-      <button onclick="navegar('webs'); seleccionado();" class="mnav-link">Webs</button>
-      <button onclick="navegar('galeria'); seleccionado();" class="mnav-link">Galery</button>
-      <button onclick="navegar('videos'); seleccionado();" class="mnav-link">Videos</button>
-      <button onclick="navegar('curriculum'); seleccionado();" class="mnav-link">Curriculum</button>
-      <button onclick="navegar('contacto'); seleccionado();" class="mnav-link">Contacto</button>
-    -->  
+    
+      <div  onclick="navegar('inicio'); seleccionado();" class="enlace">Inicio</div>
+      <div onclick="navegar('biografia'); seleccionado();" class="enlace">Biografía</div>
+      <div onclick="navegar('webs'); seleccionado();" class="enlace">Webs</div>
+      <div onclick="navegar('galeria'); seleccionado();" class="enlace">Galeria</div>
+      <div onclick="navegar('curriculum'); seleccionado();" class="enlace">Curriculum</div>
+      <div onclick="navegar('contacto'); seleccionado();" class="enlace">Contacto</div>
+    
+      <!--
         <div onclick="navegar('inicio'); class="enlace inicio mnav-link">Inicio</div>
         <div id="biografia" class="enlace biografia mnav-link">Biografía</div>
         <div id="webs" class="enlace webs mnav-link">Webs</div>
         <div id="gal" class="enlace gal mnav-link">Galería</div>
         <div id="curriculum" class="enlace curriculum mnav-link">Currículum</div>
         <div id="contacto" class="enlace contacto mnav-link">Contacto</div>
+        -->
     </div>
   </div>
   <div class="mode">
