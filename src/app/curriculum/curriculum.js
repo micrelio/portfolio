@@ -14,7 +14,7 @@ class miCurriculum extends HTMLElement {
         </div>
         <div class="direccion">
         <br>
-            <h2><strong>José Antonio López Baena</strong></h2>
+            <h><strong>José Antonio López Baena</strong></h>
             <p>
                 Nacido en julio de 1982 Valencia (España).
             </p>

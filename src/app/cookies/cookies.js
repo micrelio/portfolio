@@ -8,13 +8,37 @@ class miCookies extends HTMLElement {
     <div id="cajacookies">
       <p>
         Éste sitio web usa cookies, si permanece aquí acepta su uso.
-        Puede leer más sobre el uso de cookies en nuestra <a
-        href="https://titaniumgamers.com/index.php/mas-informacion-sobre-las-cookies/" target="_blank" >política de privacidad</a>.
+        Puede leer más sobre el uso de cookies en nuestra <a href="#"><e class="privacidad" id="cookies"> Política de Cookies</e></a>.
       </p>
       <button onclick="aceptarCookies()" class="pull-right"><i class="fa fa-times"></i> Aceptar cookies</button>
         </div>
   </section>
-    `;
+    `
+    var multimedia = document.querySelector("#cajacookies");
+    multimedia.addEventListener("click", function (seleccion) {
+      console.log(seleccion);
+      var h = seleccion.target.id;
+      // if (seleccion.target !== this) {
+      switch (h) {
+        case "privacidad":
+          console.log("politicadeprivacidad");
+          document.getElementById("componente").innerHTML =
+            "<mi-politicadeprivacidad></mi-politicadeprivacidad>";
+          break;
+        case "aviso":
+          console.log("aviso");
+          document.getElementById("componente").innerHTML =
+            "<mi-avisolegal></mi-avisolegal>";
+          break;
+          case "cookies":
+            console.log("cookies");
+            document.getElementById("componente").innerHTML =
+              "<mi-politicadecookies></mi-politicadecookies>";
+            break;
+      }
+      // }
+    });
+    ;
     /* ésto se ejecuta cuando la web está cargada */
     $(document).ready(function () {
       compruebaAceptaCookies();

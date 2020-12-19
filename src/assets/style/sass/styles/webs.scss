@@ -54,8 +54,6 @@
         }
         i {
           color: green;
-          text-shadow: 0em 0em 0em;
-
         }
       }
       //   background-color: cornflowerblue;
@@ -93,9 +91,6 @@
         -ms-transform: scale(1.5);
         -o-transform: scale(1.5);
         transform: scale(1.5);
-      }
-      i{
-        text-shadow: 0em 0em 0em;
       }
     }
   }
@@ -169,7 +164,9 @@
           text-decoration: none;
           color: gold;
         }
-        
+        i {
+          color: green;
+        }
         .fa-undo-alt {
           color: red;
           left: 0px;
