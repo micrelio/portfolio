@@ -11,22 +11,11 @@ class miNav extends HTMLElement {
         <img src="/src/assets/images/dracula-man.jpg">
       </div>
       <div class="menu">
-      <!--  ANTTIGUO MENÚ    
-        <div class="links">
-          <s onmouseover> <button class="nav-link" type="button" onclick="navegar('inicio');"> Inicio </button></s>
-          <s onmouseover> <button class="nav-link" type="button" onclick="navegar('conoceme');"> Sobre mí </button> </s>
-          <s onmouseover> <button class="nav-link" type="button" onclick="navegar('webs'); "> Webs </button></s>
-          <s onmouseover> <button class="nav-link" type="button" onclick="navegar('galeria');"> Galeria </button></s>
-         <s onmouseover> <button class="nav-link" type="button" onclick="navegar('videos');"> Videos </button></s>
-         <s onmouseover> <button class="nav-link" type="button" onclick="navegar('curriculum');"> Curriculum </button></s>
-          <s onmouseover> <button class="nav-link" type="button" onclick="navegar('contacto');"> Contacto </button></s>
-        </div>
-        -->
-        <div id="nuevo" class="nuevo">
+          <div id="nuevo" class="nuevo">
           <div id="inicio" class="enlace inicio">Inicio</div>
-          <div id="conoceme" class="enlace conoceme">Conóceme</div>
+          <div id="biografia" class="enlace biografia">Biografía</div>
           <div id="webs" class="enlace webs">Webs</div>
-          <div id="gal" class="enlace gal">Galeria</div>
+          <div id="gal" class="enlace gal">Galería</div>
           <div id="curriculum" class="enlace curriculum">Curriculum</div>
           <div id="contacto" class="enlace contacto">Contacto</div>
         </div>
@@ -45,24 +34,12 @@ class miNav extends HTMLElement {
     <div>
     </div>
     <div style="display: none" class="desplegable nuevo" id="desplegable">
-    <!--
-      <button  onclick="navegar('inicio'); seleccionado();" class="mnav-link">Inicio</button>
-      <button onclick="navegar('conoceme'); seleccionado();" class="mnav-link">Sobre mí</button>
-      <button onclick="navegar('webs'); seleccionado();" class="mnav-link">Webs</button>
-      <button onclick="navegar('galeria'); seleccionado();" class="mnav-link">Galery</button>
-      <button onclick="navegar('videos'); seleccionado();" class="mnav-link">Videos</button>
-      <button onclick="navegar('curriculum'); seleccionado();" class="mnav-link">Curriculum</button>
-      <button onclick="navegar('contacto'); seleccionado();" class="mnav-link">Contacto</button>
-    -->  
         <div id="inicio" class="enlace inicio mnav-link">Inicio</div>
-        <div id="conoceme" class="enlace conoceme mnav-link">Conóceme</div>
+        <div id="biografia" class="enlace biografia mnav-link">Biografía</div>
         <div id="webs" class="enlace webs mnav-link">Webs</div>
-        <div id="gal" class="enlace gal mnav-link">Galeria</div>
+        <div id="gal" class="enlace gal mnav-link">Galería</div>
         <div id="curriculum" class="enlace curriculum mnav-link">Curriculum</div>
         <div id="contacto" class="enlace contacto mnav-link">Contacto</div>
-
-
-
     </div>
   </div>
   <div class="mode">
@@ -75,42 +52,43 @@ class miNav extends HTMLElement {
     var multimedia = document.querySelector("#stick");
     multimedia.addEventListener("click", function (seleccion) {
       var h = seleccion.target.id;
-        switch (h) {
-          case "inicio":
-            seleccionado();
-            document.getElementById("componente").innerHTML =
-        "<mi-inicio></mi-inicio>";
-                    break;
-          case "conoceme":
-            seleccionado();
-            document.getElementById("componente").innerHTML =
-        "<mi-conoceme></mi-conoceme>";
-            break;
-          case "webs":
-            seleccionado();
-            document.getElementById("componente").innerHTML = "<mi-webs></mi-webs>";
-            break;
-          case "gal":
-            seleccionado();
-            document.getElementById("componente").innerHTML =
-        "<mi-galeria></mi-galeria>";
-            break;
-          case "videos":
-            seleccionado();
-            document.getElementById("componente").innerHTML =
+      switch (h) {
+        case "inicio":
+          seleccionado();
+          document.getElementById("componente").innerHTML =
+            "<mi-inicio></mi-inicio>";
+          break;
+        case "biografia":
+          seleccionado();
+          document.getElementById("componente").innerHTML =
+            "<mi-biografia></mi-biografia>";
+          break;
+        case "webs":
+          seleccionado();
+          document.getElementById("componente").innerHTML =
+            "<mi-webs></mi-webs>";
+          break;
+        case "gal":
+          seleccionado();
+          document.getElementById("componente").innerHTML =
+            "<mi-galeria></mi-galeria>";
+          break;
+        case "videos":
+          seleccionado();
+          document.getElementById("componente").innerHTML =
             "<mi-videos></mi-videos>";
-            break;
-          case "curriculum":
-            seleccionado();
-            document.getElementById("componente").innerHTML =
+          break;
+        case "curriculum":
+          seleccionado();
+          document.getElementById("componente").innerHTML =
             "<mi-curriculum></mi-curriculum>";
-            break;
-          case "contacto":
-            seleccionado();
-            document.getElementById("componente").innerHTML =
+          break;
+        case "contacto":
+          seleccionado();
+          document.getElementById("componente").innerHTML =
             "<mi-contacto></mi-contacto>";
-            break;
-        }
+          break;
+      }
     });
   }
 }
@@ -125,19 +103,19 @@ customElements.define("mi-nav", miNav);
 //       break;
 //     case "sobremi":
 //       document.getElementById("componente").innerHTML =
-//         "<mi-conoceme></mi-conoceme>";
+//         "<mi-biografia></mi-biografia>";
 //       break;
 //     case "webs":
 //       document.getElementById("componente").innerHTML = "<mi-webs></mi-webs>";
 //       break;
 //     case "galeria":
-      //   window.router.init([{
-      //     path: "/list",
-      //     view: "<mi-galeria><mi-galeria>"
-      // },])
-      // document.getElementById("componente").innerHTML =
-        // "<mi-galeria></mi-galeria>";
-      // location.replace("src/app/galeria/galeria.js");
+//   window.router.init([{
+//     path: "/list",
+//     view: "<mi-galeria><mi-galeria>"
+// },])
+// document.getElementById("componente").innerHTML =
+// "<mi-galeria></mi-galeria>";
+// location.replace("src/app/galeria/galeria.js");
 //       break;
 //     case "videos":
 //       document.getElementById("componente").innerHTML =
@@ -165,7 +143,7 @@ function nav() {
     $(pull).on("click", function (e) {
       e.preventDefault();
       menu.slideToggle();
-          });
+    });
   });
   $(window).resize(function () {
     var w = $(window).width();
