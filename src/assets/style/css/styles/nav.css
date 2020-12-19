@@ -1,3 +1,35 @@
+/* ------------------------------------------
+         social media menu
+------------------------------------------ */
+.social-media {
+  padding: 0;
+  background-color: #00C6EE;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  flex-direction: row-reverse;
+  padding: 4px;
+  /* background-color: orangered; */
+}
+
+.social-links a {
+  font-size: 24px;
+  display: inline-block;
+  color: white;
+  line-height: 1;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #2a2a2a;
+}
+
+/* ------------------------------------------
+         menu
+------------------------------------------ */
 .stick {
   z-index: 1000;
   top: 0;
@@ -31,7 +63,7 @@
   position: relative;
   z-index: 1000;
 }
-.stick .nav .navbar .menu .nuevo {
+.stick .nav .navbar .menu .links {
   display: grid;
   grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5] 1fr [x6];
   grid-template-rows: [y0] 1fr [y1];
@@ -39,7 +71,7 @@
   grid-row-gap: 1rem;
   width: 80%;
 }
-.stick .nav .navbar .menu .nuevo .enlace {
+.stick .nav .navbar .menu .links .enlace {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,68 +86,44 @@
   border: 0.05rem solid #00C6EE;
   border-radius: 0.9rem;
 }
-.stick .nav .navbar .menu .nuevo .inicio {
+.stick .nav .navbar .menu .links .inicio {
   grid-column: x0/x1;
   grid-row: y0/y1;
 }
-.stick .nav .navbar .menu .nuevo .conoceme {
+.stick .nav .navbar .menu .links .conoceme {
   grid-column: x1/x2;
   grid-row: y0/y1;
 }
-.stick .nav .navbar .menu .nuevo .webs {
+.stick .nav .navbar .menu .links .webs {
   grid-column: x2/x3;
   grid-row: y0/y1;
 }
-.stick .nav .navbar .menu .nuevo .gal {
+.stick .nav .navbar .menu .links .gal {
   grid-column: x3/x4;
   grid-row: y0/y1;
 }
-.stick .nav .navbar .menu .nuevo .curriculum {
+.stick .nav .navbar .menu .links .curriculum {
   grid-column: x4/x5;
   grid-row: y0/y1;
 }
-.stick .nav .navbar .menu .nuevo .contacto {
+.stick .nav .navbar .menu .links .contacto {
   grid-column: x5/x6;
   grid-row: y0/y1;
 }
-.stick .nav .navbar .menu .nuevo .inicio:hover,
-.stick .nav .navbar .menu .nuevo .conoceme:hover,
-.stick .nav .navbar .menu .nuevo .webs:hover,
-.stick .nav .navbar .menu .nuevo .gal:hover,
-.stick .nav .navbar .menu .nuevo .videos:hover,
-.stick .nav .navbar .menu .nuevo .curriculum:hover,
-.stick .nav .navbar .menu .nuevo .contacto:hover,
-.stick .nav .navbar .menu .nuevo .inicio:focus,
-.stick .nav .navbar .menu .nuevo .conoceme:focus,
-.stick .nav .navbar .menu .nuevo .webs:focus,
-.stick .nav .navbar .menu .nuevo .gal:focus,
-.stick .nav .navbar .menu .nuevo .videos:focus,
-.stick .nav .navbar .menu .nuevo .curriculum:focus,
-.stick .nav .navbar .menu .nuevo .contacto:focus {
-  background-color: rgba(78, 78, 32, 0.582);
-}
-.stick .nav .navbar .menu .links {
-  z-index: 1000;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  color: black;
-}
-.stick .nav .navbar .menu .links .nav-link {
-  margin: 0 0.2rem 0 0.2rem;
-  color: #00C6EE;
-  padding: 1.6rem;
-  border-radius: 0.9rem;
-  border-color: #00C6EE;
-  border-width: 0.05rem;
-  background-color: rgba(0, 0, 0, 0.582);
-  cursor: pointer;
-}
-.stick .nav .navbar .menu .links .nav-link font {
-  size: 1.6rem;
-}
-.stick .nav .navbar .menu .links .nav-link:hover,
-.stick .nav .navbar .menu .links .nav-link:focus {
+.stick .nav .navbar .menu .links .inicio:hover,
+.stick .nav .navbar .menu .links .conoceme:hover,
+.stick .nav .navbar .menu .links .webs:hover,
+.stick .nav .navbar .menu .links .gal:hover,
+.stick .nav .navbar .menu .links .videos:hover,
+.stick .nav .navbar .menu .links .curriculum:hover,
+.stick .nav .navbar .menu .links .contacto:hover,
+.stick .nav .navbar .menu .links .inicio:focus,
+.stick .nav .navbar .menu .links .conoceme:focus,
+.stick .nav .navbar .menu .links .webs:focus,
+.stick .nav .navbar .menu .links .gal:focus,
+.stick .nav .navbar .menu .links .videos:focus,
+.stick .nav .navbar .menu .links .curriculum:focus,
+.stick .nav .navbar .menu .links .contacto:focus {
   background-color: rgba(78, 78, 32, 0.582);
 }
 .stick .mode {

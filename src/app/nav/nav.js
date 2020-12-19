@@ -4,6 +4,19 @@ class miNav extends HTMLElement {
   }
   connectedCallback() {
     this.innerHTML = `
+    <section class="social-media">
+    <div class="social-links">
+      <a href="http://youtube.com/" target="_blank" class=""><i class="bx bxl-youtube"></i></a>
+      <a href="https://discord.gg/9HCCg4Y" target="_blank" class=""><i class="bx bxl-whatsapp"></i></a>
+      <a href="https://discord.gg/9HCCg4Y" target="_blank" class=""><i class="bx bxl-linkedin"></i></a>
+      <a href="https://www.facebook.com/titaniumgamers.es" target="_blank" class=""><i class="bx bxl-youtube"></i></a>
+      <a href="https://www.instagram.com/titaniumgamers_oficial/?hl=es" target="_blank" class=""><i class="bx bxl-instagram"></i></a>
+      <a href="https://twitter.com/titaniumgamers" target="_blank" class=""><i class="bx bxl-twitter"></i></a>
+      <a href="https://www.facebook.com/titaniumgamers.es" target="_blank" class=""><i class="bx bxl-facebook"></i></a>
+      <a href="https://www.facebook.com/titaniumgamers.es" target="_blank" class=""><i class="bx bxl-github"></i></a>
+
+    </div>
+  </section>
 <section class="stick" id="stick">
   <div class="nav" id="nav">
     <div class="navbar">
@@ -12,13 +25,13 @@ class miNav extends HTMLElement {
       </div>
       <div class="menu">
        
-        <div class="nuevo">
+        <div class="links">
           <div class="enlace" type="button" onclick="navegar('inicio');"> Inicio </div>
-           <div class="enlace" type="button" onclick="navegar('biografia');"> Biografía </div> 
-           <div class="enlace" type="button" onclick="navegar('webs'); "> Webs </div>
-           <div class="enlace" type="button" onclick="navegar('galeria');"> Galería </div>
+          <div class="enlace" type="button" onclick="navegar('biografia');"> Biografía </div> 
+          <div class="enlace" type="button" onclick="navegar('webs'); "> Webs </div>
+          <div class="enlace" type="button" onclick="navegar('galeria');"> Galería </div>
           <div class="enlace" type="button" onclick="navegar('curriculum');"> Currículum </div>
-           <div class="enlace" type="button" onclick="navegar('contacto');"> Contacto </div>
+          <div class="enlace" type="button" onclick="navegar('contacto');"> Contacto </div>
         </div>
      <!--
         <div id="nuevo" class="nuevo">
@@ -45,15 +58,13 @@ class miNav extends HTMLElement {
     <div>
     </div>
     <div style="display: none" class="desplegable nuevo" id="desplegable">
-    
       <div  onclick="navegar('inicio'); seleccionado();" class="enlace">Inicio</div>
       <div onclick="navegar('biografia'); seleccionado();" class="enlace">Biografía</div>
       <div onclick="navegar('webs'); seleccionado();" class="enlace">Webs</div>
       <div onclick="navegar('galeria'); seleccionado();" class="enlace">Galeria</div>
       <div onclick="navegar('curriculum'); seleccionado();" class="enlace">Curriculum</div>
       <div onclick="navegar('contacto'); seleccionado();" class="enlace">Contacto</div>
-    
-      <!--
+          <!--
         <div onclick="navegar('inicio'); class="enlace inicio mnav-link">Inicio</div>
         <div id="biografia" class="enlace biografia mnav-link">Biografía</div>
         <div id="webs" class="enlace webs mnav-link">Webs</div>
@@ -68,6 +79,7 @@ class miNav extends HTMLElement {
     <img src="/src/assets/images/buttons/noche.png">
   </div>
 </section>
+
       `;
     // esto arranca automatico
     // var multimedia = document.querySelector("#stick");
