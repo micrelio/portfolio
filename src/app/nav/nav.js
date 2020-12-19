@@ -6,14 +6,13 @@ class miNav extends HTMLElement {
     this.innerHTML = `
     <section class="social-media">
     <div class="social-links">
-      <a href="http://youtube.com/" target="_blank" class=""><i class="bx bxl-youtube"></i></a>
-      <a href="https://discord.gg/9HCCg4Y" target="_blank" class=""><i class="bx bxl-whatsapp"></i></a>
-      <a href="https://discord.gg/9HCCg4Y" target="_blank" class=""><i class="bx bxl-linkedin"></i></a>
-      <a href="https://www.facebook.com/titaniumgamers.es" target="_blank" class=""><i class="bx bxl-youtube"></i></a>
-      <a href="https://www.instagram.com/titaniumgamers_oficial/?hl=es" target="_blank" class=""><i class="bx bxl-instagram"></i></a>
-      <a href="https://twitter.com/titaniumgamers" target="_blank" class=""><i class="bx bxl-twitter"></i></a>
-      <a href="https://www.facebook.com/titaniumgamers.es" target="_blank" class=""><i class="bx bxl-facebook"></i></a>
-      <a href="https://www.facebook.com/titaniumgamers.es" target="_blank" class=""><i class="bx bxl-github"></i></a>
+      <a href="https://www.youtube.com/channel/UCMEv1Jj16ypsAXmZXOkKrQA" target="_blank" class=""><i class="bx bxl-youtube"></i></a>
+        <a href="https://www.instagram.com/micrelio.dev/" target="_blank" class=""><i class="bx bxl-instagram"></i></a>
+      <a href="https://twitter.com/Micrelio" target="_blank" class=""><i class="bx bxl-twitter"></i></a>
+      <a href="href="https://www.facebook.com/micro6" target="_blank" class=""><i class="bx bxl-facebook"></i></a>
+      <a href="https://wa.me/34653251983/" target="_blank" class=""><i class="bx bxl-whatsapp"></i></a>
+      <a href="https://www.linkedin.com/in/jos%C3%A9-antonio-l%C3%B3pez-baena-65833016a/" target="_blank" class=""><i class="bx bxl-linkedin"></i></a>
+      <a href="https://github.com/micrelio" target="_blank" class=""><i class="bx bxl-github"></i></a>
 
     </div>
   </section>

@@ -38,13 +38,13 @@ class miFooter extends HTMLElement {
   <div class="redes">
     <div class="propiedad">
       <div class="socialmedia">
-        <a target="blank" class="iconSocial" title="Facebook" href="https://www.facebook.com/micro6"><img style="" src="/src/assets/images/icons/social/facebook.png"></a>
-        <a target="blank" class="iconSocial" href="https://twitter.com/Micrelio"><img style="" src="/src/assets/images/icons/social/twitter.png"></a>
-        <a target="blank" class="iconSocial" href="https://wa.me/34653251983"><img style="" src="/src/assets/images/icons/social/whatsapp.png"></a>                    
-        <a target="blank" class="iconSocial" href="https://www.linkedin.com/in/jos%C3%A9-antonio-l%C3%B3pez-baena-65833016a/"><img style="" src="/src/assets/images/icons/social/linkedin.png"></a>
-        <a target="blank" class="iconSocial" href="https://www.instagram.com/micrelio.dev/"><img style="" src="/src/assets/images/icons/social/instagram.png"></a>
-        <a target="blank" class="iconSocial" href="https://www.youtube.com/channel/UCMEv1Jj16ypsAXmZXOkKrQA"><img style="" src="/src/assets/images/icons/social/youtube.png"></a>
-        <a target="blank" class="iconSocial" href="https://github.com/micrelio"><img style="" src="/src/assets/images/icons/social/github.png"></a>
+        <a target="blank" class="iconSocial" href="https://www.youtube.com/channel/UCMEv1Jj16ypsAXmZXOkKrQA" target="_blank"><img style="" src="/src/assets/images/icons/social/youtube.png"></a>
+        <a target="blank" class="iconSocial" href="https://www.instagram.com/micrelio.dev/" target="_blank"><img style="" src="/src/assets/images/icons/social/instagram.png"></a>
+        <a target="blank" class="iconSocial" href="https://twitter.com/Micrelio" target="_blank"><img style="" src="/src/assets/images/icons/social/twitter.png"></a>
+        <a target="blank" class="iconSocial" title="Facebook"href="https://www.facebook.com/micro6" target="_blank"><img style="" src="/src/assets/images/icons/social/facebook.png"></a>
+        <a target="blank" class="iconSocial" href="https://wa.me/34653251983/" target="_blank"><img style="" src="/src/assets/images/icons/social/whatsapp.png"></a>                    
+        <a target="blank" class="iconSocial" href="https://www.linkedin.com/in/jos%C3%A9-antonio-l%C3%B3pez-baena-65833016a/" target="_blank"><img style="" src="/src/assets/images/icons/social/linkedin.png"></a>
+        <a target="blank" class="iconSocial" href="https://github.com/micrelio" target="_blank"><img style="" src="/src/assets/images/icons/social/github.png"></a>
       </div>
       <div class="copy">
         &copy; 2020, Todos los derechos reservados - | Micro |
