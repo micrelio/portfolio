@@ -1,10 +1,9 @@
 class miBiografia extends HTMLElement {
-    constructor() {
-        super();
-    }
-    connectedCallback() {
-        this.innerHTML =
-            `
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    this.innerHTML = `
     <section class="inicio">
         <h1>Biografía</h1>
         <div>
@@ -21,9 +20,7 @@ class miBiografia extends HTMLElement {
             </p>
         </div>
     </section>
-    
- `;
-    }
+     `;
+  }
 }
-customElements.define('mi-biografia', miBiografia);
-
+customElements.define("mi-biografia", miBiografia);
