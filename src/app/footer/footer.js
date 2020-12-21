@@ -75,11 +75,11 @@ class miFooter extends HTMLElement {
           document.getElementById("componente").innerHTML =
             "<mi-avisolegal></mi-avisolegal>";
           break;
-          case "cookies":
-            console.log("cookies");
-            document.getElementById("componente").innerHTML =
-              "<mi-politicadecookies></mi-politicadecookies>";
-            break;
+        case "cookies":
+          console.log("cookies");
+          document.getElementById("componente").innerHTML =
+            "<mi-politicadecookies></mi-politicadecookies>";
+          break;
       }
       // }
     });

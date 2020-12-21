@@ -1,9 +1,9 @@
 class miPoliticadecookies extends HTMLElement {
-    constructor() {
-      super();
-    }
-    connectedCallback() {
-      this.innerHTML = `
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    this.innerHTML = `
 <section id="legales" class="legales">
     <h1 id="politicadecookies"> Política de Cookies</h1>
     <p>
@@ -192,6 +192,6 @@ class miPoliticadecookies extends HTMLElement {
           break;
       }
     });
-    }
   }
-  customElements.define("mi-politicadecookies", miPoliticadecookies);
+}
+customElements.define("mi-politicadecookies", miPoliticadecookies);

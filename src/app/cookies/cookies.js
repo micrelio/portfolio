@@ -13,7 +13,7 @@ class miCookies extends HTMLElement {
       <button onclick="aceptarCookies()" class="pull-right"><i class="fa fa-times"></i> Aceptar cookies</button>
         </div>
   </section>
-    `
+    `;
     var multimedia = document.querySelector("#cajacookies");
     multimedia.addEventListener("click", function (seleccion) {
       console.log(seleccion);
@@ -30,15 +30,14 @@ class miCookies extends HTMLElement {
           document.getElementById("componente").innerHTML =
             "<mi-avisolegal></mi-avisolegal>";
           break;
-          case "cookies":
-            console.log("cookies");
-            document.getElementById("componente").innerHTML =
-              "<mi-politicadecookies></mi-politicadecookies>";
-            break;
+        case "cookies":
+          console.log("cookies");
+          document.getElementById("componente").innerHTML =
+            "<mi-politicadecookies></mi-politicadecookies>";
+          break;
       }
       // }
     });
-    ;
     /* ésto se ejecuta cuando la web está cargada */
     $(document).ready(function () {
       compruebaAceptaCookies();
