@@ -1,7 +1,7 @@
 @import "../mixins/mixins.scss";
 @import "../variables/variables.scss";
 .head {
-   @include head;
+  @include head;
 }
 body {
   background: {
@@ -10,9 +10,9 @@ body {
 .descripcion {
   display: flex;
   justify-content: center;
-  .año{
-    color:$azul;
-      }
+  .año {
+    color: $azul;
+  }
 }
 h1 {
   font-size: calc(3rem + 1vw);
@@ -72,19 +72,19 @@ a:visited {
       p {
         margin-top: 1.5rem;
       }
-      .fa{
-        color:red;
+      .fa {
+        color: red;
       }
     }
   }
   .experiencia {
     color: white;
-     overflow: hidden;
+    overflow: hidden;
     display: flex;
     flex-direction: row;
     align-items: center;
     border: 0.2rem solid $azul;
-        margin-bottom: 5rem;
+    margin-bottom: 5rem;
     width: 95vw;
     background: {
       color: black;
@@ -95,9 +95,9 @@ a:visited {
     .logotipo {
       // overflow: hidden;
       //height: 7vh;
-               img {
+      img {
         width: calc(20rem + 10vw);
-             background: {
+        background: {
         }
         border: {
           radius: 1rem 0rem 0rem 1rem;
@@ -109,15 +109,15 @@ a:visited {
       width: 100%;
       display: flex;
       flex-direction: column;
-         height: 100%;
+      height: 100%;
       //text-overflow: ellipsis;
       //  white-space: nowrap;
-          }
+    }
     .titulo {
       height: 100%;
       display: flex;
       flex-direction: column;
-     align-items: center;
+      align-items: center;
       justify-content: end;
       margin-right: 3rem;
       img {
@@ -125,17 +125,17 @@ a:visited {
         width: 7rem;
         margin-right: 1rem;
         display: block;
-              text-decoration: none;
-          margin-left: 30px;
-          animation-name: parpadeo;
-          animation-duration: 1s;
-          animation-timing-function: linear;
-          animation-iteration-count: infinite;
-          -webkit-animation-name: parpadeo;
-          -webkit-animation-duration: 2s;
-          -webkit-animation-timing-function: linear;
-          -webkit-animation-iteration-count: infinite;
-             }
+        text-decoration: none;
+        margin-left: 30px;
+        animation-name: parpadeo;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: parpadeo;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+      }
       img:hover {
         -webkit-transform: scale(1.15);
         -moz-transform: scale(1.15);
@@ -143,7 +143,7 @@ a:visited {
         -o-transform: scale(1.15);
         transform: scale(1.15);
       }
-        }
+    }
   }
   .interes {
     border: 0.1rem solid $azul;
@@ -159,17 +159,16 @@ a:visited {
       margin-top: 1.5rem;
     }
   }
-   a:link {
+  a:link {
     //color: #ffffff;
     text-decoration: none;
-    color:$azul;
-
+    color: $azul;
   }
   a:visited {
-    color:$azul;
+    color: $azul;
   }
   a:active {
-   color: $azul;
+    color: $azul;
   }
   a:hover {
     color: $azul;
@@ -210,7 +209,7 @@ a:visited {
   .datos {
     display: flex;
     flex-direction: column;
-        width: 100%;
+    width: 100%;
     .datosPersonales {
       display: flex;
       flex-direction: column;
@@ -242,7 +241,7 @@ a:visited {
       .direccion {
         display: flex;
         flex-direction: column;
-                p {
+        p {
           margin-top: 1.5rem;
         }
       }
@@ -265,7 +264,7 @@ a:visited {
       color: white;
       display: flex;
       flex-direction: column;
-           height: auto;
+      height: auto;
       min-width: 7vh;
       margin: 0.5rem;
       width: 85%;
@@ -275,34 +274,34 @@ a:visited {
       background: {
         color: black;
       }
-           .logotipo {
+      .logotipo {
         overflow: hidden;
         height: auto;
         background: {
         }
         img {
           width: 100%;
-                    border: {
+          border: {
             radius: 0rem;
           }
         }
-                .corporativo {
+        .corporativo {
           height: 100%;
-                }
+        }
       }
       .descripcion {
         padding: 3rem;
         width: 100%;
-              }
+      }
       a:link {
-      //  color: #ffffff;
+        //  color: #ffffff;
         text-decoration: none;
       }
       a:visited {
-       // color: #ffffff;
+        // color: #ffffff;
       }
       a:active {
-      //  color: #ffffff;
+        //  color: #ffffff;
       }
       a:hover {
         color: $azul;

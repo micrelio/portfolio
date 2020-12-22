@@ -1,77 +1,69 @@
 @import "../mixins/mixins.scss";
 @import "../variables/variables.scss";
 .miniaturas {
-    display: flex;
-    justify-content: center;
-    //align-items: center;
+  display: flex;
+  justify-content: center;
+  //align-items: center;
 }
-
 .repertorio {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    width: 95vw;
-    ;
-    background: {
-        // color: lightblue;
-    }
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 95vw;
+  background: {
+    // color: lightblue;
+  }
 }
-
 h {
-    color: $azul;
-    font: {
-        size: 2.5rem;
-    }
+  color: $azul;
+  font: {
+    size: 2.5rem;
+  }
 }
-
 .title {
-    margin-top: 1.5rem;
-    cursor: pointer;
-    background: {
-        //   color: red;
-    }
-    ;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  background: {
+    //   color: red;
+  }
 }
-
 .raya {
-    border: 0 none #000000;
-    border-top: 1px solid $azul;
-    height: 1px;
-    margin: 5px 0;
-    display: block;
-    clear: both;
+  border: 0 none #000000;
+  border-top: 1px solid $azul;
+  height: 1px;
+  margin: 5px 0;
+  display: block;
+  clear: both;
 }
-
 .tipo {
-    margin-bottom: 3rem;
-    display: flex;
-    width: 100%;
-    // margin: 20px auto;
-    list-style: none;
-    background: {
-        // color: white;
-    }
+  margin-bottom: 3rem;
+  display: flex;
+  width: 100%;
+  // margin: 20px auto;
+  list-style: none;
+  background: {
+    // color: white;
+  }
 }
-
 .fila {
-    overflow: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  cursor: pointer;
+  background: {
+    // color: yellow;
+  }
+  .imagenPresentacion {
+    margin: 0.6rem;
+    border: 0.4rem solid #eeeeee;
+    box-shadow: $sombreadoTotal;
+  }
+  .tn {
     cursor: pointer;
+    height: 15rem;
     background: {
-        // color: yellow;
+      // color: black;
     }
-    .imagenPresentacion {
-        margin: 0.6rem;
-        border: 0.4rem solid #eeeeee;
-        box-shadow: $sombreadoTotal;
-    }
-    .tn {
-        cursor: pointer;
-        height: 15rem;
-        background: {
-            // color: black;
-        }
-    }
+  }
 }

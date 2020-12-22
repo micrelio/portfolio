@@ -1,13 +1,13 @@
 @import "../mixins/mixins.scss";
 @import "../variables/variables.scss";
-#t{
-    color:white;
+#t {
+  color: white;
 }
-.galeria{
-    overflow: auto;
-   // display:flex;
-   // flex-direction: column;
+.galeria {
+  overflow: auto;
+  // display:flex;
+  // flex-direction: column;
 }
 .head {
-    @include head;
+  @include head;
 }
