@@ -1,17 +1,19 @@
 class miPoliticadeprivacidad extends HTMLElement {
-    constructor() {
-      super();
-    }
-    connectedCallback() {
-      this.innerHTML = `
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    this.innerHTML = `
 <section class="primera">
     <h1> Política de privacidad</h1>
     <div>
+    
         <p>
             Jose Antonio Lopez Baena te informa sobre su Política de Privacidad respecto del tratamiento y protección de
             los datos de carácter personal de los usuarios que puedan ser recabados durante la navegación a través del
             sitio Web https://microdeveloper.es.
         </p>
+
         <p>
             En este sentido, Jose Antonio Lopez Baena cumple con el Reglamento (UE) 2016/679 del Parlamento Europeo y
             del Consejo de 27 de abril de 2016 relativo a la protección de las personas físicas (RGPD).
@@ -20,6 +22,7 @@ class miPoliticadeprivacidad extends HTMLElement {
             El uso de sitio Web implica la aceptación de esta Política de Privacidad así como las condiciones incluidas
             en el Aviso Legal.
         </p>
+
         <h2>
             Identidad del responsable
         </h2>
@@ -30,13 +33,16 @@ class miPoliticadeprivacidad extends HTMLElement {
             Correo electrónico: microa4@gmail.com
             Sitio Web: https://microdeveloper.es
         </p>
+
         <h2>
             Principios aplicados en el tratamiento de datos
         </h2>
+
         <p>
             En el tratamiento de tus datos personales, el Titular aplicará los siguientes principios que se ajustan a
             las exigencias del nuevo reglamento europeo de protección de datos (RGPD):
         </p>
+
         <p>
             Principio de licitud, lealtad y transparencia: El Titular siempre requerirá el consentimiento para el
             tratamiento de los datos personales que puede ser para uno o varios fines específicos sobre los que el
@@ -53,6 +59,7 @@ class miPoliticadeprivacidad extends HTMLElement {
             El Titular toma las precauciones necesarias para evitar el acceso no autorizado o uso indebido de los datos
             de sus usuarios por parte de terceros.
         </p>
+
         <h2>
             Obtención de datos personales
         </h2>
@@ -410,7 +417,6 @@ class miPoliticadeprivacidad extends HTMLElement {
     </div>
 </section>
     `;
-    
-    }
   }
-  customElements.define("mi-politicadeprivacidad", miPoliticadeprivacidad);
+}
+customElements.define("mi-politicadeprivacidad", miPoliticadeprivacidad);
