@@ -22,14 +22,18 @@
   display: inline-block;
   color: black;
   line-height: 1;
-  margin-right: 20px;
+  margin-right: 0.5rem;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .social-links a:hover {
-  color: #2a2a2a;
+  //color: red;
 }
 
+.social-links a:visited {
+  color: black;
+}
 /* ------------------------------------------
          menu
 ------------------------------------------ */
