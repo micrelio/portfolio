@@ -45,7 +45,7 @@ class miCurriculum extends HTMLElement {
             <p>Cert. profesionalidad “Operaciones básicas montaje y mantenimiento de instalaciones de energías renovables” (540 h).  <a href="https://ocupacio.quartdepoblet.es/index.php/es/formacio"target="_blank">CED Quart de Poblet</a>.</p>
         </div>
         <div class="titulo">
-                <a href="/src/assets/images/titulos/GreeksHubs.jpg" target="_blank"><img alt="" src="/src/assets/images/icons/titulo.png"></a>
+        <!--     <a href="/src/assets/images/titulos/" target="_blank"><img alt="" src="/src/assets/images/icons/titulo.png"></a> -->
         </div>
     </div>
     <div class="experiencia">
