@@ -1,18 +1,6 @@
-@font-face {
-  font-family: "supercell";
-  src: url(../../../fuentes/supercell-magic-webfont.ttf) format("truetype");
-}
-@font-face {
-  font-family: "FontAwesome";
-  src: url("fontawesome-webfont.woff");
-}
-@font-face {
-  font-family: "titanium";
-  src: url(../../../fuentes/pricedow.ttf) format("truetype");
-}
 html,
 body {
-  background-image: url("../../../images/icons/snow.png"), url("../../../images/icons/snow2.png"), url("../../../images/icons/snow3.png");
+  background-image: url("../../../images/gifs/brillo.gif");
   animation: snow 20s linear infinite;
   /*Keyframes*/
 }
@@ -36,7 +24,7 @@ body .fiestas {
 }
 html .fiestas img,
 body .fiestas img {
-  width: 15rem;
+  width: 10rem;
 }
 html .fiestas .stop,
 body .fiestas .stop {
@@ -45,7 +33,7 @@ body .fiestas .stop {
   color: #fff;
   width: 100%;
   padding: 0.5rem 0rem 0.5rem 0rem;
-  border: 0.1rem solid #f80000;
+  border: 0.1rem solid #EABE3F;
   font-size: calc(0.5rem + 1vw);
   cursor: pointer;
   border: 0.05rem solid white;
@@ -54,8 +42,8 @@ body .fiestas .stop {
 html .fiestas .stop:hover,
 body .fiestas .stop:hover {
   background-color: white;
-  color: #f80000;
-  border: 0.05rem solid #f80000;
+  color: #EABE3F;
+  border: 0.05rem solid #EABE3F;
 }
 
 @media only screen and (max-width: 800px) {
@@ -77,4 +65,4 @@ body .fiestas .stop:hover {
   }
 }
 
-/*# sourceMappingURL=stylenavidad.css.map */
+/*# sourceMappingURL=styleanonuevo.css.map */

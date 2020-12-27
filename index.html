@@ -47,7 +47,6 @@
 
 
 
-    <script type="text/javascript" src="/src/app/navidad/navidad.js"></script>
 
     <script type="text/javascript" src="/src/app/nav/nav.js"></script>
     <script type="text/javascript" src="/src/assets/funciones/nav.js"></script>
@@ -69,9 +68,7 @@
     <script type="text/javascript" src="/src/app/textoslegales/avisolegal.js"></script>
     <script type="text/javascript" src="/src/app/textoslegales/politicadecookies.js"></script>
 
-    <script type="text/javascript">
-        stilosFiesta();
-    </script>
+    
     <!-- Vendor CSS Files -->
 
     <link href="/src/assets/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -124,8 +121,9 @@
     </section>
     <div class="fiestas">
         <img id="adorno" src="">
+        <button id="stop" class="stop"  style="display:none;" onclick="stilosFiesta('stop')" type="button">Parar </button>
         <script type="text/javascript">
-            stilosFiesta();
+            stilosFiesta('anoNuevo');
         </script>
     </div>
    

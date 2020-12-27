@@ -17,9 +17,30 @@
 //     setTimeout(showSlides, 2000);
 // };
 
-function stilosFiesta() {
-  console.log("Laostia");
+function stilosFiesta(id) {
+  console.log(id);
   // $archivo="/src/assets/style/css/styles/navidad.css"
-  document.getElementById("cssArchivo").href ="/src/assets/style/css/styles/styleNavidad.css";
-  document.getElementById("adorno").src ="/src/assets/images/gifs/noelbailando.gif";
+  switch (id) {
+    case "stop":
+      document.getElementById("stop").style = "display:none";
+      document.getElementById("cssArchivo").href = "";
+      document.getElementById("adorno").src = "";
+      break;
+    case "navidad":
+      document.getElementById("cssArchivo").href =
+        "/src/assets/style/css/styles/styleNavidad.css";
+      document.getElementById("adorno").src =
+        "/src/assets/images/gifs/noelbailando.gif";
+      document.getElementById("stop").style = "display:block";
+      break;
+    case "anoNuevo":
+      document.getElementById("cssArchivo").href =
+        "/src/assets/style/css/styles/styleAnoNuevo.css";
+      document.getElementById("adorno").src =
+        "/src/assets/images/gifs/brindis.gif";
+      document.getElementById("stop").style = "display:block";
+      break;
+    default:
+      break;
+  }
 }

@@ -1,24 +1,11 @@
 //@import "../mixins/mixins.scss";
 @import "../variables/variables.scss";
 @import "../funciones/funciones.scss";
-@font-face {
-  font-family: "supercell";
-  src: url(../../../fuentes/supercell-magic-webfont.ttf) format("truetype");
-}
-@font-face {
-  font-family: "FontAwesome";
-  src: url("fontawesome-webfont.woff");
-}
-@font-face {
-  font-family: "titanium";
-  src: url(../../../fuentes/pricedow.ttf) format("truetype");
-}
 
 html,
 body {
-  background-image: url("../../../images/icons/snow.png"),
-    url("../../../images/icons/snow2.png"),
-    url("../../../images/icons/snow3.png");
+  background-image: url("../../../images/gifs/brillo.gif"),;
+  
   animation: snow 20s linear infinite;
   /*Keyframes*/
   @keyframes snow {
@@ -36,21 +23,20 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0rem 0rem 0rem 1rem;
-
     z-index: 1000;
     position: fixed; //para que siga la pagina
     // position: -webkit-fixed;  // required for Safari
     bottom: 4rem;
     img {
-      width: 15rem;
+      width: 10rem;
     }
     .stop {
       border: none;
-      background: $azul;
+      background: $oro;
       color: #fff;
       width: 100%;
       padding: 0.5rem 0rem 0.5rem 0rem;
-      border: 0.1rem solid $rojo;
+      border: 0.1rem solid $oro;
       font-size: calc(0.5rem + 1vw);
       cursor: pointer;
       border: 0.05rem solid white;
@@ -58,8 +44,8 @@ body {
     }
     .stop:hover {
       background-color: white;
-      color: $rojo;
-      border: 0.05rem solid $rojo;
+      color: $oro;
+      border: 0.05rem solid $oro;
     }
   }
 }

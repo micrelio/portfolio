@@ -3,7 +3,7 @@
 ------------------------------------------ */
 .social-media {
   padding: 0;
-  background-color: #00C6EE;
+  background-color: #EABE3F;
   border: 0.05rem solid black;
 }
 
@@ -38,7 +38,7 @@
   width: 100%;
 }
 .stick .nav {
-  border-bottom: 0.05rem solid #00C6EE;
+  border-bottom: 0.05rem solid #EABE3F;
   box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
   background-color: rgba(0, 0, 0, 0.438);
 }
@@ -52,7 +52,7 @@
   height: 100%;
   margin-left: calc(10px + 1vw);
   border-radius: 75%;
-  border: 0.05rem solid #00C6EE;
+  border: 0.05rem solid #EABE3F;
   width: calc(3vw + 3rem);
   box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
 }
@@ -80,13 +80,13 @@
   justify-content: center;
   cursor: pointer;
   margin: 0 0 0 0;
-  color: #00C6EE;
+  color: #EABE3F;
   padding: 1.6rem 0.5rem 1.6rem 0.5rem;
   min-width: 8rem;
   background-color: rgba(0, 0, 0, 0.582);
   font-size: 1.6rem;
   font-weight: bold;
-  border: 0.05rem solid #00C6EE;
+  border: 0.05rem solid #EABE3F;
   border-radius: 0.9rem;
 }
 .stick .nav .navbar .menu .links .inicio {
@@ -154,7 +154,7 @@
   }
 
   .movil {
-    border-bottom: 0.05rem solid #00C6EE;
+    border-bottom: 0.05rem solid #EABE3F;
     display: block;
     display: flex;
     flex-direction: column;
@@ -175,7 +175,7 @@
   .movil .imagenes .foto img {
     display: block;
     border-radius: 75%;
-    border: 3px double #00C6EE;
+    border: 3px double #EABE3F;
     width: calc(4vw + 5rem);
     box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
   }
@@ -197,10 +197,10 @@
   .movil .desplegable .enlace {
     margin: 1rem;
     border: 0;
-    color: #00C6EE;
+    color: #EABE3F;
     cursor: pointer;
     font-size: 3rem;
-    font-color: #00C6EE;
+    font-color: #EABE3F;
   }
   .movil .desplegable .mnav-link {
     display: block;

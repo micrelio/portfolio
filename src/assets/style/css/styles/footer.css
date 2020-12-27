@@ -10,7 +10,7 @@
   display: inline-block;
   bottom: 0;
   width: 100%;
-  border-top: 0.1rem solid #00C6EE;
+  border-top: 0.1rem solid #EABE3F;
   background-color: black;
 }
 * footer .footerContainer {
@@ -55,7 +55,7 @@
 * footer .footerContainer .paginas input[type=email] {
   border: none;
   width: 100%;
-  border: 0.1rem solid #00C6EE;
+  border: 0.1rem solid #EABE3F;
   font-size: calc(1rem + 1vw);
   padding: 1.5rem;
   border-radius: 0.9rem;
@@ -64,11 +64,11 @@
 * footer .footerContainer .direccion input[type=submit],
 * footer .footerContainer .paginas input[type=submit] {
   border: none;
-  background: #00C6EE;
+  background: #EABE3F;
   color: #fff;
   width: 50%;
   padding: 1rem 0rem 1rem 0rem;
-  border: 0.1rem solid #00C6EE;
+  border: 0.1rem solid #EABE3F;
   font-size: calc(1rem + 1vw);
   margin-top: 2rem;
   cursor: pointer;
@@ -110,7 +110,7 @@
   display: flex;
   width: 100%;
   background: #000;
-  border-top: 0.1rem solid #00C6EE;
+  border-top: 0.1rem solid #EABE3F;
 }
 * footer .redes .propiedad {
   width: 100%;
@@ -134,7 +134,7 @@
   width: 100%;
   color: #fff;
   padding: 2rem;
-  border-bottom: 0.1rem solid #00C6EE;
+  border-bottom: 0.1rem solid #EABE3F;
 }
 * footer .redes .politicas {
   display: flex;
@@ -160,7 +160,7 @@
 footer .footerContainer .direccion h3,
 footer .footerContainer .paginas h3 {
     font-size: 4rem;
-    color: #00C6EE;
+    color: #EABE3F;
     margin-bottom: 1.5rem;
   }
   footer .footerContainer .contacto p,

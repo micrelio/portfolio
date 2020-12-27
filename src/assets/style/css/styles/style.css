@@ -14,7 +14,7 @@
 .head {
   width: 100%;
   position: relative;
-  border-bottom: 0.05rem solid #00C6EE;
+  border-bottom: 0.05rem solid #EABE3F;
 }
 .head img {
   width: 100%;
@@ -37,32 +37,46 @@ body {
 html h1,
 body h1 {
   font-size: 5rem;
-  color: #00C6EE;
+  color: #EABE3F;
   margin: 5rem 0rem 1rem 0rem;
   text-align: center;
 }
 html h2,
 body h2 {
   font-size: 4rem;
-  color: #00C6EE;
+  color: #EABE3F;
   margin: 0rem 0rem 0rem 0rem;
 }
 html h3,
 body h3 {
   font-size: 3rem;
-  color: #00C6EE;
+  color: #EABE3F;
   margin: 0rem 0rem 0rem 0rem;
 }
 html h4,
 body h4 {
   font-size: 2rem;
-  color: #00C6EE;
+  color: #EABE3F;
   margin: 5rem 0rem 1rem 0rem;
 }
 html p,
 body p {
   font-size: 2rem;
   color: blanchedalmond;
+}
+html ul,
+body ul {
+  margin: 2rem 0rem 2rem 2rem;
+}
+html ul li,
+body ul li {
+  color: #EABE3F;
+  font-size: 2.5rem;
+  margin: 0rem 0rem 0rem 1rem;
+}
+html ul li a > p,
+body ul li a > p {
+  color: #EABE3F;
 }
 html .primera,
 body .primera {
@@ -80,7 +94,7 @@ body .primera img {
 html .fa-arrow-alt-circle-up,
 body .fa-arrow-alt-circle-up {
   z-index: 1000;
-  color: #00C6EE;
+  color: #EABE3F;
   font-size: 5rem;
   display: block;
   display: none;

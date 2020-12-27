@@ -30,26 +30,15 @@
   text-shadow: 0.2em 0.2em 0.3em black;
 }
 .inicio e {
-  color: #00C6EE;
+  color: #EABE3F;
   cursor: pointer;
 }
 .inicio a {
-  color: #00C6EE;
+  color: #EABE3F;
   text-decoration: none;
 }
 .inicio p {
   text-shadow: 0.1em 0.1em 0.1em gray;
-}
-.inicio ul {
-  margin: 2rem 0rem 2rem 2rem;
-}
-.inicio ul li {
-  color: #00C6EE;
-  font-size: 2.5rem;
-  margin: 0rem 0rem 0rem 5rem;
-}
-.inicio ul li a > p {
-  color: #00C6EE;
 }
 
 /*# sourceMappingURL=inicio.css.map */
