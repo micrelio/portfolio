@@ -2,12 +2,7 @@
 @import "../variables/variables.scss";
 .legales {
   padding: 5rem;
-  h1 {
-    text-align: center;
-    color: $azul;
-    -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
-    text-shadow: 0.2em 0.2em 0.3em black;
-  }
+ 
   h2,
   h3,
   h4{

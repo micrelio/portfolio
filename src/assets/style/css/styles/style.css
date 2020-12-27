@@ -77,15 +77,6 @@ html .primera img,
 body .primera img {
   width: 50vh;
 }
-html .fiestas,
-body .fiestas {
-  position: fixed;
-  bottom: 4rem;
-}
-html .fiestas img,
-body .fiestas img {
-  width: 20rem;
-}
 html .fa-arrow-alt-circle-up,
 body .fa-arrow-alt-circle-up {
   z-index: 1000;
