@@ -36,6 +36,18 @@ class miCurriculum extends HTMLElement {
     <h1>Formación académica</h1>
 </div>
 <section class="datos">
+<div class="experiencia">
+        <div class="logotipo">
+            <a href="https://ocupacio.quartdepoblet.es/index.php/es/formacio"target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/quart.jpg"></a>
+        </div>
+        <div class="descripcion">
+            <p class="año">2020</p><br>
+            <p>Cert. profesionalidad “Operaciones básicas montaje y mantenimiento de instalaciones de energías renovables” (540 h).  <a href="https://ocupacio.quartdepoblet.es/index.php/es/formacio"target="_blank">CED Quart de Poblet</a>.</p>
+        </div>
+        <div class="titulo">
+                <a href="/src/assets/images/titulos/GreeksHubs.jpg" target="_blank"><img alt="" src="/src/assets/images/icons/titulo.png"></a>
+        </div>
+    </div>
     <div class="experiencia">
         <div class="logotipo">
             <a href="https://geekshubs.com/"target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/GeeksHubs.jpg"></a>

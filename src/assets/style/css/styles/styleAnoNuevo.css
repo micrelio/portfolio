@@ -1,7 +1,6 @@
 html,
 body {
   background-image: url("../../../images/gifs/brillo.gif");
-  animation: snow 20s linear infinite;
   /*Keyframes*/
 }
 @keyframes snow {
