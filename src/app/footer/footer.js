@@ -19,8 +19,8 @@ class miFooter extends HTMLElement {
       <h3>Dirección</h3>
       <div class="datos">
         <div>        
-          <p><i class="fa fa-map-marker"></i> <a href="https://goo.gl/maps/9UUDsgCz7YnERqvD6" target="_blank">Valencia - España</a></p> 
-          <p><i class="fa fa-phone"></i> <a href="tel:+34653251983">(+34) 653 251 983</a> </p>
+          <p><a href="https://goo.gl/maps/9UUDsgCz7YnERqvD6" target="_blank"><i class="fa fa-map-marker"></i>  Valencia - España</a></p> 
+          <p><a href="tel:+34653251983"><i class="fa fa-phone"></i> (+34) 653 251 983</a> </p>
           <p><i class="fa fa-envelope"></i> microa4@gmail.com</p>
         </div>
       </div>
@@ -41,7 +41,7 @@ class miFooter extends HTMLElement {
         <a target="blank" class="iconSocial" href="https://www.youtube.com/channel/UCMEv1Jj16ypsAXmZXOkKrQA" target="_blank"><img style="" src="/src/assets/images/icons/social/youtube.png"></a>
         <a target="blank" class="iconSocial" href="https://www.instagram.com/micrelio.dev/" target="_blank"><img style="" src="/src/assets/images/icons/social/instagram.png"></a>
         <a target="blank" class="iconSocial" href="https://twitter.com/Micrelio" target="_blank"><img style="" src="/src/assets/images/icons/social/twitter.png"></a>
-        <a target="blank" class="iconSocial" title="Facebook"href="https://www.facebook.com/micro6" target="_blank"><img style="" src="/src/assets/images/icons/social/facebook.png"></a>
+        <a target="blank" class="iconSocial" title="Facebook" href="https://www.facebook.com/micro6" target="_blank"><img style="" src="/src/assets/images/icons/social/facebook.png"></a>
         <a target="blank" class="iconSocial" href="https://wa.me/34653251983/" target="_blank"><img style="" src="/src/assets/images/icons/social/whatsapp.png"></a>                    
         <a target="blank" class="iconSocial" href="https://www.linkedin.com/in/jos%C3%A9-antonio-l%C3%B3pez-baena-65833016a/" target="_blank"><img style="" src="/src/assets/images/icons/social/linkedin.png"></a>
         <a target="blank" class="iconSocial" href="https://github.com/micrelio" target="_blank"><img style="" src="/src/assets/images/icons/social/github.png"></a>
