@@ -9,14 +9,14 @@ class miFooter extends HTMLElement {
   </div>
   <div class="footerContainer">
     <div class="contacto">
-      <h3>Contactar</h3>
+      <h2>Contactar</h2>
       <span class="">
         <input type="email" placeholder="Escriba su Correo">
         <input type="submit" value=" Suscribirse">
       </span>
     </div>
     <div class="direccion"> 
-      <h3>Dirección</h3>
+      <h2>Dirección</h2>
       <div class="datos">
         <div>        
           <p><a href="https://goo.gl/maps/9UUDsgCz7YnERqvD6" target="_blank"><i class="fa fa-map-marker"></i>  Valencia - España</a></p> 
@@ -26,7 +26,7 @@ class miFooter extends HTMLElement {
       </div>
     </div>
     <div class="paginas">
-      <h3>Diseños</h3>
+      <h2>Diseños</h2>
       <span class="diseños">
         <div>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur repellat autem, error iste

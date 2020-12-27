@@ -29,13 +29,7 @@
         flex-direction: column;
         align-items: center;
         margin: 0rem 1rem 0rem 1rem;
-        h3 {
-          font-size: 4rem;
-          //color: $azul;
-          margin-bottom: 1.5rem;
-          -webkit-text-stroke: 0.05rem #000;
-          text-shadow: 0.1rem 0.1rem 0.3rem white;
-        }
+        
         p {
           font-size: 2rem;
           font-size: calc(1rem + 1vw);
@@ -152,7 +146,7 @@
       .contacto,
       .direccion,
       .paginas {
-        h3 {
+        h2 {
           font-size: 4rem;
           color: $azul;
           margin-bottom: 1.5rem;

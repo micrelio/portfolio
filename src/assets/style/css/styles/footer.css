@@ -30,14 +30,6 @@
   align-items: center;
   margin: 0rem 1rem 0rem 1rem;
 }
-* footer .footerContainer .contacto h3,
-* footer .footerContainer .direccion h3,
-* footer .footerContainer .paginas h3 {
-  font-size: 4rem;
-  margin-bottom: 1.5rem;
-  -webkit-text-stroke: 0.05rem #000;
-  text-shadow: 0.1rem 0.1rem 0.3rem white;
-}
 * footer .footerContainer .contacto p,
 * footer .footerContainer .direccion p,
 * footer .footerContainer .paginas p {
@@ -156,9 +148,9 @@
   footer .footerContainer {
     flex-wrap: wrap;
   }
-  footer .footerContainer .contacto h3,
-footer .footerContainer .direccion h3,
-footer .footerContainer .paginas h3 {
+  footer .footerContainer .contacto h2,
+footer .footerContainer .direccion h2,
+footer .footerContainer .paginas h2 {
     font-size: 4rem;
     color: #EABE3F;
     margin-bottom: 1.5rem;

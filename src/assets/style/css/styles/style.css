@@ -40,24 +40,32 @@ body h1 {
   color: #EABE3F;
   margin: 5rem 0rem 1rem 0rem;
   text-align: center;
+  -webkit-text-stroke: 0.05rem #ddd8d8;
+  text-shadow: 0.2em 0.2em 0.3em black;
 }
 html h2,
 body h2 {
   font-size: 4rem;
   color: #EABE3F;
   margin: 0rem 0rem 0rem 0rem;
+  -webkit-text-stroke: 0.05rem #ddd8d8;
+  text-shadow: 0.2rem 0.2rem 0.3rem black;
 }
 html h3,
 body h3 {
   font-size: 3rem;
   color: #EABE3F;
   margin: 0rem 0rem 0rem 0rem;
+  -webkit-text-stroke: 0.04rem #ddd8d8;
+  text-shadow: 0.2em 0.2em 0.3em black;
 }
 html h4,
 body h4 {
   font-size: 2rem;
   color: #EABE3F;
   margin: 5rem 0rem 1rem 0rem;
+  -webkit-text-stroke: 0.03rem #ddd8d8;
+  text-shadow: 0.2em 0.2em 0.3em black;
 }
 html p,
 body p {

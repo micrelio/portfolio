@@ -2,16 +2,6 @@
 .legales {
   padding: 5rem;
 }
-.legales h2,
-.legales h3,
-.legales h4 {
-  -webkit-text-stroke: 0.05rem #ddd8d8;
-  text-shadow: 0.2em 0.2em 0.3em black;
-}
-.legales h4 {
-  -webkit-text-stroke: 0.03rem #ddd8d8;
-  text-shadow: 0.2em 0.2em 0.3em black;
-}
 .legales e {
   color: #EABE3F;
   cursor: pointer;

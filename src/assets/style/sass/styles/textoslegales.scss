@@ -2,18 +2,7 @@
 @import "../variables/variables.scss";
 .legales {
   padding: 5rem;
- 
-  h2,
-  h3,
-  h4{
-    -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
-    text-shadow: 0.2em 0.2em 0.3em black;
-  }
-  h4{
-    -webkit-text-stroke: 0.03rem rgb(221, 216, 216);
-    text-shadow: 0.2em 0.2em 0.3em black;
-  }
-  e {
+   e {
     color: $azul;
     cursor: pointer;
   }
@@ -23,7 +12,6 @@
   }
     p {
         text-shadow: 0.1em 0.1em 0.1em gray;
-
     }
     ul {
     margin: 2rem 0rem 2rem 2rem;
