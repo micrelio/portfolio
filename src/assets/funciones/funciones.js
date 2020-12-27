@@ -16,3 +16,9 @@
 //     slides[slideIndex - 1].style.display = "block";
 //     setTimeout(showSlides, 2000);
 // };
+
+function cambiarArchivoCss() {
+    console.log(`Laostia`)
+   // $archivo="/src/assets/style/css/styles/navidad.css"
+    document.getElementById('cssArchivo').href="/src/assets/style/css/styles/navidad.css";
+    }

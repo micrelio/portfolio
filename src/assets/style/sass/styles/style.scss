@@ -1,5 +1,6 @@
 @import "../mixins/mixins.scss";
 @import "../variables/variables.scss";
+@import "../funciones/funciones.scss";
 @font-face {
   font-family: "supercell";
   src: url(../../../fuentes/supercell-magic-webfont.ttf) format("truetype");
@@ -28,8 +29,9 @@ body {
   width: 100%;
   height: 100%;
   background: {
-    color: $gris;
+    color: fechas();
   }
+
   font: {
     family: Arial;
     size: 62.5%;
@@ -38,13 +40,12 @@ body {
     font-size: 5rem;
     color: $azul;
     margin: 5rem 0rem 1rem 0rem;
-    text-align:center;
+    text-align: center;
   }
   h2 {
     font-size: 4rem;
     color: $azul;
     margin: 0rem 0rem 0rem 0rem;
-    
   }
   h3 {
     font-size: 3rem;
@@ -83,11 +84,11 @@ body {
     bottom: 15rem;
     right: 2rem;
     border-radius: 100px;
-     -webkit-text-stroke: 0.1rem gray;
+    -webkit-text-stroke: 0.1rem gray;
     text-shadow: 0.2rem 0.2rem 0.5rem black;
     //   border: 0.25rem solid white;
     background: {
-     color: white;
+      color: white;
     }
-    }
+  }
 }

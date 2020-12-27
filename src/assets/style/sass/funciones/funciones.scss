@@ -1,2 +1,14 @@
+
 @import "../variables/variables.scss";
-@import "../mixins/mixins.scss";
+
+@function fechas(){
+   // $gris: "";
+    @return  #272727;
+  }
+
+  
+//   .uno {
+//     width: fechas();
+//     background-color: orange;
+//     text-align: center;
+//   }
