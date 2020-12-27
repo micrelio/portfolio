@@ -33,11 +33,11 @@ body {
     }
     .stop {
       border: none;
-      background: $oro;
-      color: #fff;
+      background: $azul;
+      color: black;
       width: 100%;
       padding: 0.5rem 0rem 0.5rem 0rem;
-      border: 0.1rem solid $oro;
+      border: 0.1rem solid $azul;
       font-size: calc(0.5rem + 1vw);
       cursor: pointer;
       border: 0.05rem solid white;
@@ -45,8 +45,8 @@ body {
     }
     .stop:hover {
       background-color: white;
-      color: $oro;
-      border: 0.05rem solid $oro;
+      color: black;
+      border: 0.05rem solid $azul;
     }
   }
 }

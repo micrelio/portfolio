@@ -14,7 +14,7 @@
 .head {
   width: 100%;
   position: relative;
-  border-bottom: 0.05rem solid #EABE3F;
+  border-bottom: 0.05rem solid #ffff00;
 }
 .head img {
   width: 100%;
@@ -37,7 +37,7 @@ body {
 html h1,
 body h1 {
   font-size: 5rem;
-  color: #EABE3F;
+  color: #ffff00;
   margin: 5rem 0rem 1rem 0rem;
   text-align: center;
   -webkit-text-stroke: 0.05rem #ddd8d8;
@@ -46,7 +46,7 @@ body h1 {
 html h2,
 body h2 {
   font-size: 4rem;
-  color: #EABE3F;
+  color: #ffff00;
   margin: 0rem 0rem 0rem 0rem;
   -webkit-text-stroke: 0.05rem #ddd8d8;
   text-shadow: 0.2rem 0.2rem 0.3rem black;
@@ -54,7 +54,7 @@ body h2 {
 html h3,
 body h3 {
   font-size: 3rem;
-  color: #EABE3F;
+  color: #ffff00;
   margin: 0rem 0rem 0rem 0rem;
   -webkit-text-stroke: 0.04rem #ddd8d8;
   text-shadow: 0.2em 0.2em 0.3em black;
@@ -62,7 +62,7 @@ body h3 {
 html h4,
 body h4 {
   font-size: 2rem;
-  color: #EABE3F;
+  color: #ffff00;
   margin: 5rem 0rem 1rem 0rem;
   -webkit-text-stroke: 0.03rem #ddd8d8;
   text-shadow: 0.2em 0.2em 0.3em black;
@@ -78,13 +78,13 @@ body ul {
 }
 html ul li,
 body ul li {
-  color: #EABE3F;
+  color: #ffff00;
   font-size: 2.5rem;
   margin: 0rem 0rem 0rem 1rem;
 }
 html ul li a > p,
 body ul li a > p {
-  color: #EABE3F;
+  color: #ffff00;
 }
 html .primera,
 body .primera {
@@ -102,7 +102,7 @@ body .primera img {
 html .fa-arrow-alt-circle-up,
 body .fa-arrow-alt-circle-up {
   z-index: 1000;
-  color: #EABE3F;
+  color: #ffff00;
   font-size: 5rem;
   display: block;
   display: none;
