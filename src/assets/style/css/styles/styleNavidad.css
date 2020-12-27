@@ -31,8 +31,19 @@ body {
   width: 100%;
   height: 100%;
   background-color: #272727;
+  background-image: url("../../../images/icons/snow.png"), url("../../../images/icons/snow2.png"), url("../../../images/icons/snow3.png");
+  animation: snow 20s linear infinite;
+  /*Keyframes*/
   font-family: Arial;
   font-size: 62.5%;
+}
+@keyframes snow {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 500px 1000px, 400px 400px, 300px 300px;
+  }
 }
 html h1,
 body h1 {
@@ -77,15 +88,6 @@ html .primera img,
 body .primera img {
   width: 50vh;
 }
-html .fiestas,
-body .fiestas {
-  position: fixed;
-  bottom: 4rem;
-}
-html .fiestas img,
-body .fiestas img {
-  width: 20rem;
-}
 html .fa-arrow-alt-circle-up,
 body .fa-arrow-alt-circle-up {
   z-index: 1000;
@@ -103,4 +105,4 @@ body .fa-arrow-alt-circle-up {
   background-color: white;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styleNavidad.css.map */

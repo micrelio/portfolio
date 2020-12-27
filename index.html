@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="/src/assets/style/css/styles/biografia.css" media="screen" />
     <link rel="stylesheet" href="/src/assets/style/css/styles/inicio.css" media="screen" />
 
+    <link rel="stylesheet" href="/src/assets/style/css/styles/navidad.css" media="screen" />
 
     <link rel="stylesheet" href="/src/assets/style/css/styles/style.css" media="screen" />
     <link rel="stylesheet" href="/src/assets/style/css/styles/galeria.css" media="screen" />
@@ -32,10 +33,10 @@
     <link rel="stylesheet" href="/src/assets/style/css/styles/cookies.css" media="screen" />
     <link rel="stylesheet" href="/src/assets/style/css/styles/textoslegales.css" media="screen" />
 
-   <link href="" id="cssArchivo" rel="stylesheet" type="text/css" />
+    <link href="" id="cssArchivo" rel="stylesheet" type="text/css" />
 
 
-    
+
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
@@ -46,6 +47,7 @@
 
 
 
+    <script type="text/javascript" src="/src/app/navidad/navidad.js"></script>
 
     <script type="text/javascript" src="/src/app/nav/nav.js"></script>
     <script type="text/javascript" src="/src/assets/funciones/nav.js"></script>
@@ -66,13 +68,13 @@
     <script type="text/javascript" src="/src/app/textoslegales/politicadeprivacidad.js"></script>
     <script type="text/javascript" src="/src/app/textoslegales/avisolegal.js"></script>
     <script type="text/javascript" src="/src/app/textoslegales/politicadecookies.js"></script>
-    
-    <script type="text/javascript">
-        cambiarArchivoCss();
-    </script>
-<!-- Vendor CSS Files -->
 
-<link href="/src/assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <script type="text/javascript">
+        stilosFiesta();
+    </script>
+    <!-- Vendor CSS Files -->
+
+    <link href="/src/assets/boxicons/css/boxicons.min.css" rel="stylesheet">
 
 
 
@@ -107,6 +109,7 @@
 <mi-nav></mi-nav>
 
 <body id="body">
+
     <!-- <section class="head">
 
         <img src="/src/assets/images/banners/rocas.jpg">
@@ -117,9 +120,19 @@
     <i class=" arriba fas fa-arrow-alt-circle-up"></i>
 
     <section id="componente">
+        
         <mi-inicio></mi-inicio>
+        
+        <div class="fiestas">
+            <img id="adorno" src="">
+            <script type="text/javascript">
+                stilosFiesta();
+            </script>
+        </div>
     </section>
+   
 </body>
+
 <mi-footer></mi-footer>
 
 <mi-cookies></mi-cookies>

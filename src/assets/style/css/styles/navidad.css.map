@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../sass/styles/navidad.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EAEE;EAEF;EACA;EAEE;EACA;;;AAGF;AACJ;EACI;IACE;;EAGF;IACE","file":"navidad.css"}
+{"version":3,"sourceRoot":"","sources":["../../sass/mixins/mixins.scss","../../sass/styles/navidad.scss"],"names":[],"mappings":"AAgOA;AC7NA;EACE;EACA;;AAEF;EACI;EACA","file":"navidad.css"}

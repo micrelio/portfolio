@@ -31,6 +31,18 @@ body {
   background: {
     color: $gris;
   }
+  background-image: url("../../../images/icons/snow.png"), url("../../../images/icons/snow2.png"), url("../../../images/icons/snow3.png"); 
+    animation: snow 20s linear infinite;
+    /*Keyframes*/
+@keyframes snow {
+    0% {
+      background-position: 0px 0px;
+    }
+  
+    100% {
+      background-position: 500px 1000px, 400px 400px, 300px 300px;
+    }
+  }
 
   font: {
     family: Arial;
@@ -71,19 +83,6 @@ body {
     img {
       width: 50vh;
     }
-  }
-  .fiestas {
-    //z-index: 1000;
-    position: fixed; //para que siga la pagina
-    // position: -webkit-fixed;  // required for Safari
-    bottom: 4rem;
-   // background-color: khaki;
-   // width: 1rem;
-   //height: 0.5rem;
-    img{
-      width: 20rem;
-    }
-  
   }
   .fa-arrow-alt-circle-up {
     z-index: 1000;

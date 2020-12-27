@@ -2,7 +2,7 @@
 // showSlides();
 
 // function showSlides() {
-    
+
 //     console.log('KKKKKK');
 //     var i;
 //     var slides = document.getElementsByClassName("mySlides");
@@ -17,8 +17,9 @@
 //     setTimeout(showSlides, 2000);
 // };
 
-function cambiarArchivoCss() {
-    console.log(`Laostia`)
-   // $archivo="/src/assets/style/css/styles/navidad.css"
-    document.getElementById('cssArchivo').href="/src/assets/style/css/styles/navidad.css";
-    }
+function stilosFiesta() {
+  console.log("Laostia");
+  // $archivo="/src/assets/style/css/styles/navidad.css"
+  document.getElementById("cssArchivo").href ="/src/assets/style/css/styles/styleNavidad.css";
+  document.getElementById("adorno").src ="/src/assets/images/gifs/noelbailando.gif";
+}
