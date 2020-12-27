@@ -40,6 +40,13 @@ function stilosFiesta(id) {
         "/src/assets/images/gifs/brindis.gif";
       document.getElementById("stop").style = "display:block";
       break;
+      case "reyes":
+      document.getElementById("cssArchivo").href =
+        "/src/assets/style/css/styles/styleReyes.css";
+      document.getElementById("adorno").src =
+        "/src/assets/images/gifs/reyes.gif";
+      document.getElementById("stop").style = "display:block";
+      break;
     default:
       break;
   }

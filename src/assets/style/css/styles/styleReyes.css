@@ -1,7 +1,8 @@
+/* hovers*/
 html,
 body {
-  background-image: url("../../../images/gifs/brillo.gif");
-  animation: snow 20s linear infinite;
+  background-image: url("../../../images/gifs/fugaz.gif");
+  animation: snow 0s linear infinite;
   /*Keyframes*/
 }
 @keyframes snow {
@@ -24,7 +25,8 @@ body .fiestas {
 }
 html .fiestas img,
 body .fiestas img {
-  width: 10rem;
+  width: 15rem;
+  margin: 0rem 0rem 1em 0rem;
 }
 html .fiestas .stop,
 body .fiestas .stop {
@@ -65,4 +67,4 @@ body .fiestas .stop:hover {
   }
 }
 
-/*# sourceMappingURL=styleAnoNuevo.css.map */
+/*# sourceMappingURL=stylereyes.css.map */
