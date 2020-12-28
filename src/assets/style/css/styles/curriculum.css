@@ -13,13 +13,13 @@
   justify-content: center;
 }
 .descripcion .año {
-  color: #f80000;
+  color: #e9d58d;
 }
 
 h1 {
   font-size: calc(3rem + 1vw);
   margin-top: 5rem;
-  color: #f80000;
+  color: #e9d58d;
 }
 
 p {
@@ -28,7 +28,7 @@ p {
 }
 
 a:visited {
-  color: #f80000;
+  color: #e9d58d;
   font-family: arial;
   text-decoration: none;
 }
@@ -47,13 +47,13 @@ a:visited {
   justify-content: space-between;
   align-items: center;
   color: white;
-  border: 0.2rem solid #f80000;
+  border: 0.2rem solid #e9d58d;
   overflow: hidden;
   border-radius: 1rem;
   background-color: #000;
 }
 .datos .datosPersonales h {
-  color: #f80000;
+  color: #e9d58d;
 }
 .datos .datosPersonales .foto .dni {
   width: calc(20rem + 10vw);
@@ -78,7 +78,7 @@ a:visited {
   display: flex;
   flex-direction: row;
   align-items: center;
-  border: 0.2rem solid #f80000;
+  border: 0.2rem solid #e9d58d;
   margin-bottom: 5rem;
   width: 95vw;
   background-color: black;
@@ -127,7 +127,7 @@ a:visited {
   transform: scale(1.15);
 }
 .datos .interes {
-  border: 0.1rem solid #f80000;
+  border: 0.1rem solid #e9d58d;
   width: 95vw;
   padding: 2rem;
   border-radius: 1rem;
@@ -138,16 +138,16 @@ a:visited {
 }
 .datos a:link {
   text-decoration: none;
-  color: #f80000;
+  color: #e9d58d;
 }
 .datos a:visited {
-  color: #f80000;
+  color: #e9d58d;
 }
 .datos a:active {
-  color: #f80000;
+  color: #e9d58d;
 }
 .datos a:hover {
-  color: #f80000;
+  color: #e9d58d;
 }
 
 @media only screen and (max-width: 700px) {
@@ -160,7 +160,7 @@ a:visited {
   h1 {
     font-size: calc(1.5rem + 4vw);
     margin-top: 5rem;
-    color: #f80000;
+    color: #e9d58d;
   }
 
   p {
@@ -184,7 +184,7 @@ a:visited {
     align-items: center;
     color: white;
     padding: 3rem;
-    border: 0.1rem solid #f80000;
+    border: 0.1rem solid #e9d58d;
     width: 85%;
     height: auto;
     overflow: hidden;
@@ -192,7 +192,7 @@ a:visited {
     background-color: black;
   }
   .datos .datosPersonales h {
-    color: #f80000;
+    color: #e9d58d;
   }
   .datos .datosPersonales .dni {
     height: auto;
@@ -207,7 +207,7 @@ a:visited {
     margin-top: 1.5rem;
   }
   .datos .interes {
-    border: 0.1rem solid #f80000;
+    border: 0.1rem solid #e9d58d;
     width: 85%;
     padding: 2rem;
     border-radius: 1rem;
@@ -246,7 +246,7 @@ a:visited {
     text-decoration: none;
   }
   .datos .experiencia a:hover {
-    color: #f80000;
+    color: #e9d58d;
   }
   .datos .experiencia .titulo {
     padding: 2rem;

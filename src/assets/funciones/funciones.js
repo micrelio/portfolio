@@ -46,6 +46,7 @@ function fecha(id) {
   } else if (total > "1228") {
     festivo = "anoNuevo";
   }
+  // festivo='navidad'
   switch (festivo) {
     case "stop":
       document.getElementById("stop").style = "display:none";

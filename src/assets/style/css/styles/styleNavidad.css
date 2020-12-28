@@ -1,3 +1,120 @@
+/* hovers*/
+@font-face {
+  font-family: "supercell";
+  src: url(../../../fuentes/supercell-magic-webfont.ttf) format("truetype");
+}
+@font-face {
+  font-family: "FontAwesome";
+  src: url("fontawesome-webfont.woff");
+}
+@font-face {
+  font-family: "titanium";
+  src: url(../../../fuentes/pricedow.ttf) format("truetype");
+}
+.head {
+  width: 100%;
+  position: relative;
+  border-bottom: 0.05rem solid #e9d58d;
+}
+.head img {
+  width: 100%;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  width: 100%;
+  height: 100%;
+  background-color: #272727;
+  font-family: Arial;
+  font-size: 62.5%;
+}
+html h1,
+body h1 {
+  font-size: 5rem;
+  color: #e9d58d;
+  margin: 2rem 0rem 1rem 0rem;
+  text-align: center;
+  -webkit-text-stroke: 0.05rem #ddd8d8;
+  text-shadow: 0.2em 0.2em 0.3em black;
+}
+html h2,
+body h2 {
+  font-size: 4rem;
+  color: #e9d58d;
+  margin: 2rem 0rem 1rem 0rem;
+  -webkit-text-stroke: 0.05rem #ddd8d8;
+  text-shadow: 0.2rem 0.2rem 0.3rem black;
+}
+html h3,
+body h3 {
+  font-size: 3rem;
+  color: #e9d58d;
+  margin: 1rem 0rem 0.5rem 0rem;
+  -webkit-text-stroke: 0.04rem #ddd8d8;
+  text-shadow: 0.2em 0.2em 0.3em black;
+}
+html h4,
+body h4 {
+  font-size: 2rem;
+  color: #e9d58d;
+  -webkit-text-stroke: 0.03rem #ddd8d8;
+  text-shadow: 0.2em 0.2em 0.3em black;
+}
+html p,
+body p {
+  font-size: 2rem;
+  color: blanchedalmond;
+}
+html ul,
+body ul {
+  margin: 2rem 0rem 2rem 2rem;
+}
+html ul li,
+body ul li {
+  color: #e9d58d;
+  font-size: 2.5rem;
+  margin: 0rem 0rem 0rem 1rem;
+}
+html ul li a > p,
+body ul li a > p {
+  color: #e9d58d;
+}
+html .primera,
+body .primera {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 5%;
+}
+html .primera img,
+body .primera img {
+  width: 50vh;
+}
+html .fa-arrow-alt-circle-up,
+body .fa-arrow-alt-circle-up {
+  z-index: 1000;
+  color: #e9d58d;
+  font-size: 5rem;
+  display: block;
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 15rem;
+  right: 2rem;
+  border-radius: 100px;
+  -webkit-text-stroke: 0.1rem gray;
+  text-shadow: 0.2rem 0.2rem 0.5rem black;
+  background-color: white;
+}
+
 @font-face {
   font-family: "supercell";
   src: url(../../../fuentes/supercell-magic-webfont.ttf) format("truetype");
@@ -80,7 +197,7 @@ body .fiestas .stop:hover {
   }
   body .fiestas .stop {
     padding: 0rem 0rem 0rem 0rem;
-    border: 0.1rem solid #f80000;
+    border: 0.1rem solid #e9d58d;
     font-size: calc(1rem + 0.3vw);
     cursor: pointer;
     border: 0.05rem solid white;

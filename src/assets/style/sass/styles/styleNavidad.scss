@@ -1,6 +1,8 @@
 //@import "../mixins/mixins.scss";
 @import "../variables/variables.scss";
 @import "../funciones/funciones.scss";
+@import "../styles/style.scss";
+
 @font-face {
   font-family: "supercell";
   src: url(../../../fuentes/supercell-magic-webfont.ttf) format("truetype");
@@ -31,14 +33,14 @@ body {
     }
   }
   .felicitacion {
-    #anio{
-    display: none;
+    #anio {
+      display: none;
     }
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-     }
+  }
   .fiestas {
     display: flex;
     flex-direction: column;
@@ -54,7 +56,7 @@ body {
     }
     .stop {
       border: none;
-      background: $corporativo;
+      background: $rojo;
       color: #fff;
       width: 100%;
       padding: 0.5rem 0rem 0.5rem 0rem;

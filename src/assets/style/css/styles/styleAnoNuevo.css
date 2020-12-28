@@ -13,9 +13,14 @@ body {
     background-position: 500px 1000px, 400px 400px, 300px 300px;
   }
 }
+html .felicitacion #feliz,
+body .felicitacion #feliz {
+  color: #eabe3f;
+}
 html .felicitacion #anio,
 body .felicitacion #anio {
   font-size: 10rem;
+  color: #eabe3f;
   margin: 0rem 0rem 0rem 0rem;
   -webkit-text-stroke: 0.1rem #ddd8d8;
   text-shadow: 1rem 1rem 2rem black;
@@ -102,7 +107,7 @@ body .fiestas .stop:hover {
   }
   body .fiestas .stop {
     padding: 0rem 0rem 0rem 0rem;
-    border: 0.1rem solid #f80000;
+    border: 0.1rem solid green;
     font-size: calc(1rem + 0.3vw);
     cursor: pointer;
     border: 0.05rem solid white;

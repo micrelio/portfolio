@@ -5,7 +5,7 @@ class miNav extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <section class="social-media">
-    <div class="social-links">
+    <div class="social-links" >
       <a href="https://www.youtube.com/channel/UCMEv1Jj16ypsAXmZXOkKrQA/" target="_blank" class=""><i class="bx bxl-youtube"></i></a>
       <a href="https://www.instagram.com/micrelio.dev/" target="_blank" class=""><i class="bx bxl-instagram"></i></a>
       <a href="https://twitter.com/Micrelio/" target="_blank" class=""><i class="bx bxl-twitter"></i></a>

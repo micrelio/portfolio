@@ -1,11 +1,11 @@
 @import "../mixins/mixins.scss";
-@import "../variables/variables.scss";
+@import "../variables/variablesrojo.scss";
 @import "../funciones/funciones.scss";
-
+$corporativo: green;
+$fondo: black;
 html,
 body {
-  background-image: url("../../../images/gifs/brillo.gif"),;
-  
+  background-image: url("../../../images/gifs/brillo.gif");
   animation: snow 20s linear infinite;
   /*Keyframes*/
   @keyframes snow {
@@ -17,41 +17,55 @@ body {
       background-position: 500px 1000px, 400px 400px, 300px 300px;
     }
   }
-.felicitacion{
-  #anio{
-    font-size: 10rem;
-
-    margin: 0rem 0rem 0rem 0rem;
-    -webkit-text-stroke: 0.1rem rgb(221, 216, 216);
-    text-shadow: 1rem 1rem 2rem black;
-  
+  .felicitacion {
+    #feliz {
+      color: #eabe3f;
+    }
+    #anio {
+      font-size: 10rem;
+      color: #eabe3f;
+      margin: 0rem 0rem 0rem 0rem;
+      -webkit-text-stroke: 0.1rem rgb(221, 216, 216);
+      text-shadow: 1rem 1rem 2rem black;
       animation-name: parpadeo;
       animation-duration: 2s;
       animation-timing-function: linear;
       animation-iteration-count: infinite;
-    
-     
-    
-    
-    @-moz-keyframes parpadeo{  
-      0% { opacity: 1.0; }
-      50% { opacity: 0.0; }
-      100% { opacity: 1.0; }
-    }
-    
-    @-webkit-keyframes parpadeo {  
-      0% { opacity: 1.0; }
-      50% { opacity: 0.0; }
-       100% { opacity: 1.0; }
-    }
-    
-    @keyframes parpadeo {  
-      0% { opacity: 1.0; }
-       50% { opacity: 0.0; }
-      100% { opacity: 1.0; }
+      @-moz-keyframes parpadeo {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      @-webkit-keyframes parpadeo {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      @keyframes parpadeo {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
     }
   }
-}
   .fiestas {
     display: flex;
     flex-direction: column;

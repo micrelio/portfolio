@@ -3,7 +3,7 @@
 ------------------------------------------ */
 .social-media {
   padding: 0;
-  background-color: #f80000;
+  background-color: #e9d58d;
   border: 0.05rem solid black;
 }
 
@@ -39,7 +39,7 @@
   width: 100%;
 }
 .stick .nav {
-  border-bottom: 0.05rem solid #f80000;
+  border-bottom: 0.05rem solid;
   box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
   background-color: rgba(0, 0, 0, 0.438);
 }
@@ -53,7 +53,7 @@
   height: 100%;
   margin-left: calc(10px + 1vw);
   border-radius: 75%;
-  border: 0.05rem solid #f80000;
+  border: 0.05rem solid #e9d58d;
   width: calc(3vw + 3rem);
   box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
 }
@@ -81,13 +81,13 @@
   justify-content: center;
   cursor: pointer;
   margin: 0 0 0 0;
-  color: #f80000;
+  color: #e9d58d;
   padding: 1.6rem 0.5rem 1.6rem 0.5rem;
   min-width: 8rem;
   background-color: rgba(0, 0, 0, 0.582);
   font-size: 1.6rem;
   font-weight: bold;
-  border: 0.05rem solid #f80000;
+  border: 0.05rem solid #e9d58d;
   border-radius: 0.9rem;
 }
 .stick .nav .navbar .menu .links .inicio {
@@ -155,7 +155,7 @@
   }
 
   .movil {
-    border-bottom: 0.05rem solid #f80000;
+    border-bottom: 0.05rem solid #e9d58d;
     display: block;
     display: flex;
     flex-direction: column;
@@ -176,7 +176,7 @@
   .movil .imagenes .foto img {
     display: block;
     border-radius: 75%;
-    border: 3px double #f80000;
+    border: 3px double #e9d58d;
     width: calc(4vw + 5rem);
     box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
   }
@@ -198,10 +198,10 @@
   .movil .desplegable .enlace {
     margin: 1rem;
     border: 0;
-    color: #f80000;
+    color: #e9d58d;
     cursor: pointer;
     font-size: 3rem;
-    font-color: #f80000;
+    font-color: #e9d58d;
   }
   .movil .desplegable .mnav-link {
     display: block;

@@ -32,11 +32,11 @@ body .fiestas img {
 html .fiestas .stop,
 body .fiestas .stop {
   border: none;
-  background: #f80000;
+  background: #e9d58d;
   color: black;
   width: 100%;
   padding: 0.5rem 0rem 0.5rem 0rem;
-  border: 0.1rem solid #f80000;
+  border: 0.1rem solid #e9d58d;
   font-size: calc(0.5rem + 1vw);
   cursor: pointer;
   border: 0.05rem solid white;
@@ -46,7 +46,7 @@ html .fiestas .stop:hover,
 body .fiestas .stop:hover {
   background-color: white;
   color: black;
-  border: 0.05rem solid #f80000;
+  border: 0.05rem solid #e9d58d;
 }
 
 @media only screen and (max-width: 800px) {
@@ -60,7 +60,7 @@ body .fiestas .stop:hover {
   }
   body .fiestas .stop {
     padding: 0rem 0rem 0rem 0rem;
-    border: 0.1rem solid #f80000;
+    border: 0.1rem solid #e9d58d;
     font-size: calc(1rem + 0.3vw);
     cursor: pointer;
     border: 0.05rem solid white;
