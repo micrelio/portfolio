@@ -17,7 +17,41 @@ body {
       background-position: 500px 1000px, 400px 400px, 300px 300px;
     }
   }
-
+.felicitacion{
+  h1{
+    margin: 2rem 0rem 0rem 0rem;
+    
+  
+      animation-name: parpadeo;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    
+      -webkit-animation-name:parpadeo;
+      -webkit-animation-duration: 1s;
+      -webkit-animation-timing-function: linear;
+      -webkit-animation-iteration-count: infinite;
+    
+    
+    @-moz-keyframes parpadeo{  
+      0% { opacity: 1.0; }
+      50% { opacity: 0.0; }
+      100% { opacity: 1.0; }
+    }
+    
+    @-webkit-keyframes parpadeo {  
+      0% { opacity: 1.0; }
+      50% { opacity: 0.0; }
+       100% { opacity: 1.0; }
+    }
+    
+    @keyframes parpadeo {  
+      0% { opacity: 1.0; }
+       50% { opacity: 0.0; }
+      100% { opacity: 1.0; }
+    }
+  }
+}
   .fiestas {
     display: flex;
     flex-direction: column;

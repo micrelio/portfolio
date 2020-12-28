@@ -32,8 +32,8 @@
     <link rel="stylesheet" href="/src/assets/style/css/styles/cookies.css" media="screen" />
     <link rel="stylesheet" href="/src/assets/style/css/styles/textoslegales.css" media="screen" />
 
-<!-- Enlazado a funcion cambio de  styles -->
-    <link id="cssArchivo"  href="" rel="stylesheet" media="screen" />
+    <!-- Enlazado a funcion cambio de  styles -->
+    <link id="cssArchivo" href="" rel="stylesheet" media="screen" />
 
 
 
@@ -68,7 +68,7 @@
     <script type="text/javascript" src="/src/app/textoslegales/avisolegal.js"></script>
     <script type="text/javascript" src="/src/app/textoslegales/politicadecookies.js"></script>
 
-    
+
     <!-- Vendor CSS Files -->
 
     <link href="/src/assets/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -100,14 +100,22 @@
     <script type="text/javascript">
         nav();
     </script>
-<script type="text/javascript">
-    fecha();
-</script>
+
 
 </head>
 <mi-nav></mi-nav>
 
 <body id="body">
+    <div class="felicitacion">
+        <h1 id="feliz"></h1>
+        <h1 id="anio"></h1>
+                      <script type="text/javascript">
+            // stilosFiesta('reyes');
+        </script>
+        <script type="text/javascript">
+            fecha();
+        </script>
+    </div>
 
     <!-- <section class="head">
 
@@ -119,16 +127,20 @@
     <i class=" arriba fas fa-arrow-alt-circle-up"></i>
 
     <section id="componente">
-                <mi-inicio></mi-inicio>
+        <mi-inicio></mi-inicio>
     </section>
     <div class="fiestas">
         <img id="adorno" src="">
-        <button id="stop" class="stop"  style="display:none;" onclick="stilosFiesta('stop')" type="button">Parar </button>
+        <button id="stop" class="stop" style="display:none;" onclick="fecha('stop')" type="button">Parar
+        </button>
         <script type="text/javascript">
-            stilosFiesta('reyes');
+            // stilosFiesta('reyes');
+        </script>
+        <script type="text/javascript">
+            fecha();
         </script>
     </div>
-   
+
 </body>
 
 <mi-footer></mi-footer>
