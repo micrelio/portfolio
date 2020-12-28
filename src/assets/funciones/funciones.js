@@ -32,7 +32,7 @@ function fecha(id) {
   var mes = 1 + objFecha.getMonth();
   var anio = objFecha.getFullYear();
   var festivo = "";
-  var total = mes+ "" +dia;
+  var total = mes + "" + dia;
   if (id === "stop") {
     festivo = "stop";
   } else if (total > "0100" && total < "0107") {

@@ -146,14 +146,14 @@ function navegar(id) {
         "<mi-galeria><mi-galeria>";
       // window.router.init([
       //   {
-          // path: "/list",
-          // view: "<mi-galeria><mi-galeria>",
+      // path: "/list",
+      // view: "<mi-galeria><mi-galeria>",
       //   },
       // ]);
       // document.getElementById("componente").innerHTML =
       //   "<mi-galeria></mi-galeria>";
       // location.replace("src/app/galeria/galeria.js");
-       break;
+      break;
     case "videos":
       document.getElementById("componente").innerHTML =
         "<mi-videos></mi-videos>";
