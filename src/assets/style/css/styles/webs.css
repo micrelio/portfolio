@@ -20,7 +20,7 @@
 .web .portfolio {
   width: 90%;
   border-radius: 25px;
-  border: 0.05rem solid #eabe3f;
+  border: 0.05rem solid #f80000;
   margin-top: 5rem;
   overflow: hidden;
   background-color: black;
@@ -86,7 +86,7 @@
 .web .titaniumGamers .descripcion p a,
 .web .portfolio .descripcion p a {
   text-decoration: none;
-  color: #eabe3f;
+  color: #00C6EE;
 }
 .web .primeroscoc .descripcion p i,
 .web .guerrasOnline .descripcion p i,
@@ -107,7 +107,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: #eabe3f;
+  color: #00C6EE;
   font-size: 3rem;
   margin-left: 0px;
   animation-name: parpadeo;

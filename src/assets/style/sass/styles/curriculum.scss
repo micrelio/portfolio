@@ -11,13 +11,13 @@ body {
   display: flex;
   justify-content: center;
   .año {
-    color: $azul;
+    color: $corporativo;
   }
 }
 h1 {
   font-size: calc(3rem + 1vw);
   margin-top: 5rem;
-  color: $azul;
+  color: $corporativo;
   //width: calc(0.1rem + 3vw);
 }
 p {
@@ -26,7 +26,7 @@ p {
 }
 //A:hover { color: black; font-family: arial; text-decoration: none }
 a:visited {
-  color: $azul;
+  color: $corporativo;
   font-family: arial;
   text-decoration: none;
 }
@@ -43,7 +43,7 @@ a:visited {
     justify-content: space-between;
     align-items: center;
     color: white;
-    border: 0.2rem solid $azul;
+    border: 0.2rem solid $corporativo;
     overflow: hidden;
     border: {
       radius: 1rem;
@@ -52,7 +52,7 @@ a:visited {
       color: #000;
     }
     h {
-      color: $azul;
+      color: $corporativo;
     }
     .foto {
       //width: 40%;
@@ -83,7 +83,7 @@ a:visited {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: 0.2rem solid $azul;
+    border: 0.2rem solid $corporativo;
     margin-bottom: 5rem;
     width: 95vw;
     background: {
@@ -146,7 +146,7 @@ a:visited {
     }
   }
   .interes {
-    border: 0.1rem solid $azul;
+    border: 0.1rem solid $corporativo;
     width: 95vw;
     padding: 2rem;
     border: {
@@ -162,16 +162,16 @@ a:visited {
   a:link {
     //color: #ffffff;
     text-decoration: none;
-    color: $azul;
+    color: $corporativo;
   }
   a:visited {
-    color: $azul;
+    color: $corporativo;
   }
   a:active {
-    color: $azul;
+    color: $corporativo;
   }
   a:hover {
-    color: $azul;
+    color: $corporativo;
   }
 }
 //------------------------\\
@@ -194,7 +194,7 @@ a:visited {
   h1 {
     font-size: calc(1.5rem + 4vw);
     margin-top: 5rem;
-    color: $azul;
+    color: $corporativo;
     //width: calc(0.1rem + 3vw);
   }
   p {
@@ -217,7 +217,7 @@ a:visited {
       color: white;
       padding: 3rem;
       // padding: 3rem;
-      border: 0.1rem solid $azul;
+      border: 0.1rem solid $corporativo;
       // margin: 0.3rem;
       width: 85%;
       height: auto;
@@ -229,7 +229,7 @@ a:visited {
         color: black;
       }
       h {
-        color: $azul;
+        color: $corporativo;
       }
       .dni {
         height: auto;
@@ -247,7 +247,7 @@ a:visited {
       }
     }
     .interes {
-      border: 0.1rem solid $azul;
+      border: 0.1rem solid $corporativo;
       width: 85%;
       padding: 2rem;
       border: {
@@ -304,7 +304,7 @@ a:visited {
         //  color: #ffffff;
       }
       a:hover {
-        color: $azul;
+        color: $corporativo;
       }
       .titulo {
         padding: 2rem;

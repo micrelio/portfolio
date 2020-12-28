@@ -12,7 +12,7 @@
 }
 
 h {
-  color: #eabe3f;
+  color: #f80000;
   font-size: 2.5rem;
 }
 
@@ -23,7 +23,7 @@ h {
 
 .raya {
   border: 0 none #000000;
-  border-top: 1px solid #eabe3f;
+  border-top: 1px solid #f80000;
   height: 1px;
   margin: 5px 0;
   display: block;

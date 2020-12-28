@@ -3,11 +3,11 @@
   padding: 5rem;
 }
 .legales e {
-  color: #eabe3f;
+  color: #f80000;
   cursor: pointer;
 }
 .legales a {
-  color: #eabe3f;
+  color: #f80000;
   text-decoration: none;
 }
 .legales p {
@@ -22,7 +22,7 @@
   margin: 0rem 0rem 0rem 5rem;
 }
 .legales ul li a > p {
-  color: #eabe3f;
+  color: #f80000;
 }
 
 /*# sourceMappingURL=textoslegales.css.map */
