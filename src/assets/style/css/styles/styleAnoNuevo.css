@@ -15,15 +15,14 @@ body {
 }
 html .felicitacion #anio,
 body .felicitacion #anio {
-  margin: 2rem 0rem 0rem 0rem;
+  font-size: 10rem;
+  margin: 0rem 0rem 0rem 0rem;
+  -webkit-text-stroke: 0.1rem #ddd8d8;
+  text-shadow: 1rem 1rem 2rem black;
   animation-name: parpadeo;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  -webkit-animation-name: parpadeo;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
 }
 @-moz-keyframes parpadeo {
   0% {
