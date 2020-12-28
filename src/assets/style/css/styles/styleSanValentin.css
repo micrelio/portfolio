@@ -19,6 +19,10 @@ body .felicitacion {
   align-items: center;
   justify-content: center;
 }
+html .felicitacion img,
+body .felicitacion img {
+  margin: 2rem 0rem 0rem 0rem;
+}
 html .fiestas,
 body .fiestas {
   display: flex;

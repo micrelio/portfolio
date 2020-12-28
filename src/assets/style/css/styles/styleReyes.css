@@ -3,6 +3,17 @@ html,
 body {
   background-image: url("../../../images/gifs/fugaz.gif");
 }
+html .felicitacion,
+body .felicitacion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html .felicitacion img,
+body .felicitacion img {
+  width: 20rem;
+  margin: 0rem 0rem -5rem 0rem;
+}
 html .fiestas,
 body .fiestas {
   display: flex;

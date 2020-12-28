@@ -13,8 +13,8 @@ body {
     background-position: 500px 1000px, 400px 400px, 300px 300px;
   }
 }
-html .felicitacion h1,
-body .felicitacion h1 {
+html .felicitacion #anio,
+body .felicitacion #anio {
   margin: 2rem 0rem 0rem 0rem;
   animation-name: parpadeo;
   animation-duration: 1s;

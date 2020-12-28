@@ -39,11 +39,7 @@ function fecha(id) {
     festivo = "reyes";
   } else if (total > "0200" && total < "0215") {
     festivo = "sanValentin";
-  } 
-  
-  
-  
-  else if (total > "1200" && total < "1228") {
+  } else if (total > "1200" && total < "1228") {
     festivo = "navidad";
   } else if (total === "1228") {
     festivo = "inocente";
@@ -57,7 +53,7 @@ function fecha(id) {
       document.getElementById("adorno").src = "";
       document.getElementById("anio").innerHTML = "";
       document.getElementById("feliz").innerHTML = "";
-      document.getElementById("valentin").src ="";
+      document.getElementById("imagenFelicitacion").src = "";
       break;
     case "reyes":
       document.getElementById("cssArchivo").href =
@@ -65,16 +61,18 @@ function fecha(id) {
       document.getElementById("adorno").src =
         "/src/assets/images/gifs/reyes.gif";
       document.getElementById("stop").style = "display:block";
+      document.getElementById("imagenFelicitacion").src =
+        "/src/assets/images/gifs/estrellaNavidad.gif";
       break;
-      case "sanValentin":
-        document.getElementById("cssArchivo").href =
-          "/src/assets/style/css/styles/styleSanValentin.css";
-        document.getElementById("adorno").src =
-          "/src/assets/images/gifs/sanValentin.gif";
-        document.getElementById("stop").style = "display:block";
-        document.getElementById("valentin").src =
+    case "sanValentin":
+      document.getElementById("cssArchivo").href =
+        "/src/assets/style/css/styles/styleSanValentin.css";
+      document.getElementById("adorno").src =
+        "/src/assets/images/gifs/sanValentin.gif";
+      document.getElementById("stop").style = "display:block";
+      document.getElementById("imagenFelicitacion").src =
         "/src/assets/images/gifs/felizSanValentin.gif";
-        break;
+      break;
     case "navidad":
       document.getElementById("cssArchivo").href =
         "/src/assets/style/css/styles/styleNavidad.css";

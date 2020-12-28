@@ -24,6 +24,17 @@ body {
     background-position: 500px 1000px, 400px 400px, 300px 300px;
   }
 }
+html .felicitacion,
+body .felicitacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+html .felicitacion #anio,
+body .felicitacion #anio {
+  display: none;
+}
 html .fiestas,
 body .fiestas {
   display: flex;
