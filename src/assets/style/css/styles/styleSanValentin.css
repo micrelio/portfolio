@@ -2,54 +2,22 @@
 html,
 body {
   background-image: url("../../../images/gifs/corazones2.gif");
-  background-size: cover;
-  /*animation: snow 200s linear infinite;
+  animation: snow 200s linear infinite;
   /*Keyframes*/
 }
-html .felicitacion h1,
-body .felicitacion h1 {
-  margin: 2rem 0rem 0rem 0rem;
-  animation-name: parpadeo;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  -webkit-animation-name: parpadeo;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-}
-@-moz-keyframes parpadeo {
+@keyframes snow {
   0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
+    background-position: 0px 0px;
   }
   100% {
-    opacity: 1;
+    background-position: 500px 1000px, 400px 400px, 300px 300px;
   }
 }
-@-webkit-keyframes parpadeo {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes parpadeo {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+html .felicitacion,
+body .felicitacion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 html .fiestas,
 body .fiestas {

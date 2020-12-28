@@ -32,7 +32,7 @@ function fecha(id) {
   var mes = 1 + objFecha.getMonth();
   var anio = objFecha.getFullYear();
   var festivo = "";
-  var total = '02' + "" + '13';
+  var total = '02'+ "" + '01';
   if (id === "stop") {
     festivo = "stop";
   } else if (total > "0100" && total < "0107") {
@@ -57,6 +57,7 @@ function fecha(id) {
       document.getElementById("adorno").src = "";
       document.getElementById("anio").innerHTML = "";
       document.getElementById("feliz").innerHTML = "";
+      document.getElementById("valentin").src ="";
       break;
     case "reyes":
       document.getElementById("cssArchivo").href =
@@ -71,11 +72,9 @@ function fecha(id) {
         document.getElementById("adorno").src =
           "/src/assets/images/gifs/sanValentin.gif";
         document.getElementById("stop").style = "display:block";
+        document.getElementById("valentin").src =
+        "/src/assets/images/gifs/felizSanValentin.gif";
         break;
-
-
-
-
     case "navidad":
       document.getElementById("cssArchivo").href =
         "/src/assets/style/css/styles/styleNavidad.css";
