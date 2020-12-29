@@ -1,3 +1,4 @@
+
 class miCookies extends HTMLElement {
   constructor() {
     super();
