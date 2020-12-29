@@ -5,6 +5,13 @@ class miNav extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <section class="social-media">
+    <div>
+      <button class="enlace" type="button" onclick="fecha('reyes');"> 1 </button>
+      <button class="enlace" type="button" onclick="fecha('sanValentin');"> 2 </button>
+      <button class="enlace" type="button" onclick="fecha('navidad');"> 3 </button>
+      <button class="enlace" type="button" onclick="fecha('inocente');"> 4 </button>
+      <button class="enlace" type="button" onclick="fecha('anoNuevo');"> 5 </button>
+    </div>
     <div class="social-links" >
       <a href="https://www.youtube.com/channel/UCMEv1Jj16ypsAXmZXOkKrQA/" target="_blank" class=""><i class="bx bxl-youtube"></i></a>
       <a href="https://www.instagram.com/micrelio.dev/" target="_blank" class=""><i class="bx bxl-instagram"></i></a>
@@ -130,7 +137,11 @@ function navegar(id) {
   console.log("FUNCION RENDER");
   var render = id;
   switch (render) {
-    case "inicio":
+    case "botones":
+      document.getElementById("componente").innerHTML =
+        "<mi-estilo></mi-estilo>";
+      break;
+      case "inicio":
       document.getElementById("componente").innerHTML =
         "<mi-inicio></mi-inicio>";
       break;

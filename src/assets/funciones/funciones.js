@@ -17,6 +17,12 @@
 //     setTimeout(showSlides, 2000);
 // };
 function fecha(id) {
+  document.getElementById("stop").style = "display:none";
+      document.getElementById("cssArchivo").href = "";
+      document.getElementById("adorno").src = "";
+      document.getElementById("anio").innerHTML = "";
+      document.getElementById("feliz").innerHTML = "";
+      document.getElementById("imagenFelicitacion").src = "";
   //   getDate(): devuelve el día del mes (1 a 31).
   // getDay(): devuelve el número del día de la semana: desde 0 (domingo) hasta 6 (sábado).
   // getFullYear(): cuatro dígitos del año.
@@ -35,15 +41,15 @@ function fecha(id) {
   var total = mes + "" + dia;
   if (id === "stop") {
     festivo = "stop";
-  } else if (total > "0100" && total < "0107") {
+  } else if (total > "0100" && total < "0107" || id=='reyes') {
     festivo = "reyes";
-  } else if (total > "0200" && total < "0215") {
+  } else if (total > "0200" && total < "0215" || id=="sanValentin" ) {
     festivo = "sanValentin";
-  } else if (total > "1200" && total < "1228") {
+  } else if (total > "1200" && total < "1228" || id=="navidad"  ) {
     festivo = "navidad";
-  } else if (total === "1228") {
+  } else if (total === "1228" || id=="inocente" ) {
     festivo = "inocente";
-  } else if (total > "1228") {
+  } else if (total > "1228" || id=="anoNuevo" ) {
     festivo = "anoNuevo";
   }
   // festivo='navidad'
@@ -64,6 +70,8 @@ function fecha(id) {
       document.getElementById("stop").style = "display:block";
       document.getElementById("imagenFelicitacion").src =
         "/src/assets/images/gifs/estrellaNavidad.gif";
+        document.getElementById("feliz").innerHTML = "";
+      document.getElementById("anio").innerHTML = "";
       break;
     case "sanValentin":
       document.getElementById("cssArchivo").href =
@@ -73,6 +81,8 @@ function fecha(id) {
       document.getElementById("stop").style = "display:block";
       document.getElementById("imagenFelicitacion").src =
         "/src/assets/images/gifs/felizSanValentin.gif";
+        document.getElementById("feliz").innerHTML = "";
+        document.getElementById("anio").innerHTML = "";
       break;
     case "navidad":
       document.getElementById("cssArchivo").href =
@@ -82,6 +92,7 @@ function fecha(id) {
       document.getElementById("stop").style = "display:block";
       var feliz = "FELIZ NAVIDAD";
       document.getElementById("feliz").innerHTML = feliz;
+      document.getElementById("anio").innerHTML = anio;
       break;
     case "inocente":
       document.getElementById("cssArchivo").href =
