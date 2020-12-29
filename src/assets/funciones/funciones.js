@@ -16,7 +16,59 @@
 //     slides[slideIndex - 1].style.display = "block";
 //     setTimeout(showSlides, 2000);
 // };
+function modoNoche(id) {
+  var objFecha = new Date();
+  var dia = objFecha.getDate();
+  var mes = 1 + objFecha.getMonth();
+  var anio = objFecha.getFullYear();
+  var festivo = "";
+  var total = mes + "" + dia;
+  //   getDate(): devuelve el día del mes (1 a 31).
+  // getDay(): devuelve el número del día de la semana: desde 0 (domingo) hasta 6 (sábado).
+  // getFullYear(): cuatro dígitos del año.
+  // getHours(): hora en formato 24h (0 a 23).
+  // getMilliseconds(): milisegundos de la fecha especificada (0 a 999).
+  // getMinutes(): devuelve los minutos (0 a 59).
+  // getMonth(): devuelve el número del mes: desde 0 (enero) hasta 11 (diciembre).
+  // getSeconds(): devuelve el número de segundos (0 a 59).
+  // toLocaleDateString(): devuelve una cadena con la fecha completa, en formato de fecha local.
+  // toLocaleTimeString(): devuelve una cadena con la hora completa, en formato de hora local.
+
+  if (id === "dia") {
+    festivo = "dia";
+  } else if (id === "noche") {
+    festivo = "noche";
+  }
+
+  switch (festivo) {
+    case "stop":
+      document.getElementById("stop").style = "display:none";
+      document.getElementById("cssArchivo").href = "";
+      document.getElementById("adorno").src = "";
+      document.getElementById("anio").innerHTML = "";
+      document.getElementById("feliz").innerHTML = "";
+      document.getElementById("imagenFelicitacion").src = "";
+      break;
+    case "dia":
+      console.log("mierda");
+      document.getElementById("modo").href =
+        "/src/assets/style/css/styles/styleDia.css";
+      break;
+    case "noche":
+      document.getElementById("modo").href =
+        "/src/assets/style/css/styles/style.css";
+      break;
+    default:
+      document.getElementById("stop").style = "display:none";
+      document.getElementById("cssArchivo").href = "";
+      document.getElementById("adorno").src = "";
+      document.getElementById("anio").innerHTML = "";
+      document.getElementById("feliz").innerHTML = "";
+      break;
+  }
+}
 function fecha(id) {
+  console.log(id);
   document.getElementById("stop").style = "display:none";
   document.getElementById("cssArchivo").href = "";
   document.getElementById("adorno").src = "";
@@ -53,6 +105,8 @@ function fecha(id) {
   } else if (total > "1228" || id == "anoNuevo") {
     festivo = "anoNuevo";
   }
+  console.log(festivo);
+
   // festivo='navidad'
   switch (festivo) {
     case "stop":
@@ -63,7 +117,19 @@ function fecha(id) {
       document.getElementById("feliz").innerHTML = "";
       document.getElementById("imagenFelicitacion").src = "";
       break;
+    case "dia":
+      console.log("mierda");
+      document.getElementById("modo").href =
+        "/src/assets/style/css/styles/styleDia.css";
+      break;
+    case "noche":
+      document.getElementById("modo").href =
+        "/src/assets/style/css/styles/style.css";
+      break;
+
     case "reyes":
+      console.log("reyes");
+
       document.getElementById("cssArchivo").href =
         "/src/assets/style/css/styles/styleReyes.css";
       document.getElementById("adorno").src =
@@ -93,7 +159,7 @@ function fecha(id) {
       document.getElementById("stop").style = "display:block";
       var feliz = "FELIZ NAVIDAD";
       document.getElementById("feliz").innerHTML = feliz;
-      document.getElementById("feliz").style = "color:red; font-size:10rem;";
+      document.getElementById("feliz").style = "color:red;";
 
       document.getElementById("anio").innerHTML = anio;
       break;

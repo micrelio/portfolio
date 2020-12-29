@@ -11,6 +11,8 @@ class miNav extends HTMLElement {
       <button class="enlace" type="button" onclick="fecha('navidad');"> 3 </button>
       <button class="enlace" type="button" onclick="fecha('inocente');"> 4 </button>
       <button class="enlace" type="button" onclick="fecha('anoNuevo');"> 5 </button>
+      <button class="enlace" type="button" onclick="modoNoche('dia');"> Día </button>
+      <button class="enlace" type="button" onclick="modoNoche('noche');"> Noche </button>
     </div>
     <div class="social-links" >
       <a href="https://www.youtube.com/channel/UCMEv1Jj16ypsAXmZXOkKrQA/" target="_blank" class=""><i class="bx bxl-youtube"></i></a>

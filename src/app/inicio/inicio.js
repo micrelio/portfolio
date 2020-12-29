@@ -20,12 +20,7 @@ class miInicio extends HTMLElement {
             <li><p><a href="#" onclick="navegar('curriculum');" class="enlace"><strong>Currículum:</strong></a> En el puedes encontrar tanto mi experiencia profesional y académica como verificar las titulaciones adquiridas.</p></li>
             <li><p><a href="#" onclick="navegar('contacto');" class="enlace"><strong>Contacto:</strong></a> Formulario de contacto.</p></li>
           </ul>
-
-
-
-                       
-      
-        </div>
+       </div>
     </section>
   `;
   }

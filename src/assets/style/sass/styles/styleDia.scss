@@ -1,0 +1,54 @@
+@import "../mixins/mixins.scss";
+@import "../variables/variables.scss";
+@import "../funciones/funciones.scss";
+
+html,
+body {
+  background: {
+    color: $vainilla;
+  }
+  h1 {
+    color: $negro;
+    -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
+    text-shadow: 0.2em 0.2em 0.3em black;
+  }
+  h2 {
+    color: $negro;
+    -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
+    text-shadow: 0.2rem 0.2rem 0.3rem black;
+  }
+  h3 {
+    color: $negro;
+    -webkit-text-stroke: 0.04rem rgb(221, 216, 216);
+    text-shadow: 0.2em 0.2em 0.3em black;
+  }
+  h4 {
+    color: $negro;
+    -webkit-text-stroke: 0.03rem rgb(221, 216, 216);
+    text-shadow: 0.2em 0.2em 0.3em black;
+  }
+  p {
+    color: $negro;/*blanchedalmond;*/
+  }
+  a {
+      color:$azul;
+  }
+  ul {
+    li {
+      color: $negro;
+       p {
+           strong{
+        color: $negro;
+           }
+      }
+    }
+  }
+  .fa-arrow-alt-circle-up {
+    color: $corporativo;
+    -webkit-text-stroke: 0.1rem gray;
+    text-shadow: 0.2rem 0.2rem 0.5rem black;
+    background: {
+      color: white;
+    }
+  }
+}
