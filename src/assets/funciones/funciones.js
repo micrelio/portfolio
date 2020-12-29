@@ -1,9 +1,6 @@
 // var slideIndex = 1;
 // showSlides();
-
 // function showSlides() {
-
-//     console.log('KKKKKK');
 //     var i;
 //     var slides = document.getElementsByClassName("mySlides");
 //     for (i = 0; i < slides.length; i++) {
@@ -17,12 +14,6 @@
 //     setTimeout(showSlides, 2000);
 // };
 function modoNoche(id) {
-  var objFecha = new Date();
-  var dia = objFecha.getDate();
-  var mes = 1 + objFecha.getMonth();
-  var anio = objFecha.getFullYear();
-  var festivo = "";
-  var total = mes + "" + dia;
   //   getDate(): devuelve el día del mes (1 a 31).
   // getDay(): devuelve el número del día de la semana: desde 0 (domingo) hasta 6 (sábado).
   // getFullYear(): cuatro dígitos del año.
@@ -33,24 +24,25 @@ function modoNoche(id) {
   // getSeconds(): devuelve el número de segundos (0 a 59).
   // toLocaleDateString(): devuelve una cadena con la fecha completa, en formato de fecha local.
   // toLocaleTimeString(): devuelve una cadena con la hora completa, en formato de hora local.
-
-  if (id === "dia") {
-    festivo = "dia";
-  } else if (id === "noche") {
-    festivo = "noche";
+  var objFecha = new Date();
+  var mes = 1 + objFecha.getMonth();
+  var hora = objFecha.getHours();
+  var estilo = "";
+  //hora = "";
+  if (id != undefined) {
+    var hora = "";
   }
-
-  switch (festivo) {
-    case "stop":
-      document.getElementById("stop").style = "display:none";
-      document.getElementById("cssArchivo").href = "";
-      document.getElementById("adorno").src = "";
-      document.getElementById("anio").innerHTML = "";
-      document.getElementById("feliz").innerHTML = "";
-      document.getElementById("imagenFelicitacion").src = "";
-      break;
+  if ((hora >= 8 && hora < 20) || id === "dia") {
+    estilo = "dia";
+  } else if (
+    (hora >= 20 && hora < 26) ||
+    (hora > 00 && hora < 8) ||
+    id === "noche"
+  ) {
+    estilo = "noche";
+  }
+  switch (estilo) {
     case "dia":
-      console.log("mierda");
       document.getElementById("modo").href =
         "/src/assets/style/css/styles/styleDia.css";
       break;
@@ -59,16 +51,10 @@ function modoNoche(id) {
         "/src/assets/style/css/styles/style.css";
       break;
     default:
-      document.getElementById("stop").style = "display:none";
-      document.getElementById("cssArchivo").href = "";
-      document.getElementById("adorno").src = "";
-      document.getElementById("anio").innerHTML = "";
-      document.getElementById("feliz").innerHTML = "";
       break;
   }
 }
 function fecha(id) {
-  console.log(id);
   document.getElementById("stop").style = "display:none";
   document.getElementById("cssArchivo").href = "";
   document.getElementById("adorno").src = "";
@@ -92,6 +78,9 @@ function fecha(id) {
   var anio = objFecha.getFullYear();
   var festivo = "";
   var total = mes + "" + dia;
+  if (id != undefined) {
+    var festivo = "";
+  }
   if (id === "stop") {
     festivo = "stop";
   } else if ((total > "0100" && total < "0107") || id == "reyes") {
@@ -105,8 +94,6 @@ function fecha(id) {
   } else if (total > "1228" || id == "anoNuevo") {
     festivo = "anoNuevo";
   }
-  console.log(festivo);
-
   // festivo='navidad'
   switch (festivo) {
     case "stop":
@@ -118,7 +105,6 @@ function fecha(id) {
       document.getElementById("imagenFelicitacion").src = "";
       break;
     case "dia":
-      console.log("mierda");
       document.getElementById("modo").href =
         "/src/assets/style/css/styles/styleDia.css";
       break;
@@ -126,10 +112,7 @@ function fecha(id) {
       document.getElementById("modo").href =
         "/src/assets/style/css/styles/style.css";
       break;
-
     case "reyes":
-      console.log("reyes");
-
       document.getElementById("cssArchivo").href =
         "/src/assets/style/css/styles/styleReyes.css";
       document.getElementById("adorno").src =
