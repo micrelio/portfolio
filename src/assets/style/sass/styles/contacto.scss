@@ -1,5 +1,6 @@
 @import "../mixins/mixins.scss";
 @import "../variables/variables.scss";
+
 .head {
   @include head;
 }
@@ -54,4 +55,5 @@
               No funciona en todos los navegadores */
     resize: vertical;
   }
+  
 }
