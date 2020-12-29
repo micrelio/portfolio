@@ -6,16 +6,21 @@
          social media menu
 ------------------------------------------ */
 .social-media {
-  padding: 0;
+  padding: 0rem 1rem 0rem 1rem;
+
+ // padding: 0.2rem 0.2rem 0.2rem 0.2rem;
   background-color: $corporativo;
   border: 0.05rem solid black;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .social-links {
   display: flex;
   flex-direction: row;
   flex-direction: row-reverse;
-  padding: 0.01rem;
-  margin: 0rem 1rem 0rem 0rem;
+  //padding: 0.01rem;
 
   /* background-color: orangered; */
 }
@@ -25,7 +30,7 @@
   display: inline-block;
   color: black;
   line-height: 1;
-  margin: 0.2rem;
+  
   transition: 0.3s;
   text-decoration: none;
 }
