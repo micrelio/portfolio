@@ -37,20 +37,20 @@ body {
     }
     .stop {
       border: none;
-      background: $rojo;
-      color: #fff;
+      background: $amarillo;
+      color: $negro;
       width: 100%;
       padding: 0.5rem 0rem 0.5rem 0rem;
-      border: 0.1rem solid $rojo;
+      border: 0.1rem solid $amarillo;
       font-size: calc(0.5rem + 1vw);
       cursor: pointer;
-      border: 0.05rem solid white;
+      border: 0.05rem solid $negro;
       border-radius: 0.9rem;
     }
     .stop:hover {
       background-color: white;
-      color: $rojo;
-      border: 0.05rem solid $rojo;
+      color: $negro;
+      border: 0.05rem solid $negro;
     }
   }
 }

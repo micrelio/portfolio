@@ -115,6 +115,8 @@ function fecha(id) {
     case "reyes":
       document.getElementById("cssArchivo").href =
         "/src/assets/style/css/styles/festivos/styleReyes.css";
+        document.getElementById("color").href =
+        "/src/assets/style/css/styles/colores/amarillo.css";
       document.getElementById("adorno").src =
         "/src/assets/images/gifs/reyes.gif";
       document.getElementById("stop").style = "display:block";
@@ -122,6 +124,7 @@ function fecha(id) {
         "/src/assets/images/gifs/estrellaNavidad.gif";
       document.getElementById("feliz").innerHTML = "";
       document.getElementById("anio").innerHTML = "";
+
       break;
     case "sanValentin":
       document.getElementById("cssArchivo").href =
