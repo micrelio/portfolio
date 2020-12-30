@@ -114,7 +114,7 @@ function fecha(id) {
       break;
     case "reyes":
       document.getElementById("cssArchivo").href =
-        "/src/assets/style/css/styles/styleReyes.css";
+        "/src/assets/style/css/styles/festivos/styleReyes.css";
       document.getElementById("adorno").src =
         "/src/assets/images/gifs/reyes.gif";
       document.getElementById("stop").style = "display:block";
@@ -125,9 +125,9 @@ function fecha(id) {
       break;
     case "sanValentin":
       document.getElementById("cssArchivo").href =
-        "/src/assets/style/css/styles/styleSanValentin.css";
+        "/src/assets/style/css/styles/festivos/styleSanValentin.css";
       document.getElementById("adorno").src =
-        "/src/assets/images/gifs/sanValentin.gif";
+        "/src/assets/images/gifs/festivos/sanValentin.gif";
       document.getElementById("stop").style = "display:block";
       document.getElementById("imagenFelicitacion").src =
         "/src/assets/images/gifs/felizSanValentin.gif";
@@ -136,7 +136,9 @@ function fecha(id) {
       break;
     case "navidad":
       document.getElementById("cssArchivo").href =
-        "/src/assets/style/css/styles/styleNavidad.css";
+        "/src/assets/style/css/styles/festivos/styleNavidad.css";
+        document.getElementById("color").href =
+        "/src/assets/style/css/styles/colores/rojo.css";
       document.getElementById("adorno").src =
         "/src/assets/images/gifs/noelbailando.gif";
       document.getElementById("stop").style = "display:block";
@@ -147,7 +149,7 @@ function fecha(id) {
       break;
     case "inocente":
       document.getElementById("cssArchivo").href =
-        "/src/assets/style/css/styles/styleAnoNuevo.css";
+        "/src/assets/style/css/styles/festivos/styleAnoNuevo.css";
       document.getElementById("adorno").src =
         "/src/assets/images/gifs/inocente.gif";
       document.getElementById("stop").style = "display:block";
@@ -157,7 +159,7 @@ function fecha(id) {
       break;
     case "anoNuevo":
       document.getElementById("cssArchivo").href =
-        "/src/assets/style/css/styles/styleAnoNuevo.css";
+        "/src/assets/style/css/styles/festivos/styleAnoNuevo.css";
       document.getElementById("adorno").src =
         "/src/assets/images/gifs/brindis.gif";
       document.getElementById("stop").style = "display:block";

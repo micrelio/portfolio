@@ -1,27 +1,32 @@
 /* hovers*/
+.head {
+  width: 100%;
+  position: relative;
+  border-bottom: 0.05rem solid #e9d58d;
+}
+.head img {
+  width: 100%;
+}
+
 html,
 body {
-  background-image: url("../../../images/gifs/corazones2.gif");
-  animation: snow 200s linear infinite;
-  /*Keyframes*/
-}
-@keyframes snow {
-  0% {
-    background-position: 0px 0px;
-  }
-  100% {
-    background-position: 500px 1000px, 400px 400px, 300px 300px;
-  }
+  background-image: url("../../../../images/gifs/fugaz.gif");
 }
 html .felicitacion,
 body .felicitacion {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+html .felicitacion #anio,
+body .felicitacion #anio {
+  display: none;
+}
 html .felicitacion img,
 body .felicitacion img {
-  margin: 2rem 0rem 0rem 0rem;
+  width: 20rem;
+  margin: 0rem 0rem -5rem 0rem;
 }
 html .fiestas,
 body .fiestas {
@@ -35,7 +40,7 @@ body .fiestas {
 }
 html .fiestas img,
 body .fiestas img {
-  width: 10rem;
+  width: 15rem;
   margin: 0rem 0rem 1em 0rem;
 }
 html .fiestas .stop,
@@ -58,22 +63,4 @@ body .fiestas .stop:hover {
   border: 0.05rem solid #f80000;
 }
 
-@media only screen and (max-width: 800px) {
-  body .fiestas {
-    z-index: 1000;
-    position: fixed;
-    bottom: 4rem;
-  }
-  body .fiestas img {
-    width: 10rem;
-  }
-  body .fiestas .stop {
-    padding: 0rem 0rem 0rem 0rem;
-    font-size: calc(1rem + 0.3vw);
-    cursor: pointer;
-    border: 0.05rem solid white;
-    border-radius: 0.9rem;
-  }
-}
-
-/*# sourceMappingURL=styleSanValentin.css.map */
+/*# sourceMappingURL=stylereyes.css.map */

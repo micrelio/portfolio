@@ -1,7 +1,17 @@
 /* hovers*/
 html,
 body {
-  background-image: url("../../../images/gifs/fugaz.gif");
+  background-image: url("../../../images/gifs/corazones2.gif");
+  animation: snow 200s linear infinite;
+  /*Keyframes*/
+}
+@keyframes snow {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 500px 1000px, 400px 400px, 300px 300px;
+  }
 }
 html .felicitacion,
 body .felicitacion {
@@ -11,8 +21,7 @@ body .felicitacion {
 }
 html .felicitacion img,
 body .felicitacion img {
-  width: 20rem;
-  margin: 0rem 0rem -5rem 0rem;
+  margin: 2rem 0rem 0rem 0rem;
 }
 html .fiestas,
 body .fiestas {
@@ -26,17 +35,17 @@ body .fiestas {
 }
 html .fiestas img,
 body .fiestas img {
-  width: 15rem;
+  width: 10rem;
   margin: 0rem 0rem 1em 0rem;
 }
 html .fiestas .stop,
 body .fiestas .stop {
   border: none;
-  background: #e9d58d;
-  color: black;
+  background: #f80000;
+  color: #fff;
   width: 100%;
   padding: 0.5rem 0rem 0.5rem 0rem;
-  border: 0.1rem solid #e9d58d;
+  border: 0.1rem solid #f80000;
   font-size: calc(0.5rem + 1vw);
   cursor: pointer;
   border: 0.05rem solid white;
@@ -45,8 +54,8 @@ body .fiestas .stop {
 html .fiestas .stop:hover,
 body .fiestas .stop:hover {
   background-color: white;
-  color: black;
-  border: 0.05rem solid #e9d58d;
+  color: #f80000;
+  border: 0.05rem solid #f80000;
 }
 
 @media only screen and (max-width: 800px) {
@@ -60,7 +69,6 @@ body .fiestas .stop:hover {
   }
   body .fiestas .stop {
     padding: 0rem 0rem 0rem 0rem;
-    border: 0.1rem solid #e9d58d;
     font-size: calc(1rem + 0.3vw);
     cursor: pointer;
     border: 0.05rem solid white;
@@ -68,4 +76,4 @@ body .fiestas .stop:hover {
   }
 }
 
-/*# sourceMappingURL=styleReyes.css.map */
+/*# sourceMappingURL=stylesanvalentin.css.map */
