@@ -144,7 +144,6 @@ function fecha(id) {
       document.getElementById("feliz").innerHTML = feliz;
       document.getElementById("feliz").style = "color:red;";
 
-      document.getElementById("anio").innerHTML = anio;
       break;
     case "inocente":
       document.getElementById("cssArchivo").href =
