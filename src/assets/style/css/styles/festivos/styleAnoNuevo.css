@@ -1,7 +1,16 @@
 /* hovers*/
+.head {
+  width: 100%;
+  position: relative;
+  border-bottom: 0.05rem solid #f80000;
+}
+.head img {
+  width: 100%;
+}
+
 html,
 body {
-  background-image: url("../../../images/gifs/brillo.gif");
+  background-image: url("../../../../images/gifs/brillo.gif");
   animation: snow 20s linear infinite;
   /*Keyframes*/
 }
@@ -94,25 +103,6 @@ body .fiestas .stop:hover {
   background-color: white;
   color: #eabe3f;
   border: 0.05rem solid #eabe3f;
-}
-
-@media only screen and (max-width: 800px) {
-  body .fiestas {
-    z-index: 1000;
-    position: fixed;
-    bottom: 4rem;
-  }
-  body .fiestas img {
-    width: 10rem;
-  }
-  body .fiestas .stop {
-    padding: 0rem 0rem 0rem 0rem;
-    border: 0.1rem solid green;
-    font-size: calc(1rem + 0.3vw);
-    cursor: pointer;
-    border: 0.05rem solid white;
-    border-radius: 0.9rem;
-  }
 }
 
 /*# sourceMappingURL=styleanonuevo.css.map */

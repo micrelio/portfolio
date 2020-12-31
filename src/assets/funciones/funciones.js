@@ -99,6 +99,7 @@ function fecha(id) {
     case "stop":
       document.getElementById("stop").style = "display:none";
       document.getElementById("cssArchivo").href = "";
+      document.getElementById("color").href = "";
       document.getElementById("adorno").src = "";
       document.getElementById("anio").innerHTML = "";
       document.getElementById("feliz").innerHTML = "";
@@ -127,7 +128,6 @@ function fecha(id) {
 
       break;
     case "sanValentin":
-      console.log('sasan valentin')
       document.getElementById("cssArchivo").href =
         "/src/assets/style/css/styles/festivos/styleSanValentin.css";
         document.getElementById("color").href =
@@ -156,7 +156,9 @@ function fecha(id) {
     case "inocente":
       document.getElementById("cssArchivo").href =
         "/src/assets/style/css/styles/festivos/styleAnoNuevo.css";
-      document.getElementById("adorno").src =
+        document.getElementById("color").href =
+        "/src/assets/style/css/styles/colores/oro.css";
+             document.getElementById("adorno").src =
         "/src/assets/images/gifs/inocente.gif";
       document.getElementById("stop").style = "display:block";
       var feliz = "FELIZ AÑO";
@@ -166,7 +168,9 @@ function fecha(id) {
     case "anoNuevo":
       document.getElementById("cssArchivo").href =
         "/src/assets/style/css/styles/festivos/styleAnoNuevo.css";
-      document.getElementById("adorno").src =
+        document.getElementById("color").href =
+        "/src/assets/style/css/styles/colores/oro.css";
+             document.getElementById("adorno").src =
         "/src/assets/images/gifs/brindis.gif";
       document.getElementById("stop").style = "display:block";
       var feliz = "FELIZ AÑO";
@@ -176,6 +180,7 @@ function fecha(id) {
     default:
       document.getElementById("stop").style = "display:none";
       document.getElementById("cssArchivo").href = "";
+      document.getElementById("color").href = "";
       document.getElementById("adorno").src = "";
       document.getElementById("anio").innerHTML = "";
       document.getElementById("feliz").innerHTML = "";
