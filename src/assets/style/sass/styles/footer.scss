@@ -44,18 +44,18 @@
         input[type="email"] {
           border: none;
           width: 100%;
-          border: 0.1rem solid $corporativo;
+          border: 0.1rem solid $blanco;
           font-size: calc(1rem + 1vw);
           padding: 1.5rem;
           border-radius: 0.9rem;
         }
         input[type="submit"] {
           border: none;
-          background: $corporativo;
+          background: $blanco;
           color: #fff;
           width: 50%;
           padding: 1rem 0rem 1rem 0rem;
-          border: 0.1rem solid $corporativo;
+          border: 0.1rem solid $blanco;
           font-size: calc(1rem + 1vw);
           margin-top: 2rem;
           cursor: pointer;
@@ -106,8 +106,10 @@
           padding: 2rem;
           .iconSocial {
             img {
+              border-radius: 75%;
+              border: 0.03rem solid $blanco;
               height: 4rem;
-              margin: 0.2rem;
+              margin: 0.3rem;
             }
           }
         }

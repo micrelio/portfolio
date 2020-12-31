@@ -52,7 +52,7 @@
 * footer .footerContainer .paginas input[type=email] {
   border: none;
   width: 100%;
-  border: 0.1rem solid #00c6ee;
+  border: 0.1rem solid #eeeeee;
   font-size: calc(1rem + 1vw);
   padding: 1.5rem;
   border-radius: 0.9rem;
@@ -61,11 +61,11 @@
 * footer .footerContainer .direccion input[type=submit],
 * footer .footerContainer .paginas input[type=submit] {
   border: none;
-  background: #00c6ee;
+  background: #eeeeee;
   color: #fff;
   width: 50%;
   padding: 1rem 0rem 1rem 0rem;
-  border: 0.1rem solid #00c6ee;
+  border: 0.1rem solid #eeeeee;
   font-size: calc(1rem + 1vw);
   margin-top: 2rem;
   cursor: pointer;
@@ -120,8 +120,10 @@
   padding: 2rem;
 }
 * footer .redes .propiedad .socialmedia .iconSocial img {
+  border-radius: 75%;
+  border: 0.03rem solid #eeeeee;
   height: 4rem;
-  margin: 0.2rem;
+  margin: 0.3rem;
 }
 * footer .redes .copy {
   display: flex;

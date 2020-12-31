@@ -77,22 +77,17 @@ body .fa-arrow-alt-circle-up {
   color: orangered;
   -webkit-text-stroke: 0.05rem #ddd8d8;
 }
-* footer .footerContainer .contacto a,
-* footer .footerContainer .direccion a,
-* footer .footerContainer .paginas a {
-  color: blanchedalmond;
-}
 * footer .footerContainer .contacto input[type=email],
 * footer .footerContainer .direccion input[type=email],
 * footer .footerContainer .paginas input[type=email] {
-  border: 0.1rem solid #00c6ee;
+  border: 0.1rem solid orangered;
 }
 * footer .footerContainer .contacto input[type=submit],
 * footer .footerContainer .direccion input[type=submit],
 * footer .footerContainer .paginas input[type=submit] {
   background: orangered;
   color: #fff;
-  border: 0.1rem solid #00c6ee;
+  border: 0.1rem solid orangered;
   border: 0.05rem solid white;
 }
 * footer .footerContainer .contacto input[type=submit]:hover,

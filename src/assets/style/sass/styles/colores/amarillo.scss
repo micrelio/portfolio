@@ -10,22 +10,22 @@ html,
 body {
   
   //  h1 {
-  //   color: $corporativo;
+  //   color: $amarillo;
   //   -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
   //   text-shadow: 0.2em 0.2em 0.3em black;
   // }
   // h2 {
-  //   color: $corporativo;
+  //   color: $amarillo;
   //   -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
   //   text-shadow: 0.2rem 0.2rem 0.3rem black;
   // }
   // h3 {
-  //   color: $corporativo;
+  //   color: $amarillo;
   //   -webkit-text-stroke: 0.04rem rgb(221, 216, 216);
   //   text-shadow: 0.2em 0.2em 0.3em black;
   // }
   // h4 {
-  //   color: $corporativo;
+  //   color: $amarillo;
   //   -webkit-text-stroke: 0.03rem rgb(221, 216, 216);
   //   text-shadow: 0.2em 0.2em 0.3em black;
   // }
@@ -37,14 +37,14 @@ body {
   // }
   // ul {
   //   li {
-  //     color: $corporativo;
+  //     color: $amarillo;
   //       p {
   //          strong{
   //       color: $azul;
   //          }
   //     }
   //     a > p {
-  //       color: $corporativo;
+  //       color: $amarillo;
   //     }
   //   }
   // }
@@ -153,16 +153,16 @@ body {
         p {
         }
         a {
-          color: blanchedalmond;
+          // color: blanchedalmond;
         }
         input[type="email"] {
-          border: 0.1rem solid $corporativo;
+          border: 0.1rem solid $amarillo;
         }
         input[type="submit"] {
           background: $amarillo;
           color: #fff;
 
-          border: 0.1rem solid $corporativo;
+          border: 0.1rem solid $amarillo;
 
           border: 0.05rem solid white;
         }
