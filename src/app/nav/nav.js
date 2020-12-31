@@ -4,14 +4,9 @@ class miNav extends HTMLElement {
   }
   connectedCallback() {
     this.innerHTML = `
-<section class="social-media">
-  <div class="botonesEstilo">
-    <select name="my_html_select_box">
-      <option>New York </option>
-	    <option selected="yes">Bucharest</option>
-	    <option>Madrid</option>
-    </select>
+  <section class="social-media">
 
+    <div class="botonesEstilo">
       <button class="festivos" type="button" onclick="fecha('reyes');"><img src="/src/assets/images/icons/estrellaNavidad.png"></button>
       <button class="festivos" type="button" onclick="fecha('sanValentin');"><img src="/src/assets/images/icons/corazon.png"></button>
       <button class="festivos" type="button" onclick="fecha('navidad');"> <img src="/src/assets/images/icons/gorroSanta.png"> </button>
