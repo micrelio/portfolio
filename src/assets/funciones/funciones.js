@@ -127,10 +127,13 @@ function fecha(id) {
 
       break;
     case "sanValentin":
+      console.log('sasan valentin')
       document.getElementById("cssArchivo").href =
         "/src/assets/style/css/styles/festivos/styleSanValentin.css";
-      document.getElementById("adorno").src =
-        "/src/assets/images/gifs/festivos/sanValentin.gif";
+        document.getElementById("color").href =
+        "/src/assets/style/css/styles/colores/rojo.css";
+        document.getElementById("adorno").src =
+        "/src/assets/images/gifs/sanValentin.gif";
       document.getElementById("stop").style = "display:block";
       document.getElementById("imagenFelicitacion").src =
         "/src/assets/images/gifs/felizSanValentin.gif";

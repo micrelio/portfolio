@@ -19,7 +19,7 @@
 h1 {
   font-size: calc(3rem + 1vw);
   margin-top: 5rem;
-  color: #e9d58d;
+  color: #00c6ee;
 }
 
 p {
@@ -28,7 +28,7 @@ p {
 }
 
 a:visited {
-  color: #e9d58d;
+  color: #00c6ee;
   font-family: arial;
   text-decoration: none;
 }
@@ -47,13 +47,13 @@ a:visited {
   justify-content: space-between;
   align-items: center;
   color: white;
-  border: 0.2rem solid #e9d58d;
+  border: 0.2rem solid #00c6ee;
   overflow: hidden;
   border-radius: 1rem;
   background-color: #000;
 }
 .datos .datosPersonales h {
-  color: #e9d58d;
+  color: #00c6ee;
 }
 .datos .datosPersonales .foto .dni {
   width: calc(20rem + 10vw);
@@ -78,7 +78,7 @@ a:visited {
   display: flex;
   flex-direction: row;
   align-items: center;
-  border: 0.2rem solid #e9d58d;
+  border: 0.2rem solid #00c6ee;
   margin-bottom: 5rem;
   width: 95vw;
   background-color: black;
@@ -127,7 +127,7 @@ a:visited {
   transform: scale(1.15);
 }
 .datos .interes {
-  border: 0.1rem solid #e9d58d;
+  border: 0.1rem solid #00c6ee;
   width: 95vw;
   padding: 2rem;
   border-radius: 1rem;
@@ -160,7 +160,7 @@ a:visited {
   h1 {
     font-size: calc(1.5rem + 4vw);
     margin-top: 5rem;
-    color: #e9d58d;
+    color: #00c6ee;
   }
 
   p {
@@ -184,7 +184,7 @@ a:visited {
     align-items: center;
     color: white;
     padding: 3rem;
-    border: 0.1rem solid #e9d58d;
+    border: 0.1rem solid #00c6ee;
     width: 85%;
     height: auto;
     overflow: hidden;
@@ -207,7 +207,7 @@ a:visited {
     margin-top: 1.5rem;
   }
   .datos .interes {
-    border: 0.1rem solid #e9d58d;
+    border: 0.1rem solid #00c6ee;
     width: 85%;
     padding: 2rem;
     border-radius: 1rem;

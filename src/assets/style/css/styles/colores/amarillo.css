@@ -85,14 +85,14 @@ body .fa-arrow-alt-circle-up {
 * footer .footerContainer .contacto input[type=email],
 * footer .footerContainer .direccion input[type=email],
 * footer .footerContainer .paginas input[type=email] {
-  border: 0.1rem solid #e9d58d;
+  border: 0.1rem solid #00c6ee;
 }
 * footer .footerContainer .contacto input[type=submit],
 * footer .footerContainer .direccion input[type=submit],
 * footer .footerContainer .paginas input[type=submit] {
   background: #ffff00;
   color: #fff;
-  border: 0.1rem solid #e9d58d;
+  border: 0.1rem solid #00c6ee;
   border: 0.05rem solid white;
 }
 * footer .footerContainer .contacto input[type=submit]:hover,

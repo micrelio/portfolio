@@ -8,9 +8,9 @@
 }
 html,
 body {
-  background-image: url("../../../images/icons/snow.png"),
-    url("../../../images/icons/snow2.png"),
-    url("../../../images/icons/snow3.png");
+  background-image: url("../../../../images/icons/snow.png"),
+    url("../../../../images/icons/snow2.png"),
+    url("../../../../images/icons/snow3.png");
   animation: snow 20s linear infinite;
   /*Keyframes*/
   @keyframes snow {
@@ -58,7 +58,7 @@ body {
     }
     .stop:hover {
       background-color: white;
-      color: $rojo;
+      color: $negro;
       border: 0.05rem solid $rojo;
     }
   }
