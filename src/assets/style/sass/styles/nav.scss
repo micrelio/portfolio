@@ -14,7 +14,17 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
- 
+ .selecEstilos{
+  border: none;
+  background-color: transparent;
+  font-size: 2.4rem;
+  margin: 0;
+  animation-name: parpadeo;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+}
 .botonesEstilo{
   display: flex;
   flex-direction: row;
