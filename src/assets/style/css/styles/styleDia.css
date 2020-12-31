@@ -1,7 +1,8 @@
+@charset "UTF-8";
 /* hovers*/
 html,
 body {
-  background-color: #e9d58d;
+  background-color: #eeeeee;
 }
 html h1,
 body h1 {
@@ -42,7 +43,7 @@ body ul li {
 }
 html ul li p strong,
 body ul li p strong {
-  color: #00c6ee;
+  color: blue;
 }
 html .fa-arrow-alt-circle-up,
 body .fa-arrow-alt-circle-up {
@@ -50,6 +51,27 @@ body .fa-arrow-alt-circle-up {
   -webkit-text-stroke: 0.1rem gray;
   text-shadow: 0.2rem 0.2rem 0.5rem black;
   background-color: white;
+}
+
+footer .footerContainer {
+  color: #fff;
+}
+footer .footerContainer .contacto a,
+footer .footerContainer .direccion a,
+footer .footerContainer .paginas a {
+  color: #eeeeee;
+}
+footer .footerContainer .datos p {
+  color: #eeeeee;
+}
+footer .footerContainer .diseños p {
+  color: #eeeeee;
+}
+footer .copy {
+  color: #fff;
+}
+footer .politicas p {
+  color: #eeeeee;
 }
 
 /*# sourceMappingURL=styleDia.css.map */

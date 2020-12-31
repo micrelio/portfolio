@@ -5,7 +5,7 @@
 html,
 body {
   background: {
-    color: $vainilla;
+    color: $blanco;
   }
   h1 {
     color: $negro;
@@ -28,18 +28,18 @@ body {
     text-shadow: 0.2em 0.2em 0.3em black;
   }
   p {
-    color: $negro;/*blanchedalmond;*/
+    color: $negro; /*blanchedalmond;*/
   }
   a {
-      color:$azul;
+    color: $azul;
   }
   ul {
     li {
       color: $negro;
-       p {
-           strong{
-        color: $azul;
-           }
+      p {
+        strong {
+          color: blue;
+        }
       }
     }
   }
@@ -49,6 +49,50 @@ body {
     text-shadow: 0.2rem 0.2rem 0.5rem black;
     background: {
       color: white;
+    }
+  }
+}
+
+footer {
+  // border-top: 0.1rem solid $corporativo;
+  // background: {
+  //   color: black;
+  // }
+  .footerContainer {
+    color: #fff;
+    .contacto,
+    .direccion,
+    .paginas {
+      h2 {
+        // -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
+        // text-shadow: 0.05em 0.05em 0.1em white;
+      }
+
+      a {
+        color: $blanco;
+      }
+    }
+    .datos {
+      p {
+        color: $blanco;
+      }
+    }
+    .diseños {
+      p {
+        color: $blanco;
+      }
+    }
+  }
+  .redes {
+    // border-top: 0.1rem solid $corporativo;
+  }
+  .copy {
+    color: #fff;
+    // border-bottom: 0.1rem solid $corporativo;
+  }
+  .politicas {
+    p {
+          color: $blanco;
     }
   }
 }
