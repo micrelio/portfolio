@@ -13,6 +13,12 @@ class miNav extends HTMLElement {
       <button class="enlace" type="button" onclick="fecha('anoNuevo');"> 5 </button>
       <button class="enlace" type="button" onclick="modoNoche('dia');"> Día </button>
       <button class="enlace" type="button" onclick="modoNoche('noche');"> Noche </button>
+      
+      <button class="amarillo" type="button" onclick="color('amarillo');"> Yellow </button>
+      <button class="naranja" type="button" onclick="color('naranja');"> Orange </button>
+      <button class="oro" type="button" onclick="color('oro');"> Gold </button>
+      <button class="rojo" type="button" onclick="color('rojo');"> Red </button>
+
     </div>
     <div class="social-links" >
       <a href="https://www.youtube.com/channel/UCMEv1Jj16ypsAXmZXOkKrQA/" target="_blank" class=""><i class="bx bxl-youtube"></i></a>

@@ -10,7 +10,7 @@ class miInicio extends HTMLElement {
           <p>
           Bienvenido a mi página web de presentación o portfolio, en ella mostraré mis competencias y aficiones frente al mundo laboral adquiridas a lo largo de la vida, una de las funciones principales es mostrar mi currículum.
           Como se puede observar esta web es SPA (simple page Application), está creada por componentes por lo que no tiene tiempo de carga a la hora de navegar entre sus páginas. su estructura es idéntica a la de Angular, pero su desarrollo es vanilla (totalmente escrita a mano) sin plugin para su funcionamiento.
-          Los estilos están creados en SASS, estructurada con técnicas novedosas como display GRID y FLEX, Cada hoja de estilo es exclusiva para cada componente para facilitar su edición.
+          Los estilos están creados en SASS, estructurada con técnicas novedosas como display GRID y FLEX, Cada hoja de estilo es independiente y distribuida por componente.
           La navegación se ha tratado de hacer intuitiva para el usuario donde puede distinguir entre las distintas secciones sin ninguna dificultad.
           </p>          
           <ul>

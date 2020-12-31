@@ -13,6 +13,31 @@
 //     slides[slideIndex - 1].style.display = "block";
 //     setTimeout(showSlides, 2000);
 // };
+function color(color) {
+  switch (color) {
+    case "amarillo":
+      console.log('amarillo')
+      document.getElementById("color").href =
+        "/src/assets/style/css/styles/colores/amarillo.css";
+      break;
+      case "naranja":
+      document.getElementById("color").href =
+        "/src/assets/style/css/styles/colores/naranja.css";
+      break;
+      case "oro":
+      document.getElementById("color").href =
+        "/src/assets/style/css/styles/colores/oro.css";
+      break;
+    case "rojo":
+      document.getElementById("color").href =
+        "/src/assets/style/css/styles/colores/rojo.css";
+      break;
+    default:
+      document.getElementById("color").href =
+        "/src/assets/style/css/styles/colores/style.css";
+      break;
+  }
+}
 function modoNoche(id) {
   //   getDate(): devuelve el día del mes (1 a 31).
   // getDay(): devuelve el número del día de la semana: desde 0 (domingo) hasta 6 (sábado).

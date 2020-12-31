@@ -1,0 +1,292 @@
+@import "../../mixins/mixins.scss";
+@import "../../variables/variables.scss";
+@import "../../funciones/funciones.scss";
+
+.head {
+  @include head;
+  border-bottom: 0.05rem solid $naranja;
+}
+html,
+body {
+  
+  //  h1 {
+  //   color: $corporativo;
+  //   -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
+  //   text-shadow: 0.2em 0.2em 0.3em black;
+  // }
+  // h2 {
+  //   color: $corporativo;
+  //   -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
+  //   text-shadow: 0.2rem 0.2rem 0.3rem black;
+  // }
+  // h3 {
+  //   color: $corporativo;
+  //   -webkit-text-stroke: 0.04rem rgb(221, 216, 216);
+  //   text-shadow: 0.2em 0.2em 0.3em black;
+  // }
+  // h4 {
+  //   color: $corporativo;
+  //   -webkit-text-stroke: 0.03rem rgb(221, 216, 216);
+  //   text-shadow: 0.2em 0.2em 0.3em black;
+  // }
+  // a{
+  //   color:$azul
+  // }
+  // p {
+  //   color: blanchedalmond;
+  // }
+  // ul {
+  //   li {
+  //     color: $corporativo;
+  //       p {
+  //          strong{
+  //       color: $azul;
+  //          }
+  //     }
+  //     a > p {
+  //       color: $corporativo;
+  //     }
+  //   }
+  // }
+  .fa-arrow-alt-circle-up {
+    color: $naranja;
+    -webkit-text-stroke: 0.1rem gray;
+    text-shadow: 0.2rem 0.2rem 0.5rem black;
+    background: {
+      color: white;
+    }
+  }
+  }
+
+/* ------------------------------------------
+         social media menu
+ ------------------------------------------ */
+.social-media {
+  padding: 0rem 1rem 0rem 1rem;
+
+  // padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+  background-color: $naranja;
+  border: 0.05rem solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ------------------------------------------
+         menu
+------------------------------------------ */
+.stick {
+  background: {
+    //   color: rgba(0, 4, 255, 0.7);
+  }
+  .nav {
+    border-bottom: 0.05rem solid $naranja;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+    background: {
+      color: rgba(0, 0, 0, 0.438);
+    }
+    .navbar {
+      .foto {
+        img {
+          border: 0.05rem solid $naranja; //#fff;
+          box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+        }
+      }
+      .menu {
+        .links {
+          .enlace {
+            color: $naranja; //gray
+            padding: 1.6rem 0.5rem 1.6rem 0.5rem;
+            min-width: 8rem;
+            background: {
+              color: rgba(0, 0, 0, 0.582);
+            }
+
+            border: 0.05rem solid $naranja;
+          }
+          .inicio:hover,
+          .conoceme:hover,
+          .webs:hover,
+          .gal:hover,
+          .videos:hover,
+          .curriculum:hover,
+          .contacto:hover,
+          .inicio:focus,
+          .conoceme:focus,
+          .webs:focus,
+          .gal:focus,
+          .videos:focus,
+          .curriculum:focus,
+          .contacto:focus {
+            background-color: rgba(78, 78, 32, 0.582);
+          }
+        }
+      }
+    }
+  }
+  .mode {
+    background: {
+      // color: pink;
+    }
+  }
+}
+//------------------------\\
+//  footer  \\
+//------------------------\\
+* {
+  footer {
+    border-top: 0.1rem solid $naranja;
+    background: {
+      color: black;
+    }
+    .footerContainer {
+      color: #fff;
+      .contacto,
+      .direccion,
+      .paginas {
+        h2 {
+          color: $naranja;
+          -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
+          // text-shadow: 0.05em 0.05em 0.1em white;
+        }
+        p {
+        }
+        a {
+          color: blanchedalmond;
+        }
+        input[type="email"] {
+          border: 0.1rem solid $corporativo;
+        }
+        input[type="submit"] {
+          background: $naranja;
+          color: #fff;
+
+          border: 0.1rem solid $corporativo;
+
+          border: 0.05rem solid white;
+        }
+        input[type="submit"]:hover {
+          background-color: rgba(78, 78, 32, 0.582);
+        }
+        .fa {
+          color: red;
+        }
+        .datos {
+          p {
+          }
+        }
+        .diseños {
+          p {
+          }
+        }
+      }
+    }
+    .redes {
+      background: #000;
+      border-top: 0.1rem solid $naranja;
+      .propiedad {
+        .socialmedia {
+          .iconSocial {
+            img {
+            }
+          }
+        }
+      }
+      .copy {
+        color: #fff;
+        border-bottom: 0.1rem solid $naranja;
+      }
+      .politicas {
+        //background-color: blue;
+        p {
+        }
+        a {
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  footer {
+    .footerContainer {
+      flex-wrap: wrap;
+
+      .contacto {
+        width: 90%;
+      }
+      .direccion {
+        margin-top: 5rem;
+
+        width: 90%;
+      }
+      .paginas {
+        margin-top: 5rem;
+        width: 90%;
+      }
+    }
+  }
+}
+
+//------------------------\\
+//  RESPONSIVE  \\
+//------------------------\\
+@media only screen and (max-width: 800px) {
+  .movil {
+    border-bottom: 0.05rem solid $naranja;
+
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+    background: {
+      color: rgba(0, 0, 0, 0.438);
+    }
+    .imagenes {
+      background: {
+        // color: blue;
+      }
+      .foto {
+        background: {
+          // color: green;
+        }
+        img {
+          border: 3px double $naranja;
+          box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+        }
+      }
+      .botones {
+        background: {
+          color: transparent;
+        }
+        #boton1 {
+          background-color: Transparent;
+        }
+      }
+    }
+    .desplegable {
+      .enlace {
+        color: $naranja;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    .fiestas {
+      z-index: 1000;
+      position: fixed; //para que siga la pagina
+      // position: -webkit-fixed;  // required for Safari
+      bottom: 4rem;
+      img {
+        width: 10rem;
+      }
+      .stop {
+        padding: 0rem 0rem 0rem 0rem;
+        border: 0.1rem solid $naranja;
+        font-size: calc(1rem + 0.3vw);
+        cursor: pointer;
+        border: 0.05rem solid white;
+        border-radius: 0.9rem;
+      }
+    }
+  }
+}
