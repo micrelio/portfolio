@@ -5,23 +5,27 @@ class miNav extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
   <section class="social-media">
-  <button class="selecEstilos bx bxs-brush" type="button" onclick=""></button>
 
-    <div class="botonesEstilo">
-      <button class="festivos" type="button" onclick="fecha('reyes');"><img src="/src/assets/images/icons/estrellaNavidad.png"></button>
-      <button class="festivos" type="button" onclick="fecha('sanValentin');"><img src="/src/assets/images/icons/corazon.png"></button>
-      <button class="festivos" type="button" onclick="fecha('navidad');"> <img src="/src/assets/images/icons/gorroSanta.png"> </button>
-      <button class="festivos" type="button" onclick="fecha('inocente');"> <img src="/src/assets/images/icons/inocente2.png"> </button>
-      <button class="festivos" type="button" onclick="fecha('anoNuevo');"> <img src="/src/assets/images/icons/champan.png"> </button>
-      
-      <button class="modo bx bxs-moon" type="button" onclick="modoNoche('dia');"></button>
-      <button class="modo bx bxs-sun" type="button" onclick="modoNoche('noche');"></button>
-      
-      <button class="color oro" type="button" onclick="color('oro');"></button>
-      <button class="color amarillo" type="button" onclick="color('amarillo');"></button>
-      <button class="color naranja" type="button" onclick="color('naranja');"></button>
-      <button class="color rojo" type="button" onclick="color('rojo');"></button>
+  <div>
+  <p class="selecEstilos bx bxs-brush" onclick="desplegarEstilos();"></p>
+  <p class="modo bx bxs-moon" onclick="modoNoche('dia');"></p>
+  <p class="modo bx bxs-sun" onclick="modoNoche('noche');"></p>
+  </div>
 
+    <div id="botonesEstilo" class="botonesEstilo">
+      <div class= "selecFiesta">
+        <img class="festivos" onclick="fecha('reyes');" src="/src/assets/images/icons/estrellaNavidad.png"/>
+        <img class="festivos" onclick="fecha('sanValentin');" src="/src/assets/images/icons/corazon.png"/>
+        <img class="festivos" onclick="fecha('navidad');" src="/src/assets/images/icons/gorroSanta.png"/> 
+        <img class="festivos" onclick="fecha('inocente');" src="/src/assets/images/icons/inocente2.png"/> 
+        <img class="festivos" onclick="fecha('anoNuevo');" src="/src/assets/images/icons/champan.png"/> 
+      </div>
+      <div class="cambioColor">   
+        <p class="color oro"  onclick="color('oro');"></p>
+        <p class="color amarillo"  onclick="color('amarillo');"></p>
+        <p class="color naranja"  onclick="color('naranja');"></p>
+        <p class="color rojo"  onclick="color('rojo');"></p>
+      </div>
     </div>
     <div class="social-links" >
       <a class="bx bxl-youtube" href="https://www.youtube.com/channel/UCMEv1Jj16ypsAXmZXOkKrQA/" target="_blank"></a>
@@ -191,6 +195,14 @@ function navegar(id) {
     default:
   }
 }
+
+
+function desplegarEstilos() {
+  console.log('llegado')
+  document.getElementById("botonesEstilo").style ="display:block";
+ //document.getElementById("cambioColor").style ="display:block";
+}
+
 
 function seleccionado() {
   menu.slideToggle();

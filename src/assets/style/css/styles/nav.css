@@ -20,40 +20,44 @@
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
+.social-media .modo {
+  border: none;
+  background: transparent;
+  font-size: 2.4rem;
+}
 .social-media .botonesEstilo {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  display: none;
 }
-.social-media .botonesEstilo .festivos {
-  border: none;
-  background-color: transparent;
-}
-.social-media .botonesEstilo .festivos img {
+.social-media .botonesEstilo .selecFiesta .festivos {
   width: 2.4rem;
 }
-.social-media .botonesEstilo .modo {
-  border: none;
-  background: transparent;
-  font-size: 2.4rem;
+.social-media .botonesEstilo .cambioColor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
-.social-media .botonesEstilo .color {
+.social-media .botonesEstilo .cambioColor .color {
   height: 2.2rem;
   width: 2.2rem;
   border-radius: 50%;
-  margin: 0rem 0.1rem 0rem 0.1rem;
+  border: 0.05rem solid #0a0a0a;
+  margin: 0rem 0.2rem 0rem 0.2rem;
 }
-.social-media .botonesEstilo .amarillo {
+.social-media .botonesEstilo .cambioColor .amarillo {
   background: #ffff00;
 }
-.social-media .botonesEstilo .naranja {
+.social-media .botonesEstilo .cambioColor .naranja {
   background: orangered;
 }
-.social-media .botonesEstilo .oro {
+.social-media .botonesEstilo .cambioColor .oro {
   background: #eabe3f;
 }
-.social-media .botonesEstilo .rojo {
+.social-media .botonesEstilo .cambioColor .rojo {
   background: #f80000;
 }
 .social-media .botonesEstilo a:hover {
