@@ -10,28 +10,59 @@
   justify-content: space-between;
   align-items: center;
 }
-
-.social-links {
+.social-media .botonesEstilo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.social-media .botonesEstilo .festivos {
+  border: none;
+  background-color: transparent;
+}
+.social-media .botonesEstilo .festivos img {
+  width: 2.4rem;
+}
+.social-media .botonesEstilo .modo {
+  border: none;
+  background: transparent;
+  font-size: 2.4rem;
+}
+.social-media .botonesEstilo .color {
+  height: 2.2rem;
+  width: 2.2rem;
+  border-radius: 50%;
+}
+.social-media .botonesEstilo .amarillo {
+  background: #ffff00;
+}
+.social-media .botonesEstilo .naranja {
+  background: orangered;
+}
+.social-media .botonesEstilo .oro {
+  background: #eabe3f;
+}
+.social-media .botonesEstilo .rojo {
+  background: #f80000;
+}
+.social-media .social-links {
   display: flex;
   flex-direction: row;
   flex-direction: row-reverse;
   /* background-color: orangered; */
 }
-
-.social-links a {
-  font-size: 24px;
+.social-media .social-links a {
+  font-size: 2.4rem;
   display: inline-block;
   color: black;
   line-height: 1;
   transition: 0.3s;
   text-decoration: none;
 }
-
-.social-links a:visited {
+.social-media .social-links a:visited {
   color: black;
 }
-
-.social-links a:hover {
+.social-media .social-links a:hover {
   color: white;
 }
 

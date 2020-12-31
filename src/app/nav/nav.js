@@ -4,30 +4,37 @@ class miNav extends HTMLElement {
   }
   connectedCallback() {
     this.innerHTML = `
-    <section class="social-media">
-    <div>
-      <button class="enlace" type="button" onclick="fecha('reyes');"> 1 </button>
-      <button class="enlace" type="button" onclick="fecha('sanValentin');"> 2 </button>
-      <button class="enlace" type="button" onclick="fecha('navidad');"> 3 </button>
-      <button class="enlace" type="button" onclick="fecha('inocente');"> 4 </button>
-      <button class="enlace" type="button" onclick="fecha('anoNuevo');"> 5 </button>
-      <button class="enlace" type="button" onclick="modoNoche('dia');"> Día </button>
-      <button class="enlace" type="button" onclick="modoNoche('noche');"> Noche </button>
+<section class="social-media">
+  <div class="botonesEstilo">
+    <select name="my_html_select_box">
+      <option>New York </option>
+	    <option selected="yes">Bucharest</option>
+	    <option>Madrid</option>
+    </select>
+
+      <button class="festivos" type="button" onclick="fecha('reyes');"><img src="/src/assets/images/icons/estrellaNavidad.png"></button>
+      <button class="festivos" type="button" onclick="fecha('sanValentin');"><img src="/src/assets/images/icons/corazon.png"></button>
+      <button class="festivos" type="button" onclick="fecha('navidad');"> <img src="/src/assets/images/icons/gorroSanta.png"> </button>
+      <button class="festivos" type="button" onclick="fecha('inocente');"> <img src="/src/assets/images/icons/inocente2.png"> </button>
+      <button class="festivos" type="button" onclick="fecha('anoNuevo');"> <img src="/src/assets/images/icons/champan.png"> </button>
       
-      <button class="amarillo" type="button" onclick="color('amarillo');"> Yellow </button>
-      <button class="naranja" type="button" onclick="color('naranja');"> Orange </button>
-      <button class="oro" type="button" onclick="color('oro');"> Gold </button>
-      <button class="rojo" type="button" onclick="color('rojo');"> Red </button>
+      <button class="modo bx bx-moon" type="button" onclick="modoNoche('dia');"></button>
+      <button class="modo bx bx-sun" type="button" onclick="modoNoche('noche');"></button>
+      
+      <button class="color oro" type="button" onclick="color('oro');"></button>
+      <button class="color amarillo" type="button" onclick="color('amarillo');"></button>
+      <button class="color naranja" type="button" onclick="color('naranja');"></button>
+      <button class="color rojo" type="button" onclick="color('rojo');"></button>
 
     </div>
     <div class="social-links" >
-      <a href="https://www.youtube.com/channel/UCMEv1Jj16ypsAXmZXOkKrQA/" target="_blank" class=""><i class="bx bxl-youtube"></i></a>
-      <a href="https://www.instagram.com/micrelio.dev/" target="_blank" class=""><i class="bx bxl-instagram"></i></a>
-      <a href="https://twitter.com/Micrelio/" target="_blank" class=""><i class="bx bxl-twitter"></i></a>
-      <a href="href="https://www.facebook.com/micro6/" target="_blank" class=""><i class="bx bxl-facebook"></i></a>
-      <a href="https://wa.me/34653251983/" target="_blank" class=""><i class="bx bxl-whatsapp"></i></a>
-      <a href="https://www.linkedin.com/in/jos%C3%A9-antonio-l%C3%B3pez-baena-65833016a/" target="_blank" class=""><i class="bx bxl-linkedin"></i></a>
-      <a href="https://github.com/Micrelio/" target="_blank" class=""><i class="bx bxl-github"></i></a>
+      <a class="bx bxl-youtube" href="https://www.youtube.com/channel/UCMEv1Jj16ypsAXmZXOkKrQA/" target="_blank"></a>
+      <a class="bx bxl-instagram" href="https://www.instagram.com/micrelio.dev/" target="_blank"></a>
+      <a class="bx bxl-twitter" href="https://twitter.com/Micrelio/" target="_blank"></a>
+      <a class="bx bxl-facebook" href="href="https://www.facebook.com/micro6/" target="_blank"></a>
+      <a class="bx bxl-whatsapp" href="https://wa.me/34653251983/" target="_blank"></a>
+      <a class="bx bxl-linkedin" href="https://www.linkedin.com/in/jos%C3%A9-antonio-l%C3%B3pez-baena-65833016a/" target="_blank"></a>
+      <a class="bx bxl-github" href="https://github.com/Micrelio/" target="_blank"></a>
 
     </div>
   </section>
