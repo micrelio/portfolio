@@ -15,6 +15,18 @@ body .fa-arrow-alt-circle-up {
   text-shadow: 0.2rem 0.2rem 0.5rem black;
   background-color: #eeeeee;
 }
+html .fiestas .stop,
+body .fiestas .stop {
+  background-color: #eabe3f;
+  border: 0.05rem solid #0a0a0a;
+  border-radius: 0.9rem;
+}
+html .fiestas .stop:hover,
+body .fiestas .stop:hover {
+  color: #0a0a0a;
+  background-color: #eeeeee;
+  border: 0.05rem solid #eabe3f;
+}
 
 /* ------------------------------------------
          social media menu
@@ -69,7 +81,7 @@ body .fa-arrow-alt-circle-up {
   background-color: black;
 }
 * footer .footerContainer {
-  color: #fff;
+  color: #eeeeee;
 }
 * footer .footerContainer .contacto h2,
 * footer .footerContainer .direccion h2,
@@ -86,7 +98,7 @@ body .fa-arrow-alt-circle-up {
 * footer .footerContainer .direccion input[type=submit],
 * footer .footerContainer .paginas input[type=submit] {
   background: #eabe3f;
-  color: #fff;
+  color: #eeeeee;
   border: 0.1rem solid #eabe3f;
   border: 0.05rem solid #eeeeee;
 }
@@ -105,7 +117,7 @@ body .fa-arrow-alt-circle-up {
   border-top: 0.1rem solid #eabe3f;
 }
 * footer .redes .copy {
-  color: #fff;
+  color: #eeeeee;
   border-bottom: 0.1rem solid #eabe3f;
 }
 @media screen and (max-width: 650px) {
@@ -145,20 +157,8 @@ body .fa-arrow-alt-circle-up {
   }
 }
 @media only screen and (max-width: 800px) {
-  body .fiestas {
-    z-index: 1000;
-    position: fixed;
-    bottom: 4rem;
-  }
-  body .fiestas img {
-    width: 10rem;
-  }
   body .fiestas .stop {
-    padding: 0rem 0rem 0rem 0rem;
     font-size: calc(1rem + 0.3vw);
-    cursor: pointer;
-    border: 0.05rem solid #0a0a0a;
-    border-radius: 0.9rem;
   }
 }
 

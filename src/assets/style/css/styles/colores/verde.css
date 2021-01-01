@@ -13,7 +13,20 @@ body .fa-arrow-alt-circle-up {
   color: #008f39;
   -webkit-text-stroke: 0.1rem gray;
   text-shadow: 0.2rem 0.2rem 0.5rem black;
-  background-color: white;
+  background-color: #eeeeee;
+}
+html .fiestas .stop,
+body .fiestas .stop {
+  color: #eeeeee;
+  background-color: #008f39;
+  border: 0.05rem solid #eeeeee;
+  border-radius: 0.9rem;
+}
+html .fiestas .stop:hover,
+body .fiestas .stop:hover {
+  color: #008f39;
+  background-color: #eeeeee;
+  border: 0.05rem solid #008f39;
 }
 
 /* ------------------------------------------
@@ -69,7 +82,7 @@ body .fa-arrow-alt-circle-up {
   background-color: black;
 }
 * footer .footerContainer {
-  color: #fff;
+  color: #eeeeee;
 }
 * footer .footerContainer .contacto h2,
 * footer .footerContainer .direccion h2,
@@ -86,9 +99,9 @@ body .fa-arrow-alt-circle-up {
 * footer .footerContainer .direccion input[type=submit],
 * footer .footerContainer .paginas input[type=submit] {
   background: #008f39;
-  color: #fff;
+  color: #eeeeee;
   border: 0.1rem solid #008f39;
-  border: 0.05rem solid white;
+  border: 0.05rem solid #eeeeee;
 }
 * footer .footerContainer .contacto input[type=submit]:hover,
 * footer .footerContainer .direccion input[type=submit]:hover,
@@ -98,14 +111,14 @@ body .fa-arrow-alt-circle-up {
 * footer .footerContainer .contacto .fa,
 * footer .footerContainer .direccion .fa,
 * footer .footerContainer .paginas .fa {
-  color: red;
+  color: #f80000;
 }
 * footer .redes {
   background: #000;
   border-top: 0.1rem solid #008f39;
 }
 * footer .redes .copy {
-  color: #fff;
+  color: #eeeeee;
   border-bottom: 0.1rem solid #008f39;
 }
 @media screen and (max-width: 650px) {
@@ -145,21 +158,8 @@ body .fa-arrow-alt-circle-up {
   }
 }
 @media only screen and (max-width: 800px) {
-  body .fiestas {
-    z-index: 1000;
-    position: fixed;
-    bottom: 4rem;
-  }
-  body .fiestas img {
-    width: 10rem;
-  }
   body .fiestas .stop {
-    padding: 0rem 0rem 0rem 0rem;
-    border: 0.1rem solid #008f39;
     font-size: calc(1rem + 0.3vw);
-    cursor: pointer;
-    border: 0.05rem solid white;
-    border-radius: 0.9rem;
   }
 }
 

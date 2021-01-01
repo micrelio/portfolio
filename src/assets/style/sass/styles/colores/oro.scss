@@ -8,7 +8,6 @@
 }
 html,
 body {
-  
   //  h1 {
   //   color: $oro;
   //   -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
@@ -56,7 +55,19 @@ body {
       color: $blanco;
     }
   }
+  .fiestas {
+    .stop {
+      background-color: $oro;
+      border: 0.05rem solid $negro;
+      border-radius: 0.9rem;
+    }
+    .stop:hover {
+      color: $negro;
+      background-color: $blanco;
+      border: 0.05rem solid $oro;
+    }
   }
+}
 
 /* ------------------------------------------
          social media menu
@@ -89,7 +100,7 @@ body {
     .navbar {
       .foto {
         img {
-          border: 0.05rem solid $oro; //#fff;
+          border: 0.05rem solid $oro; //$blanco;
           box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
         }
       }
@@ -141,7 +152,7 @@ body {
       color: black;
     }
     .footerContainer {
-      color: #fff;
+      color: $blanco;
       .contacto,
       .direccion,
       .paginas {
@@ -160,7 +171,7 @@ body {
         }
         input[type="submit"] {
           background: $oro;
-          color: #fff;
+          color: $blanco;
 
           border: 0.1rem solid $oro;
 
@@ -194,7 +205,7 @@ body {
         }
       }
       .copy {
-        color: #fff;
+        color: $blanco;
         border-bottom: 0.1rem solid $oro;
       }
       .politicas {
@@ -272,19 +283,10 @@ body {
 @media only screen and (max-width: 800px) {
   body {
     .fiestas {
-      z-index: 1000;
-      position: fixed; //para que siga la pagina
-      // position: -webkit-fixed;  // required for Safari
-      bottom: 4rem;
       img {
-        width: 10rem;
       }
       .stop {
-        padding: 0rem 0rem 0rem 0rem;
         font-size: calc(1rem + 0.3vw);
-        cursor: pointer;
-        border: 0.05rem solid $negro;
-        border-radius: 0.9rem;
       }
     }
   }

@@ -53,9 +53,21 @@ body {
     -webkit-text-stroke: 0.1rem gray;
     text-shadow: 0.2rem 0.2rem 0.5rem black;
     background: {
-      color: white;
+      color: $blanco;
     }
   }
+  .fiestas {
+    .stop {
+       background-color: $morado;
+       border: 0.05rem solid $blanco;
+       border-radius: 0.9rem;
+     }
+     .stop:hover {
+       color: $morado;
+       background-color: $blanco;
+       border: 0.05rem solid $morado;
+     }
+   }
   }
 
 /* ------------------------------------------
@@ -89,7 +101,7 @@ body {
     .navbar {
       .foto {
         img {
-          border: 0.05rem solid $morado; //#fff;
+          border: 0.05rem solid $morado; //$blanco;
           box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
         }
       }
@@ -141,14 +153,14 @@ body {
       color: black;
     }
     .footerContainer {
-      color: #fff;
+      color: $blanco;
       .contacto,
       .direccion,
       .paginas {
         h2 {
           color: $morado;
           -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
-          // text-shadow: 0.05em 0.05em 0.1em white;
+          // text-shadow: 0.05em 0.05em 0.1em $blanco;
         }
         p {
         }
@@ -160,17 +172,17 @@ body {
         }
         input[type="submit"] {
           background: $morado;
-          color: #fff;
+          color: $blanco;
 
           border: 0.1rem solid $morado;
 
-          border: 0.05rem solid white;
+          border: 0.05rem solid $blanco;
         }
         input[type="submit"]:hover {
           background-color: rgba(78, 78, 32, 0.582);
         }
         .fa {
-          color: red;
+          color: $rojo;
         }
         .datos {
           p {
@@ -194,7 +206,7 @@ body {
         }
       }
       .copy {
-        color: #fff;
+        color: $blanco;
         border-bottom: 0.1rem solid $morado;
       }
       .politicas {
@@ -272,21 +284,11 @@ body {
 @media only screen and (max-width: 800px) {
   body {
     .fiestas {
-      z-index: 1000;
-      position: fixed; //para que siga la pagina
-      // position: -webkit-fixed;  // required for Safari
-      bottom: 4rem;
-      img {
-        width: 10rem;
+           img {
       }
       .stop {
-        padding: 0rem 0rem 0rem 0rem;
-        border: 0.1rem solid $morado;
         font-size: calc(1rem + 0.3vw);
-        cursor: pointer;
-        border: 0.05rem solid white;
-        border-radius: 0.9rem;
-      }
+            }
     }
   }
 }

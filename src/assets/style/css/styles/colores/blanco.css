@@ -17,6 +17,7 @@ body .fa-arrow-alt-circle-up {
 }
 html .fiestas .stop,
 body .fiestas .stop {
+  color: #0a0a0a;
   background-color: #eeeeee;
   border: 0.05rem solid #0a0a0a;
   border-radius: 0.9rem;
@@ -82,7 +83,7 @@ body .fiestas .stop:hover {
   background-color: black;
 }
 * footer .footerContainer {
-  color: #fff;
+  color: #eeeeee;
 }
 * footer .footerContainer .contacto h2,
 * footer .footerContainer .direccion h2,
@@ -99,7 +100,7 @@ body .fiestas .stop:hover {
 * footer .footerContainer .direccion input[type=submit],
 * footer .footerContainer .paginas input[type=submit] {
   background: #eeeeee;
-  color: #fff;
+  color: #eeeeee;
   border: 0.1rem solid #eeeeee;
   border: 0.05rem solid #eeeeee;
 }
@@ -111,14 +112,14 @@ body .fiestas .stop:hover {
 * footer .footerContainer .contacto .fa,
 * footer .footerContainer .direccion .fa,
 * footer .footerContainer .paginas .fa {
-  color: red;
+  color: #f80000;
 }
 * footer .redes {
   background: #000;
   border-top: 0.1rem solid #eeeeee;
 }
 * footer .redes .copy {
-  color: #fff;
+  color: #eeeeee;
   border-bottom: 0.1rem solid #eeeeee;
 }
 @media screen and (max-width: 650px) {
@@ -159,21 +160,13 @@ body .fiestas .stop:hover {
 }
 @media only screen and (max-width: 800px) {
   body .fiestas {
-    z-index: 1000;
-    position: fixed;
     bottom: 4rem;
   }
   body .fiestas img {
     width: 10rem;
   }
   body .fiestas .stop {
-    background-color: #eeeeee;
-    padding: 0rem 0rem 0rem 0rem;
-    border: 0.1rem solid #eeeeee;
     font-size: calc(1rem + 0.3vw);
-    cursor: pointer;
-    border: 0.05rem solid #0a0a0a;
-    border-radius: 0.9rem;
   }
 }
 
