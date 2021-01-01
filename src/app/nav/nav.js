@@ -28,11 +28,11 @@ class miNav extends HTMLElement {
       <p><strong>Festivos</strong></p>
       <hr>
       <div class= "selecFiesta">
-        <img class="festivos" onclick="fecha('reyes');" src="/src/assets/images/icons/estrellaNavidad.png"/>
-        <img class="festivos" onclick="fecha('sanValentin');" src="/src/assets/images/icons/corazon.png"/>
-        <img class="festivos" onclick="fecha('navidad');" src="/src/assets/images/icons/gorroSanta.png"/> 
-        <img class="festivos" onclick="fecha('inocente');" src="/src/assets/images/icons/inocente.png"/> 
-        <img class="festivos" onclick="fecha('anoNuevo');" src="/src/assets/images/icons/champan.png"/> 
+        <img class="festivos" id="festivos" onclick="fecha('reyes');" src="/src/assets/images/icons/estrellaNavidad.png"/>
+        <img class="festivos" id="festivos" onclick="fecha('sanValentin');" src="/src/assets/images/icons/corazon.png"/>
+        <img class="festivos" id="festivos" onclick="fecha('navidad');" src="/src/assets/images/icons/gorroSanta.png"/> 
+        <img class="festivos" id="festivos" onclick="fecha('inocente');" src="/src/assets/images/icons/inocente.png"/> 
+        <img class="festivos" id="festivos" onclick="fecha('anoNuevo');" src="/src/assets/images/icons/champan.png"/> 
       </div>
       <div class= "selecFiesta2">
         <img class="festivos" onclick="fecha('reyes');" src="/src/assets/images/icons/estrellaNavidad.png"/>
@@ -47,18 +47,18 @@ class miNav extends HTMLElement {
       <hr>
       <div class="cambioColor">
         <div class="selecColor">
-          <p class="color blanco" onclick="color('blanco');"></p>
-          <p class="color amarillo" onclick="color('amarillo');"></p>
-          <p class="color oro" onclick="color('oro');"></p>
-          <p class="color marron" onclick="color('marron');"></p>
-          <p class="color naranja"  onclick="color('naranja');"></p>
+          <p id="color" class="color blanco" onclick="color('blanco');"></p>
+          <p id="color" class="color amarillo" onclick="color('amarillo');"></p>
+          <p id="color" class="color oro" onclick="color('oro');"></p>
+          <p id="color" class="color marron" onclick="color('marron');"></p>
+          <p id="color" class="color naranja"  onclick="color('naranja');"></p>
         </div>
         <div class="selecColor1">
         <p class="color rojo" onclick="color('rojo');"></p>
-          <p class="color rosa" onclick="color('rosa');"></p>
-          <p class="color morado" onclick="color('morado');"></p>
-          <p class="color azul" onclick="color('azul');"></p>
-          <p class="color verde" onclick="color('verde');"></p>
+          <p id="color" class="color rosa" onclick="color('rosa');"></p>
+          <p id="color" class="color morado" onclick="color('morado');"></p>
+          <p id="color" class="color azul" onclick="color('azul');"></p>
+          <p id="color" class="color verde" onclick="color('verde');"></p>
         </div>    
       </div>
     </div>
@@ -227,39 +227,41 @@ function navegar(id) {
 <p style="display:none;" class="selecEstilosPlegar bx bxs-brush" onclick="plegarEstilos();"></p> */
 }
 //funcion para cualquier clic en el documento
-document.addEventListener(
-  "click",
-  function (e) {
-    //obtiendo informacion del DOM para
-    var clic = e.target.id;
-    console.log(clic);
-    switch (clic) {
-      case 'selecEstilosDesplegar':
+document.addEventListener("click", function (e) {
+  //obtiendo informacion del DOM para
+  var clic = e.target.id;
+  console.log(clic);
+  switch (clic) {
+    case "selecEstilosDesplegar":
+      document.getElementById("botonesEstilo").style = "display:block";
+      document.getElementById("selecEstilosDesplegar").style = "display:none";
+      document.getElementById("selecEstilosPlegar").style = "display:block";
+      break;
+    default:
+      if (document.getElementById("botonesEstilo").contains(e.target)) {
+        // alert("Clicked in Box");
         document.getElementById("botonesEstilo").style = "display:block";
-        document.getElementById("selecEstilosDesplegar").style = "display:none";
-        document.getElementById("selecEstilosPlegar").style = "display:block";
-        break;
-      case 'botonesEstilo':
-        console.log("eeeeeeeeeeeeeee");
-        document.getElementById("botonesEstilo").style = "display:block";
-
-        break;
-      default:
+      } else {
+        // alert("Clicked outside Box");
         document.getElementById("botonesEstilo").style = "display:none";
         document.getElementById("selecEstilosDesplegar").style =
           "display:block";
         document.getElementById("selecEstilosPlegar").style = "display:none";
-        break;
-    }
-    // console.log(clic);
-    // if (div.style.display == "block" && clic != div || clic != desplegar) {
-    //   console.log("perrra");
-    //   div.style.display = "none";
-    //  // plegarEstilos();
-    // }
-  },
-  false
-);
+      }
+
+      break;
+  }
+
+  // console.log(clic);
+  // if (div.style.display == "block" && clic != div || clic != desplegar) {
+  //   console.log("perrra");
+  //   div.style.display = "none";
+  //  // plegarEstilos();
+  // }
+  //   },
+  //   false
+  // );
+});
 function desplegarEstilos() {
   // document.getElementById("botonesEstilo").style ="display:block";
   // document.getElementById("selecEstilosDesplegar").style ="display:none";
