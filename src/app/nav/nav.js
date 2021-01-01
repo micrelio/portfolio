@@ -73,6 +73,10 @@ class miNav extends HTMLElement {
           <div class="enlace" type="button" onclick="navegar('contacto');"> Contacto </div>
         </div>
       </div>
+      <div class="mode">
+            <p id="noche" class="noche bx bxs-moon" onclick="modoNoche('noche');"></p>
+            <p id="dia" class="dia bx bxs-sun" onclick="modoNoche('dia');"></p>
+        </div> 
     </div>
   </div>
   <div class="movil">
@@ -95,12 +99,9 @@ class miNav extends HTMLElement {
       <div onclick="navegar('contacto'); seleccionado();" class="enlace">Contacto</div>
     </div>
   </div>
+  <!-- <audio src="../sonidos/ping.mp4" autoplay loop></audio> -->
  </section>
-  <div class="mode">
-    <!-- <audio src="../sonidos/ping.mp4" autoplay loop></audio> -->
-    <p id="noche" class="noche bx bxs-moon" onclick="modoNoche('noche');"></p>
-    <p id="dia" class="dia bx bxs-sun" onclick="modoNoche('dia');"></p>
-  </div>
+
       `;
     // esto arranca automatico
     }

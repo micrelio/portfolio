@@ -24,7 +24,7 @@
     animation-timing-function: linear;
     animation-iteration-count: infinite;
   }
-  .selecEstilosCerrar{
+  .selecEstilosCerrar {
     animation-name: none;
   }
   .modo {
@@ -32,7 +32,7 @@
     background: transparent;
     font-size: 2.4rem;
   }
- 
+
   .botonesEstilo a:hover {
     background-color: white;
   }
@@ -43,8 +43,8 @@
     //padding: 0.01rem;
     /* background-color: orangered; */
   }
-  p{
-    color:$negro
+  p {
+    color: $negro;
   }
   .social-links a {
     font-size: 2.4rem;
@@ -67,108 +67,105 @@
 ------------------------------------------ */
 .botonesEstilo {
   display: none;
-    background-color: white;
-        border: 0.05rem solid $negro;
-    border-radius: 0.9rem;
-padding:1rem;
-margin: 0rem 0rem 0rem 0.5rem;
-z-index: 1;
- position: absolute;
-p{
-  color: $negro;
-}
-.filasFiesta{
-  margin: 0rem 0rem 1rem 0rem;
-  p{
-    font-size: 1.5rem;
-    margin: 0rem 0rem 0rem 0rem;
+  background-color: white;
+  border: 0.05rem solid $negro;
+  border-radius: 0.9rem;
+  padding: 1rem;
+  margin: 0rem 0rem 0rem 0.5rem;
+  z-index: 1;
+  position: absolute;
+  p {
+    color: $negro;
   }
-  .selecFiesta {
-    margin: 0rem 0rem 0rem 0rem;
-    .festivos {
-      //   border: none;
-      // background-color: transparent;
-      width: 2.4rem;
-      margin: 0.5rem 0rem 0rem 0.2rem;
-
+  .filasFiesta {
+    margin: 0rem 0rem 1rem 0rem;
+    p {
+      font-size: 1.5rem;
+      margin: 0rem 0rem 0rem 0rem;
     }
-  }
-  .selecFiesta2 {
-    margin: 0rem 0rem 0rem 0rem;
-    .festivos {
-      //   border: none;
-      // background-color: transparent;
-      width: 2.4rem;
-      margin: 0.2rem 0rem 0rem 0.2rem;
-
-    }
-  }
-}
-.filasColores{
-  p{
-    font-size: 1.5rem;
-    margin: 0rem 0rem 0rem 0rem;
-  }
-  .cambioColor {
-    display: flex;
-    flex-direction: column;
-    // align-items: center;
-    // justify-content: center;
-    .selecColor{
-      display: flex;
-      flex-direction: row;
-      .color {
-        height: 2.2rem;
-        width: 2.2rem;
-        border-radius: 50%;
-        border: 0.05rem solid $negro;
-        margin: 0.7rem 0.2rem 0rem 0.2rem;
+    .selecFiesta {
+      margin: 0rem 0rem 0rem 0rem;
+      .festivos {
+        //   border: none;
+        // background-color: transparent;
+        width: 2.4rem;
+        margin: 0.5rem 0rem 0rem 0.2rem;
       }
-   
-  }
-  .selecColor1{
-    display: flex;
-    flex-direction: row;
-    .color {
-      height: 2.2rem;
-      width: 2.2rem;
-      border-radius: 50%;
-      border: 0.05rem solid $negro;
-      margin: 0.4rem 0.2rem 0rem 0.2rem;
     }
- }
+    .selecFiesta2 {
+      margin: 0rem 0rem 0rem 0rem;
+      .festivos {
+        //   border: none;
+        // background-color: transparent;
+        width: 2.4rem;
+        margin: 0.2rem 0rem 0rem 0.2rem;
+      }
+    }
+  }
+  .filasColores {
+    p {
+      font-size: 1.5rem;
+      margin: 0rem 0rem 0rem 0rem;
+    }
+    .cambioColor {
+      display: flex;
+      flex-direction: column;
+      // align-items: center;
+      // justify-content: center;
+      .selecColor {
+        display: flex;
+        flex-direction: row;
+        .color {
+          height: 2.2rem;
+          width: 2.2rem;
+          border-radius: 50%;
+          border: 0.05rem solid $negro;
+          margin: 0.7rem 0.2rem 0rem 0.2rem;
+        }
+      }
+      .selecColor1 {
+        display: flex;
+        flex-direction: row;
+        .color {
+          height: 2.2rem;
+          width: 2.2rem;
+          border-radius: 50%;
+          border: 0.05rem solid $negro;
+          margin: 0.4rem 0.2rem 0rem 0.2rem;
+        }
+      }
       .blanco {
-      background: $blanco;
-    }
-    .amarillo {
-      background: $amarillo;
-    }
-    .naranja {
-      background: $naranja;
-    }
-    .oro {
-      background: $oro;
-    }
-    .marron {
-      background: $marron;
-    }
-    .rojo {
-      background: $rojo;
-    }
-    .rosa {
-      background: $rosa;
-    }
-    .morado {
-      background: $morado;
-    }
-    .azul {
-      background: $azul;
-    }
-    .verde {
-      background: $verde;
+        background: $blanco;
+      }
+      .amarillo {
+        background: $amarillo;
+      }
+      .naranja {
+        background: $naranja;
+      }
+      .oro {
+        background: $oro;
+      }
+      .marron {
+        background: $marron;
+      }
+      .rojo {
+        background: $rojo;
+      }
+      .rosa {
+        background: $rosa;
+      }
+      .morado {
+        background: $morado;
+      }
+      .azul {
+        background: $azul;
+      }
+      .verde {
+        background: $verde;
+      }
     }
   }
-}
 }
 /* ------------------------------------------
          menu
@@ -195,6 +192,7 @@ p{
       flex-direction: row;
       flex-wrap: nowrap;
       align-items: center;
+      justify-content: space-around;
       .foto {
         //position: absolute;
         //z-index: 1000;
@@ -206,6 +204,36 @@ p{
           border: 0.05rem solid $corporativo; //#fff;
           width: calc(3vw + 3rem);
           box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+        }
+      }
+      .mode {
+        //   z-index: 1;
+        //  position: absolute;
+        margin: 0rem 1rem 0rem 0rem;
+        //width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        background: {
+          //     color:rgb(196, 60, 83) ;
+        }
+        .noche {
+          display: none;
+        }
+        .dia {
+          display: block;
+          color: $blanco;
+          font-size: 5rem;
+        }
+
+        img {
+          position: absolute;
+          // margin-right: calc(10px + 2vw);
+          // border-radius: 75%;
+          // border: 3px double #000000;
+          width: calc(0.1rem + 3vw);
+          // box-shadow: 0px 4px 3px rgba(0, 0, 0, .5);
         }
       }
       .menu {
@@ -222,7 +250,7 @@ p{
         // z-index: 1000;
         .links {
           display: grid;
-          grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5] 1fr [x6] /*1fr [x7]*/;
+          grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5] 1fr [x6] /*1fr [x7] 1fr [x8]*/;
           grid-template-rows: [y0] 1fr [y1];
           //background-color: rosybrown;
           grid-column-gap: 1rem;
@@ -329,7 +357,7 @@ p{
       }
     }
   }
-   .movil img {
+  .movil img {
     display: none;
   }
   .mnav-link {
@@ -339,32 +367,7 @@ p{
     display: none;
   }
 }
-.mode {
-  padding: 1rem 1rem 0rem 0rem; 
-  width: 100%;
-  display: flex;
-  flex-direction: row-reverse;
-  background: {
-    // color: ;
-  }
-  .noche{
-display:none;
-  }
-  .dia{
-    display: block;
-    color:$blanco;
-    font-size: 5rem;
-  }
 
-  img {
-    position: absolute;
-    // margin-right: calc(10px + 2vw);
-    // border-radius: 75%;
-    // border: 3px double #000000;
-    width: calc(0.1rem + 3vw);
-    // box-shadow: 0px 4px 3px rgba(0, 0, 0, .5);
-  }
-}
 //------------------------\\
 //  RESPONSIVE  \\
 //------------------------\\
