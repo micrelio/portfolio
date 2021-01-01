@@ -43,6 +43,9 @@
     //padding: 0.01rem;
     /* background-color: orangered; */
   }
+  p{
+    color:$negro
+  }
   .social-links a {
     font-size: 2.4rem;
     display: inline-block;
@@ -63,30 +66,17 @@
          div stilos
 ------------------------------------------ */
 .botonesEstilo {
-  // display: flex;
-  // flex-direction: column;
-  // align-items: flex-end;
-  // justify-content: center;
   display: none;
-  // border: none;
     background-color: white;
         border: 0.05rem solid $negro;
     border-radius: 0.9rem;
 padding:1rem;
 margin: 0rem 0rem 0rem 0.5rem;
-
-
- z-index: 1;
+z-index: 1;
  position: absolute;
-// position: fixed;
-    // color: $negro;
-    // width: 100%;
-    // padding: 0.5rem 0rem 0.5rem 0rem;
-    // border: 0.1rem solid $amarillo;
-    // font-size: calc(0.5rem + 1vw);
-    // cursor: pointer;
-    // border-radius: 0.9rem;
-
+p{
+  color: $negro;
+}
 .filasFiesta{
   margin: 0rem 0rem 1rem 0rem;
   p{

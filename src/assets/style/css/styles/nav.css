@@ -37,6 +37,9 @@
   flex-direction: row-reverse;
   /* background-color: orangered; */
 }
+.social-media p {
+  color: #0a0a0a;
+}
 .social-media .social-links a {
   font-size: 2.4rem;
   display: inline-block;
@@ -64,6 +67,9 @@
   margin: 0rem 0rem 0rem 0.5rem;
   z-index: 1;
   position: absolute;
+}
+.botonesEstilo p {
+  color: #0a0a0a;
 }
 .botonesEstilo .filasFiesta {
   margin: 0rem 0rem 1rem 0rem;
