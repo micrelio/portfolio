@@ -95,13 +95,12 @@ class miNav extends HTMLElement {
       <div onclick="navegar('contacto'); seleccionado();" class="enlace">Contacto</div>
     </div>
   </div>
+ </section>
   <div class="mode">
     <!-- <audio src="../sonidos/ping.mp4" autoplay loop></audio> -->
-    <p class="modo bx bxs-moon" onclick="modoNoche('dia');"></p>
-    <p class="modo bx bxs-sun" onclick="modoNoche('noche');"></p>
+    <p id="noche" class="noche bx bxs-moon" onclick="modoNoche('noche');"></p>
+    <p id="dia" class="dia bx bxs-sun" onclick="modoNoche('dia');"></p>
   </div>
-</section>
-
       `;
     // esto arranca automatico
     }

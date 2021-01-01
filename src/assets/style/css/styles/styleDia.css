@@ -4,6 +4,21 @@ html,
 body {
   background-color: #eeeeee;
 }
+html .mode .noche,
+body .mode .noche {
+  display: block;
+  color: #0a0a0a;
+  font-size: 5rem;
+}
+html .mode .dia,
+body .mode .dia {
+  display: none;
+}
+html .mode img,
+body .mode img {
+  position: absolute;
+  width: calc(0.1rem + 3vw);
+}
 html h1,
 body h1 {
   color: #0a0a0a;

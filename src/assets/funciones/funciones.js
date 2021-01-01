@@ -93,10 +93,14 @@ function modoNoche(id) {
     case "dia":
       document.getElementById("modo").href =
         "/src/assets/style/css/styles/styleDia.css";
+        // document.getElementById("noche").style = "display:none";
+        // document.getElementById("dia").style = "display:block";
       break;
     case "noche":
       document.getElementById("modo").href =
         "/src/assets/style/css/styles/style.css";
+        // document.getElementById("noche").style = "display:block";
+        // document.getElementById("dia").style = "display:none";
       break;
     default:
       break;

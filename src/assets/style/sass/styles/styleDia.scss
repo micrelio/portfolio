@@ -7,6 +7,26 @@ body {
   background: {
     color: $blanco;
   }
+  .mode {
+    .noche {
+      display: block;
+      color: $negro;
+      font-size: 5rem;
+    }
+    .dia {
+      display: none;
+    }
+
+    img {
+      position: absolute;
+      // margin-right: calc(10px + 2vw);
+      // border-radius: 75%;
+      // border: 3px double #000000;
+      width: calc(0.1rem + 3vw);
+      // box-shadow: 0px 4px 3px rgba(0, 0, 0, .5);
+    }
+  }
+
   h1 {
     color: $negro;
     -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
@@ -92,7 +112,7 @@ footer {
   }
   .politicas {
     p {
-          color: $blanco;
+      color: $blanco;
     }
   }
 }
