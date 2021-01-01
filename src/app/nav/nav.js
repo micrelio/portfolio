@@ -8,10 +8,6 @@ class miNav extends HTMLElement {
   <div>
     <p id="selecEstilosDesplegar" class="selecEstilos bx bxs-brush" onclick="desplegarEstilos();"></p>
     <p style="display:none;" id="selecEstilosPlegar" class="selecEstilosCerrar bx bxs-brush" onclick="plegarEstilos();"></p>
-
-   <!-- <p class="modo bx bxs-moon" onclick="modoNoche('dia');"></p>
-    <p class="modo bx bxs-sun" onclick="modoNoche('noche');"></p>
-    -->
   </div>
   <div class="social-links" >
     <a class="bx bxl-youtube" href="https://www.youtube.com/channel/UCMEv1Jj16ypsAXmZXOkKrQA/" target="_blank"></a>
@@ -68,7 +64,6 @@ class miNav extends HTMLElement {
         <img src="/src/assets/images/dracula-man.jpg">
       </div>
       <div class="menu">
-       
         <div class="links">
           <div class="enlace" type="button" onclick="navegar('inicio');"> Inicio </div>
           <div class="enlace" type="button" onclick="navegar('biografia');"> Biografía </div> 
@@ -77,16 +72,6 @@ class miNav extends HTMLElement {
           <div class="enlace" type="button" onclick="navegar('curriculum');"> Currículum </div>
           <div class="enlace" type="button" onclick="navegar('contacto');"> Contacto </div>
         </div>
-     <!--
-        <div id="nuevo" class="nuevo">
-          <div onclick="navegar('inicio') id="inicio" class="nav-link enlace ">Inicio</div>
-          <div id="biografia" class="enlace biografia">Biografía</div>
-          <div id="webs" class="enlace webs">Webs</div>
-          <div id="gal" class="enlace gal">Galería</div>
-          <div id="curriculum" class="enlace curriculum">Currículum</div>
-          <div id="contacto" class="enlace contacto">Contacto</div>
-        </div>
-        -->
       </div>
     </div>
   </div>
@@ -108,66 +93,18 @@ class miNav extends HTMLElement {
       <div onclick="navegar('galeria'); seleccionado();" class="enlace">Galeria</div>
       <div onclick="navegar('curriculum'); seleccionado();" class="enlace">Curriculum</div>
       <div onclick="navegar('contacto'); seleccionado();" class="enlace">Contacto</div>
-          <!--
-        <div onclick="navegar('inicio'); class="enlace inicio mnav-link">Inicio</div>
-        <div id="biografia" class="enlace biografia mnav-link">Biografía</div>
-        <div id="webs" class="enlace webs mnav-link">Webs</div>
-        <div id="gal" class="enlace gal mnav-link">Galería</div>
-        <div id="curriculum" class="enlace curriculum mnav-link">Currículum</div>
-        <div id="contacto" class="enlace contacto mnav-link">Contacto</div>
-        -->
     </div>
   </div>
   <div class="mode">
     <!-- <audio src="../sonidos/ping.mp4" autoplay loop></audio> -->
-    <img src="/src/assets/images/buttons/noche.png">
+    <p class="modo bx bxs-moon" onclick="modoNoche('dia');"></p>
+    <p class="modo bx bxs-sun" onclick="modoNoche('noche');"></p>
   </div>
 </section>
 
       `;
     // esto arranca automatico
-    // var multimedia = document.querySelector("#stick");
-    // multimedia.addEventListener("click", function (seleccion) {
-    // var h = seleccion.target.id;
-    // switch (h) {
-    // case "inicio":
-    //   seleccionado();
-    //   document.getElementById("componente").innerHTML =
-    //     "<mi-inicio></mi-inicio>";
-    //   break;
-    //     case "biografia":
-    //       seleccionado();
-    //       document.getElementById("componente").innerHTML =
-    //         "<mi-biografia></mi-biografia>";
-    //       break;
-    //     case "webs":
-    //       seleccionado();
-    //       document.getElementById("componente").innerHTML =
-    //         "<mi-webs></mi-webs>";
-    //       break;
-    //     case "gal":
-    //       seleccionado();
-    //       document.getElementById("componente").innerHTML =
-    //         "<mi-galeria></mi-galeria>";
-    //       break;
-    //     case "videos":
-    //       seleccionado();
-    //       document.getElementById("componente").innerHTML =
-    //         "<mi-videos></mi-videos>";
-    //       break;
-    //     case "curriculum":
-    //       seleccionado();
-    //       document.getElementById("componente").innerHTML =
-    //         "<mi-curriculum></mi-curriculum>";
-    //       break;
-    //     case "contacto":
-    //       seleccionado();
-    //       document.getElementById("componente").innerHTML =
-    //         "<mi-contacto></mi-contacto>";
-    //       break;
-    //   }
-    // });
-  }
+    }
 }
 customElements.define("mi-nav", miNav);
 // modificar para routing

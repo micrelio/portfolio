@@ -55,19 +55,18 @@ body {
 
     }
     .stop {
-      border: none;
       background: $rojo;
-      color: #fff;
+      color: $blanco;
       width: 100%;
       padding: 0.5rem 0rem 0.5rem 0rem;
       border: 0.1rem solid $rojo;
       font-size: calc(0.5rem + 1vw);
       cursor: pointer;
-      border: 0.05rem solid white;
+      border: 0.05rem solid $negro;
       border-radius: 0.9rem;
     }
     .stop:hover {
-      background-color: white;
+      background-color: $blanco;
       color: $negro;
       border: 0.05rem solid $rojo;
     }

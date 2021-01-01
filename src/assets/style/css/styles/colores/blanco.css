@@ -13,7 +13,20 @@ body .fa-arrow-alt-circle-up {
   color: #eeeeee;
   -webkit-text-stroke: 0.1rem gray;
   text-shadow: 0.2rem 0.2rem 0.5rem black;
-  background-color: white;
+  background-color: #eeeeee;
+}
+html .fiestas .stop,
+body .fiestas .stop {
+  background-color: #eeeeee;
+  border: 0.05rem solid #0a0a0a;
+  border-radius: 0.9rem;
+}
+html .fiestas .stop:hover,
+body .fiestas .stop:hover {
+  color: #eeeeee;
+  background-color: #0a0a0a;
+  border: 0.05rem solid #eeeeee;
+  border-radius: 0.9rem;
 }
 
 /* ------------------------------------------
@@ -88,7 +101,7 @@ body .fa-arrow-alt-circle-up {
   background: #eeeeee;
   color: #fff;
   border: 0.1rem solid #eeeeee;
-  border: 0.05rem solid white;
+  border: 0.05rem solid #eeeeee;
 }
 * footer .footerContainer .contacto input[type=submit]:hover,
 * footer .footerContainer .direccion input[type=submit]:hover,
@@ -154,11 +167,12 @@ body .fa-arrow-alt-circle-up {
     width: 10rem;
   }
   body .fiestas .stop {
+    background-color: #eeeeee;
     padding: 0rem 0rem 0rem 0rem;
     border: 0.1rem solid #eeeeee;
     font-size: calc(1rem + 0.3vw);
     cursor: pointer;
-    border: 0.05rem solid white;
+    border: 0.05rem solid #0a0a0a;
     border-radius: 0.9rem;
   }
 }

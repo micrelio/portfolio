@@ -13,7 +13,7 @@ body .fa-arrow-alt-circle-up {
   color: orangered;
   -webkit-text-stroke: 0.1rem gray;
   text-shadow: 0.2rem 0.2rem 0.5rem black;
-  background-color: white;
+  background-color: #eeeeee;
 }
 
 /* ------------------------------------------
@@ -88,7 +88,7 @@ body .fa-arrow-alt-circle-up {
   background: orangered;
   color: #fff;
   border: 0.1rem solid orangered;
-  border: 0.05rem solid white;
+  border: 0.05rem solid #eeeeee;
 }
 * footer .footerContainer .contacto input[type=submit]:hover,
 * footer .footerContainer .direccion input[type=submit]:hover,
@@ -155,10 +155,9 @@ body .fa-arrow-alt-circle-up {
   }
   body .fiestas .stop {
     padding: 0rem 0rem 0rem 0rem;
-    border: 0.1rem solid orangered;
     font-size: calc(1rem + 0.3vw);
     cursor: pointer;
-    border: 0.05rem solid white;
+    border: 0.05rem solid #0a0a0a;
     border-radius: 0.9rem;
   }
 }

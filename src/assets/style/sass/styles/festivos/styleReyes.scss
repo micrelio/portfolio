@@ -36,16 +36,17 @@ body {
       margin: 0rem 0rem 1em 0rem;
     }
     .stop {
-      border: none;
+      //border: none;
       background: $amarillo;
       color: $negro;
       width: 100%;
       padding: 0.5rem 0rem 0.5rem 0rem;
-      border: 0.1rem solid $amarillo;
+      // border: 0.1rem solid $negro;
       font-size: calc(0.5rem + 1vw);
       cursor: pointer;
-      border: 0.05rem solid $negro;
       border-radius: 0.9rem;
+      border: 0.05rem solid $negro;
+
     }
     .stop:hover {
       background-color: white;

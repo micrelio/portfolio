@@ -49,15 +49,13 @@ body .fiestas img {
 }
 html .fiestas .stop,
 body .fiestas .stop {
-  border: none;
   background: #f80000;
-  color: #fff;
+  color: #eeeeee;
   width: 100%;
   padding: 0.5rem 0rem 0.5rem 0rem;
-  border: 0.1rem solid #f80000;
   font-size: calc(0.5rem + 1vw);
   cursor: pointer;
-  border: 0.05rem solid white;
+  border: 0.05rem solid #0a0a0a;
   border-radius: 0.9rem;
 }
 html .fiestas .stop:hover,

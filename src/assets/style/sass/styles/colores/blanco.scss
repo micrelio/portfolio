@@ -53,10 +53,24 @@ body {
     -webkit-text-stroke: 0.1rem gray;
     text-shadow: 0.2rem 0.2rem 0.5rem black;
     background: {
-      color: white;
+      color: $blanco;
+    }
+  }
+  .fiestas {
+   .stop {
+      background-color: $blanco;
+      border: 0.05rem solid $negro;
+      border-radius: 0.9rem;
+    }
+    .stop:hover {
+      color: $blanco;
+      background-color: $negro;
+      border: 0.05rem solid $blanco;
+      border-radius: 0.9rem;
     }
   }
   }
+  
 
 /* ------------------------------------------
          social media menu
@@ -148,7 +162,7 @@ body {
         h2 {
           color: $blanco;
           -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
-          // text-shadow: 0.05em 0.05em 0.1em white;
+          // text-shadow: 0.05em 0.05em 0.1em $blanco;
         }
         p {
         }
@@ -164,7 +178,7 @@ body {
 
           border: 0.1rem solid $blanco;
 
-          border: 0.05rem solid white;
+          border: 0.05rem solid $blanco;
         }
         input[type="submit"]:hover {
           background-color: rgba(78, 78, 32, 0.582);
@@ -280,11 +294,12 @@ body {
         width: 10rem;
       }
       .stop {
+        background-color: $blanco;
         padding: 0rem 0rem 0rem 0rem;
         border: 0.1rem solid $blanco;
         font-size: calc(1rem + 0.3vw);
         cursor: pointer;
-        border: 0.05rem solid white;
+        border: 0.05rem solid $negro;
         border-radius: 0.9rem;
       }
     }

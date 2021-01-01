@@ -57,12 +57,12 @@ body .fiestas .stop {
   border: 0.1rem solid #f80000;
   font-size: calc(0.5rem + 1vw);
   cursor: pointer;
-  border: 0.05rem solid white;
+  border: 0.05rem solid #0a0a0a;
   border-radius: 0.9rem;
 }
 html .fiestas .stop:hover,
 body .fiestas .stop:hover {
-  background-color: white;
+  background-color: #eeeeee;
   color: #0a0a0a;
   border: 0.05rem solid #f80000;
 }

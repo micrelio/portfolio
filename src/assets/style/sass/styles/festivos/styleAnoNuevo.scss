@@ -83,17 +83,17 @@ body {
       .stop {
         border: none;
         background: $oro;
-        color: #fff;
+        color: $negro;
         width: 100%;
         padding: 0.5rem 0rem 0.5rem 0rem;
         border: 0.1rem solid $oro;
         font-size: calc(0.5rem + 1vw);
         cursor: pointer;
-        border: 0.05rem solid white;
+        border: 0.05rem solid $negro;
         border-radius: 0.9rem;
       }
       .stop:hover {
-        background-color: white;
+        background-color: $blanco;
         color: $oro;
         border: 0.05rem solid $oro;
       }
@@ -114,7 +114,7 @@ body {
 //         border: 0.1rem solid $corporativo;
 //         font-size: calc(1rem + 0.3vw);
 //         cursor: pointer;
-//         border: 0.05rem solid white;
+//         border: 0.05rem solid $blanco;
 //         border-radius: 0.9rem;
 //       }
 //     }

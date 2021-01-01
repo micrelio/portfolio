@@ -158,7 +158,7 @@ body .fa-arrow-alt-circle-up {
     border: 0.1rem solid #f80000;
     font-size: calc(1rem + 0.3vw);
     cursor: pointer;
-    border: 0.05rem solid white;
+    border: 0.05rem solid #0a0a0a;
     border-radius: 0.9rem;
   }
 }
