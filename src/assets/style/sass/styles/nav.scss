@@ -24,6 +24,9 @@
     animation-timing-function: linear;
     animation-iteration-count: infinite;
   }
+  .selecEstilosCerrar{
+    animation-name: none;
+  }
   .modo {
     border: none;
     background: transparent;
@@ -157,6 +160,9 @@ margin: 0rem 0rem 0rem 0.5rem;
     }
     .oro {
       background: $oro;
+    }
+    .marron {
+      background: $marron;
     }
     .rojo {
       background: $rojo;

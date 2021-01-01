@@ -6,8 +6,8 @@ class miNav extends HTMLElement {
     this.innerHTML = `
 <section class="social-media">
   <div>
-    <p id="selecEstilosDesplegar" class="selecEstilosDesplegar bx bxs-brush" onclick="desplegarEstilos();"></p>
-    <p style="display:none;" id="selecEstilosPlegar" class="selecEstilosPlegar bx bxs-brush" onclick="plegarEstilos();"></p>
+    <p id="selecEstilosDesplegar" class="selecEstilos bx bxs-brush" onclick="desplegarEstilos();"></p>
+    <p style="display:none;" id="selecEstilosPlegar" class="selecEstilosCerrar bx bxs-brush" onclick="plegarEstilos();"></p>
 
    <!-- <p class="modo bx bxs-moon" onclick="modoNoche('dia');"></p>
     <p class="modo bx bxs-sun" onclick="modoNoche('noche');"></p>
@@ -47,17 +47,18 @@ class miNav extends HTMLElement {
       <hr>
       <div class="cambioColor">
         <div class="selecColor">
-          <p class="color blanco"  onclick="color('blanco');"></p>
-          <p class="color amarillo"  onclick="color('amarillo');"></p>
-          <p class="color oro"  onclick="color('oro');"></p>
+          <p class="color blanco" onclick="color('blanco');"></p>
+          <p class="color amarillo" onclick="color('amarillo');"></p>
+          <p class="color oro" onclick="color('oro');"></p>
+          <p class="color marron" onclick="color('marron');"></p>
           <p class="color naranja"  onclick="color('naranja');"></p>
-          <p class="color rojo"  onclick="color('rojo');"></p>
         </div>
         <div class="selecColor1">
-          <p class="color rosa"  onclick="color('rosa');"></p>
-          <p class="color morado"  onclick="color('morado');"></p>
-          <p class="color azul"  onclick="color('azul');"></p>
-          <p class="color verde"  onclick="color('verde');"></p>
+        <p class="color rojo" onclick="color('rojo');"></p>
+          <p class="color rosa" onclick="color('rosa');"></p>
+          <p class="color morado" onclick="color('morado');"></p>
+          <p class="color azul" onclick="color('azul');"></p>
+          <p class="color verde" onclick="color('verde');"></p>
         </div>    
       </div>
     </div>

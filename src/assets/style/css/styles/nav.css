@@ -20,6 +20,9 @@
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
+.social-media .selecEstilosCerrar {
+  animation-name: none;
+}
 .social-media .modo {
   border: none;
   background: transparent;
@@ -124,6 +127,9 @@
 }
 .botonesEstilo .filasColores .cambioColor .oro {
   background: #eabe3f;
+}
+.botonesEstilo .filasColores .cambioColor .marron {
+  background: #a05000;
 }
 .botonesEstilo .filasColores .cambioColor .rojo {
   background: #f80000;
