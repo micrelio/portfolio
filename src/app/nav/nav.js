@@ -30,15 +30,12 @@ class miNav extends HTMLElement {
       <div class= "selecFiesta">
         <img class="festivos" id="festivos" onclick="fecha('reyes');" src="/src/assets/images/icons/estrellaNavidad.png"/>
         <img class="festivos" id="festivos" onclick="fecha('sanValentin');" src="/src/assets/images/icons/corazon.png"/>
+        <img class="festivos" id="festivos" onclick="fecha('pascua');" src="/src/assets/images/icons/huevo.png"/> 
+        <img class="festivos" id="festivos" onclick="fecha('halloween');" src="/src/assets/images/icons/calabaza.png"/>
         <img class="festivos" id="festivos" onclick="fecha('navidad');" src="/src/assets/images/icons/gorroSanta.png"/> 
-        <img class="festivos" id="festivos" onclick="fecha('inocente');" src="/src/assets/images/icons/inocente.png"/> 
-        <img class="festivos" id="festivos" onclick="fecha('anoNuevo');" src="/src/assets/images/icons/champan.png"/> 
       </div>
       <div class= "selecFiesta2">
-        <img class="festivos" onclick="fecha('reyes');" src="/src/assets/images/icons/estrellaNavidad.png"/>
-        <img class="festivos" onclick="fecha('sanValentin');" src="/src/assets/images/icons/corazon.png"/>
-        <img class="festivos" onclick="fecha('navidad');" src="/src/assets/images/icons/gorroSanta.png"/> 
-        <img class="festivos" onclick="fecha('inocente');" src="/src/assets/images/icons/inocente.png"/> 
+        <img class="festivos" id="festivos" onclick="fecha('inocente');" src="/src/assets/images/icons/inocente.png"/> 
         <img class="festivos" onclick="fecha('anoNuevo');" src="/src/assets/images/icons/champan.png"/> 
       </div>
     </div>
