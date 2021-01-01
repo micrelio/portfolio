@@ -182,7 +182,7 @@ function navegar(id) {
       document.getElementById("componente").innerHTML =
         "<mi-estilo></mi-estilo>";
       break;
-      case "inicio":
+    case "inicio":
       document.getElementById("componente").innerHTML =
         "<mi-inicio></mi-inicio>";
       break;
@@ -222,20 +222,53 @@ function navegar(id) {
   }
 }
 
+{
+  /* <p class="selecEstilosDesplegar bx bxs-brush" onclick="desplegarEstilos();"></p>
+<p style="display:none;" class="selecEstilosPlegar bx bxs-brush" onclick="plegarEstilos();"></p> */
+}
+//funcion para cualquier clic en el documento
+document.addEventListener(
+  "click",
+  function (e) {
+    //obtiendo informacion del DOM para
+    var clic = e.target.id;
+    console.log(clic);
+    switch (clic) {
+      case 'selecEstilosDesplegar':
+        document.getElementById("botonesEstilo").style = "display:block";
+        document.getElementById("selecEstilosDesplegar").style = "display:none";
+        document.getElementById("selecEstilosPlegar").style = "display:block";
+        break;
+      case 'botonesEstilo':
+        console.log("eeeeeeeeeeeeeee");
+        document.getElementById("botonesEstilo").style = "display:block";
 
-{/* <p class="selecEstilosDesplegar bx bxs-brush" onclick="desplegarEstilos();"></p>
-<p style="display:none;" class="selecEstilosPlegar bx bxs-brush" onclick="plegarEstilos();"></p> */}
+        break;
+      default:
+        document.getElementById("botonesEstilo").style = "display:none";
+        document.getElementById("selecEstilosDesplegar").style =
+          "display:block";
+        document.getElementById("selecEstilosPlegar").style = "display:none";
+        break;
+    }
+    // console.log(clic);
+    // if (div.style.display == "block" && clic != div || clic != desplegar) {
+    //   console.log("perrra");
+    //   div.style.display = "none";
+    //  // plegarEstilos();
+    // }
+  },
+  false
+);
 function desplegarEstilos() {
-  console.log('llegado')
-  document.getElementById("botonesEstilo").style ="display:block";
-  document.getElementById("selecEstilosDesplegar").style ="display:none";
-  document.getElementById("selecEstilosPlegar").style ="display:block";
+  // document.getElementById("botonesEstilo").style ="display:block";
+  // document.getElementById("selecEstilosDesplegar").style ="display:none";
+  // document.getElementById("selecEstilosPlegar").style ="display:block";
 }
 function plegarEstilos() {
-  console.log('llegado2')
-  document.getElementById("botonesEstilo").style ="display:none";
-  document.getElementById("selecEstilosDesplegar").style ="display:block";
-  document.getElementById("selecEstilosPlegar").style ="display:none";
+  // document.getElementById("botonesEstilo").style ="display:none";
+  // document.getElementById("selecEstilosDesplegar").style ="display:block";
+  // document.getElementById("selecEstilosPlegar").style ="display:none";
 }
 
 function seleccionado() {

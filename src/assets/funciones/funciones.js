@@ -20,7 +20,6 @@ function color(color) {
         "/src/assets/style/css/styles/colores/blanco.css";
       break;
     case "amarillo":
-      console.log("amarillo");
       document.getElementById("color").href =
         "/src/assets/style/css/styles/colores/amarillo.css";
       break;
@@ -103,11 +102,7 @@ function modoNoche(id) {
       break;
   }
 }
-
-
-
 function fecha(id) {
-  console.log('id', id)
   document.getElementById("stop").style = "display:none";
   document.getElementById("cssArchivo").href = "";
   document.getElementById("adorno").src = "";
@@ -136,13 +131,11 @@ function fecha(id) {
   // }
   switch (id) {
     case undefined:
-      console.log('holaa');
       if (mes == "1" && dia > "0" && dia < "7") {
         festivo = "reyes";
       } else if (mes == "2" && dia > "0" && dia < "15") {
         festivo = "sanValentin";
       } else if (mes == "12" && dia > "0" && dia < "28") {
-        console.log('llego navidad');
         festivo = "navidad";
       } else if (mes == "12" && dia == "28") {
         festivo = "inocente";
@@ -171,24 +164,7 @@ function fecha(id) {
     default:
       break;
   }
-  
-  // if (id === "stop") {
-  //   festivo = "stop";
-  // } else if ((mes == "1" && dia > "0" && dia < "7") || id == "reyes") {
-  //   festivo = "reyes";
-  // } else if ((mes == "2" && dia > "0" && dia < "15") || id == "sanValentin") {
-  //   festivo = "sanValentin";
-  // } else if ((mes == "12" && dia > "0" && dia < "28") || id == "navidad") {
-  //   console.log('llego navidad');
-  //   festivo = "navidad";
-  // } else if ((mes == "12" && dia == "28") || id == "inocente") {
-  //   festivo = "inocente";
-  // } else if ((mes == "12" && dia > "28") || id == "anoNuevo") {
-  //   festivo = "anoNuevo";
-  // }
-  
-  // festivo='navidad'
-  switch (festivo) {
+    switch (festivo) {
     case "stop":
       document.getElementById("stop").style = "display:none";
       document.getElementById("cssArchivo").href = "";
