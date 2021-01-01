@@ -15,22 +15,42 @@
 // };
 function color(color) {
   switch (color) {
+    case "blanco":
+      document.getElementById("color").href =
+        "/src/assets/style/css/styles/colores/blanco.css";
+      break;
     case "amarillo":
-      console.log('amarillo')
+      console.log("amarillo");
       document.getElementById("color").href =
         "/src/assets/style/css/styles/colores/amarillo.css";
       break;
-      case "naranja":
+    case "naranja":
       document.getElementById("color").href =
         "/src/assets/style/css/styles/colores/naranja.css";
       break;
-      case "oro":
+    case "oro":
       document.getElementById("color").href =
         "/src/assets/style/css/styles/colores/oro.css";
       break;
     case "rojo":
       document.getElementById("color").href =
         "/src/assets/style/css/styles/colores/rojo.css";
+      break;
+    case "rosa":
+      document.getElementById("color").href =
+        "/src/assets/style/css/styles/colores/rosa.css";
+      break;
+    case "morado":
+      document.getElementById("color").href =
+        "/src/assets/style/css/styles/colores/morado.css";
+      break;
+    case "azul":
+      document.getElementById("color").href =
+        "/src/assets/style/css/styles/colores/azul.css";
+      break;
+    case "verde":
+      document.getElementById("color").href =
+        "/src/assets/style/css/styles/colores/verde.css";
       break;
     default:
       document.getElementById("color").href =
@@ -108,15 +128,15 @@ function fecha(id) {
   }
   if (id === "stop") {
     festivo = "stop";
-  } else if ((total > "0100" && total < "0107") || id == "reyes") {
+  } else if ((mes == "1" && dia > "0" && dia < "7") || id == "reyes") {
     festivo = "reyes";
-  } else if ((total > "0200" && total < "0215") || id == "sanValentin") {
+  } else if ((mes == "2" && dia > "0" && dia < "15") || id == "sanValentin") {
     festivo = "sanValentin";
-  } else if ((total > "1200" && total < "1228") || id == "navidad") {
+  } else if ((mes == "12" && dia > "0" && dia < "28") || id == "navidad") {
     festivo = "navidad";
-  } else if (total === "1228" || id == "inocente") {
+  } else if ((mes == "12" && dia === "28") || id == "inocente") {
     festivo = "inocente";
-  } else if (total > "1228" || id == "anoNuevo") {
+  } else if ((mes == "12" && dia > "28") || id == "anoNuevo") {
     festivo = "anoNuevo";
   }
   // festivo='navidad'
@@ -141,7 +161,7 @@ function fecha(id) {
     case "reyes":
       document.getElementById("cssArchivo").href =
         "/src/assets/style/css/styles/festivos/styleReyes.css";
-        document.getElementById("color").href =
+      document.getElementById("color").href =
         "/src/assets/style/css/styles/colores/amarillo.css";
       document.getElementById("adorno").src =
         "/src/assets/images/gifs/reyes.gif";
@@ -155,9 +175,9 @@ function fecha(id) {
     case "sanValentin":
       document.getElementById("cssArchivo").href =
         "/src/assets/style/css/styles/festivos/styleSanValentin.css";
-        document.getElementById("color").href =
+      document.getElementById("color").href =
         "/src/assets/style/css/styles/colores/rojo.css";
-        document.getElementById("adorno").src =
+      document.getElementById("adorno").src =
         "/src/assets/images/gifs/sanValentin.gif";
       document.getElementById("stop").style = "display:block";
       document.getElementById("imagenFelicitacion").src =
@@ -168,7 +188,7 @@ function fecha(id) {
     case "navidad":
       document.getElementById("cssArchivo").href =
         "/src/assets/style/css/styles/festivos/styleNavidad.css";
-        document.getElementById("color").href =
+      document.getElementById("color").href =
         "/src/assets/style/css/styles/colores/rojo.css";
       document.getElementById("adorno").src =
         "/src/assets/images/gifs/noelbailando.gif";
@@ -181,9 +201,9 @@ function fecha(id) {
     case "inocente":
       document.getElementById("cssArchivo").href =
         "/src/assets/style/css/styles/festivos/styleAnoNuevo.css";
-        document.getElementById("color").href =
+      document.getElementById("color").href =
         "/src/assets/style/css/styles/colores/oro.css";
-             document.getElementById("adorno").src =
+      document.getElementById("adorno").src =
         "/src/assets/images/gifs/inocente.gif";
       document.getElementById("stop").style = "display:block";
       var feliz = "FELIZ AÑO";
@@ -193,9 +213,9 @@ function fecha(id) {
     case "anoNuevo":
       document.getElementById("cssArchivo").href =
         "/src/assets/style/css/styles/festivos/styleAnoNuevo.css";
-        document.getElementById("color").href =
+      document.getElementById("color").href =
         "/src/assets/style/css/styles/colores/oro.css";
-             document.getElementById("adorno").src =
+      document.getElementById("adorno").src =
         "/src/assets/images/gifs/brindis.gif";
       document.getElementById("stop").style = "display:block";
       var feliz = "FELIZ AÑO";

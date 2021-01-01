@@ -1,0 +1,166 @@
+/* hovers*/
+.head {
+  width: 100%;
+  position: relative;
+  border-bottom: 0.05rem solid #eeeeee;
+}
+.head img {
+  width: 100%;
+}
+
+html .fa-arrow-alt-circle-up,
+body .fa-arrow-alt-circle-up {
+  color: #eeeeee;
+  -webkit-text-stroke: 0.1rem gray;
+  text-shadow: 0.2rem 0.2rem 0.5rem black;
+  background-color: white;
+}
+
+/* ------------------------------------------
+         social media menu
+ ------------------------------------------ */
+.social-media {
+  padding: 0rem 1rem 0rem 1rem;
+  background-color: #eeeeee;
+  border: 0.05rem solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ------------------------------------------
+         menu
+------------------------------------------ */
+.stick .nav {
+  border-bottom: 0.05rem solid #eeeeee;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.438);
+}
+.stick .nav .navbar .foto img {
+  border: 0.05rem solid #eeeeee;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+}
+.stick .nav .navbar .menu .links .enlace {
+  color: #eeeeee;
+  padding: 1.6rem 0.5rem 1.6rem 0.5rem;
+  min-width: 8rem;
+  background-color: rgba(0, 0, 0, 0.582);
+  border: 0.05rem solid #eeeeee;
+}
+.stick .nav .navbar .menu .links .inicio:hover,
+.stick .nav .navbar .menu .links .conoceme:hover,
+.stick .nav .navbar .menu .links .webs:hover,
+.stick .nav .navbar .menu .links .gal:hover,
+.stick .nav .navbar .menu .links .videos:hover,
+.stick .nav .navbar .menu .links .curriculum:hover,
+.stick .nav .navbar .menu .links .contacto:hover,
+.stick .nav .navbar .menu .links .inicio:focus,
+.stick .nav .navbar .menu .links .conoceme:focus,
+.stick .nav .navbar .menu .links .webs:focus,
+.stick .nav .navbar .menu .links .gal:focus,
+.stick .nav .navbar .menu .links .videos:focus,
+.stick .nav .navbar .menu .links .curriculum:focus,
+.stick .nav .navbar .menu .links .contacto:focus {
+  background-color: rgba(78, 78, 32, 0.582);
+}
+* footer {
+  border-top: 0.1rem solid #eeeeee;
+  background-color: black;
+}
+* footer .footerContainer {
+  color: #fff;
+}
+* footer .footerContainer .contacto h2,
+* footer .footerContainer .direccion h2,
+* footer .footerContainer .paginas h2 {
+  color: #eeeeee;
+  -webkit-text-stroke: 0.05rem #ddd8d8;
+}
+* footer .footerContainer .contacto input[type=email],
+* footer .footerContainer .direccion input[type=email],
+* footer .footerContainer .paginas input[type=email] {
+  border: 0.1rem solid #eeeeee;
+}
+* footer .footerContainer .contacto input[type=submit],
+* footer .footerContainer .direccion input[type=submit],
+* footer .footerContainer .paginas input[type=submit] {
+  background: #eeeeee;
+  color: #fff;
+  border: 0.1rem solid #eeeeee;
+  border: 0.05rem solid white;
+}
+* footer .footerContainer .contacto input[type=submit]:hover,
+* footer .footerContainer .direccion input[type=submit]:hover,
+* footer .footerContainer .paginas input[type=submit]:hover {
+  background-color: rgba(78, 78, 32, 0.582);
+}
+* footer .footerContainer .contacto .fa,
+* footer .footerContainer .direccion .fa,
+* footer .footerContainer .paginas .fa {
+  color: red;
+}
+* footer .redes {
+  background: #000;
+  border-top: 0.1rem solid #eeeeee;
+}
+* footer .redes .copy {
+  color: #fff;
+  border-bottom: 0.1rem solid #eeeeee;
+}
+@media screen and (max-width: 650px) {
+  footer .footerContainer {
+    flex-wrap: wrap;
+  }
+  footer .footerContainer .contacto {
+    width: 90%;
+  }
+  footer .footerContainer .direccion {
+    margin-top: 5rem;
+    width: 90%;
+  }
+  footer .footerContainer .paginas {
+    margin-top: 5rem;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .movil {
+    border-bottom: 0.05rem solid #eeeeee;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.438);
+  }
+  .movil .imagenes .foto img {
+    border: 3px double #eeeeee;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+  }
+  .movil .imagenes .botones {
+    background-color: transparent;
+  }
+  .movil .imagenes .botones #boton1 {
+    background-color: Transparent;
+  }
+  .movil .desplegable .enlace {
+    color: #eeeeee;
+  }
+}
+@media only screen and (max-width: 800px) {
+  body .fiestas {
+    z-index: 1000;
+    position: fixed;
+    bottom: 4rem;
+  }
+  body .fiestas img {
+    width: 10rem;
+  }
+  body .fiestas .stop {
+    padding: 0rem 0rem 0rem 0rem;
+    border: 0.1rem solid #eeeeee;
+    font-size: calc(1rem + 0.3vw);
+    cursor: pointer;
+    border: 0.05rem solid white;
+    border-radius: 0.9rem;
+  }
+}
+
+/*# sourceMappingURL=blanco.css.map */

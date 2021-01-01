@@ -25,41 +25,6 @@
   background: transparent;
   font-size: 2.4rem;
 }
-.social-media .botonesEstilo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  display: none;
-}
-.social-media .botonesEstilo .selecFiesta .festivos {
-  width: 2.4rem;
-}
-.social-media .botonesEstilo .cambioColor {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.social-media .botonesEstilo .cambioColor .color {
-  height: 2.2rem;
-  width: 2.2rem;
-  border-radius: 50%;
-  border: 0.05rem solid #0a0a0a;
-  margin: 0rem 0.2rem 0rem 0.2rem;
-}
-.social-media .botonesEstilo .cambioColor .amarillo {
-  background: #ffff00;
-}
-.social-media .botonesEstilo .cambioColor .naranja {
-  background: orangered;
-}
-.social-media .botonesEstilo .cambioColor .oro {
-  background: #eabe3f;
-}
-.social-media .botonesEstilo .cambioColor .rojo {
-  background: #f80000;
-}
 .social-media .botonesEstilo a:hover {
   background-color: white;
 }
@@ -85,10 +50,101 @@
 }
 
 /* ------------------------------------------
+         div stilos
+------------------------------------------ */
+.botonesEstilo {
+  display: none;
+  background-color: white;
+  border: 0.05rem solid #0a0a0a;
+  border-radius: 0.9rem;
+  padding: 1rem;
+  margin: 0rem 0rem 0rem 0.5rem;
+  z-index: 1;
+  position: absolute;
+}
+.botonesEstilo .filasFiesta {
+  margin: 0rem 0rem 1rem 0rem;
+}
+.botonesEstilo .filasFiesta p {
+  font-size: 1.5rem;
+  margin: 0rem 0rem 0rem 0rem;
+}
+.botonesEstilo .filasFiesta .selecFiesta {
+  margin: 0rem 0rem 0rem 0rem;
+}
+.botonesEstilo .filasFiesta .selecFiesta .festivos {
+  width: 2.4rem;
+  margin: 0.5rem 0rem 0rem 0.2rem;
+}
+.botonesEstilo .filasFiesta .selecFiesta2 {
+  margin: 0rem 0rem 0rem 0rem;
+}
+.botonesEstilo .filasFiesta .selecFiesta2 .festivos {
+  width: 2.4rem;
+  margin: 0.2rem 0rem 0rem 0.2rem;
+}
+.botonesEstilo .filasColores p {
+  font-size: 1.5rem;
+  margin: 0rem 0rem 0rem 0rem;
+}
+.botonesEstilo .filasColores .cambioColor {
+  display: flex;
+  flex-direction: column;
+}
+.botonesEstilo .filasColores .cambioColor .selecColor {
+  display: flex;
+  flex-direction: row;
+}
+.botonesEstilo .filasColores .cambioColor .selecColor .color {
+  height: 2.2rem;
+  width: 2.2rem;
+  border-radius: 50%;
+  border: 0.05rem solid #0a0a0a;
+  margin: 0.7rem 0.2rem 0rem 0.2rem;
+}
+.botonesEstilo .filasColores .cambioColor .selecColor1 {
+  display: flex;
+  flex-direction: row;
+}
+.botonesEstilo .filasColores .cambioColor .selecColor1 .color {
+  height: 2.2rem;
+  width: 2.2rem;
+  border-radius: 50%;
+  border: 0.05rem solid #0a0a0a;
+  margin: 0.4rem 0.2rem 0rem 0.2rem;
+}
+.botonesEstilo .filasColores .cambioColor .blanco {
+  background: #eeeeee;
+}
+.botonesEstilo .filasColores .cambioColor .amarillo {
+  background: #ffff00;
+}
+.botonesEstilo .filasColores .cambioColor .naranja {
+  background: orangered;
+}
+.botonesEstilo .filasColores .cambioColor .oro {
+  background: #eabe3f;
+}
+.botonesEstilo .filasColores .cambioColor .rojo {
+  background: #f80000;
+}
+.botonesEstilo .filasColores .cambioColor .rosa {
+  background: #ff0080;
+}
+.botonesEstilo .filasColores .cambioColor .morado {
+  background: #9c27b0;
+}
+.botonesEstilo .filasColores .cambioColor .azul {
+  background: #00c6ee;
+}
+.botonesEstilo .filasColores .cambioColor .verde {
+  background: #008f39;
+}
+
+/* ------------------------------------------
          menu
 ------------------------------------------ */
 .stick {
-  z-index: 1000;
   top: 0;
   width: 100%;
 }
@@ -119,7 +175,6 @@
   align-items: center;
   width: 100%;
   position: relative;
-  z-index: 1000;
 }
 .stick .nav .navbar .menu .links {
   display: grid;

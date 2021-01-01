@@ -14,9 +14,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  
   .selecEstilos {
-   
     border: none;
     background-color: transparent;
     font-size: 2.4rem;
@@ -25,54 +23,13 @@
     animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-  
   }
   .modo {
     border: none;
     background: transparent;
     font-size: 2.4rem;
   }
-  .botonesEstilo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    display: none;
-    .selecFiesta {
-      .festivos {
-        //   border: none;
-        // background-color: transparent;
-
-        width: 2.4rem;
-      }
-    }
-
-    .cambioColor {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      .color {
-        height: 2.2rem;
-        width: 2.2rem;
-        border-radius: 50%;
-        border: 0.05rem solid $negro;
-        margin: 0rem 0.2rem 0rem 0.2rem;
-      }
-      .amarillo {
-        background: $amarillo;
-      }
-      .naranja {
-        background: $naranja;
-      }
-      .oro {
-        background: $oro;
-      }
-      .rojo {
-        background: $rojo;
-      }
-    }
-  }
+ 
   .botonesEstilo a:hover {
     background-color: white;
   }
@@ -81,16 +38,13 @@
     flex-direction: row;
     flex-direction: row-reverse;
     //padding: 0.01rem;
-
     /* background-color: orangered; */
   }
-
   .social-links a {
     font-size: 2.4rem;
     display: inline-block;
     color: black;
     line-height: 1;
-
     transition: 0.3s;
     text-decoration: none;
   }
@@ -103,10 +57,130 @@
 }
 
 /* ------------------------------------------
+         div stilos
+------------------------------------------ */
+.botonesEstilo {
+  // display: flex;
+  // flex-direction: column;
+  // align-items: flex-end;
+  // justify-content: center;
+  display: none;
+  // border: none;
+    background-color: white;
+        border: 0.05rem solid $negro;
+    border-radius: 0.9rem;
+padding:1rem;
+margin: 0rem 0rem 0rem 0.5rem;
+
+
+ z-index: 1;
+ position: absolute;
+// position: fixed;
+    // color: $negro;
+    // width: 100%;
+    // padding: 0.5rem 0rem 0.5rem 0rem;
+    // border: 0.1rem solid $amarillo;
+    // font-size: calc(0.5rem + 1vw);
+    // cursor: pointer;
+    // border-radius: 0.9rem;
+
+.filasFiesta{
+  margin: 0rem 0rem 1rem 0rem;
+  p{
+    font-size: 1.5rem;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+  .selecFiesta {
+    margin: 0rem 0rem 0rem 0rem;
+    .festivos {
+      //   border: none;
+      // background-color: transparent;
+      width: 2.4rem;
+      margin: 0.5rem 0rem 0rem 0.2rem;
+
+    }
+  }
+  .selecFiesta2 {
+    margin: 0rem 0rem 0rem 0rem;
+    .festivos {
+      //   border: none;
+      // background-color: transparent;
+      width: 2.4rem;
+      margin: 0.2rem 0rem 0rem 0.2rem;
+
+    }
+  }
+}
+.filasColores{
+  p{
+    font-size: 1.5rem;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+  .cambioColor {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    .selecColor{
+      display: flex;
+      flex-direction: row;
+      .color {
+        height: 2.2rem;
+        width: 2.2rem;
+        border-radius: 50%;
+        border: 0.05rem solid $negro;
+        margin: 0.7rem 0.2rem 0rem 0.2rem;
+      }
+   
+  }
+  .selecColor1{
+    display: flex;
+    flex-direction: row;
+    .color {
+      height: 2.2rem;
+      width: 2.2rem;
+      border-radius: 50%;
+      border: 0.05rem solid $negro;
+      margin: 0.4rem 0.2rem 0rem 0.2rem;
+    }
+ 
+}
+  
+    .blanco {
+      background: $blanco;
+    }
+    .amarillo {
+      background: $amarillo;
+    }
+    .naranja {
+      background: $naranja;
+    }
+    .oro {
+      background: $oro;
+    }
+    .rojo {
+      background: $rojo;
+    }
+    .rosa {
+      background: $rosa;
+    }
+    .morado {
+      background: $morado;
+    }
+    .azul {
+      background: $azul;
+    }
+    .verde {
+      background: $verde;
+    }
+  }
+}
+}
+/* ------------------------------------------
          menu
 ------------------------------------------ */
 .stick {
-  z-index: 1000;
+  // z-index: 1000;
   // position: fixed; //para que siga la pagina
   // position: -webkit-fixed;  // required for Safari
   top: 0;
@@ -127,11 +201,9 @@
       flex-direction: row;
       flex-wrap: nowrap;
       align-items: center;
-
       .foto {
         //position: absolute;
         //z-index: 1000;
-
         img {
           height: 100%;
           // margin-top: calc(10px + 1vw);
@@ -153,7 +225,7 @@
         width: 100%;
         //  height: 10vh;
         position: relative;
-        z-index: 1000;
+        // z-index: 1000;
         .links {
           display: grid;
           grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5] 1fr [x6] /*1fr [x7]*/;
@@ -182,7 +254,6 @@
               size: 1.6rem;
               weight: bold;
             }
-
             border: 0.05rem solid $corporativo;
             border-radius: 0.9rem;
           }
@@ -290,7 +361,6 @@
     display: none;
   }
 }
-
 //------------------------\\
 //  RESPONSIVE  \\
 //------------------------\\

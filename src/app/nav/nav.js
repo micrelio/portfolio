@@ -4,40 +4,65 @@ class miNav extends HTMLElement {
   }
   connectedCallback() {
     this.innerHTML = `
-  <section class="social-media">
-
+<section class="social-media">
   <div>
-  <p class="selecEstilos bx bxs-brush" onclick="desplegarEstilos();"></p>
-  <p class="modo bx bxs-moon" onclick="modoNoche('dia');"></p>
-  <p class="modo bx bxs-sun" onclick="modoNoche('noche');"></p>
-  </div>
+    <p id="selecEstilosDesplegar" class="selecEstilosDesplegar bx bxs-brush" onclick="desplegarEstilos();"></p>
+    <p style="display:none;" id="selecEstilosPlegar" class="selecEstilosPlegar bx bxs-brush" onclick="plegarEstilos();"></p>
 
-    <div id="botonesEstilo" class="botonesEstilo">
+   <!-- <p class="modo bx bxs-moon" onclick="modoNoche('dia');"></p>
+    <p class="modo bx bxs-sun" onclick="modoNoche('noche');"></p>
+    -->
+  </div>
+  <div class="social-links" >
+    <a class="bx bxl-youtube" href="https://www.youtube.com/channel/UCMEv1Jj16ypsAXmZXOkKrQA/" target="_blank"></a>
+    <a class="bx bxl-instagram" href="https://www.instagram.com/micrelio.dev/" target="_blank"></a>
+    <a class="bx bxl-twitter" href="https://twitter.com/Micrelio/" target="_blank"></a>
+    <a class="bx bxl-facebook" href="href="https://www.facebook.com/micro6/" target="_blank"></a>
+    <a class="bx bxl-whatsapp" href="https://wa.me/34653251983/" target="_blank"></a>
+    <a class="bx bxl-linkedin" href="https://www.linkedin.com/in/jos%C3%A9-antonio-l%C3%B3pez-baena-65833016a/" target="_blank"></a>
+    <a class="bx bxl-github" href="https://github.com/Micrelio/" target="_blank"></a>
+  </div>
+</section>
+  <div id="botonesEstilo" class="botonesEstilo">
+    <div class="filasFiesta">
+      <p><strong>Festivos</strong></p>
+      <hr>
       <div class= "selecFiesta">
         <img class="festivos" onclick="fecha('reyes');" src="/src/assets/images/icons/estrellaNavidad.png"/>
         <img class="festivos" onclick="fecha('sanValentin');" src="/src/assets/images/icons/corazon.png"/>
         <img class="festivos" onclick="fecha('navidad');" src="/src/assets/images/icons/gorroSanta.png"/> 
-        <img class="festivos" onclick="fecha('inocente');" src="/src/assets/images/icons/inocente2.png"/> 
+        <img class="festivos" onclick="fecha('inocente');" src="/src/assets/images/icons/inocente.png"/> 
         <img class="festivos" onclick="fecha('anoNuevo');" src="/src/assets/images/icons/champan.png"/> 
       </div>
-      <div class="cambioColor">   
-        <p class="color oro"  onclick="color('oro');"></p>
-        <p class="color amarillo"  onclick="color('amarillo');"></p>
-        <p class="color naranja"  onclick="color('naranja');"></p>
-        <p class="color rojo"  onclick="color('rojo');"></p>
+      <div class= "selecFiesta2">
+        <img class="festivos" onclick="fecha('reyes');" src="/src/assets/images/icons/estrellaNavidad.png"/>
+        <img class="festivos" onclick="fecha('sanValentin');" src="/src/assets/images/icons/corazon.png"/>
+        <img class="festivos" onclick="fecha('navidad');" src="/src/assets/images/icons/gorroSanta.png"/> 
+        <img class="festivos" onclick="fecha('inocente');" src="/src/assets/images/icons/inocente.png"/> 
+        <img class="festivos" onclick="fecha('anoNuevo');" src="/src/assets/images/icons/champan.png"/> 
       </div>
     </div>
-    <div class="social-links" >
-      <a class="bx bxl-youtube" href="https://www.youtube.com/channel/UCMEv1Jj16ypsAXmZXOkKrQA/" target="_blank"></a>
-      <a class="bx bxl-instagram" href="https://www.instagram.com/micrelio.dev/" target="_blank"></a>
-      <a class="bx bxl-twitter" href="https://twitter.com/Micrelio/" target="_blank"></a>
-      <a class="bx bxl-facebook" href="href="https://www.facebook.com/micro6/" target="_blank"></a>
-      <a class="bx bxl-whatsapp" href="https://wa.me/34653251983/" target="_blank"></a>
-      <a class="bx bxl-linkedin" href="https://www.linkedin.com/in/jos%C3%A9-antonio-l%C3%B3pez-baena-65833016a/" target="_blank"></a>
-      <a class="bx bxl-github" href="https://github.com/Micrelio/" target="_blank"></a>
-
+    <div class="filasColores">
+      <p><strong>Colores</strong></p>
+      <hr>
+      <div class="cambioColor">
+        <div class="selecColor">
+          <p class="color blanco"  onclick="color('blanco');"></p>
+          <p class="color amarillo"  onclick="color('amarillo');"></p>
+          <p class="color oro"  onclick="color('oro');"></p>
+          <p class="color naranja"  onclick="color('naranja');"></p>
+          <p class="color rojo"  onclick="color('rojo');"></p>
+        </div>
+        <div class="selecColor1">
+          <p class="color rosa"  onclick="color('rosa');"></p>
+          <p class="color morado"  onclick="color('morado');"></p>
+          <p class="color azul"  onclick="color('azul');"></p>
+          <p class="color verde"  onclick="color('verde');"></p>
+        </div>    
+      </div>
     </div>
-  </section>
+  </div>
+
 <section class="stick" id="stick">
   <div class="nav" id="nav">
     <div class="navbar">
@@ -197,12 +222,20 @@ function navegar(id) {
 }
 
 
+{/* <p class="selecEstilosDesplegar bx bxs-brush" onclick="desplegarEstilos();"></p>
+<p style="display:none;" class="selecEstilosPlegar bx bxs-brush" onclick="plegarEstilos();"></p> */}
 function desplegarEstilos() {
   console.log('llegado')
   document.getElementById("botonesEstilo").style ="display:block";
- //document.getElementById("cambioColor").style ="display:block";
+  document.getElementById("selecEstilosDesplegar").style ="display:none";
+  document.getElementById("selecEstilosPlegar").style ="display:block";
 }
-
+function plegarEstilos() {
+  console.log('llegado2')
+  document.getElementById("botonesEstilo").style ="display:none";
+  document.getElementById("selecEstilosDesplegar").style ="display:block";
+  document.getElementById("selecEstilosPlegar").style ="display:none";
+}
 
 function seleccionado() {
   menu.slideToggle();
