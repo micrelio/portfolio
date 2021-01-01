@@ -153,7 +153,7 @@ body {
       color: black;
     }
     .footerContainer {
-      color:$blancos;
+      color:$blanco;
       .contacto,
       .direccion,
       .paginas {
@@ -172,7 +172,7 @@ body {
         }
         input[type="submit"] {
           background: $azul;
-          color:$blancos;
+          color:$blanco;
 
           border: 0.1rem solid $azul;
 
@@ -206,7 +206,7 @@ body {
         }
       }
       .copy {
-        color:$blancos;
+        color:$blanco;
         border-bottom: 0.1rem solid $azul;
       }
       .politicas {
