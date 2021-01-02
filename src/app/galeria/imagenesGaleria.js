@@ -54,7 +54,7 @@ function cargaTodo() {
         const dato = Galeria[tipo];
         var div = document.createElement('div');
         var hr = document.createElement('hr');
-        var titulo = document.createElement('h');
+        var titulo = document.createElement('h3');
         titulo.addEventListener("click", function() {
             console.log(tipo)
             cargar(tipo);
@@ -92,7 +92,7 @@ function cargaTodo() {
     }
 
     tipo = 'Todas';
-    var tituloT = document.createElement('h');
+    var tituloT = document.createElement('h3');
     var hrT = document.createElement('hr');
     var t = document.createTextNode(tipo);
 

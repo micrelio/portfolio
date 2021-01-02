@@ -7,7 +7,7 @@ class miBotonera extends HTMLElement {
     connectedCallback() {
             this.innerHTML =
                 `
-              <section id="botonesGaleria" class="botonesGaleria" >
+              <section id="menuGaleria" class="menuGaleria" >
               <button class="boton" value="Galeria"  >Todas</button>
                </section>
               
@@ -16,7 +16,7 @@ class miBotonera extends HTMLElement {
             //APLICA EL EVENTO, CON ESTO VEMOS QUE SE HA HECHO CLICK SOBRE UN ELEMENTO DISTINTO DEL PRINCIPAL
             //SI HHAY SUBELEMENTOS NO VA BIEN
             //CON ESTE OCUPAMOS MENOS RAM, YA QUE SOLO CREA UN EVENTO
-            var elementos = document.querySelector('#botonesGaleria');
+            var elementos = document.querySelector('#menuGaleria');
             elementos.addEventListener('click', function(e) {
                 console.log(e.target.value)
                 if (e.target !== this) {
@@ -64,7 +64,7 @@ function cargaBoton() {
         // console.log(boto);
         // console.log(p);
         //---RENDERIZAMOS TODO
-        document.getElementById("botonesGaleria").appendChild(boto);
+        document.getElementById("menuGaleria").appendChild(boto);
         //   document.getElementById('boton'+tipo).appendChild(p);
         boto.appendChild(t);
     }

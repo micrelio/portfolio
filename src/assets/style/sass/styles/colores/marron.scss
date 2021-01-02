@@ -220,32 +220,31 @@ body {
 ------------------------*/
 .miniaturas {
   .repertorio {
-    h {
+    h3 {
       color: $marron;
-      font: {
-        size: 2.5rem;
-      }
+      // font-size: 3rem;
+      // color: $blanco;
+      // margin: 1rem 0rem 0.5rem 0rem;
+      // -webkit-text-stroke: 0.04rem rgb(221, 216, 216);
+      // text-shadow: 0.2em 0.2em 0.3em black;
     }
     .title {
-      margin-top: 1.5rem;
-      cursor: pointer;
-      background: {
-        //   color: red;
-      }
     }
     .raya {
-      border-top: 1px solid $marron;
-    }
-    .tipo {
+      border-color: $marron;
     }
     .fila {
       .imagenPresentacion {
         border: 0.4rem solid #eeeeee;
         box-shadow: $sombreadoTotal;
       }
-      .tn {
-      }
     }
+  }
+}
+.menuGaleria {
+  background-color: $marron;
+  .boton {
+    color: $blanco;
   }
 }
 

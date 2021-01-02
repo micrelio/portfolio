@@ -1,5 +1,5 @@
 /* hovers*/
-.botonesGaleria {
+.menuGaleria {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -10,12 +10,11 @@
   width: 100%;
   background-color: #00c6ee;
 }
-
-.boton {
+.menuGaleria .boton {
   font-size: 1.75rem;
   font-family: Verdana, Helvetica;
   font-weight: bold;
-  color: white;
+  color: #eeeeee;
   border: 0px;
   background: none;
   cursor: pointer;
