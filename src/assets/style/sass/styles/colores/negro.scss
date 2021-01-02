@@ -75,15 +75,7 @@ body {
          social media menu
  ------------------------------------------ */
 .social-media {
-  padding: 0rem 1rem 0rem 1rem;
-
-  // padding: 0.2rem 0.2rem 0.2rem 0.2rem;
   background-color: $negro;
-  border: 0.05rem solid black;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   .social-links {
     display: flex;
     flex-direction: row;
@@ -323,8 +315,8 @@ body {
           color: transparent;
         }
         .botonMenu {
-          color:$blanco;
-         }
+          color: $blanco;
+        }
         #boton1 {
           background-color: Transparent;
         }

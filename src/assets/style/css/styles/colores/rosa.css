@@ -35,13 +35,7 @@ body .fiestas .stop:hover {
          social media menu
  ------------------------------------------ */
 .social-media {
-  padding: 0rem 1rem 0rem 1rem;
   background-color: #ff0080;
-  border: 0.05rem solid #0a0a0a;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
 }
 
 /* ------------------------------------------
@@ -136,7 +130,8 @@ body .fiestas .stop:hover {
 .descripcion .año {
   color: #ff0080;
 }
-.descripcion h1, .descripcion strong {
+.descripcion h1,
+.descripcion strong {
   color: #ff0080;
 }
 
