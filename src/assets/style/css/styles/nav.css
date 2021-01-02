@@ -1,3 +1,4 @@
+/* hovers*/
 /* -----------------------------------------
          social media menu
 ------------------------------------------ */
@@ -57,7 +58,8 @@
 /* ------------------------------------------
          div stilos
 ------------------------------------------ */
-.botonesEstilo {
+.botonesEstilo,
+.botonesEstiloMenu {
   display: none;
   background-color: white;
   border: 0.05rem solid #0a0a0a;
@@ -67,101 +69,134 @@
   z-index: 1;
   position: absolute;
 }
-.botonesEstilo p {
+.botonesEstilo p,
+.botonesEstiloMenu p {
   color: #0a0a0a;
 }
-.botonesEstilo .filasFiesta {
+.botonesEstilo .filasFiesta,
+.botonesEstiloMenu .filasFiesta {
   margin: 0rem 0rem 1rem 0rem;
 }
-.botonesEstilo .filasFiesta p {
+.botonesEstilo .filasFiesta p,
+.botonesEstiloMenu .filasFiesta p {
   font-size: 1.5rem;
   margin: 0rem 0rem 0rem 0rem;
 }
-.botonesEstilo .filasFiesta .selecFiesta {
+.botonesEstilo .filasFiesta .selecFiesta,
+.botonesEstiloMenu .filasFiesta .selecFiesta {
   margin: 0rem 0rem 0rem 0rem;
 }
-.botonesEstilo .filasFiesta .selecFiesta .festivos {
+.botonesEstilo .filasFiesta .selecFiesta .festivos,
+.botonesEstiloMenu .filasFiesta .selecFiesta .festivos {
   width: 2.4rem;
   margin: 0.5rem 0rem 0rem 0.2rem;
 }
-.botonesEstilo .filasFiesta .selecFiesta2 {
+.botonesEstilo .filasFiesta .selecFiesta,
+.botonesEstiloMenu .filasFiesta .selecFiesta {
   margin: 0rem 0rem 0rem 0rem;
 }
-.botonesEstilo .filasFiesta .selecFiesta2 .festivos {
+.botonesEstilo .filasFiesta .selecFiesta .festivos,
+.botonesEstiloMenu .filasFiesta .selecFiesta .festivos {
   width: 2.4rem;
   margin: 0.2rem 0rem 0rem 0.2rem;
 }
-.botonesEstilo .filasColores p {
+.botonesEstilo .filasColores p,
+.botonesEstiloMenu .filasColores p {
   font-size: 1.5rem;
   margin: 0rem 0rem 0rem 0rem;
 }
-.botonesEstilo .filasColores .cambioColor {
+.botonesEstilo .filasColores .cambioColor,
+.botonesEstiloMenu .filasColores .cambioColor {
   display: flex;
   flex-direction: column;
 }
-.botonesEstilo .filasColores .cambioColor .selecColor {
+.botonesEstilo .filasColores .cambioColor .selecColor,
+.botonesEstiloMenu .filasColores .cambioColor .selecColor {
   display: flex;
   flex-direction: row;
 }
-.botonesEstilo .filasColores .cambioColor .selecColor .color {
+.botonesEstilo .filasColores .cambioColor .selecColor .color,
+.botonesEstiloMenu .filasColores .cambioColor .selecColor .color {
   height: 2.2rem;
   width: 2.2rem;
   border-radius: 50%;
   border: 0.05rem solid #0a0a0a;
   margin: 0.7rem 0.2rem 0rem 0.2rem;
 }
-.botonesEstilo .filasColores .cambioColor .blanco {
+.botonesEstilo .filasColores .cambioColor .blanco,
+.botonesEstiloMenu .filasColores .cambioColor .blanco {
   background: #eeeeee;
 }
-.botonesEstilo .filasColores .cambioColor .amarillo {
+.botonesEstilo .filasColores .cambioColor .amarillo,
+.botonesEstiloMenu .filasColores .cambioColor .amarillo {
   background: #ffff00;
 }
-.botonesEstilo .filasColores .cambioColor .naranja {
+.botonesEstilo .filasColores .cambioColor .naranja,
+.botonesEstiloMenu .filasColores .cambioColor .naranja {
   background: orangered;
 }
-.botonesEstilo .filasColores .cambioColor .oro {
+.botonesEstilo .filasColores .cambioColor .oro,
+.botonesEstiloMenu .filasColores .cambioColor .oro {
   background: #eabe3f;
 }
-.botonesEstilo .filasColores .cambioColor .marron {
+.botonesEstilo .filasColores .cambioColor .marron,
+.botonesEstiloMenu .filasColores .cambioColor .marron {
   background: #a05000;
 }
-.botonesEstilo .filasColores .cambioColor .rojo {
+.botonesEstilo .filasColores .cambioColor .rojo,
+.botonesEstiloMenu .filasColores .cambioColor .rojo {
   background: #f80000;
 }
-.botonesEstilo .filasColores .cambioColor .rosa {
+.botonesEstilo .filasColores .cambioColor .rosa,
+.botonesEstiloMenu .filasColores .cambioColor .rosa {
   background: #ff0080;
 }
-.botonesEstilo .filasColores .cambioColor .morado {
+.botonesEstilo .filasColores .cambioColor .morado,
+.botonesEstiloMenu .filasColores .cambioColor .morado {
   background: #9c27b0;
 }
-.botonesEstilo .filasColores .cambioColor .azul {
+.botonesEstilo .filasColores .cambioColor .azul,
+.botonesEstiloMenu .filasColores .cambioColor .azul {
   background: #00c6ee;
 }
-.botonesEstilo .filasColores .cambioColor .verde {
+.botonesEstilo .filasColores .cambioColor .verde,
+.botonesEstiloMenu .filasColores .cambioColor .verde {
   background: #008f39;
 }
-.botonesEstilo .filasColores .cambioColor .negro {
+.botonesEstilo .filasColores .cambioColor .negro,
+.botonesEstiloMenu .filasColores .cambioColor .negro {
   background: #0a0a0a;
 }
-.botonesEstilo .selecModo {
+.botonesEstilo .selecModo,
+.botonesEstiloMenu .selecModo {
   margin: 1rem 0rem 0rem 0rem;
 }
-.botonesEstilo .selecModo p {
+.botonesEstilo .selecModo p,
+.botonesEstiloMenu .selecModo p {
   font-size: 1.5rem;
   margin: 0rem 0rem 0rem 0rem;
 }
-.botonesEstilo .selecModo .mode {
+.botonesEstilo .selecModo .mode,
+.botonesEstiloMenu .selecModo .mode {
   margin: 0.5rem 0rem 0rem 0rem;
 }
-.botonesEstilo .selecModo .mode p {
+.botonesEstilo .selecModo .mode p,
+.botonesEstiloMenu .selecModo .mode p {
   font-size: 3rem;
 }
-.botonesEstilo .selecModo .mode .noche {
+.botonesEstilo .selecModo .mode .noche,
+.botonesEstiloMenu .selecModo .mode .noche {
   color: #0a0a0a;
   display: none;
 }
-.botonesEstilo .selecModo .mode .dia {
+.botonesEstilo .selecModo .mode .dia,
+.botonesEstiloMenu .selecModo .mode .dia {
   color: #0a0a0a;
+}
+
+.botonesEstiloMenu {
+  right: 0.5rem;
+  top: 11rem;
 }
 
 /* ------------------------------------------
@@ -180,6 +215,7 @@
   background-color: rgba(0, 0, 0, 0.438);
 }
 .stick .nav .navbar {
+  padding: 0rem 1rem 0rem 0rem;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -213,6 +249,27 @@
 .stick .nav .navbar .mode img {
   position: absolute;
   width: calc(0.1rem + 3vw);
+}
+.stick .nav .navbar .selecEstilosMenuDesplegar {
+  border: none;
+  background-color: transparent;
+  font-size: 2.4rem;
+  margin: 0;
+  animation-name: parpadeo;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.stick .nav .navbar .selecEstilosMenuPlegar {
+  animation-name: none;
+}
+.stick .nav .navbar .modo {
+  border: none;
+  background: transparent;
+  font-size: 2.4rem;
+}
+.stick .nav .navbar .botonesEstiloMenu a:hover {
+  background-color: white;
 }
 .stick .nav .navbar .menu {
   padding: 3rem 0 3rem 0;

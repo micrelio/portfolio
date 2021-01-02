@@ -6,8 +6,8 @@ class miNav extends HTMLElement {
     this.innerHTML = `
 <section class="social-media">
   <div>
-    <p id="selecEstilosDesplegar" class="selecEstilos bx bxs-brush" onclick="desplegarEstilos();"></p>
-    <p style="display:none;" id="selecEstilosPlegar" class="selecEstilosCerrar bx bxs-brush" onclick="plegarEstilos();"></p>
+    <p id="selecEstilosDesplegar" class="selecEstilos bx bxs-brush"></p>
+    <p style="display:none;" id="selecEstilosPlegar" class="selecEstilosCerrar bx bxs-brush"></p>
   </div>
   <div class="social-links" >
     <a class="bx bxl-youtube" href="https://www.youtube.com/channel/UCMEv1Jj16ypsAXmZXOkKrQA/" target="_blank"></a>
@@ -30,7 +30,7 @@ class miNav extends HTMLElement {
         <img class="festivos" id="festivos" onclick="fecha('halloween');" src="/src/assets/images/icons/calabaza.png"/>
         <img class="festivos" id="festivos" onclick="fecha('navidad');" src="/src/assets/images/icons/gorroSanta.png"/> 
       </div>
-      <div class= "selecFiesta2">
+      <div class= "selecFiesta">
         <img class="festivos" id="festivos" onclick="fecha('inocente');" src="/src/assets/images/icons/inocente.png"/> 
         <img class="festivos" onclick="fecha('anoNuevo');" src="/src/assets/images/icons/champan.png"/> 
       </div>
@@ -87,7 +87,46 @@ class miNav extends HTMLElement {
         <p id="noche" class="noche bx bxs-moon" onclick="modoNoche('dia');"></p>
         <p id="dia" class="dia bx bxs-sun" onclick="modoNoche('noche');"></p>
       </div> 
+      <div>        
+        <p id="selecEstilosMenuDesplegar" class="selecEstilosMenuDesplegar bx bxs-brush"></p>
+        <p style="display:none;" id="selecEstilosMenuPlegar" class="selecEstilosMenuPlegar bx bxs-brush"></p>
+      </div>
     </div>
+    <div id="botonesEstiloMenu" class="botonesEstiloMenu">
+      <div class="filasColores">
+        <p><strong>Color menú</strong></p>
+        <hr>
+        <div class="cambioColor">
+          <div class="selecColor">
+            <p id="color" class="color blanco" onclick="color('blanco');"></p>
+            <p id="color" class="color amarillo" onclick="color('amarillo');"></p>
+            <p id="color" class="color oro" onclick="color('oro');"></p>
+            <p id="color" class="color marron" onclick="color('marron');"></p>
+            <p id="color" class="color naranja"  onclick="color('naranja');"></p>
+          </div>
+          <div class="selecColor">
+            <p class="color rojo" onclick="color('rojo');"></p>
+            <p id="color" class="color rosa" onclick="color('rosa');"></p>
+            <p id="color" class="color morado" onclick="color('morado');"></p>
+            <p id="color" class="color azul" onclick="color('azul');"></p>
+            <p id="color" class="color verde" onclick="color('verde');"></p>
+          </div>
+          <div class="selecColor">
+            <p id="color" class="color negro" onclick="color('negro');"></p>         
+          </div>    
+        </div>
+      </div>
+      <div class="selecModo">
+        <p><strong>Tipo menú</strong></p>
+        <hr>
+        <div class="mode">
+          <p id="noche" class="noche bx bxs-moon" onclick="modoNoche('dia');"></p>
+          <p id="dia" class="dia bx bxs-sun" onclick="modoNoche('noche');"></p>
+        </div> 
+      </div>
+    </div>
+      
+    
   </div>
   <div class="movil">
     <div class="imagenes">
@@ -179,6 +218,13 @@ document.addEventListener("click", function (e) {
       document.getElementById("selecEstilosDesplegar").style = "display:none";
       document.getElementById("selecEstilosPlegar").style = "display:block";
       break;
+    case "selecEstilosMenuDesplegar":
+      document.getElementById("botonesEstiloMenu").style = "display:block";
+      document.getElementById("selecEstilosMenuDesplegar").style = "display:none";
+      document.getElementById("selecEstilosMenuPlegar").style = "display:block";
+      break;
+
+
     default:
       if (document.getElementById("botonesEstilo").contains(e.target)) {
         // alert("Clicked in Box");
@@ -189,6 +235,16 @@ document.addEventListener("click", function (e) {
         document.getElementById("selecEstilosDesplegar").style =
           "display:block";
         document.getElementById("selecEstilosPlegar").style = "display:none";
+      }
+      if (document.getElementById("botonesEstiloMenu").contains(e.target)) {
+        // alert("Clicked in Box");
+        document.getElementById("botonesEstiloMenu").style = "display:block";
+      } else {
+        // alert("Clicked outside Box");
+        document.getElementById("botonesEstiloMenu").style = "display:none";
+        document.getElementById("selecEstilosMenuDesplegar").style =
+          "display:block";
+        document.getElementById("selecEstilosMenuPlegar").style = "display:none";
       }
       break;
   }

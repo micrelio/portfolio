@@ -1,5 +1,7 @@
 @import "../responsive/responsive.scss";
 @import "../variables/variables.scss";
+@import "../mixins/mixins.scss";
+
 /* -----------------------------------------
          social media menu
 ------------------------------------------ */
@@ -13,14 +15,7 @@
   justify-content: space-between;
   align-items: center;
   .selecEstilos {
-    border: none;
-    background-color: transparent;
-    font-size: 2.4rem;
-    margin: 0;
-    animation-name: parpadeo;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+   @include estilos;
   }
   .selecEstilosCerrar {
     animation-name: none;
@@ -61,7 +56,8 @@
 /* ------------------------------------------
          div stilos
 ------------------------------------------ */
-.botonesEstilo {
+.botonesEstilo,
+.botonesEstiloMenu {
   display: none;
   background-color: white;
   border: 0.05rem solid $negro;
@@ -88,7 +84,7 @@
         margin: 0.5rem 0rem 0rem 0.2rem;
       }
     }
-    .selecFiesta2 {
+    .selecFiesta {
       margin: 0rem 0rem 0rem 0rem;
       .festivos {
         //   border: none;
@@ -175,6 +171,10 @@
     }
   }
 }
+.botonesEstiloMenu{
+  right: 0.5rem;
+  top: 11rem;
+}
 /* ------------------------------------------
          menu
 ------------------------------------------ */
@@ -202,6 +202,7 @@
       color: rgba(0, 0, 0, 0.438);
     }
     .navbar {
+      padding: 0rem 1rem 0rem 0rem ;
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
@@ -243,6 +244,23 @@
           width: calc(0.1rem + 3vw);
         }
       }
+      .selecEstilosMenuDesplegar {
+        @include estilos;
+       }
+       .selecEstilosMenuPlegar {
+         animation-name: none;
+       }
+       .modo {
+         border: none;
+         background: transparent;
+         font-size: 2.4rem;
+       }
+       .botonesEstiloMenu a:hover {
+         background-color: white;
+       }
+      
+
+       
       .menu {
         padding: 3rem 0 3rem 0;
         display: flex;
