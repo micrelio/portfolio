@@ -1,0 +1,373 @@
+@import "../../mixins/mixins.scss";
+@import "../../variables/variables.scss";
+@import "../../funciones/funciones.scss";
+
+.head {
+  @include head;
+  border-bottom: 0.05rem solid $rosa;
+}
+html,
+body {
+  //  h1 {
+  //   color: $rosa;
+  //   -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
+  //   text-shadow: 0.2em 0.2em 0.3em $negro;
+  // }
+  // h2 {
+  //   color: $rosa;
+  //   -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
+  //   text-shadow: 0.2rem 0.2rem 0.3rem $negro;
+  // }
+  // h3 {
+  //   color: $rosa;
+  //   -webkit-text-stroke: 0.04rem rgb(221, 216, 216);
+  //   text-shadow: 0.2em 0.2em 0.3em $negro;
+  // }
+  // h4 {
+  //   color: $rosa;
+  //   -webkit-text-stroke: 0.03rem rgb(221, 216, 216);
+  //   text-shadow: 0.2em 0.2em 0.3em $negro;
+  // }
+  // a{
+  //   color:$rosa
+  // }
+  // p {
+  //   color: blanchedalmond;
+  // }
+  // ul {
+  //   li {
+  //     color: $rosa;
+  //       p {
+  //          strong{
+  //       color: $rosa;
+  //          }
+  //     }
+  //     a > p {
+  //       color: $rosa;
+  //     }
+  //   }
+  // }
+  .fa-arrow-alt-circle-up {
+    color: $rosa;
+    -webkit-text-stroke: 0.1rem gray;
+    text-shadow: 0.2rem 0.2rem 0.5rem $negro;
+    background: {
+      color: $blanco;
+    }
+  }
+  .fiestas {
+    .stop {
+      color: $blanco;
+      background-color: $rosa;
+      border-color: $blanco;
+      border-radius: 0.9rem;
+    }
+    .stop:hover {
+      color: $rosa;
+      background-color: $blanco;
+      border-color: $rosa;
+      border-radius: 0.9rem;
+    }
+  }
+}
+
+/* ------------------------------------------
+         social media menu
+ ------------------------------------------ */
+.social-media {
+  background-color: $rosa;
+}
+
+/* ------------------------------------------
+         menu
+------------------------------------------ */
+.stick {
+  background: {
+    //   color: rgba(0, 4, 255, 0.7);
+  }
+  .nav {
+    border-bottom: 0.05rem solid $rosa;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+    background: {
+      color: rgba(0, 0, 0, 0.438);
+    }
+    .navbar {
+      .foto {
+        img {
+          border-color: $rosa; //$blanco;
+          box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+        }
+      }
+      .menu {
+        .links {
+          .enlace {
+            color: $rosa; //gray
+            padding: 1.6rem 0.5rem 1.6rem 0.5rem;
+            min-width: 8rem;
+            background: {
+              color: rgba(0, 0, 0, 0.582);
+            }
+
+            border-color: $rosa;
+          }
+          .inicio:hover,
+          .conoceme:hover,
+          .webs:hover,
+          .gal:hover,
+          .videos:hover,
+          .curriculum:hover,
+          .contacto:hover,
+          .inicio:focus,
+          .conoceme:focus,
+          .webs:focus,
+          .gal:focus,
+          .videos:focus,
+          .curriculum:focus,
+          .contacto:focus {
+            background-color: rgba(78, 78, 32, 0.582);
+          }
+        }
+      }
+      .mode {
+        background: {
+          // color: pink;
+        }
+        .noche {
+          color: $rosa;
+        }
+        .dia {
+          color: $rosa;
+        }
+      }
+    }
+  }
+}
+//------------------------\\
+//  footer  \\
+//------------------------\\
+* {
+  footer {
+    border-top: 0.1rem solid $rosa;
+    background: {
+      color: $negro;
+    }
+    .footerContainer {
+      color: $blanco;
+      .contacto,
+      .direccion,
+      .paginas {
+        h2 {
+          color: $rosa;
+          -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
+          // text-shadow: 0.05em 0.05em 0.1em $blanco;
+        }
+        p {
+        }
+        a {
+          // color: blanchedalmond;
+        }
+        input[type="email"] {
+          border-color: $rosa;
+        }
+        input[type="submit"] {
+          background: $rosa;
+          color: $blanco;
+
+          border-color: $rosa;
+
+          border-color: $blanco;
+        }
+        input[type="submit"]:hover {
+          background-color: rgba(78, 78, 32, 0.582);
+        }
+        .fa {
+          color: $rojo;
+        }
+        .datos {
+          p {
+          }
+        }
+        .diseños {
+          p {
+          }
+        }
+      }
+    }
+    .redes {
+      background: #000;
+      border-top: 0.1rem solid $rosa;
+      .propiedad {
+        .socialmedia {
+          .iconSocial {
+            img {
+            }
+          }
+        }
+      }
+      .copy {
+        color: $blanco;
+        border-bottom: 0.1rem solid $rosa;
+      }
+      .politicas {
+        //background-color: blue;
+        p {
+        }
+        a {
+        }
+      }
+    }
+  }
+}
+/*------------------------
+             galeria
+------------------------*/
+.miniaturas {
+  .repertorio {
+    h3 {
+      color: $rosa;
+      // font-size: 3rem;
+      // color: $blanco;
+      // margin: 1rem 0rem 0.5rem 0rem;
+      // -webkit-text-stroke: 0.04rem rgb(221, 216, 216);
+      // text-shadow: 0.2em 0.2em 0.3em black;
+    }
+    .title {
+    }
+    .raya {
+      border-color: $rosa;
+    }
+    .fila {
+      .imagenPresentacion {
+        // border: 0.4rem solid #eeeeee;
+      }
+    }
+  }
+}
+.menuGaleria {
+  background-color: $rosa;
+  .boton {
+    color: $blanco;
+  }
+}
+/*------------------------
+             webs
+------------------------*/
+.web {
+  .primeroscoc,
+  .guerrasOnline,
+  .tiendaTitanium,
+  .titaniumGamers,
+  .portfolio {
+    border-color: $rosa;
+  }
+}
+/*----------------
+     curriculum
+-----------------*/
+.descripcion {
+  .año {
+    color: $rosa;
+  }
+  h1,
+  strong {
+    color: $rosa;
+  }
+}
+.datos {
+  .datosPersonales {
+    border-color: $rosa;
+    h2 {
+      color: $rosa;
+    }
+  }
+  .experiencia {
+    border-color: $rosa;
+  }
+  .interes {
+    border-color: $rosa;
+  }
+}
+//------------------------\\
+//  RESPONSIVE  \\
+//------------------------\\
+@media screen and (max-width: 650px) {
+  footer {
+    .footerContainer {
+      flex-wrap: wrap;
+
+      .contacto {
+        width: 90%;
+      }
+      .direccion {
+        margin-top: 5rem;
+
+        width: 90%;
+      }
+      .paginas {
+        margin-top: 5rem;
+        width: 90%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .movil {
+    border-bottom: 0.05rem solid $rosa;
+
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+    background: {
+      color: rgba(0, 0, 0, 0.438);
+    }
+    .imagenes {
+      background: {
+        // color: blue;
+      }
+      .foto {
+        background: {
+          // color: green;
+        }
+        img {
+          border-color: $rosa;
+          box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+        }
+      }
+      .botones {
+        background: {
+          color: transparent;
+        }
+        .botonMenu {
+          color: $rosa;
+        }
+        #boton1 {
+          background-color: Transparent;
+        }
+      }
+    }
+    .desplegable {
+      .mode {
+        .noche {
+          color: $rosa;
+        }
+        .dia {
+          color: $rosa;
+        }
+      }
+      .enlace {
+        color: $rosa;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    .fiestas {
+      img {
+        width: 10rem;
+      }
+      .stop {
+        font-size: calc(1rem + 0.3vw);
+      }
+    }
+  }
+}

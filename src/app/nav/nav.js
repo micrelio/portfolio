@@ -92,9 +92,27 @@ class miNav extends HTMLElement {
         <p style="display:none;" id="selecEstilosMenuPlegar" class="selecEstilosMenuPlegar bx bxs-brush"></p>
       </div>
     </div>
+   
+
+
     <div id="botonesEstiloMenu" class="botonesEstiloMenu">
+      <div class="filasFiesta">
+        <p><strong>Tipo menú</strong></p>
+        <hr>
+        <div class= "selecFiesta">
+          <img class="festivos" id="festivos" onclick="fecha('reyes');" src="/src/assets/images/icons/estrellaNavidad.png"/>
+          <img class="festivos" id="festivos" onclick="fecha('sanValentin');" src="/src/assets/images/icons/corazon.png"/>
+          <img class="festivos" id="festivos" onclick="fecha('pascua');" src="/src/assets/images/icons/huevo.png"/> 
+          <img class="festivos" id="festivos" onclick="fecha('halloween');" src="/src/assets/images/icons/calabaza.png"/>
+          <img class="festivos" id="festivos" onclick="fecha('navidad');" src="/src/assets/images/icons/gorroSanta.png"/> 
+        </div>
+        <div class= "selecFiesta">
+          <img class="festivos" id="festivos" onclick="fecha('inocente');" src="/src/assets/images/icons/inocente.png"/> 
+          <img class="festivos" onclick="fecha('anoNuevo');" src="/src/assets/images/icons/champan.png"/> 
+        </div>
+      </div>
       <div class="filasColores">
-        <p><strong>Color menú</strong></p>
+        <p><strong>Colores menú</strong></p>
         <hr>
         <div class="cambioColor">
           <div class="selecColor">
@@ -117,7 +135,7 @@ class miNav extends HTMLElement {
         </div>
       </div>
       <div class="selecModo">
-        <p><strong>Tipo menú</strong></p>
+        <p><strong>Modo</strong></p>
         <hr>
         <div class="mode">
           <p id="noche" class="noche bx bxs-moon" onclick="modoNoche('dia');"></p>
@@ -125,6 +143,10 @@ class miNav extends HTMLElement {
         </div> 
       </div>
     </div>
+
+
+
+  </div>
       
     
   </div>
