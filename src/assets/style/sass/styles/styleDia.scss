@@ -131,7 +131,7 @@ body {
     text-shadow: 0.2em 0.2em 0.3em black;
   }
   p {
-   // color: $negro; /*blanchedalmond;*/
+    color: $negro; /*blanchedalmond;*/
   }
   a {
     color: $azul;
@@ -155,6 +155,21 @@ body {
     }
   }
 }
+/*-------------------
+   curriculum
+   -----------------*/
+.datos{
+  p {
+    color:$blanco;
+  }
+}
+
+
+
+
+   /*-------------------
+   fgooter
+   -----------------*/
 footer {
   // border-top: 0.1rem solid $corporativo;
   // background: {

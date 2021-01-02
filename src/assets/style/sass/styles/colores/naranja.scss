@@ -136,11 +136,17 @@ body {
           }
         }
       }
-    }
-  }
-  .mode {
-    background: {
-      // color: pink;
+      .mode {
+        background: {
+          // color: pink;
+        }
+        .noche {
+          color: $naranja;
+        }
+        .dia {
+          color: $naranja;
+        }
+      }
     }
   }
 }

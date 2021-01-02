@@ -135,11 +135,17 @@ body {
           }
         }
       }
-    }
-  }
-  .mode {
-    background: {
-      // color: pink;
+      .mode {
+        background: {
+          // color: pink;
+        }
+        .noche {
+          color: $morado;
+        }
+        .dia {
+          color: $morado;
+        }
+      }
     }
   }
 }

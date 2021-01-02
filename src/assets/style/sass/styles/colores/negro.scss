@@ -160,11 +160,17 @@ body {
           }
         }
       }
-    }
-  }
-  .mode {
-    background: {
-      // color: pink;
+      .mode {
+        background: {
+          // color: pink;
+        }
+        .noche {
+          color: $negro;
+        }
+        .dia {
+          color: $negro;
+        }
+      }
     }
   }
 }
@@ -248,7 +254,7 @@ body {
   h1, strong {
     color: $negro;
   }
-  strong{
+  strong {
       color:$blanco
   }
   

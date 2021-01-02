@@ -109,6 +109,11 @@ body h4 {
   -webkit-text-stroke: 0.03rem #ddd8d8;
   text-shadow: 0.2em 0.2em 0.3em black;
 }
+html p,
+body p {
+  color: #0a0a0a;
+  /*blanchedalmond;*/
+}
 html a,
 body a {
   color: #00c6ee;
@@ -129,6 +134,16 @@ body .fa-arrow-alt-circle-up {
   background-color: white;
 }
 
+/*-------------------
+   curriculum
+   -----------------*/
+.datos p {
+  color: #eeeeee;
+}
+
+/*-------------------
+fgooter
+-----------------*/
 footer .footerContainer {
   color: #fff;
 }

@@ -78,6 +78,13 @@ body .fiestas .stop:hover {
 .stick .nav .navbar .menu .links .contacto:focus {
   background-color: rgba(78, 78, 32, 0.582);
 }
+.stick .nav .navbar .mode .noche {
+  color: #ffff00;
+}
+.stick .nav .navbar .mode .dia {
+  color: #ffff00;
+}
+
 * footer {
   border-top: 0.1rem solid #ffff00;
   background-color: black;
@@ -128,7 +135,8 @@ body .fiestas .stop:hover {
 .descripcion .año {
   color: #ffff00;
 }
-.descripcion h1, .descripcion strong {
+.descripcion h1,
+.descripcion strong {
   color: #ffff00;
 }
 

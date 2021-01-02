@@ -77,6 +77,13 @@ body .fiestas .stop:hover {
 .stick .nav .navbar .menu .links .contacto:focus {
   background-color: rgba(78, 78, 32, 0.582);
 }
+.stick .nav .navbar .mode .noche {
+  color: #9c27b0;
+}
+.stick .nav .navbar .mode .dia {
+  color: #9c27b0;
+}
+
 * footer {
   border-top: 0.1rem solid #9c27b0;
   background-color: black;

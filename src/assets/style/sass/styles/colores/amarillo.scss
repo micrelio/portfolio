@@ -8,7 +8,6 @@
 }
 html,
 body {
-  
   //  h1 {
   //   color: $amarillo;
   //   -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
@@ -58,18 +57,18 @@ body {
   }
   .fiestas {
     .stop {
-      color:$negro;
-       background-color: $amarillo;
-       border: 0.05rem solid $negro;
-       border-radius: 0.9rem;
-     }
-     .stop:hover {
-       color: $negro;
-       background-color: $blanco;
-       border: 0.05rem solid $negro;
-     }
-   }
+      color: $negro;
+      background-color: $amarillo;
+      border: 0.05rem solid $negro;
+      border-radius: 0.9rem;
+    }
+    .stop:hover {
+      color: $negro;
+      background-color: $blanco;
+      border: 0.05rem solid $negro;
+    }
   }
+}
 
 /* ------------------------------------------
          social media menu
@@ -136,11 +135,17 @@ body {
           }
         }
       }
-    }
-  }
-  .mode {
-    background: {
-      // color: pink;
+      .mode {
+        background: {
+          // color: pink;
+        }
+        .noche {
+          color: $amarillo;
+        }
+        .dia {
+          color: $amarillo;
+        }
+      }
     }
   }
 }
@@ -227,10 +232,10 @@ body {
   .año {
     color: $amarillo;
   }
-  h1, strong {
+  h1,
+  strong {
     color: $amarillo;
   }
-  
 }
 .datos {
   .datosPersonales {

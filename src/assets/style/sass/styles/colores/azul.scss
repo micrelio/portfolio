@@ -8,7 +8,6 @@
 }
 html,
 body {
-  
   //  h1 {
   //   color: $azul;
   //   -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
@@ -58,17 +57,17 @@ body {
   }
   .fiestas {
     .stop {
-       background-color: $azul;
-       border: 0.05rem solid $blanco;
-       border-radius: 0.9rem;
-     }
-     .stop:hover {
-       color: $azul;
-       background-color: $blanco;
-       border: 0.05rem solid $azul;
-     }
-   }
+      background-color: $azul;
+      border: 0.05rem solid $blanco;
+      border-radius: 0.9rem;
+    }
+    .stop:hover {
+      color: $azul;
+      background-color: $blanco;
+      border: 0.05rem solid $azul;
+    }
   }
+}
 
 /* ------------------------------------------
          social media menu
@@ -101,7 +100,7 @@ body {
     .navbar {
       .foto {
         img {
-          border: 0.05rem solid $azul; 
+          border: 0.05rem solid $azul;
           box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
         }
       }
@@ -135,11 +134,17 @@ body {
           }
         }
       }
-    }
-  }
-  .mode {
-    background: {
-      // color: pink;
+      .mode {
+        background: {
+          // color: pink;
+        }
+        .noche {
+          color: $azul;
+        }
+        .dia {
+          color: $azul;
+        }
+      }
     }
   }
 }
@@ -153,7 +158,7 @@ body {
       color: black;
     }
     .footerContainer {
-      color:$blanco;
+      color: $blanco;
       .contacto,
       .direccion,
       .paginas {
@@ -172,7 +177,7 @@ body {
         }
         input[type="submit"] {
           background: $azul;
-          color:$blanco;
+          color: $blanco;
 
           border: 0.1rem solid $azul;
 
@@ -206,7 +211,7 @@ body {
         }
       }
       .copy {
-        color:$blanco;
+        color: $blanco;
         border-bottom: 0.1rem solid $azul;
       }
       .politicas {
@@ -226,10 +231,10 @@ body {
   .año {
     color: $azul;
   }
-  h1, strong {
+  h1,
+  strong {
     color: $azul;
   }
-  
 }
 .datos {
   .datosPersonales {
@@ -313,7 +318,7 @@ body {
       }
       .stop {
         font-size: calc(1rem + 0.3vw);
-              }
+      }
     }
   }
 }

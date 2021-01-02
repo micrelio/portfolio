@@ -131,11 +131,17 @@ body {
           }
         }
       }
-    }
-  }
-  .mode {
-    background: {
-      // color: pink;
+      .mode {
+        background: {
+          // color: pink;
+        }
+        .noche {
+          color: $marron;
+        }
+        .dia {
+          color: $marron;
+        }
+      }
     }
   }
 }
