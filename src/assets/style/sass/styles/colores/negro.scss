@@ -59,13 +59,13 @@ body {
     .stop {
       color: $blanco;
       background-color: $negro;
-      border: 0.05rem solid $blanco;
+      border-color: $blanco;
       border-radius: 0.9rem;
     }
     .stop:hover {
       color: $negro;
       background-color: $blanco;
-      border: 0.05rem solid $negro;
+      border-color: $negro;
       border-radius: 0.9rem;
     }
   }
@@ -118,7 +118,7 @@ body {
     .navbar {
       .foto {
         img {
-          border: 0.05rem solid $negro; //$blanco;
+          border-color: $negro; //$blanco;
           box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
         }
       }
@@ -132,7 +132,7 @@ body {
               color: rgba(0, 0, 0, 0.582);
             }
 
-            border: 0.05rem solid $blanco;
+            border-color: $blanco;
           }
           .inicio:hover,
           .conoceme:hover,
@@ -191,15 +191,13 @@ body {
           // color: blanchedalmond;
         }
         input[type="email"] {
-          border: 0.1rem solid $negro;
+          border-color: $negro;
         }
         input[type="submit"] {
           background: $negro;
           color: $blanco;
-
-          border: 0.1rem solid $negro;
-
-          border: 0.05rem solid $blanco;
+          border-color: $negro;
+          border-color: $blanco;
         }
         input[type="submit"]:hover {
           background-color: rgba(78, 78, 32, 0.582);
@@ -264,16 +262,16 @@ body {
 }
 .datos {
   .datosPersonales {
-    border: 0.2rem solid $blanco;
+    border-color: $blanco;
     h2 {
       color: $negro;
     }
   }
   .experiencia {
-    border: 0.2rem solid $blanco;
+    border-color: $blanco;
   }
   .interes {
-    border: 0.1rem solid $blanco;
+    border-color: $blanco;
   }
 }
 
@@ -317,7 +315,7 @@ body {
           // color: green;
         }
         img {
-          border: 3px double $negro;
+          border-color: $negro;
           box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
         }
       }

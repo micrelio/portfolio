@@ -124,6 +124,24 @@ body .fiestas .stop:hover {
   border-bottom: 0.1rem solid #a05000;
 }
 /*------------------------
+             galeria
+------------------------*/
+.miniaturas .repertorio h {
+  color: #a05000;
+  font-size: 2.5rem;
+}
+.miniaturas .repertorio .title {
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+.miniaturas .repertorio .raya {
+  border-top: 1px solid #a05000;
+}
+.miniaturas .repertorio .fila .imagenPresentacion {
+  border: 0.4rem solid #eeeeee;
+  box-shadow: #555 1px 1px 8px 1px;
+}
+/*------------------------
              webs
 ------------------------*/
 .web .primeroscoc,

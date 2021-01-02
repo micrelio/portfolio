@@ -59,13 +59,13 @@ body {
     .stop {
       color: $blanco;
       background-color: $rojo;
-      border: 0.05rem solid $blanco;
+      border-color: $blanco;
       border-radius: 0.9rem;
     }
     .stop:hover {
       color: $rojo;
       background-color: $blanco;
-      border: 0.05rem solid $rojo;
+      border-color: $rojo;
       border-radius: 0.9rem;
     }
   }
@@ -94,7 +94,7 @@ body {
     .navbar {
       .foto {
         img {
-          border: 0.05rem solid $rojo; //$blanco;
+          border-color: $rojo; //$blanco;
           box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
         }
       }
@@ -108,7 +108,7 @@ body {
               color: rgba(0, 0, 0, 0.582);
             }
 
-            border: 0.05rem solid $rojo;
+            border-color: $rojo;
           }
           .inicio:hover,
           .conoceme:hover,
@@ -167,15 +167,15 @@ body {
           // color: $blanco;
         }
         input[type="email"] {
-          border: 0.1rem solid $rojo;
+          border-color: solid $rojo;
         }
         input[type="submit"] {
           background: $rojo;
           color: $blanco;
 
-          border: 0.1rem solid $rojo;
+          border-color: solid $rojo;
 
-          border: 0.05rem solid $blanco;
+          border-color: $blanco;
         }
         input[type="submit"]:hover {
           background-color: rgba(78, 78, 32, 0.582);
@@ -244,16 +244,16 @@ body {
 }
 .datos {
   .datosPersonales {
-    border: 0.2rem solid $rojo;
+    border-color: $rojo;
     h2 {
       color: $rojo;
     }
   }
   .experiencia {
-    border: 0.2rem solid $rojo;
+    border-color: $rojo;
   }
   .interes {
-    border: 0.1rem solid $rojo;
+    border-color: solid $rojo;
   }
 }
 //------------------------\\
@@ -296,7 +296,7 @@ body {
           // color: green;
         }
         img {
-          border: 3px double $rojo;
+          border-color: $rojo;
           box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
         }
       }

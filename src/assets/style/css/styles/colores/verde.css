@@ -20,14 +20,14 @@ html .fiestas .stop,
 body .fiestas .stop {
   color: #eeeeee;
   background-color: #008f39;
-  border: 0.05rem solid #eeeeee;
+  border-color: #eeeeee;
   border-radius: 0.9rem;
 }
 html .fiestas .stop:hover,
 body .fiestas .stop:hover {
   color: #008f39;
   background-color: #eeeeee;
-  border: 0.05rem solid #008f39;
+  border-color: #008f39;
 }
 
 /* ------------------------------------------
@@ -46,7 +46,7 @@ body .fiestas .stop:hover {
   background-color: rgba(0, 0, 0, 0.438);
 }
 .stick .nav .navbar .foto img {
-  border: 0.05rem solid #008f39;
+  border-color: #008f39;
   box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
 }
 .stick .nav .navbar .menu .links .enlace {
@@ -54,7 +54,7 @@ body .fiestas .stop:hover {
   padding: 1.6rem 0.5rem 1.6rem 0.5rem;
   min-width: 8rem;
   background-color: rgba(0, 0, 0, 0.582);
-  border: 0.05rem solid #008f39;
+  border-color: #008f39;
 }
 .stick .nav .navbar .menu .links .inicio:hover,
 .stick .nav .navbar .menu .links .conoceme:hover,
@@ -95,15 +95,15 @@ body .fiestas .stop:hover {
 * footer .footerContainer .contacto input[type=email],
 * footer .footerContainer .direccion input[type=email],
 * footer .footerContainer .paginas input[type=email] {
-  border: 0.1rem solid #008f39;
+  border-color: #008f39;
 }
 * footer .footerContainer .contacto input[type=submit],
 * footer .footerContainer .direccion input[type=submit],
 * footer .footerContainer .paginas input[type=submit] {
   background: #008f39;
   color: #eeeeee;
-  border: 0.1rem solid #008f39;
-  border: 0.05rem solid #eeeeee;
+  border-color: #008f39;
+  border-color: #eeeeee;
 }
 * footer .footerContainer .contacto input[type=submit]:hover,
 * footer .footerContainer .direccion input[type=submit]:hover,
@@ -146,16 +146,16 @@ body .fiestas .stop:hover {
 }
 
 .datos .datosPersonales {
-  border: 0.2rem solid #008f39;
+  border-color: #008f39;
 }
 .datos .datosPersonales h2 {
   color: #008f39;
 }
 .datos .experiencia {
-  border: 0.2rem solid #008f39;
+  border-color: #008f39;
 }
 .datos .interes {
-  border: 0.1rem solid #008f39;
+  border-color: #008f39;
 }
 
 @media screen and (max-width: 650px) {
@@ -181,7 +181,7 @@ body .fiestas .stop:hover {
     background-color: rgba(0, 0, 0, 0.438);
   }
   .movil .imagenes .foto img {
-    border: 3px double #008f39;
+    border-color: #008f39;
     box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
   }
   .movil .imagenes .botones {

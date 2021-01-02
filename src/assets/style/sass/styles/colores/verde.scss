@@ -59,13 +59,13 @@ body {
     .stop {
       color: $blanco;
       background-color: $verde;
-      border: 0.05rem solid $blanco;
+      border-color: $blanco;
       border-radius: 0.9rem;
     }
     .stop:hover {
       color: $verde;
       background-color: $blanco;
-      border: 0.05rem solid $verde;
+      border-color: $verde;
     }
   }
 }
@@ -93,7 +93,7 @@ body {
     .navbar {
       .foto {
         img {
-          border: 0.05rem solid $verde; //#fff;
+          border-color: $verde; //#fff;
           box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
         }
       }
@@ -107,7 +107,7 @@ body {
               color: rgba(0, 0, 0, 0.582);
             }
 
-            border: 0.05rem solid $verde;
+            border-color: $verde;
           }
           .inicio:hover,
           .conoceme:hover,
@@ -166,15 +166,15 @@ body {
           // color: blanchedalmond;
         }
         input[type="email"] {
-          border: 0.1rem solid $verde;
+          border-color: $verde;
         }
         input[type="submit"] {
           background: $verde;
           color: $blanco;
 
-          border: 0.1rem solid $verde;
+          border-color: $verde;
 
-          border: 0.05rem solid $blanco;
+          border-color: $blanco;
         }
         input[type="submit"]:hover {
           background-color: rgba(78, 78, 32, 0.582);
@@ -243,16 +243,16 @@ body {
 }
 .datos {
   .datosPersonales {
-    border: 0.2rem solid $verde;
+    border-color: $verde;
     h2 {
       color: $verde;
     }
   }
   .experiencia {
-    border: 0.2rem solid $verde;
+    border-color: $verde;
   }
   .interes {
-    border: 0.1rem solid $verde;
+    border-color: $verde;
   }
 }
 //------------------------\\
@@ -295,7 +295,7 @@ body {
           // color: green;
         }
         img {
-          border: 3px double $verde;
+          border-color: $verde;
           box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
         }
       }

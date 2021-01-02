@@ -216,6 +216,40 @@ body {
   }
 }
 /*------------------------
+             galeria
+------------------------*/
+.miniaturas {
+  .repertorio {
+    h {
+      color: $marron;
+      font: {
+        size: 2.5rem;
+      }
+    }
+    .title {
+      margin-top: 1.5rem;
+      cursor: pointer;
+      background: {
+        //   color: red;
+      }
+    }
+    .raya {
+      border-top: 1px solid $marron;
+    }
+    .tipo {
+    }
+    .fila {
+      .imagenPresentacion {
+        border: 0.4rem solid #eeeeee;
+        box-shadow: $sombreadoTotal;
+      }
+      .tn {
+      }
+    }
+  }
+}
+
+/*------------------------
              webs
 ------------------------*/
 .web {

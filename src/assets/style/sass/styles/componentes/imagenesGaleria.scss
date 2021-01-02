@@ -4,66 +4,67 @@
   display: flex;
   justify-content: center;
   //align-items: center;
-}
-.repertorio {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  width: 95vw;
-  background: {
-    // color: lightblue;
-  }
-}
-h {
-  color: $corporativo;
-  font: {
-    size: 2.5rem;
-  }
-}
-.title {
-  margin-top: 1.5rem;
-  cursor: pointer;
-  background: {
-    //   color: red;
-  }
-}
-.raya {
-  border: 0 none #000000;
-  border-top: 1px solid $corporativo;
-  height: 1px;
-  margin: 5px 0;
-  display: block;
-  clear: both;
-}
-.tipo {
-  margin-bottom: 3rem;
-  display: flex;
-  width: 100%;
-  // margin: 20px auto;
-  list-style: none;
-  background: {
-    // color: white;
-  }
-}
-.fila {
-  overflow: auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  cursor: pointer;
-  background: {
-    // color: yellow;
-  }
-  .imagenPresentacion {
-    margin: 0.6rem;
-    border: 0.4rem solid #eeeeee;
-    box-shadow: $sombreadoTotal;
-  }
-  .tn {
-    cursor: pointer;
-    height: 15rem;
+
+  .repertorio {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 95vw;
     background: {
-      // color: black;
+      // color: lightblue;
+    }
+    h {
+      color: $corporativo;
+      font: {
+        size: 2.5rem;
+      }
+    }
+    .title {
+      margin-top: 1.5rem;
+      cursor: pointer;
+      background: {
+        //   color: red;
+      }
+    }
+    .raya {
+      border: 0 none #000000;
+      border-top: 1px solid $corporativo;
+      height: 1px;
+      margin: 5px 0;
+      display: block;
+      clear: both;
+    }
+    .tipo {
+      margin-bottom: 3rem;
+      display: flex;
+      width: 100%;
+      // margin: 20px auto;
+      list-style: none;
+      background: {
+        // color: white;
+      }
+    }
+    .fila {
+      overflow: auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      cursor: pointer;
+      background: {
+        // color: yellow;
+      }
+      .imagenPresentacion {
+        margin: 0.6rem;
+        border: 0.4rem solid #eeeeee;
+        box-shadow: $sombreadoTotal;
+      }
+      .tn {
+        cursor: pointer;
+        height: 15rem;
+        background: {
+          // color: black;
+        }
+      }
     }
   }
 }

@@ -3,25 +3,21 @@
   display: flex;
   justify-content: center;
 }
-
-.repertorio {
+.miniaturas .repertorio {
   display: flex;
   flex-direction: column;
   padding: 1rem;
   width: 95vw;
 }
-
-h {
+.miniaturas .repertorio h {
   color: #00c6ee;
   font-size: 2.5rem;
 }
-
-.title {
+.miniaturas .repertorio .title {
   margin-top: 1.5rem;
   cursor: pointer;
 }
-
-.raya {
+.miniaturas .repertorio .raya {
   border: 0 none #000000;
   border-top: 1px solid #00c6ee;
   height: 1px;
@@ -29,27 +25,25 @@ h {
   display: block;
   clear: both;
 }
-
-.tipo {
+.miniaturas .repertorio .tipo {
   margin-bottom: 3rem;
   display: flex;
   width: 100%;
   list-style: none;
 }
-
-.fila {
+.miniaturas .repertorio .fila {
   overflow: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   cursor: pointer;
 }
-.fila .imagenPresentacion {
+.miniaturas .repertorio .fila .imagenPresentacion {
   margin: 0.6rem;
   border: 0.4rem solid #eeeeee;
   box-shadow: #555 1px 1px 8px 1px;
 }
-.fila .tn {
+.miniaturas .repertorio .fila .tn {
   cursor: pointer;
   height: 15rem;
 }

@@ -59,13 +59,13 @@ body {
     .stop {
       color: $blanco;
       background-color: $rosa;
-      border: 0.05rem solid $blanco;
+      border-color: $blanco;
       border-radius: 0.9rem;
     }
     .stop:hover {
       color: $rosa;
       background-color: $blanco;
-      border: 0.05rem solid $rosa;
+      border-color: $rosa;
       border-radius: 0.9rem;
     }
   }
@@ -94,7 +94,7 @@ body {
     .navbar {
       .foto {
         img {
-          border: 0.05rem solid $rosa; //$blanco;
+          border-color: $rosa; //$blanco;
           box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
         }
       }
@@ -108,7 +108,7 @@ body {
               color: rgba(0, 0, 0, 0.582);
             }
 
-            border: 0.05rem solid $rosa;
+            border-color: $rosa;
           }
           .inicio:hover,
           .conoceme:hover,
@@ -167,15 +167,15 @@ body {
           // color: blanchedalmond;
         }
         input[type="email"] {
-          border: 0.1rem solid $rosa;
+          border-color: $rosa;
         }
         input[type="submit"] {
           background: $rosa;
           color: $blanco;
 
-          border: 0.1rem solid $rosa;
+          border-color: $rosa;
 
-          border: 0.05rem solid $blanco;
+          border-color: $blanco;
         }
         input[type="submit"]:hover {
           background-color: rgba(78, 78, 32, 0.582);
@@ -227,7 +227,7 @@ body {
   .tiendaTitanium,
   .titaniumGamers,
   .portfolio {
-    border: 0.05rem solid $rosa;
+    border-color: $rosa;
   }
 }
 /*----------------
@@ -244,16 +244,16 @@ body {
 }
 .datos {
   .datosPersonales {
-    border: 0.2rem solid $rosa;
+    border-color: $rosa;
     h2 {
       color: $rosa;
     }
   }
   .experiencia {
-    border: 0.2rem solid $rosa;
+    border-color: $rosa;
   }
   .interes {
-    border: 0.1rem solid $rosa;
+    border-color: $rosa;
   }
 }
 //------------------------\\
@@ -296,7 +296,7 @@ body {
           // color: green;
         }
         img {
-          border: 3px double $rosa;
+          border-color: $rosa;
           box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
         }
       }
