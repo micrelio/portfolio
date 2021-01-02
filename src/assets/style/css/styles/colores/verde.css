@@ -21,7 +21,6 @@ body .fiestas .stop {
   color: #eeeeee;
   background-color: #008f39;
   border-color: #eeeeee;
-  border-radius: 0.9rem;
 }
 html .fiestas .stop:hover,
 body .fiestas .stop:hover {
@@ -123,6 +122,22 @@ body .fiestas .stop:hover {
   color: #eeeeee;
   border-bottom: 0.1rem solid #008f39;
 }
+/*------------------------
+             galeria
+------------------------*/
+.miniaturas .repertorio h3 {
+  color: #008f39;
+}
+.miniaturas .repertorio .raya {
+  border-color: #008f39;
+}
+.menuGaleria {
+  background-color: #008f39;
+}
+.menuGaleria .boton {
+  color: #eeeeee;
+}
+
 /*------------------------
              webs
 ------------------------*/

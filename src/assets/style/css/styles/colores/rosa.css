@@ -125,6 +125,22 @@ body .fiestas .stop:hover {
   border-bottom: 0.1rem solid #ff0080;
 }
 /*------------------------
+             galeria
+------------------------*/
+.miniaturas .repertorio h3 {
+  color: #ff0080;
+}
+.miniaturas .repertorio .raya {
+  border-color: #ff0080;
+}
+.menuGaleria {
+  background-color: #ff0080;
+}
+.menuGaleria .boton {
+  color: #eeeeee;
+}
+
+/*------------------------
              webs
 ------------------------*/
 .web .primeroscoc,

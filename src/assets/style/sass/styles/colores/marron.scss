@@ -235,8 +235,7 @@ body {
     }
     .fila {
       .imagenPresentacion {
-        border: 0.4rem solid #eeeeee;
-        box-shadow: $sombreadoTotal;
+        // border-color: #eeeeee;
       }
     }
   }
@@ -247,7 +246,6 @@ body {
     color: $blanco;
   }
 }
-
 /*------------------------
              webs
 ------------------------*/

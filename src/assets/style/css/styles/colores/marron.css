@@ -132,11 +132,6 @@ body .fiestas .stop:hover {
 .miniaturas .repertorio .raya {
   border-color: #a05000;
 }
-.miniaturas .repertorio .fila .imagenPresentacion {
-  border: 0.4rem solid #eeeeee;
-  box-shadow: #555 1px 1px 8px 1px;
-}
-
 .menuGaleria {
   background-color: #a05000;
 }

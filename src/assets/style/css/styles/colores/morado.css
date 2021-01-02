@@ -120,8 +120,24 @@ body .fiestas .stop:hover {
 }
 * footer .redes .copy {
   color: #eeeeee;
-  border-bottom: 0.1rem solid #9c27b0;
+  border-color: #9c27b0;
 }
+/*------------------------
+             galeria
+------------------------*/
+.miniaturas .repertorio h3 {
+  color: #9c27b0;
+}
+.miniaturas .repertorio .raya {
+  border-color: #9c27b0;
+}
+.menuGaleria {
+  background-color: #9c27b0;
+}
+.menuGaleria .boton {
+  color: #eeeeee;
+}
+
 /*------------------------
              webs
 ------------------------*/

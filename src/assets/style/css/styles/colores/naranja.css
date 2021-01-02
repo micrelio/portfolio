@@ -122,7 +122,23 @@ body .fiestas .stop:hover {
 }
 * footer .redes .copy {
   color: #eeeeee;
-  border-bottom: 0.1rem solid orangered;
+  border-color: orangered;
+}
+
+/*------------------------
+             galeria
+------------------------*/
+.miniaturas .repertorio h3 {
+  color: orangered;
+}
+.miniaturas .repertorio .raya {
+  border-color: orangered;
+}
+.menuGaleria {
+  background-color: orangered;
+}
+.menuGaleria .boton {
+  color: #eeeeee;
 }
 
 /*------------------------
