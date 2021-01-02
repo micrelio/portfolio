@@ -2,7 +2,7 @@
          social media menu
 ------------------------------------------ */
 .social-media {
-  padding: 0rem 1rem 0rem 1rem;
+  padding: 0.1rem 1rem 0.1rem 1rem;
   background-color: #00c6ee;
   display: flex;
   flex-direction: row;
@@ -176,7 +176,6 @@
   width: 100%;
 }
 .stick .nav {
-  border-bottom: 0.05rem solid;
   box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
   background-color: rgba(0, 0, 0, 0.438);
 }
