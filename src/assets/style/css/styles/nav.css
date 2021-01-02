@@ -152,6 +152,22 @@
 .botonesEstilo .filasColores .cambioColor .verde {
   background: #008f39;
 }
+.botonesEstilo .selecModo {
+  margin: 1rem 0rem 0rem 0rem;
+}
+.botonesEstilo .selecModo p {
+  font-size: 1.5rem;
+  margin: 0rem 0rem 0rem 0rem;
+}
+.botonesEstilo .selecModo .mode {
+  margin: 0.5rem 0rem 0rem 0rem;
+}
+.botonesEstilo .selecModo .mode p {
+  font-size: 3rem;
+}
+.botonesEstilo .selecModo .mode .noche {
+  display: none;
+}
 
 /* ------------------------------------------
          menu
@@ -327,9 +343,9 @@
     border: none;
     background-color: Transparent;
   }
-  .movil .imagenes .botones #boton1 img {
+  .movil .imagenes .botones #boton1 p {
     display: block;
-    width: calc(4vw + 5rem);
+    font-size: calc(5vw + 5rem);
   }
   .movil .desplegable .mode {
     margin: 0rem 0rem 1rem 1rem;

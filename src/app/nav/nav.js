@@ -55,6 +55,19 @@ class miNav extends HTMLElement {
         </div>    
       </div>
     </div>
+
+
+    <div class="selecModo">
+      <p><strong>Modo</strong></p>
+      <hr>
+      <div class="mode">
+        <p id="noche" class="noche bx bxs-moon" onclick="modoNoche('dia');"></p>
+        <p id="dia" class="dia bx bxs-sun" onclick="modoNoche('noche');"></p>
+      </div> 
+    </div>
+
+
+
   </div>
 <section class="stick" id="stick">
   <div class="nav" id="nav">
@@ -84,7 +97,8 @@ class miNav extends HTMLElement {
         <img src="/src/assets/images/dracula-man.jpg">
       </div>
       <div class="botones">
-        <span id="boton1"><img src="/src/assets/images/icons/menu.png" id="pull" href="#" alt="menu"></span>
+        <!-- <span id="boton1"><img src="/src/assets/images/icons/menu.png" id="pull" href="#" alt="menu"></span> -->
+        <span id="boton1"><p id="pull" href="#" class=" bx bx-menu" onclick="modoNoche();"></p></span>
 
       </div>
     </div>

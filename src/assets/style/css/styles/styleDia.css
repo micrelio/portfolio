@@ -1,5 +1,19 @@
 @charset "UTF-8";
 /* hovers*/
+/* ------------------------------------------
+         div stilos
+------------------------------------------ */
+.botonesEstilo .selecModo .mode .noche {
+  display: block;
+  color: #0a0a0a;
+}
+.botonesEstilo .selecModo .mode .dia {
+  display: none;
+}
+
+/*------------------------
+        menu
+        ---------------*/
 .stick {
   top: 0;
   width: 100%;

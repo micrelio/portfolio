@@ -1,6 +1,27 @@
 @import "../mixins/mixins.scss";
 @import "../variables/variables.scss";
 @import "../funciones/funciones.scss";
+
+/* ------------------------------------------
+         div stilos
+------------------------------------------ */
+.botonesEstilo {
+   .selecModo {
+    .mode {
+        .noche {
+        display: block;
+        color: $negro;
+      }
+      .dia {
+        display: none;
+      }
+  }
+}
+}
+
+  /*------------------------
+          menu
+          ---------------*/
 .stick {
   // z-index: 1000;
   // position: fixed; //para que siga la pagina
