@@ -8,7 +8,6 @@
 }
 html,
 body {
-  
   //  h1 {
   //   color: $morado;
   //   -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
@@ -58,17 +57,17 @@ body {
   }
   .fiestas {
     .stop {
-       background-color: $morado;
-       border: 0.05rem solid $blanco;
-       border-radius: 0.9rem;
-     }
-     .stop:hover {
-       color: $morado;
-       background-color: $blanco;
-       border: 0.05rem solid $morado;
-     }
-   }
+      background-color: $morado;
+      border: 0.05rem solid $blanco;
+      border-radius: 0.9rem;
+    }
+    .stop:hover {
+      color: $morado;
+      background-color: $blanco;
+      border: 0.05rem solid $morado;
+    }
   }
+}
 
 /* ------------------------------------------
          social media menu
@@ -232,10 +231,10 @@ body {
   .año {
     color: $morado;
   }
-  h1, strong {
+  h1,
+  strong {
     color: $morado;
   }
-  
 }
 .datos {
   .datosPersonales {
@@ -299,12 +298,23 @@ body {
         background: {
           color: transparent;
         }
+        .botonMenu {
+          color: $morado;
+        }
         #boton1 {
           background-color: Transparent;
         }
       }
     }
     .desplegable {
+      .mode {
+        .noche {
+          color: $morado;
+        }
+        .dia {
+          color: $morado;
+        }
+      }
       .enlace {
         color: $morado;
       }
@@ -315,11 +325,11 @@ body {
 @media only screen and (max-width: 800px) {
   body {
     .fiestas {
-           img {
+      img {
       }
       .stop {
         font-size: calc(1rem + 0.3vw);
-            }
+      }
     }
   }
 }

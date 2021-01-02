@@ -6,20 +6,22 @@
          div stilos
 ------------------------------------------ */
 .botonesEstilo {
-   .selecModo {
+  .selecModo {
     .mode {
-        .noche {
+      .noche {
         display: block;
-        color: $negro;
+       // color: $negro;
       }
       .dia {
         display: none;
+        //color:$negro;
+        
       }
+    }
   }
 }
-}
 
-  /*------------------------
+/*------------------------
           menu
           ---------------*/
 .stick {
@@ -48,7 +50,7 @@
           height: 100%;
           margin-left: calc(10px + 1vw);
           border-radius: 75%;
-          border: 0.05rem solid $corporativo; //#fff;
+          // border: 0.05rem solid $corporativo; //#fff;
           width: calc(3vw + 3rem);
           box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
         }
@@ -64,7 +66,6 @@
         }
         .noche {
           display: block;
-          color: $corporativo;
           font-size: 5rem;
         }
         .dia {
@@ -88,7 +89,6 @@
         margin: 0rem 0rem 1rem 1rem;
         .noche {
           display: block;
-          color: $negro;
           font-size: 5rem;
         }
         .dia {
@@ -154,20 +154,25 @@ body {
       color: white;
     }
   }
+  .fiestas {
+    .stop {
+      border: 0.05rem solid $negro;
+    }
+    .stop:hover {
+      border: 0.05rem solid $negro;
+    }
+  }
 }
 /*-------------------
    curriculum
    -----------------*/
-.datos{
+.datos {
   p {
-    color:$blanco;
+    color: $blanco;
   }
 }
 
-
-
-
-   /*-------------------
+/*-------------------
    fgooter
    -----------------*/
 footer {

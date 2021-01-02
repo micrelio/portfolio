@@ -96,7 +96,7 @@ class miNav extends HTMLElement {
       </div>
       <div class="botones">
         <!-- <span id="boton1"><img src="/src/assets/images/icons/menu.png" id="pull" href="#" alt="menu"></span> -->
-        <span id="boton1"><p id="pull" href="#" class=" bx bx-menu" onclick="modoNoche();"></p></span>
+        <span id="boton1"><p id="pull" href="#" class="botonMenu bx bx-menu"></p></span>
 
       </div>
     </div>

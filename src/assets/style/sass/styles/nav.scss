@@ -166,7 +166,11 @@
         font-size: 3rem;
       }
       .noche {
+        color: $negro;
         display: none;
+      }
+      .dia {
+        color: $negro;
       }
     }
   }
@@ -224,6 +228,7 @@
         }
         .noche {
           display: none;
+          color: $corporativo;
         }
         .dia {
           display: block;
@@ -368,6 +373,9 @@
         background: {
           color: transparent;
         }
+        .botonMenu {
+        //  color:$amarillo;
+        }
         #boton1 {
           outline: none;
           cursor: pointer;
@@ -393,10 +401,11 @@
         }
         .noche {
           display: none;
+          color: $corporativo;
         }
         .dia {
           display: block;
-          color: $blanco;
+          color: $corporativo;
           font-size: 5rem;
         }
 

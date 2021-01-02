@@ -181,8 +181,17 @@ body .fiestas .stop:hover {
   .movil .imagenes .botones {
     background-color: transparent;
   }
+  .movil .imagenes .botones .botonMenu {
+    color: #00c6ee;
+  }
   .movil .imagenes .botones #boton1 {
     background-color: Transparent;
+  }
+  .movil .desplegable .mode .noche {
+    color: #00c6ee;
+  }
+  .movil .desplegable .mode .dia {
+    color: #00c6ee;
   }
   .movil .desplegable .enlace {
     color: #00c6ee;

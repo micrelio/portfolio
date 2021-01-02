@@ -158,7 +158,11 @@
   font-size: 3rem;
 }
 .botonesEstilo .selecModo .mode .noche {
+  color: #0a0a0a;
   display: none;
+}
+.botonesEstilo .selecModo .mode .dia {
+  color: #0a0a0a;
 }
 
 /* ------------------------------------------
@@ -201,6 +205,7 @@
 }
 .stick .nav .navbar .mode .noche {
   display: none;
+  color: #00c6ee;
 }
 .stick .nav .navbar .mode .dia {
   display: block;
@@ -348,10 +353,11 @@
   }
   .movil .desplegable .mode .noche {
     display: none;
+    color: #00c6ee;
   }
   .movil .desplegable .mode .dia {
     display: block;
-    color: #eeeeee;
+    color: #00c6ee;
     font-size: 5rem;
   }
   .movil .desplegable .mode img {

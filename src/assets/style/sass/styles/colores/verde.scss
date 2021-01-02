@@ -299,12 +299,23 @@ body {
         background: {
           color: transparent;
         }
+        .botonMenu {
+            color:$verde;
+          }
         #boton1 {
           background-color: Transparent;
         }
       }
     }
     .desplegable {
+      .mode {
+        .noche {
+          color: $verde;
+        }
+        .dia {
+          color: $verde;
+        }
+      }
       .enlace {
         color: $verde;
       }

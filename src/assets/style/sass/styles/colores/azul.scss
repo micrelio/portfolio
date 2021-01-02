@@ -298,12 +298,23 @@ body {
         background: {
           color: transparent;
         }
+        .botonMenu {
+          color: $azul;
+        }
         #boton1 {
           background-color: Transparent;
         }
       }
     }
     .desplegable {
+      .mode {
+        .noche {
+          color: $azul;
+        }
+        .dia {
+          color: $azul;
+        }
+      }
       .enlace {
         color: $azul;
       }

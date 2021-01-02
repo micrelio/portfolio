@@ -301,12 +301,23 @@ body {
         background: {
           color: transparent;
         }
+        .botonMenu {
+           color:$rosa;
+          }
         #boton1 {
           background-color: Transparent;
         }
       }
     }
     .desplegable {
+      .mode {
+        .noche {
+          color: $rosa;
+        }
+        .dia {
+          color: $rosa;
+        }
+      }
       .enlace {
         color: $rosa;
       }

@@ -231,10 +231,10 @@ body {
   .año {
     color: $oro;
   }
-  h1, strong {
+  h1,
+  strong {
     color: $oro;
   }
-  
 }
 .datos {
   .datosPersonales {
@@ -298,12 +298,23 @@ body {
         background: {
           color: transparent;
         }
+        .botonMenu {
+          color: $oro;
+        }
         #boton1 {
           background-color: Transparent;
         }
       }
     }
     .desplegable {
+      .mode {
+        .noche {
+          color: $oro;
+        }
+        .dia {
+          color: $oro;
+        }
+      }
       .enlace {
         color: $oro;
       }

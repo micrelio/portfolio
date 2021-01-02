@@ -103,10 +103,10 @@ body .fiestas .stop:hover {
   background-color: rgba(78, 78, 32, 0.582);
 }
 .stick .nav .navbar .mode .noche {
-  color: #0a0a0a;
+  color: #eeeeee;
 }
 .stick .nav .navbar .mode .dia {
-  color: #0a0a0a;
+  color: #eeeeee;
 }
 
 * footer {
@@ -160,7 +160,8 @@ body .fiestas .stop:hover {
 .descripcion .año {
   color: #eeeeee;
 }
-.descripcion h1, .descripcion strong {
+.descripcion h1,
+.descripcion strong {
   color: #0a0a0a;
 }
 .descripcion strong {
@@ -209,11 +210,20 @@ body .fiestas .stop:hover {
   .movil .imagenes .botones {
     background-color: transparent;
   }
+  .movil .imagenes .botones .botonMenu {
+    color: #eeeeee;
+  }
   .movil .imagenes .botones #boton1 {
     background-color: Transparent;
   }
+  .movil .desplegable .mode .noche {
+    color: #eeeeee;
+  }
+  .movil .desplegable .mode .dia {
+    color: #eeeeee;
+  }
   .movil .desplegable .enlace {
-    color: #0a0a0a;
+    color: #eeeeee;
   }
 }
 @media only screen and (max-width: 800px) {

@@ -84,7 +84,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-.social-links {
+  .social-links {
     display: flex;
     flex-direction: row;
     flex-direction: row-reverse;
@@ -165,10 +165,10 @@ body {
           // color: pink;
         }
         .noche {
-          color: $negro;
+          color: $blanco;
         }
         .dia {
-          color: $negro;
+          color: $blanco;
         }
       }
     }
@@ -251,13 +251,13 @@ body {
   .año {
     color: $blanco;
   }
-  h1, strong {
+  h1,
+  strong {
     color: $negro;
   }
   strong {
-      color:$blanco
+    color: $blanco;
   }
-  
 }
 .datos {
   .datosPersonales {
@@ -322,14 +322,25 @@ body {
         background: {
           color: transparent;
         }
+        .botonMenu {
+          color:$blanco;
+         }
         #boton1 {
           background-color: Transparent;
         }
       }
     }
     .desplegable {
+      .mode {
+        .noche {
+          color: $blanco;
+        }
+        .dia {
+          color: $blanco;
+        }
+      }
       .enlace {
-        color: $negro;
+        color: $blanco;
       }
     }
   }

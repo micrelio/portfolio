@@ -135,7 +135,8 @@ body .fiestas .stop:hover {
 .descripcion .año {
   color: #a05000;
 }
-.descripcion h1, .descripcion strong {
+.descripcion h1,
+.descripcion strong {
   color: #a05000;
 }
 
@@ -181,8 +182,17 @@ body .fiestas .stop:hover {
   .movil .imagenes .botones {
     background-color: transparent;
   }
+  .movil .imagenes .botones .botonMenu {
+    color: #a05000;
+  }
   .movil .imagenes .botones #boton1 {
     background-color: Transparent;
+  }
+  .movil .desplegable .mode .noche {
+    color: #a05000;
+  }
+  .movil .desplegable .mode .dia {
+    color: #a05000;
   }
   .movil .desplegable .enlace {
     color: #a05000;

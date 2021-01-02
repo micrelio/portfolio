@@ -304,12 +304,23 @@ body {
         background: {
           color: transparent;
         }
+        .botonMenu {
+          color: $blanco;
+        }
         #boton1 {
           background-color: Transparent;
         }
       }
     }
     .desplegable {
+      .mode {
+        .noche {
+          color: $blanco;
+        }
+        .dia {
+          color: $blanco;
+        }
+      }
       .enlace {
         color: $blanco;
       }

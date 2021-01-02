@@ -300,12 +300,23 @@ body {
         background: {
           color: transparent;
         }
+        .botonMenu {
+          color:$rojo;
+         }
         #boton1 {
           background-color: Transparent;
         }
       }
     }
     .desplegable {
+      .mode {
+        .noche {
+          color: $rojo;
+        }
+        .dia {
+          color: $rojo;
+        }
+      }
       .enlace {
         color: $rojo;
       }

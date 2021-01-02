@@ -5,15 +5,14 @@
 ------------------------------------------ */
 .botonesEstilo .selecModo .mode .noche {
   display: block;
-  color: #0a0a0a;
 }
 .botonesEstilo .selecModo .mode .dia {
   display: none;
 }
 
 /*------------------------
-        menu
-        ---------------*/
+          menu
+          ---------------*/
 .stick {
   top: 0;
   width: 100%;
@@ -34,7 +33,6 @@
   height: 100%;
   margin-left: calc(10px + 1vw);
   border-radius: 75%;
-  border: 0.05rem solid #00c6ee;
   width: calc(3vw + 3rem);
   box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
 }
@@ -47,7 +45,6 @@
 }
 .stick .nav .navbar .mode .noche {
   display: block;
-  color: #00c6ee;
   font-size: 5rem;
 }
 .stick .nav .navbar .mode .dia {
@@ -67,7 +64,6 @@
   }
   .movil .desplegable .mode .noche {
     display: block;
-    color: #0a0a0a;
     font-size: 5rem;
   }
   .movil .desplegable .mode .dia {
@@ -133,6 +129,14 @@ body .fa-arrow-alt-circle-up {
   text-shadow: 0.2rem 0.2rem 0.5rem black;
   background-color: white;
 }
+html .fiestas .stop,
+body .fiestas .stop {
+  border: 0.05rem solid #0a0a0a;
+}
+html .fiestas .stop:hover,
+body .fiestas .stop:hover {
+  border: 0.05rem solid #0a0a0a;
+}
 
 /*-------------------
    curriculum
@@ -142,8 +146,8 @@ body .fa-arrow-alt-circle-up {
 }
 
 /*-------------------
-fgooter
------------------*/
+   fgooter
+   -----------------*/
 footer .footerContainer {
   color: #fff;
 }
