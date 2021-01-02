@@ -15,8 +15,7 @@
 .descripcion .año {
   color: #00c6ee;
 }
-
-h1 {
+.descripcion h1 {
   font-size: calc(3rem + 1vw);
   margin-top: 5rem;
   color: #00c6ee;
@@ -52,7 +51,7 @@ a:visited {
   border-radius: 1rem;
   background-color: #000;
 }
-.datos .datosPersonales h {
+.datos .datosPersonales h2 {
   color: #00c6ee;
 }
 .datos .datosPersonales .foto .dni {
@@ -191,7 +190,7 @@ a:visited {
     border-radius: 1rem;
     background-color: black;
   }
-  .datos .datosPersonales h {
+  .datos .datosPersonales h2 {
     color: #00c6ee;
   }
   .datos .datosPersonales .dni {

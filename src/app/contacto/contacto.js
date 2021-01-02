@@ -5,6 +5,9 @@ class miContacto extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
 <section class="primera">
+<img src="/src/assets/images/constructor2.png">
+
+
   <div id="after_submit"></div>
 <form id="contact_form" action="/src/app/contacto/contacto.php" method="POST" enctype="multipart/form-data">
   <div class="row">
@@ -26,7 +29,6 @@ class miContacto extends HTMLElement {
     <input id="submit_button" type="submit" value="Send" />
     <input id="reset_button" type="reset" value="Clear" />
 </form>
-<img src="/src/assets/images/constructor.png">
 </section>
 `;
   }

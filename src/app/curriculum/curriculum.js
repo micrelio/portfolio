@@ -14,7 +14,7 @@ class miCurriculum extends HTMLElement {
         </div>
         <div class="direccion">
         <br>
-            <h><strong>José Antonio López Baena</strong></h>
+            <h3><strong>José Antonio López Baena</strong></h3>
             <p>
                 Nacido en julio de 1982 Valencia (España).
             </p>
@@ -222,10 +222,10 @@ class miCurriculum extends HTMLElement {
     </div>
     <div class="experiencia">
         <div class="logotipo">
-            <a href="http://www.diselcom.com/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/diselcom.jpg">
+            <a href="https://www.diselcom.com/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/diselcom.jpg">
         </div>
         <div class="descripcion">
-            <p class="año">2008 <a href="http://www.diselcom.com/" target="_blank"><strong>Diselcom</strong></a></p><br>
+            <p class="año">2008 <a href="https://www.diselcom.com/" target="_blank"><strong>Diselcom</strong></a></p><br>
             <p>Montaje de cuadros electrónicos en época de estudios.</p>
         </div>
     </div>

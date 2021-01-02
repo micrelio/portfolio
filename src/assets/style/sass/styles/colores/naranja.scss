@@ -8,7 +8,6 @@
 }
 html,
 body {
-  
   //  h1 {
   //   color: $naranja;
   //   -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
@@ -58,19 +57,19 @@ body {
   }
   .fiestas {
     .stop {
-      color:$blanco;
-       background-color: $naranja;
-       border: 0.05rem solid $blanco;
-       border-radius: 0.9rem;
-     }
-     .stop:hover {
-       color: $naranja;
-       background-color: $blanco;
-       border: 0.05rem solid $naranja;
-       border-radius: 0.9rem;
-     }
-   }
+      color: $blanco;
+      background-color: $naranja;
+      border: 0.05rem solid $blanco;
+      border-radius: 0.9rem;
+    }
+    .stop:hover {
+      color: $naranja;
+      background-color: $blanco;
+      border: 0.05rem solid $naranja;
+      border-radius: 0.9rem;
+    }
   }
+}
 
 /* ------------------------------------------
          social media menu
@@ -211,16 +210,40 @@ body {
         color: $blanco;
         border-bottom: 0.1rem solid $naranja;
       }
-      .politicas {
-        //background-color: blue;
-        p {
-        }
-        a {
-        }
-      }
     }
   }
 }
+
+/*----------------
+     curriculum
+     ------------*/
+.descripcion {
+  .año {
+    color: $naranja;
+  }
+  h1, strong {
+    color: $naranja;
+  }
+  
+}
+.datos {
+  .datosPersonales {
+    border: 0.2rem solid $naranja;
+    h2 {
+      color: $naranja;
+    }
+  }
+  .experiencia {
+    border: 0.2rem solid $naranja;
+  }
+  .interes {
+    border: 0.1rem solid $naranja;
+  }
+}
+
+//------------------------\\
+//  RESPONSIVE  \\
+//------------------------\\
 @media screen and (max-width: 650px) {
   footer {
     .footerContainer {
@@ -242,9 +265,6 @@ body {
   }
 }
 
-//------------------------\\
-//  RESPONSIVE  \\
-//------------------------\\
 @media only screen and (max-width: 800px) {
   .movil {
     border-bottom: 0.05rem solid $naranja;
