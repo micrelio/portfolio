@@ -56,7 +56,6 @@ class miNav extends HTMLElement {
       </div>
     </div>
   </div>
-
 <section class="stick" id="stick">
   <div class="nav" id="nav">
     <div class="navbar">
@@ -86,6 +85,7 @@ class miNav extends HTMLElement {
       </div>
       <div class="botones">
         <span id="boton1"><img src="/src/assets/images/icons/menu.png" id="pull" href="#" alt="menu"></span>
+
       </div>
     </div>
     <div>
@@ -105,15 +105,13 @@ class miNav extends HTMLElement {
   </div>
   <!-- <audio src="../sonidos/ping.mp4" autoplay loop></audio> -->
  </section>
-
       `;
     // esto arranca automatico
-    }
+  }
 }
 customElements.define("mi-nav", miNav);
 // modificar para routing
 function navegar(id) {
-  console.log("FUNCION RENDER");
   var render = id;
   switch (render) {
     case "botones":
@@ -159,16 +157,10 @@ function navegar(id) {
     default:
   }
 }
-
-{
-  /* <p class="selecEstilosDesplegar bx bxs-brush" onclick="desplegarEstilos();"></p>
-<p style="display:none;" class="selecEstilosPlegar bx bxs-brush" onclick="plegarEstilos();"></p> */
-}
 //funcion para cualquier clic en el documento
 document.addEventListener("click", function (e) {
   //obtiendo informacion del DOM para
   var clic = e.target.id;
-  console.log(clic);
   switch (clic) {
     case "selecEstilosDesplegar":
       document.getElementById("botonesEstilo").style = "display:block";
@@ -186,11 +178,8 @@ document.addEventListener("click", function (e) {
           "display:block";
         document.getElementById("selecEstilosPlegar").style = "display:none";
       }
-
       break;
   }
-
-  // console.log(clic);
   // if (div.style.display == "block" && clic != div || clic != desplegar) {
   //   console.log("perrra");
   //   div.style.display = "none";
@@ -200,17 +189,6 @@ document.addEventListener("click", function (e) {
   //   false
   // );
 });
-function desplegarEstilos() {
-  // document.getElementById("botonesEstilo").style ="display:block";
-  // document.getElementById("selecEstilosDesplegar").style ="display:none";
-  // document.getElementById("selecEstilosPlegar").style ="display:block";
-}
-function plegarEstilos() {
-  // document.getElementById("botonesEstilo").style ="display:none";
-  // document.getElementById("selecEstilosDesplegar").style ="display:block";
-  // document.getElementById("selecEstilosPlegar").style ="display:none";
-}
-
 function seleccionado() {
   menu.slideToggle();
 }

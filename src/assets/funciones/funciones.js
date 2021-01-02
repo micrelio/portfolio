@@ -91,19 +91,11 @@ function modoNoche(id) {
   }
   switch (estilo) {
     case "dia":
-      console.log('hasta la polla')
       document.getElementById("modo").href =
         "/src/assets/style/css/styles/styleDia.css";
-      //   document.getElementById("noche").style = "display:none";
-      //  document.getElementById("dia").style = "display:block";
       break;
     case "noche":
-      console.log('en la noche')
-
-      document.getElementById("modo").href =
-        "";
-        // document.getElementById("noche").style = "display:block";
-        // document.getElementById("dia").style = "display:none";
+      document.getElementById("modo").href = "";
       break;
     default:
       break;
@@ -192,14 +184,6 @@ function fecha(id) {
       document.getElementById("feliz").innerHTML = "";
       document.getElementById("imagenFelicitacion").src = "";
       break;
-    // case "dia":
-    //   document.getElementById("modo").href =
-    //     "/src/assets/style/css/styles/styleDia.css";
-    //   break;
-    // case "noche":
-    //   document.getElementById("modo").href =
-    //     "/src/assets/style/css/styles/style.css";
-    //   break;
     case "halloween":
       document.getElementById("cssArchivo").href =
         "/src/assets/style/css/styles/festivos/styleHalloween.css";
@@ -212,7 +196,6 @@ function fecha(id) {
         "/src/assets/images/gifs/felizHalloween2.gif";
       document.getElementById("feliz").innerHTML = "";
       document.getElementById("anio").innerHTML = "";
-
       break;
     case "reyes":
       document.getElementById("cssArchivo").href =
