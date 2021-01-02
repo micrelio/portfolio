@@ -124,6 +124,17 @@ body .fiestas .stop:hover {
   color: #eeeeee;
   border-bottom: 0.1rem solid #ff0080;
 }
+/*------------------------
+             webs
+------------------------*/
+.web .primeroscoc,
+.web .guerrasOnline,
+.web .tiendaTitanium,
+.web .titaniumGamers,
+.web .portfolio {
+  border: 0.05rem solid #ff0080;
+}
+
 /*----------------
      curriculum
 -----------------*/

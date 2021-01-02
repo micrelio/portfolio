@@ -81,17 +81,13 @@ body ul {
 }
 html ul li,
 body ul li {
-  color: #00c6ee;
+  color: #eeeeee;
   font-size: 2.5rem;
   margin: 0rem 0rem 0rem 1rem;
 }
-html ul li p strong,
-body ul li p strong {
-  color: #eeeeee;
-}
-html ul li a > p,
-body ul li a > p {
-  color: #00c6ee;
+html ul li a strong,
+body ul li a strong {
+  color: blue;
 }
 html .primera,
 body .primera {

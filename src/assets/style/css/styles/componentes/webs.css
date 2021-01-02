@@ -76,9 +76,9 @@
 .web .tiendaTitanium .descripcion p,
 .web .titaniumGamers .descripcion p,
 .web .portfolio .descripcion p {
+  color: #eeeeee;
   font-family: "FontAwesome", sans-serif;
   font-size: 2.5rem;
-  color: white;
 }
 .web .primeroscoc .descripcion p a,
 .web .guerrasOnline .descripcion p a,
