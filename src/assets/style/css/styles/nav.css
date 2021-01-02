@@ -156,6 +156,10 @@
 /* ------------------------------------------
          menu
 ------------------------------------------ */
+.movil {
+  display: none;
+}
+
 .stick {
   top: 0;
   width: 100%;
@@ -326,6 +330,25 @@
   .movil .imagenes .botones #boton1 img {
     display: block;
     width: calc(4vw + 5rem);
+  }
+  .movil .desplegable .mode {
+    margin: 0rem 0rem 1rem 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .movil .desplegable .mode .noche {
+    display: none;
+  }
+  .movil .desplegable .mode .dia {
+    display: block;
+    color: #eeeeee;
+    font-size: 5rem;
+  }
+  .movil .desplegable .mode img {
+    position: absolute;
+    width: calc(0.1rem + 3vw);
   }
   .movil .desplegable .enlace {
     margin: 1rem;

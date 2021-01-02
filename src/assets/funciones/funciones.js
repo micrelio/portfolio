@@ -80,25 +80,28 @@ function modoNoche(id) {
   if (id != undefined) {
     var hora = "";
   }
-  if ((hora >= 8 && hora < 20) || id === "dia") {
+  if ((hora >= 8 && hora < 20) || id == "noche") {
     estilo = "dia";
   } else if (
     (hora >= 20 && hora < 26) ||
     (hora > 00 && hora < 8) ||
-    id === "noche"
+    id == "dia"
   ) {
     estilo = "noche";
   }
   switch (estilo) {
     case "dia":
+      console.log('hasta la polla')
       document.getElementById("modo").href =
         "/src/assets/style/css/styles/styleDia.css";
-        // document.getElementById("noche").style = "display:none";
-        // document.getElementById("dia").style = "display:block";
+      //   document.getElementById("noche").style = "display:none";
+      //  document.getElementById("dia").style = "display:block";
       break;
     case "noche":
+      console.log('en la noche')
+
       document.getElementById("modo").href =
-        "/src/assets/style/css/styles/style.css";
+        "";
         // document.getElementById("noche").style = "display:block";
         // document.getElementById("dia").style = "display:none";
       break;
@@ -189,14 +192,14 @@ function fecha(id) {
       document.getElementById("feliz").innerHTML = "";
       document.getElementById("imagenFelicitacion").src = "";
       break;
-    case "dia":
-      document.getElementById("modo").href =
-        "/src/assets/style/css/styles/styleDia.css";
-      break;
-    case "noche":
-      document.getElementById("modo").href =
-        "/src/assets/style/css/styles/style.css";
-      break;
+    // case "dia":
+    //   document.getElementById("modo").href =
+    //     "/src/assets/style/css/styles/styleDia.css";
+    //   break;
+    // case "noche":
+    //   document.getElementById("modo").href =
+    //     "/src/assets/style/css/styles/style.css";
+    //   break;
     case "halloween":
       document.getElementById("cssArchivo").href =
         "/src/assets/style/css/styles/festivos/styleHalloween.css";

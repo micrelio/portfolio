@@ -1,23 +1,75 @@
 @charset "UTF-8";
 /* hovers*/
-html,
-body {
-  background-color: #eeeeee;
+.stick {
+  top: 0;
+  width: 100%;
 }
-html .mode .noche,
-body .mode .noche {
+.stick .nav {
+  border-bottom: 0.05rem solid;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.438);
+}
+.stick .nav .navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.stick .nav .navbar .foto img {
+  height: 100%;
+  margin-left: calc(10px + 1vw);
+  border-radius: 75%;
+  border: 0.05rem solid #00c6ee;
+  width: calc(3vw + 3rem);
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+}
+.stick .nav .navbar .mode {
+  margin: 0rem 1rem 0rem 0rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+}
+.stick .nav .navbar .mode .noche {
   display: block;
   color: #0a0a0a;
   font-size: 5rem;
 }
-html .mode .dia,
-body .mode .dia {
+.stick .nav .navbar .mode .dia {
   display: none;
 }
-html .mode img,
-body .mode img {
+.stick .nav .navbar .mode img {
   position: absolute;
   width: calc(0.1rem + 3vw);
+}
+
+/*-----------------
+ menu responsive
+ ------------*/
+@media only screen and (max-width: 800px) {
+  .movil .desplegable .mode {
+    margin: 0rem 0rem 1rem 1rem;
+  }
+  .movil .desplegable .mode .noche {
+    display: block;
+    color: #0a0a0a;
+    font-size: 5rem;
+  }
+  .movil .desplegable .mode .dia {
+    display: none;
+  }
+  .movil .desplegable .mode img {
+    position: absolute;
+    width: calc(0.1rem + 3vw);
+  }
+}
+/*--------------------
+          html
+  -----------------*/
+html,
+body {
+  background-color: #eeeeee;
 }
 html h1,
 body h1 {

@@ -74,9 +74,9 @@ class miNav extends HTMLElement {
         </div>
       </div>
       <div class="mode">
-            <p id="noche" class="noche bx bxs-moon" onclick="modoNoche('noche');"></p>
-            <p id="dia" class="dia bx bxs-sun" onclick="modoNoche('dia');"></p>
-        </div> 
+        <p id="noche" class="noche bx bxs-moon" onclick="modoNoche('dia');"></p>
+        <p id="dia" class="dia bx bxs-sun" onclick="modoNoche('noche');"></p>
+      </div> 
     </div>
   </div>
   <div class="movil">
@@ -97,6 +97,10 @@ class miNav extends HTMLElement {
       <div onclick="navegar('galeria'); seleccionado();" class="enlace">Galeria</div>
       <div onclick="navegar('curriculum'); seleccionado();" class="enlace">Curriculum</div>
       <div onclick="navegar('contacto'); seleccionado();" class="enlace">Contacto</div>
+      <div class="mode">
+        <p id="noche" class="noche bx bxs-moon" onclick="modoNoche('dia');"></p>
+        <p id="dia" class="dia bx bxs-sun" onclick="modoNoche('noche');"></p>
+      </div> 
     </div>
   </div>
   <!-- <audio src="../sonidos/ping.mp4" autoplay loop></audio> -->
