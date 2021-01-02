@@ -8,7 +8,6 @@
 }
 html,
 body {
-  
   //  h1 {
   //   color: $rojo;
   //   -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
@@ -58,19 +57,19 @@ body {
   }
   .fiestas {
     .stop {
-      color:$blanco;
-       background-color: $rojo;
-       border: 0.05rem solid $blanco;
-       border-radius: 0.9rem;
-     }
-     .stop:hover {
-       color: $rojo;
-       background-color: $blanco;
-       border: 0.05rem solid $rojo;
-       border-radius: 0.9rem;
-     }
-   }
+      color: $blanco;
+      background-color: $rojo;
+      border: 0.05rem solid $blanco;
+      border-radius: 0.9rem;
+    }
+    .stop:hover {
+      color: $rojo;
+      background-color: $blanco;
+      border: 0.05rem solid $rojo;
+      border-radius: 0.9rem;
+    }
   }
+}
 
 /* ------------------------------------------
          social media menu
@@ -137,11 +136,17 @@ body {
           }
         }
       }
-    }
-  }
-  .mode {
-    background: {
-      // color: pink;
+      .mode {
+        background: {
+          // color: pink;
+        }
+        .noche {
+          color: $rojo;
+        }
+        .dia {
+          color: $rojo;
+        }
+      }
     }
   }
 }
@@ -221,6 +226,35 @@ body {
     }
   }
 }
+/*----------------
+     curriculum
+-----------------*/
+.descripcion {
+  .año {
+    color: $rojo;
+  }
+  h1,
+  strong {
+    color: $rojo;
+  }
+}
+.datos {
+  .datosPersonales {
+    border: 0.2rem solid $rojo;
+    h2 {
+      color: $rojo;
+    }
+  }
+  .experiencia {
+    border: 0.2rem solid $rojo;
+  }
+  .interes {
+    border: 0.1rem solid $rojo;
+  }
+}
+//------------------------\\
+//  RESPONSIVE  \\
+//------------------------\\
 @media screen and (max-width: 650px) {
   footer {
     .footerContainer {
@@ -241,10 +275,6 @@ body {
     }
   }
 }
-
-//------------------------\\
-//  RESPONSIVE  \\
-//------------------------\\
 @media only screen and (max-width: 800px) {
   .movil {
     border-bottom: 0.05rem solid $rojo;
@@ -290,8 +320,8 @@ body {
         width: 10rem;
       }
       .stop {
-               font-size: calc(1rem + 0.3vw);
-              }
+        font-size: calc(1rem + 0.3vw);
+      }
     }
   }
 }

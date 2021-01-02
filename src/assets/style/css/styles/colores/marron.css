@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* hovers*/
 .head {
   width: 100%;
@@ -121,6 +122,29 @@ body .fiestas .stop:hover {
   color: #eeeeee;
   border-bottom: 0.1rem solid #a05000;
 }
+/*----------------
+     curriculum
+-----------------*/
+.descripcion .año {
+  color: #a05000;
+}
+.descripcion h1, .descripcion strong {
+  color: #a05000;
+}
+
+.datos .datosPersonales {
+  border: 0.2rem solid #a05000;
+}
+.datos .datosPersonales h2 {
+  color: #a05000;
+}
+.datos .experiencia {
+  border: 0.2rem solid #a05000;
+}
+.datos .interes {
+  border: 0.1rem solid #a05000;
+}
+
 @media screen and (max-width: 650px) {
   footer .footerContainer {
     flex-wrap: wrap;

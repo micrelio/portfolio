@@ -137,14 +137,20 @@ body {
           }
         }
       }
+      .mode {
+        background: {
+          // color: pink;
+        }
+        .noche {
+          color: $rosa;
+        }
+        .dia {
+          color: $rosa;
+        }
+      }
     }
   }
-  .mode {
-    background: {
-      // color: pink;
-    }
   }
-}
 //------------------------\\
 //  footer  \\
 //------------------------\\
@@ -221,6 +227,35 @@ body {
     }
   }
 }
+/*----------------
+     curriculum
+-----------------*/
+.descripcion {
+  .año {
+    color: $rosa;
+  }
+  h1, strong {
+    color: $rosa;
+  }
+  
+}
+.datos {
+  .datosPersonales {
+    border: 0.2rem solid $rosa;
+    h2 {
+      color: $rosa;
+    }
+  }
+  .experiencia {
+    border: 0.2rem solid $rosa;
+  }
+  .interes {
+    border: 0.1rem solid $rosa;
+  }
+}
+//------------------------\\
+//  RESPONSIVE  \\
+//------------------------\\
 @media screen and (max-width: 650px) {
   footer {
     .footerContainer {
@@ -241,10 +276,6 @@ body {
     }
   }
 }
-
-//------------------------\\
-//  RESPONSIVE  \\
-//------------------------\\
 @media only screen and (max-width: 800px) {
   .movil {
     border-bottom: 0.05rem solid $rosa;

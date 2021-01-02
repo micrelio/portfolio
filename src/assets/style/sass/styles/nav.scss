@@ -119,17 +119,6 @@
           margin: 0.7rem 0.2rem 0rem 0.2rem;
         }
       }
-      .selecColor1 {
-        display: flex;
-        flex-direction: row;
-        .color {
-          height: 2.2rem;
-          width: 2.2rem;
-          border-radius: 50%;
-          border: 0.05rem solid $negro;
-          margin: 0.4rem 0.2rem 0rem 0.2rem;
-        }
-      }
       .blanco {
         background: $blanco;
       }
@@ -160,6 +149,9 @@
       .verde {
         background: $verde;
       }
+      .negro {
+        background: $negro;
+      }
     }
   }
   .selecModo {
@@ -173,8 +165,8 @@
       p {
         font-size: 3rem;
       }
-      .noche{
-        display:none;
+      .noche {
+        display: none;
       }
     }
   }
@@ -235,7 +227,7 @@
         }
         .dia {
           display: block;
-          color: $blanco;
+          color: $corporativo;
           font-size: 5rem;
         }
         img {

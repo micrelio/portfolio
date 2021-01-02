@@ -220,9 +220,10 @@ class miCurriculum extends HTMLElement {
             <p>Técnico de sistemas industriales.</p>
         </div>
     </div>
+
     <div class="experiencia">
         <div class="logotipo">
-            <a href="https://www.diselcom.com/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/diselcom.jpg">
+            <a href="https://www.diselcom.com/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/diselcom.jpg"></a>
         </div>
         <div class="descripcion">
             <p class="año">2008 <a href="https://www.diselcom.com/" target="_blank"><strong>Diselcom</strong></a></p><br>

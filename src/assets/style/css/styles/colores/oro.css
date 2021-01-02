@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* hovers*/
 .head {
   width: 100%;
@@ -76,6 +77,13 @@ body .fiestas .stop:hover {
 .stick .nav .navbar .menu .links .contacto:focus {
   background-color: rgba(78, 78, 32, 0.582);
 }
+.stick .nav .navbar .mode .noche {
+  color: #eabe3f;
+}
+.stick .nav .navbar .mode .dia {
+  color: #eabe3f;
+}
+
 * footer {
   border-top: 0.1rem solid #eabe3f;
   background-color: black;
@@ -120,6 +128,29 @@ body .fiestas .stop:hover {
   color: #eeeeee;
   border-bottom: 0.1rem solid #eabe3f;
 }
+/*----------------
+     curriculum
+-----------------*/
+.descripcion .año {
+  color: #eabe3f;
+}
+.descripcion h1, .descripcion strong {
+  color: #eabe3f;
+}
+
+.datos .datosPersonales {
+  border: 0.2rem solid #eabe3f;
+}
+.datos .datosPersonales h2 {
+  color: #eabe3f;
+}
+.datos .experiencia {
+  border: 0.2rem solid #eabe3f;
+}
+.datos .interes {
+  border: 0.1rem solid #eabe3f;
+}
+
 @media screen and (max-width: 650px) {
   footer .footerContainer {
     flex-wrap: wrap;

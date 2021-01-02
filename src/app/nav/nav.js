@@ -46,17 +46,18 @@ class miNav extends HTMLElement {
           <p id="color" class="color marron" onclick="color('marron');"></p>
           <p id="color" class="color naranja"  onclick="color('naranja');"></p>
         </div>
-        <div class="selecColor1">
-        <p class="color rojo" onclick="color('rojo');"></p>
+        <div class="selecColor">
+          <p class="color rojo" onclick="color('rojo');"></p>
           <p id="color" class="color rosa" onclick="color('rosa');"></p>
           <p id="color" class="color morado" onclick="color('morado');"></p>
           <p id="color" class="color azul" onclick="color('azul');"></p>
           <p id="color" class="color verde" onclick="color('verde');"></p>
+        </div>
+        <div class="selecColor">
+          <p id="color" class="color negro" onclick="color('negro');"></p>         
         </div>    
       </div>
     </div>
-
-
     <div class="selecModo">
       <p><strong>Modo</strong></p>
       <hr>
@@ -65,9 +66,6 @@ class miNav extends HTMLElement {
         <p id="dia" class="dia bx bxs-sun" onclick="modoNoche('noche');"></p>
       </div> 
     </div>
-
-
-
   </div>
 <section class="stick" id="stick">
   <div class="nav" id="nav">

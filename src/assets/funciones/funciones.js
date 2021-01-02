@@ -55,6 +55,10 @@ function color(color) {
       document.getElementById("color").href =
         "/src/assets/style/css/styles/colores/verde.css";
       break;
+    case "negro":
+      document.getElementById("color").href =
+        "/src/assets/style/css/styles/colores/negro.css";
+      break;
     default:
       document.getElementById("color").href =
         "/src/assets/style/css/styles/colores/style.css";

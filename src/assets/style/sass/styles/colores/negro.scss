@@ -4,27 +4,27 @@
 
 .head {
   @include head;
-  border-bottom: 0.05rem solid $naranja;
+  border-bottom: 0.05rem solid $negro;
 }
 html,
 body {
   //  h1 {
-  //   color: $naranja;
+  //   color: $negro;
   //   -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
   //   text-shadow: 0.2em 0.2em 0.3em black;
   // }
   // h2 {
-  //   color: $naranja;
+  //   color: $negro;
   //   -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
   //   text-shadow: 0.2rem 0.2rem 0.3rem black;
   // }
   // h3 {
-  //   color: $naranja;
+  //   color: $negro;
   //   -webkit-text-stroke: 0.04rem rgb(221, 216, 216);
   //   text-shadow: 0.2em 0.2em 0.3em black;
   // }
   // h4 {
-  //   color: $naranja;
+  //   color: $negro;
   //   -webkit-text-stroke: 0.03rem rgb(221, 216, 216);
   //   text-shadow: 0.2em 0.2em 0.3em black;
   // }
@@ -36,21 +36,21 @@ body {
   // }
   // ul {
   //   li {
-  //     color: $naranja;
+  //     color: $negro;
   //       p {
   //          strong{
   //       color: $azul;
   //          }
   //     }
   //     a > p {
-  //       color: $naranja;
+  //       color: $negro;
   //     }
   //   }
   // }
   .fa-arrow-alt-circle-up {
-    color: $naranja;
+    color: $negro;
     -webkit-text-stroke: 0.1rem gray;
-    text-shadow: 0.2rem 0.2rem 0.5rem black;
+    text-shadow: 0.2rem 0.2rem 0.5rem $blanco;
     background: {
       color: $blanco;
     }
@@ -58,14 +58,14 @@ body {
   .fiestas {
     .stop {
       color: $blanco;
-      background-color: $naranja;
+      background-color: $negro;
       border: 0.05rem solid $blanco;
       border-radius: 0.9rem;
     }
     .stop:hover {
-      color: $naranja;
+      color: $negro;
       background-color: $blanco;
-      border: 0.05rem solid $naranja;
+      border: 0.05rem solid $negro;
       border-radius: 0.9rem;
     }
   }
@@ -78,12 +78,36 @@ body {
   padding: 0rem 1rem 0rem 1rem;
 
   // padding: 0.2rem 0.2rem 0.2rem 0.2rem;
-  background-color: $naranja;
+  background-color: $negro;
   border: 0.05rem solid black;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+.social-links {
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse;
+    //padding: 0.01rem;
+    /* background-color: orangered; */
+  }
+  p {
+    color: $blanco;
+  }
+  .social-links a {
+    font-size: 2.4rem;
+    display: inline-block;
+    color: $blanco;
+    line-height: 1;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+  .social-links a:visited {
+    color: $blanco;
+  }
+  .social-links a:hover {
+    color: $negro;
+  }
 }
 
 /* ------------------------------------------
@@ -94,7 +118,7 @@ body {
     //   color: rgba(0, 4, 255, 0.7);
   }
   .nav {
-    border-bottom: 0.05rem solid $naranja;
+    border-bottom: 0.05rem solid $blanco;
     box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
     background: {
       color: rgba(0, 0, 0, 0.438);
@@ -102,21 +126,21 @@ body {
     .navbar {
       .foto {
         img {
-          border: 0.05rem solid $naranja; //$blanco;
+          border: 0.05rem solid $negro; //$blanco;
           box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
         }
       }
       .menu {
         .links {
           .enlace {
-            color: $naranja; //gray
+            color: $blanco; //gray
             padding: 1.6rem 0.5rem 1.6rem 0.5rem;
             min-width: 8rem;
             background: {
               color: rgba(0, 0, 0, 0.582);
             }
 
-            border: 0.05rem solid $naranja;
+            border: 0.05rem solid $blanco;
           }
           .inicio:hover,
           .conoceme:hover,
@@ -149,7 +173,7 @@ body {
 //------------------------\\
 * {
   footer {
-    border-top: 0.1rem solid $naranja;
+    border-top: 0.1rem solid $blanco;
     background: {
       color: black;
     }
@@ -159,7 +183,7 @@ body {
       .direccion,
       .paginas {
         h2 {
-          color: $naranja;
+          color: $negro;
           -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
           // text-shadow: 0.05em 0.05em 0.1em $blanco;
         }
@@ -169,13 +193,13 @@ body {
           // color: blanchedalmond;
         }
         input[type="email"] {
-          border: 0.1rem solid $naranja;
+          border: 0.1rem solid $negro;
         }
         input[type="submit"] {
-          background: $naranja;
+          background: $negro;
           color: $blanco;
 
-          border: 0.1rem solid $naranja;
+          border: 0.1rem solid $negro;
 
           border: 0.05rem solid $blanco;
         }
@@ -197,7 +221,7 @@ body {
     }
     .redes {
       background: #000;
-      border-top: 0.1rem solid $naranja;
+      border-top: 0.1rem solid $blanco;
       .propiedad {
         .socialmedia {
           .iconSocial {
@@ -208,7 +232,7 @@ body {
       }
       .copy {
         color: $blanco;
-        border-bottom: 0.1rem solid $naranja;
+        border-bottom: 0.1rem solid $blanco;
       }
     }
   }
@@ -219,25 +243,28 @@ body {
 -----------------*/
 .descripcion {
   .año {
-    color: $naranja;
+    color: $blanco;
   }
   h1, strong {
-    color: $naranja;
+    color: $negro;
+  }
+  strong{
+      color:$blanco
   }
   
 }
 .datos {
   .datosPersonales {
-    border: 0.2rem solid $naranja;
+    border: 0.2rem solid $blanco;
     h2 {
-      color: $naranja;
+      color: $negro;
     }
   }
   .experiencia {
-    border: 0.2rem solid $naranja;
+    border: 0.2rem solid $blanco;
   }
   .interes {
-    border: 0.1rem solid $naranja;
+    border: 0.1rem solid $blanco;
   }
 }
 
@@ -264,10 +291,9 @@ body {
     }
   }
 }
-
 @media only screen and (max-width: 800px) {
   .movil {
-    border-bottom: 0.05rem solid $naranja;
+    border-bottom: 0.05rem solid $negro;
 
     box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
     background: {
@@ -282,7 +308,7 @@ body {
           // color: green;
         }
         img {
-          border: 3px double $naranja;
+          border: 3px double $negro;
           box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
         }
       }
@@ -297,7 +323,7 @@ body {
     }
     .desplegable {
       .enlace {
-        color: $naranja;
+        color: $negro;
       }
     }
   }

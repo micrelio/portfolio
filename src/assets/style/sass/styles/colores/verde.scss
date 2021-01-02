@@ -135,11 +135,17 @@ body {
           }
         }
       }
-    }
-  }
-  .mode {
-    background: {
-      // color: pink;
+      .mode {
+        background: {
+          // color: pink;
+        }
+        .noche {
+          color: $verde;
+        }
+        .dia {
+          color: $verde;
+        }
+      }
     }
   }
 }
@@ -153,7 +159,7 @@ body {
       color: black;
     }
     .footerContainer {
-      color:$blanco;
+      color: $blanco;
       .contacto,
       .direccion,
       .paginas {
@@ -172,7 +178,7 @@ body {
         }
         input[type="submit"] {
           background: $verde;
-          color:$blanco;
+          color: $blanco;
 
           border: 0.1rem solid $verde;
 
@@ -206,7 +212,7 @@ body {
         }
       }
       .copy {
-        color:$blanco;
+        color: $blanco;
         border-bottom: 0.1rem solid $verde;
       }
       .politicas {
@@ -219,6 +225,35 @@ body {
     }
   }
 }
+/*----------------
+     curriculum
+-----------------*/
+.descripcion {
+  .año {
+    color: $verde;
+  }
+  h1,
+  strong {
+    color: $verde;
+  }
+}
+.datos {
+  .datosPersonales {
+    border: 0.2rem solid $verde;
+    h2 {
+      color: $verde;
+    }
+  }
+  .experiencia {
+    border: 0.2rem solid $verde;
+  }
+  .interes {
+    border: 0.1rem solid $verde;
+  }
+}
+//------------------------\\
+//  RESPONSIVE  \\
+//------------------------\\
 @media screen and (max-width: 650px) {
   footer {
     .footerContainer {
@@ -239,10 +274,6 @@ body {
     }
   }
 }
-
-//------------------------\\
-//  RESPONSIVE  \\
-//------------------------\\
 @media only screen and (max-width: 800px) {
   .movil {
     border-bottom: 0.05rem solid $verde;

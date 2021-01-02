@@ -111,17 +111,6 @@
   border: 0.05rem solid #0a0a0a;
   margin: 0.7rem 0.2rem 0rem 0.2rem;
 }
-.botonesEstilo .filasColores .cambioColor .selecColor1 {
-  display: flex;
-  flex-direction: row;
-}
-.botonesEstilo .filasColores .cambioColor .selecColor1 .color {
-  height: 2.2rem;
-  width: 2.2rem;
-  border-radius: 50%;
-  border: 0.05rem solid #0a0a0a;
-  margin: 0.4rem 0.2rem 0rem 0.2rem;
-}
 .botonesEstilo .filasColores .cambioColor .blanco {
   background: #eeeeee;
 }
@@ -151,6 +140,9 @@
 }
 .botonesEstilo .filasColores .cambioColor .verde {
   background: #008f39;
+}
+.botonesEstilo .filasColores .cambioColor .negro {
+  background: #0a0a0a;
 }
 .botonesEstilo .selecModo {
   margin: 1rem 0rem 0rem 0rem;
@@ -212,7 +204,7 @@
 }
 .stick .nav .navbar .mode .dia {
   display: block;
-  color: #eeeeee;
+  color: #00c6ee;
   font-size: 5rem;
 }
 .stick .nav .navbar .mode img {

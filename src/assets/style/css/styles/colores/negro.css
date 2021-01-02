@@ -3,7 +3,7 @@
 .head {
   width: 100%;
   position: relative;
-  border-bottom: 0.05rem solid #eeeeee;
+  border-bottom: 0.05rem solid #0a0a0a;
 }
 .head img {
   width: 100%;
@@ -11,23 +11,23 @@
 
 html .fa-arrow-alt-circle-up,
 body .fa-arrow-alt-circle-up {
-  color: #eeeeee;
+  color: #0a0a0a;
   -webkit-text-stroke: 0.1rem gray;
-  text-shadow: 0.2rem 0.2rem 0.5rem black;
+  text-shadow: 0.2rem 0.2rem 0.5rem #eeeeee;
   background-color: #eeeeee;
 }
 html .fiestas .stop,
 body .fiestas .stop {
-  color: #0a0a0a;
-  background-color: #eeeeee;
-  border: 0.05rem solid #0a0a0a;
+  color: #eeeeee;
+  background-color: #0a0a0a;
+  border: 0.05rem solid #eeeeee;
   border-radius: 0.9rem;
 }
 html .fiestas .stop:hover,
 body .fiestas .stop:hover {
-  color: #eeeeee;
-  background-color: #0a0a0a;
-  border: 0.05rem solid #eeeeee;
+  color: #0a0a0a;
+  background-color: #eeeeee;
+  border: 0.05rem solid #0a0a0a;
   border-radius: 0.9rem;
 }
 
@@ -36,12 +36,35 @@ body .fiestas .stop:hover {
  ------------------------------------------ */
 .social-media {
   padding: 0rem 1rem 0rem 1rem;
-  background-color: #eeeeee;
+  background-color: #0a0a0a;
   border: 0.05rem solid black;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+.social-media .social-links {
+  display: flex;
+  flex-direction: row;
+  flex-direction: row-reverse;
+  /* background-color: orangered; */
+}
+.social-media p {
+  color: #eeeeee;
+}
+.social-media .social-links a {
+  font-size: 2.4rem;
+  display: inline-block;
+  color: #eeeeee;
+  line-height: 1;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.social-media .social-links a:visited {
+  color: #eeeeee;
+}
+.social-media .social-links a:hover {
+  color: #0a0a0a;
 }
 
 /* ------------------------------------------
@@ -53,7 +76,7 @@ body .fiestas .stop:hover {
   background-color: rgba(0, 0, 0, 0.438);
 }
 .stick .nav .navbar .foto img {
-  border: 0.05rem solid #eeeeee;
+  border: 0.05rem solid #0a0a0a;
   box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
 }
 .stick .nav .navbar .menu .links .enlace {
@@ -89,20 +112,20 @@ body .fiestas .stop:hover {
 * footer .footerContainer .contacto h2,
 * footer .footerContainer .direccion h2,
 * footer .footerContainer .paginas h2 {
-  color: #eeeeee;
+  color: #0a0a0a;
   -webkit-text-stroke: 0.05rem #ddd8d8;
 }
 * footer .footerContainer .contacto input[type=email],
 * footer .footerContainer .direccion input[type=email],
 * footer .footerContainer .paginas input[type=email] {
-  border: 0.1rem solid #eeeeee;
+  border: 0.1rem solid #0a0a0a;
 }
 * footer .footerContainer .contacto input[type=submit],
 * footer .footerContainer .direccion input[type=submit],
 * footer .footerContainer .paginas input[type=submit] {
-  background: #eeeeee;
+  background: #0a0a0a;
   color: #eeeeee;
-  border: 0.1rem solid #eeeeee;
+  border: 0.1rem solid #0a0a0a;
   border: 0.05rem solid #eeeeee;
 }
 * footer .footerContainer .contacto input[type=submit]:hover,
@@ -123,6 +146,7 @@ body .fiestas .stop:hover {
   color: #eeeeee;
   border-bottom: 0.1rem solid #eeeeee;
 }
+
 /*----------------
      curriculum
 -----------------*/
@@ -130,15 +154,17 @@ body .fiestas .stop:hover {
   color: #eeeeee;
 }
 .descripcion h1, .descripcion strong {
+  color: #0a0a0a;
+}
+.descripcion strong {
   color: #eeeeee;
-  -webkit-text-stroke: 0.1rem #0a0a0a;
 }
 
 .datos .datosPersonales {
   border: 0.2rem solid #eeeeee;
 }
 .datos .datosPersonales h2 {
-  color: #eeeeee;
+  color: #0a0a0a;
 }
 .datos .experiencia {
   border: 0.2rem solid #eeeeee;
@@ -165,12 +191,12 @@ body .fiestas .stop:hover {
 }
 @media only screen and (max-width: 800px) {
   .movil {
-    border-bottom: 0.05rem solid #eeeeee;
+    border-bottom: 0.05rem solid #0a0a0a;
     box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
     background-color: rgba(0, 0, 0, 0.438);
   }
   .movil .imagenes .foto img {
-    border: 3px double #eeeeee;
+    border: 3px double #0a0a0a;
     box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
   }
   .movil .imagenes .botones {
@@ -180,19 +206,13 @@ body .fiestas .stop:hover {
     background-color: Transparent;
   }
   .movil .desplegable .enlace {
-    color: #eeeeee;
+    color: #0a0a0a;
   }
 }
 @media only screen and (max-width: 800px) {
-  body .fiestas {
-    bottom: 4rem;
-  }
-  body .fiestas img {
-    width: 10rem;
-  }
   body .fiestas .stop {
     font-size: calc(1rem + 0.3vw);
   }
 }
 
-/*# sourceMappingURL=blanco.css.map */
+/*# sourceMappingURL=negro.css.map */

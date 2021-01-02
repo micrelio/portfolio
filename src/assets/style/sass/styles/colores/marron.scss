@@ -215,6 +215,35 @@ body {
     }
   }
 }
+/*----------------
+     curriculum
+-----------------*/
+.descripcion {
+  .año {
+    color: $marron;
+  }
+  h1, strong {
+    color: $marron;
+  }
+  
+}
+.datos {
+  .datosPersonales {
+    border: 0.2rem solid $marron;
+    h2 {
+      color: $marron;
+    }
+  }
+  .experiencia {
+    border: 0.2rem solid $marron;
+  }
+  .interes {
+    border: 0.1rem solid $marron;
+  }
+}
+//------------------------\\
+//  RESPONSIVE  \\
+//------------------------\\
 @media screen and (max-width: 650px) {
   footer {
     .footerContainer {
@@ -235,9 +264,6 @@ body {
     }
   }
 }
-//------------------------\\
-//  RESPONSIVE  \\
-//------------------------\\
 @media only screen and (max-width: 800px) {
   .movil {
     border-bottom: 0.05rem solid $marron;
