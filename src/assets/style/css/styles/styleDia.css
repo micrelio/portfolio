@@ -44,7 +44,6 @@
 }
 .stick .nav .navbar .mode .noche {
   display: block;
-  font-size: 5rem;
 }
 .stick .nav .navbar .mode .dia {
   display: none;
@@ -63,7 +62,6 @@
   }
   .movil .desplegable .mode .noche {
     display: block;
-    font-size: 5rem;
   }
   .movil .desplegable .mode .dia {
     display: none;

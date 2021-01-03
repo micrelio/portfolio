@@ -59,8 +59,8 @@
          div stilos
 ------------------------------------------ */
 .botonesEstilo {
-  // z-index: 1000;
-  // position: fixed;
+  z-index: 100;
+  position: fixed;
   top: 0; //para que siga la pagina
   // position: sticky;
   // position: -webkit-fixed;  // required for Safari
@@ -68,18 +68,20 @@
   background-color: white;
   border: 0.05rem solid $negro;
   border-radius: 0.9rem;
-  padding: 0rem 1rem 1rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
   margin: 0rem 0rem 0rem 0.5rem;
 
   //z-index: 100;
-  position: relative;
+  //position: relative;
   p {
     color: $negro;
+    font-size: 1.5rem;
+
   }
   .filasFiesta {
     margin: 0rem 0rem 1rem 0rem;
     p {
-      font-size: 1.5rem;
+     
       margin: 0rem 0rem 0rem 0rem;
     }
     .selecFiesta {
@@ -94,7 +96,7 @@
   }
   .filasColores {
     p {
-      font-size: 1.5rem;
+     
       margin: 0rem 0rem 0rem 0rem;
     }
     .cambioColor {
@@ -153,7 +155,7 @@
   }
   .opacidad {
     p {
-      font-size: 1.5rem;
+     
       margin: 0rem 0rem 0rem 0rem;
     }
     .slidecontainer {
@@ -209,7 +211,7 @@
   .selecModo {
     margin: 1rem 0rem 0rem 0rem;
     p {
-      font-size: 1.5rem;
+     
       margin: 0rem 0rem 0rem 0rem;
     }
     .mode {
@@ -288,11 +290,12 @@
         .noche {
           display: none;
           color: $corporativo;
+          font-size: 3rem;
         }
         .dia {
           display: block;
           color: $corporativo;
-          font-size: 5rem;
+          font-size: 3rem;
         }
         img {
           position: absolute;
@@ -306,7 +309,7 @@
         justify-content: center;
         align-items: flex-end;
         width: 100%;
-        position: relative;
+        // position: relative;
         .links {
           display: grid;
           grid-template-columns: [x0] 0.1fr [x1] 0.1fr [x2] 0.1fr [x3] 0.1fr [x4] 0.1fr [x5] 0.1fr [x6] 0.1fr [x7] /*1fr [x8]*/;
@@ -465,6 +468,7 @@
         .noche {
           display: none;
           color: $corporativo;
+          font-size: 5rem;
         }
         .dia {
           display: block;

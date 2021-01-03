@@ -59,23 +59,24 @@
          div stilos
 ------------------------------------------ */
 .botonesEstilo {
+  z-index: 100;
+  position: fixed;
   top: 0;
   display: none;
   background-color: white;
   border: 0.05rem solid #0a0a0a;
   border-radius: 0.9rem;
-  padding: 0rem 1rem 1rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
   margin: 0rem 0rem 0rem 0.5rem;
-  position: relative;
 }
 .botonesEstilo p {
   color: #0a0a0a;
+  font-size: 1.5rem;
 }
 .botonesEstilo .filasFiesta {
   margin: 0rem 0rem 1rem 0rem;
 }
 .botonesEstilo .filasFiesta p {
-  font-size: 1.5rem;
   margin: 0rem 0rem 0rem 0rem;
 }
 .botonesEstilo .filasFiesta .selecFiesta {
@@ -86,7 +87,6 @@
   margin: 0.5rem 0rem 0rem 0.2rem;
 }
 .botonesEstilo .filasColores p {
-  font-size: 1.5rem;
   margin: 0rem 0rem 0rem 0rem;
 }
 .botonesEstilo .filasColores .cambioColor {
@@ -141,7 +141,6 @@
   background: #0a0a0a;
 }
 .botonesEstilo .opacidad p {
-  font-size: 1.5rem;
   margin: 0rem 0rem 0rem 0rem;
 }
 .botonesEstilo .opacidad .slidecontainer {
@@ -202,7 +201,6 @@
   margin: 1rem 0rem 0rem 0rem;
 }
 .botonesEstilo .selecModo p {
-  font-size: 1.5rem;
   margin: 0rem 0rem 0rem 0rem;
 }
 .botonesEstilo .selecModo .mode {
@@ -268,11 +266,12 @@
 .stick .nav .navbar .mode .noche {
   display: none;
   color: #00c6ee;
+  font-size: 3rem;
 }
 .stick .nav .navbar .mode .dia {
   display: block;
   color: #00c6ee;
-  font-size: 5rem;
+  font-size: 3rem;
 }
 .stick .nav .navbar .mode img {
   position: absolute;
@@ -285,7 +284,6 @@
   justify-content: center;
   align-items: flex-end;
   width: 100%;
-  position: relative;
 }
 .stick .nav .navbar .menu .links {
   display: grid;
@@ -415,6 +413,7 @@
   .movil .desplegable .mode .noche {
     display: none;
     color: #00c6ee;
+    font-size: 5rem;
   }
   .movil .desplegable .mode .dia {
     display: block;
