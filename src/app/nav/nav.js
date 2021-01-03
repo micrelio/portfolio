@@ -99,22 +99,9 @@ class miNav extends HTMLElement {
       <hr>
       <br>
       <div class="slidecontainer">
-        <input type="range" list="tickmarks" min="0" max="100" value="0" step="10" class="slider" id="myRange">
-        <!--
-        <datalist id="tickmarks">
-          <option value="0" label="0%">
-          <option value="10">
-          <option value="20">
-          <option value="30">
-          <option value="40">
-          <option value="50" label="50%">
-          <option value="60">
-          <option value="70">
-          <option value="80">
-          <option value="90">
-          <option value="100" label="100%">
-        </datalist>
-        -->
+        <span class="valBox" id="valBox">0%</span>
+        <br>
+        <input type="range"  min="0" max="100" value="0" step="10" class="slider" id="myRange" onchange="showVal(this.value)">
       </div>
     </div>
     <br>
@@ -143,12 +130,14 @@ class miNav extends HTMLElement {
     </div>
     <br>
     <div class="opacidad">
-      <p><strong>Opacidad footer</strong></p>
-      <hr>
+    <p><strong>Opacidad menú</strong></p>
+    <hr>
+    <br>
+    <div class="slidecontainer">
+      <span class="valBox" id="valBox">0%</span>
       <br>
-      <div class="slidecontainer">
-        <input type="range" list="tickmarks" min="0" max="100" value="0" step="10" class="slider" id="myRange">
-      </div>
+      <input type="range"  min="0" max="100" value="0" step="10" class="slider" id="myRange" onchange="showVal(this.value)">
+    </div>
     </div>
     <div class="selecModo">
         <p><strong>Modo</strong></p>
@@ -162,13 +151,13 @@ class miNav extends HTMLElement {
 
 
 <section class="stick" id="stick">
-    <div class="nav" id="nav">
+    <div class="nav" id="nav" >
         <div class="navbar">
-            <div class="foto">
+            <div id="foto" class="foto" >
                 <img src="/src/assets/images/dracula-man.jpg">
             </div>
             <div class="menu">
-                <div class="links">
+                <div id="links" class="links">
                     <div class="enlace" onclick="navegar('inicio');"> Inicio </div>
                     <div class="enlace" onclick="navegar('biografia');"> Biografía </div>
                     <div class="enlace" onclick="navegar('webs'); "> Webs </div>
@@ -269,10 +258,63 @@ function navegar(id) {
       break;
   }
 }
+
+//funcion transparencia
+function showVal(opacidadMenu) {
+  console.log(opacidadMenu);
+  document.getElementById("valBox").innerHTML = opacidadMenu + "%";
+  switch (opacidadMenu) {
+    case "0":
+      document.getElementById("stick").style = "opacity:";
+      break;
+    case "10":
+      document.getElementById("stick").style = "opacity:0.9";
+      break;
+    case "20":
+      document.getElementById("stick").style = "opacity:0.8";
+      break;
+    case "30":
+      document.getElementById("stick").style = "opacity:0.7";
+      break;
+    case "40":
+      document.getElementById("stick").style = "opacity:0.6";
+      break;
+    case "50":
+      document.getElementById("stick").style = "opacity:0.5";
+      break;
+    case "60":
+      document.getElementById("stick").style = "opacity:0.4";
+      break;
+    case "70":
+      document.getElementById("stick").style = "opacity:0.3";
+      break;
+    case "80":
+      document.getElementById("stick").style = "opacity:0.2";
+      break;
+    case "90":
+      document.getElementById("stick").style = "opacity:0.1";
+      break;
+    case "100":
+      document.getElementById("stick").style = "opacity:0.0";
+      break;
+    default:
+      document.getElementById("stick").style = "opacity:1";
+
+      break;
+  }
+  document.getElementById("foto").style = "opacity:";
+}
+
 //funcion para cualquier clic en el documento
 document.addEventListener("click", function (e) {
   //obtiendo informacion del DOM para
   var clic = e.target.id;
+
+  let element = document.getElementById("nav");
+  element.style.setProperty("color", "blue");
+  element.style.setProperty("font-size", "24px");
+  console.log(element);
+
   switch (clic) {
     case "selecEstilosDesplegar":
       document.getElementById("botonesEstilo").style = "display:block";

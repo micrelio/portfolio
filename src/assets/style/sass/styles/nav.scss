@@ -146,45 +146,55 @@
       margin: 0rem 0rem 0rem 0rem;
     }
     .slidecontainer {
-      width: 100%; /* Width of the outside container */
+      //  width: 100%; /* Width of the outside container */
+
+      .valBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        // width: 2.5rem; /* Set a specific slider handle width */
+        // height: 2.5rem; /* Slider handle height */
+        // background: $blanco; /* Green background */
+        // cursor: pointer; /* Cursor on hover */
+        font-size: 2.5rem;
+      }
+
+      /* The slider itself */
+      .slider {
+        -webkit-appearance: none; /* Override default CSS styles */
+        appearance: none;
+        // width: 100%; /* Full-width */
+        height: 2.5rem; /* Specified height */
+        background: #d3d3d3; /* Grey background */
+        outline: none; /* Remove outline */
+        opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+        -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+        transition: opacity 0.2s;
+      }
+
+      /* Mouse-over effects */
+      .slider:hover {
+        opacity: 1; /* Fully shown on mouse-over */
+      }
+
+      /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+      .slider::-webkit-slider-thumb {
+        -webkit-appearance: none; /* Override default look */
+        appearance: none;
+        width: 2.5rem; /* Set a specific slider handle width */
+        height: 2.5rem; /* Slider handle height */
+        background: black; /* Green background */
+        cursor: pointer; /* Cursor on hover */
+      }
+
+      .slider::-moz-range-thumb {
+        width: 2.5rem; /* Set a specific slider handle width */
+        height: 2.5rem; /* Slider handle height */
+        background: black; /* Green background */
+        cursor: pointer; /* Cursor on hover */
+      }
     }
-    
-    /* The slider itself */
-    .slider {
-      -webkit-appearance: none;  /* Override default CSS styles */
-      appearance: none;
-      width: 100%; /* Full-width */
-      height: 2.5rem; /* Specified height */
-      background: #d3d3d3; /* Grey background */
-      outline: none; /* Remove outline */
-      opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-      -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-      transition: opacity .2s;
-    }
-    
-    /* Mouse-over effects */
-    .slider:hover {
-      opacity: 1; /* Fully shown on mouse-over */
-    }
-    
-    /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
-    .slider::-webkit-slider-thumb {
-      -webkit-appearance: none; /* Override default look */
-      appearance: none;
-      width: 2.5rem; /* Set a specific slider handle width */
-      height: 2.5rem; /* Slider handle height */
-      background: black; /* Green background */
-      cursor: pointer; /* Cursor on hover */
-    }
-    
-    .slider::-moz-range-thumb {
-      width: 2.5rem; /* Set a specific slider handle width */
-      height: 2.5rem; /* Slider handle height */
-      background: black; /* Green background */
-      cursor: pointer; /* Cursor on hover */
-    }
-    
-}
+  }
   .selecModo {
     margin: 1rem 0rem 0rem 0rem;
     p {
@@ -231,9 +241,14 @@
     // margin: 0vh 5vh 0vh 5vh;
     box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
     // border-bottom: 0.05rem solid $corporativo;
-    background: {
-      color: rgba(0, 0, 0, 0.438);
-    }
+    //background: {
+      background: {
+        color:black;
+        } 
+     //backdrop-filter: opacity(50%);
+
+      
+    //}
     .navbar {
       padding: 0rem 1rem 0rem 0rem;
       display: flex;
@@ -284,11 +299,11 @@
         position: relative;
         .links {
           display: grid;
-          grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5] 1fr [x6] 0.1fr [x7] /*1fr [x8]*/;
+          grid-template-columns: [x0] 0.1fr [x1] 0.1fr [x2] 0.1fr [x3] 0.1fr [x4] 0.1fr [x5] 0.1fr [x6] 0.1fr [x7] /*1fr [x8]*/;
           grid-template-rows: [y0] 1fr [y1];
           grid-column-gap: 0rem;
           grid-row-gap: 1rem;
-          width: 67%;
+          //width: 67%;
           .enlace {
             display: flex;
             align-items: center;
