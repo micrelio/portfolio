@@ -35,7 +35,7 @@ function colorMenu(color) {
       document.getElementById("nav").style = "background-color:#f80000";
       break;
     case "rosa":
-      document.getElementById("nav").style = "background-color::#ff0080";
+      document.getElementById("nav").style = "background-color:#ff0080";
       break;
     case "morado":
       document.getElementById("nav").style = "background-color:#9c27b0";
@@ -76,7 +76,7 @@ function colorFooter(color) {
       document.getElementById("footer").style = "background-color:#f80000";
       break;
     case "rosa":
-      document.getElementById("footer").style = "background-color::#ff0080";
+      document.getElementById("footer").style = "background-color:#ff0080";
       break;
     case "morado":
       document.getElementById("footer").style = "background-color:#9c27b0";

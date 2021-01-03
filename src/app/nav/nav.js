@@ -89,7 +89,7 @@ class miNav extends HTMLElement {
             <p class="color verde" onclick="colorMenu('verde');"></p>
           </div>
           <div class="selecColor">
-            <p id="color" class="color negro" onclick="color('negro');"></p>
+            <p id="color" class="color negro" onclick="colorMenu('negro');"></p>
           </div>
         </div>
     </div>
@@ -106,14 +106,14 @@ class miNav extends HTMLElement {
             <p class="color naranja" onclick="colorFooter('naranja');"></p>
           </div>
           <div class="selecColor">
-            <p class="color rojo" onclick="color('rojo');"></p>
+            <p class="color rojo" onclick="colorFooter('rojo');"></p>
             <p class="color rosa" onclick="colorFooter('rosa');"></p>
             <p class="color morado" onclick="colorFooter('morado');"></p>
             <p class="color azul" onclick="colorFooter('azul');"></p>
             <p class="color verde" onclick="colorFooter('verde');"></p>
           </div>
           <div class="selecColor">
-            <p id="color" class="color negro" onclick="color('negro');"></p>
+            <p id="color" class="color negro" onclick="colorFooter('negro');"></p>
           </div>
         </div>
     </div>
