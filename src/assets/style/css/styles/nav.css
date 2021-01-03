@@ -137,9 +137,63 @@
 .botonesEstilo .filasColores .cambioColor .negro {
   background: #0a0a0a;
 }
+.botonesEstilo .opacidad {
+  /* The slider itself */
+  /* Mouse-over effects */
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+}
 .botonesEstilo .opacidad p {
   font-size: 1.5rem;
   margin: 0rem 0rem 0rem 0rem;
+}
+.botonesEstilo .opacidad .slidecontainer {
+  width: 100%;
+  /* Width of the outside container */
+}
+.botonesEstilo .opacidad .slider {
+  -webkit-appearance: none;
+  /* Override default CSS styles */
+  appearance: none;
+  width: 100%;
+  /* Full-width */
+  height: 2.5rem;
+  /* Specified height */
+  background: #d3d3d3;
+  /* Grey background */
+  outline: none;
+  /* Remove outline */
+  opacity: 0.7;
+  /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: 0.2s;
+  /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
+}
+.botonesEstilo .opacidad .slider:hover {
+  opacity: 1;
+  /* Fully shown on mouse-over */
+}
+.botonesEstilo .opacidad .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  width: 2.5rem;
+  /* Set a specific slider handle width */
+  height: 2.5rem;
+  /* Slider handle height */
+  background: black;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
+}
+.botonesEstilo .opacidad .slider::-moz-range-thumb {
+  width: 2.5rem;
+  /* Set a specific slider handle width */
+  height: 2.5rem;
+  /* Slider handle height */
+  background: black;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
 }
 .botonesEstilo .selecModo {
   margin: 1rem 0rem 0rem 0rem;

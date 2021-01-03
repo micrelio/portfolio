@@ -97,11 +97,24 @@ class miNav extends HTMLElement {
     <div class="opacidad">
       <p><strong>Opacidad menú</strong></p>
       <hr>
-      <div id="barra0">
-        <div id="boton0"></div>
-      </div>
-      <div>
-        <div id="texto0"></div>
+      <br>
+      <div class="slidecontainer">
+        <input type="range" list="tickmarks" min="0" max="100" value="0" step="10" class="slider" id="myRange">
+        <!--
+        <datalist id="tickmarks">
+          <option value="0" label="0%">
+          <option value="10">
+          <option value="20">
+          <option value="30">
+          <option value="40">
+          <option value="50" label="50%">
+          <option value="60">
+          <option value="70">
+          <option value="80">
+          <option value="90">
+          <option value="100" label="100%">
+        </datalist>
+        -->
       </div>
     </div>
     <br>
@@ -127,6 +140,15 @@ class miNav extends HTMLElement {
             <p id="color" class="color negro" onclick="colorFooter('negro');"></p>
           </div>
         </div>
+    </div>
+    <br>
+    <div class="opacidad">
+      <p><strong>Opacidad footer</strong></p>
+      <hr>
+      <br>
+      <div class="slidecontainer">
+        <input type="range" list="tickmarks" min="0" max="100" value="0" step="10" class="slider" id="myRange">
+      </div>
     </div>
     <div class="selecModo">
         <p><strong>Modo</strong></p>
