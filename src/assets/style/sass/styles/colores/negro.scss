@@ -106,33 +106,22 @@ body {
          menu
 ------------------------------------------ */
 .stick {
-  background: {
-    //   color: rgba(0, 4, 255, 0.7);
-  }
   .nav {
-    border-bottom: 0.05rem solid $blanco;
-    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+    border-bottom: 0.05rem solid $negro;
     background: {
-      color: rgba(0, 0, 0, 0.438);
+      color: $blanco;
     }
     .navbar {
       .foto {
         img {
-          border-color: $negro; //$blanco;
+          border-color: $negro;
           box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
         }
       }
       .menu {
         .links {
           .enlace {
-            color: $blanco; //gray
-            padding: 1.6rem 0.5rem 1.6rem 0.5rem;
-            min-width: 8rem;
-            background: {
-              color: rgba(0, 0, 0, 0.582);
-            }
-
-            border-color: $blanco;
+            color: $negro;
           }
           .inicio:hover,
           .conoceme:hover,
@@ -148,7 +137,7 @@ body {
           .videos:focus,
           .curriculum:focus,
           .contacto:focus {
-            background-color: rgba(78, 78, 32, 0.582);
+            //  background-color: rgba(78, 78, 32, 0.582);
           }
         }
       }
@@ -157,10 +146,10 @@ body {
           // color: pink;
         }
         .noche {
-          color: $blanco;
+          color: $negro;
         }
         .dia {
-          color: $blanco;
+          color: $negro;
         }
       }
     }
@@ -171,9 +160,9 @@ body {
 //------------------------\\
 * {
   footer {
-    border-top: 0.1rem solid $blanco;
+    border-top: 0.1rem solid $negro;
     background: {
-      color: black;
+      color: $blanco;
     }
     .footerContainer {
       color: $blanco;
@@ -188,7 +177,7 @@ body {
         p {
         }
         a {
-          // color: blanchedalmond;
+          color: $negro;
         }
         input[type="email"] {
           border-color: $negro;
@@ -207,17 +196,19 @@ body {
         }
         .datos {
           p {
+            color: $negro;
           }
         }
         .diseños {
           p {
+            color: $negro;
           }
         }
       }
     }
     .redes {
-      background: #000;
-      border-top: 0.1rem solid $blanco;
+      background: $blanco;
+      border-top: 0.1rem solid $negro;
       .propiedad {
         .socialmedia {
           .iconSocial {
@@ -227,8 +218,16 @@ body {
         }
       }
       .copy {
-        color: $blanco;
-        border-bottom: 0.1rem solid $blanco;
+        color: $negro;
+        border-bottom: 0.1rem solid $negro;
+      }
+      .politicas {
+        p {
+          color: $negro;
+        }
+        a {
+          text-decoration: none;
+        }
       }
     }
   }

@@ -79,33 +79,18 @@ body {
          menu
 ------------------------------------------ */
 .stick {
-  background: {
-    //   color: rgba(0, 4, 255, 0.7);
-  }
-  .nav {
+   .nav {
     border-bottom: 0.05rem solid $marron;
-    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
-    background: {
-      color: rgba(0, 0, 0, 0.438);
-    }
-    .navbar {
+        .navbar {
       .foto {
         img {
           border: 0.05rem solid $marron; //$blanco;
-          box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
         }
       }
       .menu {
         .links {
           .enlace {
-            color: $marron; //gray
-            padding: 1.6rem 0.5rem 1.6rem 0.5rem;
-            min-width: 8rem;
-            background: {
-              color: rgba(0, 0, 0, 0.582);
-            }
-
-            border: 0.05rem solid $marron;
+            color: $marron; 
           }
           .inicio:hover,
           .conoceme:hover,
@@ -121,7 +106,7 @@ body {
           .videos:focus,
           .curriculum:focus,
           .contacto:focus {
-            background-color: rgba(78, 78, 32, 0.582);
+           // background-color: rgba(78, 78, 32, 0.582);
           }
         }
       }

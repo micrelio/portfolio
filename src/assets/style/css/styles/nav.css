@@ -58,139 +58,103 @@
 /* ------------------------------------------
          div stilos
 ------------------------------------------ */
-.botonesEstilo,
-.botonesEstiloMenu {
+.botonesEstilo {
   display: none;
   background-color: white;
   border: 0.05rem solid #0a0a0a;
   border-radius: 0.9rem;
   padding: 1rem;
   margin: 0rem 0rem 0rem 0.5rem;
-  z-index: 1;
+  z-index: 100;
   position: absolute;
 }
-.botonesEstilo p,
-.botonesEstiloMenu p {
+.botonesEstilo p {
   color: #0a0a0a;
 }
-.botonesEstilo .filasFiesta,
-.botonesEstiloMenu .filasFiesta {
+.botonesEstilo .filasFiesta {
   margin: 0rem 0rem 1rem 0rem;
 }
-.botonesEstilo .filasFiesta p,
-.botonesEstiloMenu .filasFiesta p {
+.botonesEstilo .filasFiesta p {
   font-size: 1.5rem;
   margin: 0rem 0rem 0rem 0rem;
 }
-.botonesEstilo .filasFiesta .selecFiesta,
-.botonesEstiloMenu .filasFiesta .selecFiesta {
-  margin: 0rem 0rem 0rem 0rem;
+.botonesEstilo .filasFiesta .selecFiesta {
+  margin: 0.5rem 0rem 0rem 0rem;
 }
-.botonesEstilo .filasFiesta .selecFiesta .festivos,
-.botonesEstiloMenu .filasFiesta .selecFiesta .festivos {
+.botonesEstilo .filasFiesta .selecFiesta .festivos {
   width: 2.4rem;
   margin: 0.5rem 0rem 0rem 0.2rem;
 }
-.botonesEstilo .filasFiesta .selecFiesta,
-.botonesEstiloMenu .filasFiesta .selecFiesta {
-  margin: 0rem 0rem 0rem 0rem;
-}
-.botonesEstilo .filasFiesta .selecFiesta .festivos,
-.botonesEstiloMenu .filasFiesta .selecFiesta .festivos {
-  width: 2.4rem;
-  margin: 0.2rem 0rem 0rem 0.2rem;
-}
-.botonesEstilo .filasColores p,
-.botonesEstiloMenu .filasColores p {
+.botonesEstilo .filasColores p {
   font-size: 1.5rem;
   margin: 0rem 0rem 0rem 0rem;
 }
-.botonesEstilo .filasColores .cambioColor,
-.botonesEstiloMenu .filasColores .cambioColor {
+.botonesEstilo .filasColores .cambioColor {
   display: flex;
   flex-direction: column;
 }
-.botonesEstilo .filasColores .cambioColor .selecColor,
-.botonesEstiloMenu .filasColores .cambioColor .selecColor {
+.botonesEstilo .filasColores .cambioColor .selecColor {
   display: flex;
   flex-direction: row;
 }
-.botonesEstilo .filasColores .cambioColor .selecColor .color,
-.botonesEstiloMenu .filasColores .cambioColor .selecColor .color {
+.botonesEstilo .filasColores .cambioColor .selecColor .color {
   height: 2.2rem;
   width: 2.2rem;
   border-radius: 50%;
   border: 0.05rem solid #0a0a0a;
   margin: 0.7rem 0.2rem 0rem 0.2rem;
 }
-.botonesEstilo .filasColores .cambioColor .blanco,
-.botonesEstiloMenu .filasColores .cambioColor .blanco {
+.botonesEstilo .filasColores .cambioColor .blanco {
   background: #eeeeee;
 }
-.botonesEstilo .filasColores .cambioColor .amarillo,
-.botonesEstiloMenu .filasColores .cambioColor .amarillo {
+.botonesEstilo .filasColores .cambioColor .amarillo {
   background: #ffff00;
 }
-.botonesEstilo .filasColores .cambioColor .naranja,
-.botonesEstiloMenu .filasColores .cambioColor .naranja {
+.botonesEstilo .filasColores .cambioColor .naranja {
   background: orangered;
 }
-.botonesEstilo .filasColores .cambioColor .oro,
-.botonesEstiloMenu .filasColores .cambioColor .oro {
+.botonesEstilo .filasColores .cambioColor .oro {
   background: #eabe3f;
 }
-.botonesEstilo .filasColores .cambioColor .marron,
-.botonesEstiloMenu .filasColores .cambioColor .marron {
+.botonesEstilo .filasColores .cambioColor .marron {
   background: #a05000;
 }
-.botonesEstilo .filasColores .cambioColor .rojo,
-.botonesEstiloMenu .filasColores .cambioColor .rojo {
+.botonesEstilo .filasColores .cambioColor .rojo {
   background: #f80000;
 }
-.botonesEstilo .filasColores .cambioColor .rosa,
-.botonesEstiloMenu .filasColores .cambioColor .rosa {
+.botonesEstilo .filasColores .cambioColor .rosa {
   background: #ff0080;
 }
-.botonesEstilo .filasColores .cambioColor .morado,
-.botonesEstiloMenu .filasColores .cambioColor .morado {
+.botonesEstilo .filasColores .cambioColor .morado {
   background: #9c27b0;
 }
-.botonesEstilo .filasColores .cambioColor .azul,
-.botonesEstiloMenu .filasColores .cambioColor .azul {
+.botonesEstilo .filasColores .cambioColor .azul {
   background: #00c6ee;
 }
-.botonesEstilo .filasColores .cambioColor .verde,
-.botonesEstiloMenu .filasColores .cambioColor .verde {
+.botonesEstilo .filasColores .cambioColor .verde {
   background: #008f39;
 }
-.botonesEstilo .filasColores .cambioColor .negro,
-.botonesEstiloMenu .filasColores .cambioColor .negro {
+.botonesEstilo .filasColores .cambioColor .negro {
   background: #0a0a0a;
 }
-.botonesEstilo .selecModo,
-.botonesEstiloMenu .selecModo {
+.botonesEstilo .selecModo {
   margin: 1rem 0rem 0rem 0rem;
 }
-.botonesEstilo .selecModo p,
-.botonesEstiloMenu .selecModo p {
+.botonesEstilo .selecModo p {
   font-size: 1.5rem;
   margin: 0rem 0rem 0rem 0rem;
 }
-.botonesEstilo .selecModo .mode,
-.botonesEstiloMenu .selecModo .mode {
+.botonesEstilo .selecModo .mode {
   margin: 0.5rem 0rem 0rem 0rem;
 }
-.botonesEstilo .selecModo .mode p,
-.botonesEstiloMenu .selecModo .mode p {
+.botonesEstilo .selecModo .mode p {
   font-size: 3rem;
 }
-.botonesEstilo .selecModo .mode .noche,
-.botonesEstiloMenu .selecModo .mode .noche {
+.botonesEstilo .selecModo .mode .noche {
   color: #0a0a0a;
   display: none;
 }
-.botonesEstilo .selecModo .mode .dia,
-.botonesEstiloMenu .selecModo .mode .dia {
+.botonesEstilo .selecModo .mode .dia {
   color: #0a0a0a;
 }
 
@@ -250,58 +214,33 @@
   position: absolute;
   width: calc(0.1rem + 3vw);
 }
-.stick .nav .navbar .selecEstilosMenuDesplegar {
-  border: none;
-  background-color: transparent;
-  font-size: 2.4rem;
-  margin: 0;
-  animation-name: parpadeo;
-  animation-duration: 2s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-.stick .nav .navbar .selecEstilosMenuPlegar {
-  animation-name: none;
-}
-.stick .nav .navbar .modo {
-  border: none;
-  background: transparent;
-  font-size: 2.4rem;
-}
-.stick .nav .navbar .botonesEstiloMenu a:hover {
-  background-color: white;
-}
 .stick .nav .navbar .menu {
   padding: 3rem 0 3rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   width: 100%;
   position: relative;
 }
 .stick .nav .navbar .menu .links {
   display: grid;
-  grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5] 1fr [x6];
+  grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5] 1fr [x6] 0.1fr [x7];
   grid-template-rows: [y0] 1fr [y1];
-  grid-column-gap: 1rem;
+  grid-column-gap: 0rem;
   grid-row-gap: 1rem;
-  width: 80%;
+  width: 67%;
 }
 .stick .nav .navbar .menu .links .enlace {
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  margin: 0 0 0 0;
+  margin: 0rem 0rem 0rem 0rem;
   color: #00c6ee;
   padding: 1.6rem 0.5rem 1.6rem 0.5rem;
-  min-width: 8rem;
-  background-color: rgba(0, 0, 0, 0.582);
   font-size: 1.6rem;
   font-weight: bold;
-  border: 0.05rem solid #00c6ee;
-  border-radius: 0.9rem;
 }
 .stick .nav .navbar .menu .links .inicio {
   grid-column: x0/x1;
@@ -325,6 +264,10 @@
 }
 .stick .nav .navbar .menu .links .contacto {
   grid-column: x5/x6;
+  grid-row: y0/y1;
+}
+.stick .nav .navbar .menu .links .mode {
+  grid-column: x6/x7;
   grid-row: y0/y1;
 }
 .stick .nav .navbar .menu .links .inicio:hover,
@@ -436,7 +379,6 @@
 @media only screen and (max-width: 800px) and (max-width: 800px) {
   section #links {
     display: none;
-    background-color: pink;
   }
 }
 @media only screen and (max-width: 800px) {

@@ -81,31 +81,19 @@ body {
 ------------------------------------------ */
 .stick {
   background: {
-    //   color: rgba(0, 4, 255, 0.7);
   }
   .nav {
     border-bottom: 0.05rem solid $rojo;
-    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
-    background: {
-      color: rgba(0, 0, 0, 0.438);
-    }
     .navbar {
       .foto {
         img {
-          border-color: $rojo; //$blanco;
-          box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+          border-color: $rojo;
         }
       }
       .menu {
         .links {
           .enlace {
-            color: $rojo; //gray
-            padding: 1.6rem 0.5rem 1.6rem 0.5rem;
-            min-width: 8rem;
-            background: {
-              color: rgba(0, 0, 0, 0.582);
-            }
-
+            color: $rojo;
             border-color: $rojo;
           }
           .inicio:hover,
@@ -122,7 +110,7 @@ body {
           .videos:focus,
           .curriculum:focus,
           .contacto:focus {
-            background-color: rgba(78, 78, 32, 0.582);
+            //background-color: rgba(78, 78, 32, 0.582);
           }
         }
       }

@@ -74,36 +74,27 @@ body {
  ------------------------------------------ */
 .social-media {
   background-color: $verde;
- }
+}
 
 /* ------------------------------------------
          menu
 ------------------------------------------ */
 .stick {
   background: {
-    //   color: rgba(0, 4, 255, 0.7);
   }
   .nav {
     border-bottom: 0.05rem solid $verde;
-    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
-    background: {
-      color: rgba(0, 0, 0, 0.438);
-    }
     .navbar {
       .foto {
         img {
-          border-color: $verde; //#fff;
-          box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+          border-color: $verde;
         }
       }
       .menu {
         .links {
           .enlace {
             color: $verde; //gray
-            padding: 1.6rem 0.5rem 1.6rem 0.5rem;
-            min-width: 8rem;
             background: {
-              color: rgba(0, 0, 0, 0.582);
             }
 
             border-color: $verde;
@@ -122,7 +113,7 @@ body {
           .videos:focus,
           .curriculum:focus,
           .contacto:focus {
-            background-color: rgba(78, 78, 32, 0.582);
+            //background-color: rgba(78, 78, 32, 0.582);
           }
         }
       }
@@ -334,8 +325,8 @@ body {
           color: transparent;
         }
         .botonMenu {
-            color:$verde;
-          }
+          color: $verde;
+        }
         #boton1 {
           background-color: Transparent;
         }

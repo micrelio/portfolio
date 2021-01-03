@@ -250,16 +250,16 @@
   animation-iteration-count: infinite;
 }
 
-@mixin estilos {
-  border: none;
-  background-color: transparent;
-  font-size: 2.4rem;
-  margin: 0;
-  animation-name: parpadeo;
-  animation-duration: 2s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
+// @mixin estilos {
+//   border: none;
+//   background-color: transparent;
+//   font-size: 2.4rem;
+//   margin: 0;
+//   animation-name: parpadeo;
+//   animation-duration: 2s;
+//   animation-timing-function: linear;
+//   animation-iteration-count: infinite;
+// }
 //--SALTO A LA ESQUINA ROTANDO MUY WAPO
 //    transform: translate(350px, -350px) rotate(360deg);
 //    -webkit-transform: translate(350px, -350px) rotate(360deg);
