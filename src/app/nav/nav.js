@@ -94,6 +94,17 @@ class miNav extends HTMLElement {
         </div>
     </div>
     <br>
+    <div class="opacidad">
+      <p><strong>Opacidad menú</strong></p>
+      <hr>
+      <div id="barra0">
+        <div id="boton0"></div>
+      </div>
+      <div>
+        <div id="texto0"></div>
+      </div>
+    </div>
+    <br>
     <div class="filasColores">
         <p><strong>Color footer</strong></p>
         <hr>

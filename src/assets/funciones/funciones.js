@@ -13,11 +13,69 @@
 //     slides[slideIndex - 1].style.display = "block";
 //     setTimeout(showSlides, 2000);
 // };
+
+
+
+// function transparencia(color) {
+//   console.log("nav");
+//   switch (color) {
+//     case "blanco":
+//       document.getElementById("nav").style = "background-color:#eeeeee";
+//       break;
+//     case "amarillo":
+//       document.getElementById("nav").style = "background-color:#ffff00";
+//       break;
+//     case "naranja":
+//       document.getElementById("nav").style = "background-color:orangered";
+//       break;
+//     case "oro":
+//       document.getElementById("nav").style = "background-color:#eabe3f";
+//       break;
+//     case "marron":
+//       document.getElementById("nav").style = "background-color:#a05000";
+//       break;
+//     case "rojo":
+//       document.getElementById("nav").style = "background-color:#f80000";
+//       break;
+//     case "rosa":
+//       document.getElementById("nav").style = "background-color:#ff0080";
+//       break;
+//     case "morado":
+//       document.getElementById("nav").style = "background-color:#9c27b0";
+//       break;
+//     case "azul":
+//       document.getElementById("nav").style = "background-color:#00c6ee";
+//       break;
+//     case "verde":
+//       document.getElementById("nav").style = "background-color:#008f39";
+//       break;
+//     case "negro":
+//       document.getElementById("nav").style = "background-color: #0a0a0a";
+//       break;
+//     default:
+//       // document.getElementById("nav").style = "background-color:white";
+//       break;
+//   }
+// }
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
 function colorMenu(color) {
   console.log("nav");
   switch (color) {
     case "blanco":
-      document.getElementById("nav").style = "background-color:#e9d58d";
+      document.getElementById("nav").style = "background-color:#eeeeee";
       break;
     case "amarillo":
       document.getElementById("nav").style = "background-color:#ffff00";
