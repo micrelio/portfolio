@@ -60,19 +60,19 @@
 ------------------------------------------ */
 .botonesEstilo {
   // z-index: 1000;
- // position: fixed;
-  top:0; //para que siga la pagina
+  // position: fixed;
+  top: 0; //para que siga la pagina
   // position: sticky;
   // position: -webkit-fixed;  // required for Safari
   display: none;
   background-color: white;
   border: 0.05rem solid $negro;
   border-radius: 0.9rem;
-  padding: 1rem;
+  padding: 0rem 1rem 1rem 1rem;
   margin: 0rem 0rem 0rem 0.5rem;
- 
+
   //z-index: 100;
- position: absolute;
+  position: relative;
   p {
     color: $negro;
   }

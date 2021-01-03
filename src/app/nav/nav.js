@@ -208,8 +208,16 @@ class miNav extends HTMLElement {
 </section>
       `;
     // esto arranca automatico
+    //mover elemento con el raton
     Drag.init (document.getElementById ("foto"));
-
+    
+    //probar para mover div
+    // var theHandle = document.getElementById("botonesEstilo");
+    // var theRoot = document.getElementById("cabecera");
+    // Drag.init(theHandle, theRoot); 
+    // <div id="botonesEstilo" class="botonesEstilo">
+    // <div id="cabecera" class="cabecera"></div>
+    //</div>
   }
 }
 
