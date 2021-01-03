@@ -4,51 +4,51 @@
 
 .head {
   @include head;
-  border-bottom: 0.05rem solid $blanco;
+  border-bottom: 0.05rem solid $gris;
 }
 html,
 body {
   //  h1 {
-  //   color: $blanco;
+  //   color: $gris;
   //   -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
   //   text-shadow: 0.2em 0.2em 0.3em black;
   // }
   // h2 {
-  //   color: $blanco;
+  //   color: $gris;
   //   -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
   //   text-shadow: 0.2rem 0.2rem 0.3rem black;
   // }
   // h3 {
-  //   color: $blanco;
+  //   color: $gris;
   //   -webkit-text-stroke: 0.04rem rgb(221, 216, 216);
   //   text-shadow: 0.2em 0.2em 0.3em black;
   // }
   // h4 {
-  //   color: $blanco;
+  //   color: $gris;
   //   -webkit-text-stroke: 0.03rem rgb(221, 216, 216);
   //   text-shadow: 0.2em 0.2em 0.3em black;
   // }
   // a{
-  //   color:$blanco
+  //   color:$azul
   // }
   // p {
   //   color: blanchedalmond;
   // }
   // ul {
   //   li {
-  //     color: $blanco;
+  //     color: $gris;
   //       p {
   //          strong{
-  //       color: $blanco;
+  //       color: $azul;
   //          }
   //     }
   //     a > p {
-  //       color: $blanco;
+  //       color: $gris;
   //     }
   //   }
   // }
   .fa-arrow-alt-circle-up {
-    color: $blanco;
+    color: $gris;
     -webkit-text-stroke: 0.1rem gray;
     text-shadow: 0.2rem 0.2rem 0.5rem black;
     background: {
@@ -58,15 +58,14 @@ body {
   .fiestas {
     .stop {
       color: $negro;
-      background-color: $blanco;
+      background-color: $gris;
       border: 0.05rem solid $negro;
       border-radius: 0.9rem;
     }
     .stop:hover {
-      color: $blanco;
-      background-color: $negro;
-      border: 0.05rem solid $blanco;
-      border-radius: 0.9rem;
+      color: $negro;
+      background-color: $blanco;
+      border: 0.05rem solid $negro;
     }
   }
 }
@@ -74,53 +73,48 @@ body {
 /* ------------------------------------------
          social media menu
  ------------------------------------------ */
-
 .social-media {
-  background-color: $blanco;
+  background-color: $gris;
   .social-links {
-    display: flex;
-    flex-direction: row;
-    flex-direction: row-reverse;
+   
     //padding: 0.01rem;
-    /* background-color: orangered; */
+    // background-color: orangered; 
   }
   p {
-    color: $negro;
+    color: $blanco;
   }
   .social-links a {
     font-size: 2.4rem;
     display: inline-block;
-    color: $negro;
+    color: $blanco;
     line-height: 1;
     transition: 0.3s;
     text-decoration: none;
   }
   .social-links a:visited {
-    color: $negro;
+    color: $blanco;
   }
   .social-links a:hover {
-    color: $negro;
+    color: $blanco;
   }
 }
-
 /* ------------------------------------------
          menu
 ------------------------------------------ */
 .stick {
-  .nav {
-    border-bottom: 0.05rem solid $blanco;
-    background-color: $negro;
-    .navbar {
+    .nav {
+    border-bottom: 0.05rem solid $gris;
+        .navbar {
       .foto {
         img {
-          border: 0.05rem solid $blanco; //$blanco;
+          border: 0.05rem solid $gris; //$blanco;
         }
       }
       .menu {
         .links {
           .enlace {
             color: $blanco; //gray
-          }
+                     }
           .inicio:hover,
           .conoceme:hover,
           .webs:hover,
@@ -135,7 +129,7 @@ body {
           .videos:focus,
           .curriculum:focus,
           .contacto:focus {
-            // background-color: rgba(78, 78, 32, 0.582);
+           // background-color: rgba(78, 78, 32, 0.582);
           }
         }
       }
@@ -144,10 +138,10 @@ body {
           // color: pink;
         }
         .noche {
-          color: $blanco;
+          color: $gris;
         }
         .dia {
-          color: $blanco;
+          color: $gris;
         }
       }
     }
@@ -158,7 +152,7 @@ body {
 //------------------------\\
 * {
   footer {
-    border-top: 0.1rem solid $blanco;
+    border-top: 0.1rem solid $gris;
     background: {
       color: black;
     }
@@ -168,7 +162,7 @@ body {
       .direccion,
       .paginas {
         h2 {
-          color: $blanco;
+          color: $gris;
           -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
           // text-shadow: 0.05em 0.05em 0.1em $blanco;
         }
@@ -178,13 +172,13 @@ body {
           // color: blanchedalmond;
         }
         input[type="email"] {
-          border: 0.1rem solid $blanco;
+          border: 0.1rem solid $gris;
         }
         input[type="submit"] {
-          background: $blanco;
+          background: $gris;
           color: $blanco;
 
-          border: 0.1rem solid $blanco;
+          border: 0.1rem solid $gris;
 
           border: 0.05rem solid $blanco;
         }
@@ -206,7 +200,7 @@ body {
     }
     .redes {
       background: #000;
-      border-top: 0.1rem solid $blanco;
+      border-top: 0.1rem solid $gris;
       .propiedad {
         .socialmedia {
           .iconSocial {
@@ -217,7 +211,7 @@ body {
       }
       .copy {
         color: $blanco;
-        border-bottom: 0.1rem solid $blanco;
+        border-bottom: 0.1rem solid $gris;
       }
       .politicas {
         //background-color: blue;
@@ -235,7 +229,7 @@ body {
 .miniaturas {
   .repertorio {
     h3 {
-      color: $blanco;
+      color: $gris;
       // font-size: 3rem;
       // color: $blanco;
       // margin: 1rem 0rem 0.5rem 0rem;
@@ -245,7 +239,7 @@ body {
     .title {
     }
     .raya {
-      border-color: $blanco;
+      border-color: $gris;
     }
     .fila {
       .imagenPresentacion {
@@ -255,7 +249,7 @@ body {
   }
 }
 .menuGaleria {
-  background-color: $blanco;
+  background-color: $gris;
   .boton {
     color: $negro;
   }
@@ -269,7 +263,7 @@ body {
   .tiendaTitanium,
   .titaniumGamers,
   .portfolio {
-    border-color: $blanco;
+    border-color: $gris;
   }
 }
 /*----------------
@@ -277,27 +271,25 @@ body {
 -----------------*/
 .descripcion {
   .año {
-    color: $blanco;
+    color: $gris;
   }
   h1,
   strong {
-    color: $blanco;
-    -webkit-text-stroke: 0.1rem $negro;
-    // text-shadow: 0.2em 0.2em 0.3em black;
+    color: $gris;
   }
 }
 .datos {
   .datosPersonales {
-    border: 0.2rem solid $blanco;
+    border: 0.2rem solid $gris;
     h2 {
-      color: $blanco;
+      color: $gris;
     }
   }
   .experiencia {
-    border: 0.2rem solid $blanco;
+    border: 0.2rem solid $gris;
   }
   .interes {
-    border: 0.1rem solid $blanco;
+    border: 0.1rem solid $gris;
   }
 }
 //------------------------\\
@@ -325,7 +317,7 @@ body {
 }
 @media only screen and (max-width: 800px) {
   .movil {
-    border-bottom: 0.05rem solid $blanco;
+    border-bottom: 0.05rem solid $gris;
 
     box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
     background: {
@@ -340,7 +332,7 @@ body {
           // color: green;
         }
         img {
-          border: 3px double $blanco;
+          border: 3px double $gris;
           box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
         }
       }
@@ -349,7 +341,7 @@ body {
           color: transparent;
         }
         .botonMenu {
-          color: $blanco;
+          color: $gris;
         }
         #boton1 {
           background-color: Transparent;
@@ -359,25 +351,22 @@ body {
     .desplegable {
       .mode {
         .noche {
-          color: $blanco;
+          color: $gris;
         }
         .dia {
-          color: $blanco;
+          color: $gris;
         }
       }
       .enlace {
-        color: $blanco;
+        color: $gris;
       }
     }
   }
 }
-
 @media only screen and (max-width: 800px) {
   body {
     .fiestas {
-      bottom: 4rem;
       img {
-        width: 10rem;
       }
       .stop {
         font-size: calc(1rem + 0.3vw);

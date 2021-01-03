@@ -36,6 +36,7 @@
         p {
           font-size: 2rem;
           font-size: calc(1rem + 1vw);
+          color: blanchedalmond;
         }
         a {
           text-decoration: none;
@@ -78,6 +79,7 @@
           p {
             display: inline-block;
             margin: 0rem 1rem 1.5rem 1rem;
+            color: blanchedalmond;
           }
         }
       }
@@ -106,8 +108,8 @@
           padding: 2rem;
           .iconSocial {
             img {
-              border-radius: 75%;
-              border: 0.03rem solid $blanco;
+             // border-radius: 75%;
+              //border: 0.03rem solid $blanco;
               height: 4rem;
               margin: 0.3rem;
             }
@@ -123,6 +125,7 @@
         color: #fff;
         padding: 2rem;
         border-bottom: 0.1rem solid $corporativo;
+        color: blanchedalmond;
       }
       .politicas {
         display: flex;

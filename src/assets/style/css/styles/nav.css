@@ -59,14 +59,14 @@
          div stilos
 ------------------------------------------ */
 .botonesEstilo {
+  z-index: 1000;
+  position: fixed;
   display: none;
   background-color: white;
   border: 0.05rem solid #0a0a0a;
   border-radius: 0.9rem;
   padding: 1rem;
   margin: 0rem 0rem 0rem 0.5rem;
-  z-index: 100;
-  position: absolute;
 }
 .botonesEstilo p {
   color: #0a0a0a;
@@ -106,6 +106,9 @@
 }
 .botonesEstilo .filasColores .cambioColor .blanco {
   background: #eeeeee;
+}
+.botonesEstilo .filasColores .cambioColor .gris {
+  background: #272727;
 }
 .botonesEstilo .filasColores .cambioColor .amarillo {
   background: #ffff00;

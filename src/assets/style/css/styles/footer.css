@@ -40,6 +40,7 @@
 * footer .footerContainer .paginas p {
   font-size: 2rem;
   font-size: calc(1rem + 1vw);
+  color: blanchedalmond;
 }
 * footer .footerContainer .contacto a,
 * footer .footerContainer .direccion a,
@@ -93,6 +94,7 @@
 * footer .footerContainer .paginas .diseños p {
   display: inline-block;
   margin: 0rem 1rem 1.5rem 1rem;
+  color: blanchedalmond;
 }
 * footer .footerContainer .contacto {
   width: 30%;
@@ -120,8 +122,6 @@
   padding: 2rem;
 }
 * footer .redes .propiedad .socialmedia .iconSocial img {
-  border-radius: 75%;
-  border: 0.03rem solid #eeeeee;
   height: 4rem;
   margin: 0.3rem;
 }
@@ -134,6 +134,7 @@
   color: #fff;
   padding: 2rem;
   border-bottom: 0.1rem solid #00c6ee;
+  color: blanchedalmond;
 }
 * footer .redes .politicas {
   display: flex;

@@ -19,6 +19,7 @@
 }
 .stick .nav {
   box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .stick .nav .navbar {
   display: flex;
@@ -77,7 +78,7 @@
   -----------------*/
 html,
 body {
-  background-color: #eeeeee;
+  background-color: #fff;
 }
 html h1,
 body h1 {
@@ -143,24 +144,10 @@ body .fiestas .stop:hover {
 }
 
 /*-------------------
-   fgooter
+   footer
    -----------------*/
-footer .footerContainer {
-  color: #fff;
-}
-footer .footerContainer .contacto a,
-footer .footerContainer .direccion a,
-footer .footerContainer .paginas a {
-  color: #eeeeee;
-}
-footer .footerContainer .datos p {
-  color: #eeeeee;
-}
 footer .footerContainer .diseños p {
   color: #eeeeee;
-}
-footer .copy {
-  color: #fff;
 }
 footer .politicas p {
   color: #eeeeee;

@@ -3,7 +3,7 @@
 .head {
   width: 100%;
   position: relative;
-  border-bottom: 0.05rem solid #eeeeee;
+  border-bottom: 0.05rem solid #272727;
 }
 .head img {
   width: 100%;
@@ -11,7 +11,7 @@
 
 html .fa-arrow-alt-circle-up,
 body .fa-arrow-alt-circle-up {
-  color: #eeeeee;
+  color: #272727;
   -webkit-text-stroke: 0.1rem gray;
   text-shadow: 0.2rem 0.2rem 0.5rem black;
   background-color: #eeeeee;
@@ -19,70 +19,62 @@ body .fa-arrow-alt-circle-up {
 html .fiestas .stop,
 body .fiestas .stop {
   color: #0a0a0a;
-  background-color: #eeeeee;
+  background-color: #272727;
   border: 0.05rem solid #0a0a0a;
   border-radius: 0.9rem;
 }
 html .fiestas .stop:hover,
 body .fiestas .stop:hover {
-  color: #eeeeee;
-  background-color: #0a0a0a;
-  border: 0.05rem solid #eeeeee;
-  border-radius: 0.9rem;
+  color: #0a0a0a;
+  background-color: #eeeeee;
+  border: 0.05rem solid #0a0a0a;
 }
 
 /* ------------------------------------------
          social media menu
  ------------------------------------------ */
 .social-media {
-  background-color: #eeeeee;
-}
-.social-media .social-links {
-  display: flex;
-  flex-direction: row;
-  flex-direction: row-reverse;
-  /* background-color: orangered; */
+  background-color: #272727;
 }
 .social-media p {
-  color: #0a0a0a;
+  color: #eeeeee;
 }
 .social-media .social-links a {
   font-size: 2.4rem;
   display: inline-block;
-  color: #0a0a0a;
+  color: #eeeeee;
   line-height: 1;
   transition: 0.3s;
   text-decoration: none;
 }
 .social-media .social-links a:visited {
-  color: #0a0a0a;
+  color: #eeeeee;
 }
 .social-media .social-links a:hover {
-  color: #0a0a0a;
+  color: #eeeeee;
 }
 
 /* ------------------------------------------
          menu
 ------------------------------------------ */
 .stick .nav {
-  border-bottom: 0.05rem solid #eeeeee;
-  background-color: #0a0a0a;
+  border-bottom: 0.05rem solid #272727;
 }
 .stick .nav .navbar .foto img {
-  border: 0.05rem solid #eeeeee;
+  border: 0.05rem solid #272727;
 }
 .stick .nav .navbar .menu .links .enlace {
   color: #eeeeee;
 }
 .stick .nav .navbar .mode .noche {
-  color: #eeeeee;
+  color: #272727;
 }
 .stick .nav .navbar .mode .dia {
-  color: #eeeeee;
+  color: #272727;
 }
 
 * footer {
-  border-top: 0.1rem solid #eeeeee;
+  border-top: 0.1rem solid #272727;
   background-color: black;
 }
 * footer .footerContainer {
@@ -91,20 +83,20 @@ body .fiestas .stop:hover {
 * footer .footerContainer .contacto h2,
 * footer .footerContainer .direccion h2,
 * footer .footerContainer .paginas h2 {
-  color: #eeeeee;
+  color: #272727;
   -webkit-text-stroke: 0.05rem #ddd8d8;
 }
 * footer .footerContainer .contacto input[type=email],
 * footer .footerContainer .direccion input[type=email],
 * footer .footerContainer .paginas input[type=email] {
-  border: 0.1rem solid #eeeeee;
+  border: 0.1rem solid #272727;
 }
 * footer .footerContainer .contacto input[type=submit],
 * footer .footerContainer .direccion input[type=submit],
 * footer .footerContainer .paginas input[type=submit] {
-  background: #eeeeee;
+  background: #272727;
   color: #eeeeee;
-  border: 0.1rem solid #eeeeee;
+  border: 0.1rem solid #272727;
   border: 0.05rem solid #eeeeee;
 }
 * footer .footerContainer .contacto input[type=submit]:hover,
@@ -119,23 +111,23 @@ body .fiestas .stop:hover {
 }
 * footer .redes {
   background: #000;
-  border-top: 0.1rem solid #eeeeee;
+  border-top: 0.1rem solid #272727;
 }
 * footer .redes .copy {
   color: #eeeeee;
-  border-bottom: 0.1rem solid #eeeeee;
+  border-bottom: 0.1rem solid #272727;
 }
 /*------------------------
              galeria
 ------------------------*/
 .miniaturas .repertorio h3 {
-  color: #eeeeee;
+  color: #272727;
 }
 .miniaturas .repertorio .raya {
-  border-color: #eeeeee;
+  border-color: #272727;
 }
 .menuGaleria {
-  background-color: #eeeeee;
+  background-color: #272727;
 }
 .menuGaleria .boton {
   color: #0a0a0a;
@@ -149,32 +141,31 @@ body .fiestas .stop:hover {
 .web .tiendaTitanium,
 .web .titaniumGamers,
 .web .portfolio {
-  border-color: #eeeeee;
+  border-color: #272727;
 }
 
 /*----------------
      curriculum
 -----------------*/
 .descripcion .año {
-  color: #eeeeee;
+  color: #272727;
 }
 .descripcion h1,
 .descripcion strong {
-  color: #eeeeee;
-  -webkit-text-stroke: 0.1rem #0a0a0a;
+  color: #272727;
 }
 
 .datos .datosPersonales {
-  border: 0.2rem solid #eeeeee;
+  border: 0.2rem solid #272727;
 }
 .datos .datosPersonales h2 {
-  color: #eeeeee;
+  color: #272727;
 }
 .datos .experiencia {
-  border: 0.2rem solid #eeeeee;
+  border: 0.2rem solid #272727;
 }
 .datos .interes {
-  border: 0.1rem solid #eeeeee;
+  border: 0.1rem solid #272727;
 }
 
 @media screen and (max-width: 650px) {
@@ -195,43 +186,37 @@ body .fiestas .stop:hover {
 }
 @media only screen and (max-width: 800px) {
   .movil {
-    border-bottom: 0.05rem solid #eeeeee;
+    border-bottom: 0.05rem solid #272727;
     box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
     background-color: rgba(0, 0, 0, 0.438);
   }
   .movil .imagenes .foto img {
-    border: 3px double #eeeeee;
+    border: 3px double #272727;
     box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
   }
   .movil .imagenes .botones {
     background-color: transparent;
   }
   .movil .imagenes .botones .botonMenu {
-    color: #eeeeee;
+    color: #272727;
   }
   .movil .imagenes .botones #boton1 {
     background-color: Transparent;
   }
   .movil .desplegable .mode .noche {
-    color: #eeeeee;
+    color: #272727;
   }
   .movil .desplegable .mode .dia {
-    color: #eeeeee;
+    color: #272727;
   }
   .movil .desplegable .enlace {
-    color: #eeeeee;
+    color: #272727;
   }
 }
 @media only screen and (max-width: 800px) {
-  body .fiestas {
-    bottom: 4rem;
-  }
-  body .fiestas img {
-    width: 10rem;
-  }
   body .fiestas .stop {
     font-size: calc(1rem + 0.3vw);
   }
 }
 
-/*# sourceMappingURL=blanco.css.map */
+/*# sourceMappingURL=gris.css.map */

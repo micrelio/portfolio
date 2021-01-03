@@ -24,7 +24,7 @@
           menu
           ---------------*/
 .stick {
-  // z-index: 1000;
+   // z-index: 1000;
   // position: fixed; //para que siga la pagina
   // position: -webkit-fixed;  // required for Safari
   top: 0;
@@ -37,6 +37,7 @@
     box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
     background: {
       //color: rgba(0, 0, 0, 0.438);
+      color:rgba(0, 0, 0, 0.5);
     }
     .navbar {
       display: flex;
@@ -107,7 +108,7 @@
 html,
 body {
   background: {
-    color: $blanco;
+    color: #fff;
   }
   h1 {
     color: $negro;
@@ -172,15 +173,15 @@ body {
 }
 
 /*-------------------
-   fgooter
+   footer
    -----------------*/
 footer {
   // border-top: 0.1rem solid $corporativo;
-  // background: {
-  //   color: black;
-  // }
+  background: {
+   // color: $negro;
+  }
   .footerContainer {
-    color: #fff;
+    //color: #fff;
     .contacto,
     .direccion,
     .paginas {
@@ -189,25 +190,26 @@ footer {
         // text-shadow: 0.05em 0.05em 0.1em white;
       }
       a {
-        color: $blanco;
+       // color: $negro;
       }
     }
     .datos {
       p {
-        color: $blanco;
+       // color: $negro;
       }
     }
     .diseños {
       p {
-        color: $blanco;
+       color: $blanco;
       }
     }
   }
   .redes {
     // border-top: 0.1rem solid $corporativo;
+    //background-color: $blanco;
   }
   .copy {
-    color: #fff;
+   // color:black;
     // border-bottom: 0.1rem solid $corporativo;
   }
   .politicas {

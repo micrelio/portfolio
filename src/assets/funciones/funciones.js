@@ -14,8 +14,6 @@
 //     setTimeout(showSlides, 2000);
 // };
 
-
-
 // function transparencia(color) {
 //   console.log("nav");
 //   switch (color) {
@@ -57,20 +55,6 @@
 //       break;
 //   }
 // }
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
 function colorMenu(color) {
   console.log("nav");
   switch (color) {
@@ -104,6 +88,9 @@ function colorMenu(color) {
     case "verde":
       document.getElementById("nav").style = "background-color:#008f39";
       break;
+    case "gris":
+      document.getElementById("nav").style = "background-color:#272727";
+      break;
     case "negro":
       document.getElementById("nav").style = "background-color: #0a0a0a";
       break;
@@ -112,7 +99,6 @@ function colorMenu(color) {
       break;
   }
 }
-
 function colorFooter(color) {
   switch (color) {
     case "blanco":
@@ -145,6 +131,9 @@ function colorFooter(color) {
     case "verde":
       document.getElementById("footer").style = "background-color:#008f39";
       break;
+    case "gris":
+      document.getElementById("footer").style = "background-color: #272727";
+      break;
     case "negro":
       document.getElementById("footer").style = "background-color: #0a0a0a";
       break;
@@ -153,7 +142,6 @@ function colorFooter(color) {
       break;
   }
 }
-
 function color(color) {
   switch (color) {
     case "blanco":
@@ -195,6 +183,10 @@ function color(color) {
     case "verde":
       document.getElementById("color").href =
         "/src/assets/style/css/styles/colores/verde.css";
+      break;
+    case "gris":
+      document.getElementById("color").href =
+        "/src/assets/style/css/styles/colores/gris.css";
       break;
     case "negro":
       document.getElementById("color").href =
