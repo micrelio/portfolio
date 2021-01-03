@@ -208,6 +208,8 @@ class miNav extends HTMLElement {
 </section>
       `;
     // esto arranca automatico
+    Drag.init (document.getElementById ("foto"));
+
   }
 }
 
