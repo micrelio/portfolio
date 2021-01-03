@@ -43,8 +43,6 @@ body .fiestas .stop:hover {
 ------------------------------------------ */
 .stick .nav {
   border-bottom: 0.05rem solid #eeeeee;
-}
-.stick .nav .navbar {
   background-color: #0a0a0a;
 }
 .stick .nav .navbar .foto img {

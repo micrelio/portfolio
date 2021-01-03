@@ -50,18 +50,18 @@ class miNav extends HTMLElement {
         <hr>
         <div class="cambioColor">
             <div class="selecColor">
-                <p id="color" class="color blanco" onclick="color('blanco');"></p>
-                <p id="color" class="color amarillo" onclick="color('amarillo');"></p>
-                <p id="color" class="color oro" onclick="color('oro');"></p>
-                <p id="color" class="color marron" onclick="color('marron');"></p>
-                <p id="color" class="color naranja" onclick="color('naranja');"></p>
+                <p class="color blanco" onclick="color('blanco');"></p>
+                <p class="color amarillo" onclick="color('amarillo');"></p>
+                <p class="color oro" onclick="color('oro');"></p>
+                <p class="color marron" onclick="color('marron');"></p>
+                <p class="color naranja" onclick="color('naranja');"></p>
             </div>
             <div class="selecColor">
                 <p class="color rojo" onclick="color('rojo');"></p>
-                <p id="color" class="color rosa" onclick="color('rosa');"></p>
-                <p id="color" class="color morado" onclick="color('morado');"></p>
-                <p id="color" class="color azul" onclick="color('azul');"></p>
-                <p id="color" class="color verde" onclick="color('verde');"></p>
+                <p class="color rosa" onclick="color('rosa');"></p>
+                <p class="color morado" onclick="color('morado');"></p>
+                <p class="color azul" onclick="color('azul');"></p>
+                <p class="color verde" onclick="color('verde');"></p>
             </div>
             <div class="selecColor">
                 <p id="color" class="color negro" onclick="color('negro');"></p>
@@ -74,23 +74,47 @@ class miNav extends HTMLElement {
         <p><strong>Color menú</strong></p>
         <hr>
         <div class="cambioColor">
-            <div class="selecColor">
-                <p id="color" class="color blanco" onclick="color('blanco');"></p>
-                <p id="color" class="color amarillo" onclick="color('amarillo');"></p>
-                <p id="color" class="color oro" onclick="color('oro');"></p>
-                <p id="color" class="color marron" onclick="color('marron');"></p>
-                <p id="color" class="color naranja" onclick="color('naranja');"></p>
-            </div>
-            <div class="selecColor">
-                <p class="color rojo" onclick="color('rojo');"></p>
-                <p id="color" class="color rosa" onclick="color('rosa');"></p>
-                <p id="color" class="color morado" onclick="color('morado');"></p>
-                <p id="color" class="color azul" onclick="color('azul');"></p>
-                <p id="color" class="color verde" onclick="color('verde');"></p>
-            </div>
-            <div class="selecColor">
-                <p id="color" class="color negro" onclick="color('negro');"></p>
-            </div>
+          <div class="selecColor">
+            <p class="color blanco" onclick="colorMenu('blanco');"></p>
+            <p class="color amarillo" onclick="colorMenu('amarillo');"></p>
+            <p class="color oro" onclick="colorMenu('oro');"></p>
+            <p class="color marron" onclick="colorMenu('marron');"></p>
+            <p class="color naranja" onclick="colorMenu('naranja');"></p>
+          </div>
+          <div class="selecColor">
+            <p class="color rojo" onclick="colorMenu('rojo');"></p>
+            <p class="color rosa" onclick="colorMenu('rosa');"></p>
+            <p class="color morado" onclick="colorMenu('morado');"></p>
+            <p class="color azul" onclick="colorMenu('azul');"></p>
+            <p class="color verde" onclick="colorMenu('verde');"></p>
+          </div>
+          <div class="selecColor">
+            <p id="color" class="color negro" onclick="color('negro');"></p>
+          </div>
+        </div>
+    </div>
+    <br>
+    <div class="filasColores">
+        <p><strong>Color footer</strong></p>
+        <hr>
+        <div class="cambioColor">
+          <div class="selecColor">
+            <p class="color blanco" onclick="colorFooter('blanco');"></p>
+            <p class="color amarillo" onclick="colorFooter('amarillo');"></p>
+            <p class="color oro" onclick="colorFooter('oro');"></p>
+            <p class="color marron" onclick="colorFooter('marron');"></p>
+            <p class="color naranja" onclick="colorFooter('naranja');"></p>
+          </div>
+          <div class="selecColor">
+            <p class="color rojo" onclick="color('rojo');"></p>
+            <p class="color rosa" onclick="colorFooter('rosa');"></p>
+            <p class="color morado" onclick="colorFooter('morado');"></p>
+            <p class="color azul" onclick="colorFooter('azul');"></p>
+            <p class="color verde" onclick="colorFooter('verde');"></p>
+          </div>
+          <div class="selecColor">
+            <p id="color" class="color negro" onclick="color('negro');"></p>
+          </div>
         </div>
     </div>
     <div class="selecModo">

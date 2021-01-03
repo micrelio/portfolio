@@ -4,10 +4,10 @@ class miFooter extends HTMLElement {
   }
   connectedCallback() {
     this.innerHTML = `
-<footer>
+<footer >
   <div class="separator">
   </div>
-  <div class="footerContainer">
+  <div id="footer" class="footerContainer">
     <div class="contacto">
       <h2>Contactar</h2>
       <span class="">
