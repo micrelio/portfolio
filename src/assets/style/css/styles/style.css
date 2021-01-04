@@ -57,7 +57,7 @@ body h3 {
   color: #eeeeee;
   margin: 1rem 0rem 0.5rem 0rem;
   -webkit-text-stroke: 0.04rem #ddd8d8;
-  text-shadow: 0.2em 0.2em 0.3em black;
+  text-shadow: 0.2em 0.2em 0.9em black;
 }
 html h4,
 body h4 {

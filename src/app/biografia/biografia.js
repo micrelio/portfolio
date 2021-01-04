@@ -47,19 +47,19 @@ class miBiografia extends HTMLElement {
           <div class="curriculum">  
             <div class="experiencia">
               <div class="logoEx">
-                <a href="https://ocupacio.quartdepoblet.es/index.php/es/formacio" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/quart.jpg"></a>
+                <a href="https://ocupacio.quartdepoblet.es/index.php/es/formacio" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/EscudoQuart.png"></a>
               </div>
             <div class="descripcion">
-              <p class="año">2020</p><br>
+              <p>2020</p>
               <p>Cert. profesionalidad “Operaciones básicas montaje y mantenimiento de instalaciones de energías renovables” (540 h). <a href="https://ocupacio.quartdepoblet.es/index.php/es/formacio" target="_blank">CED Quart de Poblet</a>.</p>
             </div>
           </div>
             <div class="experiencia">
                 <div class="logoEx">
-                    <a href="https://geekshubs.com/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/GeeksHubs.jpg"></a>
+                    <a href="https://geekshubs.com/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/GeeksHubs.png"></a>
                 </div>
                 <div class="descripcion">
-                    <p class="año">2019</p><br>
+                    <p>2019</p><br>
                     <p>BootCamp fullstack developer, en <a href="https://geekshubs.com/" target="_blank">GeeksHubs</a> Valencia (Valencia).</p>
                 </div>
             </div>
@@ -68,25 +68,25 @@ class miBiografia extends HTMLElement {
                     <a href="https://www.tobalcaide.com/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/tobalcaide.png"></a>
                 </div>
                 <div class="descripcion">
-                    <p class="año">2018</p><br>
+                    <p>2018</p><br>
                     <p>Grado superior ASIR (administración de sistemas informáticos en red) <a href="https://www.tobalcaide.com/" target="_blank"> Academia Tobalcaide </a>, Quart de Poblet (Valencia).</p>
                 </div>
                             </div>
             <div class="experiencia">
                 <div class="logoEx">
-                    <a href="http://mestreacasa.gva.es/web/iesrodrigobotet" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/rodrigoBotet.jpg"></a>
+                    <a href="http://mestreacasa.gva.es/web/iesrodrigobotet" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/rodrigoBotet.png"></a>
                 </div>
                 <div class="descripcion">
-                    <p class="año">2013-2017</p><br>
+                    <p>2013-2017</p><br>
                     <p>Curso de inglés: <a href="http://mestreacasa.gva.es/web/iesrodrigobotet" target="_blank">IES Rodrigo Botet</a>, instituto Manises (Valencia).</p>
                 </div>
                             </div>
             <div class="experiencia">
                 <div class="logoEx">
-                    <a href="http://iessalvadorgadea.edu.gva.es/web/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/salvadorGadea.jpg"></a>
+                    <a href="http://iessalvadorgadea.edu.gva.es/web/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/salvadorGadea.png"></a>
                 </div>
                 <div class="descripcion">
-                    <p class="año">2008</p><br>
+                    <p>2008</p><br>
                     <p>Grado superior de Control y regulación de sistemas autocontrolados: <a href="http://iessalvadorgadea.edu.gva.es/web/" target="_blank"> IES Salvador Gadea</a>, Aldaya (Valencia).</p>
                 </div>
                            </div>
@@ -95,16 +95,16 @@ class miBiografia extends HTMLElement {
                     <a href="https://www.coversa.com/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/cover.png"></a>
                 </div>
                 <div class="descripcion">
-                    <p class="año">2002</p><br>
+                    <p>2002</p><br>
                     <p> Curso de trabajos en alta tensión en <a href="https://www.coversa.com/" target="_blank"> COVER </a>, Manises (Valencia).</p>
                 </div>
                             </div>
             <div class="experiencia">
                 <div class="logoEx">
-                    <a href="http://institutofaitanar.edu.gva.es/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/faitanar.jpg"></a>
+                    <a href="http://institutofaitanar.edu.gva.es/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/faitanar.png"></a>
                 </div>
                 <div class="descripcion">
-                    <p class="año">2000</p><br>
+                    <p>2000</p><br>
                     <p> Grado medio Electricidad: <a href="http://institutofaitanar.edu.gva.es/" target="_blank"> IES Faitanar </a>, Quart de Poblet (Valencia).</p>
                 </div>
                             </div>
@@ -113,10 +113,63 @@ class miBiografia extends HTMLElement {
                     <a href="https://web.iesgonzaloanaya.es/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/gonzaloAnaya.jpg"></a>
                 </div>
                 <div class="descripcion">
-                    <p class="año">1997</p><br>
+                    <p>1997</p><br>
                     <p>FP Elelectrónica: <a href="https://web.iesgonzaloanaya.es/" target="_blank">IES Gonzalo Anaya </a>, Xirivella (Valencia).</p>
                 </div>
             </div>
+
+
+
+            <div class="datosGenerales">
+            <div class="infoPersonal">
+                <p><strong>Información personal</strong></p>
+            </div>
+            <div class="tituloNombre">
+                <p><strong>Nombre de nacimiento</strong></p>
+            </div>
+            <div class="nombre">
+                <p>José Antonio López Baena (Micro)</p>
+            </div>
+            <div class="tituloNacimiento">
+                <p><strong>Nacimiento</strong></p>
+            </div>
+            <div class="nacimiento">
+                <p>27 de julio de 1982 (38 años) Valencia, España</p>
+            </div>
+            <div class="tituloResidencia">
+                <p><strong>Residencia</strong></p>
+            </div>
+            <div class="residencia">
+                <p>Quart de Poblet</p>
+            </div>
+            <div class="tituloNacionalidad">
+                <p><strong>Nacionalidad</strong></p>
+            </div>
+            <div class="nacionalidad">
+                <p>Española</p>
+            </div>
+            <div class="tituloReligion">
+                <p><strong>Religión</strong></p>
+            </div>
+            <div class="religion">
+                <p>Sin intereses</p>
+            </div>
+            <div class="tituloPolitica">
+                <p><strong>Partido político</strong></p>
+            </div>
+            <div class="politica">
+                <p>IGRE (desde 2018)</p>
+            </div>
+            <div class="tituloAfiliaciones">
+                <p><strong>Afiliaciones</strong></p>
+            </div>
+            <div class="afiliaciones">
+                <p>Sin intereses</p>
+            </div>
+        </div>
+
+      
+
           </div><!-- curriculum-->
 
     </div>/<!-- biografiaCurriculum-->
