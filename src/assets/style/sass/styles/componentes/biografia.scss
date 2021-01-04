@@ -1,19 +1,32 @@
 @import "../../mixins/mixins.scss";
 @import "../../variables/variables.scss";
 .biografia {
+    padding: 0rem 10rem 10rem 10rem ;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  hr{
+      width: 100%;
+      background-color: $negro;
+      height: 0.3rem;
+  }
+  .contenido{
+      display: flex;
+      flex-direction: row;
+
   .fotoDni{
       display: flex;
 flex-direction: row;
 justify-content: flex-start;
-width: 100%;
-padding: 10rem 10rem 10rem 10rem ;
+width: 30%;
+padding: 5rem 0rem 5rem 0rem ;
 img{
-    width: 20%;
+    width: 90%;
 }
+  }
+.descripcion{
+    width: 70%;
   }
   // z-index: 1000;
 //   position: sticky;
@@ -41,4 +54,5 @@ img{
     // color: pink;
     // margin: 0.3rem 0.5rem 0.3rem 0.5rem;
 //   }
+}
 }
