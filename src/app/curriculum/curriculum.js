@@ -130,6 +130,9 @@ class miCurriculum extends HTMLElement {
         </div>
     </div>
 </section>
+
+
+
 <div class="descripcion">
     <h1>Experiencia laboral</h1>
 </div>

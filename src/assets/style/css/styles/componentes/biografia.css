@@ -1,6 +1,6 @@
 /* hovers*/
 .biografia {
-  padding: 0rem 2rem 0rem 2rem;
+  padding: 0rem 5rem 0rem 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,10 +10,14 @@
   width: 100%;
   background-color: #0a0a0a;
   height: 0.3rem;
+  margin: 0rem 0rem 4rem 0rem;
 }
 .biografia .contenido {
   display: flex;
   flex-direction: row;
+}
+.biografia .contenido .historia {
+  width: 70%;
 }
 .biografia .contenido .biografiaCurriculum {
   display: flex;
@@ -47,14 +51,6 @@
 }
 .biografia .contenido .biografiaCurriculum .curriculum .experiencia .logoEx a {
   width: 20%;
-}
-.biografia .contenido .biografiaCurriculum .curriculum .experiencia .descripcion {
-  padding: 2rem;
-  width: 100%;
-}
-.biografia .contenido .descripcion {
-  margin: 0rem 1rem 0rem 0rem;
-  width: 70%;
 }
 
 /*# sourceMappingURL=biografia.css.map */

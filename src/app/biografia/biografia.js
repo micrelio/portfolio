@@ -5,11 +5,12 @@ class miBiografia extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <section class="biografia">
-    <h1> José Antonio López Baena
-        <hr>
+    <h1> José Antonio López Baena (Micro)
+        
     </h1>
+    <hr>
     <div class="contenido">
-        <div class="descripcion">
+        <div class="historia">
             <p>
                 Mi vida laboral comenzó en el ámbito eléctrico y electrónico como instalador electricista, con el
                 tiempo acabé centrándose en el mantenimiento de sistemas industriales y automatismos o PLC. Tras una

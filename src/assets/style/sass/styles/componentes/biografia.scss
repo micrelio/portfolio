@@ -1,7 +1,7 @@
 @import "../../mixins/mixins.scss";
 @import "../../variables/variables.scss";
 .biografia {
-  padding: 0rem 2rem 0rem 2rem;
+  padding: 0rem 5rem 0rem 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,11 +10,19 @@
     width: 100%;
     background-color: $negro;
     height: 0.3rem;
+    margin: 0rem 0rem 4rem 0rem ;
   }
   .contenido {
     display: flex;
     flex-direction: row;
-
+    .historia {
+        //margin: 0rem 1rem 0rem 0rem;
+        // padding: 3rem;
+  
+        // border: 0.05rem solid $negro;
+  
+        width: 70%;
+      }
     .biografiaCurriculum {
       display: flex;
       flex-direction: row;
@@ -59,8 +67,8 @@
             }
           }
           .descripcion {
-            padding: 2rem;
-            width: 100%;
+            //padding: 2rem;
+           // width: 100%;
             //   display: flex;
             //   flex-direction: column;
             //   height: 100%;
@@ -70,14 +78,7 @@
         }
       }
     }
-    .descripcion {
-      margin: 0rem 1rem 0rem 0rem;
-      // padding: 3rem;
-
-      // border: 0.05rem solid $negro;
-
-      width: 70%;
-    }
+ 
     // z-index: 1000;
     //   position: sticky;
     // position: -webkit-fixed;  // required for Safari
