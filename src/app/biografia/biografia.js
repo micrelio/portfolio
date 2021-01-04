@@ -120,7 +120,7 @@ class miBiografia extends HTMLElement {
 
 
 
-            <div class="datosGenerales">
+          <div class="datosGenerales">
             <div class="infoPersonal">
                 <p><strong>Información personal</strong></p>
             </div>
@@ -166,11 +166,23 @@ class miBiografia extends HTMLElement {
             <div class="afiliaciones">
                 <p>Sin intereses</p>
             </div>
-        </div>
+          </div>
 
-      
+      <!--
+      Información profesional
+Ocupación	politólogo, político, profesor titular interino, presentador
+Salario	79,746,24 euros anuales
+Años activo	desde 1992
+Empleador	Universidad Complutense de Madrid
+Distinciones	
+Premio Extraordinario de Fin de Carrera (2004)
+Firma	Pablo Iglesias Turrión signature.svg
+Web
+Sitio web	
+pabloiglesias.org
+-->
 
-          </div><!-- curriculum-->
+        </div><!-- curriculum-->
 
     </div>/<!-- biografiaCurriculum-->
 </section>

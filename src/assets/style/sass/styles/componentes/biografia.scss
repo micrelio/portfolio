@@ -17,7 +17,7 @@
     flex-direction: row;
     .historia {
       //margin: 0rem 1rem 0rem 0rem;
-      // padding: 3rem;
+       padding: 0rem 3rem 0rem 0rem;
 
       // border: 0.05rem solid $negro;
 
@@ -41,7 +41,7 @@
       }
       .curriculum {
         p {
-          font-size: 1.2rem;
+             font-size: 1.2rem;
         }
         .experiencia {
           margin: 1rem 0rem 0rem 0rem;
@@ -87,8 +87,8 @@
           grid-template-columns: [x0] 0.75fr [x1] 1.25fr [x2];
           grid-template-rows: [y0] 0.5fr [y1] 0.5fr [y2] 0.5fr [y3] 0.5fr [y4] 0.5fr [y5] 0.5fr [y6] 0.5fr [y7] 0.5fr [y8];
           grid-column-gap: 0.5rem;
-          grid-row-gap: 0.2rem;
-          background-color: midnightblue;
+          grid-row-gap: 0.5rem;
+          //   background-color: midnightblue;
           //    display: flex;
           //   flex-direction: row;
           //   align-items: center;
@@ -97,7 +97,7 @@
 
           p {
             color: black;
-            font-size: 1.7rem;
+            font-size: 1.2rem;
           }
 
           .infoPersonal {
@@ -105,81 +105,68 @@
             grid-row: y0 / y1;
             background-color: lightskyblue;
             padding: 0.5rem;
-           // display: flex;
-           // flex-direction: row;
-           // align-items: center;
-         //   justify-content: center;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
           }
           .tituloNombre {
             grid-column: x0 / x1;
             grid-row: y1 / y2;
-            background-color: magenta;
           }
           .nombre {
             grid-column: x1 / x2;
             grid-row: y1 / y2;
-            background-color: mediumorchid;
           }
           .tituloNacimiento {
             grid-column: x0 / x1;
             grid-row: y2 / y3;
-            background-color: magenta;
           }
           .nacimiento {
             grid-column: x1 / x2;
             grid-row: y2 / y3;
-            background-color: mediumorchid;
           }
           .tituloResidencia {
             grid-column: x0 / x1;
             grid-row: y3 / y4;
-            background-color: magenta;
           }
           .residencia {
             grid-column: x1 / x2;
             grid-row: y3 / y4;
-            background-color: mediumorchid;
           }
           .tituloNacionalidad {
             grid-column: x0 / x1;
             grid-row: y4 / y5;
-            background-color: magenta;
           }
           .nacionalidad {
             grid-column: x1 / x2;
             grid-row: y4 / y5;
-            background-color: mediumorchid;
           }
           .tituloReligion {
             grid-column: x0 / x1;
             grid-row: y5 / y6;
-            background-color: magenta;
           }
           .religion {
             grid-column: x1 / x2;
             grid-row: y5 / y6;
-            background-color: mediumorchid;
           }
           .tituloPolitica {
             grid-column: x0 / x1;
             grid-row: y6 / y7;
-            background-color: magenta;
           }
           .politica {
             grid-column: x1 / x2;
             grid-row: y6 / y7;
-            background-color: mediumorchid;
           }
           .tituloAfiliaciones {
             grid-column: x0 / x1;
             grid-row: y7 / y8;
-            background-color: magenta;
           }
           .afiliaciones {
             grid-column: x1 / x2;
             grid-row: y7 / y8;
-            background-color: mediumorchid;
           }
+         
         }
       }
 
@@ -211,4 +198,214 @@
       //   }
     }
   }
+}
+
+
+
+//------------------------\\
+//  RESPONSIVE  \\
+//------------------------\\
+@media only screen and (max-width: 800px) {
+    .biografia {
+        // padding: 0rem 5rem 0rem 5rem;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+        hr {
+        //   width: 100%;
+        //   background-color: $negro;
+        //   height: 0.3rem;
+        //   margin: 0rem 0rem 4rem 0rem;
+        }
+        .contenido {
+        //   display: flex;
+          flex-direction: column-reverse;
+          
+          .historia {
+              
+            //margin: 0rem 1rem 0rem 0rem;
+              padding: 3rem 0rem 3rem 0rem;
+      
+            // border: 0.05rem solid $negro;
+      
+            width: 100%;
+          }
+          .biografiaCurriculum {
+              width: 100%;
+            // display: flex;
+            // flex-direction: row;
+            // align-items: center;
+            // justify-content: center;
+            // background: {
+            //   color: $blanco;
+            // }
+            // border: 0.05rem solid $negro;
+            // padding: 0.5rem;
+            // display: flex;
+            // flex-direction: column;
+            // width: 30%;
+            img {
+              width: 100%;
+            }
+            .curriculum {
+              p {
+                   font-size: 1.2rem;
+              }
+              .experiencia {
+                margin: 1rem 0rem 0rem 0rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+      
+                .logoEx {
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: center;
+                  background-color: lightskyblue;
+                  width: 100%;
+                  a {
+                    width: 15%;
+                    background: {
+                    }
+                    border: {
+                      //radius: 1rem 0rem 0rem 1rem;
+                    }
+                  }
+                }
+                .descripcion {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                  margin: 1rem;
+                  display: grid;
+                  //padding: 2rem;
+                  // width: 100%;
+                  //   display: flex;
+                  //   flex-direction: column;
+                  //   height: 100%;
+                  //text-overflow: ellipsis;
+                  //  $blanco-space: nowrap;
+                }
+              }
+              .datosGenerales {
+                display: grid;
+      
+                grid-template-columns: [x0] 0.75fr [x1] 1.25fr [x2];
+                grid-template-rows: [y0] 0.5fr [y1] 0.5fr [y2] 0.5fr [y3] 0.5fr [y4] 0.5fr [y5] 0.5fr [y6] 0.5fr [y7] 0.5fr [y8];
+                grid-column-gap: 0.5rem;
+                grid-row-gap: 0.5rem;
+                //   background-color: midnightblue;
+                //    display: flex;
+                //   flex-direction: row;
+                //   align-items: center;
+                //   justify-content: flex-start;
+                //width: 100%;
+      
+                p {
+                  color: black;
+                  font-size: 1.2rem;
+                }
+      
+                .infoPersonal {
+                  grid-column: x0 / x2;
+                  grid-row: y0 / y1;
+                  background-color: lightskyblue;
+                  padding: 0.5rem;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: center;
+                }
+                .tituloNombre {
+                  grid-column: x0 / x1;
+                  grid-row: y1 / y2;
+                }
+                .nombre {
+                  grid-column: x1 / x2;
+                  grid-row: y1 / y2;
+                }
+                .tituloNacimiento {
+                  grid-column: x0 / x1;
+                  grid-row: y2 / y3;
+                }
+                .nacimiento {
+                  grid-column: x1 / x2;
+                  grid-row: y2 / y3;
+                }
+                .tituloResidencia {
+                  grid-column: x0 / x1;
+                  grid-row: y3 / y4;
+                }
+                .residencia {
+                  grid-column: x1 / x2;
+                  grid-row: y3 / y4;
+                }
+                .tituloNacionalidad {
+                  grid-column: x0 / x1;
+                  grid-row: y4 / y5;
+                }
+                .nacionalidad {
+                  grid-column: x1 / x2;
+                  grid-row: y4 / y5;
+                }
+                .tituloReligion {
+                  grid-column: x0 / x1;
+                  grid-row: y5 / y6;
+                }
+                .religion {
+                  grid-column: x1 / x2;
+                  grid-row: y5 / y6;
+                }
+                .tituloPolitica {
+                  grid-column: x0 / x1;
+                  grid-row: y6 / y7;
+                }
+                .politica {
+                  grid-column: x1 / x2;
+                  grid-row: y6 / y7;
+                }
+                .tituloAfiliaciones {
+                  grid-column: x0 / x1;
+                  grid-row: y7 / y8;
+                }
+                .afiliaciones {
+                  grid-column: x1 / x2;
+                  grid-row: y7 / y8;
+                }
+               
+              }
+            }
+      
+            // z-index: 1000;
+            //   position: sticky;
+            // position: -webkit-fixed;  // required for Safari
+            //   top: 0;
+            //   width: 100%;
+            // height: 10vh;
+            //   background-color: $corporativo;
+            //   .boton {
+            //     font-size: 1.75rem;
+            //     font-family: Verdana, Helvetica;
+            //     font-weight: bold;
+            //     color: $blanco;
+            //background:#638cb5;
+            // border: 0px;
+            // background: none;
+            // color: inherit;
+            // border: none;
+            // padding: 0;
+            // font: inherit;
+            //outline: inherit;
+            //width: 5rem;
+            // cursor: pointer;
+            //background-color: pink;;
+            // color: pink;
+            // margin: 0.3rem 0.5rem 0.3rem 0.5rem;
+            //   }
+          }
+        }
+      }
 }

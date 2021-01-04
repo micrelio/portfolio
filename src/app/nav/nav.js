@@ -185,7 +185,7 @@ class miNav extends HTMLElement {
     </div>
     <div class="movil">
         <div class="imagenes">
-            <div class="foto">
+            <div id="foto" class="foto">
                 <img src="/src/assets/images/dracula-man.jpg">
             </div>
             <div class="botones">

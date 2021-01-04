@@ -247,6 +247,7 @@
 }
 .stick .nav .navbar .foto {
   position: relative;
+  cursor: pointer;
 }
 .stick .nav .navbar .foto img {
   height: 100%;
@@ -379,7 +380,9 @@
     align-items: center;
   }
   .movil .imagenes .foto {
+    position: relative;
     cursor: pointer;
+    z-index: 1000;
   }
   .movil .imagenes .foto img {
     display: block;
