@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"biografia.css"}
+{"version":3,"sourceRoot":"","sources":["../../../sass/mixins/mixins.scss","../../../sass/styles/componentes/biografia.scss"],"names":[],"mappings":"AAiOA;AC/NA;EACE;EACA;EACA;EACA;;AACA;EACI;EACN;EACA;EACA;EACA;;AACA;EACI","file":"biografia.css"}

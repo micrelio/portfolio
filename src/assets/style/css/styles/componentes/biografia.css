@@ -1,3 +1,19 @@
-
+/* hovers*/
+.biografia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.biografia .fotoDni {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 10rem 10rem 10rem 10rem;
+}
+.biografia .fotoDni img {
+  width: 20%;
+}
 
 /*# sourceMappingURL=biografia.css.map */
