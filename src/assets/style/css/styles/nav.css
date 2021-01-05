@@ -296,12 +296,10 @@
 }
 .stick .nav .navbar .menu .links .mode .noche {
   display: none;
-  color: lightskyblue;
   font-size: 3rem;
 }
 .stick .nav .navbar .menu .links .mode .dia {
   display: block;
-  color: lightskyblue;
   font-size: 3rem;
 }
 .stick .nav .navbar .menu .links .brushEstilos {
@@ -317,11 +315,9 @@
   animation-duration: 2s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  color: lightskyblue;
   font-size: 3rem;
 }
 .stick .nav .navbar .menu .links .brushEstilos .selecEstilosPlegar {
-  color: lightskyblue;
   font-size: 3rem;
 }
 .stick .nav .navbar .menu .links .inicio:hover,

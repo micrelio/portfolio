@@ -345,12 +345,12 @@
             // align-items: center;
             .noche {
               display: none;
-              color: $corporativo;
+              //color: $corporativo;
               font-size: 3rem;
             }
             .dia {
               display: block;
-              color: $corporativo;
+              //color: $corporativo;
               font-size: 3rem;
             }
           }
@@ -360,14 +360,14 @@
 
             .selecEstilosDesplegar {
               @include estilos;
-           color: $corporativo;
+           //color: $corporativo;
 
               font-size: 3rem;
 
               //font-size: 1.6rem;
             }
             .selecEstilosPlegar {
-              color: $corporativo;
+              //color: $corporativo;
 
               font-size: 3rem;
 
