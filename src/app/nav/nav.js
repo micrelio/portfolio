@@ -20,6 +20,7 @@ class miNav extends HTMLElement {
 
 
 <div id="botonesEstilo" class="botonesEstilo">
+<div class="desplazable">
   <div>  
     <p><strong>reset</strong></p>
     <hr>
@@ -152,6 +153,7 @@ class miNav extends HTMLElement {
             <p id="dia" class="dia bx bxs-sun" onclick="modoNoche('noche');"></p>
         </div>
     </div>
+  </div>  
   </div>
 
 

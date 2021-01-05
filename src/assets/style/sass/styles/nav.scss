@@ -49,18 +49,26 @@
 .botonesEstilo {
   z-index: 100;
   position: fixed;
-  top: 0; //para que siga la pagina
-  // position: sticky;
-  // position: -webkit-fixed;  // required for Safari
+  //top: 0; //para que siga la pagina
+ // position: sticky;
+  //position: absolute;
+ // position: -webkit-fixed;  // required for Safari
   display: none;
   background-color: white;
   border: 0.05rem solid $negro;
   border-radius: 0.9rem;
   padding: 1rem 1rem 1rem 1rem;
   margin: 0rem 0rem 0rem 0.5rem;
+  //width: 10%;
 
   //z-index: 100;
   //position: relative;
+  .desplazable
+  {
+    max-height: 90vh;
+
+    overflow: auto;
+
   p {
     color: $negro;
     font-size: 1.5rem;
@@ -138,6 +146,7 @@
       }
     }
   }
+}
   .opacidad {
     p {
       margin: 0rem 0rem 0rem 0rem;

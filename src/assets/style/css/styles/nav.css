@@ -40,7 +40,6 @@
 .botonesEstilo {
   z-index: 100;
   position: fixed;
-  top: 0;
   display: none;
   background-color: white;
   border: 0.05rem solid #0a0a0a;
@@ -48,75 +47,79 @@
   padding: 1rem 1rem 1rem 1rem;
   margin: 0rem 0rem 0rem 0.5rem;
 }
-.botonesEstilo p {
+.botonesEstilo .desplazable {
+  max-height: 90vh;
+  overflow: auto;
+}
+.botonesEstilo .desplazable p {
   color: #0a0a0a;
   font-size: 1.5rem;
 }
-.botonesEstilo .filasFiesta {
+.botonesEstilo .desplazable .filasFiesta {
   margin: 0rem 0rem 1rem 0rem;
 }
-.botonesEstilo .filasFiesta p {
+.botonesEstilo .desplazable .filasFiesta p {
   margin: 0rem 0rem 0rem 0rem;
 }
-.botonesEstilo .filasFiesta .selecFiesta {
+.botonesEstilo .desplazable .filasFiesta .selecFiesta {
   margin: 0.5rem 0rem 0rem 0rem;
 }
-.botonesEstilo .filasFiesta .selecFiesta .festivos {
+.botonesEstilo .desplazable .filasFiesta .selecFiesta .festivos {
   width: 2.4rem;
   margin: 0.5rem 0rem 0rem 0.2rem;
 }
-.botonesEstilo .filasColores p {
+.botonesEstilo .desplazable .filasColores p {
   margin: 0rem 0rem 0rem 0rem;
 }
-.botonesEstilo .filasColores .cambioColor {
+.botonesEstilo .desplazable .filasColores .cambioColor {
   display: flex;
   flex-direction: column;
 }
-.botonesEstilo .filasColores .cambioColor .selecColor {
+.botonesEstilo .desplazable .filasColores .cambioColor .selecColor {
   display: flex;
   flex-direction: row;
 }
-.botonesEstilo .filasColores .cambioColor .selecColor .color {
+.botonesEstilo .desplazable .filasColores .cambioColor .selecColor .color {
   height: 2.2rem;
   width: 2.2rem;
   border-radius: 50%;
   border: 0.05rem solid #0a0a0a;
   margin: 0.7rem 0.2rem 0rem 0.2rem;
 }
-.botonesEstilo .filasColores .cambioColor .blanco {
+.botonesEstilo .desplazable .filasColores .cambioColor .blanco {
   background: #eeeeee;
 }
-.botonesEstilo .filasColores .cambioColor .gris {
+.botonesEstilo .desplazable .filasColores .cambioColor .gris {
   background: #272727;
 }
-.botonesEstilo .filasColores .cambioColor .amarillo {
+.botonesEstilo .desplazable .filasColores .cambioColor .amarillo {
   background: #ffff00;
 }
-.botonesEstilo .filasColores .cambioColor .naranja {
+.botonesEstilo .desplazable .filasColores .cambioColor .naranja {
   background: orangered;
 }
-.botonesEstilo .filasColores .cambioColor .oro {
+.botonesEstilo .desplazable .filasColores .cambioColor .oro {
   background: #eabe3f;
 }
-.botonesEstilo .filasColores .cambioColor .marron {
+.botonesEstilo .desplazable .filasColores .cambioColor .marron {
   background: #a05000;
 }
-.botonesEstilo .filasColores .cambioColor .rojo {
+.botonesEstilo .desplazable .filasColores .cambioColor .rojo {
   background: #f80000;
 }
-.botonesEstilo .filasColores .cambioColor .rosa {
+.botonesEstilo .desplazable .filasColores .cambioColor .rosa {
   background: #ff0080;
 }
-.botonesEstilo .filasColores .cambioColor .morado {
+.botonesEstilo .desplazable .filasColores .cambioColor .morado {
   background: #9c27b0;
 }
-.botonesEstilo .filasColores .cambioColor .azul {
+.botonesEstilo .desplazable .filasColores .cambioColor .azul {
   background: #00c6ee;
 }
-.botonesEstilo .filasColores .cambioColor .verde {
+.botonesEstilo .desplazable .filasColores .cambioColor .verde {
   background: #008f39;
 }
-.botonesEstilo .filasColores .cambioColor .negro {
+.botonesEstilo .desplazable .filasColores .cambioColor .negro {
   background: #0a0a0a;
 }
 .botonesEstilo .opacidad p {
