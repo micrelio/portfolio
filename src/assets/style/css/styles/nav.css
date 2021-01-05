@@ -370,7 +370,6 @@
   .movil .imagenes .foto {
     position: relative;
     cursor: pointer;
-    z-index: 1000;
   }
   .movil .imagenes .foto img {
     display: block;

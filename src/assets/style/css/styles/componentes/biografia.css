@@ -21,6 +21,7 @@
   width: 70%;
 }
 .biografia .contenido .biografiaCurriculum {
+  margin: 0rem 0rem 5rem 0rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -32,8 +33,17 @@
   flex-direction: column;
   width: 30%;
 }
+.biografia .contenido .biografiaCurriculum p {
+  color: #0a0a0a;
+}
+.biografia .contenido .biografiaCurriculum h3 {
+  color: #0a0a0a;
+  -webkit-text-stroke: 0.04rem #ddd8d8;
+  text-shadow: 0.2rem 0.2rem 0.1rem gray;
+}
 .biografia .contenido .biografiaCurriculum img {
   width: 100%;
+  margin: 1rem 0rem 0rem 0rem;
 }
 .biografia .contenido .biografiaCurriculum .curriculum p {
   font-size: 1.2rem;
