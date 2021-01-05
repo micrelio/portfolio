@@ -91,7 +91,10 @@ body {
       .menu {
         .links {
           .enlace {
-            color: $oro; 
+            color: $oro;
+            p{
+              color: $oro;
+            } 
           }
           .inicio:hover,
           .conoceme:hover,

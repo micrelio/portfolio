@@ -95,6 +95,9 @@ body {
           .enlace {
             color: $rojo;
             border-color: $rojo;
+            p{
+              color: $rojo;
+            }
           }
           .inicio:hover,
           .conoceme:hover,

@@ -151,19 +151,19 @@ class miNav extends HTMLElement {
             </div>
             <div class="menu">
                 <div id="links" class="links">
-                    <div class="enlace inicio" onclick="navegar('inicio');"> Inicio </div>
-                    <div class="enlace biografia" onclick="navegar('biografia');"> Biografía </div>
-                    <div class="enlace webs" onclick="navegar('webs'); "> Webs </div>
-                    <div class="enlace gal" onclick="navegar('galeria');"> Galería </div>
-                    <div class="enlace curriculum" onclick="navegar('curriculum');"> Currículum </div>
-                    <div class="enlace contacto" onclick="navegar('contacto');"> Contacto </div>
+                    <div class="enlace inicio" onclick="navegar('inicio');"><p> Inicio </p></div>
+                    <div class="enlace biografia" onclick="navegar('biografia');"><p> Biografía </p></div>
+                    <div class="enlace webs" onclick="navegar('webs'); "><p> Webs </p></div>
+                    <div class="enlace gal" onclick="navegar('galeria');"><p> Galería </p></div>
+                    <div class="enlace curriculum" onclick="navegar('curriculum');"><p> Currículum </p></div>
+                    <div class="enlace contacto" onclick="navegar('contacto');"><p> Contacto </p></div>
                     <div class=" mode">
                       <p id="noche" class="noche enlace bx bxs-moon" onclick="modoNoche('dia');"></p>
                       <p id="dia" class="dia enlace bx bxs-sun" onclick="modoNoche('noche');"></p>
                     </div>
                     <div class=" brushEstilos">
                       <p id="selecEstilosDesplegar" class="selecEstilosDesplegar enlace bx bxs-brush"></p>
-                      <p style="display:none;" id="selecEstilosPlegar" class="selecEstilosPlegar enlace bx bxs-brush"></p>
+                      <p style="display:none;" id="selecEstilosPlegar" class="selecEstilosPlegar enlace bx bxs-brush-alt"></p>
                     </div>
                 </div>
             </div>

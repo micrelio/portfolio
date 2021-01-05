@@ -80,18 +80,21 @@ body {
          menu
 ------------------------------------------ */
 .stick {
-    .nav {
+  .nav {
     border-bottom: 0.05rem solid $morado;
-        .navbar {
+    .navbar {
       .foto {
         img {
-          border: 0.05rem solid $morado; 
+          border: 0.05rem solid $morado;
         }
       }
       .menu {
         .links {
           .enlace {
-            color: $morado; 
+            color: $morado;
+            p {
+              color: $morado;
+            }
           }
           .inicio:hover,
           .conoceme:hover,

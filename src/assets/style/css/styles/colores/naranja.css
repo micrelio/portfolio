@@ -50,6 +50,9 @@ body .fiestas .stop:hover {
 .stick .nav .navbar .menu .links .enlace {
   color: orangered;
 }
+.stick .nav .navbar .menu .links .enlace p {
+  color: orangered;
+}
 .stick .nav .navbar .mode .noche {
   color: orangered;
 }

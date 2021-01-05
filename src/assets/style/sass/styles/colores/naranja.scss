@@ -94,6 +94,9 @@ body {
         .links {
           .enlace {
             color: $naranja; 
+            p{
+              color: $naranja;
+            }
           }
           .inicio:hover,
           .conoceme:hover,

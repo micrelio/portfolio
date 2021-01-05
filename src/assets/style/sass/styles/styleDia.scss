@@ -29,7 +29,8 @@
   }
   .nav {
     background: {
-      color: rgba(0, 0, 0, 0.5);
+      // color: rgba(0, 0, 0, 0.5);
+      color:$blanco
     }
     .navbar {
       .foto {
@@ -41,8 +42,17 @@
       .menu {
         .links {
           .enlace {
-          }
+            -webkit-text-stroke: 0.005rem black;
+
+            p{
+           // -webkit-text-fill-color: yellowgreen;
+-webkit-text-stroke: 0.05rem black;
+                          // -webkit-text-fill-color: #e3e4e5;
+              // -webkit-text-stroke: 0.5rem black;
+          //  border: 0.05rem solid $corporativo;
+                              }                    }
           .mode {
+
             .noche {
               display: block;
             }

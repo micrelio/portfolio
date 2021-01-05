@@ -120,6 +120,9 @@ body {
         .links {
           .enlace {
             color: $blanco; //gray
+            p{
+              color: $blanco;
+            }
           }
           .inicio:hover,
           .conoceme:hover,

@@ -49,6 +49,9 @@ body .fiestas .stop:hover {
 .stick .nav .navbar .menu .links .enlace {
   color: #ffff00;
 }
+.stick .nav .navbar .menu .links .enlace p {
+  color: #ffff00;
+}
 .stick .nav .navbar .mode .noche {
   color: #ffff00;
 }

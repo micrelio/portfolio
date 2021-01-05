@@ -269,6 +269,9 @@
   font-size: 1.6rem;
   font-weight: bold;
 }
+.stick .nav .navbar .menu .links .enlace p {
+  color: lightskyblue;
+}
 .stick .nav .navbar .menu .links .inicio {
   grid-column: x0/x1;
   grid-row: y0/y1;

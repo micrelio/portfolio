@@ -79,9 +79,9 @@ body {
          menu
 ------------------------------------------ */
 .stick {
-   .nav {
+  .nav {
     border-bottom: 0.05rem solid $marron;
-        .navbar {
+    .navbar {
       .foto {
         img {
           border: 0.05rem solid $marron; //$blanco;
@@ -90,7 +90,10 @@ body {
       .menu {
         .links {
           .enlace {
-            color: $marron; 
+            color: $marron;
+            p {
+              color: $marron;
+            }
           }
           .inicio:hover,
           .conoceme:hover,
@@ -106,7 +109,7 @@ body {
           .videos:focus,
           .curriculum:focus,
           .contacto:focus {
-           // background-color: rgba(78, 78, 32, 0.582);
+            // background-color: rgba(78, 78, 32, 0.582);
           }
         }
       }

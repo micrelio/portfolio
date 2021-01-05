@@ -96,7 +96,9 @@ body {
             color: $verde; //gray
             background: {
             }
-
+            p{
+              color: $verde;
+            }
             border-color: $verde;
           }
           .inicio:hover,
