@@ -98,7 +98,7 @@ class miCurriculum extends HTMLElement {
     </div>
     <div class="experiencia">
         <div class="logotipo">
-            <a href="https://www.coversa.com/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/cover.png"></a> 
+            <a href="https://www.coversa.com/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/cover.jpg"></a> 
         </div>
         <div class="descripcion">
             <p class="año">2002</p><br>
