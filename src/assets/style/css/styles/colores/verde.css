@@ -1,14 +1,5 @@
 @charset "UTF-8";
 /* hovers*/
-.head {
-  width: 100%;
-  position: relative;
-  border-bottom: 0.05rem solid #008f39;
-}
-.head img {
-  width: 100%;
-}
-
 html .fa-arrow-alt-circle-up,
 body .fa-arrow-alt-circle-up {
   color: #008f39;
