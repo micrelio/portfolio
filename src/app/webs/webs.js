@@ -5,6 +5,9 @@ class miWebs extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
 <section class="web">
+<h1>Diseños web</h1>
+<div class="separador3">
+    </div>
     <div class="titaniumGamers">
          <div class="titulo">
             <a target="blank" href=" https://titaniumgamers.com/">
@@ -24,6 +27,8 @@ class miWebs extends HTMLElement {
                 <i class="fas fa-arrow-alt-circle-right"></i></a>
             </p>
         </div>
+    </div>
+    <div class="separador5">
     </div>
     <div class="tiendaTitanium">
          <div class="titulo">
@@ -51,6 +56,8 @@ class miWebs extends HTMLElement {
             </p>
         </div>
     </div>
+    <div class="separador5">
+    </div>
     <div class="primeroscoc">
          <div class="titulo">
             <a target="blank" href="https://primeroscoc.titaniumgamers.com/">
@@ -74,6 +81,8 @@ class miWebs extends HTMLElement {
             <i class="fas fa-arrow-alt-circle-right"></i></a>
             </p>
         </div>
+    </div>
+    <div class="separador5">
     </div>
     <div class="guerrasOnline">
         <div class="titulo">

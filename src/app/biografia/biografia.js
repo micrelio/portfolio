@@ -43,7 +43,7 @@ class miBiografia extends HTMLElement {
         <div class="biografiaCurriculum">
             <h3><strong>José (Micro)</strong></h3>
             <img src="/src/assets/images/fotos/posandoGafas.jpg" alt="">
-          <div class="curriculum">  
+          <div class="curriculumMini">  
             <div class="experiencia">
               <div class="logoEx">
                 <a href="https://ocupacio.quartdepoblet.es/index.php/es/formacio" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/EscudoQuart.png"></a>

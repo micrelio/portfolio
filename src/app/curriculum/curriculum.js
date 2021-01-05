@@ -7,6 +7,8 @@ class miCurriculum extends HTMLElement {
 <div class="descripcion">
     <h1>Datos personales</h1>
 </div>
+<div class="separador3">
+</div>
 <section class="datos">
     <div class="datosPersonales">
         <div class="foto">
@@ -32,11 +34,15 @@ class miCurriculum extends HTMLElement {
         </div>
     </div>
 </section>
+<div class="separador5">
+</div>
 <div class="descripcion">
     <h1>Formación académica</h1>
 </div>
+<div class="separador3">
+</div>
 <section class="datos">
-<div class="experiencia">
+    <div class="experiencia">
         <div class="logotipo">
             <a href="https://ocupacio.quartdepoblet.es/index.php/es/formacio"target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/quart.jpg"></a>
         </div>
@@ -47,6 +53,8 @@ class miCurriculum extends HTMLElement {
         <div class="titulo">
         <!--     <a href="/src/assets/images/titulos/" target="_blank"><img alt="" src="/src/assets/images/icons/titulo.png"></a> -->
         </div>
+    </div>
+    <div class="separador5">
     </div>
     <div class="experiencia">
         <div class="logotipo">
@@ -60,6 +68,8 @@ class miCurriculum extends HTMLElement {
                 <a href="/src/assets/images/titulos/GreeksHubs.jpg" target="_blank"><img alt="" src="/src/assets/images/icons/titulo.png"></a>
         </div>
     </div>
+    <div class="separador5">
+    </div>
     <div class="experiencia">
         <div class="logotipo">
             <a href="https://www.tobalcaide.com/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/tobalcaide.png"></a>
@@ -71,6 +81,8 @@ class miCurriculum extends HTMLElement {
         <div class="titulo">
             <a href="/src/assets/images/titulos/ASIR.jpg" target="_blank"><img alt="" src="/src/assets/images/icons/titulo.png"></a>
         </div>
+    </div>
+    <div class="separador5">
     </div>
     <div class="experiencia">
         <div class="logotipo">
@@ -84,9 +96,13 @@ class miCurriculum extends HTMLElement {
             <a href="/src/assets/images/titulos/ingles.jpg" target="_blank"><img alt="" src="/src/assets/images/icons/titulo.png"></a>
         </div>
     </div>
+    <div class="separador5">
+    </div>
     <div class="experiencia">
         <div class="logotipo">
             <a href="http://iessalvadorgadea.edu.gva.es/web/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/salvadorGadea.jpg"></a>
+        </div>
+        <div class="separador5">
         </div>
         <div class="descripcion">
             <p  class="año">2008</p><br>
@@ -95,6 +111,8 @@ class miCurriculum extends HTMLElement {
         <div class="titulo">
             <a href="/src/assets/images/titulos/automatismos.jpg" target="_blank"><img alt="" src="/src/assets/images/icons/titulo.png"></a>
         </div>
+    </div>
+    <div class="separador5">
     </div>
     <div class="experiencia">
         <div class="logotipo">
@@ -108,6 +126,8 @@ class miCurriculum extends HTMLElement {
             <a href="/src/assets/images/titulos/Cover.jpg" target="_blank"><img alt="" src="/src/assets/images/icons/titulo.png"></a>
         </div>
     </div>
+    <div class="separador5">
+    </div>
     <div class="experiencia">
         <div class="logotipo">
             <a href="http://institutofaitanar.edu.gva.es/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/faitanar.jpg"></a>
@@ -120,6 +140,8 @@ class miCurriculum extends HTMLElement {
             <a href="/src/assets/images/titulos/electricidad.jpg" target="_blank"><img alt="" src="/src/assets/images/icons/titulo.png"></a>
         </div>
     </div>
+    <div class="separador5">
+    </div>
     <div class="experiencia">
         <div class="logotipo">
             <a href="https://web.iesgonzaloanaya.es/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/gonzaloAnaya.jpg"></a>
@@ -130,11 +152,14 @@ class miCurriculum extends HTMLElement {
         </div>
     </div>
 </section>
-
+<div class="separador5">
+</div>
 
 
 <div class="descripcion">
     <h1>Experiencia laboral</h1>
+</div>
+<div class="separador3">
 </div>
 <section class="datos">
     <div class="experiencia">
@@ -150,6 +175,8 @@ class miCurriculum extends HTMLElement {
             </p>
         </div>
     </div>
+    <div class="separador5">
+    </div>
     <div class="experiencia">
         <div class="logotipo">
             <a href="https://www.igre.es/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/IGRE.png"></a>
@@ -160,6 +187,8 @@ class miCurriculum extends HTMLElement {
             Candidatura propuesta como eurodiputado.</p>
         </div>
     </div>
+    <div class="separador5">
+    </div>
     <div class="experiencia">
         <div class="logotipo">
             <a href=" https://www.yoigo.com/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/yoigo.png"></a>
@@ -168,6 +197,8 @@ class miCurriculum extends HTMLElement {
             <p class="año">2018 <a href=" https://www.yoigo.com/" target="_blank"><strong>Yoigo</strong></a></p><br>
             <p>Teleoperador como atención al cliente.</p>
         </div>
+    </div>
+    <div class="separador5">
     </div>
     <div class="experiencia">
         <div class="logotipo">
@@ -178,6 +209,8 @@ class miCurriculum extends HTMLElement {
             <p>Practicas grado superior ASIR, tareas como maquetación con WordPress DIVI, servicio técnico, montaje y puesta a punto de PC, servicio técnico online con TeamViewer.</p>
         </div>
     </div>
+    <div class="separador5">
+    </div>
     <div class="experiencia">
         <div class="logotipo">
             <a href="https://www.alimarket.es/alimentacion/empresa/209431" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/frusa.jpg"></a>
@@ -186,6 +219,8 @@ class miCurriculum extends HTMLElement {
             <p class="año">2016 <a href="https://www.alimarket.es/alimentacion/empresa/209431" target="_blank"><strong>Frusa Coca Cola</strong></a></p><br>
             <p>Oficial de 1º como técnico eléctrico.</p>
         </div>
+    </div>
+    <div class="separador5">
     </div>
     <div class="experiencia">
         <div class="logotipo">
@@ -196,6 +231,8 @@ class miCurriculum extends HTMLElement {
             <p>Oficial de 1º como técnico de sistemas industriales, responsable de turno.</p>
         </div>
     </div>
+    <div class="separador5">
+    </div>
     <div class="experiencia">
         <div class="logotipo">
             <a href="https://power-electronics.com/es/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/power.jpg"></a>
@@ -204,6 +241,8 @@ class miCurriculum extends HTMLElement {
             <p class="año">2013 <a href="https://power-electronics.com/es/" target="_blank"><strong>Tour Electric&Power Electronics</strong></a></p><br>
             <p>Revisión y mejoras en plantas fotovoltaicas, trabajos en inversores y centros de transformación en Inglaterra.</p>
         </div>
+    </div>
+    <div class="separador5">
     </div>
     <div class="experiencia">
         <div class="logotipo">
@@ -214,6 +253,8 @@ class miCurriculum extends HTMLElement {
             <p>Técnico de sistemas industriales.</p>
         </div>
     </div>
+    <div class="separador5">
+    </div>
     <div class="experiencia">
         <div class="logotipo">
             <img id="" class="corporativo" src="/src/assets/images/logoEmpresa/dafsa.jpg">
@@ -223,7 +264,8 @@ class miCurriculum extends HTMLElement {
             <p>Técnico de sistemas industriales.</p>
         </div>
     </div>
-
+    <div class="separador5">
+    </div>
     <div class="experiencia">
         <div class="logotipo">
             <a href="https://www.diselcom.com/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/diselcom.jpg"></a>
@@ -232,6 +274,8 @@ class miCurriculum extends HTMLElement {
             <p class="año">2008 <a href="https://www.diselcom.com/" target="_blank"><strong>Diselcom</strong></a></p><br>
             <p>Montaje de cuadros electrónicos en época de estudios.</p>
         </div>
+    </div>
+    <div class="separador5">
     </div>
     <div class="experiencia">
         <div class="logotipo">
@@ -242,6 +286,8 @@ class miCurriculum extends HTMLElement {
             <p>Ayudante técnico de sistemas.
         </div>
     </div>
+    <div class="separador5">
+    </div>
     <div class="experiencia">
         <div class="logotipo">
             <a href=" https://www.coversa.com/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/cover.png"></a>
@@ -250,6 +296,8 @@ class miCurriculum extends HTMLElement {
             <p class="año">2002 <a href=" https://www.coversa.com/" target="_blank"><strong>Cover</strong></a></p><br>
             <p>Mantenimiento en centros de transformación y subestaciones industriales de alta y media tensión.</p>
          </div>
+    </div>
+    <div class="separador5">
     </div>
     <div class="experiencia">
         <div class="logotipo">
@@ -261,8 +309,12 @@ class miCurriculum extends HTMLElement {
          </div>
     </div>
  </section>
+ <div class="separador5">
+</div>
  <div class="descripcion">
     <h1>Datos de interés</h1>
+</div>
+<div class="separador3">
 </div>
 <section class="datos">
     <div  class="interes">

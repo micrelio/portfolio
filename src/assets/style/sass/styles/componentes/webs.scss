@@ -2,10 +2,11 @@
 @import "../../variables/variables.scss";
 
 .head {
-  @include head;
+  //@include head;
 }
 .web {
   @include webs;
+
   .primeroscoc,
   .guerrasOnline,
   .tiendaTitanium,
@@ -15,7 +16,6 @@
     display: grid;
     grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5];
     grid-template-rows: [y0] 0.5fr [y1] 1fr [y2] 0.05fr [y3];
-    margin-top: 5rem;
     a {
       text-decoration: none;
     }
@@ -212,9 +212,9 @@
       .descripcion {
         grid-column: x0 / x5;
         grid-row: y1 / y2;
-      //  p {
-          //   background-color: cornflowerblue;
-     //   }
+        //  p {
+        //   background-color: cornflowerblue;
+        //   }
         //   background-color: cornflowerblue;
       }
       .visitar {

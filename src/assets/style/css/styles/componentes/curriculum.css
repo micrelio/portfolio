@@ -1,38 +1,26 @@
 @charset "UTF-8";
 /* hovers*/
-.head {
-  width: 100%;
-  position: relative;
-}
-.head img {
-  width: 100%;
-}
-
-.descripcion {
+body .descripcion {
   display: flex;
   justify-content: center;
 }
-.descripcion .año {
+body .descripcion .año {
   color: #00c6ee;
 }
-.descripcion h1 {
+body .descripcion h1 {
   font-size: calc(3rem + 1vw);
-  margin-top: 5rem;
-  color: #00c6ee;
+  color: lightskyblue;
 }
-
-p {
+body p {
   font-size: 1.5rem;
   font-size: calc(1rem + 1vw);
 }
-
-a:visited {
-  color: #00c6ee;
+body a:visited {
+  color: lightskyblue;
   font-family: arial;
   text-decoration: none;
 }
-
-.datos {
+body .datos {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -40,61 +28,60 @@ a:visited {
   justify-content: center;
   width: 100%;
 }
-.datos .datosPersonales {
+body .datos .datosPersonales {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   color: #eeeeee;
-  border: 0.2rem solid #00c6ee;
+  border: 0.2rem solid lightskyblue;
   overflow: hidden;
   border-radius: 1rem;
   background-color: #000;
 }
-.datos .datosPersonales h2 {
-  color: #00c6ee;
+body .datos .datosPersonales h2 {
+  color: lightskyblue;
 }
-.datos .datosPersonales .foto .dni {
+body .datos .datosPersonales .foto .dni {
   width: calc(20rem + 10vw);
   border-radius: 0.5rem;
 }
-.datos .datosPersonales .direccion {
+body .datos .datosPersonales .direccion {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 3rem;
 }
-.datos .datosPersonales .direccion p {
+body .datos .datosPersonales .direccion p {
   margin-top: 1.5rem;
 }
-.datos .datosPersonales .direccion .fa {
+body .datos .datosPersonales .direccion .fa {
   color: red;
 }
-.datos .experiencia {
+body .datos .experiencia {
   color: #eeeeee;
   overflow: hidden;
   display: flex;
   flex-direction: row;
   align-items: center;
-  border: 0.2rem solid #00c6ee;
-  margin-bottom: 5rem;
+  border: 0.2rem solid lightskyblue;
   width: 95vw;
   background-color: black;
   border-radius: 1rem;
 }
-.datos .experiencia .logotipo img {
+body .datos .experiencia .logotipo img {
   width: calc(20rem + 10vw);
   border-radius: 1rem 0rem 0rem 1rem;
 }
-.datos .experiencia .descripcion {
+body .datos .experiencia .descripcion {
   padding: 3rem;
   width: 100%;
   display: flex;
   flex-direction: column;
   height: 100%;
 }
-.datos .experiencia .titulo {
+body .datos .experiencia .titulo {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -102,7 +89,7 @@ a:visited {
   justify-content: end;
   margin-right: 3rem;
 }
-.datos .experiencia .titulo img {
+body .datos .experiencia .titulo img {
   height: 7rem;
   width: 7rem;
   margin-right: 1rem;
@@ -118,104 +105,99 @@ a:visited {
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
 }
-.datos .experiencia .titulo img:hover {
+body .datos .experiencia .titulo img:hover {
   -webkit-transform: scale(1.15);
   -moz-transform: scale(1.15);
   -ms-transform: scale(1.15);
   -o-transform: scale(1.15);
   transform: scale(1.15);
 }
-.datos .interes {
-  border: 0.1rem solid #00c6ee;
+body .datos .interes {
+  border: 0.1rem solid lightskyblue;
   width: 95vw;
   padding: 2rem;
   border-radius: 1rem;
   background-color: black;
 }
-.datos .interes p {
+body .datos .interes p {
   margin-top: 1.5rem;
 }
-.datos a:link {
+body .datos a:link {
   text-decoration: none;
   color: #00c6ee;
 }
-.datos a:visited {
+body .datos a:visited {
   color: #00c6ee;
 }
-.datos a:active {
+body .datos a:active {
   color: #00c6ee;
 }
-.datos a:hover {
+body .datos a:hover {
   color: #00c6ee;
 }
-
 @media only screen and (max-width: 700px) {
-  .titulo {
+  body .titulo {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
-  h1 {
+  body h1 {
     font-size: calc(1.5rem + 4vw);
     margin-top: 5rem;
-    color: #00c6ee;
+    color: lightskyblue;
   }
-
-  p {
+  body p {
     font-size: 1.5rem;
   }
-
-  a:visited {
+  body a:visited {
     color: black;
     font-family: arial;
     text-decoration: none;
   }
-
-  .datos {
+  body .datos {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  .datos .datosPersonales {
+  body .datos .datosPersonales {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #eeeeee;
     padding: 3rem;
-    border: 0.1rem solid #00c6ee;
+    border: 0.1rem solid lightskyblue;
     width: 85%;
     height: auto;
     overflow: hidden;
     border-radius: 1rem;
     background-color: black;
   }
-  .datos .datosPersonales h2 {
+  body .datos .datosPersonales h2 {
     color: #00c6ee;
   }
-  .datos .datosPersonales .dni {
+  body .datos .datosPersonales .dni {
     height: auto;
     width: 100%;
     border-radius: 1rem;
   }
-  .datos .datosPersonales .direccion {
+  body .datos .datosPersonales .direccion {
     display: flex;
     flex-direction: column;
   }
-  .datos .datosPersonales .direccion p {
+  body .datos .datosPersonales .direccion p {
     margin-top: 1.5rem;
   }
-  .datos .interes {
-    border: 0.1rem solid #00c6ee;
+  body .datos .interes {
+    border: 0.1rem solid lightskyblue;
     width: 85%;
     padding: 2rem;
     border-radius: 1rem;
     background-color: black;
   }
-  .datos .interes p {
+  body .datos .interes p {
     margin-top: 1.5rem;
   }
-  .datos .experiencia {
+  body .datos .experiencia {
     color: #eeeeee;
     display: flex;
     flex-direction: column;
@@ -226,32 +208,32 @@ a:visited {
     border-radius: 1rem;
     background-color: black;
   }
-  .datos .experiencia .logotipo {
+  body .datos .experiencia .logotipo {
     overflow: hidden;
     height: auto;
   }
-  .datos .experiencia .logotipo img {
+  body .datos .experiencia .logotipo img {
     width: 100%;
     border-radius: 0rem;
   }
-  .datos .experiencia .logotipo .corporativo {
+  body .datos .experiencia .logotipo .corporativo {
     height: 100%;
   }
-  .datos .experiencia .descripcion {
+  body .datos .experiencia .descripcion {
     padding: 3rem;
     width: 100%;
   }
-  .datos .experiencia a {
+  body .datos .experiencia a {
     color: #00c6ee;
     text-decoration: none;
   }
-  .datos .experiencia a:hover {
+  body .datos .experiencia a:hover {
     color: #00c6ee;
   }
-  .datos .experiencia .titulo {
+  body .datos .experiencia .titulo {
     padding: 2rem;
   }
-  .datos .experiencia .titulo img {
+  body .datos .experiencia .titulo img {
     height: 7vh;
     width: 7vh;
   }

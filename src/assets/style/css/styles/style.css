@@ -14,7 +14,7 @@
 .head {
   width: 100%;
   position: relative;
-  border-bottom: 0.05rem solid #00c6ee;
+  border-bottom: 0.05rem solid lightskyblue;
 }
 .head img {
   width: 100%;
@@ -33,6 +33,31 @@ body {
   background-color: #272727;
   font-family: Arial;
   font-size: 62.5%;
+}
+html .separador5,
+body .separador5 {
+  width: 100%;
+  height: 5rem;
+}
+html .separador4,
+body .separador4 {
+  width: 100%;
+  height: 1rem;
+}
+html .separador3,
+body .separador3 {
+  width: 100%;
+  height: 1rem;
+}
+html .separador2,
+body .separador2 {
+  width: 100%;
+  height: 1rem;
+}
+html .separador1,
+body .separador1 {
+  width: 100%;
+  height: 1rem;
 }
 html h1,
 body h1 {
@@ -93,7 +118,6 @@ body .primera {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 5%;
 }
 html .primera img,
 body .primera img {
@@ -102,7 +126,7 @@ body .primera img {
 html .fa-arrow-alt-circle-up,
 body .fa-arrow-alt-circle-up {
   z-index: 1000;
-  color: #00c6ee;
+  color: lightskyblue;
   font-size: 5rem;
   display: block;
   display: none;

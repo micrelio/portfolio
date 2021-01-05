@@ -32,6 +32,22 @@ body {
   background: {
     color: $gris;
   }
+  .separador5{
+    @include separador5;
+  }
+  .separador4{
+    @include separador4;
+  }
+  .separador3{
+    @include separador3;
+  }
+  .separador2{
+    @include separador2;
+  }
+  .separador1{
+    @include separador1;
+  }
+  
   font: {
     family: Arial;
     size: 62.5%;
@@ -90,7 +106,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 5%;
+   // padding: 5%;
     img {
       width: 50vh;
     }

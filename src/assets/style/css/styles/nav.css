@@ -4,7 +4,7 @@
 ------------------------------------------ */
 .social-media {
   padding: 0.1rem 1rem 0.1rem 1rem;
-  background-color: #00c6ee;
+  background-color: lightskyblue;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -209,6 +209,7 @@
 }
 
 .stick {
+  margin: 0rem 0rem 5rem 0rem;
   top: 0;
   width: 100%;
 }
@@ -232,7 +233,7 @@
   height: 100%;
   margin-left: calc(10px + 1vw);
   border-radius: 75%;
-  border: 0.05rem solid #00c6ee;
+  border: 0.05rem solid lightskyblue;
   width: calc(3vw + 3rem);
   box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
 }
@@ -257,7 +258,7 @@
   justify-content: center;
   cursor: pointer;
   margin: 0rem 0rem 0rem 0rem;
-  color: #00c6ee;
+  color: lightskyblue;
   padding: 1.6rem 0.5rem 1.6rem 0.5rem;
   font-size: 1.6rem;
   font-weight: bold;
@@ -292,12 +293,12 @@
 }
 .stick .nav .navbar .menu .links .mode .noche {
   display: none;
-  color: #00c6ee;
+  color: lightskyblue;
   font-size: 3rem;
 }
 .stick .nav .navbar .menu .links .mode .dia {
   display: block;
-  color: #00c6ee;
+  color: lightskyblue;
   font-size: 3rem;
 }
 .stick .nav .navbar .menu .links .brushEstilos {
@@ -313,11 +314,11 @@
   animation-duration: 2s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  color: #00c6ee;
+  color: lightskyblue;
   font-size: 3rem;
 }
 .stick .nav .navbar .menu .links .brushEstilos .selecEstilosPlegar {
-  color: #00c6ee;
+  color: lightskyblue;
   font-size: 3rem;
 }
 .stick .nav .navbar .menu .links .inicio:hover,
@@ -352,7 +353,7 @@
   }
 
   .movil {
-    border-bottom: 0.05rem solid #00c6ee;
+    border-bottom: 0.05rem solid lightskyblue;
     display: block;
     display: flex;
     flex-direction: column;
@@ -374,7 +375,7 @@
   .movil .imagenes .foto img {
     display: block;
     border-radius: 75%;
-    border: 3px double #00c6ee;
+    border: 3px double lightskyblue;
     width: calc(4vw + 5rem);
     box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
   }
@@ -402,12 +403,12 @@
   }
   .movil .desplegable .mode .noche {
     display: none;
-    color: #00c6ee;
+    color: lightskyblue;
     font-size: 5rem;
   }
   .movil .desplegable .mode .dia {
     display: block;
-    color: #00c6ee;
+    color: lightskyblue;
     font-size: 5rem;
   }
   .movil .desplegable .mode .selecEstilosDesplegar {
@@ -428,10 +429,10 @@
   .movil .desplegable .enlace {
     margin: 1rem;
     border: 0;
-    color: #00c6ee;
+    color: lightskyblue;
     cursor: pointer;
     font-size: 3rem;
-    font-color: #00c6ee;
+    font-color: lightskyblue;
   }
   .movil .desplegable .mnav-link {
     display: block;

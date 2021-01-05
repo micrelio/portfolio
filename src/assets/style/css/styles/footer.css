@@ -1,16 +1,17 @@
 @charset "UTF-8";
 * {
-  margin: 0;
+  margin: 0rem 0rem 0rem 0rem;
   padding: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 * footer {
+  margin: 5rem 0rem 0rem 0rem;
   display: inline-block;
   bottom: 0;
   width: 100%;
-  border-top: 0.1rem solid #00c6ee;
+  border-top: 0.1rem solid lightskyblue;
   background-color: black;
 }
 * footer .footerContainer {
@@ -109,7 +110,7 @@
   display: flex;
   width: 100%;
   background: #000;
-  border-top: 0.1rem solid #00c6ee;
+  border-top: 0.1rem solid lightskyblue;
 }
 * footer .redes .propiedad {
   width: 100%;
@@ -133,7 +134,7 @@
   width: 100%;
   color: #fff;
   padding: 2rem;
-  border-bottom: 0.1rem solid #00c6ee;
+  border-bottom: 0.1rem solid lightskyblue;
 }
 * footer .redes .politicas {
   display: flex;
@@ -159,7 +160,7 @@
 footer .footerContainer .direccion h2,
 footer .footerContainer .paginas h2 {
     font-size: 4rem;
-    color: #00c6ee;
+    color: lightskyblue;
     margin-bottom: 1.5rem;
   }
   footer .footerContainer .contacto p,

@@ -2,7 +2,7 @@
 .head {
   width: 100%;
   position: relative;
-  border-bottom: 0.05rem solid #00c6ee;
+  border-bottom: 0.05rem solid lightskyblue;
 }
 .head img {
   width: 100%;
@@ -26,7 +26,7 @@ body .felicitacion #anio {
 html .felicitacion img,
 body .felicitacion img {
   width: 20rem;
-  margin: -2rem 0rem -2rem 0rem;
+  margin: -7rem 0rem -3rem 0rem;
 }
 html .fiestas,
 body .fiestas {
