@@ -19,11 +19,14 @@
     }
   }
 }
-
-/*------------------------
-          menu
-          ---------------*/
+/* ------------------------------------------
+         menu
+------------------------------------------ */
+.movil {
+}
 .stick {
+  background: {
+  }
   .nav {
     background: {
       color: rgba(0, 0, 0, 0.5);
@@ -31,55 +34,55 @@
     .navbar {
       .foto {
         img {
+          // border: 0.05rem solid $corporativo;
+          //box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
         }
       }
       .menu {
         .links {
           .enlace {
-            color: $corporativo;
           }
           .mode {
             .noche {
               display: block;
-              //   color: $corporativo;
             }
             .dia {
               display: none;
-              //        color: $corporativo;
             }
           }
           .brushEstilos {
             .selecEstilosDesplegar {
-              // @include estilos;
-              // color: $corporativo;
             }
             .selecEstilosPlegar {
-              // color: $corporativo;
-              //   animation-name: none;
             }
           }
-        }
-        .inicio:hover,
-        .conoceme:hover,
-        .webs:hover,
-        .gal:hover,
-        .videos:hover,
-        .curriculum:hover,
-        .contacto:hover,
-        .inicio:focus,
-        .conoceme:focus,
-        .webs:focus,
-        .gal:focus,
-        .videos:focus,
-        .curriculum:focus,
-        .contacto:focus {
-          background-color: rgba(78, 78, 32, 0.582);
+          .inicio:hover,
+          .conoceme:hover,
+          .webs:hover,
+          .gal:hover,
+          .videos:hover,
+          .curriculum:hover,
+          .contacto:hover,
+          .inicio:focus,
+          .conoceme:focus,
+          .webs:focus,
+          .gal:focus,
+          .videos:focus,
+          .curriculum:focus,
+          .contacto:focus {
+            // background-color: rgba(78, 78, 32, 0.582);
+          }
         }
       }
     }
   }
+  .movil img {
+  }
+  .mnav-link {
+  }
+  .desplegable {
+  }
 }
-
 /*-----------------
  menu responsive
  ------------*/

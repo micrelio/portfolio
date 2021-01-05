@@ -10,14 +10,11 @@
   display: none;
 }
 
-/*------------------------
-          menu
-          ---------------*/
+/* ------------------------------------------
+         menu
+------------------------------------------ */
 .stick .nav {
   background-color: rgba(0, 0, 0, 0.5);
-}
-.stick .nav .navbar .menu .links .enlace {
-  color: lightskyblue;
 }
 .stick .nav .navbar .menu .links .mode .noche {
   display: block;
@@ -25,23 +22,6 @@
 .stick .nav .navbar .menu .links .mode .dia {
   display: none;
 }
-.stick .nav .navbar .menu .inicio:hover,
-.stick .nav .navbar .menu .conoceme:hover,
-.stick .nav .navbar .menu .webs:hover,
-.stick .nav .navbar .menu .gal:hover,
-.stick .nav .navbar .menu .videos:hover,
-.stick .nav .navbar .menu .curriculum:hover,
-.stick .nav .navbar .menu .contacto:hover,
-.stick .nav .navbar .menu .inicio:focus,
-.stick .nav .navbar .menu .conoceme:focus,
-.stick .nav .navbar .menu .webs:focus,
-.stick .nav .navbar .menu .gal:focus,
-.stick .nav .navbar .menu .videos:focus,
-.stick .nav .navbar .menu .curriculum:focus,
-.stick .nav .navbar .menu .contacto:focus {
-  background-color: rgba(78, 78, 32, 0.582);
-}
-
 /*-----------------
  menu responsive
  ------------*/

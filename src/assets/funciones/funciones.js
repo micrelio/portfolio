@@ -55,6 +55,15 @@
 //       break;
 //   }
 // }
+function resetEstilos() {
+  document.getElementById("nav").style = "background-color:#";
+  document.getElementById("footer").style = "background-color:#";
+  document.getElementById("color").href =
+  "/src/assets/style/css/styles/colores/style.css";
+  modoNoche();
+  fecha('stop');
+
+}
 function colorMenu(color) {
   console.log("nav");
   switch (color) {

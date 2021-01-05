@@ -51,7 +51,7 @@ class miCurriculum extends HTMLElement {
             <p>Cert. profesionalidad “Operaciones básicas montaje y mantenimiento de instalaciones de energías renovables” (540 h).  <a href="https://ocupacio.quartdepoblet.es/index.php/es/formacio"target="_blank">CED Quart de Poblet</a>.</p>
         </div>
         <div class="titulo">
-        <!--     <a href="/src/assets/images/titulos/" target="_blank"><img alt="" src="/src/assets/images/icons/titulo.png"></a> -->
+        <!--     <a href="/src/assets/images/titulos/" target="_blank"><img alt="" src="/src/assets/images/icons/titulo2.png"></a> -->
         </div>
     </div>
     <div class="separador5">
@@ -65,7 +65,7 @@ class miCurriculum extends HTMLElement {
             <p>BootCamp fullstack developer, en <a href="https://geekshubs.com/" target="_blank">GeeksHubs</a> Valencia (Valencia).</p>
         </div>
         <div class="titulo">
-                <a href="/src/assets/images/titulos/GreeksHubs.jpg" target="_blank"><img alt="" src="/src/assets/images/icons/titulo.png"></a>
+                <a href="/src/assets/images/titulos/GreeksHubs.jpg" target="_blank"><img alt="" src="/src/assets/images/icons/titulo2.png"></a>
         </div>
     </div>
     <div class="separador5">
@@ -79,7 +79,7 @@ class miCurriculum extends HTMLElement {
             <p>Grado superior ASIR (administración de sistemas informáticos en red) <a href="https://www.tobalcaide.com/" target="_blank"> Academia Tobalcaide </a>, Quart de Poblet (Valencia).</p>
         </div>
         <div class="titulo">
-            <a href="/src/assets/images/titulos/ASIR.jpg" target="_blank"><img alt="" src="/src/assets/images/icons/titulo.png"></a>
+            <a href="/src/assets/images/titulos/ASIR.jpg" target="_blank"><img alt="" src="/src/assets/images/icons/titulo2.png"></a>
         </div>
     </div>
     <div class="separador5">
@@ -93,7 +93,7 @@ class miCurriculum extends HTMLElement {
             <p>Curso de inglés: <a href="http://mestreacasa.gva.es/web/iesrodrigobotet" target="_blank">IES Rodrigo Botet</a>, instituto Manises (Valencia).</p>
         </div>  
         <div class="titulo">
-            <a href="/src/assets/images/titulos/ingles.jpg" target="_blank"><img alt="" src="/src/assets/images/icons/titulo.png"></a>
+            <a href="/src/assets/images/titulos/ingles.jpg" target="_blank"><img alt="" src="/src/assets/images/icons/titulo2.png"></a>
         </div>
     </div>
     <div class="separador5">
@@ -107,7 +107,7 @@ class miCurriculum extends HTMLElement {
             <p>Grado superior de Control y regulación de sistemas autocontrolados: <a href="http://iessalvadorgadea.edu.gva.es/web/" target="_blank"> IES Salvador Gadea</a>, Aldaya (Valencia).</p>
         </div>
         <div class="titulo">
-            <a href="/src/assets/images/titulos/automatismos.jpg" target="_blank"><img alt="" src="/src/assets/images/icons/titulo.png"></a>
+            <a href="/src/assets/images/titulos/automatismos.jpg" target="_blank"><img alt="" src="/src/assets/images/icons/titulo2.png"></a>
         </div>
     </div>
     <div class="separador5">
@@ -121,7 +121,7 @@ class miCurriculum extends HTMLElement {
             <p> Curso de trabajos en alta tensión en <a href="https://www.coversa.com/" target="_blank"> COVER </a>, Manises (Valencia).</p>
         </div>
         <div class="titulo">
-            <a href="/src/assets/images/titulos/Cover.jpg" target="_blank"><img alt="" src="/src/assets/images/icons/titulo.png"></a>
+            <a href="/src/assets/images/titulos/Cover.jpg" target="_blank"><img alt="" src="/src/assets/images/icons/titulo2.png"></a>
         </div>
     </div>
     <div class="separador5">
@@ -135,7 +135,7 @@ class miCurriculum extends HTMLElement {
             <p> Grado medio Electricidad: <a href="http://institutofaitanar.edu.gva.es/" target="_blank"> IES Faitanar </a>, Quart de Poblet (Valencia).</p>
         </div>
         <div class="titulo">
-            <a href="/src/assets/images/titulos/electricidad.jpg" target="_blank"><img alt="" src="/src/assets/images/icons/titulo.png"></a>
+            <a href="/src/assets/images/titulos/electricidad.jpg" target="_blank"><img alt="" src="/src/assets/images/icons/titulo2.png"></a>
         </div>
     </div>
     <div class="separador5">

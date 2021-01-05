@@ -20,19 +20,20 @@ class miNav extends HTMLElement {
 
 
 <div id="botonesEstilo" class="botonesEstilo">
-<div class="desplazable">
-  <div>  
-    <p><strong>reset</strong></p>
-    <hr>
-    
-    <p id="noche" class="noche bx bxs-moon" onclick="fecha('stop');"></p>
-  </div>
-  <br>
+  <div class="desplazable">
+    <div>  
+      <p><strong>Reset estilos</strong></p>
+      <hr>
+      <div class="reset"> 
+        <p id="reset" class="reset bx bx-reset" onclick="resetEstilos();"></p>
+      </div> 
+    </div>
+    <br>
     <div class="filasFiesta">
         <p><strong>Festivos</strong></p>
         <hr>
         <div class="selecFiesta">
-            <img class="festivos" id="festivos" onclick="fecha('stop');" src="/src/assets/images/icons/stop.png" />
+            <img class="festivos" id="festivos" onclick="fecha('stop');" src="/src/assets/images/icons/stop2.png" />
             <img class="festivos" id="festivos" onclick="fecha('reyes');" src="/src/assets/images/icons/estrellaNavidad.png" />
             <img class="festivos" id="festivos" onclick="fecha('sanValentin');" src="/src/assets/images/icons/corazon.png" />
             <img class="festivos" id="festivos" onclick="fecha('pascua');" src="/src/assets/images/icons/huevo.png" />
@@ -101,7 +102,7 @@ class miNav extends HTMLElement {
       <div class="slidecontainer">
         <span class="valBox" id="valBox">0%</span>
         <br>
-        <input type="range"  min="0" max="100" value="0" step="10" class="slider" id="myRange" onchange="showVal(this.value)">
+        <input type="range"  min="0" max="50" value="0" step="10" class="slider" id="myRange" onchange="mostrarValor(this.value)">
       </div>
     </div>
     <br>
@@ -130,16 +131,6 @@ class miNav extends HTMLElement {
         </div>
     </div>
     <br>
-    <div class="opacidad">
-    <p><strong>Opacidad menú</strong></p>
-    <hr>
-    <br>
-    <div class="slidecontainer">
-      <span class="valBox" id="valBox">0%</span>
-      <br>
-      <input type="range"  min="0" max="100" value="0" step="10" class="slider" id="myRange" onchange="showVal(this.value)">
-    </div>
-    </div>
     <div class="selecModo">
         <p><strong>Modo</strong></p>
         <hr>
@@ -278,9 +269,9 @@ function navegar(id) {
 }
 
 //funcion transparencia
-function showVal(opacidadMenu) {
+function mostrarValor(opacidadMenu) {
   console.log(opacidadMenu);
-  document.getElementById("valBox").innerHTML = opacidadMenu + "%";
+  document.getElementById("valBox").innerHTML = opacidadMenu*2 + "%";
   switch (opacidadMenu) {
     case "0":
       document.getElementById("stick").style = "opacity:";
