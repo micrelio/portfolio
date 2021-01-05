@@ -124,16 +124,6 @@ body .datos .interes p {
 }
 body .datos a:link {
   text-decoration: none;
-  color: #00c6ee;
-}
-body .datos a:visited {
-  color: #00c6ee;
-}
-body .datos a:active {
-  color: #00c6ee;
-}
-body .datos a:hover {
-  color: #00c6ee;
 }
 @media only screen and (max-width: 700px) {
   body .titulo {
