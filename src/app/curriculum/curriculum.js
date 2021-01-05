@@ -102,8 +102,6 @@ class miCurriculum extends HTMLElement {
         <div class="logotipo">
             <a href="http://iessalvadorgadea.edu.gva.es/web/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/salvadorGadea.jpg"></a>
         </div>
-        <div class="separador5">
-        </div>
         <div class="descripcion">
             <p  class="año">2008</p><br>
             <p>Grado superior de Control y regulación de sistemas autocontrolados: <a href="http://iessalvadorgadea.edu.gva.es/web/" target="_blank"> IES Salvador Gadea</a>, Aldaya (Valencia).</p>
@@ -304,7 +302,7 @@ class miCurriculum extends HTMLElement {
             <img id="" class="corporativo" src="/src/assets/images/logoEmpresa/electricidad.jpg">
         </div>
         <div class="descripcion">
-            <p class="año">T<strong>abajos como electricista</strong></p><br>
+            <p class="año"><strong>Tabajos como electricista</strong></p><br>
             <p>Instalador electricista en diversas empresas y de forma privada.</p>
          </div>
     </div>

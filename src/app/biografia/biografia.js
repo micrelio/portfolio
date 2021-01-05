@@ -7,6 +7,8 @@ class miBiografia extends HTMLElement {
     <section class="biografia">
     <h1> José Antonio López Baena (Micro)
     </h1>
+    <div class="separador3">
+    </div>
     <hr>
     <div class="contenido">
         <div class="historia">

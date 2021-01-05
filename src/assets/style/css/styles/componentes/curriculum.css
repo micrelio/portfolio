@@ -1,26 +1,29 @@
 @charset "UTF-8";
 /* hovers*/
-body .descripcion {
+.descripcion {
   display: flex;
   justify-content: center;
 }
-body .descripcion .año {
-  color: #00c6ee;
+.descripcion .año {
+  color: blanchedalmond;
 }
-body .descripcion h1 {
+.descripcion h1 {
   font-size: calc(3rem + 1vw);
-  color: lightskyblue;
 }
-body p {
+
+p {
   font-size: 1.5rem;
   font-size: calc(1rem + 1vw);
+  color: blanchedalmond;
 }
-body a:visited {
+
+a:visited {
   color: lightskyblue;
   font-family: arial;
   text-decoration: none;
 }
-body .datos {
+
+.datos {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -28,7 +31,7 @@ body .datos {
   justify-content: center;
   width: 100%;
 }
-body .datos .datosPersonales {
+.datos .datosPersonales {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -39,27 +42,27 @@ body .datos .datosPersonales {
   border-radius: 1rem;
   background-color: #000;
 }
-body .datos .datosPersonales h2 {
+.datos .datosPersonales h2 {
   color: lightskyblue;
 }
-body .datos .datosPersonales .foto .dni {
+.datos .datosPersonales .foto .dni {
   width: calc(20rem + 10vw);
   border-radius: 0.5rem;
 }
-body .datos .datosPersonales .direccion {
+.datos .datosPersonales .direccion {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 3rem;
 }
-body .datos .datosPersonales .direccion p {
+.datos .datosPersonales .direccion p {
   margin-top: 1.5rem;
 }
-body .datos .datosPersonales .direccion .fa {
+.datos .datosPersonales .direccion .fa {
   color: red;
 }
-body .datos .experiencia {
+.datos .experiencia {
   color: #eeeeee;
   overflow: hidden;
   display: flex;
@@ -70,18 +73,18 @@ body .datos .experiencia {
   background-color: black;
   border-radius: 1rem;
 }
-body .datos .experiencia .logotipo img {
+.datos .experiencia .logotipo img {
   width: calc(20rem + 10vw);
   border-radius: 1rem 0rem 0rem 1rem;
 }
-body .datos .experiencia .descripcion {
+.datos .experiencia .descripcion {
   padding: 3rem;
   width: 100%;
   display: flex;
   flex-direction: column;
   height: 100%;
 }
-body .datos .experiencia .titulo {
+.datos .experiencia .titulo {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -89,7 +92,7 @@ body .datos .experiencia .titulo {
   justify-content: end;
   margin-right: 3rem;
 }
-body .datos .experiencia .titulo img {
+.datos .experiencia .titulo img {
   height: 7rem;
   width: 7rem;
   margin-right: 1rem;
@@ -105,51 +108,55 @@ body .datos .experiencia .titulo img {
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
 }
-body .datos .experiencia .titulo img:hover {
+.datos .experiencia .titulo img:hover {
   -webkit-transform: scale(1.15);
   -moz-transform: scale(1.15);
   -ms-transform: scale(1.15);
   -o-transform: scale(1.15);
   transform: scale(1.15);
 }
-body .datos .interes {
+.datos .interes {
   border: 0.1rem solid lightskyblue;
   width: 95vw;
   padding: 2rem;
   border-radius: 1rem;
   background-color: black;
 }
-body .datos .interes p {
+.datos .interes p {
   margin-top: 1.5rem;
 }
-body .datos a:link {
+.datos a:link {
   text-decoration: none;
 }
 @media only screen and (max-width: 700px) {
-  body .titulo {
+  .titulo {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  body h1 {
+
+  h1 {
     font-size: calc(1.5rem + 4vw);
     margin-top: 5rem;
     color: lightskyblue;
   }
-  body p {
+
+  p {
     font-size: 1.5rem;
   }
-  body a:visited {
+
+  a:visited {
     color: black;
     font-family: arial;
     text-decoration: none;
   }
-  body .datos {
+
+  .datos {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  body .datos .datosPersonales {
+  .datos .datosPersonales {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -162,32 +169,32 @@ body .datos a:link {
     border-radius: 1rem;
     background-color: black;
   }
-  body .datos .datosPersonales h2 {
+  .datos .datosPersonales h2 {
     color: #00c6ee;
   }
-  body .datos .datosPersonales .dni {
+  .datos .datosPersonales .dni {
     height: auto;
     width: 100%;
     border-radius: 1rem;
   }
-  body .datos .datosPersonales .direccion {
+  .datos .datosPersonales .direccion {
     display: flex;
     flex-direction: column;
   }
-  body .datos .datosPersonales .direccion p {
+  .datos .datosPersonales .direccion p {
     margin-top: 1.5rem;
   }
-  body .datos .interes {
+  .datos .interes {
     border: 0.1rem solid lightskyblue;
     width: 85%;
     padding: 2rem;
     border-radius: 1rem;
     background-color: black;
   }
-  body .datos .interes p {
+  .datos .interes p {
     margin-top: 1.5rem;
   }
-  body .datos .experiencia {
+  .datos .experiencia {
     color: #eeeeee;
     display: flex;
     flex-direction: column;
@@ -198,32 +205,32 @@ body .datos a:link {
     border-radius: 1rem;
     background-color: black;
   }
-  body .datos .experiencia .logotipo {
+  .datos .experiencia .logotipo {
     overflow: hidden;
     height: auto;
   }
-  body .datos .experiencia .logotipo img {
+  .datos .experiencia .logotipo img {
     width: 100%;
     border-radius: 0rem;
   }
-  body .datos .experiencia .logotipo .corporativo {
+  .datos .experiencia .logotipo .corporativo {
     height: 100%;
   }
-  body .datos .experiencia .descripcion {
+  .datos .experiencia .descripcion {
     padding: 3rem;
     width: 100%;
   }
-  body .datos .experiencia a {
+  .datos .experiencia a {
     color: #00c6ee;
     text-decoration: none;
   }
-  body .datos .experiencia a:hover {
+  .datos .experiencia a:hover {
     color: #00c6ee;
   }
-  body .datos .experiencia .titulo {
+  .datos .experiencia .titulo {
     padding: 2rem;
   }
-  body .datos .experiencia .titulo img {
+  .datos .experiencia .titulo img {
     height: 7vh;
     width: 7vh;
   }

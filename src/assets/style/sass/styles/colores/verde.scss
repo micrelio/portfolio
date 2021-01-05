@@ -264,16 +264,16 @@ body {
 }
 .datos {
   .datosPersonales {
-    border-color: $verde;
+    border: 0.2rem solid $verde;
     h2 {
       color: $verde;
     }
   }
   .experiencia {
-    border-color: $verde;
+    border: 0.2rem solid $verde;
   }
   .interes {
-    border-color: $verde;
+    border: 0.1rem solid $verde;
   }
 }
 //------------------------\\

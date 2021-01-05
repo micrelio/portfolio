@@ -261,16 +261,16 @@ body {
 }
 .datos {
   .datosPersonales {
-    border-color: $rojo;
-    h2 {
+    border: 0.2rem solid $rojo;
+   h2 {
       color: $rojo;
     }
   }
   .experiencia {
-    border-color: $rojo;
+    border: 0.2rem solid $rojo;
   }
   .interes {
-    border-color: solid $rojo;
+    border: 0.2rem solid $rojo;
   }
 }
 //------------------------\\

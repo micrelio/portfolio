@@ -139,16 +139,16 @@ body .fiestas .stop:hover {
 }
 
 .datos .datosPersonales {
-  border-color: #008f39;
+  border: 0.2rem solid #008f39;
 }
 .datos .datosPersonales h2 {
   color: #008f39;
 }
 .datos .experiencia {
-  border-color: #008f39;
+  border: 0.2rem solid #008f39;
 }
 .datos .interes {
-  border-color: #008f39;
+  border: 0.1rem solid #008f39;
 }
 
 @media screen and (max-width: 650px) {

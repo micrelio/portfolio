@@ -101,7 +101,7 @@ body {
             background: {
             }
             .mode {
-             .noche {
+              .noche {
                 display: none;
                 color: $rosa;
                 font-size: 3rem;
@@ -294,16 +294,16 @@ body {
 }
 .datos {
   .datosPersonales {
-    border-color: $rosa;
+    border: 0.2rem solid $rosa;
     h2 {
       color: $rosa;
     }
   }
   .experiencia {
-    border-color: $rosa;
+    border: 0.2rem solid $rosa;
   }
   .interes {
-    border-color: $rosa;
+    border: 0.2rem solid $rosa;
   }
 }
 //------------------------\\
