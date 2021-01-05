@@ -66,7 +66,7 @@
 .biografia .contenido .biografiaCurriculum .curriculum .datosGenerales {
   display: grid;
   grid-template-columns: [x0] 0.75fr [x1] 1.25fr [x2];
-  grid-template-rows: [y0] 0.5fr [y1] 0.5fr [y2] 0.5fr [y3] 0.5fr [y4] 0.5fr [y5] 0.5fr [y6] 0.5fr [y7] 0.5fr [y8];
+  grid-template-rows: [y0] 0.5fr [y1] 0.5fr [y2] 0.5fr [y3] 0.5fr [y4] 0.5fr [y5] 0.5fr [y6] 0.5fr [y7] 0.5fr [y8] 0.5fr [y9] 0.5fr [y10] 0.5fr [y11] 0.5fr [y12] 0.5fr [y13];
   grid-column-gap: 0.5rem;
   grid-row-gap: 0.5rem;
 }
@@ -140,13 +140,26 @@
   grid-column: x1/x2;
   grid-row: y7/y8;
 }
+.biografia .contenido .biografiaCurriculum .curriculum .datosGenerales .infoProfesional {
+  grid-column: x0/x2;
+  grid-row: y8/y9;
+  background-color: lightskyblue;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 
 @media only screen and (max-width: 800px) {
+  .biografia {
+    padding: 0rem 2rem 0rem 2rem;
+  }
   .biografia .contenido {
     flex-direction: column-reverse;
   }
   .biografia .contenido .historia {
-    padding: 3rem 0rem 3rem 0rem;
+    margin: 2rem 0rem 0rem 0rem;
     width: 100%;
   }
   .biografia .contenido .biografiaCurriculum {
@@ -157,108 +170,6 @@
   }
   .biografia .contenido .biografiaCurriculum .curriculum p {
     font-size: 1.2rem;
-  }
-  .biografia .contenido .biografiaCurriculum .curriculum .experiencia {
-    margin: 1rem 0rem 0rem 0rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .biografia .contenido .biografiaCurriculum .curriculum .experiencia .logoEx {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background-color: lightskyblue;
-    width: 100%;
-  }
-  .biografia .contenido .biografiaCurriculum .curriculum .experiencia .logoEx a {
-    width: 15%;
-  }
-  .biografia .contenido .biografiaCurriculum .curriculum .experiencia .descripcion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem;
-    display: grid;
-  }
-  .biografia .contenido .biografiaCurriculum .curriculum .datosGenerales {
-    display: grid;
-    grid-template-columns: [x0] 0.75fr [x1] 1.25fr [x2];
-    grid-template-rows: [y0] 0.5fr [y1] 0.5fr [y2] 0.5fr [y3] 0.5fr [y4] 0.5fr [y5] 0.5fr [y6] 0.5fr [y7] 0.5fr [y8];
-    grid-column-gap: 0.5rem;
-    grid-row-gap: 0.5rem;
-  }
-  .biografia .contenido .biografiaCurriculum .curriculum .datosGenerales p {
-    color: black;
-    font-size: 1.2rem;
-  }
-  .biografia .contenido .biografiaCurriculum .curriculum .datosGenerales .infoPersonal {
-    grid-column: x0/x2;
-    grid-row: y0/y1;
-    background-color: lightskyblue;
-    padding: 0.5rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  .biografia .contenido .biografiaCurriculum .curriculum .datosGenerales .tituloNombre {
-    grid-column: x0/x1;
-    grid-row: y1/y2;
-  }
-  .biografia .contenido .biografiaCurriculum .curriculum .datosGenerales .nombre {
-    grid-column: x1/x2;
-    grid-row: y1/y2;
-  }
-  .biografia .contenido .biografiaCurriculum .curriculum .datosGenerales .tituloNacimiento {
-    grid-column: x0/x1;
-    grid-row: y2/y3;
-  }
-  .biografia .contenido .biografiaCurriculum .curriculum .datosGenerales .nacimiento {
-    grid-column: x1/x2;
-    grid-row: y2/y3;
-  }
-  .biografia .contenido .biografiaCurriculum .curriculum .datosGenerales .tituloResidencia {
-    grid-column: x0/x1;
-    grid-row: y3/y4;
-  }
-  .biografia .contenido .biografiaCurriculum .curriculum .datosGenerales .residencia {
-    grid-column: x1/x2;
-    grid-row: y3/y4;
-  }
-  .biografia .contenido .biografiaCurriculum .curriculum .datosGenerales .tituloNacionalidad {
-    grid-column: x0/x1;
-    grid-row: y4/y5;
-  }
-  .biografia .contenido .biografiaCurriculum .curriculum .datosGenerales .nacionalidad {
-    grid-column: x1/x2;
-    grid-row: y4/y5;
-  }
-  .biografia .contenido .biografiaCurriculum .curriculum .datosGenerales .tituloReligion {
-    grid-column: x0/x1;
-    grid-row: y5/y6;
-  }
-  .biografia .contenido .biografiaCurriculum .curriculum .datosGenerales .religion {
-    grid-column: x1/x2;
-    grid-row: y5/y6;
-  }
-  .biografia .contenido .biografiaCurriculum .curriculum .datosGenerales .tituloPolitica {
-    grid-column: x0/x1;
-    grid-row: y6/y7;
-  }
-  .biografia .contenido .biografiaCurriculum .curriculum .datosGenerales .politica {
-    grid-column: x1/x2;
-    grid-row: y6/y7;
-  }
-  .biografia .contenido .biografiaCurriculum .curriculum .datosGenerales .tituloAfiliaciones {
-    grid-column: x0/x1;
-    grid-row: y7/y8;
-  }
-  .biografia .contenido .biografiaCurriculum .curriculum .datosGenerales .afiliaciones {
-    grid-column: x1/x2;
-    grid-row: y7/y8;
   }
 }
 

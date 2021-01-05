@@ -49,7 +49,34 @@ body .fiestas .stop:hover {
 }
 .stick .nav .navbar .menu .links .enlace {
   color: #ff0080;
-  border-color: #ff0080;
+}
+.stick .nav .navbar .menu .links .enlace .mode .noche {
+  display: none;
+  color: #ff0080;
+  font-size: 3rem;
+}
+.stick .nav .navbar .menu .links .enlace .mode .dia {
+  display: block;
+  color: #ff0080;
+  font-size: 3rem;
+}
+.stick .nav .navbar .menu .links .enlace .brushEstilos {
+  grid-column: x7/x8;
+  grid-row: y0/y1;
+}
+.stick .nav .navbar .menu .links .enlace .brushEstilos .selecEstilosDesplegar {
+  border: none;
+  background-color: transparent;
+  font-size: 4rem;
+  margin: 0;
+  animation-name: parpadeo;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  font-size: 3rem;
+}
+.stick .nav .navbar .menu .links .enlace .brushEstilos .selecEstilosPlegar {
+  font-size: 3rem;
 }
 .stick .nav .navbar .mode .noche {
   color: #ff0080;

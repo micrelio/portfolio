@@ -7,29 +7,8 @@
   background-color: #00c6ee;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-}
-.social-media .selecEstilos {
-  border: none;
-  background-color: transparent;
-  font-size: 2.4rem;
-  margin: 0;
-  animation-name: parpadeo;
-  animation-duration: 2s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-.social-media .selecEstilosCerrar {
-  animation-name: none;
-}
-.social-media .modo {
-  border: none;
-  background: transparent;
-  font-size: 2.4rem;
-}
-.social-media .botonesEstilo a:hover {
-  background-color: white;
 }
 .social-media .social-links {
   display: flex;
@@ -257,27 +236,6 @@
   width: calc(3vw + 3rem);
   box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
 }
-.stick .nav .navbar .mode {
-  margin: 0rem 1rem 0rem 0rem;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-  align-items: center;
-}
-.stick .nav .navbar .mode .noche {
-  display: none;
-  color: #00c6ee;
-  font-size: 3rem;
-}
-.stick .nav .navbar .mode .dia {
-  display: block;
-  color: #00c6ee;
-  font-size: 3rem;
-}
-.stick .nav .navbar .mode img {
-  position: absolute;
-  width: calc(0.1rem + 3vw);
-}
 .stick .nav .navbar .menu {
   padding: 3rem 0 3rem 0;
   display: flex;
@@ -288,7 +246,7 @@
 }
 .stick .nav .navbar .menu .links {
   display: grid;
-  grid-template-columns: [x0] 0.1fr [x1] 0.1fr [x2] 0.1fr [x3] 0.1fr [x4] 0.1fr [x5] 0.1fr [x6] 0.1fr [x7];
+  grid-template-columns: [x0] 0.1fr [x1] 0.1fr [x2] 0.1fr [x3] 0.1fr [x4] 0.1fr [x5] 0.1fr [x6] 0.1fr [x7] 0.1fr [x8];
   grid-template-rows: [y0] 1fr [y1];
   grid-column-gap: 0rem;
   grid-row-gap: 1rem;
@@ -308,7 +266,7 @@
   grid-column: x0/x1;
   grid-row: y0/y1;
 }
-.stick .nav .navbar .menu .links .conoceme {
+.stick .nav .navbar .menu .links .biografia {
   grid-column: x1/x2;
   grid-row: y0/y1;
 }
@@ -331,6 +289,36 @@
 .stick .nav .navbar .menu .links .mode {
   grid-column: x6/x7;
   grid-row: y0/y1;
+}
+.stick .nav .navbar .menu .links .mode .noche {
+  display: none;
+  color: #00c6ee;
+  font-size: 3rem;
+}
+.stick .nav .navbar .menu .links .mode .dia {
+  display: block;
+  color: #00c6ee;
+  font-size: 3rem;
+}
+.stick .nav .navbar .menu .links .brushEstilos {
+  grid-column: x7/x8;
+  grid-row: y0/y1;
+}
+.stick .nav .navbar .menu .links .brushEstilos .selecEstilosDesplegar {
+  border: none;
+  background-color: transparent;
+  font-size: 4rem;
+  margin: 0;
+  animation-name: parpadeo;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  color: #00c6ee;
+  font-size: 3rem;
+}
+.stick .nav .navbar .menu .links .brushEstilos .selecEstilosPlegar {
+  color: #00c6ee;
+  font-size: 3rem;
 }
 .stick .nav .navbar .menu .links .inicio:hover,
 .stick .nav .navbar .menu .links .conoceme:hover,
@@ -422,6 +410,17 @@
     display: block;
     color: #00c6ee;
     font-size: 5rem;
+  }
+  .movil .desplegable .mode .selecEstilosDesplegar {
+    border: none;
+    background-color: transparent;
+    font-size: 4rem;
+    margin: 0;
+    animation-name: parpadeo;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    font-size: 3rem;
   }
   .movil .desplegable .mode img {
     position: absolute;

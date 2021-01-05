@@ -6,7 +6,6 @@ class miBiografia extends HTMLElement {
     this.innerHTML = `
     <section class="biografia">
     <h1> José Antonio López Baena (Micro)
-        
     </h1>
     <hr>
     <div class="contenido">
@@ -166,14 +165,52 @@ class miBiografia extends HTMLElement {
             <div class="afiliaciones">
                 <p>Sin intereses</p>
             </div>
+
+            <div class="infoProfesional">
+                <p><strong>Información profesional</strong></p>
+            </div>
+            <div class="tituloOcupacion">
+                <p><strong>Ocupación</strong></p>
+            </div>
+            <div class="ocupacion">
+                <p>politólogo, político, profesor titular interino, presentador</p>
+            </div>
+            <div class="tituloSalario">
+                <p><strong>Salario</strong></p>
+            </div>
+            <div class="salario">
+                <p>0 euros anuales</p>
+            </div>
+            <div class="tituloAñosActivo">
+              <p><strong>Años activo</strong></p>
+            </div>
+            <div class="añosActivo">
+                <p>desde 1992</p>
+            </div>
+            <div class="tituloEmpleador">
+              <p><strong>Empleador</strong></p>
+            </div>
+            <div class="empleador">
+                <p>-</p>
+            </div>
+            <div class="tituloFirma">
+              <p><strong>Firma</strong></p>
+            </div>
+            <div class="firma">
+                <p>-</p>
+            </div>
+            <div class="tituloWeb">
+              <p><strong>Sitio web</strong></p>
+            </div>
+            <div class="sitioWeb">
+                <p> <a class="visitar" target="blank" href="https://microdeveloper.es/">microdeveloper.es</p>
+            </div>
+
           </div>
 
       <!--
-      Información profesional
-Ocupación	politólogo, político, profesor titular interino, presentador
-Salario	79,746,24 euros anuales
-Años activo	desde 1992
-Empleador	Universidad Complutense de Madrid
+
+	
 Distinciones	
 Premio Extraordinario de Fin de Carrera (2004)
 Firma	Pablo Iglesias Turrión signature.svg
@@ -184,7 +221,7 @@ pabloiglesias.org
 
         </div><!-- curriculum-->
 
-    </div>/<!-- biografiaCurriculum-->
+    </div><!-- biografiaCurriculum-->
 </section>
      `;
   }

@@ -13,44 +13,33 @@
 /*------------------------
           menu
           ---------------*/
-.stick {
-  top: 0;
-  width: 100%;
-}
 .stick .nav {
-  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
   background-color: rgba(0, 0, 0, 0.5);
 }
-.stick .nav .navbar {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-around;
+.stick .nav .navbar .menu .links .enlace {
+  color: #00c6ee;
 }
-.stick .nav .navbar .foto img {
-  height: 100%;
-  margin-left: calc(10px + 1vw);
-  border-radius: 75%;
-  width: calc(3vw + 3rem);
-  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
-}
-.stick .nav .navbar .mode {
-  margin: 0rem 1rem 0rem 0rem;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-  align-items: center;
-}
-.stick .nav .navbar .mode .noche {
+.stick .nav .navbar .menu .links .mode .noche {
   display: block;
 }
-.stick .nav .navbar .mode .dia {
+.stick .nav .navbar .menu .links .mode .dia {
   display: none;
 }
-.stick .nav .navbar .mode img {
-  position: absolute;
-  width: calc(0.1rem + 3vw);
+.stick .nav .navbar .menu .inicio:hover,
+.stick .nav .navbar .menu .conoceme:hover,
+.stick .nav .navbar .menu .webs:hover,
+.stick .nav .navbar .menu .gal:hover,
+.stick .nav .navbar .menu .videos:hover,
+.stick .nav .navbar .menu .curriculum:hover,
+.stick .nav .navbar .menu .contacto:hover,
+.stick .nav .navbar .menu .inicio:focus,
+.stick .nav .navbar .menu .conoceme:focus,
+.stick .nav .navbar .menu .webs:focus,
+.stick .nav .navbar .menu .gal:focus,
+.stick .nav .navbar .menu .videos:focus,
+.stick .nav .navbar .menu .curriculum:focus,
+.stick .nav .navbar .menu .contacto:focus {
+  background-color: rgba(78, 78, 32, 0.582);
 }
 
 /*-----------------
@@ -94,7 +83,7 @@ html h3,
 body h3 {
   color: #0a0a0a;
   -webkit-text-stroke: 0.04rem #ddd8d8;
-  text-shadow: 0.1rem 0.1rem 0.3rem gray;
+  text-shadow: 0.1rem 0.1rem 0.1rem gray;
 }
 html h4,
 body h4 {

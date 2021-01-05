@@ -199,6 +199,7 @@ function color(color) {
   }
 }
 function modoNoche(id) {
+  console.log('aspirina')
   //   getDate(): devuelve el día del mes (1 a 31).
   // getDay(): devuelve el número del día de la semana: desde 0 (domingo) hasta 6 (sábado).
   // getFullYear(): cuatro dígitos del año.
@@ -351,7 +352,7 @@ function fecha(id) {
       document.getElementById("cssArchivo").href =
         "/src/assets/style/css/styles/festivos/styleSanValentin.css";
       document.getElementById("color").href =
-        "/src/assets/style/css/styles/colores/rojo.css";
+        "/src/assets/style/css/styles/colores/rosa.css";
       document.getElementById("adorno").src =
         "/src/assets/images/gifs/sanValentin.gif";
       document.getElementById("stop").style = "display:block";

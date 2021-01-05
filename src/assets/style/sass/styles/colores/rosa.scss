@@ -100,8 +100,36 @@ body {
             color: $rosa; //gray
             background: {
             }
+            .mode {
+             .noche {
+                display: none;
+                color: $rosa;
+                font-size: 3rem;
+              }
+              .dia {
+                display: block;
+                color: $rosa;
+                font-size: 3rem;
+              }
+            }
+            .brushEstilos {
+              grid-column: x7 / x8;
+              grid-row: y0 / y1;
 
-            border-color: $rosa;
+              .selecEstilosDesplegar {
+                @include estilos;
+                font-size: 3rem;
+
+                //font-size: 1.6rem;
+              }
+              .selecEstilosPlegar {
+                font-size: 3rem;
+
+                //   animation-name: none;
+              }
+            }
+
+            //   border-color: $rosa;
           }
           .inicio:hover,
           .conoceme:hover,

@@ -24,60 +24,62 @@
           menu
           ---------------*/
 .stick {
-   // z-index: 1000;
-  // position: fixed; //para que siga la pagina
-  // position: -webkit-fixed;  // required for Safari
-  top: 0;
-  width: 100%;
-  background: {
-    //   color: rgba(0, 4, 255, 0.7);
-  }
   .nav {
-    // border-bottom: 0.05rem solid;
-    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
     background: {
-      //color: rgba(0, 0, 0, 0.438);
-      color:rgba(0, 0, 0, 0.5);
+      color: rgba(0, 0, 0, 0.5);
     }
     .navbar {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      align-items: center;
-      justify-content: space-around;
       .foto {
         img {
-          height: 100%;
-          margin-left: calc(10px + 1vw);
-          border-radius: 75%;
-          // border: 0.05rem solid $corporativo; //#fff;
-          width: calc(3vw + 3rem);
-          box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
         }
       }
-      .mode {
-        margin: 0rem 1rem 0rem 0rem;
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: flex-end;
-        align-items: center;
-        background: {
-          //     color:rgb(196, 60, 83) ;
+      .menu {
+        .links {
+          .enlace {
+            color: $corporativo;
+          }
+          .mode {
+            .noche {
+              display: block;
+              //   color: $corporativo;
+            }
+            .dia {
+              display: none;
+              //        color: $corporativo;
+            }
+          }
+          .brushEstilos {
+            .selecEstilosDesplegar {
+              // @include estilos;
+              // color: $corporativo;
+            }
+            .selecEstilosPlegar {
+              // color: $corporativo;
+              //   animation-name: none;
+            }
+          }
         }
-        .noche {
-          display: block;
-        }
-        .dia {
-          display: none;
-        }
-        img {
-          position: absolute;
-          width: calc(0.1rem + 3vw);
+        .inicio:hover,
+        .conoceme:hover,
+        .webs:hover,
+        .gal:hover,
+        .videos:hover,
+        .curriculum:hover,
+        .contacto:hover,
+        .inicio:focus,
+        .conoceme:focus,
+        .webs:focus,
+        .gal:focus,
+        .videos:focus,
+        .curriculum:focus,
+        .contacto:focus {
+          background-color: rgba(78, 78, 32, 0.582);
         }
       }
     }
   }
 }
+
 /*-----------------
  menu responsive
  ------------*/
@@ -121,7 +123,7 @@ body {
   h3 {
     color: $negro;
     -webkit-text-stroke: 0.04rem rgb(221, 216, 216);
-    text-shadow: 0.1rem 0.1rem 0.3rem gray;
+    text-shadow: 0.1rem 0.1rem 0.1rem gray;
   }
   h4 {
     color: $negro;
@@ -176,7 +178,7 @@ body {
 footer {
   // border-top: 0.1rem solid $corporativo;
   background: {
-   // color: $negro;
+    // color: $negro;
   }
   .footerContainer {
     //color: #fff;
@@ -188,17 +190,17 @@ footer {
         // text-shadow: 0.05em 0.05em 0.1em white;
       }
       a {
-       // color: $negro;
+        // color: $negro;
       }
     }
     .datos {
       p {
-       // color: $negro;
+        // color: $negro;
       }
     }
     .diseños {
       p {
-       color: $blanco;
+        color: $blanco;
       }
     }
   }
@@ -207,7 +209,7 @@ footer {
     //background-color: $blanco;
   }
   .copy {
-   // color:black;
+    // color:black;
     // border-bottom: 0.1rem solid $corporativo;
   }
   .politicas {

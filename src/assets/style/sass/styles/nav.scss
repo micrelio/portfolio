@@ -14,22 +14,10 @@
   // border: 0.05rem solid black;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  .selecEstilos {
-    @include estilos;
-  }
-  .selecEstilosCerrar {
-    animation-name: none;
-  }
-  .modo {
-    border: none;
-    background: transparent;
-    font-size: 2.4rem;
-  }
-  .botonesEstilo a:hover {
-    background-color: white;
-  }
+
+  
   .social-links {
     display: flex;
     flex-direction: row;
@@ -278,27 +266,6 @@
           box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
         }
       }
-      .mode {
-        margin: 0rem 1rem 0rem 0rem;
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: flex-end;
-        align-items: center;
-        .noche {
-          display: none;
-          color: $corporativo;
-          font-size: 3rem;
-        }
-        .dia {
-          display: block;
-          color: $corporativo;
-          font-size: 3rem;
-        }
-        img {
-          position: absolute;
-          width: calc(0.1rem + 3vw);
-        }
-      }
       .menu {
         padding: 3rem 0 3rem 0;
         display: flex;
@@ -309,7 +276,7 @@
         // position: relative;
         .links {
           display: grid;
-          grid-template-columns: [x0] 0.1fr [x1] 0.1fr [x2] 0.1fr [x3] 0.1fr [x4] 0.1fr [x5] 0.1fr [x6] 0.1fr [x7] /*1fr [x8]*/;
+          grid-template-columns: [x0] 0.1fr [x1] 0.1fr [x2] 0.1fr [x3] 0.1fr [x4] 0.1fr [x5] 0.1fr [x6] 0.1fr [x7] 0.1fr [x8];
           grid-template-rows: [y0] 1fr [y1];
           grid-column-gap: 0rem;
           grid-row-gap: 1rem;
@@ -337,7 +304,7 @@
             grid-column: x0 / x1;
             grid-row: y0 / y1;
           }
-          .conoceme {
+          .biografia {
             grid-column: x1 / x2;
             grid-row: y0 / y1;
           }
@@ -360,7 +327,43 @@
           .mode {
             grid-column: x6 / x7;
             grid-row: y0 / y1;
+            // margin: 0rem 1rem 0rem 0rem;
+            // display: flex;
+            // flex-direction: row-reverse;
+            // justify-content: flex-end;
+            // align-items: center;
+            .noche {
+              display: none;
+              color: $corporativo;
+              font-size: 3rem;
+            }
+            .dia {
+              display: block;
+              color: $corporativo;
+              font-size: 3rem;
+            }
           }
+          .brushEstilos {
+            grid-column: x7 / x8;
+            grid-row: y0 / y1;
+
+            .selecEstilosDesplegar {
+              @include estilos;
+           color: $corporativo;
+
+              font-size: 3rem;
+
+              //font-size: 1.6rem;
+            }
+            .selecEstilosPlegar {
+              color: $corporativo;
+
+              font-size: 3rem;
+
+              //   animation-name: none;
+            }
+          }
+          
           .inicio:hover,
           .conoceme:hover,
           .webs:hover,
@@ -474,7 +477,13 @@
           color: $corporativo;
           font-size: 5rem;
         }
-
+        .selecEstilosDesplegar {
+          @include estilos;
+          font-size: 3rem;
+        }
+        .selecEstilosPlegar {
+         // animation-name: none;
+        }
         img {
           position: absolute;
           width: calc(0.1rem + 3vw);

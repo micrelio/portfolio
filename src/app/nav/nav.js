@@ -4,11 +4,7 @@ class miNav extends HTMLElement {
   }
   connectedCallback() {
     this.innerHTML = `
-    <section class="social-media">
-    <div>
-        <p id="selecEstilosDesplegar" class="selecEstilos bx bxs-brush"></p>
-        <p style="display:none;" id="selecEstilosPlegar" class="selecEstilosCerrar bx bxs-brush"></p>
-    </div>
+<section class="social-media">
     <div class="social-links">
         <a class="bx bxl-youtube" href="https://www.youtube.com/channel/UCMEv1Jj16ypsAXmZXOkKrQA/"
             target="_blank"></a>
@@ -167,15 +163,19 @@ class miNav extends HTMLElement {
             </div>
             <div class="menu">
                 <div id="links" class="links">
-                    <div class="enlace" onclick="navegar('inicio');"> Inicio </div>
-                    <div class="enlace" onclick="navegar('biografia');"> Biografía </div>
-                    <div class="enlace" onclick="navegar('webs'); "> Webs </div>
-                    <div class="enlace" onclick="navegar('galeria');"> Galería </div>
-                    <div class="enlace" onclick="navegar('curriculum');"> Currículum </div>
-                    <div class="enlace" onclick="navegar('contacto');"> Contacto </div>
-                    <div class="mode">
-                      <p id="noche" class="noche bx bxs-moon" onclick="modoNoche('dia');"></p>
-                      <p id="dia" class="dia bx bxs-sun" onclick="modoNoche('noche');"></p>
+                    <div class="enlace inicio" onclick="navegar('inicio');"> Inicio </div>
+                    <div class="enlace biografia" onclick="navegar('biografia');"> Biografía </div>
+                    <div class="enlace webs" onclick="navegar('webs'); "> Webs </div>
+                    <div class="enlace gal" onclick="navegar('galeria');"> Galería </div>
+                    <div class="enlace curriculum" onclick="navegar('curriculum');"> Currículum </div>
+                    <div class="enlace contacto" onclick="navegar('contacto');"> Contacto </div>
+                    <div class=" mode">
+                      <p id="noche" class="noche enlace bx bxs-moon" onclick="modoNoche('dia');"></p>
+                      <p id="dia" class="dia enlace bx bxs-sun" onclick="modoNoche('noche');"></p>
+                    </div>
+                    <div class=" brushEstilos">
+                      <p id="selecEstilosDesplegar" class="selecEstilosDesplegar enlace bx bxs-brush"></p>
+                      <p style="display:none;" id="selecEstilosPlegar" class="selecEstilosPlegar enlace bx bxs-brush"></p>
                     </div>
                 </div>
             </div>
@@ -206,8 +206,10 @@ class miNav extends HTMLElement {
             <div onclick="navegar('curriculum'); seleccionado();" class="enlace">Curriculum</div>
             <div onclick="navegar('contacto'); seleccionado();" class="enlace">Contacto</div>
             <div class="mode">
-                <p id="noche" class="noche bx bxs-moon" onclick="modoNoche('dia');"></p>
-                <p id="dia" class="dia bx bxs-sun" onclick="modoNoche('noche');"></p>
+              <p id="selecEstilosDesplegar" class="selecEstilosDesplegar bx bxs-brush"></p>
+              <p style="display:none;" id="selecEstilosPlegar" class="selecEstilosPlegar bx bxs-brush"></p>
+              <p id="noche" class="noche bx bxs-moon" onclick="modoNoche('dia');"></p>
+              <p id="dia" class="dia bx bxs-sun" onclick="modoNoche('noche');"></p>
             </div>
         </div>
     </div>

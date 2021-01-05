@@ -39,30 +39,27 @@ body {
   h1 {
     font-size: 5rem;
     color: $blanco;
-    margin: 2rem 0rem 1rem 0rem;
     text-align: center;
-    -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
-    text-shadow: 0.2em 0.2em 0.3em black;
+    -webkit-text-stroke: 0.05rem rgb(0, 0, 0);
+    text-shadow: 0.3rem 0.3rem 0.3rem gray;
   }
   h2 {
     font-size: 4rem;
     color: $blanco;
-    margin: 2rem 0rem 1rem 0rem;
-    -webkit-text-stroke: 0.05rem rgb(221, 216, 216);
-    text-shadow: 0.2rem 0.2rem 0.3rem black;
+    -webkit-text-stroke: 0.05rem rgb(0, 0, 0);
+    text-shadow: 0.3rem 0.3rem 0.2rem gray;
   }
   h3 {
     font-size: 3rem;
     color: $blanco;
-    margin: 1rem 0rem 0.5rem 0rem;
-    -webkit-text-stroke: 0.04rem rgb(221, 216, 216);
-    text-shadow: 0.2em 0.2em 0.9em black;
+    -webkit-text-stroke: 0.04rem rgb(0, 0, 0);
+    text-shadow: 0.3rem 0.3rem 0.1rem gray;
   }
   h4 {
     font-size: 2rem;
     color: $blanco;
-    -webkit-text-stroke: 0.03rem rgb(221, 216, 216);
-    text-shadow: 0.2em 0.2em 0.3em black;
+    -webkit-text-stroke: 0.03rem rgb(0, 0, 0);
+    text-shadow: 0.3rem 0.3rem 0.1rem gray;
   }
   a {
     color: $azul;
