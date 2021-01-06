@@ -359,7 +359,10 @@
     display: none;
   }
 
-  .movil {
+  .stick {
+    margin: 0rem 0rem 5rem 0rem;
+  }
+  .stick .movil {
     border-bottom: 0.05rem solid lightskyblue;
     display: block;
     display: flex;
@@ -367,7 +370,7 @@
     box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
     background-color: rgba(0, 0, 0, 0.438);
   }
-  .movil .imagenes {
+  .stick .movil .imagenes {
     padding: calc(0.5rem + 0.5vw);
     display: flex;
     flex-direction: row;
@@ -375,62 +378,71 @@
     justify-content: space-between;
     align-items: center;
   }
-  .movil .imagenes .foto {
+  .stick .movil .imagenes .foto {
     position: relative;
     cursor: pointer;
   }
-  .movil .imagenes .foto img {
+  .stick .movil .imagenes .foto img {
     display: block;
     border-radius: 75%;
     border: 3px double lightskyblue;
     width: calc(4vw + 5rem);
     box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
   }
-  .movil .imagenes .botones {
+  .stick .movil .imagenes .botones {
     border: 0;
     outline: 0 none;
     background-color: transparent;
   }
-  .movil .imagenes .botones #boton1 {
+  .stick .movil .imagenes .botones #boton1 {
     outline: none;
     cursor: pointer;
     border: none;
     background-color: Transparent;
   }
-  .movil .imagenes .botones #boton1 p {
+  .stick .movil .imagenes .botones #boton1 p {
     display: block;
     font-size: calc(5vw + 5rem);
   }
-  .movil .desplegable .mode {
+  .stick .movil .desplegable .mode {
     margin: 0rem 0rem 1rem 1rem;
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
     align-items: center;
   }
-  .movil .desplegable .mode .noche {
+  .stick .movil .desplegable .mode p {
+    color: lightskyblue;
+    font-size: 5rem;
+  }
+  .stick .movil .desplegable .mode .noche {
     display: none;
     color: lightskyblue;
     font-size: 5rem;
   }
-  .movil .desplegable .mode .dia {
+  .stick .movil .desplegable .mode .dia {
     display: block;
     color: lightskyblue;
     font-size: 5rem;
   }
-  .movil .desplegable .mode .selecEstilosDesplegar {
+  .stick .movil .desplegable .mode .selecEstilosDesplegar {
     margin: 0;
     animation-name: parpadeo;
     animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    font-size: 3rem;
+    font-size: 5rem;
+    color: lightskyblue;
   }
-  .movil .desplegable .mode img {
+  .stick .movil .desplegable .mode .selecEstilosPlegar {
+    animation-name: none;
+    color: lightskyblue;
+  }
+  .stick .movil .desplegable .mode img {
     position: absolute;
     width: calc(0.1rem + 3vw);
   }
-  .movil .desplegable .enlace {
+  .stick .movil .desplegable .enlace {
     margin: 1rem;
     border: 0;
     color: lightskyblue;
@@ -438,35 +450,30 @@
     font-size: 3rem;
     font-color: lightskyblue;
   }
-  .movil .desplegable .mnav-link {
+  .stick .movil .desplegable .mnav-link {
     display: block;
   }
-
-  /* Y finalmente las animaciones */
 }
-@media only screen and (max-width: 800px) and (max-width: 800px) {
+@media (max-width: 800px) {
   section #links {
     display: none;
   }
 }
-@media only screen and (max-width: 800px) {
-  @-webkit-keyframes fade {
-    from {
-      opacity: 0.4;
-    }
-    to {
-      opacity: 1;
-    }
+/* Y finalmente las animaciones */
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
   }
 }
-@media only screen and (max-width: 800px) {
-  @keyframes fade {
-    from {
-      opacity: 0.4;
-    }
-    to {
-      opacity: 1;
-    }
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
   }
 }
 

@@ -425,6 +425,8 @@
   .nav {
     display: none;
   }
+  .stick {
+    margin: 0rem 0rem 5rem 0rem ;
   .movil {
     border-bottom: 0.05rem solid $corporativo;
     display: block;
@@ -490,6 +492,11 @@
         background: {
           //     color:rgb(196, 60, 83) ;
         }
+        p{
+          color: $corporativo;
+          font-size: 5rem;
+
+        }
         .noche {
           display: none;
           color: $corporativo;
@@ -502,10 +509,12 @@
         }
         .selecEstilosDesplegar {
           @include estilos;
-          font-size: 3rem;
+          font-size: 5rem;
+          color: $corporativo;
         }
         .selecEstilosPlegar {
-         // animation-name: none;
+          animation-name: none;
+          color: $corporativo;
         }
         img {
           position: absolute;
@@ -527,6 +536,8 @@
       }
     }
   }
+}
+}
   @media (max-width: 800px) {
     section {
       #links {
@@ -555,4 +566,4 @@
     }
   }
   // /* Todo con CSS y HTML. */
-}
+

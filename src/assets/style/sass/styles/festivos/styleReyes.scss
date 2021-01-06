@@ -1,10 +1,10 @@
 @import "../../mixins/mixins.scss";
 @import "../../variables/variables.scss";
 @import "../../funciones/funciones.scss";
-.head {
-  @include head;
-  border-bottom: 0.05rem solid $corporativo;
-}
+// .head {
+//   @include head;
+//   border-bottom: 0.05rem solid $corporativo;
+// }
 html,
 body {
   background-image: url("../../../../images/gifs/fugaz.gif");
@@ -18,7 +18,7 @@ body {
     }
     img {
       width: 20rem;
-      margin: -7rem 0rem -3rem 0rem;
+     margin: -7rem 0rem -3rem 0rem;
     }
   }
   .fiestas {
@@ -32,7 +32,7 @@ body {
     bottom: 4rem;
     img {
       width: 15rem;
-      margin: 0rem 0rem 1em 0rem;
+      margin: 0rem 0rem 1rem 0rem;
     }
     .stop {
       background: $amarillo;

@@ -1,13 +1,4 @@
 /* hovers*/
-.head {
-  width: 100%;
-  position: relative;
-  border-bottom: 0.05rem solid lightskyblue;
-}
-.head img {
-  width: 100%;
-}
-
 html,
 body {
   background-image: url("../../../../images/gifs/fugaz.gif");
@@ -41,7 +32,7 @@ body .fiestas {
 html .fiestas img,
 body .fiestas img {
   width: 15rem;
-  margin: 0rem 0rem 1em 0rem;
+  margin: 0rem 0rem 1rem 0rem;
 }
 html .fiestas .stop,
 body .fiestas .stop {

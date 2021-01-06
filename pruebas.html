@@ -10,7 +10,79 @@
 <body>
 
 
-    
+    <section class="stick" id="stick">
+        <div class="nav" id="nav">
+            <div class="navbar">
+                <div id="foto" class="foto">
+                    <img src="/src/assets/images/dracula-man.jpg">
+                </div>
+                <div class="menu">
+                    <div id="links" class="links">
+                        <div class="enlace irInicio" onclick="navegar('inicio');">
+                            <p> Inicio </p>
+                        </div>
+                        <div class="enlace irBiografia" onclick="navegar('biografia');">
+                            <p> Biografía </p>
+                        </div>
+                        <div class="enlace irWebs" onclick="navegar('webs'); ">
+                            <p> Webs </p>
+                        </div>
+                        <div class="enlace irGaleria" onclick="navegar('galeria');">
+                            <p> Galería </p>
+                        </div>
+                        <div class="enlace irCurriculum" onclick="navegar('curriculum');">
+                            <p> Currículum </p>
+                        </div>
+                        <div class="enlace irContacto" onclick="navegar('contacto');">
+                            <p> Contacto </p>
+                        </div>
+                        <div class=" mode">
+                            <p id="noche" class="noche enlace bx bxs-moon" onclick="modoNoche('dia');"></p>
+                            <p id="dia" class="dia enlace bx bxs-sun" onclick="modoNoche('noche');"></p>
+                        </div>
+                        <div class=" brushEstilos">
+                            <p id="selecEstilosDesplegar" class="selecEstilosDesplegar enlace bx bxs-brush"></p>
+                            <p style="display:none;" id="selecEstilosPlegar"
+                                class="selecEstilosPlegar enlace bx bxs-brush-alt"></p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="movil">
+            <div class="imagenes">
+                <div id="foto" class="foto">
+                    <img src="/src/assets/images/dracula-man.jpg">
+                </div>
+                <div class="botones">
+                    <!-- <span id="boton1"><img src="/src/assets/images/icons/menu.png" id="pull" href="#" alt="menu"></span> -->
+                    <span id="boton1">
+                        <p id="pull" href="#" class="botonMenu bx bx-menu"></p>
+                    </span>
+
+                </div>
+            </div>
+            <div>
+            </div>
+            <div style="display: none" class="desplegable nuevo" id="desplegable">
+                <div onclick="navegar('inicio'); seleccionado();" class="enlace">Inicio</div>
+                <div onclick="navegar('biografia'); seleccionado();" class="enlace">Biografía</div>
+                <div onclick="navegar('webs'); seleccionado();" class="enlace">Webs</div>
+                <div onclick="navegar('galeria'); seleccionado();" class="enlace">Galeria</div>
+                <div onclick="navegar('curriculum'); seleccionado();" class="enlace">Curriculum</div>
+                <div onclick="navegar('contacto'); seleccionado();" class="enlace">Contacto</div>
+                <div class="mode">
+                    <p id="selecEstilosDesplegar" class="selecEstilosDesplegar bx bxs-brush-alt"></p>
+                    <p style="display:none;" id="selecEstilosPlegar" class="selecEstilosPlegar bx bxs-brush"></p>
+                    <p id="noche" class="noche bx bxs-moon" onclick="modoNoche('dia');"></p>
+                    <p id="dia" class="dia bx bxs-sun" onclick="modoNoche('noche');"></p>
+                </div>
+            </div>
+        </div>
+        <!-- <audio src="../sonidos/ping.mp4" autoplay loop></audio> -->
+    </section>
 
 
 

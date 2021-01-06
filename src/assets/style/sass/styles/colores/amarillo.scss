@@ -81,9 +81,9 @@ body {
          menu
 ------------------------------------------ */
 .stick {
-    .nav {
+  .nav {
     border-bottom: 0.05rem solid $amarillo;
-        .navbar {
+    .navbar {
       .foto {
         img {
           border: 0.05rem solid $amarillo; //$blanco;
@@ -93,23 +93,23 @@ body {
         .links {
           .enlace {
             color: $amarillo; //gray
-            p{
+            p {
               color: $amarillo;
             }
-                     }
-                     .irInicio:hover,
-                     .irBiografia:hover,
-                     .irWebs:hover,
-                     .irGaleria:hover,
-                     .irCurriculum:hover,
-                     .irContacto:hover,
-                     .irInicio:focus,
-                     .irBiografia:focus,
-                     .irWebs:focus,
-                     .irGaleria:focus,
-                     .irCurriculum:focus,
-                     .irContacto:focus {
-           // background-color: rgba(78, 78, 32, 0.582);
+          }
+          .irInicio:hover,
+          .irBiografia:hover,
+          .irWebs:hover,
+          .irGaleria:hover,
+          .irCurriculum:hover,
+          .irContacto:hover,
+          .irInicio:focus,
+          .irBiografia:focus,
+          .irWebs:focus,
+          .irGaleria:focus,
+          .irCurriculum:focus,
+          .irContacto:focus {
+            // background-color: rgba(78, 78, 32, 0.582);
           }
         }
       }
@@ -295,54 +295,120 @@ body {
     }
   }
 }
+//------------------------\\
+//  RESPONSIVE  \\
+//------------------------\\
 @media only screen and (max-width: 800px) {
-  .movil {
-    border-bottom: 0.05rem solid $amarillo;
-
-    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
-    background: {
-      color: rgba(0, 0, 0, 0.438);
-    }
-    .imagenes {
+  .nav {
+  }
+  .stick {
+    .movil {
+      border-bottom: 0.05rem solid $amarillo;
+      box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
       background: {
-        // color: blue;
+        color: rgba(0, 0, 0, 0.438);
       }
-      .foto {
+      .imagenes {
         background: {
-          // color: green;
+          // color: blue;
         }
-        img {
-          border: 3px double $amarillo;
-          box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+        .foto {
+          background: {
+            // color: green;
+          }
+          img {
+            border: 3px double $amarillo;
+            box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+          }
         }
-      }
-      .botones {
-        background: {
-          color: transparent;
-        }
-        .botonMenu {
-          color: $amarillo;
-        }
-        #boton1 {
-          background-color: Transparent;
-        }
-      }
-    }
-    .desplegable {
-      .mode {
-        .noche {
-          color: $amarillo;
-        }
-        .dia {
-          color: $amarillo;
+        .botones {
+          background: {
+          }
+          .botonMenu {
+            color: $amarillo;
+          }
+
+          #boton1 {
+            background-color: Transparent;
+            p {
+            }
+          }
         }
       }
-      .enlace {
-        color: $amarillo;
+      .desplegable {
+        .mode {
+          background: {
+          }
+          .noche {
+            color: $amarillo;
+          }
+          .dia {
+            color: $amarillo;
+          }
+          .selecEstilosDesplegar {
+            color: $amarillo;
+          }
+          .selecEstilosPlegar {
+            color: $amarillo;
+          }
+          img {
+          }
+        }
+        .enlace {
+          color: $amarillo;
+          font: {
+            color: $amarillo;
+          }
+        }
+        .mnav-link {
+        }
       }
     }
   }
 }
+
+@media only screen and (max-width: 800px) {
+  .movil {
+  }
+  .imagenes {
+    background: {
+      // color: blue;
+    }
+    .foto {
+      background: {
+        // color: green;
+      }
+      img {
+        border: 3px double $amarillo;
+      }
+    }
+    .botones {
+      background: {
+        color: transparent;
+      }
+      .botonMenu {
+        color: $amarillo;
+      }
+      #boton1 {
+        background-color: Transparent;
+      }
+    }
+  }
+  .desplegable {
+    .mode {
+      .noche {
+        color: $amarillo;
+      }
+      .dia {
+        color: $amarillo;
+      }
+    }
+    .enlace {
+      color: $amarillo;
+    }
+  }
+}
+
 @media only screen and (max-width: 800px) {
   body {
     .fiestas {

@@ -171,31 +171,59 @@ body .fiestas .stop:hover {
   }
 }
 @media only screen and (max-width: 800px) {
-  .movil {
+  .stick .movil {
     border-bottom: 0.05rem solid #ffff00;
     box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
     background-color: rgba(0, 0, 0, 0.438);
   }
-  .movil .imagenes .foto img {
+  .stick .movil .imagenes .foto img {
     border: 3px double #ffff00;
     box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
   }
-  .movil .imagenes .botones {
-    background-color: transparent;
-  }
-  .movil .imagenes .botones .botonMenu {
+  .stick .movil .imagenes .botones .botonMenu {
     color: #ffff00;
   }
-  .movil .imagenes .botones #boton1 {
+  .stick .movil .imagenes .botones #boton1 {
     background-color: Transparent;
   }
-  .movil .desplegable .mode .noche {
+  .stick .movil .desplegable .mode .noche {
     color: #ffff00;
   }
-  .movil .desplegable .mode .dia {
+  .stick .movil .desplegable .mode .dia {
     color: #ffff00;
   }
-  .movil .desplegable .enlace {
+  .stick .movil .desplegable .mode .selecEstilosDesplegar {
+    color: #ffff00;
+  }
+  .stick .movil .desplegable .mode .selecEstilosPlegar {
+    color: #ffff00;
+  }
+  .stick .movil .desplegable .enlace {
+    color: #ffff00;
+    font-color: #ffff00;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .imagenes .foto img {
+    border: 3px double #ffff00;
+  }
+  .imagenes .botones {
+    background-color: transparent;
+  }
+  .imagenes .botones .botonMenu {
+    color: #ffff00;
+  }
+  .imagenes .botones #boton1 {
+    background-color: Transparent;
+  }
+
+  .desplegable .mode .noche {
+    color: #ffff00;
+  }
+  .desplegable .mode .dia {
+    color: #ffff00;
+  }
+  .desplegable .enlace {
     color: #ffff00;
   }
 }
