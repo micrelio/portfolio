@@ -272,27 +272,27 @@
 .stick .nav .navbar .menu .links .enlace p {
   color: lightskyblue;
 }
-.stick .nav .navbar .menu .links .inicio {
+.stick .nav .navbar .menu .links .irInicio {
   grid-column: x0/x1;
   grid-row: y0/y1;
 }
-.stick .nav .navbar .menu .links .biografia {
+.stick .nav .navbar .menu .links .irBiografia {
   grid-column: x1/x2;
   grid-row: y0/y1;
 }
-.stick .nav .navbar .menu .links .webs {
+.stick .nav .navbar .menu .links .irWebs {
   grid-column: x2/x3;
   grid-row: y0/y1;
 }
-.stick .nav .navbar .menu .links .gal {
+.stick .nav .navbar .menu .links .irGaleria {
   grid-column: x3/x4;
   grid-row: y0/y1;
 }
-.stick .nav .navbar .menu .links .curriculum {
+.stick .nav .navbar .menu .links .irCurriculum {
   grid-column: x4/x5;
   grid-row: y0/y1;
 }
-.stick .nav .navbar .menu .links .contacto {
+.stick .nav .navbar .menu .links .irContacto {
   grid-column: x5/x6;
   grid-row: y0/y1;
 }
@@ -326,20 +326,18 @@
 .stick .nav .navbar .menu .links .brushEstilos .selecEstilosPlegar {
   font-size: 3rem;
 }
-.stick .nav .navbar .menu .links .inicio:hover,
-.stick .nav .navbar .menu .links .conoceme:hover,
-.stick .nav .navbar .menu .links .webs:hover,
-.stick .nav .navbar .menu .links .gal:hover,
-.stick .nav .navbar .menu .links .videos:hover,
-.stick .nav .navbar .menu .links .curriculum:hover,
-.stick .nav .navbar .menu .links .contacto:hover,
-.stick .nav .navbar .menu .links .inicio:focus,
-.stick .nav .navbar .menu .links .conoceme:focus,
-.stick .nav .navbar .menu .links .webs:focus,
-.stick .nav .navbar .menu .links .gal:focus,
-.stick .nav .navbar .menu .links .videos:focus,
-.stick .nav .navbar .menu .links .curriculum:focus,
-.stick .nav .navbar .menu .links .contacto:focus {
+.stick .nav .navbar .menu .links .irInicio:hover,
+.stick .nav .navbar .menu .links .irBiografia:hover,
+.stick .nav .navbar .menu .links .irWebs:hover,
+.stick .nav .navbar .menu .links .irGaleria:hover,
+.stick .nav .navbar .menu .links .irCurriculum:hover,
+.stick .nav .navbar .menu .links .irContacto:hover,
+.stick .nav .navbar .menu .links .irInicio:focus,
+.stick .nav .navbar .menu .links .irBiografia:focus,
+.stick .nav .navbar .menu .links .irWebs:focus,
+.stick .nav .navbar .menu .links .irGaleria:focus,
+.stick .nav .navbar .menu .links .irCurriculum:focus,
+.stick .nav .navbar .menu .links .irContacto:focus {
   background-color: rgba(78, 78, 32, 0.582);
 }
 .stick .movil img {

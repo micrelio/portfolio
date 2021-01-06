@@ -76,9 +76,8 @@ body {
 .social-media {
   background-color: $gris;
   .social-links {
-   
     //padding: 0.01rem;
-    // background-color: orangered; 
+    // background-color: orangered;
   }
   p {
     color: $blanco;
@@ -102,9 +101,9 @@ body {
          menu
 ------------------------------------------ */
 .stick {
-    .nav {
+  .nav {
     border-bottom: 0.05rem solid $gris;
-        .navbar {
+    .navbar {
       .foto {
         img {
           border: 0.05rem solid $gris; //$blanco;
@@ -114,25 +113,23 @@ body {
         .links {
           .enlace {
             color: $blanco; //gray
-            p{
+            p {
               color: $blanco;
             }
-                     }
-          .inicio:hover,
-          .conoceme:hover,
-          .webs:hover,
-          .gal:hover,
-          .videos:hover,
-          .curriculum:hover,
-          .contacto:hover,
-          .inicio:focus,
-          .conoceme:focus,
-          .webs:focus,
-          .gal:focus,
-          .videos:focus,
-          .curriculum:focus,
-          .contacto:focus {
-           // background-color: rgba(78, 78, 32, 0.582);
+          }
+          .irInicio:hover,
+          .irBiografia:hover,
+          .irWebs:hover,
+          .irGaleria:hover,
+          .irCurriculum:hover,
+          .irContacto:hover,
+          .irInicio:focus,
+          .irBiografia:focus,
+          .irWebs:focus,
+          .irGaleria:focus,
+          .irCurriculum:focus,
+          .irContacto:focus {
+            // background-color: rgba(78, 78, 32, 0.582);
           }
         }
       }

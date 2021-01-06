@@ -14,13 +14,7 @@
          menu
 ------------------------------------------ */
 .stick .nav {
-  background-color: #eeeeee;
-}
-.stick .nav .navbar .menu .links .enlace {
-  -webkit-text-stroke: 0.005rem black;
-}
-.stick .nav .navbar .menu .links .enlace p {
-  -webkit-text-stroke: 0.05rem black;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .stick .nav .navbar .menu .links .mode .noche {
   display: block;

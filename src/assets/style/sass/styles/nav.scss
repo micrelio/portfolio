@@ -320,27 +320,27 @@
               weight: bold;
             }
           }
-          .inicio {
+          .irInicio {
             grid-column: x0 / x1;
             grid-row: y0 / y1;
           }
-          .biografia {
+          .irBiografia {
             grid-column: x1 / x2;
             grid-row: y0 / y1;
           }
-          .webs {
+          .irWebs {
             grid-column: x2 / x3;
             grid-row: y0 / y1;
           }
-          .gal {
+          .irGaleria {
             grid-column: x3 / x4;
             grid-row: y0 / y1;
           }
-          .curriculum {
+          .irCurriculum {
             grid-column: x4 / x5;
             grid-row: y0 / y1;
           }
-          .contacto {
+          .irContacto {
             grid-column: x5 / x6;
             grid-row: y0 / y1;
           }
@@ -384,20 +384,18 @@
             }
           }
           
-          .inicio:hover,
-          .conoceme:hover,
-          .webs:hover,
-          .gal:hover,
-          .videos:hover,
-          .curriculum:hover,
-          .contacto:hover,
-          .inicio:focus,
-          .conoceme:focus,
-          .webs:focus,
-          .gal:focus,
-          .videos:focus,
-          .curriculum:focus,
-          .contacto:focus {
+          .irInicio:hover,
+          .irBiografia:hover,
+          .irWebs:hover,
+          .irGaleria:hover,
+          .irCurriculum:hover,
+          .irContacto:hover,
+          .irInicio:focus,
+          .irBiografia:focus,
+          .irWebs:focus,
+          .irGaleria:focus,
+          .irCurriculum:focus,
+          .irContacto:focus {
             background-color: rgba(78, 78, 32, 0.582);
           }
         }

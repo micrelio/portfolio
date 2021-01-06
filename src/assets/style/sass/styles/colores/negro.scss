@@ -126,20 +126,18 @@ body {
               color: $negro;
             }
           }
-          .inicio:hover,
-          .conoceme:hover,
-          .webs:hover,
-          .gal:hover,
-          .videos:hover,
-          .curriculum:hover,
-          .contacto:hover,
-          .inicio:focus,
-          .conoceme:focus,
-          .webs:focus,
-          .gal:focus,
-          .videos:focus,
-          .curriculum:focus,
-          .contacto:focus {
+          .irInicio:hover,
+          .irBiografia:hover,
+          .irWebs:hover,
+          .irGaleria:hover,
+          .irCurriculum:hover,
+          .irContacto:hover,
+          .irInicio:focus,
+          .irBiografia:focus,
+          .irWebs:focus,
+          .irGaleria:focus,
+          .irCurriculum:focus,
+          .irContacto:focus {
             //  background-color: rgba(78, 78, 32, 0.582);
           }
         }

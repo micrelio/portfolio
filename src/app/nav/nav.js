@@ -151,12 +151,12 @@ class miNav extends HTMLElement {
             </div>
             <div class="menu">
                 <div id="links" class="links">
-                    <div class="enlace inicio" onclick="navegar('inicio');"><p> Inicio </p></div>
-                    <div class="enlace biografia" onclick="navegar('biografia');"><p> Biografía </p></div>
-                    <div class="enlace webs" onclick="navegar('webs'); "><p> Webs </p></div>
-                    <div class="enlace gal" onclick="navegar('galeria');"><p> Galería </p></div>
-                    <div class="enlace curriculum" onclick="navegar('curriculum');"><p> Currículum </p></div>
-                    <div class="enlace contacto" onclick="navegar('contacto');"><p> Contacto </p></div>
+                    <div class="enlace irInicio" onclick="navegar('inicio');"><p> Inicio </p></div>
+                    <div class="enlace irBiografia" onclick="navegar('biografia');"><p> Biografía </p></div>
+                    <div class="enlace irWebs" onclick="navegar('webs'); "><p> Webs </p></div>
+                    <div class="enlace irGaleria" onclick="navegar('galeria');"><p> Galería </p></div>
+                    <div class="enlace irCurriculum" onclick="navegar('curriculum');"><p> Currículum </p></div>
+                    <div class="enlace irContacto" onclick="navegar('contacto');"><p> Contacto </p></div>
                     <div class=" mode">
                       <p id="noche" class="noche enlace bx bxs-moon" onclick="modoNoche('dia');"></p>
                       <p id="dia" class="dia enlace bx bxs-sun" onclick="modoNoche('noche');"></p>
