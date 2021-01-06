@@ -16,9 +16,10 @@ body {
     h1 {
       font-size: calc(3rem + 1vw);
       //margin-top: 5rem;
-      //color: $corporativo;
+      color: $corporativo;
       //width: calc(0.1rem + 3vw);
     }
+  
   }
   p {
     font-size: 1.5rem;
@@ -53,6 +54,9 @@ body {
         color: #000;
       }
       h2 {
+        color: $corporativo;
+      }
+      h3{
         color: $corporativo;
       }
       .foto {

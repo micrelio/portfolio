@@ -9,6 +9,7 @@
 }
 .descripcion h1 {
   font-size: calc(3rem + 1vw);
+  color: lightskyblue;
 }
 
 p {
@@ -43,6 +44,9 @@ a:visited {
   background-color: #000;
 }
 .datos .datosPersonales h2 {
+  color: lightskyblue;
+}
+.datos .datosPersonales h3 {
   color: lightskyblue;
 }
 .datos .datosPersonales .foto .dni {
