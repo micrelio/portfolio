@@ -26,12 +26,12 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: #eeeeee;
   border: 0.05rem solid #0a0a0a;
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
   width: 30%;
+  background-color: #eeeeee;
 }
 .biografia .contenido .biografiaCurriculum p {
   color: #0a0a0a;
@@ -48,13 +48,13 @@
 .biografia .contenido .biografiaCurriculum .curriculumMini p {
   font-size: 1.2rem;
 }
-.biografia .contenido .biografiaCurriculum .curriculumMini .experiencia {
+.biografia .contenido .biografiaCurriculum .curriculumMini .experienciaMini {
   margin: 1rem 0rem 0rem 0rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.biografia .contenido .biografiaCurriculum .curriculumMini .experiencia .logoEx {
+.biografia .contenido .biografiaCurriculum .curriculumMini .experienciaMini .logoEx {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -62,10 +62,13 @@
   background-color: lightskyblue;
   width: 100%;
 }
-.biografia .contenido .biografiaCurriculum .curriculumMini .experiencia .logoEx a {
+.biografia .contenido .biografiaCurriculum .curriculumMini .experienciaMini .logoEx img {
+  margin: 0.3rem 0rem 0.3rem 0rem;
+}
+.biografia .contenido .biografiaCurriculum .curriculumMini .experienciaMini .logoEx a {
   width: 15%;
 }
-.biografia .contenido .biografiaCurriculum .curriculumMini .experiencia .descripcion {
+.biografia .contenido .biografiaCurriculum .curriculumMini .experienciaMini .descripcion {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -169,7 +172,7 @@
     flex-direction: column-reverse;
   }
   .biografia .contenido .historia {
-    margin: 2rem 0rem 0rem 0rem;
+    margin: 1rem 1rem 0rem 1rem;
     width: 100%;
   }
   .biografia .contenido .biografiaCurriculum {

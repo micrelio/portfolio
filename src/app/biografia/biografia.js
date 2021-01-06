@@ -44,9 +44,9 @@ class miBiografia extends HTMLElement {
         </div>
         <div class="biografiaCurriculum">
             <h3><strong>José (Micro)</strong></h3>
-            <img src="/src/assets/images/fotos/posandoGafas.jpg" alt="">
+            <img class="posado" src="/src/assets/images/fotos/posandoGafas.jpg" alt="">
           <div class="curriculumMini">  
-            <div class="experiencia">
+            <div class="experienciaMini">
               <div class="logoEx">
                 <a href="https://ocupacio.quartdepoblet.es/index.php/es/formacio" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/EscudoQuart.png"></a>
               </div>
@@ -55,7 +55,7 @@ class miBiografia extends HTMLElement {
               <p>Cert. profesionalidad “Operaciones básicas montaje y mantenimiento de instalaciones de energías renovables” (540 h). <a href="https://ocupacio.quartdepoblet.es/index.php/es/formacio" target="_blank">CED Quart de Poblet</a>.</p>
             </div>
           </div>
-            <div class="experiencia">
+            <div class="experienciaMini">
                 <div class="logoEx">
                     <a href="https://geekshubs.com/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/GeeksHubs.png"></a>
                 </div>
@@ -64,7 +64,7 @@ class miBiografia extends HTMLElement {
                     <p>BootCamp fullstack developer, en <a href="https://geekshubs.com/" target="_blank">GeeksHubs</a> Valencia (Valencia).</p>
                 </div>
             </div>
-            <div class="experiencia">
+            <div class="experienciaMini">
                 <div class="logoEx">
                     <a href="https://www.tobalcaide.com/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/tobalcaide.png"></a>
                 </div>
@@ -73,7 +73,7 @@ class miBiografia extends HTMLElement {
                     <p>Grado superior ASIR (administración de sistemas informáticos en red) <a href="https://www.tobalcaide.com/" target="_blank"> Academia Tobalcaide </a>, Quart de Poblet (Valencia).</p>
                 </div>
                             </div>
-            <div class="experiencia">
+            <div class="experienciaMini">
                 <div class="logoEx">
                     <a href="http://mestreacasa.gva.es/web/iesrodrigobotet" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/rodrigoBotet.png"></a>
                 </div>
@@ -82,7 +82,7 @@ class miBiografia extends HTMLElement {
                     <p>Curso de inglés: <a href="http://mestreacasa.gva.es/web/iesrodrigobotet" target="_blank">IES Rodrigo Botet</a>, instituto Manises (Valencia).</p>
                 </div>
                             </div>
-            <div class="experiencia">
+            <div class="experienciaMini">
                 <div class="logoEx">
                     <a href="http://iessalvadorgadea.edu.gva.es/web/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/salvadorGadea.png"></a>
                 </div>
@@ -91,7 +91,7 @@ class miBiografia extends HTMLElement {
                     <p>Grado superior de Control y regulación de sistemas autocontrolados: <a href="http://iessalvadorgadea.edu.gva.es/web/" target="_blank"> IES Salvador Gadea</a>, Aldaya (Valencia).</p>
                 </div>
                            </div>
-            <div class="experiencia">
+            <div class="experienciaMini">
                 <div class="logoEx">
                     <a href="https://www.coversa.com/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/cover.png"></a>
                 </div>
@@ -100,7 +100,7 @@ class miBiografia extends HTMLElement {
                     <p> Curso de trabajos en alta tensión en <a href="https://www.coversa.com/" target="_blank"> COVER </a>, Manises (Valencia).</p>
                 </div>
                             </div>
-            <div class="experiencia">
+            <div class="experienciaMini">
                 <div class="logoEx">
                     <a href="http://institutofaitanar.edu.gva.es/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/faitanar.png"></a>
                 </div>
@@ -109,7 +109,7 @@ class miBiografia extends HTMLElement {
                     <p> Grado medio Electricidad: <a href="http://institutofaitanar.edu.gva.es/" target="_blank"> IES Faitanar </a>, Quart de Poblet (Valencia).</p>
                 </div>
                             </div>
-            <div class="experiencia">
+            <div class="experienciaMini">
                 <div class="logoEx">
                     <a href="https://web.iesgonzaloanaya.es/" target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/gonzaloAnaya.jpg"></a>
                 </div>

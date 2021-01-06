@@ -29,6 +29,11 @@
       flex-direction: row;
       align-items: center;
       justify-content: center;
+      border: 0.05rem solid $negro;
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      width: 30%;
       background: {
         color: $blanco;
       }
@@ -40,11 +45,7 @@
         -webkit-text-stroke: 0.04rem rgb(221, 216, 216);
         text-shadow: 0.2rem 0.2rem 0.1rem gray;
       }
-      border: 0.05rem solid $negro;
-      padding: 0.5rem;
-      display: flex;
-      flex-direction: column;
-      width: 30%;
+
       img {
         width: 100%;
         margin: 1rem 0rem 0rem 0rem;
@@ -53,7 +54,7 @@
         p {
           font-size: 1.2rem;
         }
-        .experiencia {
+        .experienciaMini {
           margin: 1rem 0rem 0rem 0rem;
           display: flex;
           flex-direction: column;
@@ -66,6 +67,9 @@
             justify-content: center;
             background-color: lightskyblue;
             width: 100%;
+            img {
+              margin: 0.3rem 0rem 0.3rem 0rem;
+            }
             a {
               width: 15%;
               background: {
@@ -93,7 +97,6 @@
         }
         .datosGenerales {
           display: grid;
-
           grid-template-columns: [x0] 0.75fr [x1] 1.25fr [x2];
           grid-template-rows: [y0] 0.5fr [y1] 0.5fr [y2] 0.5fr [y3] 0.5fr [y4] 0.5fr [y5] 0.5fr [y6] 0.5fr [y7] 0.5fr [y8] 0.5fr [y9] 0.5fr [y10] 0.5fr [y11] 0.5fr [y12] 0.5fr [y13];
           grid-column-gap: 0.5rem;
@@ -104,7 +107,6 @@
           //   align-items: center;
           //   justify-content: flex-start;
           //width: 100%;
-
           p {
             color: black;
             font-size: 1.2rem;
@@ -241,7 +243,7 @@
       flex-direction: column-reverse;
 
       .historia {
-        margin: 2rem 0rem 0rem 0rem;
+        margin: 1rem 1rem 0rem 1rem;
         //padding: 3rem 0rem 3rem 0rem;
 
         // border: 0.05rem solid $negro;
@@ -269,7 +271,7 @@
           p {
             font-size: 1.2rem;
           }
-          .experiencia {
+          .experienciaMini {
             // margin: 1rem 0rem 0rem 0rem;
             // display: flex;
             // flex-direction: column;
