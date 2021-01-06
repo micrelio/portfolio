@@ -48,6 +48,8 @@ a:visited {
 }
 .datos .datosPersonales h3 {
   color: lightskyblue;
+  -webkit-text-stroke: 0.04rem black;
+  text-shadow: 0.3rem 0.3rem 0.1rem gray;
 }
 .datos .datosPersonales .foto .dni {
   width: calc(20rem + 10vw);

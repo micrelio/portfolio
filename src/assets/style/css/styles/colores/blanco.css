@@ -173,6 +173,9 @@ body .fiestas .stop:hover {
 .datos .datosPersonales h2 {
   color: #eeeeee;
 }
+.datos .datosPersonales h3 {
+  color: #eeeeee;
+}
 .datos .experiencia {
   border: 0.2rem solid #eeeeee;
 }
