@@ -196,38 +196,39 @@ body .fiestas .stop:hover {
   }
 }
 @media only screen and (max-width: 800px) {
-  .movil {
+  .stick .movil {
     border-bottom: 0.05rem solid #ff0080;
     box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
     background-color: rgba(0, 0, 0, 0.438);
   }
-  .movil .imagenes .foto img {
-    border-color: #ff0080;
+  .stick .movil .imagenes .foto img {
+    border: 3px double #ff0080;
     box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
   }
-  .movil .imagenes .botones {
-    background-color: transparent;
-  }
-  .movil .imagenes .botones .botonMenu {
+  .stick .movil .imagenes .botones .botonMenu {
     color: #ff0080;
   }
-  .movil .imagenes .botones #boton1 {
+  .stick .movil .imagenes .botones #boton1 {
     background-color: Transparent;
   }
-  .movil .desplegable .mode .noche {
+  .stick .movil .desplegable .mode .noche {
     color: #ff0080;
   }
-  .movil .desplegable .mode .dia {
+  .stick .movil .desplegable .mode .dia {
     color: #ff0080;
   }
-  .movil .desplegable .enlace {
+  .stick .movil .desplegable .mode .selecEstilosDesplegar {
     color: #ff0080;
+  }
+  .stick .movil .desplegable .mode .selecEstilosPlegar {
+    color: #ff0080;
+  }
+  .stick .movil .desplegable .enlace {
+    color: #ff0080;
+    font-color: #ff0080;
   }
 }
 @media only screen and (max-width: 800px) {
-  body .fiestas img {
-    width: 10rem;
-  }
   body .fiestas .stop {
     font-size: calc(1rem + 0.3vw);
   }

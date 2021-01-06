@@ -293,54 +293,78 @@ body {
     }
   }
 }
+//------------------------\\
+//  nav RESPONSIVE  \\
+//------------------------\\
 @media only screen and (max-width: 800px) {
-  .movil {
-    border-bottom: 0.05rem solid $marron;
-
-    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
-    background: {
-      color: rgba(0, 0, 0, 0.438);
-    }
-    .imagenes {
+  .nav {
+  }
+  .stick {
+    .movil {
+      border-bottom: 0.05rem solid $marron;
+      box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
       background: {
-        // color: blue;
+        color: rgba(0, 0, 0, 0.438);
       }
-      .foto {
+      .imagenes {
         background: {
-          // color: green;
+          // color: blue;
         }
-        img {
-          border: 3px double $marron;
-          box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+        .foto {
+          background: {
+            // color: green;
+          }
+          img {
+            border: 3px double $marron;
+            box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+          }
         }
-      }
-      .botones {
-        background: {
-          color: transparent;
-        }
-        .botonMenu {
-          color: $marron;
-        }
-        #boton1 {
-          background-color: Transparent;
-        }
-      }
-    }
-    .desplegable {
-      .mode {
-        .noche {
-          color: $marron;
-        }
-        .dia {
-          color: $marron;
+        .botones {
+          background: {
+          }
+          .botonMenu {
+            color: $marron;
+          }
+
+          #boton1 {
+            background-color: Transparent;
+            p {
+            }
+          }
         }
       }
-      .enlace {
-        color: $marron;
+      .desplegable {
+        .mode {
+          background: {
+          }
+          .noche {
+            color: $marron;
+          }
+          .dia {
+            color: $marron;
+          }
+          .selecEstilosDesplegar {
+            color: $marron;
+          }
+          .selecEstilosPlegar {
+            color: $marron;
+          }
+          img {
+          }
+        }
+        .enlace {
+          color: $marron;
+          font: {
+            color: $marron;
+          }
+        }
+        .mnav-link {
+        }
       }
     }
   }
 }
+
 @media only screen and (max-width: 800px) {
   body {
     .fiestas {

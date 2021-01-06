@@ -222,32 +222,36 @@ body .fiestas .stop:hover {
   }
 }
 @media only screen and (max-width: 800px) {
-  .movil {
+  .stick .movil {
     border-bottom: 0.05rem solid #0a0a0a;
     box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
     background-color: rgba(0, 0, 0, 0.438);
   }
-  .movil .imagenes .foto img {
-    border-color: #0a0a0a;
+  .stick .movil .imagenes .foto img {
+    border: 3px double #0a0a0a;
     box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
   }
-  .movil .imagenes .botones {
-    background-color: transparent;
+  .stick .movil .imagenes .botones .botonMenu {
+    color: #0a0a0a;
   }
-  .movil .imagenes .botones .botonMenu {
-    color: #eeeeee;
-  }
-  .movil .imagenes .botones #boton1 {
+  .stick .movil .imagenes .botones #boton1 {
     background-color: Transparent;
   }
-  .movil .desplegable .mode .noche {
-    color: #eeeeee;
+  .stick .movil .desplegable .mode .noche {
+    color: #0a0a0a;
   }
-  .movil .desplegable .mode .dia {
-    color: #eeeeee;
+  .stick .movil .desplegable .mode .dia {
+    color: #0a0a0a;
   }
-  .movil .desplegable .enlace {
-    color: #eeeeee;
+  .stick .movil .desplegable .mode .selecEstilosDesplegar {
+    color: #0a0a0a;
+  }
+  .stick .movil .desplegable .mode .selecEstilosPlegar {
+    color: #0a0a0a;
+  }
+  .stick .movil .desplegable .enlace {
+    color: #0a0a0a;
+    font-color: #0a0a0a;
   }
 }
 @media only screen and (max-width: 800px) {

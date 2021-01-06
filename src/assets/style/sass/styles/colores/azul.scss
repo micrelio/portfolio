@@ -294,50 +294,73 @@ body {
     }
   }
 }
+//------------------------\\
+//  nav RESPONSIVE  \\
+//------------------------\\
 @media only screen and (max-width: 800px) {
-  .movil {
-    border-bottom: 0.05rem solid $azul;
-
-    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
-    background: {
-      color: rgba(0, 0, 0, 0.438);
-    }
-    .imagenes {
+  .nav {
+  }
+  .stick {
+    .movil {
+      border-bottom: 0.05rem solid $azul;
+      box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
       background: {
-        // color: blue;
+        color: rgba(0, 0, 0, 0.438);
       }
-      .foto {
+      .imagenes {
         background: {
-          // color: green;
+          // color: blue;
         }
-        img {
-          border: 3px double $azul;
-          box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+        .foto {
+          background: {
+            // color: green;
+          }
+          img {
+            border: 3px double $azul;
+            box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+          }
         }
-      }
-      .botones {
-        background: {
-          color: transparent;
-        }
-        .botonMenu {
-          color: $azul;
-        }
-        #boton1 {
-          background-color: Transparent;
-        }
-      }
-    }
-    .desplegable {
-      .mode {
-        .noche {
-          color: $azul;
-        }
-        .dia {
-          color: $azul;
+        .botones {
+          background: {
+          }
+          .botonMenu {
+            color: $azul;
+          }
+
+          #boton1 {
+            background-color: Transparent;
+            p {
+            }
+          }
         }
       }
-      .enlace {
-        color: $azul;
+      .desplegable {
+        .mode {
+          background: {
+          }
+          .noche {
+            color: $azul;
+          }
+          .dia {
+            color: $azul;
+          }
+          .selecEstilosDesplegar {
+            color: $azul;
+          }
+          .selecEstilosPlegar {
+            color: $azul;
+          }
+          img {
+          }
+        }
+        .enlace {
+          color: $azul;
+          font: {
+            color: $azul;
+          }
+        }
+        .mnav-link {
+        }
       }
     }
   }

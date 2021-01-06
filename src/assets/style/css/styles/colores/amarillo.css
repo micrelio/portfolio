@@ -204,30 +204,6 @@ body .fiestas .stop:hover {
   }
 }
 @media only screen and (max-width: 800px) {
-  .imagenes .foto img {
-    border: 3px double #ffff00;
-  }
-  .imagenes .botones {
-    background-color: transparent;
-  }
-  .imagenes .botones .botonMenu {
-    color: #ffff00;
-  }
-  .imagenes .botones #boton1 {
-    background-color: Transparent;
-  }
-
-  .desplegable .mode .noche {
-    color: #ffff00;
-  }
-  .desplegable .mode .dia {
-    color: #ffff00;
-  }
-  .desplegable .enlace {
-    color: #ffff00;
-  }
-}
-@media only screen and (max-width: 800px) {
   body .fiestas .stop {
     font-size: calc(1rem + 0.3vw);
   }

@@ -296,7 +296,7 @@ body {
   }
 }
 //------------------------\\
-//  RESPONSIVE  \\
+//  nav RESPONSIVE  \\
 //------------------------\\
 @media only screen and (max-width: 800px) {
   .nav {
@@ -363,48 +363,6 @@ body {
         .mnav-link {
         }
       }
-    }
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .movil {
-  }
-  .imagenes {
-    background: {
-      // color: blue;
-    }
-    .foto {
-      background: {
-        // color: green;
-      }
-      img {
-        border: 3px double $amarillo;
-      }
-    }
-    .botones {
-      background: {
-        color: transparent;
-      }
-      .botonMenu {
-        color: $amarillo;
-      }
-      #boton1 {
-        background-color: Transparent;
-      }
-    }
-  }
-  .desplegable {
-    .mode {
-      .noche {
-        color: $amarillo;
-      }
-      .dia {
-        color: $amarillo;
-      }
-    }
-    .enlace {
-      color: $amarillo;
     }
   }
 }

@@ -394,6 +394,9 @@
     outline: 0 none;
     background-color: transparent;
   }
+  .stick .movil .imagenes .botones .botonMenu {
+    color: lightskyblue;
+  }
   .stick .movil .imagenes .botones #boton1 {
     outline: none;
     cursor: pointer;

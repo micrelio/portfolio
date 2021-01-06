@@ -170,32 +170,36 @@ body .fiestas .stop:hover {
   }
 }
 @media only screen and (max-width: 800px) {
-  .movil {
+  .stick .movil {
     border-bottom: 0.05rem solid #eabe3f;
     box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
     background-color: rgba(0, 0, 0, 0.438);
   }
-  .movil .imagenes .foto img {
+  .stick .movil .imagenes .foto img {
     border: 3px double #eabe3f;
     box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
   }
-  .movil .imagenes .botones {
-    background-color: transparent;
-  }
-  .movil .imagenes .botones .botonMenu {
+  .stick .movil .imagenes .botones .botonMenu {
     color: #eabe3f;
   }
-  .movil .imagenes .botones #boton1 {
+  .stick .movil .imagenes .botones #boton1 {
     background-color: Transparent;
   }
-  .movil .desplegable .mode .noche {
+  .stick .movil .desplegable .mode .noche {
     color: #eabe3f;
   }
-  .movil .desplegable .mode .dia {
+  .stick .movil .desplegable .mode .dia {
     color: #eabe3f;
   }
-  .movil .desplegable .enlace {
+  .stick .movil .desplegable .mode .selecEstilosDesplegar {
     color: #eabe3f;
+  }
+  .stick .movil .desplegable .mode .selecEstilosPlegar {
+    color: #eabe3f;
+  }
+  .stick .movil .desplegable .enlace {
+    color: #eabe3f;
+    font-color: #eabe3f;
   }
 }
 @media only screen and (max-width: 800px) {
