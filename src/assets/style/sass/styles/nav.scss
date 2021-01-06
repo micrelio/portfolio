@@ -92,7 +92,13 @@
         width: 2.4rem;
         margin: 0.5rem 0rem 0rem 0.2rem;
       }
+      .detenerFestivos{
+        @include estilos;
+        // background-color: red;
+  
+      }
     }
+    
   }
   .filasColores {
     p {

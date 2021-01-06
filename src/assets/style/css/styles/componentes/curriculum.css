@@ -58,9 +58,14 @@ a:visited {
 }
 .datos .datosPersonales .direccion p {
   margin-top: 1.5rem;
+  color: blanchedalmond;
 }
 .datos .datosPersonales .direccion .fa {
   color: red;
+  font-size: 2rem;
+}
+.datos .datosPersonales .direccion a {
+  color: blanchedalmond;
 }
 .datos .experiencia {
   color: #eeeeee;

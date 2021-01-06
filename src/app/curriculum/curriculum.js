@@ -21,10 +21,10 @@ class miCurriculum extends HTMLElement {
                 Nacido en julio de 1982 Valencia (España).
             </p>
             <p>
-            <a class="fa fa-map-marker" href="https://goo.gl/maps/9UUDsgCz7YnERqvD6" target="_blank"></a> Quart dePoblet 46930 (Valencia).
+            <a class="fa fa-map-marker" href="https://goo.gl/maps/9UUDsgCz7YnERqvD6" target="_blank"></a> <a href="https://goo.gl/maps/9UUDsgCz7YnERqvD6" target="_blank">Quart dePoblet 46930 (Valencia).</a>
             </p>
             <p>
-            <a class="fa fa-phone" href="tel:+34653251983"></a> 653 25 19 83 
+            <a class="fa fa-phone" href="tel:+34653251983"></a> <a href="tel:+34653251983">653 25 19 83</a>
             </p>
            
             <p>

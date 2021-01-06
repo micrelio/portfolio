@@ -33,7 +33,7 @@ class miNav extends HTMLElement {
         <p><strong>Festivos</strong></p>
         <hr>
         <div class="selecFiesta">
-            <img class="festivos" id="festivos" onclick="fecha('stop');" src="/src/assets/images/icons/stop2.png" />
+            <img class=" detenerFestivos festivos" id="festivos" onclick="fecha('stop');" src="/src/assets/images/icons/stop2.png" />
             <img class="festivos" id="festivos" onclick="fecha('reyes');" src="/src/assets/images/icons/estrellaNavidad.png" />
             <img class="festivos" id="festivos" onclick="fecha('sanValentin');" src="/src/assets/images/icons/corazon.png" />
             <img class="festivos" id="festivos" onclick="fecha('pascua');" src="/src/assets/images/icons/huevo.png" />

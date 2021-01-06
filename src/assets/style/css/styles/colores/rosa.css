@@ -68,9 +68,6 @@ body .fiestas .stop:hover {
   grid-row: y0/y1;
 }
 .stick .nav .navbar .menu .links .enlace .brushEstilos .selecEstilosDesplegar {
-  border: none;
-  background-color: transparent;
-  font-size: 4rem;
   margin: 0;
   animation-name: parpadeo;
   animation-duration: 2s;
