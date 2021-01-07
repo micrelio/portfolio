@@ -17,7 +17,6 @@
   justify-content: flex-end;
   align-items: center;
 
-  
   .social-links {
     display: flex;
     flex-direction: row;
@@ -50,9 +49,9 @@
   z-index: 100;
   position: fixed;
   //top: 0; //para que siga la pagina
- // position: sticky;
+  // position: sticky;
   //position: absolute;
- // position: -webkit-fixed;  // required for Safari
+  // position: -webkit-fixed;  // required for Safari
   display: none;
   background-color: white;
   border: 0.05rem solid $negro;
@@ -63,102 +62,98 @@
 
   //z-index: 100;
   //position: relative;
-  .desplazable
-  {
+  .desplazable {
     max-height: 90vh;
 
     overflow: auto;
 
-  p {
-    color: $negro;
-    font-size: 1.5rem;
-  }
-  .reset {
-  
-    p{
-     font-size:3rem;
-    }
-  }
-  .filasFiesta {
-    margin: 0rem 0rem 1rem 0rem;
     p {
-      margin: 0rem 0rem 0rem 0rem;
+      color: $negro;
+      font-size: 1.5rem;
     }
-    .selecFiesta {
-      margin: 0.5rem 0rem 0rem 0rem;
-      .festivos {
-        //   border: none;
-        // background-color: transparent;
-        width: 2.4rem;
-        margin: 0.5rem 0rem 0rem 0.2rem;
-      }
-      .detenerFestivos{
-        @include estilos;
-        // background-color: red;
-  
+    .reset {
+      p {
+        font-size: 3rem;
       }
     }
-    
-  }
-  .filasColores {
-    p {
-      margin: 0rem 0rem 0rem 0rem;
-    }
-    .cambioColor {
-      display: flex;
-      flex-direction: column;
-      // align-items: center;
-      // justify-content: center;
-      .selecColor {
-        display: flex;
-        flex-direction: row;
-        .color {
-          height: 2.2rem;
-          width: 2.2rem;
-          border-radius: 50%;
-          border: 0.05rem solid $negro;
-          margin: 0.7rem 0.2rem 0rem 0.2rem;
+    .filasFiesta {
+      margin: 0rem 0rem 1rem 0rem;
+      p {
+        margin: 0rem 0rem 0rem 0rem;
+      }
+      .selecFiesta {
+        margin: 0.5rem 0rem 0rem 0rem;
+        .festivos {
+          //   border: none;
+          // background-color: transparent;
+          width: 2.4rem;
+          margin: 0.5rem 0rem 0rem 0.2rem;
+        }
+        .detenerFestivos {
+          @include estilos;
+          // background-color: red;
         }
       }
-      .blanco {
-        background: $blanco;
+    }
+    .filasColores {
+      p {
+        margin: 0rem 0rem 0rem 0rem;
       }
-      .gris {
-        background: $gris;
-      }
-      .amarillo {
-        background: $amarillo;
-      }
-      .naranja {
-        background: $naranja;
-      }
-      .oro {
-        background: $oro;
-      }
-      .marron {
-        background: $marron;
-      }
-      .rojo {
-        background: $rojo;
-      }
-      .rosa {
-        background: $rosa;
-      }
-      .morado {
-        background: $morado;
-      }
-      .azul {
-        background: $azul;
-      }
-      .verde {
-        background: $verde;
-      }
-      .negro {
-        background: $negro;
+      .cambioColor {
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        // justify-content: center;
+        .selecColor {
+          display: flex;
+          flex-direction: row;
+          .color {
+            height: 2.2rem;
+            width: 2.2rem;
+            border-radius: 50%;
+            border: 0.05rem solid $negro;
+            margin: 0.7rem 0.2rem 0rem 0.2rem;
+          }
+        }
+        .blanco {
+          background: $blanco;
+        }
+        .gris {
+          background: $gris;
+        }
+        .amarillo {
+          background: $amarillo;
+        }
+        .naranja {
+          background: $naranja;
+        }
+        .oro {
+          background: $oro;
+        }
+        .marron {
+          background: $marron;
+        }
+        .rojo {
+          background: $rojo;
+        }
+        .rosa {
+          background: $rosa;
+        }
+        .morado {
+          background: $morado;
+        }
+        .azul {
+          background: $azul;
+        }
+        .verde {
+          background: $verde;
+        }
+        .negro {
+          background: $negro;
+        }
       }
     }
   }
-}
   .opacidad {
     p {
       margin: 0rem 0rem 0rem 0rem;
@@ -244,7 +239,7 @@
   display: none;
 }
 .stick {
-  margin: 0rem 0rem 5rem 0rem ;
+  margin: 0rem 0rem 5rem 0rem;
 
   // z-index: 1000;
   // position: fixed; //para que siga la pagina
@@ -318,7 +313,7 @@
             background: {
               // color:gray;
             }
-            p{
+            p {
               color: $corporativo;
             }
             font: {
@@ -375,7 +370,7 @@
 
             .selecEstilosDesplegar {
               @include estilos;
-           //color: $corporativo;
+              //color: $corporativo;
 
               font-size: 3rem;
 
@@ -389,7 +384,7 @@
               //   animation-name: none;
             }
           }
-          
+
           .irInicio:hover,
           .irBiografia:hover,
           .irWebs:hover,
@@ -426,144 +421,142 @@
     display: none;
   }
   .stick {
-    margin: 0rem 0rem 5rem 0rem ;
-  .movil {
-    border-bottom: 0.05rem solid $corporativo;
-    display: block;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
-    background: {
-      color: rgba(0, 0, 0, 0.438);
-    }
-    .imagenes {
-      padding: calc(0.5rem + 0.5vw);
+    margin: 0rem 0rem 5rem 0rem;
+    .movil {
+      border-bottom: 0.05rem solid $corporativo;
+      display: block;
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
+      flex-direction: column;
+      box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
       background: {
-        // color: blue;
+        color: rgba(0, 0, 0, 0.438);
       }
-      .foto {
-        position: relative;
-        cursor: pointer;
+      .imagenes {
+        padding: calc(0.5rem + 0.5vw);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
         background: {
-          // color: green;
+          // color: blue;
         }
-        img {
-          display: block;
-          border-radius: 75%;
-          border: 3px double $corporativo;
-          width: calc(4vw + 5rem);
-          box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
-        }
-      }
-      .botones {
-        border: 0;
-        outline: 0 none;
-        background: {
-          color: transparent;
-        }
-        .botonMenu {
-            color:$corporativo;
-        }
-        #boton1 {
-          outline: none;
+        .foto {
+          position: relative;
           cursor: pointer;
-          border: none;
-
-          background-color: Transparent;
-          p {
+          background: {
+            // color: green;
+          }
+          img {
             display: block;
-            font-size: calc(5vw + 5rem);
+            border-radius: 75%;
+            border: 3px double $corporativo;
+            width: calc(4vw + 5rem);
+            box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+          }
+        }
+        .botones {
+          border: 0;
+          outline: 0 none;
+          background: {
+            color: transparent;
+          }
+          .botonMenu {
+            color: $corporativo;
+          }
+          #boton1 {
+            outline: none;
+            cursor: pointer;
+            border: none;
+
+            background-color: Transparent;
+            p {
+              display: block;
+              font-size: calc(5vw + 5rem);
+            }
           }
         }
       }
-    }
-    .desplegable {
-      .mode {
-        margin: 0rem 0rem 1rem 1rem;
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: flex-end;
-        align-items: center;
-        background: {
-          //     color:rgb(196, 60, 83) ;
+      .desplegable {
+        .mode {
+          margin: 0rem 0rem 1rem 1rem;
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: flex-end;
+          align-items: center;
+          background: {
+            //     color:rgb(196, 60, 83) ;
+          }
+          p {
+            color: $corporativo;
+            font-size: 5rem;
+          }
+          .noche {
+            display: none;
+            color: $corporativo;
+            font-size: 5rem;
+          }
+          .dia {
+            display: block;
+            color: $corporativo;
+            font-size: 5rem;
+          }
+          .selecEstilosDesplegar {
+            @include estilos;
+            font-size: 5rem;
+            color: $corporativo;
+          }
+          .selecEstilosPlegar {
+            animation-name: none;
+            color: $corporativo;
+          }
+          img {
+            position: absolute;
+            width: calc(0.1rem + 3vw);
+          }
         }
-        p{
+        .enlace {
+          margin: 1rem;
+          border: 0;
           color: $corporativo;
-          font-size: 5rem;
-
+          cursor: pointer;
+          font: {
+            size: 3rem;
+            color: $corporativo;
+          }
         }
-        .noche {
-          display: none;
-          color: $corporativo;
-          font-size: 5rem;
-        }
-        .dia {
+        .mnav-link {
           display: block;
-          color: $corporativo;
-          font-size: 5rem;
         }
-        .selecEstilosDesplegar {
-          @include estilos;
-          font-size: 5rem;
-          color: $corporativo;
-        }
-        .selecEstilosPlegar {
-          animation-name: none;
-          color: $corporativo;
-        }
-        img {
-          position: absolute;
-          width: calc(0.1rem + 3vw);
-        }
-      }
-      .enlace {
-        margin: 1rem;
-        border: 0;
-        color: $corporativo;
-        cursor: pointer;
-        font: {
-          size: 3rem;
-          color: $corporativo;
-        }
-      }
-      .mnav-link {
-        display: block;
       }
     }
   }
 }
-}
-  @media (max-width: 800px) {
-    section {
-      #links {
-        display: none;
-        background: {
-          // color: pink;
-        }
+@media (max-width: 800px) {
+  section {
+    #links {
+      display: none;
+      background: {
+        // color: pink;
       }
     }
   }
-  /* Y finalmente las animaciones */
-  @-webkit-keyframes fade {
-    from {
-      opacity: 0.4;
-    }
-    to {
-      opacity: 1;
-    }
+}
+/* Y finalmente las animaciones */
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
   }
-  @keyframes fade {
-    from {
-      opacity: 0.4;
-    }
-    to {
-      opacity: 1;
-    }
+  to {
+    opacity: 1;
   }
-  // /* Todo con CSS y HTML. */
-
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+// /* Todo con CSS y HTML. */

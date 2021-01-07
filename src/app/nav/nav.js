@@ -206,12 +206,12 @@ class miNav extends HTMLElement {
       `;
     // esto arranca automatico
     //mover elemento con el raton
-    Drag.init (document.getElementById ("foto"));
-    
+    Drag.init(document.getElementById("foto"));
+
     //probar para mover div
     // var theHandle = document.getElementById("botonesEstilo");
     // var theRoot = document.getElementById("cabecera");
-    // Drag.init(theHandle, theRoot); 
+    // Drag.init(theHandle, theRoot);
     // <div id="botonesEstilo" class="botonesEstilo">
     // <div id="cabecera" class="cabecera"></div>
     //</div>
@@ -271,7 +271,7 @@ function navegar(id) {
 //funcion transparencia
 function mostrarValor(opacidadMenu) {
   console.log(opacidadMenu);
-  document.getElementById("valBox").innerHTML = opacidadMenu*2 + "%";
+  document.getElementById("valBox").innerHTML = opacidadMenu * 2 + "%";
   switch (opacidadMenu) {
     case "0":
       document.getElementById("stick").style = "opacity:";
