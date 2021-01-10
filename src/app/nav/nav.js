@@ -47,14 +47,14 @@ class miNav extends HTMLElement {
     </div>
 
 
-    <div class="filasColores">
-      <p><strong>Fondos</strong></p>
+    <div class="fondoPantalla">
+      <p><strong>fondos</strong></p>
       <hr>
-      <div class="selecColor">
-        <p class="color blanco" onclick="color('blanco');"></p>
-        <p class="color amarillo" onclick="color('amarillo');"></p>
-        <p class="color oro" onclick="color('oro');"></p>
-        caca
+      <div class="selecFondo">
+        <p class="color blanco" onclick="fondoPantalla('blanco');"></p>
+        <p class="color negro" onclick="fondoPantalla('negro');"></p>
+        <p class="color movimiento" onclick="fondoPantalla('movimiento');"></p>
+
       </div>
     </div>
 

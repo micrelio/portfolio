@@ -55,14 +55,37 @@
 //       break;
 //   }
 // }
+function fondoPantalla(fondo) {
+  console.log("fondo");
+  switch (fondo) {
+    case "blanco":
+      document.getElementById("body").style = "background-color:#eeeeee";
+      break;
+    case "negro":
+      document.getElementById("body").style = "height: 100% ; background-color:#0a0a0a";
+      break;
+    case "movimiento":
+      // var imagen = document.getElementById("body");
+      // imagen.style.backgroundImage = "url('../../../images/gifs/liquido.gif')";
+      // document.getElementById("body").style = " background-attachment: fixed;; background-image:url('/src/assets/images/gifs/liquido.gif');  ";
+      // document.body.style.backgroundImage = "url('/src/assets/images/gifs/liquido.gif')";
+      // document.getElementById("body").style = "background-repeat: no-repeat";
+      // document.getElementById("body").style = "background-size: cover";
+
+      
+      break;
+    default:
+      // document.getElementById("nav").style = "background-color:white";
+      break;
+  }
+}
 function resetEstilos() {
   document.getElementById("nav").style = "background-color:#";
   document.getElementById("footer").style = "background-color:#";
   document.getElementById("color").href =
-  "/src/assets/style/css/styles/colores/style.css";
+    "/src/assets/style/css/styles/colores/style.css";
   modoNoche();
-  fecha('stop');
-
+  fecha("stop");
 }
 function colorMenu(color) {
   console.log("nav");
@@ -208,7 +231,7 @@ function color(color) {
   }
 }
 function modoNoche(id) {
-  console.log('aspirina')
+  console.log("aspirina");
   //   getDate(): devuelve el día del mes (1 a 31).
   // getDay(): devuelve el número del día de la semana: desde 0 (domingo) hasta 6 (sábado).
   // getFullYear(): cuatro dígitos del año.

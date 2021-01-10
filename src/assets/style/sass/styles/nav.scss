@@ -52,7 +52,14 @@
   // position: sticky;
   //position: absolute;
   // position: -webkit-fixed;  // required for Safari
-  display: none;
+
+
+
+  // display: none;
+
+
+
+
   background-color: white;
   border: 0.05rem solid $negro;
   border-radius: 0.9rem;
@@ -94,6 +101,40 @@
           // background-color: red;
         }
       }
+    }
+    .fondoPantalla{
+      p {
+        margin: 0rem 0rem 0rem 0rem;
+      }
+      .selecFondo{
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        // justify-content: center;
+         display: flex;
+          flex-direction: row;
+          .color {
+            height: 2.2rem;
+            width: 2.2rem;
+            border-radius: 50%;
+            border: 0.05rem solid $negro;
+            margin: 0.7rem 0.2rem 0rem 0.2rem;
+          }
+      }
+      .blanco {
+        background: $blanco;
+      }
+      .negro {
+        background: $negro;
+      }
+      .movimiento{
+        background: {
+          image: url("../../../images/gifs/liquido.gif");
+          position: center;
+          size: cover;
+        }
+      }
+
     }
     .filasColores {
       p {

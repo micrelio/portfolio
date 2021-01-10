@@ -40,7 +40,6 @@
 .botonesEstilo {
   z-index: 100;
   position: fixed;
-  display: none;
   background-color: white;
   border: 0.05rem solid #0a0a0a;
   border-radius: 0.9rem;
@@ -77,6 +76,33 @@
   animation-duration: 2s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+}
+.botonesEstilo .desplazable .fondoPantalla p {
+  margin: 0rem 0rem 0rem 0rem;
+}
+.botonesEstilo .desplazable .fondoPantalla .selecFondo {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  flex-direction: row;
+}
+.botonesEstilo .desplazable .fondoPantalla .selecFondo .color {
+  height: 2.2rem;
+  width: 2.2rem;
+  border-radius: 50%;
+  border: 0.05rem solid #0a0a0a;
+  margin: 0.7rem 0.2rem 0rem 0.2rem;
+}
+.botonesEstilo .desplazable .fondoPantalla .blanco {
+  background: #eeeeee;
+}
+.botonesEstilo .desplazable .fondoPantalla .negro {
+  background: #0a0a0a;
+}
+.botonesEstilo .desplazable .fondoPantalla .movimiento {
+  background-image: url("../../../images/gifs/liquido.gif");
+  background-position: center;
+  background-size: cover;
 }
 .botonesEstilo .desplazable .filasColores p {
   margin: 0rem 0rem 0rem 0rem;
