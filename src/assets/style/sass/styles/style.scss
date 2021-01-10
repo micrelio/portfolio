@@ -29,8 +29,14 @@ body {
   vertical-align: baseline;
   width: 100%;
   height: 100%;
-  background-color: $gris;
   
+      //background-image: url("../../../images/gifs/liquido.gif")  ;
+      background: {
+        attachment: fixed;
+        size: cover;
+        color: $gris;
+          }
+        
   .separador5 {
     @include separador5;
   }
