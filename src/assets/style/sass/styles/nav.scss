@@ -53,12 +53,7 @@
   //position: absolute;
   // position: -webkit-fixed;  // required for Safari
 
-
-
   // display: none;
-
-
-
 
   background-color: white;
   border: 0.05rem solid $negro;
@@ -102,24 +97,24 @@
         }
       }
     }
-    .fondoPantalla{
+    .fondoPantalla {
       p {
         margin: 0rem 0rem 0rem 0rem;
       }
-      .selecFondo{
+      .selecFondo {
         display: flex;
         flex-direction: column;
         // align-items: center;
         // justify-content: center;
-         display: flex;
-          flex-direction: row;
-          .color {
-            height: 2.2rem;
-            width: 2.2rem;
-            border-radius: 50%;
-            border: 0.05rem solid $negro;
-            margin: 0.7rem 0.2rem 0rem 0.2rem;
-          }
+        display: flex;
+        flex-direction: row;
+        .color {
+          height: 2.2rem;
+          width: 2.2rem;
+          border-radius: 50%;
+          border: 0.05rem solid $negro;
+          margin: 0.7rem 0.2rem 0rem 0.2rem;
+        }
       }
       .blanco {
         background: $blanco;
@@ -127,14 +122,13 @@
       .negro {
         background: $negro;
       }
-      .movimiento{
+      .movimiento {
         background: {
           image: url("../../../images/gifs/liquido.gif");
           position: center;
           size: cover;
         }
       }
-
     }
     .filasColores {
       p {
@@ -322,7 +316,11 @@
           border-radius: 75%;
           border: 0.05rem solid $corporativo;
           width: calc(3vw + 3rem);
-          box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+        //  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+        }
+        img:hover{
+          @include zoom;
+          overflow: hidden;
         }
       }
       .menu {
@@ -387,7 +385,7 @@
             grid-row: y0 / y1;
           }
           .mode {
-            grid-column: x6 / x7;
+                        grid-column: x6 / x7;
             grid-row: y0 / y1;
             // margin: 0rem 1rem 0rem 0rem;
             // display: flex;
@@ -404,6 +402,9 @@
               //color: $corporativo;
               font-size: 3rem;
             }
+          }
+          .mode:hover{
+            @include rotacion;
           }
           .brushEstilos {
             grid-column: x7 / x8;
@@ -425,7 +426,9 @@
               //   animation-name: none;
             }
           }
-
+.brushEstilos:hover{
+  @include voltear
+}
           .irInicio:hover,
           .irBiografia:hover,
           .irWebs:hover,
@@ -487,6 +490,7 @@
           cursor: pointer;
           background: {
             // color: green;
+            // .foto:hover {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
           }
           img {
             display: block;

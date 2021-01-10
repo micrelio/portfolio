@@ -62,7 +62,8 @@ function fondoPantalla(fondo) {
       document.getElementById("body").style = "background-color:#eeeeee";
       break;
     case "negro":
-      document.getElementById("body").style = "height: 100% ; background-color:#0a0a0a";
+      document.getElementById("html").style = "height: 100% ; background-color:#0a0a0a";
+      // document.getElementById("modo").href = "";
       break;
     case "movimiento":
       // var imagen = document.getElementById("body");
