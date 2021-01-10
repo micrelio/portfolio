@@ -76,7 +76,7 @@ class miCurriculum extends HTMLElement {
         </div>
         <div class="descripcion">
             <p class="año">2018</p><br>
-            <p>Grado superior ASIR (administración de sistemas informáticos en red) <a href="https://www.tobalcaide.com/" target="_blank"> Academia Tobalcaide </a>, Quart de Poblet (Valencia).</p>
+            <p>Grado superior ASIR (administración de sistemas informáticos en red) <a href="https://www.tobalcaide.com/" target="_blank"> Academia Tobalcaide</a>, Quart de Poblet (Valencia).</p>
         </div>
         <div class="titulo">
             <a href="/src/assets/images/titulos/ASIR.jpg" target="_blank"><img alt="" src="/src/assets/images/icons/titulo2.png"></a>
@@ -118,7 +118,7 @@ class miCurriculum extends HTMLElement {
         </div>
         <div class="descripcion">
             <p class="año">2002</p><br>
-            <p> Curso de trabajos en alta tensión en <a href="https://www.coversa.com/" target="_blank"> COVER </a>, Manises (Valencia).</p>
+            <p> Curso de trabajos en alta tensión en <a href="https://www.coversa.com/" target="_blank"> COVER</a>, Manises (Valencia).</p>
         </div>
         <div class="titulo">
             <a href="/src/assets/images/titulos/Cover.jpg" target="_blank"><img alt="" src="/src/assets/images/icons/titulo2.png"></a>
@@ -132,7 +132,7 @@ class miCurriculum extends HTMLElement {
         </div>
         <div class="descripcion">
             <p class="año">2000</p><br>
-            <p> Grado medio Electricidad: <a href="http://institutofaitanar.edu.gva.es/" target="_blank"> IES Faitanar </a>, Quart de Poblet (Valencia).</p>
+            <p> Grado medio Electricidad: <a href="http://institutofaitanar.edu.gva.es/" target="_blank"> IES Faitanar</a>, Quart de Poblet (Valencia).</p>
         </div>
         <div class="titulo">
             <a href="/src/assets/images/titulos/electricidad.jpg" target="_blank"><img alt="" src="/src/assets/images/icons/titulo2.png"></a>
@@ -146,7 +146,7 @@ class miCurriculum extends HTMLElement {
         </div>
         <div class="descripcion">
             <p class="año">1997</p><br>
-            <p>FP Elelectrónica: <a href="https://web.iesgonzaloanaya.es/" target="_blank">IES Gonzalo Anaya </a>, Xirivella (Valencia).</p>
+            <p>FP Elelectrónica: <a href="https://web.iesgonzaloanaya.es/" target="_blank">IES Gonzalo Anaya</a>, Xirivella (Valencia).</p>
         </div>
     </div>
 </section>

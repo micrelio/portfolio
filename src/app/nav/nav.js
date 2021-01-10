@@ -45,6 +45,21 @@ class miNav extends HTMLElement {
             <img class="festivos" onclick="fecha('anoNuevo');" src="/src/assets/images/icons/champan.png" />
         </div>
     </div>
+
+
+    <div class="filasColores">
+      <p><strong>Fondos</strong></p>
+      <hr>
+      <div class="selecColor">
+        <p class="color blanco" onclick="color('blanco');"></p>
+        <p class="color amarillo" onclick="color('amarillo');"></p>
+        <p class="color oro" onclick="color('oro');"></p>
+        caca
+      </div>
+    </div>
+
+
+
     <div class="filasColores">
         <p><strong>Color general</strong></p>
         <hr>
