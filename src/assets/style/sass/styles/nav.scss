@@ -526,6 +526,11 @@
         }
       }
       .desplegable {
+        display:flex;
+        flex-direction: column;
+        a{
+text-decoration: none;
+        }
         .mode {
           margin: 0rem 0rem 1rem 1rem;
           display: flex;

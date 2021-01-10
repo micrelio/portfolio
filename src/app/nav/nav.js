@@ -166,14 +166,6 @@ class miNav extends HTMLElement {
             </div>
             <div class="menu">
                 <div id="links" class="links">
-                <!--
-                    <div class="enlace irInicio" onclick="navegar('inicio');"><p> Inicio </p></div>
-                    <div class="enlace irBiografia" onclick="navegar('biografia');"><p> Biografía </p></div>
-                    <div class="enlace irWebs" onclick="navegar('webs'); "><p> Webs </p></div>
-                    <div class="enlace irGaleria" onclick="navegar('galeria');"><p> Galería </p></div>
-                    <div class="enlace irCurriculum" onclick="navegar('curriculum');"><p> Currículum </p></div>
-                    <div class="enlace irContacto" onclick="navegar('contacto');"><p> Contacto </p></div>
-                    -->
                     <a class="enlace irInicio" href="#inicio">Inicio</a>
                     <a class="enlace irBiografia" href="#biografia">Biografía</a>
                     <a class="enlace irWebs" href="#webs">Webs</a>
@@ -210,12 +202,12 @@ class miNav extends HTMLElement {
         <div>
         </div>
         <div style="display: none" class="desplegable nuevo" id="desplegable">
-            <div onclick="navegar('inicio'); seleccionado();" class="enlace">Inicio</div>
-            <div onclick="navegar('biografia'); seleccionado();" class="enlace">Biografía</div>
-            <div onclick="navegar('webs'); seleccionado();" class="enlace">Webs</div>
-            <div onclick="navegar('galeria'); seleccionado();" class="enlace">Galeria</div>
-            <div onclick="navegar('curriculum'); seleccionado();" class="enlace">Curriculum</div>
-            <div onclick="navegar('contacto'); seleccionado();" class="enlace">Contacto</div>
+            <a class="enlace" href="#inicio" onclick="seleccionado();">Inicio</a>
+            <a class="enlace" href="#biografia" onclick="seleccionado();">Biografía</a>
+            <a class="enlace" href="#webs" onclick="seleccionado();">Webs</a>
+            <a class="enlace" href="#galeria" onclick="seleccionado();">Galería</a>
+            <a class="enlace" href="#curriculum" onclick="seleccionado();">Currículum</a>
+            <a class="enlace" href="#contacto" onclick="seleccionado();">Contacto</a>
             <div class="mode">
               <p id="selecEstilosDesplegar" class="selecEstilosDesplegar bx bxs-brush"></p>
               <p style="display:none;" id="selecEstilosPlegar" class="selecEstilosPlegar bx bxs-brush-alt"></p>
@@ -243,53 +235,6 @@ class miNav extends HTMLElement {
 
 customElements.define("mi-nav", miNav);
 // modificar para routing
-function navegar(id) {
-  var render = id;
-  switch (render) {
-    case "botones":
-      document.getElementById("componente").innerHTML =
-        "<mi-estilo></mi-estilo>";
-      break;
-    case "inicio":
-      document.getElementById("componente").innerHTML =
-        "<mi-inicio></mi-inicio>";
-      break;
-    case "biografia":
-      document.getElementById("componente").innerHTML =
-        "<mi-biografia></mi-biografia>";
-      break;
-    case "webs":
-      document.getElementById("componente").innerHTML = "<mi-webs></mi-webs>";
-      break;
-    case "galeria":
-      document.getElementById("componente").innerHTML =
-        "<mi-galeria><mi-galeria>";
-      // window.router.init([
-      //   {
-      // path: "/list",
-      // view: "<mi-galeria><mi-galeria>",
-      //   },
-      // ]);
-      // document.getElementById("componente").innerHTML =
-      //   "<mi-galeria></mi-galeria>";
-      // location.replace("src/app/galeria/galeria.js");
-      break;
-    case "videos":
-      document.getElementById("componente").innerHTML =
-        "<mi-videos></mi-videos>";
-      break;
-    case "curriculum":
-      document.getElementById("componente").innerHTML =
-        "<mi-curriculum></mi-curriculum>";
-      break;
-    case "contacto":
-      document.getElementById("componente").innerHTML =
-        "<mi-contacto></mi-contacto>";
-      break;
-    default:
-      break;
-  }
-}
 
 //funcion transparencia
 function mostrarValor(opacidadMenu) {

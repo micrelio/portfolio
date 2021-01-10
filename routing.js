@@ -1,4 +1,4 @@
-const $content = document.querySelector("#content");
+const $content = document.querySelector("#componente");
 
 function getContent(fragmentId) {
   let partials = {

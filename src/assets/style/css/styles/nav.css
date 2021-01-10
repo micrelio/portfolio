@@ -455,6 +455,13 @@
     display: block;
     font-size: calc(5vw + 5rem);
   }
+  .stick .movil .desplegable {
+    display: flex;
+    flex-direction: column;
+  }
+  .stick .movil .desplegable a {
+    text-decoration: none;
+  }
   .stick .movil .desplegable .mode {
     margin: 0rem 0rem 1rem 1rem;
     display: flex;
