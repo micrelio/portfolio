@@ -338,6 +338,9 @@
           grid-column-gap: 0rem;
           grid-row-gap: 1rem;
           //width: 67%;
+          a{
+            text-decoration: none;
+          }
           .enlace {
             display: flex;
             align-items: center;
