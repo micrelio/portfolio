@@ -2,17 +2,20 @@ const $content = document.querySelector("#content");
 
 function getContent(fragmentId) {
   let partials = {
-    home: "<mi-inicio></mi-inicio>",
-    about: "This is the about page.",
-    contact: "This is the contact page."
-  };
+    inicio: "<mi-inicio></mi-inicio>",
+    biografia: "<mi-biografia></mi-biografia>",
+    webs: "<mi-webs></mi-webs>",
+    galeria: "<mi-galeria><mi-galeria>",
+    curriculum: "<mi-curriculum></mi-curriculum>",
+    contacto: "<mi-contacto></mi-contacto>"
+    };
 
   return partials[fragmentId];
 }
 
 function setActiveLink(fragmentId) {
   const links = document.querySelectorAll(".navbar a");
-  links.forEach(link => {
+  links.forEach((link) => {
     let linkRef = link.getAttribute("href").replace(/#/g, "");
     if (linkRef === fragmentId) {
       link.classList.add("active");
@@ -24,7 +27,7 @@ function setActiveLink(fragmentId) {
 
 function navigate() {
   if (!location.hash) {
-    location.hash = "#home";
+    location.hash = "#inicio";
   }
 
   const fragmentId = location.hash.replace(/#/g, "");
