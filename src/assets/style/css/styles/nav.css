@@ -462,28 +462,43 @@
   .stick .movil .desplegable a {
     text-decoration: none;
   }
-  .stick .movil .desplegable .mode {
+  .stick .movil .desplegable .brushMode {
     margin: 0rem 0rem 1rem 1rem;
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
     align-items: center;
   }
-  .stick .movil .desplegable .mode p {
+  .stick .movil .desplegable .brushMode .mode {
+    cursor: pointer;
+  }
+  .stick .movil .desplegable .brushMode .mode:hover {
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  .stick .movil .desplegable .brushMode p {
     color: lightskyblue;
     font-size: 5rem;
   }
-  .stick .movil .desplegable .mode .noche {
+  .stick .movil .desplegable .brushMode .noche {
     display: none;
     color: lightskyblue;
     font-size: 5rem;
   }
-  .stick .movil .desplegable .mode .dia {
+  .stick .movil .desplegable .brushMode .dia {
     display: block;
     color: lightskyblue;
     font-size: 5rem;
   }
-  .stick .movil .desplegable .mode .selecEstilosDesplegar {
+  .stick .movil .desplegable .brushMode .brushEstilos:hover {
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+  }
+  .stick .movil .desplegable .brushMode .selecEstilosDesplegar {
     margin: 0;
     animation-name: parpadeo;
     animation-duration: 2s;
@@ -492,11 +507,11 @@
     font-size: 5rem;
     color: lightskyblue;
   }
-  .stick .movil .desplegable .mode .selecEstilosPlegar {
+  .stick .movil .desplegable .brushMode .selecEstilosPlegar {
     animation-name: none;
     color: lightskyblue;
   }
-  .stick .movil .desplegable .mode img {
+  .stick .movil .desplegable .brushMode img {
     position: absolute;
     width: calc(0.1rem + 3vw);
   }

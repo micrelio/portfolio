@@ -208,9 +208,12 @@ class miNav extends HTMLElement {
             <a class="enlace" href="#galeria" onclick="seleccionado();">Galería</a>
             <a class="enlace" href="#curriculum" onclick="seleccionado();">Currículum</a>
             <a class="enlace" href="#contacto" onclick="seleccionado();">Contacto</a>
-            <div class="mode">
+            <div class="brushMode">
+            <div class="brushEstilos">
               <p id="selecEstilosDesplegar" class="selecEstilosDesplegar bx bxs-brush"></p>
               <p style="display:none;" id="selecEstilosPlegar" class="selecEstilosPlegar bx bxs-brush-alt"></p>
+            </div>
+            <div class="mode">
               <p id="noche" class="noche bx bxs-moon" onclick="modoNoche('dia');"></p>
               <p id="dia" class="dia bx bxs-sun" onclick="modoNoche('noche');"></p>
             </div>

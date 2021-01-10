@@ -1,17 +1,8 @@
 @charset "UTF-8";
 /* ---------------hovers--------------*/
-.head {
-  width: 100%;
-  position: relative;
-}
-.head img {
-  width: 100%;
-}
-
 .primera form {
   /* Sólo para centrar el formulario a la página */
   margin: 0 auto;
-  width: 400px;
   /* Para ver el borde del formulario */
   padding: 1em;
   border: 1px solid #ccc;
@@ -20,7 +11,6 @@
 .primera label {
   /* Para asegurarse que todos los labels tienen el mismo tamaño y están alineados correctamente */
   display: inline-block;
-  width: 90px;
   text-align: right;
 }
 .primera input,
@@ -29,7 +19,6 @@
          Por defecto, las areas de texto tienen una fuente con monospace */
   font: 1em sans-serif;
   /* Para darle el mismo tamaño a todos los campos de texto */
-  width: 300px;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   /* Para armonizar el look&feel del borde en los campos de texto */

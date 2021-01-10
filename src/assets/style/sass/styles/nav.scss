@@ -531,7 +531,7 @@
         a{
 text-decoration: none;
         }
-        .mode {
+        .brushMode {
           margin: 0rem 0rem 1rem 1rem;
           display: flex;
           flex-direction: row-reverse;
@@ -539,6 +539,13 @@ text-decoration: none;
           align-items: center;
           background: {
             //     color:rgb(196, 60, 83) ;
+          }
+          .mode{
+            cursor: pointer;
+          }
+          
+          .mode:hover{
+            @include rotacion;
           }
           p {
             color: $corporativo;
@@ -553,6 +560,9 @@ text-decoration: none;
             display: block;
             color: $corporativo;
             font-size: 5rem;
+          }
+          .brushEstilos:hover{
+            @include voltear
           }
           .selecEstilosDesplegar {
             @include estilos;
