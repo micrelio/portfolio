@@ -77,7 +77,6 @@ customElements.define('mi-visor', miVisor);
 //---COMIENZO----------------------------
 //--cargar imagen desde barra menu---
 function cargar(preVista) {
-    console.log('HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH')
     if (typeof marcha !== 'undefined') {
         clearInterval(marcha);
     }

@@ -5,7 +5,7 @@ class miWebs extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     
-<section class="web">
+<div class="web">
 <div class="separador5">
     </div>
 <h1>Diseños web</h1>
@@ -113,7 +113,7 @@ class miWebs extends HTMLElement {
     </div>
     <div class="separador5">
     </div>
-</section>
+</div>
 `;
   }
 }

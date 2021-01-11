@@ -62,7 +62,8 @@ function fondoPantalla(fondo) {
       document.getElementById("body").style = "background-color:#eeeeee";
       break;
     case "negro":
-      document.getElementById("html").style = "height: 100% ; background-color:#0a0a0a";
+      document.getElementById("html").style =
+        "height: 100% ; background-color:#0a0a0a";
       // document.getElementById("modo").href = "";
       break;
     case "movimiento":
@@ -73,7 +74,6 @@ function fondoPantalla(fondo) {
       // document.getElementById("body").style = "background-repeat: no-repeat";
       // document.getElementById("body").style = "background-size: cover";
 
-      
       break;
     default:
       // document.getElementById("nav").style = "background-color:white";
@@ -252,14 +252,18 @@ function modoNoche(id) {
   }
   if ((hora >= 8 && hora < 20) || id == "noche") {
     estilo = "dia";
-  } else if ((hora >= 20 && hora < 26) ||(hora > 00 && hora < 8) ||id == "dia") {
+  } else if (
+    (hora >= 20 && hora < 26) ||
+    (hora > 00 && hora < 8) ||
+    id == "dia"
+  ) {
     estilo = "noche";
   }
   switch (estilo) {
-    case "noche":
+    case "dia":
       document.getElementById("modo").href =
         "/src/assets/style/css/styles/styleDia.css";
-       break;
+      break;
     case "noche":
       document.getElementById("modo").href = "";
       break;

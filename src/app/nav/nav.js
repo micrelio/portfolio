@@ -77,6 +77,7 @@ class miNav extends HTMLElement {
     </div>
     <!-- <audio src="../sonidos/ping.mp4" autoplay loop></audio> -->
 </section>
+
       `;
     // esto arranca automatico
     //mover elemento con el raton
@@ -156,20 +157,22 @@ function mostrarValor(opacidadMenu) {
 document.addEventListener("click", function (e) {
   //obtiendo informacion del DOM para
   var clic = e.target.id;
+  console.log(e);
   switch (clic) {
     case "selecEstilosDesplegar":
       document.getElementById("panelEstilos").innerHTML =
         "<mi-panelestilos></mi-panelestilos>";
       // document.getElementById("botonesEstilo").style = "display:block";
-      document.getElementById("selecEstilosDesplegar").style ="display:none";
-      document.getElementById("selecEstilosPlegar").style ="display:block";
+      document.getElementById("selecEstilosDesplegar").style = "display:none";
+      document.getElementById("selecEstilosPlegar").style = "display:block";
       break;
     case "selecEstilosMenuDesplegar":
       document.getElementById("panelEstilos").innerHTML =
         "<mi-panelestilos></mi-panelestilos>";
       // document.getElementById("botonesEstiloMenu").style = "display:block";
-      document.getElementById("selecEstilosMenuDesplegar").style ="display:none";
-      document.getElementById("selecEstilosMenuPlegar").style ="display:block";
+      document.getElementById("selecEstilosMenuDesplegar").style =
+        "display:none";
+      document.getElementById("selecEstilosMenuPlegar").style = "display:block";
       break;
 
     default:
@@ -177,7 +180,7 @@ document.addEventListener("click", function (e) {
         //alert("Clicked in Box");
         document.getElementById("botonesEstilo").style = "display:block";
       } else {
-         //alert("Clicked outside Box");
+        //alert("Clicked outside Box");
         document.getElementById("botonesEstilo").style = "display:none";
         document.getElementById("selecEstilosDesplegar").style =
           "display:block";
