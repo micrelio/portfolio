@@ -10,7 +10,9 @@ function getContent(fragmentId) {
     contacto: "<mi-contacto></mi-contacto>",
     avisolegal: "<mi-avisolegal></mi-avisolegal>",
     politicadeprivacidad: "<mi-politicadeprivacidad></mi-politicadeprivacidad>",
-    politicadecookies: "<mi-politicadecookies></mi-politicadecookies>"
+    politicadecookies: "<mi-politicadecookies></mi-politicadecookies>",
+   // panelEstilos: "<mi-panelestilos></mi-panelestilos>"
+
     };
 
   return partials[fragmentId];

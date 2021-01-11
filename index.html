@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="/src/assets/style/css/styles/componentes/botonGaleria.css" media="screen" />
     <link rel="stylesheet" href="/src/assets/style/css/styles/componentes/cookies.css" media="screen" />
     <link rel="stylesheet" href="/src/assets/style/css/styles/componentes/textoslegales.css" media="screen" />
+    <link rel="stylesheet" href="/src/assets/style/css/styles/componentes/panelEstilos.css" media="screen" />
 
     <!-- Enlazado a funcion cambio de  styles -->
 
@@ -77,11 +78,11 @@
     <script type="text/javascript" src="/src/app/textoslegales/avisolegal.js"></script>
     <script type="text/javascript" src="/src/app/textoslegales/politicadecookies.js"></script>
     <script type="text/javascript" src="/src/app/efecto/efecto.js"></script>
+    <script type="text/javascript" src="/src/app/panelEstilos/panelEstilos.js"></script>
 
 
 
     <link rel="stylesheet" href="/src/assets/style/css/styles/componentes/efecto.css" media="screen" />
-    <script type="text/javascript" src="/src/app/efecto/efecto.js"></script>
 
 
     <!-- Vendor CSS Files -->
@@ -138,51 +139,29 @@ $negro:#0a0a0a;
     </style>
 </head>
 <mi-nav></mi-nav>
+<section id="panelEstilos" class="panelEstilos"></section>
 
 <body id="body">
-    
-    
+
     <mi-efecto></mi-efecto>
 
     <div class="felicitacion">
-
         <h1 id="feliz"></h1>
         <h1 id="anio"></h1>
         <img id="imagenFelicitacion" src="">
-
-        <script type="text/javascript">
-            // stilosFiesta('reyes');
-        </script>
-
     </div>
+   
 
     <section id="componente"></section>
 
     <script src="/src/assets/router/routing.js"></script>
-    <!-- <section class="head">
-
-        <img src="/src/assets/images/banners/rocas.jpg">
-    </section> -->
-    <!-- onload="navegar('galeria')" -->
-
     <!-- Boton subir -->
     <i class=" arriba fas fa-arrow-alt-circle-up"></i><!--  style="color: var(--blue);" -->
-
-    <!-- <section id="componente"> -->
-        <!-- <mi-inicio></mi-inicio> -->
-
-        <!-- <mi-curriculum></mi-curriculum> -->
-    <!-- </section> -->
-    <!-- <script src="./routing.js"></script> -->
-
     <div class="fiestas">
         <img id="adorno" src="">
         <button id="stop" class="stop" style="display:none;" onclick="fecha('stop')"
             type="button"><strong>Parar</strong>
         </button>
-        <script type="text/javascript">
-            // stilosFiesta('reyes');
-        </script>
         <script type="text/javascript">
             fecha();
         </script>

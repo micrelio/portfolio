@@ -17,147 +17,6 @@ class miNav extends HTMLElement {
         <a class="bx bxl-github" href="https://github.com/Micrelio/" target="_blank"></a>
     </div>
 </section>
-
-
-<div id="botonesEstilo" class="botonesEstilo">
-  <div class="desplazable">
-    <div>  
-      <p><strong>Reset estilos</strong></p>
-      <hr>
-      <div class="reset"> 
-        <p id="reset" class="reset bx bx-reset" onclick="resetEstilos();"></p>
-      </div> 
-    </div>
-    <br>
-    <div class="filasFiesta">
-        <p><strong>Festivos</strong></p>
-        <hr>
-        <div class="selecFiesta">
-            <img class=" detenerFestivos festivos" id="festivos" onclick="fecha('stop');" src="/src/assets/images/icons/stop2.png" />
-            <img class="festivos" id="festivos" onclick="fecha('reyes');" src="/src/assets/images/icons/estrellaNavidad.png" />
-            <img class="festivos" id="festivos" onclick="fecha('sanValentin');" src="/src/assets/images/icons/corazon.png" />
-            <img class="festivos" id="festivos" onclick="fecha('pascua');" src="/src/assets/images/icons/huevo.png" />
-            <img class="festivos" id="festivos" onclick="fecha('halloween');" src="/src/assets/images/icons/calabaza.png" />
-            </div>
-        <div class="selecFiesta">
-        <img class="festivos" id="festivos" onclick="fecha('navidad');" src="/src/assets/images/icons/gorroSanta.png" />
-        <img class="festivos" id="festivos" onclick="fecha('inocente');" src="/src/assets/images/icons/inocente.png" />
-            <img class="festivos" onclick="fecha('anoNuevo');" src="/src/assets/images/icons/champan.png" />
-        </div>
-    </div>
-
-
-    <div class="fondoPantalla">
-      <p><strong>fondos</strong></p>
-      <hr>
-      <div class="selecFondo">
-        <p class="color blanco" onclick="fondoPantalla('blanco');"></p>
-        <p class="color negro" onclick="fondoPantalla('negro');"></p>
-        <p class="color movimiento" onclick="fondoPantalla('movimiento');"></p>
-
-      </div>
-    </div>
-
-
-
-    <div class="filasColores">
-        <p><strong>Color general</strong></p>
-        <hr>
-        <div class="cambioColor">
-            <div class="selecColor">
-              <p class="color blanco" onclick="color('blanco');"></p>
-              <p class="color amarillo" onclick="color('amarillo');"></p>
-              <p class="color oro" onclick="color('oro');"></p>
-              <p class="color marron" onclick="color('marron');"></p>
-              <p class="color naranja" onclick="color('naranja');"></p>
-            </div>
-            <div class="selecColor">
-              <p class="color rojo" onclick="color('rojo');"></p>
-              <p class="color rosa" onclick="color('rosa');"></p>
-              <p class="color morado" onclick="color('morado');"></p>
-              <p class="color azul" onclick="color('azul');"></p>
-              <p class="color verde" onclick="color('verde');"></p>
-            </div>
-            <div class="selecColor">
-              <p class="color gris" onclick="color('gris');"></p>
-              <p id="color" class="color negro" onclick="color('negro');"></p>
-            </div>
-        </div>
-    </div>
-    <br>
-    <div class="filasColores">
-        <p><strong>Color menú</strong></p>
-        <hr>
-        <div class="cambioColor">
-          <div class="selecColor">
-            <p class="color blanco" onclick="colorMenu('blanco');"></p>
-            <p class="color amarillo" onclick="colorMenu('amarillo');"></p>
-            <p class="color oro" onclick="colorMenu('oro');"></p>
-            <p class="color marron" onclick="colorMenu('marron');"></p>
-            <p class="color naranja" onclick="colorMenu('naranja');"></p>
-          </div>
-          <div class="selecColor">
-            <p class="color rojo" onclick="colorMenu('rojo');"></p>
-            <p class="color rosa" onclick="colorMenu('rosa');"></p>
-            <p class="color morado" onclick="colorMenu('morado');"></p>
-            <p class="color azul" onclick="colorMenu('azul');"></p>
-            <p class="color verde" onclick="colorMenu('verde');"></p>
-          </div>
-          <div class="selecColor">
-            <p class="color gris" onclick="colorMenu('gris');"></p>
-            <p id="color" class="color negro" onclick="colorMenu('negro');"></p>
-          </div>
-        </div>
-    </div>
-    <br>
-    <div class="opacidad">
-      <p><strong>Opacidad menú</strong></p>
-      <hr>
-      <br>
-      <div class="slidecontainer">
-        <span class="valBox" id="valBox">0%</span>
-        <br>
-        <input type="range"  min="0" max="50" value="0" step="10" class="slider" id="myRange" onchange="mostrarValor(this.value)">
-      </div>
-    </div>
-    <br>
-    <div class="filasColores">
-        <p><strong>Color footer</strong></p>
-        <hr>
-        <div class="cambioColor">
-          <div class="selecColor">
-            <p class="color blanco" onclick="colorFooter('blanco');"></p>
-            <p class="color amarillo" onclick="colorFooter('amarillo');"></p>
-            <p class="color oro" onclick="colorFooter('oro');"></p>
-            <p class="color marron" onclick="colorFooter('marron');"></p>
-            <p class="color naranja" onclick="colorFooter('naranja');"></p>
-          </div>
-          <div class="selecColor">
-            <p class="color rojo" onclick="colorFooter('rojo');"></p>
-            <p class="color rosa" onclick="colorFooter('rosa');"></p>
-            <p class="color morado" onclick="colorFooter('morado');"></p>
-            <p class="color azul" onclick="colorFooter('azul');"></p>
-            <p class="color verde" onclick="colorFooter('verde');"></p>
-          </div>
-          <div class="selecColor">
-            <p class="color gris" onclick="colorFooter('gris');"></p>
-            <p id="color" class="color negro" onclick="colorFooter('negro');"></p>
-          </div>
-        </div>
-    </div>
-    <br>
-    <div class="selecModo">
-        <p><strong>Modo</strong></p>
-        <hr>
-        <div class="mode">
-            <p id="noche" class="noche bx bxs-moon" onclick="modoNoche('dia');"></p>
-            <p id="dia" class="dia bx bxs-sun" onclick="modoNoche('noche');"></p>
-        </div>
-    </div>
-  </div>  
-  </div>
-
-
 <section class="stick" id="stick">
     <div class="nav" id="nav" >
         <div class="navbar">
@@ -182,8 +41,6 @@ class miNav extends HTMLElement {
                     </div>
                 </div>
             </div>
-           
-            
         </div>
     </div>
     <div class="movil">
@@ -196,7 +53,6 @@ class miNav extends HTMLElement {
                 <span id="boton1">
                     <p id="pull" href="#" class="botonMenu bx bx-menu"></p>
                 </span>
-
             </div>
         </div>
         <div>
@@ -210,7 +66,7 @@ class miNav extends HTMLElement {
             <a class="enlace" href="#contacto" onclick="seleccionado();">Contacto</a>
             <div class="brushMode">
             <div class="brushEstilos">
-              <p id="selecEstilosDesplegar" class="selecEstilosDesplegar bx bxs-brush"></p>
+              <p onclick="navegar('panelEstilos');" id="selecEstilosDesplegar" class="selecEstilosDesplegar bx bxs-brush"></p>
               <p style="display:none;" id="selecEstilosPlegar" class="selecEstilosPlegar bx bxs-brush-alt"></p>
             </div>
             <div class="mode">
@@ -225,7 +81,6 @@ class miNav extends HTMLElement {
     // esto arranca automatico
     //mover elemento con el raton
     Drag.init(document.getElementById("foto"));
-
     //probar para mover div
     // var theHandle = document.getElementById("botonesEstilo");
     // var theRoot = document.getElementById("cabecera");
@@ -235,10 +90,25 @@ class miNav extends HTMLElement {
     //</div>
   }
 }
-
 customElements.define("mi-nav", miNav);
-// modificar para routing
 
+// llamar componentes
+function navegar(id) {
+  console.log("FUNCION RENDER");
+  var render = id;
+  switch (render) {
+    case "panelEstilos":
+      document.getElementById("panelEstilos").innerHTML =
+        "<mi-panelestilos></mi-panelestilos>";
+      break;
+    default:
+      break;
+  }
+}
+//cerrar menu
+function seleccionado() {
+  menu.slideToggle();
+}
 //funcion transparencia
 function mostrarValor(opacidadMenu) {
   console.log(opacidadMenu);
@@ -284,22 +154,24 @@ function mostrarValor(opacidadMenu) {
   }
   document.getElementById("foto").style = "opacity:";
 }
-
 //funcion para cualquier clic en el documento
 document.addEventListener("click", function (e) {
   //obtiendo informacion del DOM para
   var clic = e.target.id;
   switch (clic) {
     case "selecEstilosDesplegar":
-      document.getElementById("botonesEstilo").style = "display:block";
-      document.getElementById("selecEstilosDesplegar").style = "display:none";
-      document.getElementById("selecEstilosPlegar").style = "display:block";
+      document.getElementById("panelEstilos").innerHTML =
+        "<mi-panelestilos></mi-panelestilos>";
+      // document.getElementById("botonesEstilo").style = "display:block";
+      document.getElementById("selecEstilosDesplegar").style ="display:none";
+      document.getElementById("selecEstilosPlegar").style ="display:block";
       break;
     case "selecEstilosMenuDesplegar":
-      document.getElementById("botonesEstiloMenu").style = "display:block";
-      document.getElementById("selecEstilosMenuDesplegar").style =
-        "display:none";
-      document.getElementById("selecEstilosMenuPlegar").style = "display:block";
+      document.getElementById("panelEstilos").innerHTML =
+        "<mi-panelestilos></mi-panelestilos>";
+      // document.getElementById("botonesEstiloMenu").style = "display:block";
+      document.getElementById("selecEstilosMenuDesplegar").style ="display:none";
+      document.getElementById("selecEstilosMenuPlegar").style ="display:block";
       break;
 
     default:
@@ -333,9 +205,6 @@ document.addEventListener("click", function (e) {
   //   false
   // );
 });
-function seleccionado() {
-  menu.slideToggle();
-}
 function nav() {
   $(function () {
     var pull = $("#pull");
