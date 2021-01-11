@@ -1,11 +1,11 @@
 @import "../responsive/responsive.scss";
 @import "../variables/variables.scss";
-* {
-  margin: 0rem 0rem 0rem 0rem ;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+// * {
+  // margin: 0rem 0rem 0rem 0rem ;
+  // padding: 0;
+  // -webkit-box-sizing: border-box;
+  // -moz-box-sizing: border-box;
+  // box-sizing: border-box;
   footer {
     margin: 5rem 0rem 0rem 0rem ;
     display: inline-block;
@@ -97,7 +97,7 @@
     .redes {
       display: flex;
       width: 100%;
-      background: #000;
+     // background: #000;
       border-top: 0.1rem solid $corporativo;
       .propiedad {
         width: 100%;
@@ -146,7 +146,7 @@
       }
     }
   }
-}
+// }
 @media screen and (max-width: 740px) {
   footer {
     .footerContainer {
