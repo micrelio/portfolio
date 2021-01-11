@@ -17,7 +17,7 @@ class miPoliticadeprivacidad extends HTMLElement {
       </p>
       <p>
           El uso de sitio Web implica la aceptación de esta Política de Privacidad así como las condiciones incluidas
-          en el <a href="#"><e class="privacidad" id="aviso">Aviso Legal</e></a>.
+          en el <a href="#avisolegal"><e class="privacidad" id="aviso"> Aviso Legal</e></a>.
       </p>
       <h2>
           Identidad del responsable
@@ -154,8 +154,8 @@ class miPoliticadeprivacidad extends HTMLElement {
           información puede incluir datos de carácter personal como pueden ser tu dirección IP, nombre y apellidos,
           dirección física, dirección de correo electrónico, número de teléfono, y otra información. Al facilitar esta
           información, das tu consentimiento para que tu información sea recopilada, utilizada, gestionada y
-          almacenada por— OVH — sólo como se describe en el <a href="#"><e class="privacidad" id="aviso">Aviso Legal</e></a> 
-          y en la presente <a href="#">Política de Privacidad</a>.
+          almacenada por— OVH — sólo como se describe en el <a href="#avisolegal"><e class="privacidad" id="aviso"> Aviso Legal</e></a> 
+          y en la presente <a href="#politicadeprivacidad">Política de privacidad</a>.
       </p>
       <p>
           Los datos personales y la finalidad del tratamiento por parte del Titular es diferente según el sistema de
@@ -183,8 +183,8 @@ class miPoliticadeprivacidad extends HTMLElement {
       </p>
       <ul>
           <li>
-              <p>Para garantizar el cumplimiento de las condiciones recogidas en el <a href="#"><e class="privacidad" id="aviso">
-                      Aviso Legal</e></a> y en la ley aplicable.
+              <p>Para garantizar el cumplimiento de las condiciones recogidas en el         
+              <a href="#avisolegal"><e class="privacidad" id="aviso"> Aviso Legal</e></a> y en la ley aplicable.
                   Esto
                   puede incluir el desarrollo de herramientas y algoritmos que ayuden a este sitio Web a garantizar la
                   confidencialidad de los datos personales que recoge.</p>
@@ -195,8 +195,8 @@ class miPoliticadeprivacidad extends HTMLElement {
           <li>
               <p> Para analizar la navegación de los usuarios. El Titular recoge otros datos no identificativos que se
                   obtienen mediante el uso de cookies que se descargan en el ordenador del Usuario cuando navega por
-                  el sitio Web cuyas características y finalidad están detalladas en la <a href="#"><e class="privacidad"
-                      id="cookies"> Política de Cookies</e></a>.</p>
+                  el sitio Web cuyas características y finalidad están detalladas en la 
+                  <a href="#politicadecookies"><e class="privacidad" id="cookies"> Política de Cookies</e></a>.</p>
           </li>
           <li>
               <p>Para gestionar las redes sociales. Jose Antonio Lopez Baena tiene presencia en redes sociales. Si te
@@ -268,7 +268,7 @@ class miPoliticadeprivacidad extends HTMLElement {
           almacena en tu navegador web.
       </p>
       <p>
-          En la página <a href="#"><e class="privacidad" id="cookies"> Política de Cookies</e></a>
+          En la página <a href="#politicadecookies"><e class="privacidad" id="cookies"> Política de Cookies</e></a>
           puedes consultar toda la información relativa a la política de recogida, la
           finalidad y el tratamiento de las cookies.
       </p>

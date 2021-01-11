@@ -7,7 +7,10 @@ function getContent(fragmentId) {
     webs: "<mi-webs></mi-webs>",
     galeria: "<mi-galeria><mi-galeria>",
     curriculum: "<mi-curriculum></mi-curriculum>",
-    contacto: "<mi-contacto></mi-contacto>"
+    contacto: "<mi-contacto></mi-contacto>",
+    avisolegal: "<mi-avisolegal></mi-avisolegal>",
+    politicadeprivacidad: "<mi-politicadeprivacidad></mi-politicadeprivacidad>",
+    politicadecookies: "<mi-politicadecookies></mi-politicadecookies>"
     };
 
   return partials[fragmentId];

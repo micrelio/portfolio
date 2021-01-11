@@ -163,7 +163,7 @@ class miPoliticadecookies extends HTMLElement {
     <p>
         Jose Antonio Lopez Baena es el Responsable del tratamiento de los datos personales del usuario. Puedes consultar
         toda la información relativa al tratamiento de datos personales que recoge el Titular en la página de
-        <a href="#"><e class="privacidad" id="privacidad"> Política de Privacidad</e></a>.
+        <a href="#politicadeprivacidad"><e class="privacidad" id="privacidad"> Política de privacidad</e></a>.
     </p>
     <h2>
         Contacto
