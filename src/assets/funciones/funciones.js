@@ -232,7 +232,6 @@ function color(color) {
   }
 }
 function modoNoche(id) {
-  console.log("aspirina");
   //   getDate(): devuelve el día del mes (1 a 31).
   // getDay(): devuelve el número del día de la semana: desde 0 (domingo) hasta 6 (sábado).
   // getFullYear(): cuatro dígitos del año.

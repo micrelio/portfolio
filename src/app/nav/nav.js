@@ -91,10 +91,8 @@ class miNav extends HTMLElement {
   }
 }
 customElements.define("mi-nav", miNav);
-
 // llamar componentes
 function navegar(id) {
-  console.log("FUNCION RENDER");
   var render = id;
   switch (render) {
     case "panelEstilos":
