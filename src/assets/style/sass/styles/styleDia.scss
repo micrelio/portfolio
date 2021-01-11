@@ -5,20 +5,22 @@
 /* ------------------------------------------
          div stilos
 ------------------------------------------ */
-.botonesEstilo {
-  .selecModo {
-    .mode {
-      .noche {
-        display: block;
-        // color: $negro;
-      }
-      .dia {
-        display: none;
-        //color:$negro;
+.panelEstilos {
+  .botonesEstilo {
+    background-color: white;
+    .selecModo {
+      .mode {
+        .noche {
+          display: block;
+        }
+        .dia {
+          display: none;
+        }
       }
     }
   }
 }
+
 /* ------------------------------------------
          menu
 ------------------------------------------ */

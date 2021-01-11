@@ -3,10 +3,13 @@
 /* ------------------------------------------
          div stilos
 ------------------------------------------ */
-.botonesEstilo .selecModo .mode .noche {
+.panelEstilos .botonesEstilo {
+  background-color: white;
+}
+.panelEstilos .botonesEstilo .selecModo .mode .noche {
   display: block;
 }
-.botonesEstilo .selecModo .mode .dia {
+.panelEstilos .botonesEstilo .selecModo .mode .dia {
   display: none;
 }
 

@@ -49,7 +49,7 @@
   display: none;
 }
 .stick {
-  //margin: 0rem 0rem 5rem 0rem;
+  margin: 0rem 0rem 5rem 0rem;
 
   // z-index: 1000;
   // position: fixed; //para que siga la pagina
@@ -91,9 +91,9 @@
           border-radius: 75%;
           border: 0.05rem solid $corporativo;
           width: calc(3vw + 3rem);
-        //  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+          //  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
         }
-        img:hover{
+        img:hover {
           @include zoom;
           overflow: hidden;
         }
@@ -113,7 +113,7 @@
           grid-column-gap: 0rem;
           grid-row-gap: 1rem;
           //width: 67%;
-          a{
+          a {
             text-decoration: none;
           }
           .enlace {
@@ -163,7 +163,7 @@
             grid-row: y0 / y1;
           }
           .mode {
-                        grid-column: x6 / x7;
+            grid-column: x6 / x7;
             grid-row: y0 / y1;
             // margin: 0rem 1rem 0rem 0rem;
             // display: flex;
@@ -181,32 +181,27 @@
               font-size: 3rem;
             }
           }
-          .mode:hover{
+          .mode:hover {
             @include rotacion;
           }
           .brushEstilos {
             grid-column: x7 / x8;
             grid-row: y0 / y1;
-
             .selecEstilosDesplegar {
               @include estilos;
               //color: $corporativo;
-
               font-size: 3rem;
-
               //font-size: 1.6rem;
             }
             .selecEstilosPlegar {
               //color: $corporativo;
-
               font-size: 3rem;
-
               //   animation-name: none;
             }
           }
-.brushEstilos:hover{
-  @include voltear
-}
+          .brushEstilos:hover {
+            @include voltear;
+          }
           .irInicio:hover,
           .irBiografia:hover,
           .irWebs:hover,
@@ -243,7 +238,7 @@
     display: none;
   }
   .stick {
-    // margin: 0rem 0rem 5rem 0rem;
+    margin: 0rem 0rem 5rem 0rem;
     .movil {
       border-bottom: 0.05rem solid $corporativo;
       display: block;
@@ -301,10 +296,10 @@
         }
       }
       .desplegable {
-        display:flex;
+        display: flex;
         flex-direction: column;
-        a{
-text-decoration: none;
+        a {
+          text-decoration: none;
         }
         .brushMode {
           margin: 0rem 0rem 1rem 1rem;
@@ -315,11 +310,11 @@ text-decoration: none;
           background: {
             //     color:rgb(196, 60, 83) ;
           }
-          .mode{
+          .mode {
             cursor: pointer;
           }
-          
-          .mode:hover{
+
+          .mode:hover {
             @include rotacion;
           }
           p {
@@ -336,8 +331,8 @@ text-decoration: none;
             color: $corporativo;
             font-size: 5rem;
           }
-          .brushEstilos:hover{
-            @include voltear
+          .brushEstilos:hover {
+            @include voltear;
           }
           .selecEstilosDesplegar {
             @include estilos;

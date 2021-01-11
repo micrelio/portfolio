@@ -252,11 +252,7 @@ function modoNoche(id) {
   }
   if ((hora >= 8 && hora < 20) || id == "noche") {
     estilo = "dia";
-  } else if (
-    (hora >= 20 && hora < 26) ||
-    (hora > 00 && hora < 8) ||
-    id == "dia"
-  ) {
+  } else if ((hora >= 20 && hora < 26) ||(hora > 00 && hora < 8) ||id == "dia") {
     estilo = "noche";
   }
   switch (estilo) {

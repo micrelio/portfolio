@@ -174,10 +174,10 @@ document.addEventListener("click", function (e) {
 
     default:
       if (document.getElementById("botonesEstilo").contains(e.target)) {
-        // alert("Clicked in Box");
+        //alert("Clicked in Box");
         document.getElementById("botonesEstilo").style = "display:block";
       } else {
-        // alert("Clicked outside Box");
+         //alert("Clicked outside Box");
         document.getElementById("botonesEstilo").style = "display:none";
         document.getElementById("selecEstilosDesplegar").style =
           "display:block";
