@@ -117,9 +117,10 @@ body {
     }
   }
   .fa-arrow-alt-circle-up {
+    opacity: 0.5;
     z-index: 1000;
     color: $corporativo;
-    font-size: 5rem;
+        font-size: 5rem;
     display: block;
     display: none;
     cursor: pointer;
@@ -131,6 +132,8 @@ body {
     text-shadow: 0.2rem 0.2rem 0.5rem black;
     background: {
       color: white;
+      
+
     }
   }
 }

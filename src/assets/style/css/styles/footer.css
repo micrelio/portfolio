@@ -56,7 +56,7 @@ footer .footerContainer .contacto input[type=submit],
 footer .footerContainer .direccion input[type=submit],
 footer .footerContainer .paginas input[type=submit] {
   border: none;
-  background: #eeeeee;
+  background-image: -webkit-linear-gradient(top, #00c6ee, #272727);
   color: #fff;
   width: 50%;
   padding: 1rem 0rem 1rem 0rem;
@@ -70,7 +70,8 @@ footer .footerContainer .paginas input[type=submit] {
 footer .footerContainer .contacto input[type=submit]:hover,
 footer .footerContainer .direccion input[type=submit]:hover,
 footer .footerContainer .paginas input[type=submit]:hover {
-  background-color: rgba(78, 78, 32, 0.582);
+  background-color: #0a0a0a;
+  background-image: -webkit-linear-gradient(top, #272727, #00c6ee);
 }
 footer .footerContainer .contacto .fa,
 footer .footerContainer .direccion .fa,

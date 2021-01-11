@@ -127,6 +127,7 @@ body .primera img {
 }
 html .fa-arrow-alt-circle-up,
 body .fa-arrow-alt-circle-up {
+  opacity: 0.5;
   z-index: 1000;
   color: lightskyblue;
   font-size: 5rem;
