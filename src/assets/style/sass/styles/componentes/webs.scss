@@ -6,13 +6,13 @@
 }
 .web {
   @include webs;
-
+  //@include separador5;
   .primeroscoc,
   .guerrasOnline,
   .tiendaTitanium,
   .titaniumGamers,
   .portfolio {
-    @include recuadro;
+        @include recuadro;
     display: grid;
     grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5];
     grid-template-rows: [y0] 0.5fr [y1] 1fr [y2] 0.05fr [y3];

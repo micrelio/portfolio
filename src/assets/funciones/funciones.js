@@ -256,10 +256,10 @@ function modoNoche(id) {
     estilo = "noche";
   }
   switch (estilo) {
-    case "dia":
+    case "noche":
       document.getElementById("modo").href =
         "/src/assets/style/css/styles/styleDia.css";
-      break;
+       break;
     case "noche":
       document.getElementById("modo").href = "";
       break;

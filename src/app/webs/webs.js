@@ -4,7 +4,10 @@ class miWebs extends HTMLElement {
   }
   connectedCallback() {
     this.innerHTML = `
+    
 <section class="web">
+<div class="separador5">
+    </div>
 <h1>Diseños web</h1>
 <div class="separador3">
     </div>
@@ -107,6 +110,8 @@ class miWebs extends HTMLElement {
             <i class="fas fa-arrow-alt-circle-right"></i></a>
             </p>
         </div>
+    </div>
+    <div class="separador5">
     </div>
 </section>
 `;

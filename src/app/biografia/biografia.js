@@ -5,6 +5,8 @@ class miBiografia extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <section class="biografia">
+    <div class="separador5">
+    </div>
     <h1> José Antonio López Baena (Micro)
     </h1>
     <div class="separador3">
@@ -224,7 +226,10 @@ pabloiglesias.org
         </div><!-- curriculum-->
 
     </div><!-- biografiaCurriculum-->
+    
 </section>
+<div class="separador5">
+    </div>
      `;
   }
 }

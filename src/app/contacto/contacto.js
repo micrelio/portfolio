@@ -5,6 +5,8 @@ class miContacto extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
 <section class="primera">
+<div class="separador5">
+    </div>
 <img src="/src/assets/images/constructor2.png">
 
 
@@ -29,6 +31,8 @@ class miContacto extends HTMLElement {
     <input id="submit_button" type="submit" value="Send" />
     <input id="reset_button" type="reset" value="Clear" />
 </form>
+<div class="separador5">
+    </div>
 </section>
 `;
   }

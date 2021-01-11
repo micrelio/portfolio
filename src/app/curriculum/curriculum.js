@@ -4,6 +4,9 @@ class miCurriculum extends HTMLElement {
   }
   connectedCallback() {
     this.innerHTML = `
+<section>
+<div class="separador5">
+    </div>
 <div class="descripcion">
     <h1>Datos personales</h1>
 </div>
@@ -314,7 +317,7 @@ class miCurriculum extends HTMLElement {
 </div>
 <div class="separador3">
 </div>
-<section class="datos">
+<div class="datos">
     <div  class="interes">
 	    <p>Facilidad en asimilación y manejo de programas informáticos.</p>
         <p>Diseño de páginas web.</p>
@@ -322,6 +325,9 @@ class miCurriculum extends HTMLElement {
         <p>Incorporación inmediata.</p>
         <p>Permiso de conducción.</p>
         <p>Experiencia en reparación de múltiples componentes electrónicos.</p>
+    </div>
+    </div>
+    <div class="separador5">
     </div>
 </section>
 <button onclick="window.print()">Print this page</button>

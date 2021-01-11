@@ -49,7 +49,7 @@
   display: none;
 }
 .stick {
-  margin: 0rem 0rem 5rem 0rem;
+  // margin: 0rem 0rem 5rem 0rem;
 
   // z-index: 1000;
   // position: fixed; //para que siga la pagina
@@ -171,11 +171,15 @@
             // justify-content: flex-end;
             // align-items: center;
             .noche {
+              @include rotacion;
+
               display: none;
               //color: $corporativo;
               font-size: 3rem;
             }
             .dia {
+              @include rotacion;
+
               display: block;
               //color: $corporativo;
               font-size: 3rem;

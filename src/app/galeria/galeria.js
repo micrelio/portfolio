@@ -8,11 +8,15 @@ class miGaleria extends HTMLElement {
         this.innerHTML =
             `
 <mi-botonera></mi-botonera>
+<div class="separador5">
+    </div>
 <section id="galeria" class="galeria" >
 
 </section>
 <section id="content">
   <mi-imagenes></mi-imagenes> 
+  <div class="separador5">
+    </div>
 </section>
      `;
         cargaTodo();

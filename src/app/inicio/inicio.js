@@ -5,6 +5,8 @@ class miInicio extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <section class="inicio">
+    <div class="separador5">
+    </div>
         <h1>Presentación</h1>
         <div>
           <p>
@@ -21,6 +23,8 @@ class miInicio extends HTMLElement {
             <li><p><a class="enlace" href="#contacto"><strong>Contacto:</strong></a> Formulario de contacto.</p></li>
           </ul>
        </div>
+       <div class="separador5">
+    </div>
     </section>
   `;
   }

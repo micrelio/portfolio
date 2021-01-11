@@ -42,7 +42,6 @@
 }
 
 .stick {
-  margin: 0rem 0rem 5rem 0rem;
   top: 0;
   width: 100%;
 }
@@ -137,10 +136,16 @@
   grid-row: y0/y1;
 }
 .stick .nav .navbar .menu .links .mode .noche {
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
   display: none;
   font-size: 3rem;
 }
 .stick .nav .navbar .menu .links .mode .dia {
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
   display: block;
   font-size: 3rem;
 }

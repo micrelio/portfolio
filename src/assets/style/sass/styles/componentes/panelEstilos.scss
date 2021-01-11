@@ -4,20 +4,25 @@
 /* ------------------------------------------
          div stilos
 ------------------------------------------ */
-.panelEstilos {
+ .panelEstilos {
   width: 100%;
-  top: 0; //para que siga la pagina
-  position: sticky;
-  // position: fixed;
-  z-index: 10000000;
-  display:inline-block;
+   position: sticky;
+   top: 0; //para que siga la pagina
+     z-index: 10000000;
+    //  height: 100%;
+ }
+  //position: fixed;
+  //display:inline-block;
   // display: flex;
   // flex-direction: row;
   // margin-top: -5rem;
   // background-color: indigo;
   // height: 100vh;
   .botonesEstilo {
-    // z-index: 1000;
+    // position: sticky;
+    //  top: 0;
+    //  z-index: 10000000;
+    //  width: 100%;
     //  position: fixed;
     //  top: 0;
     //  display: flex;
@@ -42,7 +47,7 @@
       align-items: flex-start;
       justify-content: space-between;
       // max-height: 90vh;
-      overflow: auto;
+      // overflow: auto;
       p {
         color: $negro;
         font-size: 1.5rem;
@@ -248,8 +253,5 @@
       }
     }
   }
-  .botonesEstiloMenu {
-    right: 0.5rem;
-    top: 11rem;
-  }
-}
+
+// }
