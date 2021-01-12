@@ -27,6 +27,30 @@
   grid-column: x4/x5;
   grid-row: y0/y1;
 }
+.letras .f {
+  grid-column: x0/x1;
+  grid-row: y1/y2;
+}
+.letras .g {
+  grid-column: x1/x3;
+  grid-row: y1/y2;
+}
+.letras .h {
+  grid-column: x3/x4;
+  grid-row: y1/y2;
+}
+.letras .i {
+  grid-column: x4/x6;
+  grid-row: y1/y2;
+}
+.letras .j {
+  grid-column: x1/x2;
+  grid-row: y2/y3;
+}
+.letras .k {
+  grid-column: x2/x4;
+  grid-row: y2/y3;
+}
 
 .a {
   background: #082330;
@@ -190,7 +214,7 @@
 
 @keyframes blur {
   from {
-    text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 50px #fff, 0px 0px 50px #fff, 0px 0px 50px #7B96B8, 0px 0px 150px #7B96B8, 0px 10px 100px #7B96B8, 0px 10px 100px #7B96B8, 0px 10px 100px #7B96B8, 0px 10px 100px #7B96B8, 0px -10px 100px #7B96B8, 0px -10px 100px #7B96B8;
+    text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 50px #fff, 0px 0px 50px #fff, 0px 0px 50px #7b96b8, 0px 0px 150px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px -10px 100px #7b96b8, 0px -10px 100px #7b96b8;
   }
 }
 .d {
@@ -308,4 +332,569 @@
   }
 }
 
-/*# sourceMappingURL=efectostexto.css.map */
+/* Main styles */
+.f {
+  background: #212121;
+  text-transform: uppercase;
+  margin: 0;
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+}
+.f svg {
+  /* Other styles */
+}
+.f svg .text {
+  fill: none;
+  stroke-width: 6;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 6s infinite linear;
+  animation: stroke 6s infinite linear;
+}
+.f svg .text:nth-child(5n+1) {
+  stroke: #f2385a;
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s;
+}
+.f svg .text:nth-child(5n+2) {
+  stroke: #f5a503;
+  -webkit-animation-delay: -2.4s;
+  animation-delay: -2.4s;
+}
+.f svg .text:nth-child(5n+3) {
+  stroke: #e9f1df;
+  -webkit-animation-delay: -3.6s;
+  animation-delay: -3.6s;
+}
+.f svg .text:nth-child(5n+4) {
+  stroke: #56d9cd;
+  -webkit-animation-delay: -4.8s;
+  animation-delay: -4.8s;
+}
+.f svg .text:nth-child(5n+5) {
+  stroke: #3aa1bf;
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+}
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+.g {
+  width: 100%;
+  height: 100%;
+  font-family: "Droid Sans", arial, verdana, sans-serif;
+  font-weight: 700;
+  color: #ff6;
+  background-color: #000;
+  overflow: visible;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* 
+  ** ALL CREDIT GOES TO 
+  ** Craig Buckler
+  ** http://www.sitepoint.com/css3-starwars-scrolling-text/
+  **
+  ** Blame me for the music via embedded video bit
+  */
+  @import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+  /* the interesting 3D scrolling stuff */
+  /* animation */
+}
+.g p#start {
+  position: relative;
+  width: 16em;
+  font-size: 200%;
+  font-weight: 400;
+  color: #4ee;
+  opacity: 0;
+  z-index: 1;
+  -webkit-animation: intro 2s ease-out;
+  -moz-animation: intro 2s ease-out;
+  -ms-animation: intro 2s ease-out;
+  -o-animation: intro 2s ease-out;
+  animation: intro 2s ease-out;
+}
+@-webkit-keyframes intro {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes intro {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-ms-keyframes intro {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-o-keyframes intro {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes intro {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.g h1 {
+  position: absolute;
+  width: 2.6em;
+  font-size: 10em;
+  text-align: center;
+  line-height: 0.8em;
+  letter-spacing: -0.05em;
+  color: #000;
+  text-shadow: -2px -2px 0 #ff6, 2px -2px 0 #ff6, -2px 2px 0 #ff6, 2px 2px 0 #ff6;
+  opacity: 0;
+  z-index: 1;
+  -webkit-animation: logo 5s ease-out 2.5s;
+  -moz-animation: logo 5s ease-out 2.5s;
+  -ms-animation: logo 5s ease-out 2.5s;
+  -o-animation: logo 5s ease-out 2.5s;
+  animation: logo 5s ease-out 2.5s;
+}
+.g h1 sub {
+  display: block;
+  font-size: 0.3em;
+  letter-spacing: 0;
+  line-height: 0.8em;
+}
+@-webkit-keyframes logo {
+  0% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0.1);
+    opacity: 0;
+  }
+}
+@-moz-keyframes logo {
+  0% {
+    -moz-transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: scale(0.1);
+    opacity: 0;
+  }
+}
+@-ms-keyframes logo {
+  0% {
+    -ms-transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -ms-transform: scale(0.1);
+    opacity: 0;
+  }
+}
+@-o-keyframes logo {
+  0% {
+    -o-transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -o-transform: scale(0.1);
+    opacity: 0;
+  }
+}
+@keyframes logo {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+}
+.g #titles {
+  position: absolute;
+  width: 18em;
+  height: 15em;
+  bottom: 0;
+  font-size: 350%;
+  text-align: justify;
+  overflow: hidden;
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transform: perspective(300px) rotateX(25deg);
+  -moz-transform: perspective(300px) rotateX(25deg);
+  -ms-transform: perspective(300px) rotateX(25deg);
+  -o-transform: perspective(300px) rotateX(25deg);
+  transform: perspective(300px) rotateX(25deg);
+}
+.g #titles:after {
+  position: absolute;
+  content: " ";
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 60%;
+  background-image: -webkit-linear-gradient(top, black 0%, transparent 100%);
+  background-image: -moz-linear-gradient(top, black 0%, transparent 100%);
+  background-image: -ms-linear-gradient(top, black 0%, transparent 100%);
+  background-image: -o-linear-gradient(top, black 0%, transparent 100%);
+  background-image: linear-gradient(top, black 0%, transparent 100%);
+  pointer-events: none;
+}
+.g #titles p {
+  text-align: justify;
+}
+.g #titles p.center {
+  text-align: center;
+}
+.g #titles a {
+  color: #ff6;
+  text-decoration: underline;
+}
+.g #titlecontent {
+  position: absolute;
+  top: 100%;
+  -webkit-animation: scroll 100s linear 4s infinite;
+  -moz-animation: scroll 100s linear 4s infinite;
+  -ms-animation: scroll 100s linear 4s infinite;
+  -o-animation: scroll 100s linear 4s infinite;
+  animation: scroll 100s linear 4s infinite;
+}
+@-webkit-keyframes scroll {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -170%;
+  }
+}
+@-moz-keyframes scroll {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -170%;
+  }
+}
+@-ms-keyframes scroll {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -170%;
+  }
+}
+@-o-keyframes scroll {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -170%;
+  }
+}
+@keyframes scroll {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -170%;
+  }
+}
+
+.h .bg-6 {
+  background-color: #000000;
+}
+.h .glitch {
+  color: white;
+  font-size: 5rem;
+  position: relative;
+  margin: 0 auto;
+  font-family: "Varela", sans-serif;
+}
+.h .glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 16px;
+  text-shadow: -1px 0 red;
+  top: 0;
+  color: white;
+  background: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse;
+}
+.h .glitch:before {
+  content: attr(data-text);
+  position: absolute;
+  left: 8px;
+  text-shadow: 1px 0 blue;
+  top: 0;
+  color: white;
+  background: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+@keyframes noise-anim {
+  0% {
+    clip: rect(51px, 9999px, 28px, 0);
+  }
+  5% {
+    clip: rect(70px, 9999px, 19px, 0);
+  }
+  10% {
+    clip: rect(92px, 9999px, 13px, 0);
+  }
+  15% {
+    clip: rect(85px, 9999px, 49px, 0);
+  }
+  20% {
+    clip: rect(45px, 9999px, 56px, 0);
+  }
+  25% {
+    clip: rect(26px, 9999px, 31px, 0);
+  }
+  30% {
+    clip: rect(62px, 9999px, 73px, 0);
+  }
+  35% {
+    clip: rect(34px, 9999px, 11px, 0);
+  }
+  40% {
+    clip: rect(26px, 9999px, 61px, 0);
+  }
+  45% {
+    clip: rect(34px, 9999px, 71px, 0);
+  }
+  50% {
+    clip: rect(35px, 9999px, 69px, 0);
+  }
+  55% {
+    clip: rect(92px, 9999px, 81px, 0);
+  }
+  60% {
+    clip: rect(26px, 9999px, 85px, 0);
+  }
+  65% {
+    clip: rect(2px, 9999px, 68px, 0);
+  }
+  70% {
+    clip: rect(54px, 9999px, 79px, 0);
+  }
+  75% {
+    clip: rect(35px, 9999px, 85px, 0);
+  }
+  80% {
+    clip: rect(70px, 9999px, 60px, 0);
+  }
+  85% {
+    clip: rect(32px, 9999px, 26px, 0);
+  }
+  90% {
+    clip: rect(94px, 9999px, 53px, 0);
+  }
+  95% {
+    clip: rect(99px, 9999px, 92px, 0);
+  }
+  100% {
+    clip: rect(42px, 9999px, 27px, 0);
+  }
+}
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(21px, 9999px, 49px, 0);
+  }
+  5% {
+    clip: rect(27px, 9999px, 52px, 0);
+  }
+  10% {
+    clip: rect(21px, 9999px, 70px, 0);
+  }
+  15% {
+    clip: rect(65px, 9999px, 25px, 0);
+  }
+  20% {
+    clip: rect(24px, 9999px, 10px, 0);
+  }
+  25% {
+    clip: rect(61px, 9999px, 64px, 0);
+  }
+  30% {
+    clip: rect(34px, 9999px, 47px, 0);
+  }
+  35% {
+    clip: rect(46px, 9999px, 93px, 0);
+  }
+  40% {
+    clip: rect(46px, 9999px, 9px, 0);
+  }
+  45% {
+    clip: rect(67px, 9999px, 36px, 0);
+  }
+  50% {
+    clip: rect(72px, 9999px, 20px, 0);
+  }
+  55% {
+    clip: rect(79px, 9999px, 26px, 0);
+  }
+  60% {
+    clip: rect(13px, 9999px, 87px, 0);
+  }
+  65% {
+    clip: rect(10px, 9999px, 25px, 0);
+  }
+  70% {
+    clip: rect(85px, 9999px, 11px, 0);
+  }
+  75% {
+    clip: rect(94px, 9999px, 35px, 0);
+  }
+  80% {
+    clip: rect(50px, 9999px, 86px, 0);
+  }
+  85% {
+    clip: rect(74px, 9999px, 67px, 0);
+  }
+  90% {
+    clip: rect(1px, 9999px, 40px, 0);
+  }
+  95% {
+    clip: rect(3px, 9999px, 48px, 0);
+  }
+  100% {
+    clip: rect(90px, 9999px, 23px, 0);
+  }
+}
+
+.i {
+  font: 10rem/1em Amatic SC;
+  text-align: center;
+  padding-top: 140px;
+}
+.i .jittery span {
+  animation: jitter 200ms linear infinite;
+  color: #f06d06;
+  display: inline-block;
+}
+@keyframes jitter {
+  50% {
+    transform: skewY(0.9deg) skewX(-0.9deg) scale(1.006);
+  }
+}
+
+.j {
+  @import url(https://fonts.googleapis.com/css?family=Erica+One);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* BODY */
+  background-color: pink;
+  /* ANIMATION */
+}
+.j ::selection {
+  background: transparent;
+}
+.j h1 {
+  cursor: default;
+  position: relative;
+  top: 30px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  margin: auto;
+  display: block;
+  -webkit-animation: bounce 0.3s ease infinite alternate;
+  font-family: "Erica One", cursive;
+  font-size: 80px;
+  color: #FFF;
+  text-align: center;
+  line-height: 100px;
+  text-shadow: 0 1px 0 #CCC, 0 2px 0 #CCC, 0 3px 0 #CCC, 0 4px 0 #CCC, 0 5px 0 #CCC, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.6);
+}
+@-webkit-keyframes bounce {
+  100% {
+    top: -30px;
+    text-shadow: 0 1px 0 #CCC, 0 2px 0 #CCC, 0 3px 0 #CCC, 0 4px 0 #CCC, 0 5px 0 #CCC, 0 6px 0 #CCC, 0 7px 0 #CCC, 0 8px 0 #CCC, 0 9px 0 #CCC, 0 30px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.k {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  text-transform: uppercase;
+  display: block;
+  font-size: 92px;
+  color: #f1ebe5;
+  text-shadow: 0 8px 9px #c4b59d, 0px -2px 1px #fff;
+  font-weight: bold;
+  letter-spacing: -4px;
+  text-align: center;
+  background: linear-gradient(to bottom, #ece4d9 0%, #e9dfd1 100%);
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=efectosTexto.css.map */
