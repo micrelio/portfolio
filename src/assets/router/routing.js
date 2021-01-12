@@ -1,6 +1,7 @@
 const $content = document.querySelector("#componente");
 
 function getContent(fragmentId) {
+  console.log(fragmentId);
   let partials = {
     inicio: "<mi-inicio></mi-inicio>",
     biografia: "<mi-biografia></mi-biografia>",
@@ -11,7 +12,7 @@ function getContent(fragmentId) {
     avisolegal: "<mi-avisolegal></mi-avisolegal>",
     politicadeprivacidad: "<mi-politicadeprivacidad></mi-politicadeprivacidad>",
     politicadecookies: "<mi-politicadecookies></mi-politicadecookies>",
-   // panelEstilos: "<mi-panelestilos></mi-panelestilos>"
+    efectosTexto: "<mi-efectostexto></mi-efectostexto>"
 
     };
 

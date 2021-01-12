@@ -18,64 +18,69 @@ class miNav extends HTMLElement {
     </div>
 </section>
 <section class="stick" id="stick">
-    <div class="nav" id="nav" >
-        <div class="navbar">
-            <div id="foto" class="foto" >
-                <img src="/src/assets/images/dracula-man.jpg">
-            </div>
-            <div class="menu">
-                <div id="links" class="links">
-                    <a class="enlace irInicio" href="#inicio">Inicio</a>
-                    <a class="enlace irBiografia" href="#biografia">Biografía</a>
-                    <a class="enlace irWebs" href="#webs">Webs</a>
-                    <a class="enlace irGaleria" href="#galeria">Galería</a>
-                    <a class="enlace irCurriculum" href="#curriculum">Currículum</a>
-                    <a class="enlace irContacto" href="#contacto">Contacto</a>
-                    <div class=" mode">
-                      <p id="noche" class="noche enlace bx bxs-moon" onclick="modoNoche('dia');"></p>
-                      <p id="dia" class="dia enlace bx bxs-sun" onclick="modoNoche('noche');"></p>
-                    </div>
-                    <div class=" brushEstilos">
-                      <p id="selecEstilosDesplegar" class="selecEstilosDesplegar enlace bx bxs-brush"></p>
-                      <p style="display:none;" id="selecEstilosPlegar" class="selecEstilosPlegar enlace bx bxs-brush-alt"></p>
-                    </div>
+<div class="nav" id="nav">
+    <div class="navbar">
+        <div id="foto" class="foto">
+            <img src="/src/assets/images/dracula-man.jpg">
+        </div>
+        <div class="menu">
+            <div id="links" class="links">
+                <a class="enlace irInicio" href="#inicio">Inicio</a>
+                <a class="enlace irBiografia" href="#biografia">Biografía</a>
+                <a class="enlace irWebs" href="#webs">Webs</a>
+                <a class="enlace irGaleria" href="#galeria">Galería</a>
+                <a class="enlace irCurriculum" href="#curriculum">Currículum</a>
+                <a class="enlace irContacto" href="#contacto">Contacto</a>
+                <a class="enlace " href="#efectosTexto">efectosTexto</a>
+                <div class=" mode">
+                    <p id="noche" class="noche enlace bx bxs-moon" onclick="modoNoche('dia');"></p>
+                    <p id="dia" class="dia enlace bx bxs-sun" onclick="modoNoche('noche');"></p>
+                </div>
+                <div class=" brushEstilos">
+                    <p id="selecEstilosDesplegar" class="selecEstilosDesplegar enlace bx bxs-brush"></p>
+                    <p style="display:none;" id="selecEstilosPlegar"
+                        class="selecEstilosPlegar enlace bx bxs-brush-alt"></p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="movil">
-        <div class="imagenes">
-            <div id="foto" class="foto">
-                <img src="/src/assets/images/dracula-man.jpg">
-            </div>
-            <div class="botones">
-                <!-- <span id="boton1"><img src="/src/assets/images/icons/menu.png" id="pull" href="#" alt="menu"></span> -->
-                <span id="boton1">
-                    <p id="pull" href="#" class="botonMenu bx bx-menu"></p>
-                </span>
-            </div>
+</div>
+<div class="movil">
+    <div class="imagenes">
+        <div id="foto" class="foto">
+            <img src="/src/assets/images/dracula-man.jpg">
         </div>
-        <div>
+        <div class="botones">
+            <!-- <span id="boton1"><img src="/src/assets/images/icons/menu.png" id="pull" href="#" alt="menu"></span> -->
+            <span id="boton1">
+                <p id="pull" href="#" class="botonMenu bx bx-menu"></p>
+            </span>
         </div>
-        <div style="display: none" class="desplegable nuevo" id="desplegable">
-            <a class="enlace" href="#inicio" onclick="seleccionado();">Inicio</a>
-            <a class="enlace" href="#biografia" onclick="seleccionado();">Biografía</a>
-            <a class="enlace" href="#webs" onclick="seleccionado();">Webs</a>
-            <a class="enlace" href="#galeria" onclick="seleccionado();">Galería</a>
-            <a class="enlace" href="#curriculum" onclick="seleccionado();">Currículum</a>
-            <a class="enlace" href="#contacto" onclick="seleccionado();">Contacto</a>
-            <div class="brushMode">
+    </div>
+    <div>
+    </div>
+    <div style="display:none" class="desplegable nuevo" id="desplegable">
+        <a class="enlace" href="#inicio" onclick="seleccionado();">Inicio</a>
+        <a class="enlace" href="#biografia" onclick="seleccionado();">Biografía</a>
+        <a class="enlace" href="#webs" onclick="seleccionado();">Webs</a>
+        <a class="enlace" href="#galeria" onclick="seleccionado();">Galería</a>
+        <a class="enlace" href="#curriculum" onclick="seleccionado();">Currículum</a>
+        <a class="enlace" href="#contacto" onclick="seleccionado();">Contacto</a>
+        <div class="brushMode">
             <div class="brushEstilos">
-              <p onclick="navegar('panelEstilos');" id="selecEstilosDesplegar" class="selecEstilosDesplegar bx bxs-brush"></p>
-              <p style="display:none;" id="selecEstilosPlegar" class="selecEstilosPlegar bx bxs-brush-alt"></p>
+                <p onclick="navegar('panelEstilos');" id="selecEstilosDesplegar"
+                    class="selecEstilosDesplegar bx bxs-brush"></p>
+                <p style="display:none;" id="selecEstilosPlegar" class="selecEstilosPlegar bx bxs-brush-alt">
+                </p>
             </div>
             <div class="mode">
-              <p id="noche" class="noche bx bxs-moon" onclick="modoNoche('dia');"></p>
-              <p id="dia" class="dia bx bxs-sun" onclick="modoNoche('noche');"></p>
+                <p id="noche" class="noche bx bxs-moon" onclick="modoNoche('dia');"></p>
+                <p id="dia" class="dia bx bxs-sun" onclick="modoNoche('noche');"></p>
             </div>
         </div>
     </div>
-    <!-- <audio src="../sonidos/ping.mp4" autoplay loop></audio> -->
+</div>
+<!-- <audio src="../sonidos/ping.mp4" autoplay loop></audio> -->
 </section>
 
       `;
@@ -207,11 +212,16 @@ document.addEventListener("click", function (e) {
   // );
 });
 function nav() {
+  console.log('1desplegable');
   $(function () {
+    console.log('abrir');
+
     var pull = $("#pull");
     menu = $(".desplegable");
     menuHeight = menu.height();
     $(pull).on("click", function (e) {
+      console.log('cerrar');
+
       e.preventDefault();
       menu.slideToggle();
     });

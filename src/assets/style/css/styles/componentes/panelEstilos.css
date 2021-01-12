@@ -17,6 +17,7 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
+  overflow: auto;
 }
 .panelEstilos .botonesEstilo .desplazable p {
   color: #0a0a0a;
