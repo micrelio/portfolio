@@ -43,7 +43,7 @@ class miEfectostexto extends HTMLElement {
       </div>
 
       <div class="c">
-          ⚠ achtung ⚠
+          ⚠ Micro ⚠
       </div>
 
       <div class="d">
@@ -232,7 +232,7 @@ class miEfectostexto extends HTMLElement {
               dy=".35em"
               class="text--line"
               >
-          Noor 
+          Micro 
         </text>
       </clippath>
     
@@ -310,6 +310,14 @@ class miEfectostexto extends HTMLElement {
              <p><a href="https://en.wikipedia.org/wiki/Red">
              RED
            </a></p>
+
+           <p><a href="https://en.wikipedia.org/wiki/Blue">
+    BLUE
+  </a></p>
+  
+  <p><a href="https://en.wikipedia.org/wiki/Yellow">
+    Yellow
+  </a></p>
              </div>
   </section>
     `;
