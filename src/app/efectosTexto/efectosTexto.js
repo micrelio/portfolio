@@ -37,10 +37,32 @@ class miEfectostexto extends HTMLElement {
     </div>
 
     <div class="seis">
-        <p><a href="#efectosTexto">RED</a></p>
-        <p><a href="#efectosTexto">BLUE</a></p>
-        <p><a href="#efectosTexto">Yellow</a></p>
-    </div>
+    <svg viewBox="0 0 800 300">
+        <!-- Clippath  with text -->
+        <clippath id="cp-text">
+            <text text-anchor="middle" x="50%" y="70%"  class="colorines" >
+                Micro
+            </text>
+        </clippath>
+        <!-- Group for shadow -->
+        <g clip-path="url(#cp-text)" class="shadow">
+            <rect class="anim-shape anim-shape--shadow"></rect>
+        </g>
+        <!-- Group with clippath for text-->
+        <g clip-path="url(#cp-text)" class="colortext">
+            <!-- Animated shapes inside text -->
+            <rect width="100%" height="100%" class="anim-shape"></rect>
+            <rect width="80%" height="100%" class="anim-shape"></rect>
+            <rect width="60%" height="100%" class="anim-shape"></rect>
+            <rect width="40%" height="100%" class="anim-shape"></rect>
+            <rect width="20%" height="100%" class="anim-shape"></rect>
+        </g>
+        <!-- Transparent copy of text to keep
+   patterned text selectable -->
+        <use xlink:href="#s-text" class="text--transparent"></use>
+    </svg>
+</div>
+
     
     <div class="siete">
         <h1>Micro</h1>
@@ -64,12 +86,53 @@ class miEfectostexto extends HTMLElement {
     </div>
 
     <div class="nueve">
-        <h1 contenteditable data-heading="Micro">Micro</h1>
+        <svg>
+        <symbol id="s-text">
+            <text>
+                Elastic
+            </text>
+        </symbol>
+            <g class="g-ants">
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+            </g>   
+        </svg>
     </div>
 
 
 
 
+
+
+
+
+
+
+
+
+
+    <div class="a">
+        <h1 contenteditable data-heading="Micro">Micro9</h1>
+    </div>
+
+
+
+
+
+    <div class="k">
+    <div>
+        Micro
+    </div>
+</div>
+
+<div class="xxl">
+<p><a href="#efectosTexto">RED</a></p>
+        <p><a href="#efectosTexto">BLUE</a></p>
+        <p><a href="#efectosTexto">Yellow</a></p>
+</div>
   </section>
     `;
     }

@@ -468,383 +468,75 @@
 
   //---seis-----------------------------
   .seis {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    // margin: 1rem;
-    //   padding: 1rem;
-    //   font-size: 5rem;
-    background-color: #222222;
-    @font-face {
-      font-family: "Monoton";
-      font-style: normal;
-      font-weight: 400;
-      src: local("Monoton"), local("Monoton-Regular"),
-        url(http://themes.googleusercontent.com/static/fonts/monoton/v4/AKI-lyzyNHXByGHeOcds_w.woff)
-          format("woff");
+    /* Main styles */
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+    background: black;
+    font: 20rem Open Sans, Impact;
+    text-transform: uppercase;
+    width: 30rem;
+    margin: 1rem;
+    padding: 1rem;
+    // display: flex;
+    // flex-direction: row;
+    // align-items: center;
+    // justify-content: center;
+    // z-index: 10000;
+    .text--transparent {
+      fill: transparent;
+    }
+        .anim-shape {
+      -webkit-transform-origin: 0x 150px;
+      -ms-transform-origin: 0x 150px;
+      transform-origin: 0x 150px;
+      -webkit-transform: scale(0, 1) translate(0, 0);
+      -ms-transform: scale(0, 1) translate(0, 0);
+      transform: scale(0, 1) translate(0, 0);
+      -webkit-animation: moving-panel 3s infinite alternate;
+      animation: moving-panel 3s infinite alternate;
     }
 
-    @font-face {
-      font-family: "Iceland";
-      font-style: normal;
-      font-weight: 400;
-      src: local("Iceland"), local("Iceland-Regular"),
-        url(http://themes.googleusercontent.com/static/fonts/iceland/v3/F6LYTZLHrG9BNYXRjU7RSw.woff)
-          format("woff");
+    .colortext .anim-shape:nth-child(1) {
+      fill: #0e1826;
     }
 
-    @font-face {
-      font-family: "Pacifico";
-      font-style: normal;
-      font-weight: 400;
-      src: local("Pacifico Regular"), local("Pacifico-Regular"),
-        url(http://themes.googleusercontent.com/static/fonts/pacifico/v5/yunJt0R8tCvMyj_V4xSjafesZW2xOQ-xsNqO47m55DA.woff)
-          format("woff");
+    .colortext .anim-shape:nth-child(2) {
+      fill: #166973;
     }
 
-    @font-face {
-      font-family: "PressStart";
-      font-style: normal;
-      font-weight: 400;
-      src: local("Press Start 2P"), local("PressStart2P-Regular"),
-        url(http://themes.googleusercontent.com/static/fonts/pressstart2p/v2/8Lg6LX8-ntOHUQnvQ0E7o3dD2UuwsmbX3BOp4SL_VwM.woff)
-          format("woff");
+    .colortext .anim-shape:nth-child(3) {
+      fill: #65bfa6;
     }
 
-    @font-face {
-      font-family: "Audiowide";
-      font-style: normal;
-      font-weight: 400;
-      src: local("Audiowide"), local("Audiowide-Regular"),
-        url(http://themes.googleusercontent.com/static/fonts/audiowide/v2/8XtYtNKEyyZh481XVWfVOj8E0i7KZn-EPnyo3HZu7kw.woff)
-          format("woff");
+    .colortext .anim-shape:nth-child(4) {
+      fill: #f2cd5c;
     }
 
-    @font-face {
-      font-family: "Vampiro One";
-      font-style: normal;
-      font-weight: 400;
-      src: local("Vampiro One"), local("VampiroOne-Regular"),
-        url(http://themes.googleusercontent.com/static/fonts/vampiroone/v3/Ho2Xld8UbQyBA8XLxF1_NYbN6UDyHWBl620a-IRfuBk.woff)
-          format("woff");
+    .colortext .anim-shape:nth-child(5) {
+      fill: #f26444;
     }
 
-    /*neeeeoooon*/
-    p {
-      text-align: center;
-      font-size: 7em;
-      // margin:20px 0 20px 0;
-      margin: 0rem 0.5rem 0rem 0.5rem;
+    .shadow {
+      -webkit-transform: translate(10px, 10px);
+      -ms-transform: translate(10px, 10px);
+      transform: translate(10px, 10px);
     }
 
-    a {
-      text-decoration: none;
-      -webkit-transition: all 0.5s;
-      -moz-transition: all 0.5s;
-      transition: all 0.5s;
+    .anim-shape--shadow {
+      fill: #000;
+      fill-opacity: 0.2;
     }
 
-    p:nth-child(1) a {
-      color: #ff1177;
-      font-family: Monoton;
-    }
-    p:nth-child(1) a:hover {
-      -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
-      -moz-animation: neon1 1.5s ease-in-out infinite alternate;
-      animation: neon1 1.5s ease-in-out infinite alternate;
-    }
-
-    p:nth-child(2) a {
-      font-size: 1.5em;
-      color: #228dff;
-      font-family: Iceland;
-    }
-    p:nth-child(2) a:hover {
-      -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
-      -moz-animation: neon2 1.5s ease-in-out infinite alternate;
-      animation: neon2 1.5s ease-in-out infinite alternate;
-    }
-
-    p:nth-child(3) a {
-      color: #ffdd1b;
-      font-family: Pacifico;
-    }
-    p:nth-child(3) a:hover {
-      -webkit-animation: neon3 1.5s ease-in-out infinite alternate;
-      -moz-animation: neon3 1.5s ease-in-out infinite alternate;
-      animation: neon3 1.5s ease-in-out infinite alternate;
-    }
-
-    p:nth-child(4) a {
-      color: #b6ff00;
-      font-family: PressStart;
-      font-size: 0.8em;
-    }
-    p:nth-child(4) a:hover {
-      -webkit-animation: neon4 1.5s ease-in-out infinite alternate;
-      -moz-animation: neon4 1.5s ease-in-out infinite alternate;
-      animation: neon4 1.5s ease-in-out infinite alternate;
-    }
-
-    p:nth-child(5) a {
-      color: #ff9900;
-      font-family: Audiowide;
-    }
-    p:nth-child(5) a:hover {
-      -webkit-animation: neon5 1.5s ease-in-out infinite alternate;
-      -moz-animation: neon5 1.5s ease-in-out infinite alternate;
-      animation: neon5 1.5s ease-in-out infinite alternate;
-    }
-
-    p:nth-child(6) a {
-      color: #ba01ff;
-      font-family: Vampiro One;
-    }
-    p:nth-child(6) a:hover {
-      -webkit-animation: neon6 1.5s ease-in-out infinite alternate;
-      -moz-animation: neon6 1.5s ease-in-out infinite alternate;
-      animation: neon6 1.5s ease-in-out infinite alternate;
-    }
-
-    p a:hover {
-      color: #ffffff;
-    }
-
-    /*glow for webkit*/
-    @-webkit-keyframes neon1 {
-      from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,
-          0 0 40px #ff1177, 0 0 70px #ff1177, 0 0 80px #ff1177,
-          0 0 100px #ff1177, 0 0 150px #ff1177;
-      }
-      to {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
-          0 0 20px #ff1177, 0 0 35px #ff1177, 0 0 40px #ff1177, 0 0 50px #ff1177,
-          0 0 75px #ff1177;
+    @-webkit-keyframes moving-panel {
+      100% {
+        -webkit-transform: scale(1, 1) translate(20px, 0);
+        transform: scale(1, 1) translate(20px, 0);
       }
     }
 
-    @-webkit-keyframes neon2 {
-      from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,
-          0 0 40px #228dff, 0 0 70px #228dff, 0 0 80px #228dff,
-          0 0 100px #228dff, 0 0 150px #228dff;
-      }
-      to {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
-          0 0 20px #228dff, 0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff,
-          0 0 75px #228dff;
-      }
-    }
-
-    @-webkit-keyframes neon3 {
-      from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,
-          0 0 40px #ffdd1b, 0 0 70px #ffdd1b, 0 0 80px #ffdd1b,
-          0 0 100px #ffdd1b, 0 0 150px #ffdd1b;
-      }
-      to {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
-          0 0 20px #ffdd1b, 0 0 35px #ffdd1b, 0 0 40px #ffdd1b, 0 0 50px #ffdd1b,
-          0 0 75px #ffdd1b;
-      }
-    }
-
-    @-webkit-keyframes neon4 {
-      from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,
-          0 0 40px #b6ff00, 0 0 70px #b6ff00, 0 0 80px #b6ff00,
-          0 0 100px #b6ff00, 0 0 150px #b6ff00;
-      }
-      to {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
-          0 0 20px #b6ff00, 0 0 35px #b6ff00, 0 0 40px #b6ff00, 0 0 50px #b6ff00,
-          0 0 75px #b6ff00;
-      }
-    }
-
-    @-webkit-keyframes neon5 {
-      from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,
-          0 0 40px #ff9900, 0 0 70px #ff9900, 0 0 80px #ff9900,
-          0 0 100px #ff9900, 0 0 150px #ff9900;
-      }
-      to {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
-          0 0 20px #ff9900, 0 0 35px #ff9900, 0 0 40px #ff9900, 0 0 50px #ff9900,
-          0 0 75px #ff9900;
-      }
-    }
-
-    @-webkit-keyframes neon6 {
-      from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,
-          0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de,
-          0 0 100px #ff00de, 0 0 150px #ff00de;
-      }
-      to {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
-          0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de,
-          0 0 75px #ff00de;
-      }
-    }
-
-    /*glow for mozilla*/
-    @-moz-keyframes neon1 {
-      from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,
-          0 0 40px #ff1177, 0 0 70px #ff1177, 0 0 80px #ff1177,
-          0 0 100px #ff1177, 0 0 150px #ff1177;
-      }
-      to {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
-          0 0 20px #ff1177, 0 0 35px #ff1177, 0 0 40px #ff1177, 0 0 50px #ff1177,
-          0 0 75px #ff1177;
-      }
-    }
-
-    @-moz-keyframes neon2 {
-      from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,
-          0 0 40px #228dff, 0 0 70px #228dff, 0 0 80px #228dff,
-          0 0 100px #228dff, 0 0 150px #228dff;
-      }
-      to {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
-          0 0 20px #228dff, 0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff,
-          0 0 75px #228dff;
-      }
-    }
-
-    @-moz-keyframes neon3 {
-      from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,
-          0 0 40px #ffdd1b, 0 0 70px #ffdd1b, 0 0 80px #ffdd1b,
-          0 0 100px #ffdd1b, 0 0 150px #ffdd1b;
-      }
-      to {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
-          0 0 20px #ffdd1b, 0 0 35px #ffdd1b, 0 0 40px #ffdd1b, 0 0 50px #ffdd1b,
-          0 0 75px #ffdd1b;
-      }
-    }
-
-    @-moz-keyframes neon4 {
-      from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,
-          0 0 40px #b6ff00, 0 0 70px #b6ff00, 0 0 80px #b6ff00,
-          0 0 100px #b6ff00, 0 0 150px #b6ff00;
-      }
-      to {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
-          0 0 20px #b6ff00, 0 0 35px #b6ff00, 0 0 40px #b6ff00, 0 0 50px #b6ff00,
-          0 0 75px #b6ff00;
-      }
-    }
-
-    @-moz-keyframes neon5 {
-      from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,
-          0 0 40px #ff9900, 0 0 70px #ff9900, 0 0 80px #ff9900,
-          0 0 100px #ff9900, 0 0 150px #ff9900;
-      }
-      to {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
-          0 0 20px #ff9900, 0 0 35px #ff9900, 0 0 40px #ff9900, 0 0 50px #ff9900,
-          0 0 75px #ff9900;
-      }
-    }
-
-    @-moz-keyframes neon6 {
-      from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,
-          0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de,
-          0 0 100px #ff00de, 0 0 150px #ff00de;
-      }
-      to {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
-          0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de,
-          0 0 75px #ff00de;
-      }
-    }
-
-    /*glow*/
-    @keyframes neon1 {
-      from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,
-          0 0 40px #ff1177, 0 0 70px #ff1177, 0 0 80px #ff1177,
-          0 0 100px #ff1177, 0 0 150px #ff1177;
-      }
-      to {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
-          0 0 20px #ff1177, 0 0 35px #ff1177, 0 0 40px #ff1177, 0 0 50px #ff1177,
-          0 0 75px #ff1177;
-      }
-    }
-
-    @keyframes neon2 {
-      from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,
-          0 0 40px #228dff, 0 0 70px #228dff, 0 0 80px #228dff,
-          0 0 100px #228dff, 0 0 150px #228dff;
-      }
-      to {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
-          0 0 20px #228dff, 0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff,
-          0 0 75px #228dff;
-      }
-    }
-
-    @keyframes neon3 {
-      from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,
-          0 0 40px #ffdd1b, 0 0 70px #ffdd1b, 0 0 80px #ffdd1b,
-          0 0 100px #ffdd1b, 0 0 150px #ffdd1b;
-      }
-      to {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
-          0 0 20px #ffdd1b, 0 0 35px #ffdd1b, 0 0 40px #ffdd1b, 0 0 50px #ffdd1b,
-          0 0 75px #ffdd1b;
-      }
-    }
-
-    @keyframes neon4 {
-      from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,
-          0 0 40px #b6ff00, 0 0 70px #b6ff00, 0 0 80px #b6ff00,
-          0 0 100px #b6ff00, 0 0 150px #b6ff00;
-      }
-      to {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
-          0 0 20px #b6ff00, 0 0 35px #b6ff00, 0 0 40px #b6ff00, 0 0 50px #b6ff00,
-          0 0 75px #b6ff00;
-      }
-    }
-
-    @keyframes neon5 {
-      from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,
-          0 0 40px #ff9900, 0 0 70px #ff9900, 0 0 80px #ff9900,
-          0 0 100px #ff9900, 0 0 150px #ff9900;
-      }
-      to {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
-          0 0 20px #ff9900, 0 0 35px #ff9900, 0 0 40px #ff9900, 0 0 50px #ff9900,
-          0 0 75px #ff9900;
-      }
-    }
-
-    @keyframes neon6 {
-      from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,
-          0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de,
-          0 0 100px #ff00de, 0 0 150px #ff00de;
-      }
-      to {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
-          0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de,
-          0 0 75px #ff00de;
+    @keyframes moving-panel {
+      100% {
+        -webkit-transform: scale(1, 1) translate(20px, 0);
+        transform: scale(1, 1) translate(20px, 0);
       }
     }
   }
@@ -968,9 +660,57 @@
       }
     }
   }
+//------nueve---------------------------------------
 
-  //---nueve-------------------------------------
-  .nueve {
+$colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
+
+.nueve {
+  background: black;
+  //  background-size: 0.12rem 100%;
+   margin: 1rem;
+  padding: 1rem;
+  font-size: 10rem;
+  // font: 16rem/1 Arial;
+  // font-size: 20rem;
+  .text--line {
+    font-size: 20rem;
+  }
+
+  // svg {
+  // position: relative;
+  // width: 100%;
+  // height: 100%;
+  // }
+
+  $max: 5;
+  $stroke-step: 7%;
+  .text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: $stroke-step $stroke-step * ($max - 1);
+    stroke-width: 0.3rem;
+
+    animation: stroke-offset 9s infinite linear;
+
+    @for $item from 1 through $max {
+      $stroke-color: nth($colors, $item);
+
+      &:nth-child(#{$item}) {
+        stroke: $stroke-color;
+        stroke-dashoffset: $stroke-step * $item;
+      }
+    }
+  }
+
+  @keyframes stroke-offset {
+    50% {
+      stroke-dashoffset: $stroke-step * $max;
+      stroke-dasharray: 0 $stroke-step * $max * 2.5;
+    }
+  }
+}
+  //---a-------------------------------------
+  .a {
     $color1: white;
     $color2: black;
     display: flex;
@@ -1033,52 +773,397 @@
     }
   }
 
-  //------a---------------------------------------
 
-  $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
 
-  .a {
-    background: hsl(200, 70, 11);
-    // background-size: 0.12rem 100%;
-    // font: 16rem/1 Arial;
-    font-size: 20rem;
-    .text--line {
-      font-size: 20rem;
+
+
+
+
+
+
+ //---k-----------------------------------------
+ .k {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 5rem;
+  // width: 100%;
+
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  text-transform: uppercase;
+  display: block;
+  // font-size: 92px;
+  color: #f1ebe5;
+  text-shadow: 0 8px 9px #c4b59d, 0px -2px 1px #fff;
+  font-weight: bold;
+  letter-spacing: -4px;
+  // text-align: center;
+  background: linear-gradient(to bottom, #ece4d9 0%, #e9dfd1 100%);
+  // position: absolute;
+  // padding: 100px 200px;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%,-50%);
+  // border-radius: 20px;
+}
+.xxl {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  // margin: 1rem;
+  //   padding: 1rem;
+  //   font-size: 5rem;
+  background-color: #222222;
+  @font-face {
+    font-family: "Monoton";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Monoton"), local("Monoton-Regular"),
+      url(http://themes.googleusercontent.com/static/fonts/monoton/v4/AKI-lyzyNHXByGHeOcds_w.woff)
+        format("woff");
+  }
+
+  @font-face {
+    font-family: "Iceland";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Iceland"), local("Iceland-Regular"),
+      url(http://themes.googleusercontent.com/static/fonts/iceland/v3/F6LYTZLHrG9BNYXRjU7RSw.woff)
+        format("woff");
+  }
+
+  @font-face {
+    font-family: "Pacifico";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Pacifico Regular"), local("Pacifico-Regular"),
+      url(http://themes.googleusercontent.com/static/fonts/pacifico/v5/yunJt0R8tCvMyj_V4xSjafesZW2xOQ-xsNqO47m55DA.woff)
+        format("woff");
+  }
+
+  @font-face {
+    font-family: "PressStart";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Press Start 2P"), local("PressStart2P-Regular"),
+      url(http://themes.googleusercontent.com/static/fonts/pressstart2p/v2/8Lg6LX8-ntOHUQnvQ0E7o3dD2UuwsmbX3BOp4SL_VwM.woff)
+        format("woff");
+  }
+
+  @font-face {
+    font-family: "Audiowide";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Audiowide"), local("Audiowide-Regular"),
+      url(http://themes.googleusercontent.com/static/fonts/audiowide/v2/8XtYtNKEyyZh481XVWfVOj8E0i7KZn-EPnyo3HZu7kw.woff)
+        format("woff");
+  }
+
+  @font-face {
+    font-family: "Vampiro One";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Vampiro One"), local("VampiroOne-Regular"),
+      url(http://themes.googleusercontent.com/static/fonts/vampiroone/v3/Ho2Xld8UbQyBA8XLxF1_NYbN6UDyHWBl620a-IRfuBk.woff)
+        format("woff");
+  }
+
+  /*neeeeoooon*/
+  p {
+    text-align: center;
+    font-size: 7em;
+    // margin:20px 0 20px 0;
+    margin: 0rem 0.5rem 0rem 0.5rem;
+  }
+
+  a {
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+
+  p:nth-child(1) a {
+    color: #ff1177;
+    font-family: Monoton;
+  }
+  p:nth-child(1) a:hover {
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+  }
+
+  p:nth-child(2) a {
+    font-size: 1.5em;
+    color: #228dff;
+    font-family: Iceland;
+  }
+  p:nth-child(2) a:hover {
+    -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+    animation: neon2 1.5s ease-in-out infinite alternate;
+  }
+
+  p:nth-child(3) a {
+    color: #ffdd1b;
+    font-family: Pacifico;
+  }
+  p:nth-child(3) a:hover {
+    -webkit-animation: neon3 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon3 1.5s ease-in-out infinite alternate;
+    animation: neon3 1.5s ease-in-out infinite alternate;
+  }
+
+  p:nth-child(4) a {
+    color: #b6ff00;
+    font-family: PressStart;
+    font-size: 0.8em;
+  }
+  p:nth-child(4) a:hover {
+    -webkit-animation: neon4 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon4 1.5s ease-in-out infinite alternate;
+    animation: neon4 1.5s ease-in-out infinite alternate;
+  }
+
+  p:nth-child(5) a {
+    color: #ff9900;
+    font-family: Audiowide;
+  }
+  p:nth-child(5) a:hover {
+    -webkit-animation: neon5 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon5 1.5s ease-in-out infinite alternate;
+    animation: neon5 1.5s ease-in-out infinite alternate;
+  }
+
+  p:nth-child(6) a {
+    color: #ba01ff;
+    font-family: Vampiro One;
+  }
+  p:nth-child(6) a:hover {
+    -webkit-animation: neon6 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon6 1.5s ease-in-out infinite alternate;
+    animation: neon6 1.5s ease-in-out infinite alternate;
+  }
+
+  p a:hover {
+    color: #ffffff;
+  }
+
+  /*glow for webkit*/
+  @-webkit-keyframes neon1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff1177,
+        0 0 70px #ff1177, 0 0 80px #ff1177, 0 0 100px #ff1177, 0 0 150px #ff1177;
     }
-
-    // svg {
-    //position: absolute;
-    // width: 100%;
-    // height: 100%;
-    // }
-
-    $max: 5;
-    $stroke-step: 7%;
-    .text-copy {
-      fill: none;
-      stroke: white;
-      stroke-dasharray: $stroke-step $stroke-step * ($max - 1);
-      stroke-width: 0.3rem;
-
-      animation: stroke-offset 9s infinite linear;
-
-      @for $item from 1 through $max {
-        $stroke-color: nth($colors, $item);
-
-        &:nth-child(#{$item}) {
-          stroke: $stroke-color;
-          stroke-dashoffset: $stroke-step * $item;
-        }
-      }
-    }
-
-    @keyframes stroke-offset {
-      50% {
-        stroke-dashoffset: $stroke-step * $max;
-        stroke-dasharray: 0 $stroke-step * $max * 2.5;
-      }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff1177,
+        0 0 35px #ff1177, 0 0 40px #ff1177, 0 0 50px #ff1177, 0 0 75px #ff1177;
     }
   }
+
+  @-webkit-keyframes neon2 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff,
+        0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
+        0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+    }
+  }
+
+  @-webkit-keyframes neon3 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffdd1b,
+        0 0 70px #ffdd1b, 0 0 80px #ffdd1b, 0 0 100px #ffdd1b, 0 0 150px #ffdd1b;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffdd1b,
+        0 0 35px #ffdd1b, 0 0 40px #ffdd1b, 0 0 50px #ffdd1b, 0 0 75px #ffdd1b;
+    }
+  }
+
+  @-webkit-keyframes neon4 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #b6ff00,
+        0 0 70px #b6ff00, 0 0 80px #b6ff00, 0 0 100px #b6ff00, 0 0 150px #b6ff00;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #b6ff00,
+        0 0 35px #b6ff00, 0 0 40px #b6ff00, 0 0 50px #b6ff00, 0 0 75px #b6ff00;
+    }
+  }
+
+  @-webkit-keyframes neon5 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff9900,
+        0 0 70px #ff9900, 0 0 80px #ff9900, 0 0 100px #ff9900, 0 0 150px #ff9900;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff9900,
+        0 0 35px #ff9900, 0 0 40px #ff9900, 0 0 50px #ff9900, 0 0 75px #ff9900;
+    }
+  }
+
+  @-webkit-keyframes neon6 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de,
+        0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de,
+        0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+    }
+  }
+
+  /*glow for mozilla*/
+  @-moz-keyframes neon1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff1177,
+        0 0 70px #ff1177, 0 0 80px #ff1177, 0 0 100px #ff1177, 0 0 150px #ff1177;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff1177,
+        0 0 35px #ff1177, 0 0 40px #ff1177, 0 0 50px #ff1177, 0 0 75px #ff1177;
+    }
+  }
+
+  @-moz-keyframes neon2 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff,
+        0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
+        0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+    }
+  }
+
+  @-moz-keyframes neon3 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffdd1b,
+        0 0 70px #ffdd1b, 0 0 80px #ffdd1b, 0 0 100px #ffdd1b, 0 0 150px #ffdd1b;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffdd1b,
+        0 0 35px #ffdd1b, 0 0 40px #ffdd1b, 0 0 50px #ffdd1b, 0 0 75px #ffdd1b;
+    }
+  }
+
+  @-moz-keyframes neon4 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #b6ff00,
+        0 0 70px #b6ff00, 0 0 80px #b6ff00, 0 0 100px #b6ff00, 0 0 150px #b6ff00;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #b6ff00,
+        0 0 35px #b6ff00, 0 0 40px #b6ff00, 0 0 50px #b6ff00, 0 0 75px #b6ff00;
+    }
+  }
+
+  @-moz-keyframes neon5 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff9900,
+        0 0 70px #ff9900, 0 0 80px #ff9900, 0 0 100px #ff9900, 0 0 150px #ff9900;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff9900,
+        0 0 35px #ff9900, 0 0 40px #ff9900, 0 0 50px #ff9900, 0 0 75px #ff9900;
+    }
+  }
+
+  @-moz-keyframes neon6 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de,
+        0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de,
+        0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+    }
+  }
+
+  /*glow*/
+  @keyframes neon1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff1177,
+        0 0 70px #ff1177, 0 0 80px #ff1177, 0 0 100px #ff1177, 0 0 150px #ff1177;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff1177,
+        0 0 35px #ff1177, 0 0 40px #ff1177, 0 0 50px #ff1177, 0 0 75px #ff1177;
+    }
+  }
+
+  @keyframes neon2 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff,
+        0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
+        0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+    }
+  }
+
+  @keyframes neon3 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffdd1b,
+        0 0 70px #ffdd1b, 0 0 80px #ffdd1b, 0 0 100px #ffdd1b, 0 0 150px #ffdd1b;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffdd1b,
+        0 0 35px #ffdd1b, 0 0 40px #ffdd1b, 0 0 50px #ffdd1b, 0 0 75px #ffdd1b;
+    }
+  }
+
+  @keyframes neon4 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #b6ff00,
+        0 0 70px #b6ff00, 0 0 80px #b6ff00, 0 0 100px #b6ff00, 0 0 150px #b6ff00;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #b6ff00,
+        0 0 35px #b6ff00, 0 0 40px #b6ff00, 0 0 50px #b6ff00, 0 0 75px #b6ff00;
+    }
+  }
+
+  @keyframes neon5 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff9900,
+        0 0 70px #ff9900, 0 0 80px #ff9900, 0 0 100px #ff9900, 0 0 150px #ff9900;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff9900,
+        0 0 35px #ff9900, 0 0 40px #ff9900, 0 0 50px #ff9900, 0 0 75px #ff9900;
+    }
+  }
+
+  @keyframes neon6 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de,
+        0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de,
+        0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+  
 
   //---d--------------------------------------------
   .d {
@@ -1632,117 +1717,9 @@
     }
   }
 
-  //---k-----------------------------------------
-  .k {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+ 
 
-    width: 100%;
-
-    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
-    text-transform: uppercase;
-    display: block;
-    font-size: 92px;
-    color: #f1ebe5;
-    text-shadow: 0 8px 9px #c4b59d, 0px -2px 1px #fff;
-    font-weight: bold;
-    letter-spacing: -4px;
-    // text-align: center;
-    background: linear-gradient(to bottom, #ece4d9 0%, #e9dfd1 100%);
-    // position: absolute;
-    // padding: 100px 200px;
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%,-50%);
-    border-radius: 20px;
-  }
-
-  //---l-------------------------------------------
-  .l {
-    /* Main styles */
-    @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
-    background: black;
-    font: 20rem Open Sans, Impact;
-    text-transform: uppercase;
-    .text--transparent {
-      fill: transparent;
-    }
-
-    .anim-shape {
-      -webkit-transform-origin: 0x 150px;
-      -ms-transform-origin: 0x 150px;
-      transform-origin: 0x 150px;
-      -webkit-transform: scale(0, 1) translate(0, 0);
-      -ms-transform: scale(0, 1) translate(0, 0);
-      transform: scale(0, 1) translate(0, 0);
-      -webkit-animation: moving-panel 3s infinite alternate;
-      animation: moving-panel 3s infinite alternate;
-    }
-
-    .colortext .anim-shape:nth-child(1) {
-      fill: #0e1826;
-    }
-
-    .colortext .anim-shape:nth-child(2) {
-      fill: #166973;
-    }
-
-    .colortext .anim-shape:nth-child(3) {
-      fill: #65bfa6;
-    }
-
-    .colortext .anim-shape:nth-child(4) {
-      fill: #f2cd5c;
-    }
-
-    .colortext .anim-shape:nth-child(5) {
-      fill: #f26444;
-    }
-
-    .shadow {
-      -webkit-transform: translate(10px, 10px);
-      -ms-transform: translate(10px, 10px);
-      transform: translate(10px, 10px);
-    }
-
-    .anim-shape--shadow {
-      fill: #000;
-      fill-opacity: 0.2;
-    }
-
-    @-webkit-keyframes moving-panel {
-      100% {
-        -webkit-transform: scale(1, 1) translate(20px, 0);
-        transform: scale(1, 1) translate(20px, 0);
-      }
-    }
-
-    @keyframes moving-panel {
-      100% {
-        -webkit-transform: scale(1, 1) translate(20px, 0);
-        transform: scale(1, 1) translate(20px, 0);
-      }
-    }
-
-    /* Other stuff */
-    // html, body {
-    //   height: 100%;
-    // }
-
-    body {
-      // background: #EEE;
-      // font: 14.5em/1 Open Sans, Impact;
-      // text-transform: uppercase;
-    }
-
-    svg {
-      // position: absolute;
-      // width: 100%;
-      // height: 100%;
-    }
-  }
+  
 
   //---m--------------------------------------------------------------
   .m {
@@ -1881,3 +1858,7 @@
     }
   }
 }
+
+
+
+

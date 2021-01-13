@@ -356,6 +356,257 @@
   }
 }
 .letras .seis {
+  /* Main styles */
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+  background: black;
+  font: 20rem Open Sans, Impact;
+  text-transform: uppercase;
+  width: 30rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+.letras .seis .text--transparent {
+  fill: transparent;
+}
+.letras .seis .anim-shape {
+  -webkit-transform-origin: 0x 150px;
+  -ms-transform-origin: 0x 150px;
+  transform-origin: 0x 150px;
+  -webkit-transform: scale(0, 1) translate(0, 0);
+  -ms-transform: scale(0, 1) translate(0, 0);
+  transform: scale(0, 1) translate(0, 0);
+  -webkit-animation: moving-panel 3s infinite alternate;
+  animation: moving-panel 3s infinite alternate;
+}
+.letras .seis .colortext .anim-shape:nth-child(1) {
+  fill: #0e1826;
+}
+.letras .seis .colortext .anim-shape:nth-child(2) {
+  fill: #166973;
+}
+.letras .seis .colortext .anim-shape:nth-child(3) {
+  fill: #65bfa6;
+}
+.letras .seis .colortext .anim-shape:nth-child(4) {
+  fill: #f2cd5c;
+}
+.letras .seis .colortext .anim-shape:nth-child(5) {
+  fill: #f26444;
+}
+.letras .seis .shadow {
+  -webkit-transform: translate(10px, 10px);
+  -ms-transform: translate(10px, 10px);
+  transform: translate(10px, 10px);
+}
+.letras .seis .anim-shape--shadow {
+  fill: #000;
+  fill-opacity: 0.2;
+}
+@-webkit-keyframes moving-panel {
+  100% {
+    -webkit-transform: scale(1, 1) translate(20px, 0);
+    transform: scale(1, 1) translate(20px, 0);
+  }
+}
+@keyframes moving-panel {
+  100% {
+    -webkit-transform: scale(1, 1) translate(20px, 0);
+    transform: scale(1, 1) translate(20px, 0);
+  }
+}
+.letras .siete {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 5rem;
+  @import url(https://fonts.googleapis.com/css?family=Varela+Round);
+}
+.letras .siete h1 {
+  color: rgba(0, 0, 0, 0.9);
+  font: normal 5rem Varela Round, sans-serif;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  animation: move linear 2000ms infinite;
+}
+@keyframes move {
+  0% {
+    text-shadow: 4px -4px 0 red, 3px -3px 0 red, 2px -2px 0 red, 1px -1px 0 red, -4px 4px 0 aqua, -3px 3px 0 aqua, -2px 2px 0 aqua, -1px 1px 0 aqua;
+  }
+  25% {
+    text-shadow: -4px -4px 0 aqua, -3px -3px 0 aqua, -2px -2px 0 aqua, -1px -1px 0 aqua, 4px 4px 0 red, 3px 3px 0 red, 2px 2px 0 red, 1px 1px 0 red;
+  }
+  50% {
+    text-shadow: -4px 4px 0 red, -3px 3px 0 red, -2px 2px 0 red, -1px 1px 0 red, 4px -4px 0 aqua, 3px -3px 0 aqua, 2px -2px 0 aqua, 1px -1px 0 aqua;
+  }
+  75% {
+    text-shadow: 4px 4px 0 aqua, 3px 3px 0 aqua, 2px 2px 0 aqua, 1px 1px 0 aqua, -4px -4px 0 red, -3px -3px 0 red, -2px -2px 0 red, -1px -1px 0 red;
+  }
+  100% {
+    text-shadow: 4px -4px 0 red, 3px -3px 0 red, 2px -2px 0 red, 1px -1px 0 red, -4px 4px 0 aqua, -3px 3px 0 aqua, -2px 2px 0 aqua, -1px 1px 0 aqua;
+  }
+}
+.letras .ocho {
+  background: black;
+  text-transform: uppercase;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 5rem;
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+}
+.letras .ocho .text {
+  fill: none;
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 6s infinite linear;
+  animation: stroke 6s infinite linear;
+}
+.letras .ocho .text:nth-child(5n+1) {
+  stroke: #f2385a;
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s;
+}
+.letras .ocho .text:nth-child(5n+2) {
+  stroke: #f5a503;
+  -webkit-animation-delay: -2.4s;
+  animation-delay: -2.4s;
+}
+.letras .ocho .text:nth-child(5n+3) {
+  stroke: #e9f1df;
+  -webkit-animation-delay: -3.6s;
+  animation-delay: -3.6s;
+}
+.letras .ocho .text:nth-child(5n+4) {
+  stroke: #56d9cd;
+  -webkit-animation-delay: -4.8s;
+  animation-delay: -4.8s;
+}
+.letras .ocho .text:nth-child(5n+5) {
+  stroke: #3aa1bf;
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+}
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+.letras .nueve {
+  background: black;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 10rem;
+}
+.letras .nueve .text--line {
+  font-size: 20rem;
+}
+.letras .nueve .text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 7% 28%;
+  stroke-width: 0.3rem;
+  animation: stroke-offset 9s infinite linear;
+}
+.letras .nueve .text-copy:nth-child(1) {
+  stroke: #360745;
+  stroke-dashoffset: 7%;
+}
+.letras .nueve .text-copy:nth-child(2) {
+  stroke: #d61c59;
+  stroke-dashoffset: 14%;
+}
+.letras .nueve .text-copy:nth-child(3) {
+  stroke: #e7d84b;
+  stroke-dashoffset: 21%;
+}
+.letras .nueve .text-copy:nth-child(4) {
+  stroke: #efeac5;
+  stroke-dashoffset: 28%;
+}
+.letras .nueve .text-copy:nth-child(5) {
+  stroke: #1b8798;
+  stroke-dashoffset: 35%;
+}
+@keyframes stroke-offset {
+  50% {
+    stroke-dashoffset: 35%;
+    stroke-dasharray: 0 87.5%;
+  }
+}
+.letras .a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #000428, #004e92);
+  margin: 1rem;
+  padding: 1rem;
+}
+.letras .a h1 {
+  background-image: url("../../../../images/fondos/frozen.jpg");
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 900;
+}
+.letras .a h1::before {
+  content: attr(data-heading);
+  position: absolute;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0) 45%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 55%, rgba(255, 255, 255, 0) 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+  mix-blend-mode: screen;
+  animation: shine 1s infinite;
+  background-size: 200%;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2), -2px 2px 10px rgba(0, 0, 0, 0.2), -2px -2px 10px rgba(0, 0, 0, 0.2);
+}
+@keyframes shine {
+  0% {
+    background-position: -100%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+@font-face {
+  .letras .a {
+    font-family: "frozen";
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/Ice%20kingdom%20-%20Bold%20-%20Por%20Kustren.woff");
+  }
+}
+.letras .a h1 {
+  font-size: 5rem;
+  font-family: "frozen", serif;
+  font-weight: 700;
+}
+.letras .k {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 5rem;
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  text-transform: uppercase;
+  display: block;
+  color: #f1ebe5;
+  text-shadow: 0 8px 9px #c4b59d, 0px -2px 1px #fff;
+  font-weight: bold;
+  letter-spacing: -4px;
+  background: linear-gradient(to bottom, #ece4d9 0%, #e9dfd1 100%);
+}
+.letras .xxl {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -367,7 +618,7 @@
   /*glow*/
 }
 @font-face {
-  .letras .seis {
+  .letras .xxl {
     font-family: "Monoton";
     font-style: normal;
     font-weight: 400;
@@ -375,7 +626,7 @@
   }
 }
 @font-face {
-  .letras .seis {
+  .letras .xxl {
     font-family: "Iceland";
     font-style: normal;
     font-weight: 400;
@@ -383,7 +634,7 @@
   }
 }
 @font-face {
-  .letras .seis {
+  .letras .xxl {
     font-family: "Pacifico";
     font-style: normal;
     font-weight: 400;
@@ -391,7 +642,7 @@
   }
 }
 @font-face {
-  .letras .seis {
+  .letras .xxl {
     font-family: "PressStart";
     font-style: normal;
     font-weight: 400;
@@ -399,7 +650,7 @@
   }
 }
 @font-face {
-  .letras .seis {
+  .letras .xxl {
     font-family: "Audiowide";
     font-style: normal;
     font-weight: 400;
@@ -407,81 +658,81 @@
   }
 }
 @font-face {
-  .letras .seis {
+  .letras .xxl {
     font-family: "Vampiro One";
     font-style: normal;
     font-weight: 400;
     src: local("Vampiro One"), local("VampiroOne-Regular"), url(http://themes.googleusercontent.com/static/fonts/vampiroone/v3/Ho2Xld8UbQyBA8XLxF1_NYbN6UDyHWBl620a-IRfuBk.woff) format("woff");
   }
 }
-.letras .seis p {
+.letras .xxl p {
   text-align: center;
   font-size: 7em;
   margin: 0rem 0.5rem 0rem 0.5rem;
 }
-.letras .seis a {
+.letras .xxl a {
   text-decoration: none;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
-.letras .seis p:nth-child(1) a {
+.letras .xxl p:nth-child(1) a {
   color: #ff1177;
   font-family: Monoton;
 }
-.letras .seis p:nth-child(1) a:hover {
+.letras .xxl p:nth-child(1) a:hover {
   -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
   -moz-animation: neon1 1.5s ease-in-out infinite alternate;
   animation: neon1 1.5s ease-in-out infinite alternate;
 }
-.letras .seis p:nth-child(2) a {
+.letras .xxl p:nth-child(2) a {
   font-size: 1.5em;
   color: #228dff;
   font-family: Iceland;
 }
-.letras .seis p:nth-child(2) a:hover {
+.letras .xxl p:nth-child(2) a:hover {
   -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
   -moz-animation: neon2 1.5s ease-in-out infinite alternate;
   animation: neon2 1.5s ease-in-out infinite alternate;
 }
-.letras .seis p:nth-child(3) a {
+.letras .xxl p:nth-child(3) a {
   color: #ffdd1b;
   font-family: Pacifico;
 }
-.letras .seis p:nth-child(3) a:hover {
+.letras .xxl p:nth-child(3) a:hover {
   -webkit-animation: neon3 1.5s ease-in-out infinite alternate;
   -moz-animation: neon3 1.5s ease-in-out infinite alternate;
   animation: neon3 1.5s ease-in-out infinite alternate;
 }
-.letras .seis p:nth-child(4) a {
+.letras .xxl p:nth-child(4) a {
   color: #b6ff00;
   font-family: PressStart;
   font-size: 0.8em;
 }
-.letras .seis p:nth-child(4) a:hover {
+.letras .xxl p:nth-child(4) a:hover {
   -webkit-animation: neon4 1.5s ease-in-out infinite alternate;
   -moz-animation: neon4 1.5s ease-in-out infinite alternate;
   animation: neon4 1.5s ease-in-out infinite alternate;
 }
-.letras .seis p:nth-child(5) a {
+.letras .xxl p:nth-child(5) a {
   color: #ff9900;
   font-family: Audiowide;
 }
-.letras .seis p:nth-child(5) a:hover {
+.letras .xxl p:nth-child(5) a:hover {
   -webkit-animation: neon5 1.5s ease-in-out infinite alternate;
   -moz-animation: neon5 1.5s ease-in-out infinite alternate;
   animation: neon5 1.5s ease-in-out infinite alternate;
 }
-.letras .seis p:nth-child(6) a {
+.letras .xxl p:nth-child(6) a {
   color: #ba01ff;
   font-family: Vampiro One;
 }
-.letras .seis p:nth-child(6) a:hover {
+.letras .xxl p:nth-child(6) a:hover {
   -webkit-animation: neon6 1.5s ease-in-out infinite alternate;
   -moz-animation: neon6 1.5s ease-in-out infinite alternate;
   animation: neon6 1.5s ease-in-out infinite alternate;
 }
-.letras .seis p a:hover {
+.letras .xxl p a:hover {
   color: #ffffff;
 }
 @-webkit-keyframes neon1 {
@@ -626,179 +877,6 @@
   }
   to {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
-  }
-}
-.letras .siete {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-  margin: 1rem;
-  padding: 1rem;
-  font-size: 5rem;
-  @import url(https://fonts.googleapis.com/css?family=Varela+Round);
-}
-.letras .siete h1 {
-  color: rgba(0, 0, 0, 0.9);
-  font: normal 5rem Varela Round, sans-serif;
-  letter-spacing: 0.5rem;
-  text-transform: uppercase;
-  animation: move linear 2000ms infinite;
-}
-@keyframes move {
-  0% {
-    text-shadow: 4px -4px 0 red, 3px -3px 0 red, 2px -2px 0 red, 1px -1px 0 red, -4px 4px 0 aqua, -3px 3px 0 aqua, -2px 2px 0 aqua, -1px 1px 0 aqua;
-  }
-  25% {
-    text-shadow: -4px -4px 0 aqua, -3px -3px 0 aqua, -2px -2px 0 aqua, -1px -1px 0 aqua, 4px 4px 0 red, 3px 3px 0 red, 2px 2px 0 red, 1px 1px 0 red;
-  }
-  50% {
-    text-shadow: -4px 4px 0 red, -3px 3px 0 red, -2px 2px 0 red, -1px 1px 0 red, 4px -4px 0 aqua, 3px -3px 0 aqua, 2px -2px 0 aqua, 1px -1px 0 aqua;
-  }
-  75% {
-    text-shadow: 4px 4px 0 aqua, 3px 3px 0 aqua, 2px 2px 0 aqua, 1px 1px 0 aqua, -4px -4px 0 red, -3px -3px 0 red, -2px -2px 0 red, -1px -1px 0 red;
-  }
-  100% {
-    text-shadow: 4px -4px 0 red, 3px -3px 0 red, 2px -2px 0 red, 1px -1px 0 red, -4px 4px 0 aqua, -3px 3px 0 aqua, -2px 2px 0 aqua, -1px 1px 0 aqua;
-  }
-}
-.letras .ocho {
-  background: black;
-  text-transform: uppercase;
-  margin: 1rem;
-  padding: 1rem;
-  font-size: 5rem;
-  @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
-}
-.letras .ocho .text {
-  fill: none;
-  stroke-width: 2;
-  stroke-linejoin: round;
-  stroke-dasharray: 70 330;
-  stroke-dashoffset: 0;
-  -webkit-animation: stroke 6s infinite linear;
-  animation: stroke 6s infinite linear;
-}
-.letras .ocho .text:nth-child(5n+1) {
-  stroke: #f2385a;
-  -webkit-animation-delay: -1.2s;
-  animation-delay: -1.2s;
-}
-.letras .ocho .text:nth-child(5n+2) {
-  stroke: #f5a503;
-  -webkit-animation-delay: -2.4s;
-  animation-delay: -2.4s;
-}
-.letras .ocho .text:nth-child(5n+3) {
-  stroke: #e9f1df;
-  -webkit-animation-delay: -3.6s;
-  animation-delay: -3.6s;
-}
-.letras .ocho .text:nth-child(5n+4) {
-  stroke: #56d9cd;
-  -webkit-animation-delay: -4.8s;
-  animation-delay: -4.8s;
-}
-.letras .ocho .text:nth-child(5n+5) {
-  stroke: #3aa1bf;
-  -webkit-animation-delay: -6s;
-  animation-delay: -6s;
-}
-@-webkit-keyframes stroke {
-  100% {
-    stroke-dashoffset: -400;
-  }
-}
-@keyframes stroke {
-  100% {
-    stroke-dashoffset: -400;
-  }
-}
-.letras .nueve {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(to bottom, #000428, #004e92);
-  margin: 1rem;
-  padding: 1rem;
-}
-.letras .nueve h1 {
-  background-image: url("../../../../images/fondos/frozen.jpg");
-  background-attachment: fixed;
-  -webkit-background-clip: text;
-  color: transparent;
-  font-weight: 900;
-}
-.letras .nueve h1::before {
-  content: attr(data-heading);
-  position: absolute;
-  background: linear-gradient(45deg, rgba(255, 255, 255, 0) 45%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 55%, rgba(255, 255, 255, 0) 100%);
-  -webkit-background-clip: text;
-  color: transparent;
-  mix-blend-mode: screen;
-  animation: shine 1s infinite;
-  background-size: 200%;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2), -2px 2px 10px rgba(0, 0, 0, 0.2), -2px -2px 10px rgba(0, 0, 0, 0.2);
-}
-@keyframes shine {
-  0% {
-    background-position: -100%;
-  }
-  100% {
-    background-position: 100%;
-  }
-}
-@font-face {
-  .letras .nueve {
-    font-family: "frozen";
-    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/Ice%20kingdom%20-%20Bold%20-%20Por%20Kustren.woff");
-  }
-}
-.letras .nueve h1 {
-  font-size: 5rem;
-  font-family: "frozen", serif;
-  font-weight: 700;
-}
-.letras .a {
-  background: #082330;
-  font-size: 20rem;
-}
-.letras .a .text--line {
-  font-size: 20rem;
-}
-.letras .a .text-copy {
-  fill: none;
-  stroke: white;
-  stroke-dasharray: 7% 28%;
-  stroke-width: 0.3rem;
-  animation: stroke-offset 9s infinite linear;
-}
-.letras .a .text-copy:nth-child(1) {
-  stroke: #360745;
-  stroke-dashoffset: 7%;
-}
-.letras .a .text-copy:nth-child(2) {
-  stroke: #d61c59;
-  stroke-dashoffset: 14%;
-}
-.letras .a .text-copy:nth-child(3) {
-  stroke: #e7d84b;
-  stroke-dashoffset: 21%;
-}
-.letras .a .text-copy:nth-child(4) {
-  stroke: #efeac5;
-  stroke-dashoffset: 28%;
-}
-.letras .a .text-copy:nth-child(5) {
-  stroke: #1b8798;
-  stroke-dashoffset: 35%;
-}
-@keyframes stroke-offset {
-  50% {
-    stroke-dashoffset: 35%;
-    stroke-dasharray: 0 87.5%;
   }
 }
 .letras .d html::before {
@@ -1136,80 +1214,6 @@
   }
   100% {
     top: -170%;
-  }
-}
-.letras .k {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
-  text-transform: uppercase;
-  display: block;
-  font-size: 92px;
-  color: #f1ebe5;
-  text-shadow: 0 8px 9px #c4b59d, 0px -2px 1px #fff;
-  font-weight: bold;
-  letter-spacing: -4px;
-  background: linear-gradient(to bottom, #ece4d9 0%, #e9dfd1 100%);
-  border-radius: 20px;
-}
-.letras .l {
-  /* Main styles */
-  @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
-  background: black;
-  font: 20rem Open Sans, Impact;
-  text-transform: uppercase;
-  /* Other stuff */
-}
-.letras .l .text--transparent {
-  fill: transparent;
-}
-.letras .l .anim-shape {
-  -webkit-transform-origin: 0x 150px;
-  -ms-transform-origin: 0x 150px;
-  transform-origin: 0x 150px;
-  -webkit-transform: scale(0, 1) translate(0, 0);
-  -ms-transform: scale(0, 1) translate(0, 0);
-  transform: scale(0, 1) translate(0, 0);
-  -webkit-animation: moving-panel 3s infinite alternate;
-  animation: moving-panel 3s infinite alternate;
-}
-.letras .l .colortext .anim-shape:nth-child(1) {
-  fill: #0e1826;
-}
-.letras .l .colortext .anim-shape:nth-child(2) {
-  fill: #166973;
-}
-.letras .l .colortext .anim-shape:nth-child(3) {
-  fill: #65bfa6;
-}
-.letras .l .colortext .anim-shape:nth-child(4) {
-  fill: #f2cd5c;
-}
-.letras .l .colortext .anim-shape:nth-child(5) {
-  fill: #f26444;
-}
-.letras .l .shadow {
-  -webkit-transform: translate(10px, 10px);
-  -ms-transform: translate(10px, 10px);
-  transform: translate(10px, 10px);
-}
-.letras .l .anim-shape--shadow {
-  fill: #000;
-  fill-opacity: 0.2;
-}
-@-webkit-keyframes moving-panel {
-  100% {
-    -webkit-transform: scale(1, 1) translate(20px, 0);
-    transform: scale(1, 1) translate(20px, 0);
-  }
-}
-@keyframes moving-panel {
-  100% {
-    -webkit-transform: scale(1, 1) translate(20px, 0);
-    transform: scale(1, 1) translate(20px, 0);
   }
 }
 .letras .m {
