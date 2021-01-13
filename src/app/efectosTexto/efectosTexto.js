@@ -1,9 +1,9 @@
 class miEfectostexto extends HTMLElement {
-    constructor() {
-      super();
-    }
-    connectedCallback() {
-      this.innerHTML = `
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    this.innerHTML = `
 <section class="letras">
     <div class="uno">
         ⚠ Micro ⚠
@@ -114,15 +114,19 @@ class miEfectostexto extends HTMLElement {
         </h1>
     </div>
 
-
-
-
-
-
-    
-    <div class="a">
-        <h1 contenteditable data-heading="Micro">Micro9</h1>
+    <div class="once">
+        <h1 contenteditable data-heading="Micro">Micro</h1>
     </div>
+
+    <div class="doce">
+<div class="word">
+	<span>M</span>
+	<span>I</span>
+	<span>C</span>
+	<span>R</span>
+	<span>O</span>
+</div>
+</div>
 
 
 
@@ -229,64 +233,60 @@ class miEfectostexto extends HTMLElement {
 
   </section>
     `;
-    }
-  }
-  customElements.define("mi-efectostexto", miEfectostexto);
- 
-$('#logo-size').change(function () {                    
-    var fontsize = $(this).val()/10 + "px";
-    $('html').css("font-size", fontsize );
-  });
-  
-  $('#image-size').change(function () {                    
-    var Width = $(this).val() + "px";
-    $('img').css("width", Width );
-  });
+    //---once-----------LETRAS QUE SE MUEVEN
+    const spans = document.querySelectorAll(".word span");
 
+    spans.forEach((span, idx) => {
+      span.addEventListener("click", (e) => {
+        e.target.classList.add("active");
+      });
+      span.addEventListener("animationend", (e) => {
+        e.target.classList.remove("active");
+      });
 
-
-  //---i----letras que vibran
-  $(function(){
-    var $jittery = $('.jittery'),
-        aText    = $jittery.text().split(''),
-        letters = '';
-    
-    for(var i = 0; i < aText.length; i++){
-      letters += '<span>'+aText[i]+'</span>';
-    }
-    
-    $jittery.empty().append(letters);
-    
-    $.each($('span', $jittery), function(i){
-      $(this).css('animation-delay', '-'+i+'70ms');
+      // Initial animation
+      setTimeout(() => {
+        span.classList.add("active");
+      }, 750 * (idx + 1));
     });
-  });
+  }
+}
 
 
-  //---M-----------LETRAS QUE SE MUEVEN
-  const spans = document.querySelectorAll('.word span');
+customElements.define("mi-efectostexto", miEfectostexto);
 
-spans.forEach((span, idx) => {
-	span.addEventListener('click', (e) => {
-		e.target.classList.add('active');
-	});
-	span.addEventListener('animationend', (e) => {
-		e.target.classList.remove('active');
-	});
-	
-	// Initial animation
-	setTimeout(() => {
-		span.classList.add('active');
-	}, 750 * (idx+1))
+$("#logo-size").change(function () {
+  var fontsize = $(this).val() / 10 + "px";
+  $("html").css("font-size", fontsize);
 });
 
+$("#image-size").change(function () {
+  var Width = $(this).val() + "px";
+  $("img").css("width", Width);
+});
 
+//---i----letras que vibran
+$(function () {
+  var $jittery = $(".jittery"),
+    aText = $jittery.text().split(""),
+    letters = "";
+
+  for (var i = 0; i < aText.length; i++) {
+    letters += "<span>" + aText[i] + "</span>";
+  }
+
+  $jittery.empty().append(letters);
+
+  $.each($("span", $jittery), function (i) {
+    $(this).css("animation-delay", "-" + i + "70ms");
+  });
+});
 
 //---n----------frozen
 
-// JS is to make the text editable for demo purpose, not required for the effect. Thanks for the suggestion @chriscoyier! 
+// JS is to make the text editable for demo purpose, not required for the effect. Thanks for the suggestion @chriscoyier!
 var h1 = document.querySelector("h1");
 
-h1.addEventListener("input", function() {
-    this.setAttribute("data-heading", this.innerText);
+h1.addEventListener("input", function () {
+  this.setAttribute("data-heading", this.innerText);
 });
