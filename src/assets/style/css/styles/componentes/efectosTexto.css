@@ -770,6 +770,50 @@
   color: #3c97bf;
   text-decoration: none;
 }
+.letras .trece {
+  font-family: helvetica, arial, sans-serif;
+  background-color: #2e2e31;
+  background-color: blue;
+}
+@keyframes tipsy {
+  0% {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}
+.letras .trece a {
+  color: #fffbf1;
+  text-shadow: 0 2rem 2.5rem #2e2e31, 0 4rem 6rem #2e2e31;
+  font-size: 5rem;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: -0.3rem;
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+}
+.letras .trece a:before,
+.letras .trece a:after {
+  content: "";
+  padding: 0.9em 0.4em;
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  top: 50%;
+  display: block;
+  border: 1.5rem solid red;
+  transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  animation: 10s infinite alternate ease-in-out tipsy;
+}
+.letras .trece a:before {
+  border-color: #d9524a #d9524a rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  z-index: -1;
+}
+.letras .trece a:after {
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #d9524a #d9524a;
+  box-shadow: 25px 25px 25px rgba(46, 46, 49, 0.8);
+}
 .letras .k {
   display: flex;
   flex-direction: column;

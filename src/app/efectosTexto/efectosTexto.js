@@ -119,16 +119,18 @@ class miEfectostexto extends HTMLElement {
     </div>
 
     <div class="doce">
-<div class="word">
-	<span>M</span>
-	<span>I</span>
-	<span>C</span>
-	<span>R</span>
-	<span>O</span>
-</div>
-</div>
+        <div class="word">
+	        <span>M</span>
+	        <span>I</span>
+            <span>C</span>
+            <span>R</span>
+            <span>O</span>
+        </div>
+    </div>
 
-
+    <div class="trece">
+        <a href="http://www.thismanslife.co.uk" target="_blank">Micro</a>
+    </div>
 
 
 
