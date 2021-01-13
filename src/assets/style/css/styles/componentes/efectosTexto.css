@@ -1,8 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 .letras {
   display: grid;
-  grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5] 1fr [x6];
-  grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3] 1fr [y4];
+  grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4];
+  grid-template-rows: [y0] 0.5fr [y1] 0.5fr [y2] 0.5fr [y3] 0.5fr [y4];
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
   background-color: indigo;
@@ -24,15 +23,15 @@
   grid-row: y0/y1;
 }
 .letras .e {
-  grid-column: x4/x5;
-  grid-row: y0/y1;
-}
-.letras .f {
   grid-column: x0/x1;
   grid-row: y1/y2;
 }
+.letras .f {
+  grid-column: x1/x2;
+  grid-row: y1/y2;
+}
 .letras .g {
-  grid-column: x1/x3;
+  grid-column: x2/x3;
   grid-row: y1/y2;
 }
 .letras .h {
@@ -40,27 +39,27 @@
   grid-row: y1/y2;
 }
 .letras .i {
-  grid-column: x4/x6;
-  grid-row: y1/y2;
+  grid-column: x0/x2;
+  grid-row: y2/y3;
 }
 .letras .j {
-  grid-column: x1/x2;
+  grid-column: x2/x3;
   grid-row: y2/y3;
 }
 .letras .k {
-  grid-column: x2/x4;
+  grid-column: x3/x4;
   grid-row: y2/y3;
 }
 .letras .l {
-  grid-column: x4/x6;
-  grid-row: y2/y3;
-}
-.letras .m {
   grid-column: x0/x1;
   grid-row: y3/y4;
 }
+.letras .m {
+  grid-column: x1/x2;
+  grid-row: y3/y4;
+}
 .letras .n {
-  grid-column: x1/x3;
+  grid-column: x2/x3;
   grid-row: y3/y4;
 }
 .letras .o {
@@ -70,11 +69,10 @@
 
 .a {
   background: #082330;
-  background-size: 0.12rem 100%;
-  font: 16rem/1 Arial;
+  font-size: 20rem;
 }
 .a .text--line {
-  font-size: 5rem;
+  font-size: 20rem;
 }
 .a .text-copy {
   fill: none;
@@ -111,10 +109,6 @@
 }
 
 .b {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
   background-color: #34495e;
 }
 .b .content {
@@ -218,6 +212,8 @@
 }
 
 .c {
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+  background-color: black;
   text-align: center;
   font-size: 6.5em;
   color: #fff;
@@ -233,10 +229,6 @@
     text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 50px #fff, 0px 0px 50px #fff, 0px 0px 50px #7b96b8, 0px 0px 150px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px -10px 100px #7b96b8, 0px -10px 100px #7b96b8;
   }
 }
-.d {
-  width: 10rem;
-  background-color: red;
-}
 .d html::before {
   box-shadow: 93rem 63rem 0.3rem rgba(255, 255, 255, 0.8), 3rem 17rem 0.3rem rgba(255, 255, 255, 0.8), 28rem 85rem 0.3rem rgba(255, 255, 255, 0.8), 97rem 82rem 0.3rem rgba(255, 255, 255, 0.8), 55rem 83rem 0.3rem rgba(255, 255, 255, 0.8), 74rem 72rem 0.3rem rgba(255, 255, 255, 0.8), 84rem 11rem 0.3rem rgba(255, 255, 255, 0.8), 32rem 6rem 0.3rem rgba(255, 255, 255, 0.8), 45rem 92rem 0.3rem rgba(255, 255, 255, 0.8), 98rem 57rem 0.3rem rgba(255, 255, 255, 0.8), 63rem 98rem 0.3rem rgba(255, 255, 255, 0.8), 90rem 46rem 0.3rem rgba(255, 255, 255, 0.8), 50rem 86rem 0.3rem rgba(255, 255, 255, 0.8), 38rem 21rem 0.3rem rgba(255, 255, 255, 0.8), 74rem 2rem 0.3rem rgba(255, 255, 255, 0.8), 89rem 22rem 0.3rem rgba(255, 255, 255, 0.8), 39rem 0rem 0.3rem rgba(255, 255, 255, 0.8), 25rem 89rem 0.3rem rgba(255, 255, 255, 0.8), 54rem 58rem 0.3rem rgba(255, 255, 255, 0.8), 81rem 39rem 0.3rem rgba(255, 255, 255, 0.8), 51rem 8rem 0.3rem rgba(255, 255, 255, 0.8), 24rem 56rem 0.3rem rgba(255, 255, 255, 0.8), 50rem 23rem 0.3rem rgba(255, 255, 255, 0.8), 62rem 34rem 0.3rem rgba(255, 255, 255, 0.8), 10rem 77rem 0.3rem rgba(255, 255, 255, 0.8), 92rem 45rem 0.3rem rgba(255, 255, 255, 0.8), 70rem 40rem 0.3rem rgba(255, 255, 255, 0.8), 2rem 53rem 0.3rem rgba(255, 255, 255, 0.8), 3rem 54rem 0.3rem rgba(255, 255, 255, 0.8), 18rem 21rem 0.3rem rgba(255, 255, 255, 0.8), 48rem 47rem 0.3rem rgba(255, 255, 255, 0.8), 83rem 96rem 0.3rem rgba(255, 255, 255, 0.8), 26rem 32rem 0.3rem rgba(255, 255, 255, 0.8), 46rem 9rem 0.3rem rgba(255, 255, 255, 0.8), 2rem 13rem 0.3rem rgba(255, 255, 255, 0.8), 29rem 63rem 0.3rem rgba(255, 255, 255, 0.8), 17rem 90rem 0.3rem rgba(255, 255, 255, 0.8), 78rem 9rem 0.3rem rgba(255, 255, 255, 0.8), 15rem 39rem 0.3rem rgba(255, 255, 255, 0.8), 90rem 5rem 0.3rem rgba(255, 255, 255, 0.8);
 }
@@ -251,8 +243,6 @@
 }
 .d h1 {
   margin: 0;
-  height: 12rem;
-  width: 120rem;
   display: flex;
   justify-content: center;
 }
@@ -263,8 +253,6 @@
   z-index: -1;
   top: -26rem;
   left: 29rem;
-  width: 62rem;
-  height: 62rem;
   border-radius: 50%;
   border: 1.3rem solid currentColor;
   box-sizing: border-box;
@@ -319,7 +307,6 @@
   align-items: center;
   justify-content: center;
   background-color: lawngreen;
-  width: 100%;
   @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 }
 .e h1 {
@@ -352,13 +339,15 @@
 .f {
   background: #212121;
   text-transform: uppercase;
-  margin: 0;
   @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
-}
-.f svg {
+  font-size: 2rem;
   /* Other styles */
 }
-.f svg .text {
+.f .text--line {
+  font-size: 0.1rem;
+}
+.f .textx {
+  background-color: lightcoral;
   fill: none;
   stroke-width: 6;
   stroke-linejoin: round;
@@ -367,27 +356,27 @@
   -webkit-animation: stroke 6s infinite linear;
   animation: stroke 6s infinite linear;
 }
-.f svg .text:nth-child(5n+1) {
+.f .textx:nth-child(5n+1) {
   stroke: #f2385a;
   -webkit-animation-delay: -1.2s;
   animation-delay: -1.2s;
 }
-.f svg .text:nth-child(5n+2) {
+.f .textx:nth-child(5n+2) {
   stroke: #f5a503;
   -webkit-animation-delay: -2.4s;
   animation-delay: -2.4s;
 }
-.f svg .text:nth-child(5n+3) {
+.f .textx:nth-child(5n+3) {
   stroke: #e9f1df;
   -webkit-animation-delay: -3.6s;
   animation-delay: -3.6s;
 }
-.f svg .text:nth-child(5n+4) {
+.f .textx:nth-child(5n+4) {
   stroke: #56d9cd;
   -webkit-animation-delay: -4.8s;
   animation-delay: -4.8s;
 }
-.f svg .text:nth-child(5n+5) {
+.f .textx:nth-child(5n+5) {
   stroke: #3aa1bf;
   -webkit-animation-delay: -6s;
   animation-delay: -6s;

@@ -6,6 +6,7 @@ class miEfectostexto extends HTMLElement {
       this.innerHTML = `
       <section class="letras">
       <div class="a">
+      <!--
           <svg viewBox="0 0 800 600">
               <symbol id="s-text">
                   <text text-anchor="middle" x="50%" y="35%" class="text--line">
@@ -25,6 +26,7 @@ class miEfectostexto extends HTMLElement {
                   <use xlink:href="#s-text" class="text-copy"></use>
               </g>
           </svg>
+          -->
       </div>
       <div class="b">
           <div class='content'>
@@ -67,21 +69,21 @@ class miEfectostexto extends HTMLElement {
 
 
       <div class="f">
-          <svg viewBox="0 0 1320 300">
+          <svg >
 
               <!-- Symbol -->
-              <symbol id="s-text">
-                  <text1 text-anchor="middle" x="50%" y="50%" dy=".35em">
+              <symbol >
+                  <text class="loco">
                       Musgrove
-                  </text1>
+                  </text>
               </symbol>
 
               <!-- Duplicate symbols -->
-              <use xlink:href="#s-text" class="text"></use>
-              <use xlink:href="#s-text" class="text"></use>
-              <use xlink:href="#s-text" class="text"></use>
-              <use xlink:href="#s-text" class="text"></use>
-              <use xlink:href="#s-text" class="text"></use>
+              <use xlink:href="#s-text" class="textx"></use>
+              <use xlink:href="#s-text" class="textx"></use>
+              <use xlink:href="#s-text" class="textx"></use>
+              <use xlink:href="#s-text" class="textx"></use>
+              <use xlink:href="#s-text" class="textx"></use>
 
           </svg>
       </div>
