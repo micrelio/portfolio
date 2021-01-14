@@ -114,7 +114,7 @@ class miEfectostexto extends HTMLElement {
     </div>
 
     <div class="once" id="once" onclick="efectos('once');">
-        <h1 contenteditable data-heading="Micro">Micro</h1>
+        <h1  data-heading="Micro">Micro</h1>
     </div>
 
     <div class="doce" id="doce" onclick="efectos('doce');">
@@ -128,7 +128,8 @@ class miEfectostexto extends HTMLElement {
     </div>
 
     <div class="trece" id="trece" onclick="efectos('trece');">
-        <a href="http://www.thismanslife.co.uk" target="_blank">Micro</a>
+        <a >Micro</a>
+        <!--<a href="http://www.thismanslife.co.uk" target="_blank">Micro</a>-->
     </div>
 
 
@@ -291,44 +292,64 @@ h1.addEventListener("input", function () {
   this.setAttribute("data-heading", this.innerText);
 });
 
+
+
+
+//---funcion efectos-------------------------------------
 function efectos(id) {
   console.log("seleccion de efectos");
   switch (id) {
     case "uno":
-      $uno = document.getElementById("uno");
-      $uno.classList.toggle("unoEfectos");
+      $marcha = document.getElementById("uno");
+      $marcha.classList.toggle("unoEfectos");
       break;
     case "dos":
-      $dos = document.getElementById("dos");
-      $dos.classList.toggle("dosEfectos");
+      $marcha = document.getElementById("dos");
+      $marcha.classList.toggle("dosEfectos");
       break;
     case "tres":
-      $dos = document.getElementById("tres");
-      $dos.classList.toggle("tresEfectos");
+      $marcha = document.getElementById("tres");
+      $marcha.classList.toggle("tresEfectos");
       break;
     case "cuatro":
-      $dos = document.getElementById("cuatro");
-      $dos.classList.toggle("cuatroEfectos");
+      $marcha = document.getElementById("cuatro");
+      $marcha.classList.toggle("cuatroEfectos");
       break;
       case "cinco":
-      $dos = document.getElementById("cinco");
-      $dos.classList.toggle("cincoEfectos");
+      $marcha = document.getElementById("cinco");
+      $marcha.classList.toggle("cincoEfectos");
       break;
     case "seis":
-      $dos = document.getElementById("seis");
-      $dos.classList.toggle("seisEfectos");
+      $marcha = document.getElementById("seis");
+      $marcha.classList.toggle("seisEfectos");
       break;
     case "siete":
-      $dos = document.getElementById("siete");
-      $dos.classList.toggle("sieteEfectos");
+      $marcha = document.getElementById("siete");
+      $marcha.classList.toggle("sieteEfectos");
       break;
     case "ocho":
-      $dos = document.getElementById("ocho");
-      $dos.classList.toggle("ochoEfectos");
+      $marcha = document.getElementById("ocho");
+      $marcha.classList.toggle("ochoEfectos");
       break;
     case "nueve":
-      $dos = document.getElementById("nueve");
-      $dos.classList.toggle("nueveEfectos");
+      $marcha = document.getElementById("nueve");
+      $marcha.classList.toggle("nueveEfectos");
+      break;
+      case "diez":
+      $marcha = document.getElementById("diez");
+      $marcha.classList.toggle("diezEfectos");
+      break;
+      case "once":
+      $marcha = document.getElementById("once");
+      $marcha.classList.toggle("onceEfectos");
+      break;
+      case "doce":
+      $marcha = document.getElementById("doce");
+      $marcha.classList.toggle("doceEfectos");
+      break;
+      case "trece":
+      $marcha = document.getElementById("trece");
+      $marcha.classList.toggle("treceEfectos");
       break;
     default:
       break;

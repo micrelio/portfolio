@@ -27,7 +27,7 @@
 }
 @keyframes blur {
   from {
-    text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 50px #fff, 0px 0px 50px #fff, 0px 0px 50px #7b96b8, 0px 0px 150px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px -10px 100px #7b96b8, 0px -10px 100px #7b96b8;
+    text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 2.5rem #fff, 0px 0px 2.5rem #fff, 0px 0px 2.5rem #fff, 0px 0px 2.5rem #fff, 0px 0px 2.5rem #fff, 0px 0px 2.5rem #fff, 0px 0px 50px #fff, 0px 0px 50px #fff, 0px 0px 50px #7b96b8, 0px 0px 150px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px -10px 100px #7b96b8, 0px -10px 100px #7b96b8;
   }
 }
 .letras .dos {
@@ -258,7 +258,7 @@
     clip: rect(21px, 9999px, 70px, 0);
   }
   15% {
-    clip: rect(65px, 9999px, 25px, 0);
+    clip: rect(65px, 9999px, 2.5rem, 0);
   }
   20% {
     clip: rect(24px, 9999px, 10px, 0);
@@ -288,7 +288,7 @@
     clip: rect(13px, 9999px, 87px, 0);
   }
   65% {
-    clip: rect(10px, 9999px, 25px, 0);
+    clip: rect(10px, 9999px, 2.5rem, 0);
   }
   70% {
     clip: rect(85px, 9999px, 11px, 0);
@@ -345,7 +345,7 @@
 }
 .letras .cinco {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -354,8 +354,6 @@
   font-size: 5rem;
   text-transform: uppercase;
   background-color: black;
-  height: 5rem;
-  padding-bottom: 8rem;
   @import url(https://fonts.googleapis.com/css?family=Erica+One);
   background-color: pink;
 }
@@ -463,8 +461,6 @@
   margin: 1rem;
   text-transform: uppercase;
   background-color: black;
-  padding-bottom: 6rem;
-  height: 5rem;
   @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 }
 .letras .siete h1 {
@@ -505,7 +501,6 @@
   font-size: 5rem;
   text-transform: uppercase;
   background-color: black;
-  height: 0 auto;
   width: 20rem;
   @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
 }
@@ -567,7 +562,7 @@
   font-size: 5rem;
   text-transform: uppercase;
   background-color: green;
-  height: 7rem;
+  height: 10rem;
   width: 20rem;
 }
 .letras .nueve .text--line {
@@ -619,13 +614,10 @@
   margin: 1rem;
   font-size: 5rem;
   text-transform: uppercase;
-  background-color: green;
-  height: 7rem;
+  background-color: #000;
   width: 20rem;
-  background-color: red;
   margin: 1rem;
   padding: 1rem;
-  background: red;
   color: #ccc;
 }
 .letras .diez h1 {
@@ -685,16 +677,28 @@
     transform: rotate(1turn);
   }
 }
+@font-face {
+  .letras {
+    font-family: "frozen";
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/Ice%20kingdom%20-%20Bold%20-%20Por%20Kustren.woff");
+  }
+}
 .letras .once {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to bottom, #000428, #005d92);
-  margin: 1rem;
+  cursor: pointer;
   padding: 1rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  background-color: #000;
+  max-height: 10rem;
+  width: 20rem;
 }
 .letras .once h1 {
+  font-size: 5rem;
+  font-family: "frozen", serif;
   background-image: url("../../../../images/fondos/frozen2.jpg");
   -webkit-background-clip: text;
   color: transparent;
@@ -709,7 +713,7 @@
   mix-blend-mode: screen;
   animation: shine 1s infinite;
   background-size: 200%;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2), -2px 2px 10px rgba(0, 0, 0, 0.2), -2px -2px 10px rgba(0, 0, 0, 0.2);
+  text-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.2), -0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.2), -0.2rem -0.2rem 1rem rgba(0, 0, 0, 0.2);
 }
 @keyframes shine {
   0% {
@@ -719,38 +723,31 @@
     background-position: 100%;
   }
 }
-@font-face {
-  .letras .once {
-    font-family: "frozen";
-    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/Ice%20kingdom%20-%20Bold%20-%20Por%20Kustren.woff");
-  }
-}
-.letras .once h1 {
-  font-size: 5rem;
-  font-family: "frozen", serif;
-  font-weight: 700;
-}
 .letras .doce {
   @import url("https://fonts.googleapis.com/css?family=Anton|Roboto");
   /* Other styles */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 1rem;
+  margin: 1rem;
+  text-transform: uppercase;
+  background-color: #000;
+  max-height: 10rem;
   background-color: skyblue;
   color: #fff;
-  display: flex;
   font-family: "Roboto", sans-serif;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  margin: 1rem;
-  padding: 1rem;
 }
 .letras .doce .word {
   font-family: "Anton", sans-serif;
-  perspective: 1000px;
+  perspective: 100rem;
 }
 .letras .doce .word span {
   cursor: pointer;
   display: inline-block;
-  font-size: 100px;
+  font-size: 5rem;
   user-select: none;
   line-height: 0.8;
 }
@@ -770,12 +767,33 @@
   animation: shrinkjump 1s ease-in-out;
   transform-origin: bottom center;
 }
+.letras .doce .fixed {
+  position: fixed;
+  top: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.letras .doce .doce {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+.letras .doce .doce i {
+  color: red;
+}
+.letras .doce .doce a {
+  color: #3c97bf;
+  text-decoration: none;
+}
 @keyframes shrinkjump {
   10%, 35% {
     transform: scale(2, 0.2) translate(0, 0);
   }
   45%, 50% {
-    transform: scale(1) translate(0, -150px);
+    transform: scale(1) translate(0, -15rem);
   }
   80% {
     transform: scale(1) translate(0, 0);
@@ -827,52 +845,56 @@
     transform: translateY(-48vh) scaleY(4);
   }
 }
+.letras .doce .word span:nth-child(1):hover {
+  animation: balance 1.5s ease-out;
+}
+.letras .doce .word span:nth-child(2):hover {
+  animation: shrinkjump 1s ease-in-out;
+}
 .letras .doce .fixed {
-  position: fixed;
-  top: 40px;
-  left: 50%;
   transform: translateX(-50%);
 }
-.letras .doce .doce {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  letter-spacing: 1px;
+.letras .doce .word span:nth-child(3):hover {
+  animation: falling 2s ease-out;
+  transform-origin: bottom center;
 }
-.letras .doce .doce i {
-  color: red;
+.letras .doce .word span:nth-child(4):hover {
+  animation: rotate 1s ease-out;
 }
-.letras .doce .doce a {
-  color: #3c97bf;
-  text-decoration: none;
+.letras .doce .word span:nth-child(5):hover {
+  animation: toplong 1.5s linear;
 }
 .letras .trece {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 1rem;
+  margin: 1rem;
+  text-transform: uppercase;
+  background-color: #000;
+  max-height: 10rem;
   font-family: helvetica, arial, sans-serif;
-  background-color: #2e2e31;
-  background-color: blue;
-}
-@keyframes tipsy {
-  0% {
-    transform: translateX(-50%) translateY(-50%) rotate(0deg);
-  }
-  100% {
-    transform: translateX(-50%) translateY(-50%) rotate(360deg);
-  }
 }
 .letras .trece a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: #fffbf1;
   text-shadow: 0 2rem 2.5rem #2e2e31, 0 4rem 6rem #2e2e31;
   font-size: 5rem;
   font-weight: bold;
   text-decoration: none;
-  letter-spacing: -0.3rem;
-  position: absolute;
+  margin-top: 25%;
+  margin-left: 100%;
   transform: translateX(-50%) translateY(-50%);
 }
-.letras .trece a:before,
-.letras .trece a:after {
+.letras .treceEfectos a:before,
+.letras .treceEfectos a:after,
+.letras .trece:hover a:before,
+.letras .trece:hover a:after {
   content: "";
   padding: 0.9em 0.4em;
   position: absolute;
@@ -884,13 +906,23 @@
   transform: translateX(-50%) translateY(-50%) rotate(0deg);
   animation: 10s infinite alternate ease-in-out tipsy;
 }
-.letras .trece a:before {
+.letras .treceEfectos a:before,
+.letras .trece:hover a:before {
   border-color: #d9524a #d9524a rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
   z-index: -1;
 }
-.letras .trece a:after {
+.letras .treceEfectos a:after,
+.letras .trece:hover a:after {
   border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #d9524a #d9524a;
-  box-shadow: 25px 25px 25px rgba(46, 46, 49, 0.8);
+  box-shadow: 2.5rem 2.5rem 2.5rem rgba(46, 46, 49, 0.8);
+}
+@keyframes tipsy {
+  0% {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
 }
 .letras .k {
   display: flex;
