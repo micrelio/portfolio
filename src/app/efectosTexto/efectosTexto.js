@@ -300,7 +300,10 @@ console.log("seleccion de efectos");
         case 'uno':
             console.log("seleccion de efectos");
 
-            document.getElementById("uno").style = "animation: blur 0.75s ease-out infinite;";
+            $uno= document.getElementById("uno");
+            console.log(uno);
+            $uno.classList.toggle("unoEfectos")
+            // uno.style = "animation: blur 0.75s ease-out infinite;";
             break;
     
         default:
