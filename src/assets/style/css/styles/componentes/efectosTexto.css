@@ -30,14 +30,15 @@
   }
 }
 .letras .dos {
-  padding: 1rem;
-  margin: 1rem;
-  font-size: 5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: red;
+  cursor: pointer;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 5rem;
+  background-color: black;
 }
 .letras .dos .moveText {
   line-height: 4rem;

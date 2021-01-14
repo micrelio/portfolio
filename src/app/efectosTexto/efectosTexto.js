@@ -6,7 +6,7 @@ class miEfectostexto extends HTMLElement {
     this.innerHTML = `
 <section class="letras">
     <div class="uno" id="uno" onclick="efectos('uno');">
-        ⚠ Micro ⚠
+        ⚠Micro⚠
     </div>
 
     <div class="dos">
