@@ -13,7 +13,6 @@
 //     slides[slideIndex - 1].style.display = "block";
 //     setTimeout(showSlides, 2000);
 // };
-
 // function transparencia(color) {
 //   console.log("nav");
 //   switch (color) {

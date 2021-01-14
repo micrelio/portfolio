@@ -10,18 +10,13 @@ class miDisenos extends HTMLElement {
     </div>
 
     <div class="dos" id="dos" onclick="efectos('dos');">
-        <div class='moveText'>
-            <div class='moveTextIn'>
-                <p>
-                    Hello
-                </p>
-                <ul>
-                    <li>world !</li>
-                    <li>Micro !</li>
-                    <li>users !</li>
-                </ul>
-            </div>
-        </div>
+        <div class="word">
+            <span>M</span>
+            <span>I</span>
+            <span>C</span>
+            <span>R</span>
+            <span>O</span>
+        </div>       
     </div>
 
     <div class="tres" id="tres" onclick="efectos('tres');">
@@ -57,12 +52,10 @@ class miDisenos extends HTMLElement {
             <rect width="40%" height="100%" class="anim-shape"></rect>
             <rect width="20%" height="100%" class="anim-shape"></rect>
         </g>
-        <!-- Transparent copy of text to keep
-   patterned text selectable -->
-        <use xlink:href="#s-text" class="text--transparent"></use>
-    </svg>
-</div>
-
+        <!-- Transparent copy of text to keep patterned text selectable -->
+            <use xlink:href="#s-text" class="text--transparent"></use>
+        </svg>
+    </div>
     
     <div class="siete" id="siete" onclick="efectos('siete');">
         <h1>Micro</h1>
@@ -118,12 +111,17 @@ class miDisenos extends HTMLElement {
     </div>
 
     <div class="doce" id="doce" onclick="efectos('doce');">
-        <div class="word">
-	        <span>M</span>
-	        <span>I</span>
-            <span>C</span>
-            <span>R</span>
-            <span>O</span>
+        <div class='moveText'>
+            <div class='moveTextIn'>
+                <p>
+                    Hello
+                </p>
+                <ul>
+                    <li>world !</li>
+                    <li>Micro !</li>
+                    <li>users !</li>
+                </ul>
+            </div>
         </div>
     </div>
 
@@ -132,20 +130,17 @@ class miDisenos extends HTMLElement {
         <!--<a href="http://www.thismanslife.co.uk" target="_blank">Micro</a>-->
     </div>
 
-
-
     <div class="k">
-    <div>
-        Micro
+        <div>
+            Micro
+        </div>
     </div>
-</div>
 
-<div class="xxl">
-<p><a href="#efectosTexto">RED</a></p>
+    <div class="xxl">
+        <p><a href="#efectosTexto">RED</a></p>
         <p><a href="#efectosTexto">BLUE</a></p>
         <p><a href="#efectosTexto">Yellow</a></p>
-</div>
-
+    </div>
 
     <div class="g">
         <!-- 
@@ -229,10 +224,6 @@ class miDisenos extends HTMLElement {
         <iframe style="visibility:hidden" width="560" height="315" src="https://www.youtube.com/embed/1KAOq7XX2OY"
             frameborder="0" allowfullscreen></iframe>
     </div>
-
-
-
-
   </section>
     `;
     //---once-----------LETRAS QUE SE MUEVEN
@@ -253,48 +244,35 @@ class miDisenos extends HTMLElement {
     });
   }
 }
-
 customElements.define("mi-disenos", miDisenos);
-
+//--------------------------------------------------------------------------
 $("#logo-size").change(function () {
   var fontsize = $(this).val() / 10 + "px";
   $("html").css("font-size", fontsize);
 });
-
 $("#image-size").change(function () {
   var Width = $(this).val() + "px";
   $("img").css("width", Width);
 });
-
 //---i----letras que vibran
 $(function () {
   var $jittery = $(".jittery"),
     aText = $jittery.text().split(""),
     letters = "";
-
   for (var i = 0; i < aText.length; i++) {
     letters += "<span>" + aText[i] + "</span>";
   }
-
   $jittery.empty().append(letters);
-
   $.each($("span", $jittery), function (i) {
     $(this).css("animation-delay", "-" + i + "70ms");
   });
 });
-
 //---n----------frozen
-
 // JS is to make the text editable for demo purpose, not required for the effect. Thanks for the suggestion @chriscoyier!
 var h1 = document.querySelector("h1");
-
 h1.addEventListener("input", function () {
   this.setAttribute("data-heading", this.innerText);
 });
-
-
-
-
 //---funcion efectos-------------------------------------
 function efectos(id) {
   console.log("seleccion de efectos");
@@ -315,7 +293,7 @@ function efectos(id) {
       $marcha = document.getElementById("cuatro");
       $marcha.classList.toggle("cuatroEfectos");
       break;
-      case "cinco":
+    case "cinco":
       $marcha = document.getElementById("cinco");
       $marcha.classList.toggle("cincoEfectos");
       break;
@@ -335,19 +313,20 @@ function efectos(id) {
       $marcha = document.getElementById("nueve");
       $marcha.classList.toggle("nueveEfectos");
       break;
-      case "diez":
+    case "diez":
       $marcha = document.getElementById("diez");
       $marcha.classList.toggle("diezEfectos");
       break;
-      case "once":
+    case "once":
+      console.log('llega')
       $marcha = document.getElementById("once");
       $marcha.classList.toggle("onceEfectos");
       break;
-      case "doce":
+    case "doce":
       $marcha = document.getElementById("doce");
       $marcha.classList.toggle("doceEfectos");
       break;
-      case "trece":
+    case "trece":
       $marcha = document.getElementById("trece");
       $marcha.classList.toggle("treceEfectos");
       break;
