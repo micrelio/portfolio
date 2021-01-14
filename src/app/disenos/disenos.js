@@ -226,6 +226,7 @@ class miDisenos extends HTMLElement {
     </div>
   </section>
     `;
+  
     //---once-----------LETRAS QUE SE MUEVEN
     const spans = document.querySelectorAll(".word span");
 
@@ -245,6 +246,7 @@ class miDisenos extends HTMLElement {
   }
 }
 customElements.define("mi-disenos", miDisenos);
+
 //--------------------------------------------------------------------------
 $("#logo-size").change(function () {
   var fontsize = $(this).val() / 10 + "px";

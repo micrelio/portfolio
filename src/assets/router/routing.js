@@ -12,7 +12,8 @@ function getContent(fragmentId) {
     avisolegal: "<mi-avisolegal></mi-avisolegal>",
     politicadeprivacidad: "<mi-politicadeprivacidad></mi-politicadeprivacidad>",
     politicadecookies: "<mi-politicadecookies></mi-politicadecookies>",
-    disenos: "<mi-disenos></mi-disenos>"
+    disenos: "<mi-disenos></mi-disenos>",
+    prueba: "<mi-saludo></mi-saludo>"
 
     };
 
