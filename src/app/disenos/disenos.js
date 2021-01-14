@@ -140,6 +140,9 @@ class miDisenos extends HTMLElement {
         <p><a>RED</a></p>
         <p><a>BLUE</a></p>
         <p><a>Yellow</a></p>
+        <p><a>green</a></p>
+        <p><a>orange</a></p>
+        <p><a>purple</a></p>
     </div>
 
     <div class="g">

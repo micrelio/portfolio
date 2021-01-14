@@ -926,6 +926,7 @@
 .letras .xxl {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   background-color: #222222;
@@ -996,6 +997,7 @@
 .letras .xxl p:nth-child(1) a {
   color: #ff1177;
   font-family: Monoton;
+  font-family: Vampiro One;
 }
 .letras .xxl p:nth-child(1) a:hover {
   -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
