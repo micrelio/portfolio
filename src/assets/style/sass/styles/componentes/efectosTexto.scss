@@ -410,24 +410,24 @@
     text-transform: uppercase;
     background-color: black;
     height: 5rem;
-    padding-bottom:8rem;
-        @import url(https://fonts.googleapis.com/css?family=Erica+One);
+    padding-bottom: 8rem;
+    @import url(https://fonts.googleapis.com/css?family=Erica+One);
     background-color: pink;
     ::selection {
       background: transparent;
-    }    
+    }
     h1 {
       display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       position: relative;
       top: 0.3rem;
       //---animacion--------------------------
       // -webkit-animation: bounce 0.3s ease infinite alternate;
       font-family: "Erica One", cursive;
       font-size: 5rem;
-      
+
       color: #fff;
       text-shadow: 0 0.1rem 0 #ccc, 0 0.2rem 0 #ccc, 0 0.3rem 0 #ccc,
         0 0.4rem 0 #ccc, 0 0.5rem 0 #ccc, 0 0.6rem 0 transparent,
@@ -537,6 +537,8 @@
     margin: 1rem;
     text-transform: uppercase;
     background-color: black;
+    padding-bottom: 6rem;
+    height: 5rem;
     @import url(https://fonts.googleapis.com/css?family=Varela+Round);
     h1 {
       color: hsla(0, 0%, 0%, 0.9);
@@ -602,10 +604,11 @@
     font-size: 5rem;
     text-transform: uppercase;
     background-color: black;
-    height: auto;
+    height: 0 auto;
+    width: 20rem;
     @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
-    svg{
-      height:5rem;
+    svg {
+      height: 7rem;
     }
     .text {
       // fill: none;
@@ -619,7 +622,7 @@
     }
   }
   .ochoEfectos {
-       .text {
+    .text {
       fill: none;
       stroke-width: 2;
       stroke-linejoin: round;
@@ -655,7 +658,6 @@
     -webkit-animation-delay: -6s;
     animation-delay: -6s;
   }
-
   @-webkit-keyframes stroke {
     100% {
       stroke-dashoffset: -400;
@@ -666,49 +668,43 @@
       stroke-dashoffset: -400;
     }
   }
-
   //------nueve---------------------------------------
-
   $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
-
   .nueve {
-    background: black;
-    //  background-size: 0.12rem 100%;
-    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
     padding: 1rem;
-    font-size: 10rem;
-    // font: 16rem/1 Arial;
-    // font-size: 20rem;
+    margin: 1rem;
+    font-size: 5rem;
+    text-transform: uppercase;
+    background-color: green;
+    height: 7rem;
+    width: 20rem;
     .text--line {
-      font-size: 20rem;
+      font-size: 5rem;
     }
-
     // svg {
-    // position: relative;
-    // width: 100%;
-    // height: 100%;
     // }
-
     $max: 5;
     $stroke-step: 7%;
     .text-copy {
       fill: none;
       stroke: white;
       stroke-dasharray: $stroke-step $stroke-step * ($max - 1);
-      stroke-width: 0.3rem;
-
-      animation: stroke-offset 9s infinite linear;
-
+      stroke-width: 0.2rem;
+      //---efecto---------------------------------------
+      // animation: stroke-offset 9s infinite linear;
       @for $item from 1 through $max {
         $stroke-color: nth($colors, $item);
-
         &:nth-child(#{$item}) {
           stroke: $stroke-color;
           stroke-dashoffset: $stroke-step * $item;
         }
       }
     }
-
     @keyframes stroke-offset {
       50% {
         stroke-dashoffset: $stroke-step * $max;
@@ -716,16 +712,29 @@
       }
     }
   }
-
+  .nueveEfectos,
+  .nueve:hover {
+    .text-copy {
+      animation: stroke-offset 9s infinite linear;
+    }
+  }
   //---diez--------------------------------------------
   .diez {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 5rem;
+    text-transform: uppercase;
+    background-color: green;
+    height: 7rem;
+    width: 20rem;
     background-color: red;
     margin: 1rem;
     padding: 1rem;
-    // height: 0;
-    // display: flex;
-    // justify-content: center;
-    align-items: center;
     background: red;
     color: #ccc;
     h1 {
@@ -740,8 +749,6 @@
       display: block;
       position: absolute;
       z-index: -1;
-      // top: -26rem;
-      // left: 29rem;
       border-radius: 50%;
       border: 1.3rem solid currentColor;
       box-sizing: border-box;
@@ -750,14 +757,13 @@
       font-family: "Josefin Sans", sans-serif;
       color: currentColor;
       font-size: 5rem;
-      // position: relative;
       font-style: normal;
       text-align: center;
     }
     em.planet {
-      -webkit-animation: planet-rotate 4s linear infinite;
-      animation: planet-rotate 4s linear infinite;
-      // position: relative;
+      //---efecto-----------------------------------------------------------------
+      // -webkit-animation: planet-rotate 4s linear infinite;
+      // animation: planet-rotate 4s linear infinite;
     }
     em.planet::before {
       content: "";
@@ -778,18 +784,24 @@
       -webkit-transform-origin: -20rem 5rem;
       transform-origin: -4rem 2rem;
     }
-    @-webkit-keyframes planet-rotate {
-      to {
-        -webkit-transform: rotate(1turn);
-      }
-    }
-    @keyframes planet-rotate {
-      to {
-        transform: rotate(1turn);
-      }
+  }
+  .diezEfectos,
+  .diez:hover {
+    em.planet {
+      -webkit-animation: planet-rotate 4s linear infinite;
+      animation: planet-rotate 4s linear infinite;
     }
   }
-
+  @-webkit-keyframes planet-rotate {
+    to {
+      -webkit-transform: rotate(1turn);
+    }
+  }
+  @keyframes planet-rotate {
+    to {
+      transform: rotate(1turn);
+    }
+  }
   //---once-------------------------------------
   .once {
     display: flex;

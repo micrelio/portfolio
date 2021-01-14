@@ -110,7 +110,6 @@ class miEfectostexto extends HTMLElement {
             <em>S</em>
             <em>M</em>
             <em class="planet right">O</em>
-            <em>S</em>
         </h1>
     </div>
 

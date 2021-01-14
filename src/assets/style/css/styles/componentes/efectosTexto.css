@@ -463,6 +463,8 @@
   margin: 1rem;
   text-transform: uppercase;
   background-color: black;
+  padding-bottom: 6rem;
+  height: 5rem;
   @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 }
 .letras .siete h1 {
@@ -503,11 +505,12 @@
   font-size: 5rem;
   text-transform: uppercase;
   background-color: black;
-  height: auto;
+  height: 0 auto;
+  width: 20rem;
   @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
 }
 .letras .ocho svg {
-  height: 5rem;
+  height: 7rem;
 }
 .letras .ochoEfectos .text {
   fill: none;
@@ -554,20 +557,27 @@
   }
 }
 .letras .nueve {
-  background: black;
-  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
   padding: 1rem;
-  font-size: 10rem;
+  margin: 1rem;
+  font-size: 5rem;
+  text-transform: uppercase;
+  background-color: green;
+  height: 7rem;
+  width: 20rem;
 }
 .letras .nueve .text--line {
-  font-size: 20rem;
+  font-size: 5rem;
 }
 .letras .nueve .text-copy {
   fill: none;
   stroke: white;
   stroke-dasharray: 7% 28%;
-  stroke-width: 0.3rem;
-  animation: stroke-offset 9s infinite linear;
+  stroke-width: 0.2rem;
 }
 .letras .nueve .text-copy:nth-child(1) {
   stroke: #360745;
@@ -595,11 +605,26 @@
     stroke-dasharray: 0 87.5%;
   }
 }
+.letras .nueveEfectos .text-copy,
+.letras .nueve:hover .text-copy {
+  animation: stroke-offset 9s infinite linear;
+}
 .letras .diez {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 5rem;
+  text-transform: uppercase;
+  background-color: green;
+  height: 7rem;
+  width: 20rem;
   background-color: red;
   margin: 1rem;
   padding: 1rem;
-  align-items: center;
   background: red;
   color: #ccc;
 }
@@ -626,10 +651,6 @@
   font-style: normal;
   text-align: center;
 }
-.letras .diez em.planet {
-  -webkit-animation: planet-rotate 4s linear infinite;
-  animation: planet-rotate 4s linear infinite;
-}
 .letras .diez em.planet::before {
   content: "";
   position: absolute;
@@ -648,6 +669,11 @@
 .letras .diez em.planet.right {
   -webkit-transform-origin: -20rem 5rem;
   transform-origin: -4rem 2rem;
+}
+.letras .diezEfectos em.planet,
+.letras .diez:hover em.planet {
+  -webkit-animation: planet-rotate 4s linear infinite;
+  animation: planet-rotate 4s linear infinite;
 }
 @-webkit-keyframes planet-rotate {
   to {
