@@ -137,9 +137,9 @@ class miDisenos extends HTMLElement {
     </div>
 
     <div class="xxl">
-        <p><a href="#efectosTexto">RED</a></p>
-        <p><a href="#efectosTexto">BLUE</a></p>
-        <p><a href="#efectosTexto">Yellow</a></p>
+        <p><a>RED</a></p>
+        <p><a>BLUE</a></p>
+        <p><a>Yellow</a></p>
     </div>
 
     <div class="g">
