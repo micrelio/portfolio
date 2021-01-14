@@ -5,7 +5,7 @@ class miEfectostexto extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
 <section class="letras">
-    <div class="uno">
+    <div class="uno" id="uno" onclick="efectos('uno');">
         ⚠ Micro ⚠
     </div>
 
@@ -292,3 +292,19 @@ var h1 = document.querySelector("h1");
 h1.addEventListener("input", function () {
   this.setAttribute("data-heading", this.innerText);
 });
+
+
+function efectos(id) {
+console.log("seleccion de efectos");
+    switch (id) {
+        case 'uno':
+            console.log("seleccion de efectos");
+
+            document.getElementById("uno").style = "animation: blur 0.75s ease-out infinite;";
+            break;
+    
+        default:
+            break;
+    }
+    
+}
