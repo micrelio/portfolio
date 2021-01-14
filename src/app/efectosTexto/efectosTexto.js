@@ -9,7 +9,7 @@ class miEfectostexto extends HTMLElement {
         ⚠Micro⚠
     </div>
 
-    <div class="dos">
+    <div class="dos" id="dos" onclick="efectos('dos');">
         <div class='moveText'>
             <div class='moveTextIn'>
                 <p>
@@ -24,19 +24,19 @@ class miEfectostexto extends HTMLElement {
         </div>
     </div>
 
-    <div class="tres">
+    <div class="tres" id="tres" onclick="efectos('tres');">
         <div class="glitch" data-text="Micro">Micro</div>
     </div>
 
-    <div class="cuatro">
+    <div class="cuatro" id="cuatro" onclick="efectos('cuatro');">
         <span class="jittery">Micro</span>
     </div>
 
-    <div class="cinco">
+    <div class="cinco" id="cinco" onclick="efectos('cinco');">
         <h1>Micro</h1>
     </div>
 
-    <div class="seis">
+    <div class="seis" id="seis" onclick="efectos('seis');">
     <svg viewBox="0 0 800 300">
         <!-- Clippath  with text -->
         <clippath id="cp-text">
@@ -64,11 +64,11 @@ class miEfectostexto extends HTMLElement {
 </div>
 
     
-    <div class="siete">
+    <div class="siete" id="siete" onclick="efectos('siete');">
         <h1>Micro</h1>
     </div>
 
-    <div class="ocho">
+    <div class="ocho" id="ocho" onclick="efectos('ocho');">
         <svg>
             <!-- Symbol -->
             <symbol id="s-text">
@@ -85,7 +85,7 @@ class miEfectostexto extends HTMLElement {
         </svg>
     </div>
 
-    <div class="nueve">
+    <div class="nueve" id="nueve" onclick="efectos('nueve');">
         <svg>
         <symbol id="s-text">
             <text>
@@ -102,7 +102,7 @@ class miEfectostexto extends HTMLElement {
         </svg>
     </div>
 
-    <div class="diez">
+    <div class="diez" id="diez" onclick="efectos('diez');">
         <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
         <h1>
             <em>C</em>
@@ -114,11 +114,11 @@ class miEfectostexto extends HTMLElement {
         </h1>
     </div>
 
-    <div class="once">
+    <div class="once" id="once" onclick="efectos('once');">
         <h1 contenteditable data-heading="Micro">Micro</h1>
     </div>
 
-    <div class="doce">
+    <div class="doce" id="doce" onclick="efectos('doce');">
         <div class="word">
 	        <span>M</span>
 	        <span>I</span>
@@ -128,7 +128,7 @@ class miEfectostexto extends HTMLElement {
         </div>
     </div>
 
-    <div class="trece">
+    <div class="trece" id="trece" onclick="efectos('trece');">
         <a href="http://www.thismanslife.co.uk" target="_blank">Micro</a>
     </div>
 
@@ -254,7 +254,6 @@ class miEfectostexto extends HTMLElement {
   }
 }
 
-
 customElements.define("mi-efectostexto", miEfectostexto);
 
 $("#logo-size").change(function () {
@@ -293,21 +292,46 @@ h1.addEventListener("input", function () {
   this.setAttribute("data-heading", this.innerText);
 });
 
-
 function efectos(id) {
-console.log("seleccion de efectos");
-    switch (id) {
-        case 'uno':
-            console.log("seleccion de efectos");
-
-            $uno= document.getElementById("uno");
-            console.log(uno);
-            $uno.classList.toggle("unoEfectos")
-            // uno.style = "animation: blur 0.75s ease-out infinite;";
-            break;
-    
-        default:
-            break;
-    }
-    
+  console.log("seleccion de efectos");
+  switch (id) {
+    case "uno":
+      $uno = document.getElementById("uno");
+      $uno.classList.toggle("unoEfectos");
+      break;
+    case "dos":
+      $dos = document.getElementById("dos");
+      $dos.classList.toggle("dosEfectos");
+      break;
+    case "tres":
+      $dos = document.getElementById("tres");
+      $dos.classList.toggle("tresEfectos");
+      break;
+    case "cuatro":
+      $dos = document.getElementById("cuatro");
+      $dos.classList.toggle("cuatroEfectos");
+      break;
+      case "cinco":
+      $dos = document.getElementById("cinco");
+      $dos.classList.toggle("cincoEfectos");
+      break;
+    case "seis":
+      $dos = document.getElementById("seis");
+      $dos.classList.toggle("seisEfectos");
+      break;
+    case "siete":
+      $dos = document.getElementById("siete");
+      $dos.classList.toggle("sieteEfectos");
+      break;
+    case "ocho":
+      $dos = document.getElementById("ocho");
+      $dos.classList.toggle("ochoEfectos");
+      break;
+    case "nueve":
+      $dos = document.getElementById("nueve");
+      $dos.classList.toggle("nueveEfectos");
+      break;
+    default:
+      break;
+  }
 }

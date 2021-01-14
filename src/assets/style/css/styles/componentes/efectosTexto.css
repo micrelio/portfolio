@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   padding: 2rem;
-  /* Main styles */
+  /* ANIMATION */
 }
 .letras .uno {
   display: flex;
@@ -21,7 +21,8 @@
   text-transform: uppercase;
   text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
 }
-.letras .unoEfectos {
+.letras .unoEfectos,
+.letras .uno:hover {
   animation: blur 0.75s ease-out infinite;
 }
 @keyframes blur {
@@ -53,6 +54,9 @@
 .letras .dos ul {
   padding-left: 3rem;
   list-style: none;
+}
+.letras .dosEfectos ul,
+.letras .dos:hover ul {
   animation: 6s linear 0s normal none infinite change;
   -webkit-animation: 6s linear 0s normal none infinite change;
   -moz-animation: 6s linear 0s normal none infinite change;
@@ -139,15 +143,16 @@
   }
 }
 .letras .tres {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
   padding: 1rem;
   margin: 1rem;
   font-size: 5rem;
-  background-color: #000000;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.letras .tres .bg-6 {
+  text-transform: uppercase;
+  background-color: black;
   background-color: #000000;
 }
 .letras .tres .glitch {
@@ -156,7 +161,8 @@
   position: relative;
   font-family: "Varela", sans-serif;
 }
-.letras .tres .glitch:after {
+.letras .tresEfectos .glitch:after,
+.letras .tres:hover .glitch:after {
   content: attr(data-text);
   position: absolute;
   left: 0;
@@ -165,7 +171,8 @@
   background: black;
   animation: noise-anim 2s infinite linear alternate-reverse;
 }
-.letras .tres .glitch:before {
+.letras .tresEfectos .glitch:before,
+.letras .tres:hover .glitch:before {
   content: attr(data-text);
   position: absolute;
   left: 0.8rem;
@@ -306,6 +313,17 @@
   }
 }
 .letras .cuatro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 5rem;
+  text-transform: uppercase;
+  background-color: black;
+  font-family: Amatic SC;
   text-align: center;
   background-color: black;
   margin: 1rem;
@@ -313,77 +331,86 @@
   font-size: 5rem;
 }
 .letras .cuatro .jittery span {
-  animation: jitter 200ms linear infinite;
   color: #f06d06;
   display: inline-block;
 }
+.letras .cuatroEfectos .jittery span,
+.letras .cuatro:hover .jittery span {
+  animation: jitter 200ms linear infinite;
+}
 @keyframes jitter {
   50% {
-    transform: skewY(2deg) skewX(-2deg) scale(1.006);
+    transform: skewY(5deg) skewX(-5deg) scale(1.006);
   }
 }
 .letras .cinco {
-  @import url(https://fonts.googleapis.com/css?family=Erica+One);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 1rem;
+  cursor: pointer;
   padding: 1rem;
+  margin: 1rem;
   font-size: 5rem;
-  /* BODY */
+  text-transform: uppercase;
+  background-color: black;
+  height: 5rem;
+  padding-bottom: 8rem;
+  @import url(https://fonts.googleapis.com/css?family=Erica+One);
   background-color: pink;
-  /* ANIMATION */
 }
 .letras .cinco ::selection {
   background: transparent;
 }
 .letras .cinco h1 {
-  cursor: default;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: relative;
   top: 0.3rem;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: auto;
-  margin: auto;
-  display: block;
-  -webkit-animation: bounce 0.3s ease infinite alternate;
   font-family: "Erica One", cursive;
   font-size: 5rem;
   color: #fff;
-  text-align: center;
-  line-height: 10rem;
   text-shadow: 0 0.1rem 0 #ccc, 0 0.2rem 0 #ccc, 0 0.3rem 0 #ccc, 0 0.4rem 0 #ccc, 0 0.5rem 0 #ccc, 0 0.6rem 0 transparent, 0 0.7rem 0 transparent, 0 0.8rem 0 transparent, 0 0.9rem 0 transparent, 0 1rem 1rem rgba(0, 0, 0, 0.6);
+}
+.letras .cincoEfectos h1,
+.letras .cinco:hover h1 {
+  -webkit-animation: bounce 0.3s ease infinite alternate;
 }
 @-webkit-keyframes bounce {
   100% {
-    top: -30px;
+    top: -40px;
     text-shadow: 0 0.1rem 0 #ccc, 0 0.2rem 0 #ccc, 0 0.3rem 0 #ccc, 0 0.4rem 0 #ccc, 0 0.5rem 0 #ccc, 0 0.6rem 0 #ccc, 0 0.7rem 0 #ccc, 0 0.8rem 0 #ccc, 0 0.9rem 0 #ccc, 0 3rem 3rem rgba(0, 0, 0, 0.3);
   }
 }
 .letras .seis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 20rem;
+  text-transform: uppercase;
+  background-color: black;
   /* Main styles */
   @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
-  background: black;
-  font: 20rem Open Sans, Impact;
+  font-family: Open Sans, Impact;
   text-transform: uppercase;
-  width: 30rem;
-  margin: 1rem;
-  padding: 1rem;
+  width: 20rem;
 }
 .letras .seis .text--transparent {
   fill: transparent;
 }
 .letras .seis .anim-shape {
-  -webkit-transform-origin: 0x 150px;
-  -ms-transform-origin: 0x 150px;
-  transform-origin: 0x 150px;
+  -webkit-transform-origin: 0x 15rem;
+  -ms-transform-origin: 0x 15rem;
+  transform-origin: 0x 15rem;
   -webkit-transform: scale(0, 1) translate(0, 0);
   -ms-transform: scale(0, 1) translate(0, 0);
   transform: scale(0, 1) translate(0, 0);
-  -webkit-animation: moving-panel 3s infinite alternate;
-  animation: moving-panel 3s infinite alternate;
 }
 .letras .seis .colortext .anim-shape:nth-child(1) {
   fill: #0e1826;
@@ -401,35 +428,41 @@
   fill: #f26444;
 }
 .letras .seis .shadow {
-  -webkit-transform: translate(10px, 10px);
-  -ms-transform: translate(10px, 10px);
-  transform: translate(10px, 10px);
+  -webkit-transform: translate(1rem, 1rem);
+  -ms-transform: translate(1rem, 1rem);
+  transform: translate(1rem, 1rem);
 }
 .letras .seis .anim-shape--shadow {
   fill: #000;
   fill-opacity: 0.2;
 }
+.letras .seisEfectos .anim-shape,
+.letras .seis:hover .anim-shape {
+  -webkit-animation: moving-panel 3s infinite alternate;
+  animation: moving-panel 3s infinite alternate;
+}
 @-webkit-keyframes moving-panel {
   100% {
-    -webkit-transform: scale(1, 1) translate(20px, 0);
-    transform: scale(1, 1) translate(20px, 0);
+    -webkit-transform: scale(1, 1) translate(2rem, 0);
+    transform: scale(1, 1) translate(2rem, 0);
   }
 }
 @keyframes moving-panel {
   100% {
-    -webkit-transform: scale(1, 1) translate(20px, 0);
-    transform: scale(1, 1) translate(20px, 0);
+    -webkit-transform: scale(1, 1) translate(2rem, 0);
+    transform: scale(1, 1) translate(2rem, 0);
   }
 }
 .letras .siete {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: black;
-  margin: 1rem;
+  cursor: pointer;
   padding: 1rem;
-  font-size: 5rem;
+  margin: 1rem;
+  text-transform: uppercase;
+  background-color: black;
   @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 }
 .letras .siete h1 {
@@ -437,6 +470,9 @@
   font: normal 5rem Varela Round, sans-serif;
   letter-spacing: 0.5rem;
   text-transform: uppercase;
+}
+.letras .sieteEfectos h1,
+.letras .siete:hover h1 {
   animation: move linear 2000ms infinite;
 }
 @keyframes move {
@@ -457,14 +493,23 @@
   }
 }
 .letras .ocho {
-  background: black;
-  text-transform: uppercase;
-  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
   padding: 1rem;
+  margin: 1rem;
   font-size: 5rem;
+  text-transform: uppercase;
+  background-color: black;
+  height: auto;
   @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
 }
-.letras .ocho .text {
+.letras .ocho svg {
+  height: 5rem;
+}
+.letras .ochoEfectos .text {
   fill: none;
   stroke-width: 2;
   stroke-linejoin: round;
@@ -473,27 +518,27 @@
   -webkit-animation: stroke 6s infinite linear;
   animation: stroke 6s infinite linear;
 }
-.letras .ocho .text:nth-child(5n+1) {
+.letras .text:nth-child(5n+1) {
   stroke: #f2385a;
   -webkit-animation-delay: -1.2s;
   animation-delay: -1.2s;
 }
-.letras .ocho .text:nth-child(5n+2) {
+.letras .text:nth-child(5n+2) {
   stroke: #f5a503;
   -webkit-animation-delay: -2.4s;
   animation-delay: -2.4s;
 }
-.letras .ocho .text:nth-child(5n+3) {
+.letras .text:nth-child(5n+3) {
   stroke: #e9f1df;
   -webkit-animation-delay: -3.6s;
   animation-delay: -3.6s;
 }
-.letras .ocho .text:nth-child(5n+4) {
+.letras .text:nth-child(5n+4) {
   stroke: #56d9cd;
   -webkit-animation-delay: -4.8s;
   animation-delay: -4.8s;
 }
-.letras .ocho .text:nth-child(5n+5) {
+.letras .text:nth-child(5n+5) {
   stroke: #3aa1bf;
   -webkit-animation-delay: -6s;
   animation-delay: -6s;
