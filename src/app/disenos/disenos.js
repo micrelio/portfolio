@@ -1,4 +1,4 @@
-class miEfectostexto extends HTMLElement {
+class miDisenos extends HTMLElement {
   constructor() {
     super();
   }
@@ -254,7 +254,7 @@ class miEfectostexto extends HTMLElement {
   }
 }
 
-customElements.define("mi-efectostexto", miEfectostexto);
+customElements.define("mi-disenos", miDisenos);
 
 $("#logo-size").change(function () {
   var fontsize = $(this).val() / 10 + "px";

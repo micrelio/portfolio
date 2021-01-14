@@ -4,7 +4,6 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   padding: 2rem;
-
   //---uno-------------------------
   .uno {
     display: flex;
@@ -676,7 +675,7 @@
     margin: 1rem;
     font-size: 5rem;
     text-transform: uppercase;
-    background-color: green;
+    background-color: #000;
     height: 10rem;
     width: 20rem;
     .text--line {
@@ -1032,7 +1031,7 @@
       font-size: 5rem;
       font-weight: bold;
       text-decoration: none;
-      margin-top: 25%;
+      margin-top: 35%;
       margin-left: 100%;
       transform: translateX(-50%) translateY(-50%);
     }

@@ -561,7 +561,7 @@
   margin: 1rem;
   font-size: 5rem;
   text-transform: uppercase;
-  background-color: green;
+  background-color: #000;
   height: 10rem;
   width: 20rem;
 }
@@ -887,7 +887,7 @@
   font-size: 5rem;
   font-weight: bold;
   text-decoration: none;
-  margin-top: 25%;
+  margin-top: 35%;
   margin-left: 100%;
   transform: translateX(-50%) translateY(-50%);
 }
@@ -1577,4 +1577,4 @@
   transform: translateX(-50%);
 }
 
-/*# sourceMappingURL=efectosTexto.css.map */
+/*# sourceMappingURL=disenos.css.map */

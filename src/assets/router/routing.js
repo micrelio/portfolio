@@ -12,7 +12,7 @@ function getContent(fragmentId) {
     avisolegal: "<mi-avisolegal></mi-avisolegal>",
     politicadeprivacidad: "<mi-politicadeprivacidad></mi-politicadeprivacidad>",
     politicadecookies: "<mi-politicadecookies></mi-politicadecookies>",
-    efectosTexto: "<mi-efectostexto></mi-efectostexto>"
+    disenos: "<mi-disenos></mi-disenos>"
 
     };
 
