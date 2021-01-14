@@ -146,6 +146,7 @@ class miDisenos extends HTMLElement {
         <!-- 
         ALL CREDIT FOR THE SCROLLING TEXT GOES TO Craig Buckler http://www.sitepoint.com/css3-starwars-scrolling-text/ Blame me for the music via embedded video bit
         -->
+        <!-- 
         <div style="overflow:hidden; position:absolute; left:0; top:0; width:50px; height:25px;">
             <div style="margin-top:-290px;">
                 <object width="420" height="315">
@@ -162,7 +163,7 @@ class miDisenos extends HTMLElement {
                 </object>
             </div>
         </div>
-
+-->
         <p id="start">A short time ago in a browser very, very close&hellip;</p>
 
         <h1>STAR WARS<sub>titles in CSS3</sub></h1>

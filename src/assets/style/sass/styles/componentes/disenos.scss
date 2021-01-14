@@ -387,7 +387,7 @@
     margin: 1rem;
     padding: 1rem;
     font-size: 5rem;
-    .jittery span {
+    .jittery  {
       //---efecto--------------------------------
       // animation: jitter 200ms linear infinite;
       color: #f06d06;
@@ -396,13 +396,13 @@
   }
   .cuatroEfectos,
   .cuatro:hover {
-    .jittery span {
+    .jittery  {
       animation: jitter 200ms linear infinite;
     }
   }
   @keyframes jitter {
     50% {
-      transform: skewY(5deg) skewX(-5deg) scale(1.006);
+      transform: skewY(0.5deg) skewX(-0.5deg) scale(1.006);
     }
   }
 
