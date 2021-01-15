@@ -1557,5 +1557,239 @@
   }
 }
 
+//---logoAnimado-----------------------------------------------------
+.logoAnimado {
+  @font-face {
+    font-family: "loveloblack";
+    src: url("http://www.netnibbl.es/wp-content/themes/netnibbles/fonts/lovelo_black-webfont.eot");
+    src: url("http://www.netnibbl.es/wp-content/themes/netnibbles/fonts/lovelo_black-webfont.eot?#iefix")
+        format("embedded-opentype"),
+      url("http://www.netnibbl.es/wp-content/themes/netnibbles/fonts/lovelo_black-webfont.woff")
+        format("woff"),
+      url("http://www.netnibbl.es/wp-content/themes/netnibbles/fonts/lovelo_black-webfont.ttf")
+        format("truetype"),
+      url("http://www.netnibbl.es/wp-content/themes/netnibbles/fonts/lovelo_black-webfont.svg#loveloblack")
+        format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
 
-//--- -----------------------------------------------------
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    @font-face {
+      font-family: "loveloblack";
+      src: url("http://www.netnibbl.es/wp-content/themes/netnibbles/fonts/lovelo_black-webfont.svg#loveloblack")
+        format("svg");
+    }
+  }
+
+  // body {
+  //   text-align: center;
+  //   background: #ece6dc;
+  //   padding: 25px;
+  // }
+
+  .logo {
+    display: block;
+    position: relative;
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 1;
+    text-decoration: none;
+  }
+
+  .logo * {
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+  }
+
+  .logo-roundel {
+    width: 200px;
+    height: 200px;
+    -webkit-border-radius: 150px;
+    border-radius: 150px;
+    border: 10px solid #000000;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+
+  .left-n {
+    color: #000000;
+    font-size: 80px;
+    font-family: "loveloblack";
+    text-shadow: -1px 1px 0px rgba(255, 255, 255, 1);
+    position: absolute;
+    left: 54px;
+    top: 72px;
+  }
+
+  .right-n {
+    color: #000000;
+    font-size: 80px;
+    font-family: "loveloblack";
+    text-shadow: -1px 1px 0px rgba(255, 255, 255, 1);
+    position: absolute;
+    right: 54px;
+    top: 72px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+
+  .logo-site-name {
+    font-family: "loveloblack";
+    color: #333333;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+    position: relative;
+    top: 130px;
+    left: 1px;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+
+  .logo:hover .logo-roundel {
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 1px 0px 1px rgba(255, 255, 255, 1);
+    box-shadow: 0px 1px 0px 1px rgba(255, 255, 255, 1);
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+
+  .logo:hover .left-n {
+    position: absolute;
+    left: inherit;
+    right: 54px;
+    top: 72px;
+  }
+
+  .logo:hover .right-n {
+    position: absolute;
+    right: inherit;
+    left: 54px;
+    top: 72px;
+  }
+
+  .logo:hover .logo-site-name {
+    position: relative;
+    top: 134px;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+}
+
+//---rotarRedesSociales-------------------------------------------------
+.rotarRedesSociales {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+//   body {
+    // position: absolute;
+    background: #f06;
+    background: linear-gradient(45deg, #f06, yellow);
+    // min-height: 100%;
+//   }
+  a,
+  a:visited {
+    color: #fff;
+  }
+  a:hover {
+    color: #fff;
+  }
+
+  .social {
+   
+    //   float: left;
+    margin: 2em 2em;
+    width: 100px;
+    height: 100px;
+    display: block;
+    text-align: center;
+    line-height: 103px;
+    color: #fff;
+
+    position: relative;
+    transform: rotateY(0deg);
+    transition: transform 0.25s ease-out;
+    transform-style: preserve-3d;
+  }
+  .social > div {
+    width: 100px;
+    height: 100px;
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .social > .front {
+    transform: translateZ(40px);
+  }
+  .social > .back {
+    background: #3b5998;
+    font-size: 3em;
+    transform: rotateY(-100deg) translateZ(40px);
+  }
+
+  /*  Social Media Colors 
+	Facebook #3B5998
+	Flickr #FE0883
+	Foursquare #8FD400
+	Google+ #C63D2D
+	Instagram #4E433C
+	Linkedin #4875B4
+	Tumblr #2B4964
+	Twitter #33CCFF
+	Vimeo #86B32D
+	Youtube #FF3333
+	Dribbble #ea4c89
+*/
+  .social.social-twitter > .back {
+    background: #55acee;
+  }
+  .social.social-github > .back {
+    background: #f3f3f3;
+    color: #000;
+  }
+  .social.social-pinterest > .back {
+    background: #e3262e;
+  }
+  .social.social-googleplus > .back {
+    background: #dd4b39;
+  }
+  .social.social-skype > .back {
+    background: #12a5f4;
+  }
+  .social.social-linkedin > .back {
+    background: #4875b4;
+  }
+  .social.social-dribbble > .back {
+    background: #ea4c89;
+  }
+}
+  /* Hover */
+  .social:hover {
+    transform: rotateY(100deg);
+  }
+

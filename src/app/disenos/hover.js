@@ -1,9 +1,9 @@
 class miHover extends HTMLElement {
-    constructor() {
-      super();
-    }
-    connectedCallback() {
-      this.innerHTML = `
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    this.innerHTML = `
 <section>
     <div class="discoVinilo hover">
         <div class="case">
@@ -45,6 +45,99 @@ class miHover extends HTMLElement {
         <br/>
     </div>
 
+    <div class="logoAnimado hover">
+        <a href="http://www.netnibbl.es/" class="logo">
+            <div class="logo-roundel">
+                <span class="logo-site-name">NetNibbl.es</span>
+                <span class="left-n">n</span>
+                <span class="right-n">n</span>
+            </div>
+        </a>
+    </div>
+
+    <div class="rotarRedesSociales hover">
+        <a class="social" href="https://webbb.be" target="_blank">
+        <div class="front">
+        <i class="fa fa-facebook"></i>
+        </div>
+        <div class="back">
+        <i class="fa fa-facebook"></i>
+        </div>
+        </a>
+
+        <a class="social social-twitter" href="https://webbb.be" target="_blank">
+        <div class="front">
+        <i class="fa fa-twitter"></i>
+        </div>
+        <div class="back">
+        <i class="fa fa-twitter"></i>
+        </div>
+        </a>
+
+        <a class="social social-github" href="https://webbb.be" target="_blank">
+        <div class="front">
+        <i class="fa fa-github"></i>
+        </div>
+        <div class="back">
+        <i class="fa fa-github"></i>
+        </div>
+        </a>
+
+        <a class="social social-pinterest" href="https://webbb.be" target="_blank">
+        <div class="front">
+        <i class="fa fa-pinterest"></i>
+        </div>
+        <div class="back">
+        <i class="fa fa-pinterest"></i>
+        </div>
+        </a>
+
+        <a class="social social-googleplus" href="https://webbb.be" target="_blank">
+        <div class="front">
+        <i class="fa fa-google-plus"></i>
+        </div>
+        <div class="back">
+        <i class="fa fa-google-plus"></i>
+        </div>
+        </a>
+
+        <a class="social social-skype" href="https://webbb.be" target="_blank">
+        <div class="front">
+        <i class="fa fa-skype"></i>
+        </div>
+        <div class="back">
+        <i class="fa fa-skype"></i>
+        </div>
+        </a>
+
+        <a class="social social-linkedin" href="https://webbb.be" target="_blank">
+        <div class="front">
+        <i class="fa fa-linkedin"></i>
+        </div>
+        <div class="back">
+        <i class="fa fa-linkedin"></i>
+        </div>
+        </a>
+
+        <a class="social social-skype" href="https://webbb.be" target="_blank">
+        <div class="front">
+        <i class="fa fa-skype"></i>
+        </div>
+        <div class="back">
+        <i class="fa fa-skype"></i>
+        </div>
+        </a>
+
+        <a class="social social-dribbble" href="https://webbb.be" target="_blank">
+        <div class="front">
+        <i class="fa fa-dribbble"></i>
+        </div>
+        <div class="back">
+        <i class="fa fa-dribbble"></i>
+        </div>
+        </a>
+    </div>
+ 
     <div class="efectoNav hover">
         <nav id="nav-1">
         <a class="link-1" href="#">Home</a>
@@ -104,6 +197,6 @@ class miHover extends HTMLElement {
 
 </section>
     `;
-    }
   }
-  customElements.define("mi-hover", miHover);
+}
+customElements.define("mi-hover", miHover);
