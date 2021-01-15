@@ -4,6 +4,8 @@ class miDisenos extends HTMLElement {
   }
   connectedCallback() {
     this.innerHTML = `
+    <link rel="stylesheet" href="./disenos.css" media="screen" />
+
 <section class="letras">
     <div class="uno" id="uno" onclick="efectos('uno');">
         ⚠Micro⚠

@@ -4,6 +4,8 @@ class miInicio extends HTMLElement {
   }
   connectedCallback() {
     this.innerHTML = `
+     <link rel="stylesheet" href="/inicio.css" media="screen" />
+
     <section class="inicio">
     <div class="separador5">
     </div>

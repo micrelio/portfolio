@@ -46,14 +46,14 @@ body .fiestas .stop:hover {
 .stick .nav {
   border-bottom: 0.05rem solid #ffff00;
   -webkit-box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
   background-color: rgba(0, 0, 0, 0.438);
 }
 
 .stick .nav .navbar .foto img {
   border: 0.05rem solid #ffff00;
   -webkit-box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
 }
 
 .stick .nav .navbar .menu .links .enlace {
@@ -105,24 +105,24 @@ body .fiestas .stop:hover {
   -webkit-text-stroke: 0.05rem #ddd8d8;
 }
 
-* footer .footerContainer .contacto input[type=email],
-* footer .footerContainer .direccion input[type=email],
-* footer .footerContainer .paginas input[type=email] {
+* footer .footerContainer .contacto input[type="email"],
+* footer .footerContainer .direccion input[type="email"],
+* footer .footerContainer .paginas input[type="email"] {
   border: 0.1rem solid #ffff00;
 }
 
-* footer .footerContainer .contacto input[type=submit],
-* footer .footerContainer .direccion input[type=submit],
-* footer .footerContainer .paginas input[type=submit] {
+* footer .footerContainer .contacto input[type="submit"],
+* footer .footerContainer .direccion input[type="submit"],
+* footer .footerContainer .paginas input[type="submit"] {
   background: #ffff00;
   color: #eeeeee;
   border: 0.1rem solid #ffff00;
   border: 0.05rem solid #eeeeee;
 }
 
-* footer .footerContainer .contacto input[type=submit]:hover,
-* footer .footerContainer .direccion input[type=submit]:hover,
-* footer .footerContainer .paginas input[type=submit]:hover {
+* footer .footerContainer .contacto input[type="submit"]:hover,
+* footer .footerContainer .direccion input[type="submit"]:hover,
+* footer .footerContainer .paginas input[type="submit"]:hover {
   background-color: rgba(78, 78, 32, 0.582);
 }
 
@@ -203,66 +203,56 @@ body .fiestas .stop:hover {
 @media screen and (max-width: 650px) {
   footer .footerContainer {
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-
   footer .footerContainer .contacto {
     width: 90%;
   }
-
   footer .footerContainer .direccion {
     margin-top: 5rem;
     width: 90%;
   }
-
   footer .footerContainer .paginas {
     margin-top: 5rem;
     width: 90%;
   }
 }
+
 @media only screen and (max-width: 800px) {
   .movil {
     border-bottom: 0.05rem solid #ffff00;
     -webkit-box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
     background-color: rgba(0, 0, 0, 0.438);
   }
-
   .movil .imagenes .foto img {
     border: 3px double #ffff00;
     -webkit-box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
   }
-
   .movil .imagenes .botones {
     background-color: transparent;
   }
-
   .movil .imagenes .botones .botonMenu {
     color: #ffff00;
   }
-
   .movil .imagenes .botones #boton1 {
     background-color: Transparent;
   }
-
   .movil .desplegable .mode .noche {
     color: #ffff00;
   }
-
   .movil .desplegable .mode .dia {
     color: #ffff00;
   }
-
   .movil .desplegable .enlace {
     color: #ffff00;
   }
 }
+
 @media only screen and (max-width: 800px) {
   body .fiestas .stop {
     font-size: calc(1rem + 0.3vw);
   }
 }
-/*# sourceMappingURL=amarillo.css.map */
-
 /*# sourceMappingURL=amarillo.css.map */

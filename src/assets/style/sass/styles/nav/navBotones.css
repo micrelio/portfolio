@@ -10,31 +10,31 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .social-media .selecEstilos {
   margin: 0;
   -webkit-animation-name: parpadeo;
-  animation-name: parpadeo;
+          animation-name: parpadeo;
   -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+          animation-duration: 2s;
   -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
+          animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .social-media .selecEstilosCerrar {
   -webkit-animation-name: none;
-  animation-name: none;
+          animation-name: none;
 }
 
 .social-media .modo {
@@ -53,8 +53,8 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   flex-direction: row-reverse;
   /* background-color: orangered; */
 }
@@ -128,8 +128,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .botonesEstilo .filasColores .cambioColor .selecColor {
@@ -138,8 +138,8 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .botonesEstilo .filasColores .cambioColor .selecColor .color {
@@ -239,7 +239,7 @@
 
 .stick .nav {
   -webkit-box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
   background-color: rgba(0, 0, 0, 0.438);
 }
 
@@ -250,15 +250,15 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
 }
 
 .stick .nav .navbar .foto img {
@@ -268,7 +268,7 @@
   border: 0.05rem solid lightskyblue;
   width: calc(3vw + 3rem);
   -webkit-box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
 }
 
 .stick .nav .navbar .mode {
@@ -278,14 +278,14 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .stick .nav .navbar .mode .noche {
@@ -311,14 +311,14 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   position: relative;
 }
@@ -327,9 +327,9 @@
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5] 1fr [x6];
-  grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5] 1fr [x6];
+      grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5] 1fr [x6];
   -ms-grid-rows: [y0] 1fr [y1];
-  grid-template-rows: [y0] 1fr [y1];
+      grid-template-rows: [y0] 1fr [y1];
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
   width: 80%;
@@ -340,11 +340,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   cursor: pointer;
   margin: 0rem 0rem 0rem 0rem;
   color: lightskyblue;
@@ -358,33 +358,33 @@
 }
 
 .stick .nav .navbar .menu .links .inicio {
-  grid-column: x0/x1;
-  grid-row: y0/y1;
+  grid-column: x0 / x1;
+  grid-row: y0 / y1;
 }
 
 .stick .nav .navbar .menu .links .conoceme {
-  grid-column: x1/x2;
-  grid-row: y0/y1;
+  grid-column: x1 / x2;
+  grid-row: y0 / y1;
 }
 
 .stick .nav .navbar .menu .links .webs {
-  grid-column: x2/x3;
-  grid-row: y0/y1;
+  grid-column: x2 / x3;
+  grid-row: y0 / y1;
 }
 
 .stick .nav .navbar .menu .links .gal {
-  grid-column: x3/x4;
-  grid-row: y0/y1;
+  grid-column: x3 / x4;
+  grid-row: y0 / y1;
 }
 
 .stick .nav .navbar .menu .links .curriculum {
-  grid-column: x4/x5;
-  grid-row: y0/y1;
+  grid-column: x4 / x5;
+  grid-row: y0 / y1;
 }
 
 .stick .nav .navbar .menu .links .contacto {
-  grid-column: x5/x6;
-  grid-row: y0/y1;
+  grid-column: x5 / x6;
+  grid-row: y0 / y1;
 }
 
 .stick .nav .navbar .menu .links .inicio:hover,
@@ -420,7 +420,6 @@
   .nav {
     display: none;
   }
-
   .movil {
     border-bottom: 0.05rem solid lightskyblue;
     display: block;
@@ -429,13 +428,12 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
     background-color: rgba(0, 0, 0, 0.438);
   }
-
   .movil .imagenes {
     padding: calc(0.5rem + 0.5vw);
     display: -webkit-box;
@@ -443,49 +441,43 @@
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   .movil .imagenes .foto {
     cursor: pointer;
   }
-
   .movil .imagenes .foto img {
     display: block;
     border-radius: 75%;
     border: 3px double lightskyblue;
     width: calc(4vw + 5rem);
     -webkit-box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
   }
-
   .movil .imagenes .botones {
     border: 0;
     outline: 0 none;
     background-color: transparent;
   }
-
   .movil .imagenes .botones #boton1 {
     outline: none;
     cursor: pointer;
     border: none;
     background-color: Transparent;
   }
-
   .movil .imagenes .botones #boton1 p {
     display: block;
     font-size: calc(5vw + 5rem);
   }
-
   .movil .desplegable .mode {
     margin: 0rem 0rem 1rem 1rem;
     display: -webkit-box;
@@ -493,32 +485,28 @@
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
     -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   .movil .desplegable .mode .noche {
     display: none;
     color: lightskyblue;
   }
-
   .movil .desplegable .mode .dia {
     display: block;
     color: lightskyblue;
     font-size: 5rem;
   }
-
   .movil .desplegable .mode img {
     position: absolute;
     width: calc(0.1rem + 3vw);
   }
-
   .movil .desplegable .enlace {
     margin: 1rem;
     border: 0;
@@ -527,16 +515,17 @@
     font-size: 3rem;
     font-color: lightskyblue;
   }
-
   .movil .desplegable .mnav-link {
     display: block;
   }
 }
+
 @media only screen and (max-width: 800px) and (max-width: 800px) {
   section #links {
     display: none;
   }
 }
+
 @media only screen and (max-width: 800px) {
   /* Y finalmente las animaciones */
   @-webkit-keyframes fade {
@@ -557,5 +546,3 @@
   }
 }
 /*# sourceMappingURL=navBotones.css.map */
-
-/*# sourceMappingURL=navbotones.css.map */
