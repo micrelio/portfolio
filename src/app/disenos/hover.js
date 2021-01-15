@@ -16,6 +16,11 @@ class miHover extends HTMLElement {
         </div>
     </div>
 
+    <div class="anillosGiratorios hover">
+        <div>
+            <span></span><span></span>
+        </div>
+    </div>
 
     <div class="logoExcentrico hover">
         <div class="wrapper">
