@@ -22,6 +22,54 @@ class miHover extends HTMLElement {
         </div>
     </div>
 
+    <div class="bandera hover">
+        <div class="flag">
+            <div class="red"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+        </div>
+        <p>FLAG OF EGYPT</p>
+    </div>
+
+    <div class="rotacion3d hover">
+        <br/>
+        <div class="content">
+            <table align="center">
+                <tr>
+                    <td><a href="css/main.css"><div class="aButton shadow rotateX">&nbsp;2D X axis&nbsp;</div></a></td>
+                    <td><a href="css/main.css"><div class="aButton shadow rotateY">&nbsp;2D Y axis&nbsp;</div></a></td>
+                    <td><a href="css/main.css"><div class="aButton shadow rotate">&nbsp;3D 360deg&nbsp;</div></a></td>
+                </tr>
+            </table>
+        </div>
+        <br/>
+    </div>
+
+    <div class="efectoNav hover">
+        <nav id="nav-1">
+        <a class="link-1" href="#">Home</a>
+        <a class="link-1" href="#">About</a>
+        <a class="link-1" href="#">Contact</a>
+        <a class="link-1" href="#">Shop</a>
+    </nav>
+    
+    <nav id="nav-2">
+        <a class="link-2" href="#">Home</a>
+        <a class="link-2" href="#">About</a>
+        <a class="link-2" href="#">Contact</a>
+        <a class="link-2" href="#">Shop</a>
+    </nav>
+    
+    <nav id="nav-3">
+        <a class="link-3" href="#">Home</a>
+        <a class="link-3" href="#">About</a>
+        <a class="link-3" href="#">Contact</a>
+        <a class="link-3" href="#">Shop</a>
+    </nav>
+    </div>
+
+
+
     <div class="logoExcentrico hover">
         <div class="wrapper">
             <div class="cssdeck"></div>
