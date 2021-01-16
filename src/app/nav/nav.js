@@ -68,6 +68,8 @@ class miNav extends HTMLElement {
         <a class="enlace" href="#curriculum" onclick="seleccionado();">Currículum</a>
         <a class="enlace" href="#contacto" onclick="seleccionado();">Contacto</a>
         <a class="enlace " href="#disenos" onclick="seleccionado();">Diseños</a>
+        <a class="enlace " href="#hover" onclick="seleccionado();">Hover</a>
+
         <div class="brushMode">
             <div class="brushEstilos">
                 <p onclick="navegar('panelEstilos');" id="selecEstilosDesplegar"

@@ -5,6 +5,12 @@
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  .letritas {
+    margin: 1rem;
+    background-color: #000;
+    height: 30rem;
+    width: 30rem;
+  }
   //---uno-------------------------
   .uno {
     display: flex;
@@ -12,12 +18,11 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    padding: 1rem;
-    margin: 1rem;
+
     font-size: 5rem;
     // font-family: "Open Sans",  Impact;
     // @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-    background-color: black;
+    //
     color: #fff;
     // letter-spacing: -7px;
     font-weight: 700;
@@ -49,13 +54,12 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    padding: 1rem;
-    margin: 1rem;
+
     //  font-size: 5rem;
     text-transform: uppercase;
-    background-color: #000;
-    max-height: 10rem;
-    // width: 20rem;
+
+    
+    // 
     background-color: skyblue;
     color: #fff;
     font-family: "Roboto", sans-serif;
@@ -201,12 +205,8 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    padding: 1rem;
-    margin: 1rem;
     font-size: 5rem;
     text-transform: uppercase;
-    background-color: black;
-    background-color: #000000;
     .glitch {
       color: white;
       font-size: 5rem;
@@ -375,19 +375,18 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    padding: 1rem;
-    margin: 1rem;
+
     font-size: 5rem;
     text-transform: uppercase;
-    background-color: black;
+
     font-family: Amatic SC;
     text-align: center;
     // padding-top: 140px;
-    background-color: black;
+
     margin: 1rem;
     padding: 1rem;
     font-size: 5rem;
-    .jittery  {
+    .jittery {
       //---efecto--------------------------------
       // animation: jitter 200ms linear infinite;
       color: #f06d06;
@@ -396,7 +395,7 @@
   }
   .cuatroEfectos,
   .cuatro:hover {
-    .jittery  {
+    .jittery {
       animation: jitter 200ms linear infinite;
     }
   }
@@ -413,11 +412,10 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    padding: 1rem;
-    margin: 1rem;
+
     font-size: 5rem;
     text-transform: uppercase;
-    background-color: black;
+
     // padding-bottom: 8rem;
     @import url(https://fonts.googleapis.com/css?family=Erica+One);
     background-color: pink;
@@ -466,16 +464,15 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    padding: 1rem;
-    margin: 1rem;
+
     font-size: 20rem;
     text-transform: uppercase;
-    background-color: black;
+
     /* Main styles */
     @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
     font-family: Open Sans, Impact;
     text-transform: uppercase;
-    width: 20rem;
+    
     .text--transparent {
       fill: transparent;
     }
@@ -541,10 +538,9 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    padding: 1rem;
-    margin: 1rem;
+
     text-transform: uppercase;
-    background-color: black;
+
     @import url(https://fonts.googleapis.com/css?family=Varela+Round);
     h1 {
       color: hsla(0, 0%, 0%, 0.9);
@@ -605,12 +601,11 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    padding: 1rem;
-    margin: 1rem;
+
     font-size: 5rem;
     text-transform: uppercase;
-    background-color: black;
-    width: 20rem;
+
+    
     @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
     svg {
       height: 7rem;
@@ -681,14 +676,9 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    padding: 1rem;
-    margin: 1rem;
     font-size: 5rem;
     text-transform: uppercase;
-    background-color: #000;
-    height: 10rem;
-    width: 20rem;
-    .text--line {
+        .text--line {
       font-size: 5rem;
     }
     // svg {
@@ -730,13 +720,12 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    padding: 1rem;
-    margin: 1rem;
+
     font-size: 5rem;
     text-transform: uppercase;
-    background-color: #000;
+
     // height: 7rem;
-    width: 20rem;
+    
     // background-color: red;
     margin: 1rem;
     padding: 1rem;
@@ -822,9 +811,9 @@
     margin-top: 1rem;
     // font-size: 25rem;
     text-transform: uppercase;
-    background-color: #000;
-    max-height: 10rem;
-    width: 20rem;
+
+    
+    
     // background: linear-gradient(to bottom, #000428, #005d92);
     // overflow: hidden;
     h1 {
@@ -873,10 +862,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    padding: 1rem;
-    margin: 1rem;
     font-size: 5rem;
-    background-color: black;
     .moveText {
       line-height: 4rem;
       font-family: "Muli";
@@ -1014,19 +1000,15 @@
   //---trece------------------------------------
   .trece {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    padding: 1rem;
-    margin: 1rem;
     text-transform: uppercase;
-    background-color: #000;
-    max-height: 10rem;
-    font-family: helvetica, arial, sans-serif;
+   font-family: helvetica, arial, sans-serif;
     a {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
       justify-content: center;
       color: #fffbf1;
@@ -1034,12 +1016,11 @@
       font-size: 5rem;
       font-weight: bold;
       text-decoration: none;
-      margin-top: 35%;
-      margin-left: 100%;
+      margin-top: 20%;
+      margin-left:55%;
       transform: translateX(-50%) translateY(-50%);
     }
   }
-
   .treceEfectos,
   .trece:hover {
     //---para girar todo el rato
@@ -1086,11 +1067,9 @@
     margin: 1rem;
     padding: 1rem;
     font-size: 5rem;
-    // width: 100%;
-
     font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
     text-transform: uppercase;
-    display: block;
+    //display: block;
     // font-size: 92px;
     color: #f1ebe5;
     text-shadow: 0 8px 9px #c4b59d, 0px -2px 1px #fff;
@@ -1495,7 +1474,7 @@
     font-family: "Droid Sans", arial, verdana, sans-serif;
     font-weight: 700;
     color: #ff6;
-    background-color: #000;
+
     // overflow: hidden;
     // overflow: visible;
     display: flex;

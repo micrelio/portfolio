@@ -6,11 +6,11 @@ class miDisenos extends HTMLElement {
     this.innerHTML = `
 
 <section class="letras">
-    <div class="uno" id="uno" onclick="efectos('uno');">
+    <div class="uno letritas" id="uno" onclick="efectos('uno');">
         ⚠Micro⚠
     </div>
 
-    <div class="dos" id="dos" onclick="efectos('dos');">
+    <div class="dos letritas" id="dos" onclick="efectos('dos');">
         <div class="word">
             <span>M</span>
             <span>I</span>
@@ -20,19 +20,19 @@ class miDisenos extends HTMLElement {
         </div>       
     </div>
 
-    <div class="tres" id="tres" onclick="efectos('tres');">
+    <div class="tres letritas" id="tres" onclick="efectos('tres');">
         <div class="glitch" data-text="Micro">Micro</div>
     </div>
 
-    <div class="cuatro" id="cuatro" onclick="efectos('cuatro');">
+    <div class="cuatro letritas" id="cuatro" onclick="efectos('cuatro');">
         <span class="jittery">Micro</span>
     </div>
 
-    <div class="cinco" id="cinco" onclick="efectos('cinco');">
+    <div class="cinco letritas" id="cinco" onclick="efectos('cinco');">
         <h1>Micro</h1>
     </div>
 
-    <div class="seis" id="seis" onclick="efectos('seis');">
+    <div class="seis letritas" id="seis" onclick="efectos('seis');">
     <svg viewBox="0 0 800 300">
         <!-- Clippath  with text -->
         <clippath id="cp-text">
@@ -58,11 +58,11 @@ class miDisenos extends HTMLElement {
         </svg>
     </div>
     
-    <div class="siete" id="siete" onclick="efectos('siete');">
+    <div class="siete letritas" id="siete" onclick="efectos('siete');">
         <h1>Micro</h1>
     </div>
 
-    <div class="ocho" id="ocho" onclick="efectos('ocho');">
+    <div class="ocho letritas" id="ocho" onclick="efectos('ocho');">
         <svg>
             <!-- Symbol -->
             <symbol id="s-text">
@@ -79,7 +79,7 @@ class miDisenos extends HTMLElement {
         </svg>
     </div>
 
-    <div class="nueve" id="nueve" onclick="efectos('nueve');">
+    <div class="nueve letritas" id="nueve" onclick="efectos('nueve');">
         <svg>
         <symbol id="s-text">
             <text>
@@ -96,7 +96,7 @@ class miDisenos extends HTMLElement {
         </svg>
     </div>
 
-    <div class="diez" id="diez" onclick="efectos('diez');">
+    <div class="diez letritas" id="diez" onclick="efectos('diez');">
         <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
         <h1>
             <em>C</em>
@@ -107,11 +107,11 @@ class miDisenos extends HTMLElement {
         </h1>
     </div>
 
-    <div class="once" id="once" onclick="efectos('once');">
+    <div class="once letritas" id="once" onclick="efectos('once');">
         <h1  data-heading="Micro">Micro</h1>
     </div>
 
-    <div class="doce" id="doce" onclick="efectos('doce');">
+    <div class="doce letritas" id="doce" onclick="efectos('doce');">
         <div class='moveText'>
             <div class='moveTextIn'>
                 <p>
@@ -126,12 +126,12 @@ class miDisenos extends HTMLElement {
         </div>
     </div>
 
-    <div class="trece" id="trece" onclick="efectos('trece');">
+    <div class="trece letritas" id="trece" onclick="efectos('trece');">
         <a >Micro</a>
         <!--<a href="http://www.thismanslife.co.uk" target="_blank">Micro</a>-->
     </div>
 
-    <div class="k">
+    <div class="k letritas">
         <div>
             Micro
         </div>
