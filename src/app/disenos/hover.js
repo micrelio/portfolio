@@ -133,6 +133,49 @@ class miHover extends HTMLElement {
         </div>
     </div>
 
+    <div class="gota hover">
+			<div class="drop"></div>
+    </div>
+    
+    <div class="obturadorColores hover">
+        <div class="circle">
+            <h1>Micro</h1>
+        </div>
+    </div>
+
+    <div class="helado hover">
+        <div class="container">
+            <div class="icecream">
+                <div class="flavor">
+                    <div class="flavours"></div>
+                </div>
+                <div class="stick"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sobreCorrero hover">
+        <div class="envelope">
+            <input class="envelope__check" type="checkbox"/>
+            <div class="envelope__flap envelope__flap--inside"></div>
+            <div class="envelope__flap"></div>
+            <div class="envelope__letter">
+            <div class="letter">
+                <div class="letter__content">
+                <p>Hey! 👋</p>
+                <p>The whole purpose of places like Starbucks is for people with no decision-making ability whatsoever to make six decisions just to buy one cup of coffee. Short, tall, light, dark, caf, decaf, low-fat, non-fat, etc. 😕</p>
+                </div>
+                <div class="letter__content"></div>
+                <div class="letter__content">
+                <p>So people who don't know what the hell they're doing or who on earth they are can, for only $2.95, get not just a cup of coffee but an absolutely defining sense of self: Tall. Decaf. Cappuccino. ☕️</p><span class="sign-off">Joe Fox</span>
+                </div>
+            </div>
+            </div>
+            <div class="envelope__back"></div>
+        </div>
+    </div>
+
+    
     <div class="entradaLateral hover">
         <div class="container clearfix">
             <div class="outer">
@@ -150,11 +193,6 @@ class miHover extends HTMLElement {
             </div><!--END: outer-->
         </div><!--END: container-->
     </div>
-
-    <div class="store">
-        <div class="placeholder"></div>
-    </div>
-
 
     <div class="bordeAnimado">
       <div class="demo-1 demo">
@@ -254,100 +292,103 @@ class miHover extends HTMLElement {
         </div>
     </div><!-- /container -->
     
-
+    <div class="store">
+    <div class="placeholder"></div>
+</div>
 </section>
     `;
+    var options = {
+        imgSrc1:"//s3-us-west-2.amazonaws.com/s.cdpn.io/261873/TelephoneBanana.jpg",
+        imgSrc2:"//s3-us-west-2.amazonaws.com/s.cdpn.io/261873/TelephoneBananaInverted.jpg",
+        containerName : "placeholder",
+        columns:16,
+        margin:3
+      }
+      
+      
+      function VenetianBlinds(defaults)
+      {
+        var cols = defaults.columns;
+        var margin = defaults.margin;
+        var img1 = defaults.imgSrc1;
+        var img2 = defaults.imgSrc2;
+        var placeholder = document.getElementsByClassName(defaults.containerName)[0];
+        var directionX, directionY;
+        
+        var column, blind, blindImg;
+        var bgImg, rot;
+        var colL;
+        var colW = (placeholder.offsetWidth / cols) - margin;
+        for (var i=0; i < cols; i++)
+          {
+            colL = ((colW + margin) * i);
+            
+            column = document.createElement('div');
+            column.className = "column";
+            column.style.width = colW + "px";
+            column.style.left = colL + "px";
+            placeholder.appendChild(column); 
+            
+            for (var j=0; j<4; j++)
+              {
+                blind = document.createElement('div');
+                blind.className = "blind";
+                blind.style.width = colW + "px";
+                blindImg = document.createElement('div');
+                blindImg.className = "blindImg";
+                
+                switch (j){
+                   case 0:
+                      TweenMax.set(blind, {rotationY: "0"});
+                      bgImg = img1;
+                      break;
+                  case 1:
+                      TweenMax.set(blind, {rotationY: "90"});
+                      bgImg = img2;
+                      break;
+                   case 2: 
+                        TweenMax.set(blind, {rotationY: "180"});
+                        bgImg = img1;
+                        break;              
+                    case 3:
+                        TweenMax.set(blind, {rotationY: "270"});
+                        bgImg = img2;
+                        break;
+                }
+                blindImg.style.width = placeholder.offsetWidth + "px";
+                blindImg.style.backgroundImage = "url("+bgImg+")";
+                blindImg.style.left = -colL + "px";
+      
+                column.appendChild(blind);
+                blind.appendChild(blindImg);
+                
+                TweenMax.set(blind, { transformOrigin:"50% 50% " + -colW/2, transformStyle: "preserve-3d"});
+              }
+            
+            TweenMax.set(column, {transformStyle:"preserve-3d", transformPerspective:1000, rotationY:0});
+            
+             column.addEventListener("mouseenter", function(event){
+                  var elem = event.currentTarget;
+                  var rotY = elem._gsTransform.rotationY;
+               
+                  if(directionX > 0){
+                    TweenMax.to(elem, 1, {rotationY:Math.floor(rotY/90)*90+90, transformOrigin:"50% 50% -" + colW/2, ease:Back.easeOut});
+                  }else{
+                    TweenMax.to(elem, 1, {rotationY:Math.floor(rotY/90)*90-90, transformOrigin:"50% 50% -" + colW/2, ease:Back.easeOut});
+                  }
+            })
+          }
+            document.addEventListener('mousemove', function (event) {
+            directionX = event.movementX || event.mozMovementX || event.webkitMovementX || 0;
+            directionY = event.movementY || event.mozMovementY || event.webkitMovementY || 0;
+          });
+      }
+      
+      VenetianBlinds(options);
+    
   }
 }
 
 customElements.define("mi-hover", miHover);
 //---store---------------------------------------------------------------------
 
-var options = {
-    imgSrc1:"//s3-us-west-2.amazonaws.com/s.cdpn.io/261873/TelephoneBanana.jpg",
-    imgSrc2:"//s3-us-west-2.amazonaws.com/s.cdpn.io/261873/TelephoneBananaInverted.jpg",
-    containerName : "placeholder",
-    columns:16,
-    margin:3
-  }
-  
-  
-  function VenetianBlinds(defaults)
-  {
-    var cols = defaults.columns;
-    var margin = defaults.margin;
-    var img1 = defaults.imgSrc1;
-    var img2 = defaults.imgSrc2;
-    var placeholder = document.getElementsByClassName(defaults.containerName)[0];
-    var directionX, directionY;
-    
-    var column, blind, blindImg;
-    var bgImg, rot;
-    var colL;
-    var colW = (placeholder.offsetWidth / cols) - margin;
-    for (var i=0; i < cols; i++)
-      {
-        colL = ((colW + margin) * i);
-        
-        column = document.createElement('div');
-        column.className = "column";
-        column.style.width = colW + "px";
-        column.style.left = colL + "px";
-        placeholder.appendChild(column); 
-        
-        for (var j=0; j<4; j++)
-          {
-            blind = document.createElement('div');
-            blind.className = "blind";
-            blind.style.width = colW + "px";
-            blindImg = document.createElement('div');
-            blindImg.className = "blindImg";
-            
-            switch (j){
-               case 0:
-                  TweenMax.set(blind, {rotationY: "0"});
-                  bgImg = img1;
-                  break;
-              case 1:
-                  TweenMax.set(blind, {rotationY: "90"});
-                  bgImg = img2;
-                  break;
-               case 2: 
-                    TweenMax.set(blind, {rotationY: "180"});
-                    bgImg = img1;
-                    break;              
-                case 3:
-                    TweenMax.set(blind, {rotationY: "270"});
-                    bgImg = img2;
-                    break;
-            }
-            blindImg.style.width = placeholder.offsetWidth + "px";
-            blindImg.style.backgroundImage = "url("+bgImg+")";
-            blindImg.style.left = -colL + "px";
-  
-            column.appendChild(blind);
-            blind.appendChild(blindImg);
-            
-            TweenMax.set(blind, { transformOrigin:"50% 50% " + -colW/2, transformStyle: "preserve-3d"});
-          }
-        
-        TweenMax.set(column, {transformStyle:"preserve-3d", transformPerspective:1000, rotationY:0});
-        
-         column.addEventListener("mouseenter", function(event){
-              var elem = event.currentTarget;
-              var rotY = elem._gsTransform.rotationY;
-           
-              if(directionX > 0){
-                TweenMax.to(elem, 1, {rotationY:Math.floor(rotY/90)*90+90, transformOrigin:"50% 50% -" + colW/2, ease:Back.easeOut});
-              }else{
-                TweenMax.to(elem, 1, {rotationY:Math.floor(rotY/90)*90-90, transformOrigin:"50% 50% -" + colW/2, ease:Back.easeOut});
-              }
-        })
-      }
-        document.addEventListener('mousemove', function (event) {
-        directionX = event.movementX || event.mozMovementX || event.webkitMovementX || 0;
-        directionY = event.movementY || event.mozMovementY || event.webkitMovementY || 0;
-      });
-  }
-  
-  VenetianBlinds(options);
