@@ -2134,7 +2134,7 @@
 .helado .icecream > .stick {
   width: 5.7rem;
   height: 8.6rem;
-  background: #E09C5F;
+  background: #e09c5f;
   border-radius: 0 0 2.5rem 2.5rem;
   display: block;
   margin: 0 auto;
@@ -2144,11 +2144,260 @@
   content: "";
   width: 100%;
   height: 2.4rem;
-  background: #8D613B;
+  background: #8d613b;
 }
 @keyframes flavours {
   to {
     background-position: 0 -1000vh;
+  }
+}
+
+.cargando {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* Death */
+  /* Designer */
+  /* Flames */
+  /* Design animations */
+  /* Flames */
+  /* @keyframes show-flames {
+    0% {
+        transform:  translateY(0);
+    }
+    74% {
+        transform:  translateY(0);
+    }
+    80% {
+        transform:  translateY(-3rem);
+    }
+    97% {
+        transform:  translateY(-3rem);
+    }
+    100% {
+        transform: translateY(0rem);
+    }
+  } */
+}
+.cargando #deadline svg {
+  width: 100%;
+}
+.cargando #progress-time-fill {
+  animation-name: progress-fill;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.cargando #death-group {
+  animation-name: walk;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  transform: translateX(0);
+}
+.cargando #death-arm {
+  animation: move-arm 3s ease infinite;
+  transform-origin: left center;
+}
+.cargando #death-tool {
+  animation: move-tool 3s ease infinite;
+  transform-origin: -4.8rem center;
+}
+.cargando #designer-arm-grop {
+  animation: write 1.5s ease infinite;
+  transform: translate(0, 0) rotate(0deg) scale(1, 1);
+  transform-origin: left top;
+}
+.cargando .deadline-days {
+  color: #fff;
+  text-align: center;
+  width: 10rem;
+  margin: 0 auto;
+  position: relative;
+  height: 2rem;
+  font-family: "Oswald", sans-serif;
+}
+.cargando .deadline-days .inner {
+  width: 10rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.cargando .mask-red,
+.cargando .mask-white {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+}
+.cargando .mask-red {
+  left: 0;
+  width: 0;
+  color: #BE002A;
+  animation: text-red 20s ease infinite;
+  z-index: 2;
+  background: #000;
+}
+.cargando .mask-white {
+  right: 0;
+}
+.cargando #red-flame {
+  opacity: 0;
+  animation: show-flames 20s ease infinite, red-flame 120ms ease infinite;
+  transform-origin: center bottom;
+}
+.cargando #yellow-flame {
+  opacity: 0;
+  animation: show-flames 20s ease infinite, yellow-flame 120ms ease infinite;
+  transform-origin: center bottom;
+}
+.cargando #white-flame {
+  opacity: 0;
+  animation: show-flames 20s ease infinite, red-flame 100ms ease infinite;
+  transform-origin: center bottom;
+}
+@keyframes progress-fill {
+  0% {
+    x: -100%;
+  }
+  100% {
+    x: -3%;
+  }
+}
+@keyframes walk {
+  0% {
+    transform: translateX(0);
+  }
+  6% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(10rem);
+  }
+  15% {
+    transform: translateX(14rem);
+  }
+  25% {
+    transform: translateX(17rem);
+  }
+  35% {
+    transform: translateX(22rem);
+  }
+  45% {
+    transform: translateX(28rem);
+  }
+  55% {
+    transform: translateX(34rem);
+  }
+  65% {
+    transform: translateX(37rem);
+  }
+  75% {
+    transform: translateX(43rem);
+  }
+  85% {
+    transform: translateX(46rem);
+  }
+  100% {
+    transform: translateX(52rem);
+  }
+}
+@keyframes move-arm {
+  0% {
+    transform: rotate(0);
+  }
+  5% {
+    transform: rotate(0);
+  }
+  9% {
+    transform: rotate(-30deg);
+  }
+  80% {
+    transform: rotate(0);
+  }
+}
+@keyframes move-tool {
+  0% {
+    transform: rotate(0);
+  }
+  5% {
+    transform: rotate(0);
+  }
+  9% {
+    transform: rotate(50deg);
+  }
+  80% {
+    transform: rotate(0);
+  }
+}
+@keyframes write {
+  0% {
+    transform: translate(0rem, 0rem) rotate(0deg) scale(1, 1);
+  }
+  16% {
+    transform: translate(0rem, 0rem) rotate(0deg) scale(0.99, 1);
+  }
+  32% {
+    transform: translate(0rem, 0rem) rotate(0deg) scale(0.999, 1);
+  }
+  48% {
+    transform: translate(0rem, 0rem) rotate(0deg) scale(0.9999, 1);
+  }
+  65% {
+    transform: translate(0rem, 0rem) rotate(0.5deg) scale(0.99999, 1);
+  }
+  83% {
+    transform: translate(0rem, 0rem) rotate(0deg) scale(0.999999, 1);
+  }
+}
+@keyframes text-red {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 98%;
+  }
+}
+@keyframes show-flames {
+  0% {
+    opacity: 0;
+  }
+  74% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 50;
+  }
+  99% {
+    opacity: 50;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes red-flame {
+  0% {
+    transform: translateY(-30px) scale(1, 1);
+  }
+  25% {
+    transform: translateY(-30px) scale(1.1, 1.1);
+  }
+  75% {
+    transform: translateY(-30px) scale(0.8, 0.7);
+  }
+  100% {
+    transform: translateY(-30px) scale(1, 1);
+  }
+}
+@keyframes yellow-flame {
+  0% {
+    transform: translateY(-30px) scale(0.8, 0.7);
+  }
+  50% {
+    transform: translateY(-30px) scale(1.1, 1.2);
+  }
+  100% {
+    transform: translateY(-30px) scale(1, 1);
   }
 }
 
