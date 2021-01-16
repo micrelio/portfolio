@@ -19,7 +19,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: darkgrey;
+  background-color: #000;
 }
 .cajonHover .ojoMira .pojoro {
   background: white;
@@ -1113,6 +1113,28 @@
 }
 .cajonHover .selectoresHover .x9:hover {
   border: 0.1rem dotted rgba(0, 0, 0, 0.7);
+}
+
+.store .placeholder {
+  display: inline-block;
+  width: 800px;
+  height: 600px;
+  box-sizing: border-box;
+  margin-top: 40px;
+  position: relative;
+}
+.store .column, .store .blind, .store .blindImg {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+.store .blind {
+  overflow: hidden;
+}
+.store .blindImg {
+  width: 100%;
+  background-size: cover;
 }
 
 .abecedarioEfecto {
