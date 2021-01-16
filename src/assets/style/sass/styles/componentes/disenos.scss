@@ -58,8 +58,7 @@
     //  font-size: 5rem;
     text-transform: uppercase;
 
-    
-    // 
+    //
     background-color: skyblue;
     color: #fff;
     font-family: "Roboto", sans-serif;
@@ -472,7 +471,7 @@
     @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
     font-family: Open Sans, Impact;
     text-transform: uppercase;
-    
+
     .text--transparent {
       fill: transparent;
     }
@@ -605,7 +604,6 @@
     font-size: 5rem;
     text-transform: uppercase;
 
-    
     @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
     svg {
       height: 7rem;
@@ -678,7 +676,7 @@
     cursor: pointer;
     font-size: 5rem;
     text-transform: uppercase;
-        .text--line {
+    .text--line {
       font-size: 5rem;
     }
     // svg {
@@ -725,7 +723,7 @@
     text-transform: uppercase;
 
     // height: 7rem;
-    
+
     // background-color: red;
     margin: 1rem;
     padding: 1rem;
@@ -812,8 +810,6 @@
     // font-size: 25rem;
     text-transform: uppercase;
 
-    
-    
     // background: linear-gradient(to bottom, #000428, #005d92);
     // overflow: hidden;
     h1 {
@@ -1005,7 +1001,7 @@
     justify-content: center;
     cursor: pointer;
     text-transform: uppercase;
-   font-family: helvetica, arial, sans-serif;
+    font-family: helvetica, arial, sans-serif;
     a {
       display: flex;
       flex-direction: row;
@@ -1017,7 +1013,7 @@
       font-weight: bold;
       text-decoration: none;
       margin-top: 20%;
-      margin-left:55%;
+      margin-left: 55%;
       transform: translateX(-50%) translateY(-50%);
     }
   }
@@ -1060,7 +1056,73 @@
   }
 
   //---catorce--------------------------------------
-  .catorce{
+  .catorce {
+    @import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700");
+    font-family: "Amatic SC", sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+     text-transform: uppercase;
+    svg{
+      display: none;
+    }
+    .test {
+       //---efecto---------------------------------------------
+      // -webkit-animation: squiggly-anim 0.34s linear infinite;
+      // animation: squiggly-anim 0.34s linear infinite;
+    }
+    .small {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      font-size: 5rem;
+    }
+  }
+  .catorce:hover {
+    .test {
+      -webkit-animation: squiggly-anim 0.34s linear infinite;
+      animation: squiggly-anim 0.34s linear infinite;
+    }
+  }
+
+  @-webkit-keyframes squiggly-anim {
+    0% {
+      filter: url("#squiggly-0");
+    }
+    25% {
+      filter: url("#squiggly-1");
+    }
+    50% {
+      filter: url("#squiggly-2");
+    }
+    75% {
+      filter: url("#squiggly-3");
+    }
+    100% {
+      filter: url("#squiggly-4");
+    }
+  }
+  @keyframes squiggly-anim {
+    0% {
+      filter: url("#squiggly-0");
+    }
+    25% {
+      filter: url("#squiggly-1");
+    }
+    50% {
+      filter: url("#squiggly-2");
+    }
+    75% {
+      filter: url("#squiggly-3");
+    }
+    100% {
+      filter: url("#squiggly-4");
+    }
+  }
+
   //---k-----------------------------------------
   .k {
     display: flex;
