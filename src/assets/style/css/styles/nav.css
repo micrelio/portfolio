@@ -85,7 +85,7 @@
 }
 .stick .nav .navbar .menu .links {
   display: grid;
-  grid-template-columns: [x0] 0.1fr [x1] 0.1fr [x2] 0.1fr [x3] 0.1fr [x4] 0.1fr [x5] 0.1fr [x6] 0.1fr [x7] 0.1fr [x8] 0.1fr [x9];
+  grid-template-columns: [x0] 0.1fr [x1] 0.1fr [x2] 0.1fr [x3] 0.1fr [x4] 0.1fr [x5] 0.1fr [x6] 0.1fr [x7] 0.1fr [x8] 0.1fr [x9] 0.1fr [x10];
   grid-template-rows: [y0] 1fr [y1];
   grid-column-gap: 0rem;
   grid-row-gap: 1rem;
@@ -135,8 +135,12 @@
   grid-column: x6/x7;
   grid-row: y0/y1;
 }
-.stick .nav .navbar .menu .links .mode {
+.stick .nav .navbar .menu .links .irHover {
   grid-column: x7/x8;
+  grid-row: y0/y1;
+}
+.stick .nav .navbar .menu .links .mode {
+  grid-column: x8/x9;
   grid-row: y0/y1;
 }
 .stick .nav .navbar .menu .links .mode .noche {
@@ -153,7 +157,7 @@
   transform: rotate(360deg);
 }
 .stick .nav .navbar .menu .links .brushEstilos {
-  grid-column: x8/x9;
+  grid-column: x9/x10;
   grid-row: y0/y1;
 }
 .stick .nav .navbar .menu .links .brushEstilos .selecEstilosDesplegar {
@@ -180,11 +184,15 @@
 .stick .nav .navbar .menu .links .irGaleria:hover,
 .stick .nav .navbar .menu .links .irCurriculum:hover,
 .stick .nav .navbar .menu .links .irContacto:hover,
+.stick .nav .navbar .menu .links .irDisenos:hover,
+.stick .nav .navbar .menu .links .irHover:hover,
 .stick .nav .navbar .menu .links .irInicio:focus,
 .stick .nav .navbar .menu .links .irBiografia:focus,
 .stick .nav .navbar .menu .links .irWebs:focus,
 .stick .nav .navbar .menu .links .irGaleria:focus,
 .stick .nav .navbar .menu .links .irCurriculum:focus,
+.stick .nav .navbar .menu .links .irDisenos:focus,
+.stick .nav .navbar .menu .links .irHover:focus,
 .stick .nav .navbar .menu .links .irContacto:focus {
   background-color: rgba(78, 78, 32, 0.582);
 }

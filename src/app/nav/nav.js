@@ -31,8 +31,8 @@ class miNav extends HTMLElement {
                 <a class="enlace irGaleria" href="#galeria">Galería</a>
                 <a class="enlace irCurriculum" href="#curriculum">Currículum</a>
                 <a class="enlace irContacto" href="#contacto">Contacto</a>
-                <a class="enlace " href="#disenos">Diseños</a>
-                <a class="enlace " href="#hover">Hover</a>
+                <a class="enlace irDisenos" href="#disenos">Diseños</a>
+                <a class="enlace irHover" href="#hover">Hover</a>
                 <div class=" mode">
                     <p id="noche" class="noche enlace bx bxs-moon" onclick="modoNoche('dia');"></p>
                     <p id="dia" class="dia enlace bx bxs-sun" onclick="modoNoche('noche');"></p>
