@@ -1,10 +1,18 @@
+// import styles from '/src/assets/style/css/styles/componentes/biografia.css';
+
 class miBiografia extends HTMLElement {
   constructor() {
+    // this.attachShadow({mode: open});
+    // this.shadowRoot.adoptedStyleSheets = [styles];
+
     super();
   }
   connectedCallback() {
     this.innerHTML = `
-    <section class="biografia">
+    <style>
+    @import "/src/assets/style/css/styles/componentes/biografia.css";
+  </style>
+    <section class="biografia" id="biografia">
     <div class="separador5">
     </div>
     <h1> José Antonio López Baena (Micro)
@@ -230,7 +238,14 @@ pabloiglesias.org
 </section>
 <div class="separador5">
     </div>
-     `;
-  }
+   
+     `;    
+    }
+
 }
 customElements.define("mi-biografia", miBiografia);
+
+    
+
+
+

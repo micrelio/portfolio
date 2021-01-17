@@ -373,9 +373,14 @@ class miHover extends HTMLElement {
 </section>
     `;
     //---estore-------------------------------------------------------
+    
     var options = {
-        imgSrc1:"//s3-us-west-2.amazonaws.com/s.cdpn.io/261873/TelephoneBanana.jpg",
-        imgSrc2:"//s3-us-west-2.amazonaws.com/s.cdpn.io/261873/TelephoneBananaInverted.jpg",
+        // imgSrc1:"//s3-us-west-2.amazonaws.com/s.cdpn.io/261873/TelephoneBanana.jpg",
+        // imgSrc2:"//s3-us-west-2.amazonaws.com/s.cdpn.io/261873/TelephoneBananaInverted.jpg",
+
+        imgSrc1:"//sm.ign.com/t/ign_latam/screenshot/default/goku-susanoo_7by3.1200.jpg",
+        imgSrc2:"//pm1.narvii.com/6826/87a646ab2c50879c39ad37acec84e8f03e80c9b3v2_hq.jpg",
+
         containerName : "placeholder",
         columns:16,
         margin:3
