@@ -21,7 +21,7 @@
 .web .portfolio {
   width: 90%;
   border-radius: 25px;
-  border: 0.05rem solid lightskyblue;
+  border: 0.05rem solid purple;
   overflow: hidden;
   background-color: black;
   display: -ms-grid;

@@ -57,13 +57,22 @@ class miNav extends HTMLElement {
         <div class="botones">
             <!-- <span id="boton1"><img src="/src/assets/images/icons/menu.png" id="pull" href="#" alt="menu"></span> -->
             <span id="boton1">
-                <p id="pull" href="#" class="botonMenu bx bx-menu" alt="menu"></p>
+            <!--   <p id="pull" href="#" class="botonMenu bx bx-menu" alt="menu"></p>-->
+                
+  
+<div id="pull" class="hamburger">
+	<div id="topPull" class="_layer -top"></div>
+	<div id="midPpull" class="_layer -mid"></div>
+	<div id="bottomPull" class="_layer -bottom"></div>
+</div>
+
+
             </span>
         </div>
     </div>
     
     <div style="display:none" class="desplegable nuevo" id="desplegable">
-        <a class="enlace" href="#inicio" onclick="seleccionado();">Inicio</a>
+        <a class="enlace" href="#inicio" onclick="seleccionado(); toggleMenu();">Inicio</a>
         <a class="enlace" href="#biografia" onclick="seleccionado();">Biografía</a>
         <a class="enlace" href="#webs" onclick="seleccionado();">Webs</a>
         <a class="enlace" href="#galeria" onclick="seleccionado();">Galería</a>
@@ -90,6 +99,31 @@ class miNav extends HTMLElement {
 </section>
 
       `;  
+      //---efecto boton menu------------------------------------------------------------------
+    // selector
+// var menu = document.querySelector('.hamburger');
+
+// // method
+// function toggleMenu (event) {
+//   this.classList.toggle('is-active');
+//   document.querySelector( "desplegable" ).classList.toggle("is_active");
+//   event.preventDefault();
+// }
+
+// // event
+// menu.addEventListener('click', toggleMenu, false);
+
+//Solución con jQUery
+/*$(document).ready(function(){
+	$('.hamburger').click(function() {
+		$('.hamburger').toggleClass('is-active');
+		$('.menuresponsive').toggleClass('is-active');
+		return false;
+	});
+});*/
+
+
+
     // esto arranca automatico
     //mover elemento con el raton
     Drag.init(document.getElementById("foto"));
@@ -102,7 +136,6 @@ class miNav extends HTMLElement {
     //</div>
   }
 }
-
 customElements.define("mi-nav", miNav);
 // llamar componentes
 function navegar(id) {
@@ -119,6 +152,14 @@ function navegar(id) {
 //cerrar menu
 function seleccionado() {
   menu.slideToggle();
+  pull.classList.toggle('is-active');
+  // this.classList.toggle('')
+  // this.classList.toggle('false');
+  // this.classList.toggle('is-active');
+  // document.querySelector( ".menuppal" ).classList.toggle("is_active");
+  // event.preventDefault();
+
+
 }
 //funcion transparencia
 function mostrarValor(opacidadMenu) {
@@ -169,8 +210,18 @@ function mostrarValor(opacidadMenu) {
 document.addEventListener("click", function (e) {
   //obtiendo informacion del DOM para
   var clic = e.target.id;
-  console.log(e);
+  console.log('menu', e.target.id);
+  if(clic== "pull" || clic== "topPull" || clic== "midPpull" || clic== "bottomPull") {
+    clic="cambioBotonMenu";
+
+  }
   switch (clic) {
+    case "cambioBotonMenu" :
+      pull.classList.toggle('is-active');
+    break;
+    // case "mpull":
+    //   pull.classList.toggle('is-active');
+    // break;
     case "selecEstilosDesplegar":
       document.getElementById("panelEstilos").innerHTML =
         "<mi-panelestilos></mi-panelestilos>";
@@ -222,12 +273,9 @@ function nav() {
   console.log('1desplegable');
   $(function () {
     console.log('abrir');
-
     var pull = $("#pull");
     menu = $(".desplegable");
     menuHeight = menu.height();
-    
-
     $(pull).on("click", function (e) {
       console.log('cerrar');
       e.preventDefault();

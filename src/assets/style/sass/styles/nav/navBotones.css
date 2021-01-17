@@ -4,7 +4,7 @@
 ------------------------------------------ */
 .social-media {
   padding: 0.1rem 1rem 0.1rem 1rem;
-  background-color: lightskyblue;
+  background-color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -265,7 +265,7 @@
   height: 100%;
   margin-left: calc(10px + 1vw);
   border-radius: 75%;
-  border: 0.05rem solid lightskyblue;
+  border: 0.05rem solid black;
   width: calc(3vw + 3rem);
   -webkit-box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
@@ -290,12 +290,12 @@
 
 .stick .nav .navbar .mode .noche {
   display: none;
-  color: lightskyblue;
+  color: black;
 }
 
 .stick .nav .navbar .mode .dia {
   display: block;
-  color: lightskyblue;
+  color: black;
   font-size: 5rem;
 }
 
@@ -347,10 +347,10 @@
           justify-content: center;
   cursor: pointer;
   margin: 0rem 0rem 0rem 0rem;
-  color: lightskyblue;
+  color: black;
   padding: 1.6rem 0.5rem 1.6rem 0.5rem;
   min-width: 8rem;
-  border: 0.05rem solid lightskyblue;
+  border: 0.05rem solid black;
   border-radius: 0.9rem;
   background-color: rgba(0, 0, 0, 0.582);
   font-size: 1.6rem;
@@ -421,7 +421,7 @@
     display: none;
   }
   .movil {
-    border-bottom: 0.05rem solid lightskyblue;
+    border-bottom: 0.05rem solid black;
     display: block;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -458,7 +458,7 @@
   .movil .imagenes .foto img {
     display: block;
     border-radius: 75%;
-    border: 3px double lightskyblue;
+    border: 3px double black;
     width: calc(4vw + 5rem);
     -webkit-box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
             box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
@@ -496,11 +496,11 @@
   }
   .movil .desplegable .mode .noche {
     display: none;
-    color: lightskyblue;
+    color: black;
   }
   .movil .desplegable .mode .dia {
     display: block;
-    color: lightskyblue;
+    color: black;
     font-size: 5rem;
   }
   .movil .desplegable .mode img {
@@ -510,10 +510,10 @@
   .movil .desplegable .enlace {
     margin: 1rem;
     border: 0;
-    color: lightskyblue;
+    color: black;
     cursor: pointer;
     font-size: 3rem;
-    font-color: lightskyblue;
+    font-color: black;
   }
   .movil .desplegable .mnav-link {
     display: block;

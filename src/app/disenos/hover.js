@@ -8,9 +8,14 @@ class miHover extends HTMLElement {
     @import "/src/app/disenos/hover.css";
   </style>
 <section class="cajonHover">
+<div class="menuEfecto hover">
+  <a id="nav-button" >
+    <span></span>
+  </a>
+</div>
+
 <div class="ojoMira hover">
-			
-			<div class="main clearfix">
+				<div class="main clearfix">
 				<div class="pojoro">&#9679;</div>
 			</div>
 </div>
@@ -375,6 +380,12 @@ class miHover extends HTMLElement {
 </div>
 </section>
     `;
+
+    //---menuEfecto-------------------------------------------------
+    document.querySelector("#nav-button").addEventListener("click", function () {
+      this.classList.toggle("active");
+    });
+    
     //---estore-------------------------------------------------------
     
     var options = {

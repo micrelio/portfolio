@@ -30,6 +30,60 @@
   /* Hover */
 }
 
+.cajonHover .menuEfecto {
+  background-color: burlywood;
+}
+
+.cajonHover .menuEfecto #nav-button {
+  cursor: pointer;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  padding: 10px 40px 15px 0px;
+}
+
+.cajonHover .menuEfecto #nav-button span,
+.cajonHover .menuEfecto #nav-button span:after,
+.cajonHover .menuEfecto #nav-button span:before {
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  border-radius: 1px;
+  height: 5px;
+  width: 40px;
+  background: white;
+  position: absolute;
+  display: block;
+  content: "";
+  background: #000;
+}
+
+.cajonHover .menuEfecto #nav-button span:before {
+  top: -10px;
+}
+
+.cajonHover .menuEfecto #nav-button span:after {
+  bottom: -10px;
+}
+
+.cajonHover .menuEfecto #nav-button.active span {
+  background-color: transparent;
+}
+
+.cajonHover .menuEfecto #nav-button.active span:before,
+.cajonHover .menuEfecto #nav-button.active span:after {
+  top: 0;
+}
+
+.cajonHover .menuEfecto #nav-button.active span:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.cajonHover .menuEfecto #nav-button.active span:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
 .cajonHover .ojoMira {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -22,7 +22,7 @@
 }
 
 .miniaturas .repertorio h3 {
-  color: lightskyblue;
+  color: green;
   font-size: 4rem;
   font-weight: bolder;
   -webkit-text-stroke: 0.04rem #ddd8d8;
@@ -36,7 +36,7 @@
 
 .miniaturas .repertorio .raya {
   border: 0 none #000000;
-  border-top: 1px solid lightskyblue;
+  border-top: 1px solid green;
   height: 1px;
   margin: 5px 0;
   display: block;
