@@ -1,0 +1,74 @@
+@import "../../mixins/mixins.scss";
+@import "../../variables/variables.scss";
+@import "../../funciones/funciones.scss";
+
+.head {
+  @include head;
+  border-bottom: 0.05rem solid $rojo;
+}
+html,
+body {
+  background-image: url("../../../../images/icons/huevos/huevo.png"),
+    url("../../../../images/icons/huevos/huevo2.png"),
+    url("../../../../images/icons/huevos/huevo3.png"),
+    url("../../../../images/icons/huevos/huevo4.png"),
+    url("../../../../images/icons/huevos/huevo5.png");
+    background-size: 5rem;
+    
+  animation: snow 20s linear infinite;
+  /*Keyframes*/
+  @keyframes snow {
+    0% {
+      background-position: 0px 0px;
+    }
+
+    100% {
+      background-position: 500px 1000px, 400px 400px, 300px 300px;
+    }
+  }
+  .felicitacion {
+    img {
+        width: 20rem;
+        margin: 0rem 0rem 0rem 0rem;
+      }
+    #anio {
+      display: none;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .fiestas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0rem 0rem 0rem 1rem;
+
+    z-index: 10;
+    position: fixed; //para que siga la pagina
+    // position: -webkit-fixed;  // required for Safari
+    bottom: 4rem;
+    img {
+      width: 10rem;
+      margin: 0rem 0rem 1em 0rem;
+
+    }
+    .stop {
+      background: $rojo;
+      color: $blanco;
+      width: 100%;
+      padding: 0.5rem 0rem 0.5rem 0rem;
+      border: 0.1rem solid $rojo;
+      font-size: calc(0.5rem + 1vw);
+      cursor: pointer;
+      border: 0.05rem solid $negro;
+      border-radius: 0.9rem;
+    }
+    .stop:hover {
+      background-color: $blanco;
+      color: $negro;
+      border: 0.05rem solid $rojo;
+    }
+  }
+}

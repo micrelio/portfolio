@@ -57,12 +57,11 @@ class miNav extends HTMLElement {
         <div class="botones">
             <!-- <span id="boton1"><img src="/src/assets/images/icons/menu.png" id="pull" href="#" alt="menu"></span> -->
             <span id="boton1">
-                <p id="pull" href="#" class="botonMenu bx bx-menu"></p>
+                <p id="pull" href="#" class="botonMenu bx bx-menu" alt="menu"></p>
             </span>
         </div>
     </div>
-    <div>
-    </div>
+    
     <div style="display:none" class="desplegable nuevo" id="desplegable">
         <a class="enlace" href="#inicio" onclick="seleccionado();">Inicio</a>
         <a class="enlace" href="#biografia" onclick="seleccionado();">Biografía</a>
@@ -90,7 +89,7 @@ class miNav extends HTMLElement {
 <!-- <audio src="../sonidos/ping.mp4" autoplay loop></audio> -->
 </section>
 
-      `;
+      `;  
     // esto arranca automatico
     //mover elemento con el raton
     Drag.init(document.getElementById("foto"));
@@ -103,6 +102,7 @@ class miNav extends HTMLElement {
     //</div>
   }
 }
+
 customElements.define("mi-nav", miNav);
 // llamar componentes
 function navegar(id) {
@@ -226,9 +226,10 @@ function nav() {
     var pull = $("#pull");
     menu = $(".desplegable");
     menuHeight = menu.height();
+    
+
     $(pull).on("click", function (e) {
       console.log('cerrar');
-
       e.preventDefault();
       menu.slideToggle();
     });
@@ -255,3 +256,5 @@ function nav() {
 //     });
 // });
 //----------------------------------------------------------
+      
+   

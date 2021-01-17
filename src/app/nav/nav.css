@@ -360,15 +360,6 @@
     display: block;
     font-size: calc(5vw + 5rem);
   }
-  .stick .movil .desplegable {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
   .stick .movil .desplegable a {
     text-decoration: none;
   }
@@ -442,15 +433,21 @@
     width: calc(0.1rem + 3vw);
   }
   .stick .movil .desplegable .enlace {
+    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
     margin: 1rem;
     border: 0;
     color: lightskyblue;
     cursor: pointer;
     font-size: 3rem;
     font-color: lightskyblue;
-  }
-  .stick .movil .desplegable .mnav-link {
-    display: block;
   }
 }
 

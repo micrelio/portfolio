@@ -8,7 +8,7 @@ class miVisor extends HTMLElement {
         this.innerHTML =
             `
             <style>
-      @import "/src/app/visor/visor.css";
+      @import "/src/app/galeria/visor.css";
     </style>
  <section id="botoneraMultimedia" class="botoneraMultimedia" >
   <div id="multimediaControl" class="multimediaControl">

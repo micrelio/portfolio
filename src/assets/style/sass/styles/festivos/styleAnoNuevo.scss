@@ -1,0 +1,122 @@
+@import "../../mixins/mixins.scss";
+@import "../../variables/variablesrojo.scss";
+@import "../../funciones/funciones.scss";
+.head {
+  @include head;
+  border-bottom: 0.05rem solid $rojo;
+}
+html,
+body {
+     background-image: url("../../../../images/gifs/brillo.gif");
+    animation: snow 20s linear infinite;
+    /*Keyframes*/
+    @keyframes snow {
+      0% {
+        background-position: 0px 0px;
+      }
+  
+      100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+      }
+    }
+    .felicitacion {
+      #feliz {
+        color: #eabe3f;
+      }
+      #anio {
+        font-size: 10rem;
+        color: #eabe3f;
+        margin: 0rem 0rem 0rem 0rem;
+        -webkit-text-stroke: 0.1rem rgb(221, 216, 216);
+        text-shadow: 1rem 1rem 2rem black;
+        animation-name: parpadeo;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        @-moz-keyframes parpadeo {
+          0% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+        @-webkit-keyframes parpadeo {
+          0% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+        @keyframes parpadeo {
+          0% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .fiestas {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0rem 0rem 0rem 1rem;
+      z-index: 10;
+      position: fixed; //para que siga la pagina
+      // position: -webkit-fixed;  // required for Safari
+      bottom: 4rem;
+      img {
+        width: 10rem;
+      }
+      .stop {
+        border: none;
+        background: $oro;
+        color: $negro;
+        width: 100%;
+        padding: 0.5rem 0rem 0.5rem 0rem;
+        border: 0.1rem solid $oro;
+        font-size: calc(0.5rem + 1vw);
+        cursor: pointer;
+        border: 0.05rem solid $negro;
+        border-radius: 0.9rem;
+      }
+      .stop:hover {
+        background-color: $blanco;
+        color: $oro;
+        border: 0.05rem solid $oro;
+      }
+    }
+}
+// @media only screen and (max-width: 800px) {
+//   body {
+//     .fiestas {
+//       z-index: 1000;
+//       position: fixed; //para que siga la pagina
+//       // position: -webkit-fixed;  // required for Safari
+//       bottom: 4rem;
+//       img {
+//         width: 10rem;
+//       }
+//       .stop {
+//         padding: 0rem 0rem 0rem 0rem;
+//         border: 0.1rem solid $corporativo;
+//         font-size: calc(1rem + 0.3vw);
+//         cursor: pointer;
+//         border: 0.05rem solid $blanco;
+//         border-radius: 0.9rem;
+//       }
+//     }
+//   }
+// }

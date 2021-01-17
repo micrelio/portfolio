@@ -307,9 +307,10 @@
         }
       }
       .desplegable {
-        display: flex;
-        flex-direction: column;
         // display: none;
+        // display: flex;
+        // flex-direction: column;
+        //  display: none;
         a {
           text-decoration: none;
         }
@@ -361,6 +362,10 @@
           }
         }
         .enlace {
+          display: none;
+        display: flex;
+        flex-direction: column;
+          width: 100%;
           margin: 1rem;
           border: 0;
           color: $corporativo;
@@ -371,7 +376,7 @@
           }
         }
         .mnav-link {
-          display: block;
+          // display: block;
         }
       }
     }
