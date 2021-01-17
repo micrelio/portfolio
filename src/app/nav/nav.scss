@@ -298,7 +298,6 @@
             color: $corporativo;
           }
           #boton1 {
-            
             outline: none;
             cursor: pointer;
             border: none;
@@ -309,14 +308,13 @@
               font-size: calc(5vw + 5rem);
             }
             .hamburger {
-              
               margin: 0rem 2rem 0rem 0rem;
               -webkit-transform: translate3d(0, 0, 0);
               transform: translate3d(0, 0, 0);
               -webkit-transition: -webkit-transform 0.5s
                 cubic-bezier(0.05, 1.04, 0.72, 0.98);
               transition: transform 0.5s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-               z-index: 1002;
+              z-index: 1002;
               cursor: pointer;
               -webkit-user-select: none;
               -moz-user-select: none;
@@ -328,15 +326,21 @@
             }
             ._layer {
               background: $corporativo;
-              margin:1rem 0rem 1rem 0rem; //calc(2vw + 0.7rem) 0rem calc(2vw + 0.7rem) 0rem;
+              margin: 2rem; //2rem 0rem 2rem 0rem; //calc(2vw + 0.7rem) 0rem calc(2vw + 0.7rem) 0rem;
               border-radius: 2rem;
               width: calc(5vw + 5rem);
-              height: 1rem;//calc(0.1vw + 0.7rem);
+              height: 0.5rem; //calc(0.1vw + 0.7rem);
               opacity: 1;
               -webkit-transform: translate3d(0, 0, 0);
               transform: translate3d(0, 0, 0);
               -webkit-transition: all 0.5s cubic-bezier(0.05, 1.04, 0.72, 0.98);
               transition: all 0.5s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+            }
+            ._layer.is-active {
+              // margin:1rem 0rem 1rem 0rem; //calc(2vw + 0.7rem) 0rem calc(2vw + 0.7rem) 0rem;
+              border-radius: 2rem;
+              width: calc(5vw + 5rem);
+              height: 1rem;
             }
             .hamburger:hover .-top {
               -webkit-transform: translateY(-100%);
@@ -349,17 +353,19 @@
               transform: translateY(100%);
             }
             .hamburger.is-active .-top {
+                           height: 1.5rem;//3rem se hace flecha
               -webkit-transform: translateY(200%) rotate(45deg) !important;
               -ms-transform: translateY(200%) rotate(45deg) !important;
               transform: translateY(200%) rotate(45deg) !important;
             }
-            .hamburger.is-active .-mid {
-              opacity: 0;
-            }
             .hamburger.is-active .-bottom {
+                      height: 1.5rem;//3 rem se hace flecha
               -webkit-transform: translateY(-200%) rotate(135deg) !important;
               -ms-transform: translateY(-200%) rotate(135deg) !important;
               transform: translateY(-200%) rotate(135deg) !important;
+            }
+            .hamburger.is-active .-mid {
+              opacity: 0;
             }
 
             .menuppal.is_active {

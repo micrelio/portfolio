@@ -385,15 +385,20 @@
   }
   .stick .movil .imagenes .botones #boton1 ._layer {
     background: lightskyblue;
-    margin: 1rem 0rem 1rem 0rem;
+    margin: 2rem;
     border-radius: 2rem;
     width: calc(5vw + 5rem);
-    height: 1rem;
+    height: 0.5rem;
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     -webkit-transition: all 0.5s cubic-bezier(0.05, 1.04, 0.72, 0.98);
     transition: all 0.5s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+  }
+  .stick .movil .imagenes .botones #boton1 ._layer.is-active {
+    border-radius: 2rem;
+    width: calc(5vw + 5rem);
+    height: 1rem;
   }
   .stick .movil .imagenes .botones #boton1 .hamburger:hover .-top {
     -webkit-transform: translateY(-100%);
@@ -404,15 +409,17 @@
     transform: translateY(100%);
   }
   .stick .movil .imagenes .botones #boton1 .hamburger.is-active .-top {
+    height: 1.5rem;
     -webkit-transform: translateY(200%) rotate(45deg) !important;
     transform: translateY(200%) rotate(45deg) !important;
   }
-  .stick .movil .imagenes .botones #boton1 .hamburger.is-active .-mid {
-    opacity: 0;
-  }
   .stick .movil .imagenes .botones #boton1 .hamburger.is-active .-bottom {
+    height: 1.5rem;
     -webkit-transform: translateY(-200%) rotate(135deg) !important;
     transform: translateY(-200%) rotate(135deg) !important;
+  }
+  .stick .movil .imagenes .botones #boton1 .hamburger.is-active .-mid {
+    opacity: 0;
   }
   .stick .movil .imagenes .botones #boton1 .menuppal.is_active {
     -webkit-transform: translate3d(0px, 0px, 0px);
