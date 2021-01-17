@@ -10,7 +10,7 @@ class miBiografia extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <style>
-    @import "/src/assets/style/css/styles/componentes/biografia.css";
+    @import "/src/app/biografia/biografia.css";
   </style>
     <section class="biografia" id="biografia">
     <div class="separador5">
