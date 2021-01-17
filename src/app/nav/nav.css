@@ -133,8 +133,8 @@
 .stick .nav .navbar .menu .links {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: [x0] 0.1fr [x1] 0.1fr [x2] 0.1fr [x3] 0.1fr [x4] 0.1fr [x5] 0.1fr [x6] 0.1fr [x7] 0.1fr [x8] 0.1fr [x9] 0.1fr [x10];
-      grid-template-columns: [x0] 0.1fr [x1] 0.1fr [x2] 0.1fr [x3] 0.1fr [x4] 0.1fr [x5] 0.1fr [x6] 0.1fr [x7] 0.1fr [x8] 0.1fr [x9] 0.1fr [x10];
+  -ms-grid-columns: [x0] 0.1fr [x1] 0.1fr [x2] 0.1fr [x3] 0.1fr [x4] 0.1fr [x5] 0.1fr [x6] 0.1fr [x7] 0.1fr [x8] 0.1fr [x9] 0.1fr [x10] 0.1fr [x11];
+      grid-template-columns: [x0] 0.1fr [x1] 0.1fr [x2] 0.1fr [x3] 0.1fr [x4] 0.1fr [x5] 0.1fr [x6] 0.1fr [x7] 0.1fr [x8] 0.1fr [x9] 0.1fr [x10] 0.1fr [x11];
   -ms-grid-rows: [y0] 1fr [y1];
       grid-template-rows: [y0] 1fr [y1];
   grid-column-gap: 0rem;
@@ -207,19 +207,24 @@
   grid-row: y0 / y1;
 }
 
-.stick .nav .navbar .menu .links .mode {
+.stick .nav .navbar .menu .links .irEfectos {
   grid-column: x8 / x9;
+  grid-row: y0 / y1;
+}
+
+.stick .nav .navbar .menu .links .mode {
+  grid-column: x9 / x10;
   grid-row: y0 / y1;
 }
 
 .stick .nav .navbar .menu .links .mode .noche {
   display: none;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .stick .nav .navbar .menu .links .mode .dia {
   display: block;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .stick .nav .navbar .menu .links .mode:hover {
@@ -230,7 +235,7 @@
 }
 
 .stick .nav .navbar .menu .links .brushEstilos {
-  grid-column: x9 / x10;
+  grid-column: x10 / x11;
   grid-row: y0 / y1;
 }
 
@@ -244,11 +249,11 @@
           animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .stick .nav .navbar .menu .links .brushEstilos .selecEstilosPlegar {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .stick .nav .navbar .menu .links .brushEstilos:hover {

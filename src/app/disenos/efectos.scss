@@ -14,12 +14,14 @@ html {
   // margin-left: -260px;
 
   display: flex;
+  
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
 .s {
+  margin: 5rem;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -30,7 +32,7 @@ html {
   transition: all 0.2s;
 }
 .s:nth-child(n+2) {
-  margin-left: 80px;
+  margin-left: 8rem;
 }
 
 .s:nth-child(1) {

@@ -1,4 +1,4 @@
-class miEfecto extends HTMLElement {
+class miEfectos extends HTMLElement {
     constructor() {
         //  puedes poner argumentos
         super();
@@ -8,7 +8,7 @@ class miEfecto extends HTMLElement {
         this.innerHTML =
             `
             <style>
-      @import "/src/app/efecto/efecto.css";
+      @import "/src/app/disenos/efectos.css";
     </style>
         <div id='c'>
             <div class='s'></div>
@@ -21,4 +21,4 @@ class miEfecto extends HTMLElement {
      `;
     }
 }
-customElements.define('mi-efecto', miEfecto);
+customElements.define('mi-efectos', miEfectos);

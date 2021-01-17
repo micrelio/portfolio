@@ -14,6 +14,7 @@ body {
   background-image: url("../../../../images/icons/snow.png"), url("../../../../images/icons/snow2.png"), url("../../../../images/icons/snow3.png");
   -webkit-animation: snow 20s linear infinite;
           animation: snow 20s linear infinite;
+  background-size: 5rem;
   /*Keyframes*/
 }
 

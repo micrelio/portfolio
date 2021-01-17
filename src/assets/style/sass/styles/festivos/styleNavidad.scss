@@ -12,7 +12,8 @@ body {
     url("../../../../images/icons/snow2.png"),
     url("../../../../images/icons/snow3.png");
   animation: snow 20s linear infinite;
-  /*Keyframes*/
+  background-size: 5rem;
+    /*Keyframes*/
   @keyframes snow {
     0% {
       background-position: 0px 0px;

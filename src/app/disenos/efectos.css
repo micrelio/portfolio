@@ -16,6 +16,7 @@
 }
 
 .s {
+  margin: 5rem;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -26,7 +27,7 @@
 }
 
 .s:nth-child(n+2) {
-  margin-left: 80px;
+  margin-left: 8rem;
 }
 
 .s:nth-child(1) {
@@ -412,4 +413,4 @@
             box-shadow: 0 0 8px 6px rgba(255, 140, 26, 0), 0 0 4px 40px #333, 0 0 4px 41px rgba(255, 140, 26, 0);
   }
 }
-/*# sourceMappingURL=efecto.css.map */
+/*# sourceMappingURL=efectos.css.map */
