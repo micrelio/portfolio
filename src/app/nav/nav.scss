@@ -324,10 +324,10 @@
             }
             ._layer {
               background: $corporativo;
-              margin: calc(0.9vw + 0.7rem) 0rem calc(0.9vw + 0.7rem) 0rem;
+              margin:1.5rem 0rem 1.5rem 0rem; //calc(2vw + 0.7rem) 0rem calc(2vw + 0.7rem) 0rem;
               border-radius: 2rem;
-              width: calc(5vw + 5rem);
-              height: calc(1vw + 0.7rem);
+              width: calc(9vw + 5rem);
+              height: 1.5rem;//calc(0.1vw + 0.7rem);
               opacity: 1;
               -webkit-transform: translate3d(0, 0, 0);
               transform: translate3d(0, 0, 0);

@@ -12,7 +12,7 @@ class miBiografia extends HTMLElement {
     <style>
     @import "/src/app/biografia/biografia.css";
   </style>
-    <section class="biografia" id="biografia">
+    <section class="biografia" >
     <div class="separador5">
     </div>
     <h1> José Antonio López Baena (Micro)

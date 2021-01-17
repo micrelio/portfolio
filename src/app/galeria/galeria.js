@@ -13,7 +13,7 @@ class miGaleria extends HTMLElement {
 <mi-botonera></mi-botonera>
 <div class="separador5">
     </div>
-<section id="galeria" class="galeria" >
+<section  class="galeria" >
 
 </section>
 <section id="content">

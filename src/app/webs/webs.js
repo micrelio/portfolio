@@ -8,7 +8,7 @@ class miWebs extends HTMLElement {
       @import "/src/app/webs/webs.css";
     </style>
     
-<div class="web">
+<div class="webs">
 <div class="separador5">
     </div>
 <h1>Diseños web</h1>
