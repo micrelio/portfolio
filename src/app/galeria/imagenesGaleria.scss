@@ -1,0 +1,79 @@
+@import "../../assets/style/sass/mixins/mixins.scss";
+@import "../../assets/style/sass/variables/variables.scss";
+
+.miniaturas {
+  display: flex;
+  justify-content: center;
+  //align-items: center;
+// background-color: khaki;
+background-color: lightgoldenrodyellow;
+  .repertorio {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 95vw;
+    background: {
+      // color: lightblue;
+    }
+    h3 {
+      color: $corporativo;
+      font-size: 4rem;
+      font-weight: bolder;
+      // color: $blanco;
+      // margin: 1rem 0rem 0.5rem 0rem;
+      -webkit-text-stroke: 0.04rem rgb(221, 216, 216);
+      text-shadow: 0.2rem 0.2rem 0.1rem black
+
+      // font: {
+      //   size: 2.5rem;
+      // }
+    }
+    .title {
+      margin-top: 1.5rem;
+      cursor: pointer;
+      background: {
+        //   color: red;
+      }
+    }
+    .raya {
+      border: 0 none #000000;
+      border-top: 1px solid $corporativo;
+      height: 1px;
+      margin: 5px 0;
+      display: block;
+      clear: both;
+    }
+    .tipo {
+      margin-bottom: 3rem;
+      display: flex;
+      width: 100%;
+      // margin: 20px auto;
+      list-style: none;
+      background: {
+        // color: white;
+      }
+    }
+    .fila {
+      overflow: auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      cursor: pointer;
+      background: {
+        // color: yellow;
+      }
+      .imagenPresentacion {
+        margin: 0.6rem;
+        border: 0.4rem solid #eeeeee;
+        box-shadow: $sombreadoTotal;
+      }
+      .tn {
+        cursor: pointer;
+        height: 15rem;
+        background: {
+          // color: black;
+        }
+      }
+    }
+  }
+}

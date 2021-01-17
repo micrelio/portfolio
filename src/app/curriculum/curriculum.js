@@ -4,6 +4,9 @@ class miCurriculum extends HTMLElement {
   }
   connectedCallback() {
     this.innerHTML = `
+    <style>
+    @import "/src/app/curriculum/curriculum.css";
+  </style>
 <section>
 <div class="separador5">
     </div>

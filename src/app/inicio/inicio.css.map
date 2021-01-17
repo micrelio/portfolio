@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "ACCA,wCAAwC;ADExC,AAAA,KAAK,CAAC;EC2CJ,KAAK,EAAE,IAAI;EACX,QAAQ,EAAE,QAAQ;CD1CnB;;AAFD,ACgDE,KDhDG,CCgDH,GAAG,CAAC;EACF,KAAK,EAAE,IAAI;CACZ;;AD/CH,AAAA,OAAO,CAAC;EACN,OAAO,EAAE,mBAAmB;CAoB7B;;AArBD,AAGE,OAHK,CAGL,MAAM,CAAC;EAEL,SAAS,EAAE,MAAM;EACjB,mBAAmB,EAAE,MAAM,CAAC,OAAc;EAC1C,WAAW,EAAE,IAAM,CAAC,IAAM,CAAC,MAAM,CAAC,0BAA0B;CAC7D;;AARH,AASE,OATK,CASL,CAAC,CAAC;EACA,KAAK,EEPF,OAAO;EFQV,MAAM,EAAE,OAAO;CAChB;;AAZH,AAaE,OAbK,CAaL,CAAC,CAAC;EACA,KAAK,EEXF,OAAO;EFYV,eAAe,EAAE,IAAI;CACtB;;AAhBH,AAiBE,OAjBK,CAiBL,CAAC,CAAC;EACA,WAAW,EAAE,yBAAyB;CACvC",
+    "sources": [
+        "inicio.scss",
+        "../../assets/style/sass/mixins/mixins.scss",
+        "../../assets/style/sass/variables/variables.scss",
+        "../../assets/style/sass/variables/variables.scss"
+    ],
+    "names": [],
+    "file": "inicio.css"
+}

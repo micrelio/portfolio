@@ -7,6 +7,9 @@ class miVisor extends HTMLElement {
     connectedCallback() {
         this.innerHTML =
             `
+            <style>
+      @import "/src/app/visor/visor.css";
+    </style>
  <section id="botoneraMultimedia" class="botoneraMultimedia" >
   <div id="multimediaControl" class="multimediaControl">
     <img id="previous" class="multimediaImagen"  src="/src/assets/images/buttons/multimedia/previous.png">

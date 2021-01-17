@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "ACCA,wCAAwC",
+    "sources": [
+        "conoceme.scss",
+        "../../assets/style/sass/mixins/mixins.scss",
+        "../../assets/style/sass/variables/variables.scss",
+        "../../assets/style/sass/variables/variables.scss"
+    ],
+    "names": [],
+    "file": "conoceme.css"
+}

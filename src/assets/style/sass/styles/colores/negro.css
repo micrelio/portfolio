@@ -1,0 +1,312 @@
+@charset "UTF-8";
+/* ---------------hovers--------------*/
+.head {
+  width: 100%;
+  position: relative;
+  border-bottom: 0.05rem solid #0a0a0a;
+}
+
+.head img {
+  width: 100%;
+}
+
+html .fa-arrow-alt-circle-up,
+body .fa-arrow-alt-circle-up {
+  color: #0a0a0a;
+  -webkit-text-stroke: 0.1rem gray;
+  text-shadow: 0.2rem 0.2rem 0.5rem #eeeeee;
+  background-color: #eeeeee;
+}
+
+html .fiestas .stop,
+body .fiestas .stop {
+  color: #eeeeee;
+  background-color: #0a0a0a;
+  border-color: #eeeeee;
+  border-radius: 0.9rem;
+}
+
+html .fiestas .stop:hover,
+body .fiestas .stop:hover {
+  color: #0a0a0a;
+  background-color: #eeeeee;
+  border-color: #0a0a0a;
+  border-radius: 0.9rem;
+}
+
+/* ------------------------------------------
+         social media menu
+ ------------------------------------------ */
+.social-media {
+  background-color: #0a0a0a;
+}
+
+.social-media .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  flex-direction: row-reverse;
+  /* background-color: orangered; */
+}
+
+.social-media p {
+  color: #eeeeee;
+}
+
+.social-media .social-links a {
+  font-size: 2.4rem;
+  display: inline-block;
+  color: #eeeeee;
+  line-height: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.social-media .social-links a:visited {
+  color: #eeeeee;
+}
+
+.social-media .social-links a:hover {
+  color: #0a0a0a;
+}
+
+/* ------------------------------------------
+         menu
+------------------------------------------ */
+.stick .nav {
+  border-bottom: 0.05rem solid #0a0a0a;
+  background-color: #eeeeee;
+}
+
+.stick .nav .navbar .foto img {
+  border-color: #0a0a0a;
+  -webkit-box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+}
+
+.stick .nav .navbar .menu .links .enlace {
+  color: #0a0a0a;
+}
+
+.stick .nav .navbar .menu .links .enlace p {
+  color: #0a0a0a;
+}
+
+.stick .nav .navbar .mode .noche {
+  color: #0a0a0a;
+}
+
+.stick .nav .navbar .mode .dia {
+  color: #0a0a0a;
+}
+
+* footer {
+  border-top: 0.1rem solid #0a0a0a;
+  background-color: #eeeeee;
+}
+
+* footer .footerContainer {
+  color: #eeeeee;
+}
+
+* footer .footerContainer .contacto h2,
+* footer .footerContainer .direccion h2,
+* footer .footerContainer .paginas h2 {
+  color: #0a0a0a;
+  -webkit-text-stroke: 0.05rem #ddd8d8;
+}
+
+* footer .footerContainer .contacto a,
+* footer .footerContainer .direccion a,
+* footer .footerContainer .paginas a {
+  color: #0a0a0a;
+}
+
+* footer .footerContainer .contacto input[type="email"],
+* footer .footerContainer .direccion input[type="email"],
+* footer .footerContainer .paginas input[type="email"] {
+  border-color: #0a0a0a;
+}
+
+* footer .footerContainer .contacto input[type="submit"],
+* footer .footerContainer .direccion input[type="submit"],
+* footer .footerContainer .paginas input[type="submit"] {
+  background: #0a0a0a;
+  color: #eeeeee;
+  border-color: #0a0a0a;
+  border-color: #eeeeee;
+}
+
+* footer .footerContainer .contacto input[type="submit"]:hover,
+* footer .footerContainer .direccion input[type="submit"]:hover,
+* footer .footerContainer .paginas input[type="submit"]:hover {
+  background-color: rgba(78, 78, 32, 0.582);
+}
+
+* footer .footerContainer .contacto .fa,
+* footer .footerContainer .direccion .fa,
+* footer .footerContainer .paginas .fa {
+  color: #f80000;
+}
+
+* footer .footerContainer .contacto .datos p,
+* footer .footerContainer .direccion .datos p,
+* footer .footerContainer .paginas .datos p {
+  color: #0a0a0a;
+}
+
+* footer .footerContainer .contacto .diseños p,
+* footer .footerContainer .direccion .diseños p,
+* footer .footerContainer .paginas .diseños p {
+  color: #0a0a0a;
+}
+
+* footer .redes {
+  background: #eeeeee;
+  border-top: 0.1rem solid #0a0a0a;
+}
+
+* footer .redes .copy {
+  color: #0a0a0a;
+  border-bottom: 0.1rem solid #0a0a0a;
+}
+
+* footer .redes .politicas p {
+  color: #0a0a0a;
+}
+
+* footer .redes .politicas a {
+  text-decoration: none;
+}
+
+/*------------------------
+             galeria
+------------------------*/
+.miniaturas .repertorio h3 {
+  color: #0a0a0a;
+}
+
+.miniaturas .repertorio .raya {
+  border-color: #0a0a0a;
+}
+
+.menuGaleria {
+  background-color: #0a0a0a;
+}
+
+.menuGaleria .boton {
+  color: #eeeeee;
+}
+
+/*------------------------
+             webs
+------------------------*/
+.web .primeroscoc,
+.web .guerrasOnline,
+.web .tiendaTitanium,
+.web .titaniumGamers,
+.web .portfolio {
+  border-color: #0a0a0a;
+}
+
+/*----------------
+     curriculum
+-----------------*/
+.descripcion .año {
+  color: #eeeeee;
+}
+
+.descripcion h1,
+.descripcion strong {
+  color: #0a0a0a;
+}
+
+.descripcion strong {
+  color: #eeeeee;
+}
+
+.datos .datosPersonales {
+  border-color: #eeeeee;
+}
+
+.datos .datosPersonales h2 {
+  color: #0a0a0a;
+}
+
+.datos .datosPersonales h3 {
+  color: #eeeeee;
+}
+
+.datos .experiencia {
+  border-color: #eeeeee;
+}
+
+.datos .interes {
+  border-color: #eeeeee;
+}
+
+@media screen and (max-width: 650px) {
+  footer .footerContainer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer .footerContainer .contacto {
+    width: 90%;
+  }
+  footer .footerContainer .direccion {
+    margin-top: 5rem;
+    width: 90%;
+  }
+  footer .footerContainer .paginas {
+    margin-top: 5rem;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .stick .movil {
+    border-bottom: 0.05rem solid #0a0a0a;
+    -webkit-box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.438);
+  }
+  .stick .movil .imagenes .foto img {
+    border: 3px double #0a0a0a;
+    -webkit-box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+  }
+  .stick .movil .imagenes .botones .botonMenu {
+    color: #0a0a0a;
+  }
+  .stick .movil .imagenes .botones #boton1 {
+    background-color: Transparent;
+  }
+  .stick .movil .desplegable .mode .noche {
+    color: #0a0a0a;
+  }
+  .stick .movil .desplegable .mode .dia {
+    color: #0a0a0a;
+  }
+  .stick .movil .desplegable .mode .selecEstilosDesplegar {
+    color: #0a0a0a;
+  }
+  .stick .movil .desplegable .mode .selecEstilosPlegar {
+    color: #0a0a0a;
+  }
+  .stick .movil .desplegable .enlace {
+    color: #0a0a0a;
+    font-color: #0a0a0a;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  body .fiestas .stop {
+    font-size: calc(1rem + 0.3vw);
+  }
+}
+/*# sourceMappingURL=negro.css.map */

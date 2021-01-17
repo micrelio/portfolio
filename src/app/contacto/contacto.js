@@ -4,6 +4,9 @@ class miContacto extends HTMLElement {
   }
   connectedCallback() {
     this.innerHTML = `
+    <style>
+      @import "/src/app/contacto/contacto.css";
+    </style>
 <section class="primera">
 <div class="separador5">
     </div>

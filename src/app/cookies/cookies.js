@@ -5,6 +5,9 @@ class miCookies extends HTMLElement {
   }
   connectedCallback() {
     this.innerHTML = `
+    <style>
+      @import "/src/app/cookies/cookies.css";
+    </style>
   <section>          
     <div id="cajacookies">
       <p>

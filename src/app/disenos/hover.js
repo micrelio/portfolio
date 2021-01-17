@@ -4,6 +4,9 @@ class miHover extends HTMLElement {
   }
   connectedCallback() {
     this.innerHTML = `
+    <style>
+    @import "/src/app/hover/hover.css";
+  </style>
 <section class="cajonHover">
 <div class="ojoMira hover">
 			

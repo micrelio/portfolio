@@ -4,6 +4,9 @@ class miWebs extends HTMLElement {
   }
   connectedCallback() {
     this.innerHTML = `
+    <style>
+      @import "/src/app/webs/webs.css";
+    </style>
     
 <div class="web">
 <div class="separador5">

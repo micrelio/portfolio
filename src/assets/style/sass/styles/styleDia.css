@@ -1,0 +1,143 @@
+@charset "UTF-8";
+/* ---------------hovers--------------*/
+/* ------------------------------------------
+         div stilos
+------------------------------------------ */
+.panelEstilos .botonesEstilo {
+  background-color: white;
+}
+
+.panelEstilos .botonesEstilo .selecModo .mode .noche {
+  display: block;
+}
+
+.panelEstilos .botonesEstilo .selecModo .mode .dia {
+  display: none;
+}
+
+/* ------------------------------------------
+         menu
+------------------------------------------ */
+.stick .nav {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.stick .nav .navbar .menu .links .mode .noche {
+  display: block;
+}
+
+.stick .nav .navbar .menu .links .mode .dia {
+  display: none;
+}
+
+/*-----------------
+ menu responsive
+ ------------*/
+@media only screen and (max-width: 800px) {
+  .movil .desplegable .mode {
+    margin: 0rem 0rem 1rem 1rem;
+  }
+  .movil .desplegable .mode .noche {
+    display: block;
+  }
+  .movil .desplegable .mode .dia {
+    display: none;
+  }
+  .movil .desplegable .mode img {
+    position: absolute;
+    width: calc(0.1rem + 3vw);
+  }
+}
+
+/*--------------------
+          html
+  -----------------*/
+html,
+body {
+  background-color: blanchedalmond;
+}
+
+html h1,
+body h1 {
+  color: #0a0a0a;
+  -webkit-text-stroke: 0.05rem #ddd8d8;
+  text-shadow: 0.5rem 0.5rem 0.3rem gray;
+}
+
+html h2,
+body h2 {
+  color: #0a0a0a;
+  -webkit-text-stroke: 0.05rem #ddd8d8;
+  text-shadow: 0.2rem 0.2rem 0.3rem gray;
+}
+
+html h3,
+body h3 {
+  color: #0a0a0a;
+  -webkit-text-stroke: 0.04rem #ddd8d8;
+  text-shadow: 0.2rem 0.2rem 0.1rem gray;
+}
+
+html h4,
+body h4 {
+  color: #0a0a0a;
+  -webkit-text-stroke: 0.03rem #ddd8d8;
+  text-shadow: 0.2rem 0.2rem 0.3rem gray;
+}
+
+html p,
+body p {
+  color: #0a0a0a;
+  /*blanchedalmond;*/
+}
+
+html a,
+body a {
+  color: #00c6ee;
+}
+
+html ul li,
+body ul li {
+  color: #0a0a0a;
+}
+
+html ul li p strong,
+body ul li p strong {
+  color: blue;
+}
+
+html .fa-arrow-alt-circle-up,
+body .fa-arrow-alt-circle-up {
+  -webkit-text-stroke: 0.1rem gray;
+  text-shadow: 0.2rem 0.2rem 0.5rem black;
+  background-color: white;
+}
+
+html .fiestas .stop,
+body .fiestas .stop {
+  border: 0.05rem solid #0a0a0a;
+}
+
+html .fiestas .stop:hover,
+body .fiestas .stop:hover {
+  border: 0.05rem solid #0a0a0a;
+}
+
+/*-------------------
+   curriculum
+   -----------------*/
+.datos p {
+  color: blanchedalmond;
+}
+
+/*-------------------
+   footer
+   -----------------*/
+footer .footerContainer .diseños p {
+  color: #eeeeee;
+}
+
+footer .politicas p {
+  color: #eeeeee;
+}
+/*# sourceMappingURL=styleDia.css.map */

@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AACA,wCAAwC",
+    "sources": [
+        "mixins.scss",
+        "../variables/variables.scss"
+    ],
+    "names": [],
+    "file": "mixins.css"
+}

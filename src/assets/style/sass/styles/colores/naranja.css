@@ -1,0 +1,245 @@
+@charset "UTF-8";
+/* ---------------hovers--------------*/
+.head {
+  width: 100%;
+  position: relative;
+  border-bottom: 0.05rem solid orangered;
+}
+
+.head img {
+  width: 100%;
+}
+
+html .fa-arrow-alt-circle-up,
+body .fa-arrow-alt-circle-up {
+  color: orangered;
+  -webkit-text-stroke: 0.1rem gray;
+  text-shadow: 0.2rem 0.2rem 0.5rem black;
+  background-color: #eeeeee;
+}
+
+html .fiestas .stop,
+body .fiestas .stop {
+  color: #eeeeee;
+  background-color: orangered;
+  border: 0.05rem solid #eeeeee;
+  border-radius: 0.9rem;
+}
+
+html .fiestas .stop:hover,
+body .fiestas .stop:hover {
+  color: orangered;
+  background-color: #eeeeee;
+  border: 0.05rem solid orangered;
+  border-radius: 0.9rem;
+}
+
+/* ------------------------------------------
+         social media menu
+ ------------------------------------------ */
+.social-media {
+  background-color: orangered;
+}
+
+/* ------------------------------------------
+         menu
+------------------------------------------ */
+.stick .nav {
+  border-bottom: 0.05rem solid orangered;
+}
+
+.stick .nav .navbar .foto img {
+  border: 0.05rem solid orangered;
+}
+
+.stick .nav .navbar .menu .links .enlace {
+  color: orangered;
+}
+
+.stick .nav .navbar .menu .links .enlace p {
+  color: orangered;
+}
+
+.stick .nav .navbar .mode .noche {
+  color: orangered;
+}
+
+.stick .nav .navbar .mode .dia {
+  color: orangered;
+}
+
+* footer {
+  border-top: 0.1rem solid orangered;
+  background-color: black;
+}
+
+* footer .footerContainer {
+  color: #eeeeee;
+}
+
+* footer .footerContainer .contacto h2,
+* footer .footerContainer .direccion h2,
+* footer .footerContainer .paginas h2 {
+  color: orangered;
+  -webkit-text-stroke: 0.05rem #ddd8d8;
+}
+
+* footer .footerContainer .contacto input[type="email"],
+* footer .footerContainer .direccion input[type="email"],
+* footer .footerContainer .paginas input[type="email"] {
+  border: 0.1rem solid orangered;
+}
+
+* footer .footerContainer .contacto input[type="submit"],
+* footer .footerContainer .direccion input[type="submit"],
+* footer .footerContainer .paginas input[type="submit"] {
+  background: orangered;
+  color: #eeeeee;
+  border: 0.1rem solid orangered;
+  border: 0.05rem solid #eeeeee;
+}
+
+* footer .footerContainer .contacto input[type="submit"]:hover,
+* footer .footerContainer .direccion input[type="submit"]:hover,
+* footer .footerContainer .paginas input[type="submit"]:hover {
+  background-color: rgba(78, 78, 32, 0.582);
+}
+
+* footer .footerContainer .contacto .fa,
+* footer .footerContainer .direccion .fa,
+* footer .footerContainer .paginas .fa {
+  color: #f80000;
+}
+
+* footer .redes {
+  background: #000;
+  border-top: 0.1rem solid orangered;
+}
+
+* footer .redes .copy {
+  color: #eeeeee;
+  border-color: orangered;
+}
+
+/*------------------------
+             galeria
+------------------------*/
+.miniaturas .repertorio h3 {
+  color: orangered;
+}
+
+.miniaturas .repertorio .raya {
+  border-color: orangered;
+}
+
+.menuGaleria {
+  background-color: orangered;
+}
+
+.menuGaleria .boton {
+  color: #eeeeee;
+}
+
+/*------------------------
+             webs
+------------------------*/
+.web .primeroscoc,
+.web .guerrasOnline,
+.web .tiendaTitanium,
+.web .titaniumGamers,
+.web .portfolio {
+  border-color: orangered;
+}
+
+/*----------------
+     curriculum
+-----------------*/
+.descripcion .año {
+  color: orangered;
+}
+
+.descripcion h1,
+.descripcion strong {
+  color: orangered;
+}
+
+.datos .datosPersonales {
+  border: 0.2rem solid orangered;
+}
+
+.datos .datosPersonales h2 {
+  color: orangered;
+}
+
+.datos .datosPersonales h3 {
+  color: orangered;
+}
+
+.datos .experiencia {
+  border: 0.2rem solid orangered;
+}
+
+.datos .interes {
+  border: 0.1rem solid orangered;
+}
+
+@media screen and (max-width: 650px) {
+  footer .footerContainer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer .footerContainer .contacto {
+    width: 90%;
+  }
+  footer .footerContainer .direccion {
+    margin-top: 5rem;
+    width: 90%;
+  }
+  footer .footerContainer .paginas {
+    margin-top: 5rem;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .stick .movil {
+    border-bottom: 0.05rem solid orangered;
+    -webkit-box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.438);
+  }
+  .stick .movil .imagenes .foto img {
+    border: 3px double orangered;
+    -webkit-box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+  }
+  .stick .movil .imagenes .botones .botonMenu {
+    color: orangered;
+  }
+  .stick .movil .imagenes .botones #boton1 {
+    background-color: Transparent;
+  }
+  .stick .movil .desplegable .mode .noche {
+    color: orangered;
+  }
+  .stick .movil .desplegable .mode .dia {
+    color: orangered;
+  }
+  .stick .movil .desplegable .mode .selecEstilosDesplegar {
+    color: orangered;
+  }
+  .stick .movil .desplegable .mode .selecEstilosPlegar {
+    color: orangered;
+  }
+  .stick .movil .desplegable .enlace {
+    color: orangered;
+    font-color: orangered;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  body .fiestas .stop {
+    font-size: calc(1rem + 0.3vw);
+  }
+}
+/*# sourceMappingURL=naranja.css.map */

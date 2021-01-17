@@ -7,6 +7,9 @@ class miEfecto extends HTMLElement {
     connectedCallback() {
         this.innerHTML =
             `
+            <style>
+      @import "/src/app/efecto/efecto.css";
+    </style>
         <div id='c'>
             <div class='s'></div>
             <div class='s'></div>

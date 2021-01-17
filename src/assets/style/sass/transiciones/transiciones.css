@@ -1,0 +1,106 @@
+/* ---------------hovers--------------*/
+.move-left {
+  transform: translate(-100vw, 0);
+  -webkit-transform: translate(-100vw, 0);
+  /** Chrome & Safari **/
+  -o-transform: translate(-100vw, 0);
+  /** Opera **/
+  -moz-transform: translate(-100vw, 0);
+  /** Firefox **/
+}
+
+.object {
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  /** Chrome & Safari **/
+  -moz-transition: all 0.5s ease-in-out;
+  /** Firefox **/
+  -o-transition: all 0.5s ease-in-out;
+  /** Opera **/
+}
+
+.move-rigth {
+  transform: translate(100vw, 0);
+  -webkit-transform: translate(100vw, 0);
+  /** Chrome & Safari **/
+  -webkit-transform: translate(100vw, 0);
+  -o-transform: translate(100vw, 0);
+  /** Opera **/
+  -moz-transform: translate(100vw, 0);
+  /** Firefox **/
+}
+
+.miniCentral {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -webkit-filter: FlipH;
+          filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+/*-------------------*\
+      PARPADEO
+/*-------------------*/
+
+@-webkit-keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.novisible, .visible {
+  width: 30rem;
+}
+
+#animacion {
+  padding: 0;
+  margin: 0 auto;
+  height: 3rem;
+  width: 3rem;
+}
+
+#animacion img {
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+#animacion img.novisible {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+#animacion:hover img.novisible {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+#animacion:hover img.visible {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+#animacion img.visible:hover {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+/*# sourceMappingURL=transiciones.css.map */

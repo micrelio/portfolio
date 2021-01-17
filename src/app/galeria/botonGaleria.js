@@ -7,6 +7,9 @@ class miBotonera extends HTMLElement {
     connectedCallback() {
             this.innerHTML =
                 `
+                <style>
+      @import "/src/app/botonGaleria/botonGaleria.css";
+    </style>
               <section id="menuGaleria" class="menuGaleria" >
               <button class="boton" value="Galeria"  >Todas</button>
                </section>

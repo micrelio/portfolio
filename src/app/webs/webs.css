@@ -1,0 +1,311 @@
+/* ---------------hovers--------------*/
+.web {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.web .primeroscoc,
+.web .guerrasOnline,
+.web .tiendaTitanium,
+.web .titaniumGamers,
+.web .portfolio {
+  width: 90%;
+  border-radius: 25px;
+  border: 0.05rem solid lightskyblue;
+  overflow: hidden;
+  background-color: black;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5];
+      grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5];
+  -ms-grid-rows: [y0] 0.5fr [y1] 1fr [y2] 0.05fr [y3];
+      grid-template-rows: [y0] 0.5fr [y1] 1fr [y2] 0.05fr [y3];
+}
+
+.web .primeroscoc a,
+.web .guerrasOnline a,
+.web .tiendaTitanium a,
+.web .titaniumGamers a,
+.web .portfolio a {
+  text-decoration: none;
+}
+
+.web .primeroscoc .titulo,
+.web .guerrasOnline .titulo,
+.web .tiendaTitanium .titulo,
+.web .titaniumGamers .titulo,
+.web .portfolio .titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-size: cover;
+  grid-column: x0 / x5;
+  grid-row: y0 / y1;
+}
+
+.web .primeroscoc .titulo h1,
+.web .guerrasOnline .titulo h1,
+.web .tiendaTitanium .titulo h1,
+.web .titaniumGamers .titulo h1,
+.web .portfolio .titulo h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem;
+}
+
+.web .primeroscoc .descripcion,
+.web .guerrasOnline .descripcion,
+.web .tiendaTitanium .descripcion,
+.web .titaniumGamers .descripcion,
+.web .portfolio .descripcion {
+  grid-column: x0 / x4;
+  grid-row: y1 / y3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding: 2rem;
+}
+
+.web .primeroscoc .descripcion p,
+.web .guerrasOnline .descripcion p,
+.web .tiendaTitanium .descripcion p,
+.web .titaniumGamers .descripcion p,
+.web .portfolio .descripcion p {
+  color: #eeeeee;
+  font-family: "FontAwesome", sans-serif;
+  font-size: 2.5rem;
+}
+
+.web .primeroscoc .descripcion p a,
+.web .guerrasOnline .descripcion p a,
+.web .tiendaTitanium .descripcion p a,
+.web .titaniumGamers .descripcion p a,
+.web .portfolio .descripcion p a {
+  text-decoration: none;
+  color: #00c6ee;
+}
+
+.web .primeroscoc .descripcion p i,
+.web .guerrasOnline .descripcion p i,
+.web .tiendaTitanium .descripcion p i,
+.web .titaniumGamers .descripcion p i,
+.web .portfolio .descripcion p i {
+  color: green;
+}
+
+.web .primeroscoc .visitar,
+.web .guerrasOnline .visitar,
+.web .tiendaTitanium .visitar,
+.web .titaniumGamers .visitar,
+.web .portfolio .visitar {
+  grid-column: x4 / x5;
+  grid-row: y1 / y3;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #00c6ee;
+  font-size: 3rem;
+  margin-left: 0px;
+  animation-name: parpadeo;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: parpadeo;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.web .primeroscoc .visitar .fa-arrow-alt-circle-right,
+.web .guerrasOnline .visitar .fa-arrow-alt-circle-right,
+.web .tiendaTitanium .visitar .fa-arrow-alt-circle-right,
+.web .titaniumGamers .visitar .fa-arrow-alt-circle-right,
+.web .portfolio .visitar .fa-arrow-alt-circle-right {
+  color: green;
+  font-size: 5rem;
+  display: block;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.web .primeroscoc .visitar .fa-arrow-alt-circle-right:hover,
+.web .guerrasOnline .visitar .fa-arrow-alt-circle-right:hover,
+.web .tiendaTitanium .visitar .fa-arrow-alt-circle-right:hover,
+.web .titaniumGamers .visitar .fa-arrow-alt-circle-right:hover,
+.web .portfolio .visitar .fa-arrow-alt-circle-right:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.web .titaniumGamers .titulo {
+  background-image: url("../../assets/images/banners/vinewood.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.web .titaniumGamers .titulo h1 {
+  -webkit-text-fill-color: #e3e4e5;
+  -webkit-text-stroke: 1px black;
+  font-family: titanium;
+  font-size: 7rem;
+}
+
+.web .tiendaTitanium .titulo {
+  background-image: url("../../assets/images/banners/TitaniumRoleplay.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.web .tiendaTitanium .titulo h1 {
+  -webkit-text-fill-color: #8a9597;
+  -webkit-text-stroke: 1px black;
+  -webkit-text-stroke: 0.05rem black;
+  font-family: titanium;
+  font-size: 7rem;
+}
+
+.web .primeroscoc .titulo,
+.web .guerrasOnline .titulo {
+  background-image: url("../../assets/images/banners/primeros.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.web .primeroscoc .titulo h1,
+.web .guerrasOnline .titulo h1 {
+  -webkit-text-fill-color: orange;
+  -webkit-text-stroke: 1px black;
+  height: 0 auto;
+  -webkit-text-stroke: 0.05rem black;
+  text-shadow: 0.1em 0.1em brown;
+  font-family: supercell;
+}
+
+.web .primeroscoc .descripcion p,
+.web .guerrasOnline .descripcion p {
+  color: white;
+}
+
+.web .primeroscoc .descripcion p a,
+.web .guerrasOnline .descripcion p a {
+  text-decoration: none;
+  color: gold;
+}
+
+.web .primeroscoc .descripcion p i,
+.web .guerrasOnline .descripcion p i {
+  color: green;
+}
+
+.web .primeroscoc .descripcion p .fa-undo-alt,
+.web .guerrasOnline .descripcion p .fa-undo-alt {
+  color: red;
+  left: 0px;
+}
+
+.web .guerrasOnline .titulo {
+  background-image: url("../../assets/images/banners/guerrasonline.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.web .guerrasOnline .titulo h1 {
+  -webkit-text-fill-color: gold;
+}
+
+@media only screen and (max-width: 700px) {
+  .web .primeroscoc,
+  .web .guerrasOnline,
+  .web .tiendaTitanium,
+  .web .titaniumGamers,
+  .web .portfolio {
+    -ms-grid-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5];
+        grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5];
+    -ms-grid-rows: [y0] 0.5fr [y1] 1fr [y2] 0.05fr [y3];
+        grid-template-rows: [y0] 0.5fr [y1] 1fr [y2] 0.05fr [y3];
+  }
+  .web .primeroscoc .titulo,
+  .web .guerrasOnline .titulo,
+  .web .tiendaTitanium .titulo,
+  .web .titaniumGamers .titulo,
+  .web .portfolio .titulo {
+    grid-column: x0 / x5;
+    grid-row: y0 / y1;
+  }
+  .web .primeroscoc .titulo h1,
+  .web .guerrasOnline .titulo h1,
+  .web .tiendaTitanium .titulo h1,
+  .web .titaniumGamers .titulo h1,
+  .web .portfolio .titulo h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 1rem;
+  }
+  .web .primeroscoc .descripcion,
+  .web .guerrasOnline .descripcion,
+  .web .tiendaTitanium .descripcion,
+  .web .titaniumGamers .descripcion,
+  .web .portfolio .descripcion {
+    grid-column: x0 / x5;
+    grid-row: y1 / y2;
+  }
+  .web .primeroscoc .visitar,
+  .web .guerrasOnline .visitar,
+  .web .tiendaTitanium .visitar,
+  .web .titaniumGamers .visitar,
+  .web .portfolio .visitar {
+    grid-column: x0 / x5;
+    grid-row: y2 / y3;
+  }
+}
+/*# sourceMappingURL=webs.css.map */

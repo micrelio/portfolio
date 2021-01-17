@@ -1,0 +1,18 @@
+/* ---------------hovers--------------*/
+#t {
+  color: white;
+}
+
+.galeria {
+  overflow: auto;
+}
+
+.head {
+  width: 100%;
+  position: relative;
+}
+
+.head img {
+  width: 100%;
+}
+/*# sourceMappingURL=galeria.css.map */

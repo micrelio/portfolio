@@ -4,6 +4,9 @@ class miPoliticadeprivacidad extends HTMLElement {
   }
   connectedCallback() {
     this.innerHTML = `
+    <style>
+      @import "/src/app/textosLegales/textosLegales.css";
+    </style>
 <section id="legales" class="legales">
   <h1 id="politicadeprivacidad"> Política de privacidad</h1>
       <p>

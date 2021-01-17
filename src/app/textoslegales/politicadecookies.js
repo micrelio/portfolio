@@ -4,6 +4,9 @@ class miPoliticadecookies extends HTMLElement {
   }
   connectedCallback() {
     this.innerHTML = `
+    <style>
+      @import "/src/app/textosLegales/textosLegales.css";
+    </style>
 <section id="legales" class="legales">
     <h1 id="politicadecookies"> Política de Cookies</h1>
     <p>

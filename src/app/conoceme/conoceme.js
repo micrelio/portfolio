@@ -5,6 +5,9 @@ class miConoceme extends HTMLElement {
     connectedCallback() {
         this.innerHTML =
             `
+            <style>
+      @import "/src/app/conjoceme/conjoceme.css";
+    </style>
     <section class="primera">
         <h1>Presentación</h1>
         <p>

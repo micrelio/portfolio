@@ -1,0 +1,244 @@
+@charset "UTF-8";
+/* ---------------hovers--------------*/
+.head {
+  width: 100%;
+  position: relative;
+  border-bottom: 0.05rem solid #a05000;
+}
+
+.head img {
+  width: 100%;
+}
+
+html .fa-arrow-alt-circle-up,
+body .fa-arrow-alt-circle-up {
+  color: #a05000;
+  -webkit-text-stroke: 0.1rem gray;
+  text-shadow: 0.2rem 0.2rem 0.5rem black;
+  background-color: #eeeeee;
+}
+
+html .fiestas .stop,
+body .fiestas .stop {
+  color: #eeeeee;
+  background-color: #a05000;
+  border: 0.05rem solid #eeeeee;
+  border-radius: 0.9rem;
+}
+
+html .fiestas .stop:hover,
+body .fiestas .stop:hover {
+  color: #a05000;
+  background-color: #eeeeee;
+  border: 0.05rem solid #a05000;
+}
+
+/* ------------------------------------------
+         social media menu
+ ------------------------------------------ */
+.social-media {
+  background-color: #a05000;
+}
+
+/* ------------------------------------------
+         menu
+------------------------------------------ */
+.stick .nav {
+  border-bottom: 0.05rem solid #a05000;
+}
+
+.stick .nav .navbar .foto img {
+  border: 0.05rem solid #a05000;
+}
+
+.stick .nav .navbar .menu .links .enlace {
+  color: #a05000;
+}
+
+.stick .nav .navbar .menu .links .enlace p {
+  color: #a05000;
+}
+
+.stick .nav .navbar .mode .noche {
+  color: #a05000;
+}
+
+.stick .nav .navbar .mode .dia {
+  color: #a05000;
+}
+
+* footer {
+  border-top: 0.1rem solid #a05000;
+  background-color: black;
+}
+
+* footer .footerContainer {
+  color: #eeeeee;
+}
+
+* footer .footerContainer .contacto h2,
+* footer .footerContainer .direccion h2,
+* footer .footerContainer .paginas h2 {
+  color: #a05000;
+  -webkit-text-stroke: 0.05rem #ddd8d8;
+}
+
+* footer .footerContainer .contacto input[type="email"],
+* footer .footerContainer .direccion input[type="email"],
+* footer .footerContainer .paginas input[type="email"] {
+  border: 0.1rem solid #a05000;
+}
+
+* footer .footerContainer .contacto input[type="submit"],
+* footer .footerContainer .direccion input[type="submit"],
+* footer .footerContainer .paginas input[type="submit"] {
+  background: #a05000;
+  color: #eeeeee;
+  border: 0.1rem solid #a05000;
+  border: 0.05rem solid #eeeeee;
+}
+
+* footer .footerContainer .contacto input[type="submit"]:hover,
+* footer .footerContainer .direccion input[type="submit"]:hover,
+* footer .footerContainer .paginas input[type="submit"]:hover {
+  background-color: rgba(78, 78, 32, 0.582);
+}
+
+* footer .footerContainer .contacto .fa,
+* footer .footerContainer .direccion .fa,
+* footer .footerContainer .paginas .fa {
+  color: #f80000;
+}
+
+* footer .redes {
+  background: #000;
+  border-top: 0.1rem solid #a05000;
+}
+
+* footer .redes .copy {
+  color: #eeeeee;
+  border-bottom: 0.1rem solid #a05000;
+}
+
+/*------------------------
+             galeria
+------------------------*/
+.miniaturas .repertorio h3 {
+  color: #a05000;
+}
+
+.miniaturas .repertorio .raya {
+  border-color: #a05000;
+}
+
+.menuGaleria {
+  background-color: #a05000;
+}
+
+.menuGaleria .boton {
+  color: #eeeeee;
+}
+
+/*------------------------
+             webs
+------------------------*/
+.web .primeroscoc,
+.web .guerrasOnline,
+.web .tiendaTitanium,
+.web .titaniumGamers,
+.web .portfolio {
+  border-color: #a05000;
+}
+
+/*----------------
+     curriculum
+-----------------*/
+.descripcion .año {
+  color: #a05000;
+}
+
+.descripcion h1,
+.descripcion strong {
+  color: #a05000;
+}
+
+.datos .datosPersonales {
+  border: 0.2rem solid #a05000;
+}
+
+.datos .datosPersonales h2 {
+  color: #a05000;
+}
+
+.datos .datosPersonales h3 {
+  color: #a05000;
+}
+
+.datos .experiencia {
+  border: 0.2rem solid #a05000;
+}
+
+.datos .interes {
+  border: 0.1rem solid #a05000;
+}
+
+@media screen and (max-width: 650px) {
+  footer .footerContainer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer .footerContainer .contacto {
+    width: 90%;
+  }
+  footer .footerContainer .direccion {
+    margin-top: 5rem;
+    width: 90%;
+  }
+  footer .footerContainer .paginas {
+    margin-top: 5rem;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .stick .movil {
+    border-bottom: 0.05rem solid #a05000;
+    -webkit-box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.438);
+  }
+  .stick .movil .imagenes .foto img {
+    border: 3px double #a05000;
+    -webkit-box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+  }
+  .stick .movil .imagenes .botones .botonMenu {
+    color: #a05000;
+  }
+  .stick .movil .imagenes .botones #boton1 {
+    background-color: Transparent;
+  }
+  .stick .movil .desplegable .mode .noche {
+    color: #a05000;
+  }
+  .stick .movil .desplegable .mode .dia {
+    color: #a05000;
+  }
+  .stick .movil .desplegable .mode .selecEstilosDesplegar {
+    color: #a05000;
+  }
+  .stick .movil .desplegable .mode .selecEstilosPlegar {
+    color: #a05000;
+  }
+  .stick .movil .desplegable .enlace {
+    color: #a05000;
+    font-color: #a05000;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  body .fiestas .stop {
+    font-size: calc(1rem + 0.3vw);
+  }
+}
+/*# sourceMappingURL=marron.css.map */

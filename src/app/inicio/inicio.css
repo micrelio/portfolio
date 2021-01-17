@@ -1,0 +1,34 @@
+/* ---------------hovers--------------*/
+.head {
+  width: 100%;
+  position: relative;
+}
+
+.head img {
+  width: 100%;
+}
+
+.inicio {
+  padding: 0rem 5rem 0rem 5rem;
+}
+
+.inicio strong {
+  font-size: 2.4rem;
+  -webkit-text-stroke: 0.1rem #0a0931;
+  text-shadow: 0rem 0rem 0.3rem rgba(252, 252, 252, 0.479);
+}
+
+.inicio e {
+  color: #00c6ee;
+  cursor: pointer;
+}
+
+.inicio a {
+  color: #00c6ee;
+  text-decoration: none;
+}
+
+.inicio p {
+  text-shadow: 0.1rem 0.1rem 0.1rem gray;
+}
+/*# sourceMappingURL=inicio.css.map */

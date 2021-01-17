@@ -7,6 +7,9 @@ class miGaleria extends HTMLElement {
     connectedCallback() {
         this.innerHTML =
             `
+            <style>
+      @import "/src/app/galeria/galeria.css";
+    </style>
 <mi-botonera></mi-botonera>
 <div class="separador5">
     </div>

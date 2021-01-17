@@ -7,6 +7,9 @@ class miPanelestilos extends HTMLElement {
     connectedCallback() {
         this.innerHTML =
             `
+            <style>
+            @import "/src/app/panelEstilos/panelEstilos.css";
+          </style>
             <div id="botonesEstilo" class="botonesEstilo">
         <div class="desplazable">
             <div class="reset">

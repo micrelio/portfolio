@@ -4,6 +4,9 @@ class miAvisolegal extends HTMLElement {
     }
     connectedCallback() {
       this.innerHTML = `
+      <style>
+      @import "/src/app/textosLegales/textosLegales.css";
+    </style>
 <section id="legales" class="legales">
 <h1 id="avisolegal"> Aviso Legal</h1>
 <h2>

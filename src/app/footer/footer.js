@@ -4,6 +4,9 @@ class miFooter extends HTMLElement {
   }
   connectedCallback() {
     this.innerHTML = `
+    <style>
+      @import "/src/app/footer/footer.css";
+    </style>
 <footer id="footer" class="footer" >
   <div class="separator">
   </div>

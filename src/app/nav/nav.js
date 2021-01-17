@@ -4,6 +4,9 @@ class miNav extends HTMLElement {
   }
   connectedCallback() {
     this.innerHTML = `
+    <style>
+    @import "/src/app/nav/nav.css";
+  </style>
 <section class="social-media">
     <div class="social-links">
         <a class="bx bxl-youtube" href="https://www.youtube.com/channel/UCMEv1Jj16ypsAXmZXOkKrQA/"

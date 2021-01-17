@@ -4,7 +4,9 @@ class miDisenos extends HTMLElement {
   }
   connectedCallback() {
     this.innerHTML = `
-
+    <style>
+    @import "/src/app/disenos/disenos.css";
+  </style>
 <section class="letras">
     <div class="uno letritas" id="uno" onclick="efectos('uno');">
         ⚠Micro⚠
