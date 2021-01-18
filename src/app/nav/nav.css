@@ -325,9 +325,9 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: justify;
@@ -337,17 +337,16 @@
         -ms-flex-align: center;
             align-items: center;
   }
+  .stick .movil .imagenes svg {
+    display: none;
+  }
   .stick .movil .imagenes .foto {
-    position: relative;
     cursor: pointer;
   }
   .stick .movil .imagenes .foto img {
     display: block;
-    border-radius: 75%;
-    border: 3px double #3c97bf;
-    width: calc(4vw + 5rem);
-    -webkit-box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
-            box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+    width: 1rem;
+    margin-right: 6rem;
   }
   .stick .movil .imagenes .logotipo {
     font-family: "Amatic SC", sans-serif;
@@ -378,12 +377,38 @@
   .stick .movil .imagenes .logotipo .palabras span {
     cursor: pointer;
     display: inline-block;
-    font-size: 5rem;
+    font-size: 3rem;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
     line-height: 0.8;
+  }
+  .stick .movil .imagenes .logotipo span:nth-child(1):hover {
+    -webkit-animation: balance 1.5s ease-out;
+            animation: balance 1.5s ease-out;
+    -webkit-transform-origin: bottom left;
+            transform-origin: bottom left;
+  }
+  .stick .movil .imagenes .logotipo span:nth-child(2):hover {
+    -webkit-animation: shrinkjump 1s ease-in-out;
+            animation: shrinkjump 1s ease-in-out;
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+  }
+  .stick .movil .imagenes .logotipo span:nth-child(3):hover {
+    -webkit-animation: falling 2s ease-out;
+            animation: falling 2s ease-out;
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+  }
+  .stick .movil .imagenes .logotipo span:nth-child(4):hover {
+    -webkit-animation: rotate 1s ease-out;
+            animation: rotate 1s ease-out;
+  }
+  .stick .movil .imagenes .logotipo span:nth-child(5):hover {
+    -webkit-animation: toplong 1.5s linear;
+            animation: toplong 1.5s linear;
   }
   .stick .movil .imagenes .logotipo .palabras span:nth-child(1).active {
     -webkit-animation: balance 1.5s ease-out;
@@ -585,6 +610,54 @@
     90% {
       -webkit-transform: translateY(-48vh) scaleY(4);
               transform: translateY(-48vh) scaleY(4);
+    }
+  }
+  .stick .movil .imagenes .logotipo:hover {
+    -webkit-animation: squiggly-anim 0.34s linear infinite;
+    animation: squiggly-anim 0.34s linear infinite;
+  }
+  @-webkit-keyframes squiggly-anim {
+    0% {
+      -webkit-filter: url("#squiggly-0");
+              filter: url("#squiggly-0");
+    }
+    25% {
+      -webkit-filter: url("#squiggly-1");
+              filter: url("#squiggly-1");
+    }
+    50% {
+      -webkit-filter: url("#squiggly-2");
+              filter: url("#squiggly-2");
+    }
+    75% {
+      -webkit-filter: url("#squiggly-3");
+              filter: url("#squiggly-3");
+    }
+    100% {
+      -webkit-filter: url("#squiggly-4");
+              filter: url("#squiggly-4");
+    }
+  }
+  @keyframes squiggly-anim {
+    0% {
+      -webkit-filter: url("#squiggly-0");
+              filter: url("#squiggly-0");
+    }
+    25% {
+      -webkit-filter: url("#squiggly-1");
+              filter: url("#squiggly-1");
+    }
+    50% {
+      -webkit-filter: url("#squiggly-2");
+              filter: url("#squiggly-2");
+    }
+    75% {
+      -webkit-filter: url("#squiggly-3");
+              filter: url("#squiggly-3");
+    }
+    100% {
+      -webkit-filter: url("#squiggly-4");
+              filter: url("#squiggly-4");
     }
   }
   .stick .movil .imagenes .botones {

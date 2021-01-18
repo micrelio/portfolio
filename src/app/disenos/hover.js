@@ -392,13 +392,15 @@ class miHover extends HTMLElement {
         // imgSrc1:"//s3-us-west-2.amazonaws.com/s.cdpn.io/261873/TelephoneBanana.jpg",
         // imgSrc2:"//s3-us-west-2.amazonaws.com/s.cdpn.io/261873/TelephoneBananaInverted.jpg",
 
-        imgSrc1:"//sm.ign.com/t/ign_latam/screenshot/default/goku-susanoo_7by3.1200.jpg",
-        imgSrc2:"//pm1.narvii.com/6826/87a646ab2c50879c39ad37acec84e8f03e80c9b3v2_hq.jpg",
-
+        // imgSrc1:"//sm.ign.com/t/ign_latam/screenshot/default/goku-susanoo_7by3.1200.jpg",
+        // imgSrc2:"//pm1.narvii.com/6826/87a646ab2c50879c39ad37acec84e8f03e80c9b3v2_hq.jpg",
+        imgSrc1:"//i.pinimg.com/474x/a7/9f/a3/a79fa32e4eafc944b1ea2eb5ad798bdc.jpg",
+        imgSrc2:"//i.pinimg.com/originals/f9/1c/18/f91c18596c24c68386c790c50e79e953.jpg",
+        // imgSrc1:"//pm1.narvii.com/7002/8550132419d8266a03e87e6e27fc7d7996495252r1-750-500v2_128.jpg",
+        // imgSrc2:"//pm1.narvii.com/7067/0eebd566b87bd2b0cbaddeb894b6907c5c9c3c51r1-640-800v2_128.jpg",
         containerName : "placeholder",
         columns:16,
-        margin:3
-      }
+        margin:3      }
       
       
       function VenetianBlinds(defaults)

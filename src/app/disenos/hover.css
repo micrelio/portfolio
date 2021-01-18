@@ -603,43 +603,25 @@
 }
 
 .cajonHover .diagonalSlide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 50rem;
+  margin: 1rem;
+  width: 30rem;
+  height: 30rem;
 }
 
 .cajonHover .diagonalSlide .a1 {
-  width: 46rem;
-  height: 27.6rem;
+  width: 30rem;
+  height: 30rem;
   overflow: hidden;
   background-image: url(https://static.guim.co.uk/sys-images/MONEY/Pix/pictures/2013/1/11/1357903674323/Orlando-the-ginger-cat-008.jpg);
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   -webkit-box-shadow: 0 0 1rem 0.1rem #000;
           box-shadow: 0 0 1rem 0.1rem #000;
 }
 
 .cajonHover .diagonalSlide .b1 {
   width: 0;
-  height: 27.6rem;
+  height: 30rem;
   overflow: hidden;
-  margin-left: -5rem;
+  margin-left: -5.4rem;
   -webkit-transform: skew(-20deg);
           transform: skew(-20deg);
   -webkit-transition: width 1s ease;
@@ -652,12 +634,11 @@
 
 .cajonHover .diagonalSlide .c1 {
   width: 57.4rem;
-  height: 27.6rem;
+  height: 30rem;
   -webkit-transform: skew(20deg);
           transform: skew(20deg);
   margin-left: -6.4rem;
   background-image: url(https://static.guim.co.uk/sys-images/Guardian/About/General/2013/1/9/1357733496816/RUSSIA-ANIMALS-PETS-CAT-010.jpg);
-  background-position: 11.4rem 0;
 }
 
 .cajonHover .entradaLateral .outer {
@@ -1349,24 +1330,38 @@
   border: 0.1rem dotted rgba(0, 0, 0, 0.7);
 }
 
+.store {
+  background-color: red;
+  width: 100%;
+  height: 100vh;
+}
+
 .store .placeholder {
-  display: inline-block;
-  width: 800px;
-  height: 600px;
+  background-color: blue;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin-top: 40px;
-  position: relative;
 }
 
 .store .column,
 .store .blind,
 .store .blindImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
-  top: 0;
+  background-color: #0090d3;
   height: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  width: 100%;
 }
 
 .store .blind {
@@ -1374,7 +1369,9 @@
 }
 
 .store .blindImg {
-  width: 100%;
+  background-image: no-repeat;
+  background-image: fixed;
+  background-image: center;
   background-size: cover;
 }
 

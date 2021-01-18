@@ -56,16 +56,45 @@ class miNav extends HTMLElement {
     <div class="imagenes">
         <div id="foto" class="foto">
             <!--<img src="/src/assets/images/dracula-man.jpg">-->
+            <img src="/src/assets/images/transparente.png">
+
         </div>
         <div class="logotipo" >
           <!--          <div class="dos letritas" id="dos" onclick="efectos('dos');">          -->  
+          
           <div class="palabras">
           <span>M</span>
           <span>I</span>
           <span>C</span>
           <span>R</span>
           <span>O</span>
-      </div>       
+      </div>    
+      <svg>
+      <defs>
+          <filter id="squiggly-0">
+          <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="0"/>
+          <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="6" />
+        </filter>
+        <filter id="squiggly-1">
+          <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="1"/>
+    <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+        </filter>
+        
+        <filter id="squiggly-2">
+          <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="2"/>
+    <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+        </filter>
+        <filter id="squiggly-3">
+          <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="3"/>
+    <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+        </filter>
+        
+        <filter id="squiggly-4">
+          <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="4"/>
+    <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+        </filter>
+      </defs> 
+  </svg>   
             <!-- </div>-->
         </div>
         <div class="botones">

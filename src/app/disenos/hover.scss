@@ -1511,30 +1511,42 @@
   }
   //---diagonal slide----------------------------------
   .diagonalSlide {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 50rem;
+    // display: flex;
+    // flex-direction: column;
+    // flex-wrap: wrap;
+    // align-items: center;
+    // justify-content: center;
+    // width: 50rem;
+    
+    margin: 1rem;
+    width: 30rem;
+    height: 30rem;
+    // background-color: black;
     .a1 {
-      width: 46rem;
-      height: 27.6rem;
+      width: 30rem;
+      height: 30rem;
       overflow: hidden;
       background-image: url(https://static.guim.co.uk/sys-images/MONEY/Pix/pictures/2013/1/11/1357903674323/Orlando-the-ginger-cat-008.jpg);
       // position:absolute;
-      margin: auto;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
+      // margin: auto;
+      // top: 0;
+      // bottom: 0;
+      // left: 0;
+      // right: 0;
       box-shadow: 0 0 1rem 0.1rem #000;
+      // background-image: no-repeat;
+      // background-image: fixed;
+      // background-image: center;
+      // -webkit-background-size: cover;
+      // -moz-background-size: cover;
+      // -o-background-size: cover;
+      // background-size: cover;
     }
     .b1 {
       width: 0;
-      height: 27.6rem;
+      height: 30rem;
       overflow: hidden;
-      margin-left: -5rem;
+      margin-left: -5.4rem;
       transform: skew(-20deg);
       transition: width 1s ease;
     }
@@ -1543,11 +1555,12 @@
     }
     .c1 {
       width: 57.4rem;
-      height: 27.6rem;
+      height: 30rem;
       transform: skew(20deg);
       margin-left: -6.4rem;
       background-image: url(https://static.guim.co.uk/sys-images/Guardian/About/General/2013/1/9/1357733496816/RUSSIA-ANIMALS-PETS-CAT-010.jpg);
-      background-position: 11.4rem 0;
+      // background-position: 11.4rem 0;
+      
     }
   }
   //---entrada lateral------------------------------------------------------
@@ -2084,25 +2097,43 @@
 
 //---store---------------------------------------------------------
 .store {
-  // background-color: darkorchid;
+  background-color: red;
   // body{margin:0;text-align:center;background-color:#1A1919;}
+  width: 100%;
+    height: 100vh;
+// margin: 0;
+//  display: flex;
+//  flex-direction: column;
+//  align-items: center;
+//  justify-content: center;
 
   .placeholder {
-    display: inline-block;
-    width: 800px;
-    height: 600px;
+    background-color: blue;
+    // display: inline-block;
+    // width: 100%;    
+    // height: 50vh;
     box-sizing: border-box;
-    margin-top: 40px;
-    position: relative;
+    // margin-top: 40px;
+    // position: relative;
+  }
+  img{
+    //  width: 50%;
   }
 
   .column,
   .blind,
   .blindImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    top: 0;
+    background-color: #0090d3;
+    // top: 0;
     height: 100%;
-    box-sizing: border-box;
+
+    width: 100%;
+    // box-sizing: border-box;
   }
 
   .blind {
@@ -2110,8 +2141,18 @@
   }
 
   .blindImg {
-    width: 100%;
-    background-size: cover;
+    background-image: no-repeat;
+background-image: fixed;
+background-image: center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+// width: 100%;
+    // background-size:  100% 100%;
+    // position: visible;
+    // background-repeat: no-repeat;
+    // background-attachment: fixed;
   }
 }
 //---abecedarioEfecto---------------------------------------------
