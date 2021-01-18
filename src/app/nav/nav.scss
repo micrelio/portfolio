@@ -294,122 +294,174 @@
           background: {
             color: transparent;
           }
-          .botonMenu {
-            color: $corporativo;
-          }
-          #boton1 {
-            outline: none;
-            cursor: pointer;
-            border: none;
+          //---botonMenu-----------------------
+  .botonMenu{
+    // background-color: burlywood;
+    margin: 1rem;
 
-            background-color: Transparent;
-            p {
-              display: block;
-              font-size: calc(5vw + 5rem);
-            }
-            .hamburger {
-              margin: 0rem 2rem 0rem 0rem;
-              -webkit-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0);
-              -webkit-transition: -webkit-transform 0.5s
-                cubic-bezier(0.05, 1.04, 0.72, 0.98);
-              transition: transform 0.5s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-              z-index: 1002;
-              cursor: pointer;
-              -webkit-user-select: none;
-              -moz-user-select: none;
-              -ms-user-select: none;
-              user-select: none;
-            }
-            .hamburger.is-active {
-              background-color: none;
-            }
-            ._layer {
-              background: $corporativo;
-              margin: 2rem; //2rem 0rem 2rem 0rem; //calc(2vw + 0.7rem) 0rem calc(2vw + 0.7rem) 0rem;
-              border-radius: 2rem;
-              width: calc(5vw + 5rem);
-              height: 0.5rem; //calc(0.1vw + 0.7rem);
-              opacity: 1;
-              -webkit-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0);
-              -webkit-transition: all 0.5s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-              transition: all 0.5s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-            }
-            ._layer.is-active {
-              // margin:1rem 0rem 1rem 0rem; //calc(2vw + 0.7rem) 0rem calc(2vw + 0.7rem) 0rem;
-              border-radius: 2rem;
-              width: calc(5vw + 5rem);
-              height: 1rem;
-            }
-            .hamburger:hover .-top {
-              -webkit-transform: translateY(-100%);
-              -ms-transform: translateY(-100%);
-              transform: translateY(-100%);
-            }
-            .hamburger:hover .-bottom {
-              -webkit-transform: translateY(100%);
-              -ms-transform: translateY(100%);
-              transform: translateY(100%);
-            }
-            .hamburger.is-active .-top {
-                           height: 1.5rem;//3rem se hace flecha
-              -webkit-transform: translateY(200%) rotate(45deg) !important;
-              -ms-transform: translateY(200%) rotate(45deg) !important;
-              transform: translateY(200%) rotate(45deg) !important;
-            }
-            .hamburger.is-active .-bottom {
-                      height: 1.5rem;//3 rem se hace flecha
-              -webkit-transform: translateY(-200%) rotate(135deg) !important;
-              -ms-transform: translateY(-200%) rotate(135deg) !important;
-              transform: translateY(-200%) rotate(135deg) !important;
-            }
-            .hamburger.is-active .-mid {
-              opacity: 0;
-            }
+    #pull {
+      cursor: pointer;
+      // position: relative;
+      // left: 50%;
+      // top: 50%;
+      padding: 1rem 4rem 1.5rem 0rem;
+    }
+    
+    #pull span,
+    #pull span:after,
+    #pull span:before {
+      transition: all 500ms ease-in-out;
+      border-radius: 1px;
+      height: 0.5rem;
+      width: 4rem;
+      background: white;
+      position: absolute;
+      display: block;
+      content: "";
+      background: $corporativo;
+    }
+    
+    #pull span:before {
+      top: -1rem;
+    }
+    #pull span:after {
+      bottom: -1rem;
+    }
+    
+    #pull.active span {
+      background-color: transparent;
+    }
+    
+    #pull.active span:before,
+    #pull.active span:after {
+      top: 0;
+    }
+    
+    #pull.active span:after {
+      transform: rotate(-45deg);
+    }
+    
+    #pull.active span:before {
+      transform: rotate(45deg);
+    }
+    
+  }
+          // .botonMenu {
+          //   color: $corporativo;
+          // }
+          // #boton1 {
+          //   outline: none;
+          //   cursor: pointer;
+          //   border: none;
 
-            .menuppal.is_active {
-              transform: translate3d(0px, 0px, 0px);
-            }
-            .menuppal {
-              background-color: rgba(255, 255, 255, 0.95);
-              bottom: 0;
-              height: 100%;
-              left: 0;
-              overflow-y: scroll;
-              position: fixed;
-              top: 0;
-              transform: translate3d(0px, -100%, 0px);
-              transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98)
-                0s;
-              width: 100%;
-              z-index: 1001;
-            }
-            .menuppal ul {
-              margin: 0;
-              padding: 0;
-            }
-            .menuppal ul li {
-              list-style: none;
-              text-align: center;
-              font-family: Verdadna, Arial, Helvetica;
-              // color:$nav-color-text;
-              font-size: 1.5rem;
-              line-height: 3em;
-              height: 3em;
-              color: #369;
-              text-transform: none;
-              font-weight: bold;
-            }
-            .menuppal ul li a {
-              text-decoration: none;
-              color: #369;
-            }
-            .menuppal ul li a:hover {
-              text-decoration: none;
-              color: #333;
-            }
-          }
+          //   background-color: Transparent;
+          //   p {
+          //     display: block;
+          //     font-size: calc(5vw + 5rem);
+          //   }
+          //   .hamburger {
+          //     margin: 0rem 2rem 0rem 0rem;
+          //     -webkit-transform: translate3d(0, 0, 0);
+          //     transform: translate3d(0, 0, 0);
+          //     -webkit-transition: -webkit-transform 0.5s
+          //       cubic-bezier(0.05, 1.04, 0.72, 0.98);
+          //     transition: transform 0.5s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+          //     z-index: 1002;
+          //     cursor: pointer;
+          //     -webkit-user-select: none;
+          //     -moz-user-select: none;
+          //     -ms-user-select: none;
+          //     user-select: none;
+          //   }
+          //   .hamburger.is-active {
+          //     background-color: none;
+          //   }
+          //   ._layer {
+          //     background: $corporativo;
+          //     margin: 2rem; //2rem 0rem 2rem 0rem; //calc(2vw + 0.7rem) 0rem calc(2vw + 0.7rem) 0rem;
+          //     border-radius: 2rem;
+          //     width: calc(5vw + 5rem);
+          //     height: 0.5rem; //calc(0.1vw + 0.7rem);
+          //     opacity: 1;
+          //     -webkit-transform: translate3d(0, 0, 0);
+          //     transform: translate3d(0, 0, 0);
+          //     -webkit-transition: all 0.5s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+          //     transition: all 0.5s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+          //   }
+          //   ._layer.is-active {
+          //     // margin:1rem 0rem 1rem 0rem; //calc(2vw + 0.7rem) 0rem calc(2vw + 0.7rem) 0rem;
+          //     border-radius: 2rem;
+          //     width: calc(5vw + 5rem);
+          //     height: 1rem;
+          //   }
+          //   .hamburger:hover .-top {
+          //     -webkit-transform: translateY(-100%);
+          //     -ms-transform: translateY(-100%);
+          //     transform: translateY(-100%);
+          //   }
+          //   .hamburger:hover .-bottom {
+          //     -webkit-transform: translateY(100%);
+          //     -ms-transform: translateY(100%);
+          //     transform: translateY(100%);
+          //   }
+          //   .hamburger.is-active .-top {
+          //                  height: 1.5rem;//3rem se hace flecha
+          //     -webkit-transform: translateY(200%) rotate(45deg) !important;
+          //     -ms-transform: translateY(200%) rotate(45deg) !important;
+          //     transform: translateY(200%) rotate(45deg) !important;
+          //   }
+          //   .hamburger.is-active .-bottom {
+          //             height: 1.5rem;//3 rem se hace flecha
+          //     -webkit-transform: translateY(-200%) rotate(135deg) !important;
+          //     -ms-transform: translateY(-200%) rotate(135deg) !important;
+          //     transform: translateY(-200%) rotate(135deg) !important;
+          //   }
+          //   .hamburger.is-active .-mid {
+          //     opacity: 0;
+          //   }
+
+          //   .menuppal.is_active {
+          //     transform: translate3d(0px, 0px, 0px);
+          //   }
+          //   .menuppal {
+          //     background-color: rgba(255, 255, 255, 0.95);
+          //     bottom: 0;
+          //     height: 100%;
+          //     left: 0;
+          //     overflow-y: scroll;
+          //     position: fixed;
+          //     top: 0;
+          //     transform: translate3d(0px, -100%, 0px);
+          //     transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98)
+          //       0s;
+          //     width: 100%;
+          //     z-index: 1001;
+          //   }
+          //   .menuppal ul {
+          //     margin: 0;
+          //     padding: 0;
+          //   }
+          //   .menuppal ul li {
+          //     list-style: none;
+          //     text-align: center;
+          //     font-family: Verdadna, Arial, Helvetica;
+          //     // color:$nav-color-text;
+          //     font-size: 1.5rem;
+          //     line-height: 3em;
+          //     height: 3em;
+          //     color: #369;
+          //     text-transform: none;
+          //     font-weight: bold;
+          //   }
+          //   .menuppal ul li a {
+          //     text-decoration: none;
+          //     color: #369;
+          //   }
+          //   .menuppal ul li a:hover {
+          //     text-decoration: none;
+          //     color: #333;
+          //   }
+          // }
         }
       }
       .desplegable {

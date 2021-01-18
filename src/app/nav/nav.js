@@ -54,22 +54,22 @@ class miNav extends HTMLElement {
 <div class="movil">
     <div class="imagenes">
         <div id="foto" class="foto">
-            <img src="/src/assets/images/dracula-man.jpg">
+            <!--<img src="/src/assets/images/dracula-man.jpg">-->
         </div>
         <div class="botones">
+
+        <div class="botonMenu">
+        <a id="pull" >
+          <span></span>
+        </a>
+      </div>
+
+
+
             <!-- <span id="boton1"><img src="/src/assets/images/icons/menu.png" id="pull" href="#" alt="menu"></span> -->
-            <span id="boton1">
             <!--   <p id="pull" href="#" class="botonMenu bx bx-menu" alt="menu"></p>-->
                 
   
-<div id="pull" class="hamburger">
-	<div id="topPull" class="_layer -top"></div>
-	<div id="midPpull" class="_layer -mid"></div>
-	<div id="bottomPull" class="_layer -bottom"></div>
-</div>
-
-
-            </span>
         </div>
     </div>
     
@@ -125,7 +125,10 @@ class miNav extends HTMLElement {
 	});
 });*/
 
-
+   //---menuEfecto-------------------------------------------------
+   document.querySelector("#pull").addEventListener("click", function () {
+    this.classList.toggle("active");
+  });
 
     // esto arranca automatico
     //mover elemento con el raton
@@ -155,7 +158,7 @@ function navegar(id) {
 //cerrar menu
 function seleccionado() {
   menu.slideToggle();
-  pull.classList.toggle('is-active');
+  openCloseMenu.classList.toggle('active');
   // this.classList.toggle('')
   // this.classList.toggle('false');
   // this.classList.toggle('is-active');

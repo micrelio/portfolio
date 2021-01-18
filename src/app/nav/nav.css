@@ -353,117 +353,46 @@
     background-color: transparent;
   }
   .stick .movil .imagenes .botones .botonMenu {
-    color: lightskyblue;
+    margin: 1rem;
   }
-  .stick .movil .imagenes .botones #boton1 {
-    outline: none;
+  .stick .movil .imagenes .botones .botonMenu #pull {
     cursor: pointer;
-    border: none;
-    background-color: Transparent;
+    padding: 1rem 4rem 1.5rem 0rem;
   }
-  .stick .movil .imagenes .botones #boton1 p {
-    display: block;
-    font-size: calc(5vw + 5rem);
-  }
-  .stick .movil .imagenes .botones #boton1 .hamburger {
-    margin: 0rem 2rem 0rem 0rem;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-    transition: -webkit-transform 0.5s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-    transition: transform 0.5s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-    transition: transform 0.5s cubic-bezier(0.05, 1.04, 0.72, 0.98), -webkit-transform 0.5s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-    z-index: 1002;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  .stick .movil .imagenes .botones #boton1 .hamburger.is-active {
-    background-color: none;
-  }
-  .stick .movil .imagenes .botones #boton1 ._layer {
-    background: lightskyblue;
-    margin: 2rem;
-    border-radius: 2rem;
-    width: calc(5vw + 5rem);
+  .stick .movil .imagenes .botones .botonMenu #pull span,
+  .stick .movil .imagenes .botones .botonMenu #pull span:after,
+  .stick .movil .imagenes .botones .botonMenu #pull span:before {
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+    border-radius: 1px;
     height: 0.5rem;
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    -webkit-transition: all 0.5s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-    transition: all 0.5s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    width: 4rem;
+    background: white;
+    position: absolute;
+    display: block;
+    content: "";
+    background: lightskyblue;
   }
-  .stick .movil .imagenes .botones #boton1 ._layer.is-active {
-    border-radius: 2rem;
-    width: calc(5vw + 5rem);
-    height: 1rem;
+  .stick .movil .imagenes .botones .botonMenu #pull span:before {
+    top: -1rem;
   }
-  .stick .movil .imagenes .botones #boton1 .hamburger:hover .-top {
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
+  .stick .movil .imagenes .botones .botonMenu #pull span:after {
+    bottom: -1rem;
   }
-  .stick .movil .imagenes .botones #boton1 .hamburger:hover .-bottom {
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%);
+  .stick .movil .imagenes .botones .botonMenu #pull.active span {
+    background-color: transparent;
   }
-  .stick .movil .imagenes .botones #boton1 .hamburger.is-active .-top {
-    height: 1.5rem;
-    -webkit-transform: translateY(200%) rotate(45deg) !important;
-    transform: translateY(200%) rotate(45deg) !important;
-  }
-  .stick .movil .imagenes .botones #boton1 .hamburger.is-active .-bottom {
-    height: 1.5rem;
-    -webkit-transform: translateY(-200%) rotate(135deg) !important;
-    transform: translateY(-200%) rotate(135deg) !important;
-  }
-  .stick .movil .imagenes .botones #boton1 .hamburger.is-active .-mid {
-    opacity: 0;
-  }
-  .stick .movil .imagenes .botones #boton1 .menuppal.is_active {
-    -webkit-transform: translate3d(0px, 0px, 0px);
-            transform: translate3d(0px, 0px, 0px);
-  }
-  .stick .movil .imagenes .botones #boton1 .menuppal {
-    background-color: rgba(255, 255, 255, 0.95);
-    bottom: 0;
-    height: 100%;
-    left: 0;
-    overflow-y: scroll;
-    position: fixed;
+  .stick .movil .imagenes .botones .botonMenu #pull.active span:before,
+  .stick .movil .imagenes .botones .botonMenu #pull.active span:after {
     top: 0;
-    -webkit-transform: translate3d(0px, -100%, 0px);
-            transform: translate3d(0px, -100%, 0px);
-    -webkit-transition: -webkit-transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
-    transition: -webkit-transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
-    transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
-    transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s, -webkit-transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
-    width: 100%;
-    z-index: 1001;
   }
-  .stick .movil .imagenes .botones #boton1 .menuppal ul {
-    margin: 0;
-    padding: 0;
+  .stick .movil .imagenes .botones .botonMenu #pull.active span:after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
   }
-  .stick .movil .imagenes .botones #boton1 .menuppal ul li {
-    list-style: none;
-    text-align: center;
-    font-family: Verdadna, Arial, Helvetica;
-    font-size: 1.5rem;
-    line-height: 3em;
-    height: 3em;
-    color: #369;
-    text-transform: none;
-    font-weight: bold;
-  }
-  .stick .movil .imagenes .botones #boton1 .menuppal ul li a {
-    text-decoration: none;
-    color: #369;
-  }
-  .stick .movil .imagenes .botones #boton1 .menuppal ul li a:hover {
-    text-decoration: none;
-    color: #333;
+  .stick .movil .imagenes .botones .botonMenu #pull.active span:before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
   .stick .movil .desplegable a {
     text-decoration: none;
