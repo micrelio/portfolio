@@ -6,6 +6,7 @@ class miNav extends HTMLElement {
     this.innerHTML = `
     <style>
     @import "/src/app/nav/nav.css";
+
   </style>
 <section class="social-media">
     <div class="social-links">
@@ -56,13 +57,21 @@ class miNav extends HTMLElement {
         <div id="foto" class="foto">
             <!--<img src="/src/assets/images/dracula-man.jpg">-->
         </div>
+        <div class="logotipo" >
+          <!--          <div class="dos letritas" id="dos" onclick="efectos('dos');">          -->  
+          <div class="palabras">
+          <span>M</span>
+          <span>I</span>
+          <span>C</span>
+          <span>R</span>
+          <span>O</span>
+      </div>       
+            <!-- </div>-->
+        </div>
         <div class="botones">
-
-        <div class="botonMenu">
-        <a id="pull" >
-          <span></span>
-        </a>
-      </div>
+          <div class="botonMenu">
+            <a id="pull" > <span></span></a>
+          </div>
 
 
 
@@ -101,34 +110,36 @@ class miNav extends HTMLElement {
 <!-- <audio src="../sonidos/ping.mp4" autoplay loop></audio> -->
 </section>
 
-      `;  
-      //---efecto boton menu------------------------------------------------------------------
-    // selector
-// var menu = document.querySelector('.hamburger');
+      `;
+    //---logotipo---LETRAS QUE SE MUEVEN
+    const spans = document.querySelectorAll(".palabras span");
 
-// // method
-// function toggleMenu (event) {
-//   this.classList.toggle('is-active');
-//   document.querySelector( "desplegable" ).classList.toggle("is_active");
-//   event.preventDefault();
-// }
+    spans.forEach((span, idx) => {
+      span.addEventListener("click", (e) => {
+        e.target.classList.add("active");
+      });
+      span.addEventListener("animationend", (e) => {
+        e.target.classList.remove("active");
+      });
 
-// // event
-// menu.addEventListener('click', toggleMenu, false);
+      // Initial animation
+      setTimeout(() => {
+        span.classList.add("active");
+      }, 750 * (idx + 1));
+    });
+    //---efecto boton menu------------------------------------------------------------------
 
-//Solución con jQUery
-/*$(document).ready(function(){
-	$('.hamburger').click(function() {
-		$('.hamburger').toggleClass('is-active');
-		$('.menuresponsive').toggleClass('is-active');
-		return false;
-	});
-});*/
+    // // event
+    //---menuEfecto-------------------------------------------------
+    document.querySelector("#pull").addEventListener("click", function () {
+      this.classList.toggle("active");
+      // document.getElementById("pull").style = "value: 100%";
+      console.log(this.classList.value);
+      // this.classList.toggle ("value: active"); tarjet
+            // document.getElementById("pull").style = "value: 100%";
 
-   //---menuEfecto-------------------------------------------------
-   document.querySelector("#pull").addEventListener("click", function () {
-    this.classList.toggle("active");
-  });
+     
+    });
 
     // esto arranca automatico
     //mover elemento con el raton
@@ -158,14 +169,12 @@ function navegar(id) {
 //cerrar menu
 function seleccionado() {
   menu.slideToggle();
-  openCloseMenu.classList.toggle('active');
+  pull.classList.toggle("active");
   // this.classList.toggle('')
   // this.classList.toggle('false');
   // this.classList.toggle('is-active');
   // document.querySelector( ".menuppal" ).classList.toggle("is_active");
   // event.preventDefault();
-
-
 }
 //funcion transparencia
 function mostrarValor(opacidadMenu) {
@@ -216,16 +225,9 @@ function mostrarValor(opacidadMenu) {
 document.addEventListener("click", function (e) {
   //obtiendo informacion del DOM para
   var clic = e.target.id;
-  console.log('menu', e.target.id);
-  if(clic== "pull" || clic== "topPull" || clic== "midPpull" || clic== "bottomPull") {
-    clic="cambioBotonMenu";
-
-  }
-  switch (clic) {
-    case "cambioBotonMenu" :
-      pull.classList.toggle('is-active');
-    break;
-    // case "mpull":
+  // console.log("menu", e.target.id);
+   switch (clic) {
+        // case "mpull":
     //   pull.classList.toggle('is-active');
     // break;
     case "selecEstilosDesplegar":
@@ -275,26 +277,40 @@ document.addEventListener("click", function (e) {
   //   false
   // );
 });
-function nav() {
-  console.log('1desplegable');
+// function nav() {
+  console.log("1desplegable");
+
+ 
+
+
+
   $(function () {
-    console.log('abrir');
+    // console.log("abrir");
     var pull = $("#pull");
     menu = $(".desplegable");
     menuHeight = menu.height();
     $(pull).on("click", function (e) {
-      console.log('cerrar');
+      // console.log("cerrar");
       e.preventDefault();
       menu.slideToggle();
     });
   });
+
   $(window).resize(function () {
     var w = $(window).width();
     if (w > 320 && menu.is(":hidden")) {
       menu.removeAttr("style");
     }
+    // console.log(pull.value);
+    var variable = document.getElementById("pull");
+    // console.log(variable);
+
+    if (pull.classList.value=="active" && menu.is(":hidden")) {
+      console.log('dentro');
+      pull.classList.toggle("active");
+    }
   });
-}
+// }
 //----------------
 //sonido menu
 // $(function () {
@@ -310,5 +326,3 @@ function nav() {
 //     });
 // });
 //----------------------------------------------------------
-      
-   

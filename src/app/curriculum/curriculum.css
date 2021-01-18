@@ -15,7 +15,7 @@
 
 .descripcion h1 {
   font-size: calc(3rem + 1vw);
-  color: lightskyblue;
+  color: #3c97bf;
 }
 
 p {
@@ -25,7 +25,7 @@ p {
 }
 
 a:visited {
-  color: lightskyblue;
+  color: #3c97bf;
   font-family: arial;
   text-decoration: none;
 }
@@ -64,18 +64,18 @@ a:visited {
       -ms-flex-align: center;
           align-items: center;
   color: #eeeeee;
-  border: 0.2rem solid lightskyblue;
+  border: 0.2rem solid #3c97bf;
   overflow: hidden;
   border-radius: 1rem;
   background-color: #000;
 }
 
 .datos .datosPersonales h2 {
-  color: lightskyblue;
+  color: #3c97bf;
 }
 
 .datos .datosPersonales h3 {
-  color: lightskyblue;
+  color: #3c97bf;
   -webkit-text-stroke: 0.04rem black;
   text-shadow: 0.3rem 0.3rem 0.1rem gray;
 }
@@ -127,7 +127,7 @@ a:visited {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 0.2rem solid lightskyblue;
+  border: 0.2rem solid #3c97bf;
   width: 95vw;
   background-color: black;
   border-radius: 1rem;
@@ -193,7 +193,7 @@ a:visited {
 }
 
 .datos .interes {
-  border: 0.1rem solid lightskyblue;
+  border: 0.1rem solid #3c97bf;
   width: 95vw;
   padding: 2rem;
   border-radius: 1rem;
@@ -223,7 +223,7 @@ a:visited {
   h1 {
     font-size: calc(1.5rem + 4vw);
     margin-top: 5rem;
-    color: lightskyblue;
+    color: #3c97bf;
   }
   p {
     font-size: 1.5rem;
@@ -256,7 +256,7 @@ a:visited {
             align-items: center;
     color: #eeeeee;
     padding: 3rem;
-    border: 0.1rem solid lightskyblue;
+    border: 0.1rem solid #3c97bf;
     width: 85%;
     height: auto;
     overflow: hidden;
@@ -284,7 +284,7 @@ a:visited {
     margin-top: 1.5rem;
   }
   .datos .interes {
-    border: 0.1rem solid lightskyblue;
+    border: 0.1rem solid #3c97bf;
     width: 85%;
     padding: 2rem;
     border-radius: 1rem;

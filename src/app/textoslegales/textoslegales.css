@@ -4,12 +4,12 @@
 }
 
 .legales e {
-  color: lightskyblue;
+  color: #3c97bf;
   cursor: pointer;
 }
 
 .legales a {
-  color: lightskyblue;
+  color: #3c97bf;
   text-decoration: none;
 }
 
@@ -28,6 +28,6 @@
 }
 
 .legales ul li a > p {
-  color: lightskyblue;
+  color: #3c97bf;
 }
 /*# sourceMappingURL=textosLegales.css.map */

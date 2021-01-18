@@ -11,7 +11,7 @@
   display: inline-block;
   bottom: 0;
   width: 100%;
-  border-top: 0.1rem solid lightskyblue;
+  border-top: 0.1rem solid #3c97bf;
   background-color: black;
 }
 
@@ -141,7 +141,7 @@
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  border-top: 0.1rem solid lightskyblue;
+  border-top: 0.1rem solid #3c97bf;
 }
 
 * footer .redes .propiedad {
@@ -181,7 +181,7 @@
   width: 100%;
   color: #fff;
   padding: 2rem;
-  border-bottom: 0.1rem solid lightskyblue;
+  border-bottom: 0.1rem solid #3c97bf;
 }
 
 * footer .redes .politicas {
@@ -217,7 +217,7 @@
   footer .footerContainer .direccion h2,
   footer .footerContainer .paginas h2 {
     font-size: 4rem;
-    color: lightskyblue;
+    color: #3c97bf;
     margin-bottom: 1.5rem;
   }
   footer .footerContainer .contacto p,

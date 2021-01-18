@@ -266,7 +266,7 @@ class miDisenos extends HTMLElement {
   </section>
     `;
   
-    //---once-----------LETRAS QUE SE MUEVEN
+    //---dos-----------LETRAS QUE SE MUEVEN
     const spans = document.querySelectorAll(".word span");
 
     spans.forEach((span, idx) => {

@@ -2,9 +2,11 @@
 /* -----------------------------------------
          social media menu
 ------------------------------------------ */
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700");
+@import url("https://fonts.googleapis.com/css?family=Anton|Roboto");
 .social-media {
   padding: 0.1rem 1rem 0.1rem 1rem;
-  background-color: lightskyblue;
+  background-color: #3c97bf;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,7 +101,7 @@
   height: 100%;
   margin-left: calc(10px + 1vw);
   border-radius: 75%;
-  border: 0.05rem solid lightskyblue;
+  border: 0.05rem solid #3c97bf;
   width: calc(3vw + 3rem);
 }
 
@@ -157,14 +159,14 @@
           justify-content: center;
   cursor: pointer;
   margin: 0rem 0rem 0rem 0rem;
-  color: lightskyblue;
+  color: #3c97bf;
   padding: 1.6rem 0.5rem 1.6rem 0.5rem;
   font-size: 1.6rem;
   font-weight: bold;
 }
 
 .stick .nav .navbar .menu .links .enlace p {
-  color: lightskyblue;
+  color: #3c97bf;
 }
 
 .stick .nav .navbar .menu .links .irInicio {
@@ -304,7 +306,7 @@
     margin: 0rem 0rem 5rem 0rem;
   }
   .stick .movil {
-    border-bottom: 0.05rem solid lightskyblue;
+    border-bottom: 0.05rem solid #3c97bf;
     display: block;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -342,10 +344,248 @@
   .stick .movil .imagenes .foto img {
     display: block;
     border-radius: 75%;
-    border: 3px double lightskyblue;
+    border: 3px double #3c97bf;
     width: calc(4vw + 5rem);
     -webkit-box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
             box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+  }
+  .stick .movil .imagenes .logotipo {
+    font-family: "Amatic SC", sans-serif;
+    /* Other styles */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #3c97bf;
+  }
+  .stick .movil .imagenes .logotipo .palabras {
+    font-family: "Anton", sans-serif;
+    font-family: "Amatic SC", sans-serif;
+    -webkit-perspective: 100rem;
+            perspective: 100rem;
+  }
+  .stick .movil .imagenes .logotipo .palabras span {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 5rem;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    line-height: 0.8;
+  }
+  .stick .movil .imagenes .logotipo .palabras span:nth-child(1).active {
+    -webkit-animation: balance 1.5s ease-out;
+            animation: balance 1.5s ease-out;
+    -webkit-transform-origin: bottom left;
+            transform-origin: bottom left;
+  }
+  @-webkit-keyframes balance {
+    0%,
+    100% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    30%,
+    60% {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+    }
+  }
+  @keyframes balance {
+    0%,
+    100% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    30%,
+    60% {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+    }
+  }
+  .stick .movil .imagenes .logotipo .palabras span:nth-child(2).active {
+    -webkit-animation: shrinkjump 1s ease-in-out;
+            animation: shrinkjump 1s ease-in-out;
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+  }
+  .stick .movil .imagenes .logotipo .fixed {
+    position: fixed;
+    top: 4rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .stick .movil .imagenes .logotipo .logotipo {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    letter-spacing: 0.1rem;
+  }
+  .stick .movil .imagenes .logotipo .logotipo i {
+    color: red;
+  }
+  .stick .movil .imagenes .logotipo .logotipo a {
+    color: #3c97bf;
+    text-decoration: none;
+  }
+  @-webkit-keyframes shrinkjump {
+    10%,
+    35% {
+      -webkit-transform: scale(2, 0.2) translate(0, 0);
+              transform: scale(2, 0.2) translate(0, 0);
+    }
+    45%,
+    50% {
+      -webkit-transform: scale(1) translate(0, -15rem);
+              transform: scale(1) translate(0, -15rem);
+    }
+    80% {
+      -webkit-transform: scale(1) translate(0, 0);
+              transform: scale(1) translate(0, 0);
+    }
+  }
+  @keyframes shrinkjump {
+    10%,
+    35% {
+      -webkit-transform: scale(2, 0.2) translate(0, 0);
+              transform: scale(2, 0.2) translate(0, 0);
+    }
+    45%,
+    50% {
+      -webkit-transform: scale(1) translate(0, -15rem);
+              transform: scale(1) translate(0, -15rem);
+    }
+    80% {
+      -webkit-transform: scale(1) translate(0, 0);
+              transform: scale(1) translate(0, 0);
+    }
+  }
+  .stick .movil .imagenes .logotipo .palabras span:nth-child(3).active {
+    -webkit-animation: falling 2s ease-out;
+            animation: falling 2s ease-out;
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+  }
+  @-webkit-keyframes falling {
+    12% {
+      -webkit-transform: rotateX(240deg);
+              transform: rotateX(240deg);
+    }
+    24% {
+      -webkit-transform: rotateX(150deg);
+              transform: rotateX(150deg);
+    }
+    36% {
+      -webkit-transform: rotateX(200deg);
+              transform: rotateX(200deg);
+    }
+    48% {
+      -webkit-transform: rotateX(175deg);
+              transform: rotateX(175deg);
+    }
+    60%,
+    85% {
+      -webkit-transform: rotateX(180deg);
+              transform: rotateX(180deg);
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+    }
+  }
+  @keyframes falling {
+    12% {
+      -webkit-transform: rotateX(240deg);
+              transform: rotateX(240deg);
+    }
+    24% {
+      -webkit-transform: rotateX(150deg);
+              transform: rotateX(150deg);
+    }
+    36% {
+      -webkit-transform: rotateX(200deg);
+              transform: rotateX(200deg);
+    }
+    48% {
+      -webkit-transform: rotateX(175deg);
+              transform: rotateX(175deg);
+    }
+    60%,
+    85% {
+      -webkit-transform: rotateX(180deg);
+              transform: rotateX(180deg);
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+    }
+  }
+  .stick .movil .imagenes .logotipo .palabras span:nth-child(4).active {
+    -webkit-animation: rotate 1s ease-out;
+            animation: rotate 1s ease-out;
+  }
+  @-webkit-keyframes rotate {
+    20%,
+    80% {
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg);
+    }
+    100% {
+      -webkit-transform: rotateY(360deg);
+              transform: rotateY(360deg);
+    }
+  }
+  @keyframes rotate {
+    20%,
+    80% {
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg);
+    }
+    100% {
+      -webkit-transform: rotateY(360deg);
+              transform: rotateY(360deg);
+    }
+  }
+  .stick .movil .imagenes .logotipo .palabras span:nth-child(5).active {
+    -webkit-animation: toplong 1.5s linear;
+            animation: toplong 1.5s linear;
+  }
+  @-webkit-keyframes toplong {
+    10%,
+    40% {
+      -webkit-transform: translateY(-48vh) scaleY(1);
+              transform: translateY(-48vh) scaleY(1);
+    }
+    90% {
+      -webkit-transform: translateY(-48vh) scaleY(4);
+              transform: translateY(-48vh) scaleY(4);
+    }
+  }
+  @keyframes toplong {
+    10%,
+    40% {
+      -webkit-transform: translateY(-48vh) scaleY(1);
+              transform: translateY(-48vh) scaleY(1);
+    }
+    90% {
+      -webkit-transform: translateY(-48vh) scaleY(4);
+              transform: translateY(-48vh) scaleY(4);
+    }
   }
   .stick .movil .imagenes .botones {
     border: 0;
@@ -364,14 +604,14 @@
   .stick .movil .imagenes .botones .botonMenu #pull span:before {
     -webkit-transition: all 500ms ease-in-out;
     transition: all 500ms ease-in-out;
-    border-radius: 1px;
+    border-radius: 0.1rem;
     height: 0.5rem;
     width: 4rem;
     background: white;
     position: absolute;
     display: block;
     content: "";
-    background: lightskyblue;
+    background: #3c97bf;
   }
   .stick .movil .imagenes .botones .botonMenu #pull span:before {
     top: -1rem;
@@ -423,17 +663,17 @@
     transform: rotate(360deg);
   }
   .stick .movil .desplegable .brushMode p {
-    color: lightskyblue;
+    color: #3c97bf;
     font-size: 5rem;
   }
   .stick .movil .desplegable .brushMode .noche {
     display: none;
-    color: lightskyblue;
+    color: #3c97bf;
     font-size: 5rem;
   }
   .stick .movil .desplegable .brushMode .dia {
     display: block;
-    color: lightskyblue;
+    color: #3c97bf;
     font-size: 5rem;
   }
   .stick .movil .desplegable .brushMode .brushEstilos:hover {
@@ -455,12 +695,12 @@
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
     font-size: 5rem;
-    color: lightskyblue;
+    color: #3c97bf;
   }
   .stick .movil .desplegable .brushMode .selecEstilosPlegar {
     -webkit-animation-name: none;
             animation-name: none;
-    color: lightskyblue;
+    color: #3c97bf;
   }
   .stick .movil .desplegable .brushMode img {
     position: absolute;
@@ -478,10 +718,10 @@
     width: 100%;
     margin: 1rem;
     border: 0;
-    color: lightskyblue;
+    color: #3c97bf;
     cursor: pointer;
     font-size: 3rem;
-    font-color: lightskyblue;
+    font-color: #3c97bf;
   }
 }
 
