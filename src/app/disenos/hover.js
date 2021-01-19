@@ -225,6 +225,13 @@ class miHover extends HTMLElement {
         </div>
     </div>
 
+    <div class="redondoHover hover">
+      <figure class="snip1566"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample19.jpg" alt="sq-sample19" />
+        <figcaption><i class="ion-android-star-outline"></i></figcaption>
+        <a href="#"></a>
+      </figure>
+    </div>
+
     <div class="cargando hover">
         <div id="deadline">
         <svg preserveAspectRatio="none" id="line" viewBox="0 0 581 158" enable-background="new 0 0 581 158">
@@ -578,9 +585,12 @@ class miHover extends HTMLElement {
 
   </div>
   </div>
+
+
+
+  
 </section>
     `;
-
     //---menuEfecto-------------------------------------------------
     document.querySelector("#nav-button").addEventListener("click", function () {
       this.classList.toggle("active");
@@ -682,11 +692,16 @@ class miHover extends HTMLElement {
       }
       
       VenetianBlinds(options);
+
+
+
+    
     
   }
 }
 
 customElements.define("mi-hover", miHover);
+
 //---cargando---------------------------------------------------------------------
 // Init
 var $ = jQuery;

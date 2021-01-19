@@ -6,6 +6,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,900);
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|Ruthie);
 @import url("https://fonts.googleapis.com/css?family=Raleway:200");
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 .hover {
   margin: 1rem;
   width: 30rem;
@@ -650,7 +651,6 @@
 
 .cajonHover .entradaLateral .box {
   width: 25rem;
-  height: 50rem;
   margin-left: -25rem;
   -webkit-transition: all 0.8s ease;
   transition: all 0.8s ease;
@@ -3516,5 +3516,125 @@
   100% {
     top: 0%;
   }
+}
+
+.redondoHover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.redondoHover .snip1566 {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+  max-width: 190px;
+  width: 100%;
+  color: #bbb;
+  font-size: 16px;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.redondoHover .snip1566 *,
+.redondoHover .snip1566:before,
+.redondoHover .snip1566:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.redondoHover .snip1566:before,
+.redondoHover .snip1566:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: -1;
+  border: 2px solid #bbb;
+  border-color: transparent #bbb;
+}
+
+.redondoHover .snip1566 img {
+  max-width: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  vertical-align: top;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.redondoHover .snip1566 figcaption {
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 50%;
+}
+
+.redondoHover .snip1566 i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 4em;
+  z-index: 1;
+}
+
+.redondoHover .snip1566 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.redondoHover .snip1566:hover figcaption,
+.redondoHover .snip1566.hover figcaption {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.redondoHover .snip1566:hover:before,
+.redondoHover .snip1566.hover:before,
+.redondoHover .snip1566:hover:after,
+.redondoHover .snip1566.hover:after {
+  border-width: 10px;
+}
+
+.redondoHover .snip1566:hover:before,
+.redondoHover .snip1566.hover:before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.redondoHover .snip1566:hover:after,
+.redondoHover .snip1566.hover:after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 /*# sourceMappingURL=hover.css.map */

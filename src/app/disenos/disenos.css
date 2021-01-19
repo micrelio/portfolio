@@ -1566,6 +1566,60 @@
   background: linear-gradient(to bottom, #ece4d9 0%, #e9dfd1 100%);
 }
 
+@font-face {
+  .letras {
+    font-family: "Monoton";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Monoton"), local("Monoton-Regular"), url(http://themes.googleusercontent.com/static/fonts/monoton/v4/AKI-lyzyNHXByGHeOcds_w.woff) format("woff");
+  }
+}
+
+@font-face {
+  .letras {
+    font-family: "Iceland";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Iceland"), local("Iceland-Regular"), url(http://themes.googleusercontent.com/static/fonts/iceland/v3/F6LYTZLHrG9BNYXRjU7RSw.woff) format("woff");
+  }
+}
+
+@font-face {
+  .letras {
+    font-family: "Pacifico";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Pacifico Regular"), local("Pacifico-Regular"), url(http://themes.googleusercontent.com/static/fonts/pacifico/v5/yunJt0R8tCvMyj_V4xSjafesZW2xOQ-xsNqO47m55DA.woff) format("woff");
+  }
+}
+
+@font-face {
+  .letras {
+    font-family: "PressStart";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Press Start 2P"), local("PressStart2P-Regular"), url(http://themes.googleusercontent.com/static/fonts/pressstart2p/v2/8Lg6LX8-ntOHUQnvQ0E7o3dD2UuwsmbX3BOp4SL_VwM.woff) format("woff");
+  }
+}
+
+@font-face {
+  .letras {
+    font-family: "Audiowide";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Audiowide"), local("Audiowide-Regular"), url(http://themes.googleusercontent.com/static/fonts/audiowide/v2/8XtYtNKEyyZh481XVWfVOj8E0i7KZn-EPnyo3HZu7kw.woff) format("woff");
+  }
+}
+
+@font-face {
+  .letras {
+    font-family: "Vampiro One";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Vampiro One"), local("VampiroOne-Regular"), url(http://themes.googleusercontent.com/static/fonts/vampiroone/v3/Ho2Xld8UbQyBA8XLxF1_NYbN6UDyHWBl620a-IRfuBk.woff) format("woff");
+  }
+}
+
 .letras .xxl {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1587,60 +1641,6 @@
   /*glow for webkit*/
   /*glow for mozilla*/
   /*glow*/
-}
-
-@font-face {
-  .letras .xxl {
-    font-family: "Monoton";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Monoton"), local("Monoton-Regular"), url(http://themes.googleusercontent.com/static/fonts/monoton/v4/AKI-lyzyNHXByGHeOcds_w.woff) format("woff");
-  }
-}
-
-@font-face {
-  .letras .xxl {
-    font-family: "Iceland";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Iceland"), local("Iceland-Regular"), url(http://themes.googleusercontent.com/static/fonts/iceland/v3/F6LYTZLHrG9BNYXRjU7RSw.woff) format("woff");
-  }
-}
-
-@font-face {
-  .letras .xxl {
-    font-family: "Pacifico";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Pacifico Regular"), local("Pacifico-Regular"), url(http://themes.googleusercontent.com/static/fonts/pacifico/v5/yunJt0R8tCvMyj_V4xSjafesZW2xOQ-xsNqO47m55DA.woff) format("woff");
-  }
-}
-
-@font-face {
-  .letras .xxl {
-    font-family: "PressStart";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Press Start 2P"), local("PressStart2P-Regular"), url(http://themes.googleusercontent.com/static/fonts/pressstart2p/v2/8Lg6LX8-ntOHUQnvQ0E7o3dD2UuwsmbX3BOp4SL_VwM.woff) format("woff");
-  }
-}
-
-@font-face {
-  .letras .xxl {
-    font-family: "Audiowide";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Audiowide"), local("Audiowide-Regular"), url(http://themes.googleusercontent.com/static/fonts/audiowide/v2/8XtYtNKEyyZh481XVWfVOj8E0i7KZn-EPnyo3HZu7kw.woff) format("woff");
-  }
-}
-
-@font-face {
-  .letras .xxl {
-    font-family: "Vampiro One";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Vampiro One"), local("VampiroOne-Regular"), url(http://themes.googleusercontent.com/static/fonts/vampiroone/v3/Ho2Xld8UbQyBA8XLxF1_NYbN6UDyHWBl620a-IRfuBk.woff) format("woff");
-  }
 }
 
 .letras .xxl p {
@@ -2157,5 +2157,177 @@
   position: fixed;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+@font-face {
+  font-family: "Bad Script";
+  src: url(../../assets/fuentes/letrasEfectos/BadScript-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Sriracha";
+  src: url(../../assets/fuentes/letrasEfectos/Sriracha-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Kumar One outline";
+  src: url(../../assets/fuentes/letrasEfectos/KumarOneOutline-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Gruppo";
+  src: url(../../assets/fuentes/letrasEfectos/Gruppo-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Yellowtail";
+  src: url(../../assets/fuentes/letrasEfectos/Yellowtail-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Londrina";
+  src: url(../../assets/fuentes/letrasEfectos/Yellowtail-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Londrina Outline";
+  src: url(../../assets/fuentes/letrasEfectos/LondrinaOutline-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Monoton";
+  src: url(../../assets/fuentes/letrasEfectos/Monoton-Regular.ttf) format("truetype");
+}
+
+.fluorescentes {
+  margin: 0;
+  background: #090000;
+  font-size: 2rem;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.fluorescentes body {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1em;
+  -ms-grid-columns: (minmax(0, 12ch))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(0, 12ch));
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fluorescentes x-sign {
+  --interval: 1s;
+  display: block;
+  text-shadow: 0 0 10px var(--color1), 0 0 20px var(--color2), 0 0 40px var(--color3), 0 0 80px var(--color4);
+  will-change: filter, color;
+  -webkit-filter: saturate(60%);
+          filter: saturate(60%);
+  -webkit-animation: flicker steps(100) var(--interval) 1s infinite;
+          animation: flicker steps(100) var(--interval) 1s infinite;
+}
+
+.fluorescentes x-sign:nth-of-type(1) {
+  color: yellow;
+  --color1: goldenrod;
+  --color2: orangered;
+  --color3: mediumblue;
+  --color4: purple;
+  font-family: Gruppo;
+}
+
+.fluorescentes x-sign:nth-of-type(2) {
+  color: lightpink;
+  --color1: pink;
+  --color2: orangered;
+  --color3: red;
+  --color4: magenta;
+  font-family: Bad Script;
+}
+
+.fluorescentes x-sign:nth-of-type(3) {
+  color: lightyellow;
+  --color1: yellow;
+  --color2: lime;
+  --color3: green;
+  --color4: mediumblue;
+  font-family: Kumar One Outline;
+}
+
+.fluorescentes x-sign:nth-of-type(4) {
+  color: lightyellow;
+  --color1: gold;
+  --color2: firebrick;
+  --color3: pink;
+  --color4: red;
+  font-family: Londrina Outline;
+}
+
+.fluorescentes x-sign:nth-of-type(5) {
+  color: azure;
+  --color1: azure;
+  --color2: aqua;
+  --color3: dodgerblue;
+  --color4: blue;
+  font-family: Sriracha;
+}
+
+.fluorescentes x-sign:nth-of-type(6) {
+  color: tomato;
+  --color1: orangered;
+  --color2: firebrick;
+  --color3: maroon;
+  --color4: darkred;
+  font-family: Yellowtail;
+}
+
+.fluorescentes x-sign:nth-of-type(7) {
+  color: lightyellow;
+  --color1: yellow;
+  --color2: orange;
+  --color3: brown;
+  --color4: purple;
+  font-family: Bad Script;
+}
+
+.fluorescentes x-sign:nth-of-type(8) {
+  color: yellow;
+  --color1: yellow;
+  --color2: lime;
+  --color3: green;
+  --color4: darkgreen;
+  font-family: Monoton;
+}
+
+.fluorescentes x-sign:nth-of-type(9) {
+  color: lightyellow;
+  --color1: yellow;
+  --color2: gold;
+  --color3: orange;
+  --color4: darkred;
+  font-family: Sriracha;
+}
+
+@-webkit-keyframes flicker {
+  50% {
+    color: white;
+    -webkit-filter: saturate(200%) hue-rotate(20deg);
+            filter: saturate(200%) hue-rotate(20deg);
+  }
+}
+
+@keyframes flicker {
+  50% {
+    color: white;
+    -webkit-filter: saturate(200%) hue-rotate(20deg);
+            filter: saturate(200%) hue-rotate(20deg);
+  }
 }
 /*# sourceMappingURL=disenos.css.map */

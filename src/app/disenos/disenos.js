@@ -165,6 +165,38 @@ class miDisenos extends HTMLElement {
     </svg>
   </div>
 
+
+  
+  <div class="fluorescentes letritas">
+  <x-sign>
+  OPEN
+</x-sign>
+<x-sign>
+  Come back soon
+</x-sign>
+<x-sign>
+  PBR<br>in cans
+</x-sign>
+<x-sign>
+  REAL LIVE<br>Hot wings
+</x-sign>
+<x-sign>
+  <small>GARDEN PARK</small><br>MOTEL
+</x-sign>
+<x-sign>
+  Restrooms
+  <br><small>Yes&mdash;they are bad</small>
+</x-sign>
+<x-sign>
+  FREE RADIOS
+</x-sign>
+<x-sign>
+  WHO YOU GONNA CALL?
+</x-sign>
+<x-sign>
+  Karaoke Inside
+</x-sign>
+  </div>
     <div class="k letritas">
         <div>
             Micro
@@ -265,7 +297,7 @@ class miDisenos extends HTMLElement {
     </div>
   </section>
     `;
-  
+
     //---dos-----------LETRAS QUE SE MUEVEN
     const spans = document.querySelectorAll(".word span");
 
@@ -359,7 +391,7 @@ function efectos(id) {
       $marcha.classList.toggle("diezEfectos");
       break;
     case "once":
-      console.log('llega')
+      console.log("llega");
       $marcha = document.getElementById("once");
       $marcha.classList.toggle("onceEfectos");
       break;
