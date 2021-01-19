@@ -24,15 +24,15 @@
       position: relative;
       left: 50%;
       top: 50%;
-      padding: 10px 40px 15px 0px;
+      padding: 1rem 40px 15px 0px;
     }
 
     #nav-button span,
     #nav-button span:after,
     #nav-button span:before {
       transition: all 500ms ease-in-out;
-      border-radius: 1px;
-      height: 5px;
+      border-radius: 0.1rem;
+      height: 0.5rem;
       width: 40px;
       background: white;
       position: absolute;
@@ -3419,15 +3419,15 @@
     background: repeating-linear-gradient(
           -45deg,
           #c1ab8e,
-          #c1ab8e 10px,
-          #e74c3c 10px,
+          #c1ab8e 1rem,
+          #e74c3c 1rem,
           #e74c3c 20px,
           #c1ab8e 20px,
           #c1ab8e 30px,
           #1e90ff 30px,
           #1e90ff 40px
         )
-        0 0/100% 5px no-repeat,
+        0 0/100% 0.5rem no-repeat,
       #c1ab8e;
     z-index: 4;
     -webkit-clip-path: polygon(5% 40%, 50% 100%, 95% 40%, 100% 0, 0 0);
@@ -3450,20 +3450,20 @@
     background: repeating-linear-gradient(
           -45deg,
           #cebda6,
-          #cebda6 10px,
-          #e74c3c 10px,
+          #cebda6 1rem,
+          #e74c3c 1rem,
           #e74c3c 20px,
           #cebda6 20px,
           #cebda6 30px,
           #1e90ff 30px,
           #1e90ff 40px
         )
-        0 100%/100% 5px no-repeat,
+        0 100%/100% 0.5rem no-repeat,
       repeating-linear-gradient(
           -45deg,
           #cebda6,
-          #cebda6 10px,
-          #e74c3c 10px,
+          #cebda6 1rem,
+          #e74c3c 1rem,
           #e74c3c 20px,
           #cebda6 20px,
           #cebda6 30px,
@@ -3474,8 +3474,8 @@
       repeating-linear-gradient(
           -45deg,
           #cebda6,
-          #cebda6 10px,
-          #e74c3c 10px,
+          #cebda6 1rem,
+          #e74c3c 1rem,
           #e74c3c 20px,
           #cebda6 20px,
           #cebda6 30px,
@@ -3500,15 +3500,15 @@
     background: repeating-linear-gradient(
           -45deg,
           #c7b49a,
-          #c7b49a 10px,
-          #e74c3c 10px,
+          #c7b49a 1rem,
+          #e74c3c 1rem,
           #e74c3c 20px,
           #c7b49a 20px,
           #c7b49a 30px,
           #1e90ff 30px,
           #1e90ff 40px
         )
-        0 100%/100% 5px no-repeat,
+        0 100%/100% 0.5rem no-repeat,
       #c7b49a;
     content: "";
     position: absolute;
@@ -3548,7 +3548,7 @@
     -webkit-backface-visibility: visible;
     backface-visibility: visible;
     z-index: 2;
-    border-top: 1px solid #eee;
+    border-top: 0.1rem solid #eee;
   }
   .letter__content:nth-child(3) {
     -webkit-backface-visibility: hidden;
@@ -3955,9 +3955,9 @@
     // position: absolute;
     top: 10%;
     left: 40%;
-    width: 300px;
-    height: 500px;
-    perspective: 900px;
+    width: 30rem;
+    height: 50rem;
+    perspective: 90rem;
   }
 
   .container {
@@ -3967,8 +3967,8 @@
     height: 100%;
     transition: 0.5s all ease;
     transform: rotateX(60deg) scale(0.7);
-    perspective: 900px;
-    box-shadow: 0px 20px 50px #555;
+    perspective: 90rem;
+    box-shadow: 0rem 2rem 5rem #555;
     animation: entry 1s linear 1;
   }
 
@@ -3979,12 +3979,12 @@
     height: 100%;
     background: linear-gradient(to bottom, #eba65b 30%, #d99267 100%);
     z-index: 300;
-    box-shadow: 0px 20px 100px #555;
+    box-shadow: 0rem 2rem 10rem #555;
   }
 
   #c1 {
     background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
-    box-shadow: 0px 20px 100px #555;
+    box-shadow: 0rem 2rem 10rem #555;
     left: 100%;
     z-index: 0;
   }
@@ -3993,7 +3993,7 @@
     left: -100%;
     z-index: 0;
     background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
-    box-shadow: 0px 20px 100px #555;
+    box-shadow: 0rem 2rem 10rem #555;
   }
 
   .container:hover {
@@ -4038,9 +4038,9 @@
   }
 
   .sun1 {
-    width: 50px;
-    height: 50px;
-    box-shadow: 0px 0px 10px #fff;
+    width: 5rem;
+    height: 5rem;
+    box-shadow: 0rem 0rem 1rem #fff;
   }
 
   .st4 {
@@ -4127,9 +4127,9 @@
 
   h3 {
     text-align: center;
-    text-shadow: 0px 0px 10px #eee;
+    text-shadow: 0rem 0rem 1rem #eee;
     color: #eee;
-    letter-spacing: 2px;
+    letter-spacing: 0.2rem;
   }
 
   h4 {
@@ -4137,7 +4137,7 @@
     position: absolute;
     top: 30%;
     left: 30%;
-    letter-spacing: 2px;
+    letter-spacing: 0.2rem;
   }
 
   h1 {
@@ -4145,16 +4145,16 @@
     position: fixed;
     top: 0%;
     left: 30%;
-    letter-spacing: 2px;
+    letter-spacing: 0.2rem;
   }
 
   p {
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #fff;
-    padding: 0px 20px 20px 20px;
+    padding: 0rem 2rem 2rem 2rem;
     line-height: 150%;
     text-align: center;
-    letter-spacing: 1px;
+    letter-spacing: 0.1rem;
   }
 
   .page {
@@ -4226,8 +4226,8 @@
   .snip1566 {
     position: relative;
     display: inline-block;
-    margin: 20px;
-    max-width: 190px;
+    margin: 2rem;
+    max-width: 19rem;
     width: 100%;
     color: #bbb;
     font-size: 16px;
@@ -4252,12 +4252,12 @@
     border-radius: 50%;
     content: "";
     position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
+    top: 0rem;
+    bottom: 0rem;
+    left: 0rem;
+    right: 0rem;
     z-index: -1;
-    border: 2px solid #bbb;
+    border: 0.2rem solid #bbb;
     border-color: transparent #bbb;
   }
 
@@ -4266,15 +4266,15 @@
     backface-visibility: hidden;
     vertical-align: top;
     border-radius: 50%;
-    padding: 10px;
+    padding: 1rem;
   }
 
   .snip1566 figcaption {
     position: absolute;
-    top: 5px;
-    bottom: 5px;
-    left: 5px;
-    right: 5px;
+    top: 0.5rem;
+    bottom: 0.5rem;
+    left: 0.5rem;
+    right: 0.5rem;
     opacity: 0;
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 50%;
@@ -4286,7 +4286,7 @@
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    font-size: 4em;
+    font-size: 5rem;
     z-index: 1;
   }
 
@@ -4310,7 +4310,7 @@
   .snip1566.hover:before,
   .snip1566:hover:after,
   .snip1566.hover:after {
-    border-width: 10px;
+    border-width: 1rem;
   }
 
   .snip1566:hover:before,
@@ -4323,5 +4323,263 @@
   .snip1566.hover:after {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
+  }
+}
+
+
+
+//---slider-------------------------------------
+.slider{
+  // * {
+  //   box-sizing: border-box;
+  //   margin: 0;
+  //   padding: 0;
+  // }
+  
+  *:focus {
+    outline: 0;
+  }
+  
+  // html {
+  //   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  // }
+  
+  /* Slider */
+  .ctn-slider {
+    // margin-bottom: 100vh;
+  }
+  
+  .ctn-slider .slider {
+    
+    backface-visibility: hidden; /* Se coloca para que no se dañe lo del attachment fixed en pantallas mas pequeñas */
+    cursor: pointer; /* Se deja de primero el pointer para explorer y en los demas navegadores por cascada lo sobre-escribe */
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    // left: 0;
+    overflow: hidden;
+    // position: absolute;
+    // top: 0;	
+    width: 100%;
+    z-index: 600;
+  }
+  
+  .ctn-slider .slider:active {
+    cursor: -webkit-grabbing;
+    cursor: -moz-grabbing;
+  }
+  
+  .ctn-slider .slider .slider-inner {
+    display: table;
+    // left: 0;
+    position: relative;
+    // top: 0;
+    transition: 1s ease;
+  }
+  
+  .ctn-slider .slider .section-slider {
+    float: left;
+  }
+  
+  .ctn-slider .slider .section-slider .img-slider:before {
+    background-attachment: fixed;
+    background-image: url('https://grupoamsi.com/Test-Grupo-Amsi/Test-Grupo-Amsi/img/imgs-general/sliders/malla-slider/capa.png');
+    content: '';
+    // height: 100vh;
+    // left: 0;
+    position: absolute;
+    // top: 0;
+    width: 100%;
+    
+  }
+  
+  .ctn-slider .slider .section-slider .img-slider {
+    align-items: center;
+    background: #202020 center center / cover no-repeat fixed;
+    display: flex;
+    filter: grayscale(20%);
+    height: 100vh;
+    justify-content: center;
+    // position: relative;
+    width: 100%;
+  }
+  
+  /* Imágenes slider inicio */
+  .ctn-slider .slider .section-slider .slider-one {
+    background-image: url('https://grupoamsi.com/Test-Grupo-Amsi/Test-Grupo-Amsi/img/imgs-general/sliders/slider-inicio/inicio-aplicaciones-web.jpg');
+  }
+  
+  .ctn-slider .slider .section-slider .slider-two {
+    background-image: url('https://grupoamsi.com/Test-Grupo-Amsi/Test-Grupo-Amsi/img/imgs-general/sliders/slider-inicio/inicio-escritorio.jpg');
+  }
+  
+  .ctn-slider .slider .section-slider .slider-three {
+    background-image: url('https://grupoamsi.com/Test-Grupo-Amsi/Test-Grupo-Amsi/img/imgs-general/sliders/slider-inicio/inicio-grupo-de-trabajo.jpg');
+  }
+  
+  .ctn-slider .slider .section-slider .slider-four {
+    background-image: url('https://grupoamsi.com/Test-Grupo-Amsi/Test-Grupo-Amsi/img/imgs-general/sliders/slider-inicio/inicio-ideas.jpg');
+  }
+  
+  .ctn-slider .slider .section-slider .slider-five {
+    background-image: url('https://grupoamsi.com/Test-Grupo-Amsi/Test-Grupo-Amsi/img/imgs-general/sliders/slider-inicio/inicio-servidores.jpg');
+  }
+  
+  /* Titulos slider */
+  .ctn-slider .slider .section-slider .title-slider {
+    color: #ffffff;
+    font: normal 4em 'Dancing Script', sans-serif;
+    position: relative;
+    text-align: center;
+    text-shadow: 0.1rem 0.1rem 1rem #000000;
+    top: 1.5rem;
+    user-select: none;
+  }
+  
+  /* Flechas del slider */
+  .ctn-slider .slider-nav .arrows {
+
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    cursor: pointer;
+    display: none;
+    padding: 1em;
+    position: absolute;
+    text-shadow: 0.1rem 0.1rem 0.5rem #000000;
+    text-align: center;
+    // top: 50%;
+    // height: 100vh;
+    // margin-bottom: 500vh;
+    // background-color: #1e90ff;
+    transition: 0.3s ease all;
+    z-index: 600;
+    
+  }
+  
+  /* Flechas izquierda del slider */
+  .ctn-slider .slider-nav .prev {
+    border-radius: 50% 0 0 50%;
+    left: 1rem;
+  }
+  
+  /* Flechas derecha del slider */
+  .ctn-slider .slider-nav .next {
+    border-radius: 0 50% 50% 0;
+    right: 1rem;
+  }
+  
+  /* Efecto cuando le dan click a las flechas del slider */
+  .ctn-slider .slider-nav .prev:active {
+    transform: translateX(-5px);
+  }
+  
+  .ctn-slider .slider-nav .next:active {
+    transform: translateX(5px);
+  }
+  
+  /* Flecha de ir a la siguiente sección */
+  .ctn-slider .move-slider {
+    animation: jump-arrow 2.5s infinite;
+    bottom: 2%;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 2rem;
+    left: 0;
+    // position: absolute;
+    text-align: center;
+    text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.5);
+    width: 100%;
+    z-index: 600;
+  }
+  
+  .ctn-slider .move-slider .arrow-down-slider {
+    cursor: pointer;
+  }
+  
+  /* Efecto hover flecha de ir a la siguiente sección */
+  .ctn-slider .move-slider .arrow-down-slider:hover,
+  .ctn-slider .move-slider .arrow-down-slider:focus,
+  .ctn-slider .move-slider .arrow-down-slider:active {
+    color: #ffffff;
+  }
+  
+  /* Animación de las flechas que saltan para señalar a la siguiente sección */
+  @keyframes jump-arrow {
+    0%,
+    20%,
+    55%,
+    80%,
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  
+    40% {
+      transform: translate3d(0, -15px, 0);
+    }
+  
+    70% {
+      transform: translate3d(0, -10px, 0);
+    }
+  
+    90% {
+      transform: translate3d(0, -5px, 0);
+    }
+  }
+  
+  .wallpaper {
+    // background: url('https://images.pexels.com/photos/745407/pexels-photo-745407.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') #202020 center center / cover no-repeat fixed;
+    // height: 100vh;
+    // width: 100%;
+  }
+  
+  /* Responsive max-width and min-width */
+  /* Responsive flechas y título del slider */
+  @media only screen and (min-width: 761px) and (max-width: 960px) {
+    /* Títulos del slider */
+    .ctn-slider .slider .section-slider .title-slider {
+      font-size: 3em;
+    }
+  }
+  
+  @media only screen and (min-width: 501px) and (max-width: 760px) {
+    /* Títulos del slider */
+    .ctn-slider .slider .section-slider .title-slider {
+      font-size: 2em;
+      top: 0;
+    }
+  
+    /* Flechas slider */
+    .ctn-slider .slider-nav .arrows {
+      padding: 0.5em;
+    }	
+  }
+  
+  @media screen and (max-width: 500px) {
+    /* Títulos del slider */
+    .ctn-slider .slider .section-slider .title-slider {
+      font-size: 1.5em;
+      top: 0;
+    }
+  
+    /* Flechas slider */
+    .ctn-slider .slider-nav .arrows {
+      background-color: rgba(0, 0, 0, 0);
+    }
+  
+    .ctn-slider .slider-nav .prev {
+      left: 0.5rem;
+    }
+  
+    .ctn-slider .slider-nav .next {
+      right: 0.5rem;
+    }
+  }
+  
+  /* Efecto hover de las flechas del slider (desde mobiles grandes hasta pc) */
+  @media screen and (min-width: 500px) {
+    .ctn-slider .slider-nav .arrows:hover,
+    .ctn-slider .slider-nav .arrows:focus {
+      background-color: rgba(255, 255, 255, 0.5);
+      color: rgba(0, 0, 0, 0.7);
+      text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.5);
+    }
   }
 }
