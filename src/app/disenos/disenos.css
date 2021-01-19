@@ -1571,7 +1571,7 @@
     font-family: "Monoton";
     font-style: normal;
     font-weight: 400;
-    src: local("Monoton"), local("Monoton-Regular"), url(http://themes.googleusercontent.com/static/fonts/monoton/v4/AKI-lyzyNHXByGHeOcds_w.woff) format("woff");
+    src: local("Monoton"), local("Monoton-Regular"), src url(../../assets/fuentes/letrasEfectos/Monoton-Regular.ttf) format("woff");
   }
 }
 
@@ -1580,7 +1580,7 @@
     font-family: "Iceland";
     font-style: normal;
     font-weight: 400;
-    src: local("Iceland"), local("Iceland-Regular"), url(http://themes.googleusercontent.com/static/fonts/iceland/v3/F6LYTZLHrG9BNYXRjU7RSw.woff) format("woff");
+    src: local("Iceland"), local("Iceland-Regular"), src url(../../assets/fuentes/letrasEfectos/Iceland-Regular.woff) format("woff");
   }
 }
 

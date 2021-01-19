@@ -32,17 +32,17 @@ class miHover extends HTMLElement {
     </div>
 
     <div class="selectoresHover hover">
-        <a href="#" class="one"></a>
-        <a href="#" class="two"></a>
-        <a href="#" class="three"></a>
+        <a  class="one"></a>
+        <a  class="two"></a>
+        <a  class="three"></a>
         <br />
-        <a href="#" class="yon"></a>
-        <a href="#" class="goo"></a>
-        <a href="#" class="rok"></a>
+        <a  class="yon"></a>
+        <a  class="goo"></a>
+        <a  class="rok"></a>
         <br />
-        <a href="#" class="x7"></a>
-        <a href="#" class="x8"></a>
-        <a href="#" class="x9"></a>
+        <a  class="x7"></a>
+        <a  class="x8"></a>
+        <a  class="x9"></a>
     </div>
 
     <div class="anillosGiratorios hover">
@@ -65,9 +65,9 @@ class miHover extends HTMLElement {
         <div class="content">
             <table align="center">
                 <tr>
-                    <td><a href="css/main.css"><div class="aButton shadow rotateX">&nbsp;2D X&nbsp;</div></a></td>
-                    <td><a href="css/main.css"><div class="aButton shadow rotateY">&nbsp;2D Y&nbsp;</div></a></td>
-                    <td><a href="css/main.css"><div class="aButton shadow rotate">&nbsp;3D&nbsp;</div></a></td>
+                    <td><a><div class="aButton shadow rotateX">&nbsp;2D X&nbsp;</div></a></td>
+                    <td><a><div class="aButton shadow rotateY">&nbsp;2D Y&nbsp;</div></a></td>
+                    <td><a><div class="aButton shadow rotate">&nbsp;3D&nbsp;</div></a></td>
                 </tr>
             </table>
         </div>
@@ -75,7 +75,7 @@ class miHover extends HTMLElement {
     </div>
 
     <div class="rotarRedesSociales hover">
-        <a class="social" href="https://webbb.be" target="_blank">
+        <a class="social" target="_blank">
             <div class="front">
                 <i class="fa fa-facebook"></i>
             </div>
@@ -84,7 +84,7 @@ class miHover extends HTMLElement {
             </div>
         </a>
 
-        <a class="social social-github" href="https://webbb.be" target="_blank">
+        <a class="social social-github" target="_blank">
             <div class="front">
                 <i class="fa fa-github"></i>
             </div>
@@ -93,7 +93,7 @@ class miHover extends HTMLElement {
             </div>
         </a>
 
-        <a class="social social-googleplus" href="https://webbb.be" target="_blank">
+        <a class="social social-googleplus" target="_blank">
             <div class="front">
                 <i class="fa fa-google-plus"></i>
             </div>
@@ -102,7 +102,7 @@ class miHover extends HTMLElement {
             </div>
         </a>
 
-        <a class="social social-linkedin" href="https://webbb.be" target="_blank">
+        <a class="social social-linkedin" target="_blank">
             <div class="front">
                 <i class="fa fa-linkedin"></i>
             </div>
@@ -116,7 +116,7 @@ class miHover extends HTMLElement {
       <hr>
       <ul class="menu">
           <li>
-              <a href="#0">
+              <a>
                   <span>About</span>
                   <span>
                       <i class="fas fa-address-card" aria-hidden="true"></i>
@@ -124,7 +124,7 @@ class miHover extends HTMLElement {
               </a>
           </li>
           <li>
-              <a href="#0">
+              <a>
                   <span>Projects</span>
                   <span>
                       <i class="fas fa-tasks" aria-hidden="true"></i>
@@ -135,7 +135,7 @@ class miHover extends HTMLElement {
       <hr>
       <ul class="menu" data-animation="to-right">
           <li>
-              <a href="#0">
+              <a>
                   <span>Clients</span>
                   <span>
                       <i class="fas fa-users" aria-hidden="true"></i>
@@ -143,7 +143,7 @@ class miHover extends HTMLElement {
               </a>
           </li>
           <li>
-              <a href="#0">
+              <a>
                   <span>Contact</span>
                   <span>
                       <i class="fas fa-envelope-open-text" aria-hidden="true"></i>
@@ -156,16 +156,16 @@ class miHover extends HTMLElement {
 
     <div class="efectoNav2 hover">
         <nav id="nav-1">
-            <a class="link-1" href="#">Home</a>
-            <a class="link-1" href="#">About</a>
+            <a class="link-1" >Home</a>
+            <a class="link-1" >About</a>
         </nav>
         <nav id="nav-2">
-            <a class="link-2" href="#">Home</a>
-            <a class="link-2" href="#">About</a>
+            <a class="link-2" >Home</a>
+            <a class="link-2" >About</a>
         </nav>
         <nav id="nav-3">
-            <a class="link-3" href="#">Home</a>
-            <a class="link-3" href="#">About</a>
+            <a class="link-3" >Home</a>
+            <a class="link-3" >About</a>
         </nav>
     </div>
 
@@ -228,7 +228,7 @@ class miHover extends HTMLElement {
     <div class="redondoHover hover">
       <figure class="snip1566"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample19.jpg" alt="sq-sample19" />
         <figcaption><i class="ion-android-star-outline"></i></figcaption>
-        <a href="#"></a>
+        <a ></a>
       </figure>
     </div>
 

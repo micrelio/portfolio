@@ -802,6 +802,7 @@
     font-family: "frozen";
     src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/Ice%20kingdom%20-%20Bold%20-%20Por%20Kustren.woff");
   }
+ 
   .once {
     display: flex;
     flex-direction: row;
@@ -1158,7 +1159,7 @@
     font-style: normal;
     font-weight: 400;
     src: local("Monoton"), local("Monoton-Regular"),
-      url(http://themes.googleusercontent.com/static/fonts/monoton/v4/AKI-lyzyNHXByGHeOcds_w.woff)
+     src url(../../assets/fuentes/letrasEfectos/Monoton-Regular.ttf)
         format("woff");
   }
 
@@ -1167,7 +1168,7 @@
     font-style: normal;
     font-weight: 400;
     src: local("Iceland"), local("Iceland-Regular"),
-      url(http://themes.googleusercontent.com/static/fonts/iceland/v3/F6LYTZLHrG9BNYXRjU7RSw.woff)
+    src url(../../assets/fuentes/letrasEfectos/Iceland-Regular.woff)
         format("woff");
   }
 
