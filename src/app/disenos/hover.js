@@ -113,6 +113,48 @@ class miHover extends HTMLElement {
     </div>
  
     <div class="efectoNav hover">
+      <hr>
+      <ul class="menu">
+          <li>
+              <a href="#0">
+                  <span>About</span>
+                  <span>
+                      <i class="fas fa-address-card" aria-hidden="true"></i>
+                  </span>
+              </a>
+          </li>
+          <li>
+              <a href="#0">
+                  <span>Projects</span>
+                  <span>
+                      <i class="fas fa-tasks" aria-hidden="true"></i>
+                  </span>
+              </a>
+          </li>
+      </ul>
+      <hr>
+      <ul class="menu" data-animation="to-right">
+          <li>
+              <a href="#0">
+                  <span>Clients</span>
+                  <span>
+                      <i class="fas fa-users" aria-hidden="true"></i>
+                  </span>
+              </a>
+          </li>
+          <li>
+              <a href="#0">
+                  <span>Contact</span>
+                  <span>
+                      <i class="fas fa-envelope-open-text" aria-hidden="true"></i>
+                  </span>
+              </a>
+          </li>
+      </ul>
+      <hr>
+    </div>
+
+    <div class="efectoNav2 hover">
         <nav id="nav-1">
             <a class="link-1" href="#">Home</a>
             <a class="link-1" href="#">About</a>
