@@ -24,7 +24,7 @@
       position: relative;
       left: 50%;
       top: 50%;
-      padding: 1rem 40px 15px 0px;
+      padding: 1rem 40px 1.5rem 0px;
     }
 
     #nav-button span,
@@ -4330,19 +4330,19 @@
 
 //---slider-------------------------------------
 .slider{
-  // * {
-  //   box-sizing: border-box;
-  //   margin: 0;
-  //   padding: 0;
-  // }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
   
   *:focus {
     outline: 0;
   }
   
-  // html {
-  //   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  // }
+  html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
   
   /* Slider */
   .ctn-slider {
@@ -4350,14 +4350,13 @@
   }
   
   .ctn-slider .slider {
-    
     backface-visibility: hidden; /* Se coloca para que no se dañe lo del attachment fixed en pantallas mas pequeñas */
     cursor: pointer; /* Se deja de primero el pointer para explorer y en los demas navegadores por cascada lo sobre-escribe */
     cursor: -webkit-grab;
     cursor: -moz-grab;
     // left: 0;
     overflow: hidden;
-    // position: absolute;
+    position: absolute;
     // top: 0;	
     width: 100%;
     z-index: 600;
@@ -4384,12 +4383,11 @@
     background-attachment: fixed;
     background-image: url('https://grupoamsi.com/Test-Grupo-Amsi/Test-Grupo-Amsi/img/imgs-general/sliders/malla-slider/capa.png');
     content: '';
-    // height: 100vh;
+    height: 100vh;
     // left: 0;
     position: absolute;
     // top: 0;
     width: 100%;
-    
   }
   
   .ctn-slider .slider .section-slider .img-slider {
@@ -4399,7 +4397,7 @@
     filter: grayscale(20%);
     height: 100vh;
     justify-content: center;
-    // position: relative;
+    position: relative;
     width: 100%;
   }
   
@@ -4437,7 +4435,6 @@
   
   /* Flechas del slider */
   .ctn-slider .slider-nav .arrows {
-
     background-color: rgba(255, 255, 255, 0.3);
     color: #ffffff;
     cursor: pointer;
@@ -4445,14 +4442,9 @@
     padding: 1em;
     position: absolute;
     text-shadow: 0.1rem 0.1rem 0.5rem #000000;
-    text-align: center;
     // top: 50%;
-    // height: 100vh;
-    // margin-bottom: 500vh;
-    // background-color: #1e90ff;
     transition: 0.3s ease all;
     z-index: 600;
-    
   }
   
   /* Flechas izquierda del slider */
@@ -4469,11 +4461,11 @@
   
   /* Efecto cuando le dan click a las flechas del slider */
   .ctn-slider .slider-nav .prev:active {
-    transform: translateX(-5px);
+    transform: translateX(-0.5rem);
   }
   
   .ctn-slider .slider-nav .next:active {
-    transform: translateX(5px);
+    transform: translateX(0.5rem);
   }
   
   /* Flecha de ir a la siguiente sección */
@@ -4481,9 +4473,9 @@
     animation: jump-arrow 2.5s infinite;
     bottom: 2%;
     color: rgba(255, 255, 255, 0.5);
-    font-size: 2rem;
-    left: 0;
-    // position: absolute;
+    font-size: 20px;
+    // left: 0;
+    position: absolute;
     text-align: center;
     text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.5);
     width: 100%;
@@ -4525,9 +4517,9 @@
   }
   
   .wallpaper {
-    // background: url('https://images.pexels.com/photos/745407/pexels-photo-745407.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') #202020 center center / cover no-repeat fixed;
-    // height: 100vh;
-    // width: 100%;
+    background: url('https://images.pexels.com/photos/745407/pexels-photo-745407.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') #202020 center center / cover no-repeat fixed;
+    height: 100vh;
+    width: 100%;
   }
   
   /* Responsive max-width and min-width */

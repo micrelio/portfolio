@@ -328,62 +328,62 @@ class miHover extends HTMLElement {
 
     <div class="slider">
     <!-- Slider -->
-    <section>
-      <div id="ctn-slider" class="ctn-slider">
-        <div id="slider" class="slider">
-          <section class="section-slider">
-            <div class="img-slider slider-one">
-              <h1 class="title-slider">
-                Creamos Aplicaciones Web
-              </h1>
-            </div>
-          </section>
-    
-          <section class="section-slider">
-            <div class="img-slider slider-two">
-              <h1 class="title-slider">
-                Tenemos Los Mejores Servidores
-              </h1>
-            </div>
-          </section>
-    
-          <section class="section-slider">
-            <div class="img-slider slider-three">
-              <h1 class="title-slider">
-                Tenemos Las Mejores Ideas
-              </h1>
-            </div>
-          </section>
-    
-          <section class="section-slider">
-            <div class="img-slider slider-four">
-              <h1 class="title-slider">
-                Nos Apasiona Ayudar A Los Clientes
-              </h1>
-            </div>
-          </section>
-    
-          <section class="section-slider">
-            <div class="img-slider slider-five">
-              <h1 class="title-slider">
-                Planteamos Las Mejores Soluciones
-              </h1>
-            </div>
-          </section>
-        </div>
-    
-        <!-- Botón de ir a la siguiente sección slider -->
-        <div class="move-slider">
-          <i id="arrow-down-slider" class="fa fa-chevron-down arrow-down-slider" aria-hidden="true"></i>
-        </div>
-      </div>
-    </section>
-  <!--  
-    <section>
-      <div id="wallpaper" class="wallpaper"></div>
-    </section>
-    -->
-    </div>
+    <!-- Slider -->
+<section>
+	<div id="ctn-slider" class="ctn-slider">
+		<div id="slider" class="slider">
+			<section class="section-slider">
+				<div class="img-slider slider-one">
+					<h1 class="title-slider">
+						Creamos Aplicaciones Web
+					</h1>
+				</div>
+			</section>
+
+			<section class="section-slider">
+				<div class="img-slider slider-two">
+					<h1 class="title-slider">
+						Tenemos Los Mejores Servidores
+					</h1>
+				</div>
+			</section>
+
+			<section class="section-slider">
+				<div class="img-slider slider-three">
+					<h1 class="title-slider">
+						Tenemos Las Mejores Ideas
+					</h1>
+				</div>
+			</section>
+
+			<section class="section-slider">
+				<div class="img-slider slider-four">
+					<h1 class="title-slider">
+						Nos Apasiona Ayudar A Los Clientes
+					</h1>
+				</div>
+			</section>
+
+			<section class="section-slider">
+				<div class="img-slider slider-five">
+					<h1 class="title-slider">
+						Planteamos Las Mejores Soluciones
+					</h1>
+				</div>
+			</section>
+		</div>
+
+		<!-- Botón de ir a la siguiente sección slider -->
+		<div class="move-slider">
+			<i id="arrow-down-slider" class="fa fa-chevron-down arrow-down-slider" aria-hidden="true"></i>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div id="wallpaper" class="wallpaper"></div>
+</section>
+
 
     <div class="bordeAnimado">
       <div class="demo-1 demo">

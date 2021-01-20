@@ -38,6 +38,7 @@ class miNav extends HTMLElement {
                 <a class="enlace irDisenos" href="#disenos">Diseños</a>
                 <a class="enlace irHover" href="#hover">Hover</a>
                 <a class="enlace irEfectos" href="#efectos">Efectos</a>
+                <a class="enlace irgaleriaPruebas" href="#galeriaPruebas">galeriaPruebas</a>
 
                 <div class=" mode">
                     <p id="noche" class="noche enlace bx bxs-moon" onclick="modoNoche('dia');"></p>

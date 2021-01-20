@@ -14,7 +14,8 @@ function getContent(fragmentId) {
     politicadecookies: "<mi-politicadecookies></mi-politicadecookies>",
     disenos: "<mi-disenos></mi-disenos>",
     hover: "<mi-hover></mi-hover>",
-    efectos: "<mi-efectos></mi-efectos>"
+    efectos: "<mi-efectos></mi-efectos>",
+    galeriaPruebas: "<mi-galeriapruebas></mi-galeriapruebas>"
 
     };
 
