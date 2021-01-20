@@ -161,7 +161,6 @@ class miGaleriapruebas extends HTMLElement {
           </div>
         </section>
 
-
         <section class="seccionSlider">
           <div class="imagenSlider slider-five">
             <div class="once letritas" id="once" onclick="efectos('once');">
@@ -169,7 +168,6 @@ class miGaleriapruebas extends HTMLElement {
             </div>
           </div>
         </section>
-
 
         <section class="seccionSlider">
           <div class="imagenSlider slider-five">
@@ -190,7 +188,6 @@ class miGaleriapruebas extends HTMLElement {
           </div>
         </section>
 
-
         <section class="seccionSlider">
           <div class="imagenSlider slider-five">
             <div class="trece letritas" id="trece" onclick="efectos('trece');">
@@ -198,7 +195,6 @@ class miGaleriapruebas extends HTMLElement {
             </div>
           </div>
         </section>
-
 
         <section class="seccionSlider">
           <div class="imagenSlider slider-five">
@@ -237,7 +233,6 @@ class miGaleriapruebas extends HTMLElement {
           </div>
         </section>
 
-
         <section class="seccionSlider">
           <div class="imagenSlider slider-five">
             <div class="fluorescentes letritas">
@@ -275,7 +270,6 @@ class miGaleriapruebas extends HTMLElement {
                 Micro
               </div>
             </div>
-
           </div>
         </section>
 
@@ -287,7 +281,6 @@ class miGaleriapruebas extends HTMLElement {
           </div>
         </section>
       </div>
-
 
       <!-- Botón de ir a la siguiente sección slider -->
       <div class="move-slider">
