@@ -34,46 +34,6 @@
   width: 30rem;
 }
 
-.letras .uno {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  cursor: pointer;
-  font-size: 5rem;
-  color: #fff;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
-}
-
-.letras .unoEfectos,
-.letras .uno:hover {
-  -webkit-animation: blur 0.75s ease-out infinite;
-          animation: blur 0.75s ease-out infinite;
-}
-
-@-webkit-keyframes blur {
-  from {
-    text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 2.5rem #fff, 0px 0px 2.5rem #fff, 0px 0px 2.5rem #fff, 0px 0px 2.5rem #fff, 0px 0px 2.5rem #fff, 0px 0px 2.5rem #fff, 0px 0px 50px #fff, 0px 0px 50px #fff, 0px 0px 50px #7b96b8, 0px 0px 150px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px -10px 100px #7b96b8, 0px -10px 100px #7b96b8;
-  }
-}
-
-@keyframes blur {
-  from {
-    text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 2.5rem #fff, 0px 0px 2.5rem #fff, 0px 0px 2.5rem #fff, 0px 0px 2.5rem #fff, 0px 0px 2.5rem #fff, 0px 0px 2.5rem #fff, 0px 0px 50px #fff, 0px 0px 50px #fff, 0px 0px 50px #7b96b8, 0px 0px 150px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px -10px 100px #7b96b8, 0px -10px 100px #7b96b8;
-  }
-}
-
 .letras .dos {
   /* Other styles */
   display: -webkit-box;

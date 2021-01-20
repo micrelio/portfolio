@@ -14,40 +14,7 @@
     height: 30rem;
     width: 30rem;
   }
-  //---uno-------------------------
-  .uno {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-
-    font-size: 5rem;
-    // font-family: "Open Sans",  Impact;
-    // @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-    //
-    color: #fff;
-    // letter-spacing: -7px;
-    font-weight: 700;
-    text-transform: uppercase;
-    //activar efectos
-    // animation: blur 0.75s ease-out infinite;
-    text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
-  }
-  .unoEfectos,
-  .uno:hover {
-    animation: blur 0.75s ease-out infinite;
-  }
-  @keyframes blur {
-    from {
-      text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 2.5rem #fff,
-        0px 0px 2.5rem #fff, 0px 0px 2.5rem #fff, 0px 0px 2.5rem #fff,
-        0px 0px 2.5rem #fff, 0px 0px 2.5rem #fff, 0px 0px 50px #fff,
-        0px 0px 50px #fff, 0px 0px 50px #7b96b8, 0px 0px 150px #7b96b8,
-        0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8,
-        0px 10px 100px #7b96b8, 0px -10px 100px #7b96b8, 0px -10px 100px #7b96b8;
-    }
-  }
+  
   //---dos-----------------------------
   .dos {
     @import url("https://fonts.googleapis.com/css?family=Anton|Roboto");

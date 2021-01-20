@@ -114,6 +114,7 @@
   .ctn-slider .slider-nav .arrows {
     background-color: rgba(255, 255, 255, 0.3);
     color: #ffffff;
+    width: 8rem;;
     cursor: pointer;
     display: none;
     padding: 1em;
@@ -123,12 +124,16 @@
     margin-top: 50vh;
     transition: 0.3s ease all;
     z-index: 601;
-  }
-
+    height:5rem ;
+    font-size: 5rem;
+text-align: center;
+      }
+    
   /* Flechas izquierda del slider */
   .ctn-slider .slider-nav .prev {
     border-radius: 50% 0 0 50%;
     left: 1rem;
+    
   }
 
   /* Flechas derecha del slider */
@@ -140,6 +145,7 @@
   /* Efecto cuando le dan click a las flechas del slider */
   .ctn-slider .slider-nav .prev:active {
     transform: translateX(-0.5rem);
+
   }
 
   .ctn-slider .slider-nav .next:active {
@@ -205,45 +211,6 @@
 
 
 
-//---uno-------------------------
-.uno {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-
-  font-size: 5rem;
-  // font-family: "Open Sans",  Impact;
-  // @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-  //
-  color: #fff;
-  // letter-spacing: -7px;
-  font-weight: 700;
-  text-transform: uppercase;
-  //activar efectos
-   animation: blur 0.75s ease-out infinite;
-  text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
-}
-.unoEfectos,
-.uno:hover {
-  animation: blur 0.75s ease-out infinite;
-}
-@keyframes blur {
-  from {
-    text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 2.5rem #fff,
-      0px 0px 2.5rem #fff, 0px 0px 2.5rem #fff, 0px 0px 2.5rem #fff,
-      0px 0px 2.5rem #fff, 0px 0px 2.5rem #fff, 0px 0px 50px #fff,
-      0px 0px 50px #fff, 0px 0px 50px #7b96b8, 0px 0px 150px #7b96b8,
-      0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8,
-      0px 10px 100px #7b96b8, 0px -10px 100px #7b96b8, 0px -10px 100px #7b96b8;
-  }
-}
-
-
-
-
-
 /* Responsive max-width and min-width */
 /* Responsive flechas y título del slider */
 @media only screen and (min-width: 761px) and (max-width: 960px) {
@@ -296,6 +263,45 @@
     text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.5);
   }
 }
+//---uno-------------------------
+.uno {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  font-size: 5rem;
+  // font-family: "Open Sans",  Impact;
+  // @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+  //
+  color: #fff;
+  // letter-spacing: -7px;
+  font-weight: 700;
+  text-transform: uppercase;
+  //activar efectos
+   animation: blur 0.75s ease-out infinite;
+  text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+.unoEfectos,
+.uno:hover {
+  animation: blur 0.75s ease-out infinite;
+}
+@keyframes blur {
+  from {
+    text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 2.5rem #fff,
+      0px 0px 2.5rem #fff, 0px 0px 2.5rem #fff, 0px 0px 2.5rem #fff,
+      0px 0px 2.5rem #fff, 0px 0px 2.5rem #fff, 0px 0px 50px #fff,
+      0px 0px 50px #fff, 0px 0px 50px #7b96b8, 0px 0px 150px #7b96b8,
+      0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8,
+      0px 10px 100px #7b96b8, 0px -10px 100px #7b96b8, 0px -10px 100px #7b96b8;
+  }
+}
+
+
+
+
+
 
 
 //---dos-----------------------------
