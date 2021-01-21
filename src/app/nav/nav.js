@@ -37,7 +37,7 @@ class miNav extends HTMLElement {
                 <i class="fas fa-address-card" aria-hidden="true"></i>
             </span>
         </a>
-                <a class="enlace irInicio" href="#inicio">Inicio</a>
+                <a class="enlace irInicio" href="#inicio"><span>Inicio</span><span><i class="fas fa-address-card" aria-hidden="true"></i></span></a>
                 <a class="enlace irBiografia" href="#biografia">Biografía</a>
                 <a class="enlace irWebs" href="#webs">Webs</a>
                 <a class="enlace irGaleria" href="#galeria">Galería</a>

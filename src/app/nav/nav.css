@@ -1,83 +1,10 @@
 @charset "UTF-8";
 /* ---------------hovers--------------*/
-@import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700");
-@import url("https://fonts.googleapis.com/css?family=Anton|Roboto");
-.links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.links .hhh {
-  position: relative;
-  display: block;
-  overflow: hidden;
-}
-
-.links a span {
-  -webkit-transition: -webkit-transform 0.2s ease-out;
-  transition: -webkit-transform 0.2s ease-out;
-  transition: transform 0.2s ease-out;
-  transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
-}
-
-.links a span:first-child {
-  display: inline-block;
-  padding: 1rem;
-}
-
-.links a span:last-child {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
-}
-
-.links i {
-  font-size: 3rem;
-}
-
-.links a:hover span:first-child {
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
-}
-
-.links a:hover span:last-child,
-.links[data-animation] a:hover span:last-child {
-  -webkit-transform: none;
-          transform: none;
-}
-
-/* ANIMATIONS
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.links[data-animation="to-top"] a span:last-child {
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
-}
-
-.links[data-animation="to-right"] a span:last-child {
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
-}
-
 /* -----------------------------------------
          social media menu
 ------------------------------------------ */
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700");
+@import url("https://fonts.googleapis.com/css?family=Anton|Roboto");
 .social-media {
   padding: 0.1rem 1rem 0.1rem 1rem;
   background-color: #3c97bf;
@@ -204,6 +131,29 @@
       -ms-flex-align: end;
           align-items: flex-end;
   width: 100%;
+  /* ANIMATIONS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+}
+
+.stick .nav .navbar .menu .links a:hover span:first-child {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.stick .nav .navbar .menu .links a:hover span:last-child,
+.stick .nav .navbar .menu .links[data-animation] a:hover span:last-child {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.stick .nav .navbar .menu .links[data-animation="to-top"] a span:last-child {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.stick .nav .navbar .menu .links[data-animation="to-right"] a span:last-child {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 
 .stick .nav .navbar .menu .links {
@@ -222,6 +172,9 @@
 }
 
 .stick .nav .navbar .menu .links .enlace {
+  position: relative;
+  display: block;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -232,10 +185,45 @@
       -ms-flex-pack: center;
           justify-content: center;
   cursor: pointer;
-  margin: 0rem 0rem 0rem 0rem;
+  margin: 0rem 0.5rem 0rem 0.5rem;
   color: #3c97bf;
   font-size: 1.6rem;
   font-weight: bold;
+}
+
+.stick .nav .navbar .menu .links .enlace span {
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+  transition: -webkit-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+}
+
+.stick .nav .navbar .menu .links .enlace span:first-child {
+  display: inline-block;
+  padding: 1rem;
+}
+
+.stick .nav .navbar .menu .links .enlace span:last-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.stick .nav .navbar .menu .links .enlace i {
+  font-size: 3rem;
 }
 
 .stick .nav .navbar .menu .links .enlace p {

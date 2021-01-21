@@ -2,68 +2,6 @@
 @import "../../assets/style/sass/variables/variables.scss";
 @import "../../assets/style/sass/responsive/responsive.scss";
 
-
-
-.links {
-  display: flex;
-  justify-content: center;
-}
-
-
-
-.links .hhh {
-  position: relative;
-  display: block;
-  overflow: hidden;
-}
-
-.links a span {
-  transition: transform 0.2s ease-out;
-}
-
-.links a span:first-child {
-  display: inline-block;
-  padding: 1rem;
-}
-
-.links a span:last-child {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: translateY(-100%);
-}
-
-.links i {
-  font-size: 3rem;
-}
-
-.links a:hover span:first-child {
-  transform: translateY(100%);
-}
-
-.links a:hover span:last-child,
-.links[data-animation] a:hover span:last-child {
-  transform: none;
-}
-
-/* ANIMATIONS
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.links[data-animation="to-top"] a span:last-child {
-  transform: translateY(100%);
-}
-.links[data-animation="to-right"] a span:last-child {
-  transform: translateX(-100%);
-}
-
-
-
-
-
 /* -----------------------------------------
          social media menu
 ------------------------------------------ */
@@ -167,7 +105,70 @@
         align-items: flex-end;
         width: 100%;
         // position: relative;
-        .links {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+// .links {
+//   display: flex;
+//   justify-content: center;
+// }
+// .links .hhh {
+//   position: relative;
+//   display: block;
+//   overflow: hidden;
+// }
+// .links a span {
+//   transition: transform 0.2s ease-out;
+// }
+// .links a span:first-child {
+//   display: inline-block;
+//   padding: 1rem;
+// }
+// .links a span:last-child {
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   transform: translateY(-100%);
+// }
+// .links i {
+//   font-size: 3rem;
+// }
+.links a:hover span:first-child {
+  transform: translateY(100%);
+}
+.links a:hover span:last-child,
+.links[data-animation] a:hover span:last-child {
+  transform: none;
+}
+/* ANIMATIONS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.links[data-animation="to-top"] a span:last-child {
+  transform: translateY(100%);
+}
+.links[data-animation="to-right"] a span:last-child {
+  transform: translateX(-100%);
+}
+
+      .links {
           display: grid;
           grid-template-columns: [x0] 0.1fr [x1] 0.1fr [x2] 0.1fr [x3] 0.1fr [x4] 0.1fr [x5] 0.1fr [x6] 0.1fr [x7] 0.1fr [x8] 0.1fr [x9] 0.1fr [x10] 0.1fr [x11];
           grid-template-rows: [y0] 1fr [y1];
@@ -176,13 +177,19 @@
           //width: 67%;
           a {
             text-decoration: none;
+           
           }
           .enlace {
+            position: relative;
+            display: block;
+            overflow: hidden;
+
+
             display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            margin: 0rem 0rem 0rem 0rem;
+            margin: 0rem 0.5rem 0rem 0.5rem;
             color: $corporativo;
             // padding: 1.6rem 0.5rem 1.6rem 0.5rem;
             //min-width: 8rem;
@@ -191,6 +198,38 @@
             background: {
               // color:gray;
             }
+
+
+
+             span {
+              transition: transform 0.2s ease-out;
+            }
+              span:first-child {
+              display: inline-block;
+              padding: 1rem;
+            }
+              span:last-child {
+              position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              transform: translateY(-100%);
+            }
+             i {
+              font-size: 3rem;
+            }
+
+
+
+
+
+
+
+
             p {
               color: $corporativo;
             }
