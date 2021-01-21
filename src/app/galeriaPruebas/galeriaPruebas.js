@@ -13,16 +13,16 @@ class miGaleriapruebas extends HTMLElement {
       <div id="slider" class="slider">
         <section class="seccionSlider">
           <div class="imagenSlider slider-one">
-          <div class="trece letritas" id="trece" onclick="efectos('trece');">
-          <a>Micro</a>
-        </div>
+            <h1 class="tituloSlider">
+              Diseños de letras
+            </h1>
           </div>
         </section>
 
         <section class="seccionSlider">
           <div class="imagenSlider slider-two">
             <section class="letras">
-              <div class="uno letritas" id="uno" onclick="efectos('uno');">
+              <div class="uno letritas" id="seleccion" onclick="efectos('uno');">
                 ⚠Micro⚠
               </div>
           </div>
@@ -316,6 +316,15 @@ class miGaleriapruebas extends HTMLElement {
 
 
     //---funcion galeria slider--------------------------
+    document.querySelector("#seleccion").addEventListener("click", function () {
+        this.classList.toggle("active");
+        // document.getElementById("pull").style = "value: 100%";
+        console.log(this.classList.value);
+        // this.classList.toggle ("value: active"); tarjet
+              // document.getElementById("pull").style = "value: 100%";
+  
+       
+      });
     $(document).ready(function() {
         // Guardar el contenedor principal
         let containerSlider = $('#slider');
@@ -340,8 +349,8 @@ class miGaleriapruebas extends HTMLElement {
         });
     
         // Crear botones para avanzar y retroceder
-        containerSlider.after('<div id="prev" class="arrows prev"><i  class="fa fa-chevron-left " ></i><div>');
-        containerSlider.after('<div id="next" class="arrows next" ><i  class="fa fa-chevron-right " aria-hidden="true"></i><div>');
+        containerSlider.after('<div id="prev" class="arrows prev"><i class="fa fa-chevron-left" aria-hidden="true"></i><div>');
+        containerSlider.after('<div id="next" class="arrows next"><i class="fa fa-chevron-right" aria-hidden="true"></i><div>');
     
         // Guardar los botones en variables
         let prev = $('#prev');

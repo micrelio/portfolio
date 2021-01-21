@@ -297,10 +297,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -308,14 +308,14 @@
       -ms-flex-pack: center;
           justify-content: center;
   cursor: pointer;
+  position: fixed;
   font-size: 5rem;
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
-  text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+  text-shadow: 0rem 0rem 0.5rem #fff, 0rem 0rem 0.7rem #fff;
 }
 
-.unoEfectos,
 .uno:active {
   -webkit-animation: blur 0.75s ease-out infinite;
           animation: blur 0.75s ease-out infinite;
@@ -323,13 +323,13 @@
 
 @-webkit-keyframes blur {
   from {
-    text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 2.5rem #fff, 0px 0px 2.5rem #fff, 0px 0px 2.5rem #fff, 0px 0px 2.5rem #fff, 0px 0px 2.5rem #fff, 0px 0px 2.5rem #fff, 0px 0px 50px #fff, 0px 0px 50px #fff, 0px 0px 50px #7b96b8, 0px 0px 150px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px -10px 100px #7b96b8, 0px -10px 100px #7b96b8;
+    text-shadow: 0rem 0rem 1rem #fff, 0rem 0rem 1rem #fff, 0rem 0rem 2.5rem #fff, 0rem 0rem 2.5rem #fff, 0rem 0rem 2.5rem #fff, 0rem 0rem 2.5rem #fff, 0rem 0rem 2.5rem #fff, 0rem 0rem 2.5rem #fff, 0rem 0rem 5rem #fff, 0rem 0rem 5rem #fff, 0rem 0rem 5rem #7b96b8, 0rem 0rem 15rem #7b96b8, 0rem 1rem 10rem #7b96b8, 0rem 1rem 10rem #7b96b8, 0rem 1rem 10rem #7b96b8, 0rem 1rem 10rem #7b96b8, 0rem -1rem 10rem #7b96b8, 0rem -1rem 10rem #7b96b8;
   }
 }
 
 @keyframes blur {
   from {
-    text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 2.5rem #fff, 0px 0px 2.5rem #fff, 0px 0px 2.5rem #fff, 0px 0px 2.5rem #fff, 0px 0px 2.5rem #fff, 0px 0px 2.5rem #fff, 0px 0px 50px #fff, 0px 0px 50px #fff, 0px 0px 50px #7b96b8, 0px 0px 150px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px -10px 100px #7b96b8, 0px -10px 100px #7b96b8;
+    text-shadow: 0rem 0rem 1rem #fff, 0rem 0rem 1rem #fff, 0rem 0rem 2.5rem #fff, 0rem 0rem 2.5rem #fff, 0rem 0rem 2.5rem #fff, 0rem 0rem 2.5rem #fff, 0rem 0rem 2.5rem #fff, 0rem 0rem 2.5rem #fff, 0rem 0rem 5rem #fff, 0rem 0rem 5rem #fff, 0rem 0rem 5rem #7b96b8, 0rem 0rem 15rem #7b96b8, 0rem 1rem 10rem #7b96b8, 0rem 1rem 10rem #7b96b8, 0rem 1rem 10rem #7b96b8, 0rem 1rem 10rem #7b96b8, 0rem -1rem 10rem #7b96b8, 0rem -1rem 10rem #7b96b8;
   }
 }
 
