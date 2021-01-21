@@ -13,9 +13,9 @@ class miGaleriapruebas extends HTMLElement {
       <div id="slider" class="slider">
         <section class="seccionSlider">
           <div class="imagenSlider slider-one">
-            <h1 class="tituloSlider">
-              Diseños de letras
-            </h1>
+          <div class="trece letritas" id="trece" onclick="efectos('trece');">
+          <a>Micro</a>
+        </div>
           </div>
         </section>
 

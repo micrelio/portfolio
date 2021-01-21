@@ -16,8 +16,6 @@
 
 .galeriaPruebas .containerSlider {
   margin-bottom: 100vh;
-  /* Imágenes slider inicio */
-  /* Titulos slider */
   /* Flechas del slider */
   /* Flechas izquierda del slider */
   /* Flechas derecha del slider */
@@ -41,7 +39,7 @@
   z-index: 600;
 }
 
-.galeriaPruebas .containerSlider .slider:active {
+.galeriaPruebas .containerSlider .slider .slider:active {
   cursor: -webkit-grabbing;
   cursor: -moz-grabbing;
 }
@@ -55,6 +53,8 @@
 
 .galeriaPruebas .containerSlider .slider .seccionSlider {
   float: left;
+  /* Imágenes slider inicio */
+  /* Titulos slider */
 }
 
 .galeriaPruebas .containerSlider .slider .seccionSlider .imagenSlider:before {
@@ -106,6 +106,7 @@
 }
 
 .galeriaPruebas .containerSlider .slider .seccionSlider .tituloSlider {
+  overflow: hidden;
   color: #ffffff;
   font: normal 4em "Dancing Script", sans-serif;
   position: relative;
@@ -315,7 +316,7 @@
 }
 
 .unoEfectos,
-.uno:hover {
+.uno:active {
   -webkit-animation: blur 0.75s ease-out infinite;
           animation: blur 0.75s ease-out infinite;
 }
@@ -1624,8 +1625,6 @@
   font-size: 5rem;
   font-weight: bold;
   text-decoration: none;
-  margin-top: 20%;
-  margin-left: 55%;
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
 }
@@ -1633,10 +1632,9 @@
 a:before,
 a:after {
   content: "";
-  padding: 0.9em 0.4em;
+  padding: 9rem 4rem;
   position: absolute;
   left: 50%;
-  width: 100%;
   top: 50%;
   display: block;
   border: 1.5rem solid red;
