@@ -29,6 +29,14 @@ class miNav extends HTMLElement {
         </div>
         <div class="menu">
             <div id="links" class="links">
+            
+            
+            <a class="enlace hhh ">
+            <span>About</span>
+            <span>
+                <i class="fas fa-address-card" aria-hidden="true"></i>
+            </span>
+        </a>
                 <a class="enlace irInicio" href="#inicio">Inicio</a>
                 <a class="enlace irBiografia" href="#biografia">Biografía</a>
                 <a class="enlace irWebs" href="#webs">Webs</a>
