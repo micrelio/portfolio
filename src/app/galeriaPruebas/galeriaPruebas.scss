@@ -302,12 +302,12 @@
   font-weight: 700;
   text-transform: uppercase;
   //activar efectos
-  //  animation: blur 0.75s ease-out infinite;
+   animation: blur 0.75s ease-out infinite;
   text-shadow: 0rem 0rem 0.5rem #fff, 0rem 0rem 0.7rem #fff;
 }
-.uno:active {
-  animation: blur 0.75s ease-out infinite;
-}
+// .uno:focus-within {
+//   animation: blur 0.75s ease-out infinite;
+// }
 @keyframes blur {
   from {
     text-shadow: 0rem 0rem 1rem #fff, 0rem 0rem 1rem #fff, 0rem 0rem 2.5rem #fff,

@@ -22,7 +22,7 @@ class miGaleriapruebas extends HTMLElement {
         <section class="seccionSlider">
           <div class="imagenSlider slider-two">
             <section class="letras">
-              <div class="uno letritas" id="seleccion" onclick="efectos('uno');">
+              <div class="uno letritas" id="uno" onclick="efectos('uno');">
                 ⚠Micro⚠
               </div>
           </div>
@@ -316,15 +316,6 @@ class miGaleriapruebas extends HTMLElement {
 
 
     //---funcion galeria slider--------------------------
-    document.querySelector("#seleccion").addEventListener("click", function () {
-        this.classList.toggle("active");
-        // document.getElementById("pull").style = "value: 100%";
-        console.log(this.classList.value);
-        // this.classList.toggle ("value: active"); tarjet
-              // document.getElementById("pull").style = "value: 100%";
-  
-       
-      });
     $(document).ready(function() {
         // Guardar el contenedor principal
         let containerSlider = $('#slider');

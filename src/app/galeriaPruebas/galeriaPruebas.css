@@ -313,12 +313,9 @@
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
-  text-shadow: 0rem 0rem 0.5rem #fff, 0rem 0rem 0.7rem #fff;
-}
-
-.uno:active {
   -webkit-animation: blur 0.75s ease-out infinite;
           animation: blur 0.75s ease-out infinite;
+  text-shadow: 0rem 0rem 0.5rem #fff, 0rem 0rem 0.7rem #fff;
 }
 
 @-webkit-keyframes blur {
