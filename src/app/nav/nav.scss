@@ -105,53 +105,7 @@
         width: 100%;
         // position: relative;
 
-        // .links {
-        //   display: flex;
-        //   justify-content: center;
-        // }
-        // .links .hhh {
-        //   position: relative;
-        //   display: block;
-        //   overflow: hidden;
-        // }
-        // .links a span {
-        //   transition: transform 0.2s ease-out;
-        // }
-        // .links a span:first-child {
-        //   display: inline-block;
-        //   padding: 1rem;
-        // }
-        // .links a span:last-child {
-        //   position: absolute;
-        //   top: 0;
-        //   right: 0;
-        //   bottom: 0;
-        //   left: 0;
-        //   display: flex;
-        //   align-items: center;
-        //   justify-content: center;
-        //   transform: translateY(-100%);
-        // }
-        // .links i {
-        //   font-size: 3rem;
-        // }
-        //         .links a:hover span:first-child {
-        //           transform: translateY(100%);
-        //         }
-        //         .links a:hover span:last-child,
-        //         .links[data-animation] a:hover span:last-child {
-        //           transform: none;
-        //         }
-        //         /* ANIMATIONS
-        // –––––––––––––––––––––––––––––––––––––––––––––––––– */
-        //         .links[data-animation="to-top"] a span:last-child {
-        //           transform: translateY(100%);
-        //         }
-        //         .links[data-animation="to-right"] a span:last-child {
-        //           transform: translateX(-100%);
-        //         }
-
-        .links {
+               .links {
           display: flex;
           flex-direction: row;
           align-items: center;
@@ -172,14 +126,30 @@
           .links[data-animation] a:hover span:last-child {
             transform: none;
           }
+          
+
+
+     
+          // .active span:last-child,
+          // .links[data-animation] .active span:last-child {
+          //   transform: none;
+          // }
+          // i {
+          //   transform: translateY(100%);
+          // }
           /* ANIMATIONS
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
           .links[data-animation="to-top"] a span:last-child {
             transform: translateY(100%);
           }
-          .links[data-animation="to-right"] a span:last-child {
-            transform: translateX(-100%);
-          }
+          // .links[data-animation="to-right"] a span:last-child {
+            // transform: translateX(-100%);
+          // }
+      
+
+
+
+
 
           .menuCSS3 {
             list-style: none;
@@ -208,6 +178,7 @@
             a:hover {
               background-color: #000;
             }
+           
             ul li ul {
               display: none;
             }
@@ -267,6 +238,19 @@
               size: 1.6rem;
               weight: bold;
             }
+          }
+
+
+          .active span:first-child {
+            transform: translateY(100%);
+            color: $blanco;
+           
+          }
+          .active span:last-child{
+            // transform: translateY(-100%);
+            color: $blanco;
+            transform: none;
+
           }
           // .irInicio {
           //   grid-column: x0 / x1;

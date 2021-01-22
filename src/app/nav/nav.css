@@ -171,11 +171,6 @@
           transform: translateY(100%);
 }
 
-.stick .nav .navbar .menu .links .links[data-animation="to-right"] a span:last-child {
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
-}
-
 .stick .nav .navbar .menu .links .menuCSS3 {
   list-style: none;
   /* Rounded Corners */
@@ -268,6 +263,18 @@
 
 .stick .nav .navbar .menu .links .enlace p {
   color: #3c97bf;
+}
+
+.stick .nav .navbar .menu .links .active span:first-child {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  color: #eeeeee;
+}
+
+.stick .nav .navbar .menu .links .active span:last-child {
+  color: #eeeeee;
+  -webkit-transform: none;
+          transform: none;
 }
 
 .stick .nav .navbar .menu .links .mode .noche {

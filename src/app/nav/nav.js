@@ -51,8 +51,10 @@ class miNav extends HTMLElement {
                     aria-hidden="true"></i></span></a>
               <ul>
                 <li>
+                <!--
                   <a class="enlace irDisenos" href="#disenos"><span>Diseños</span><span><i class="fas fa-mouse"
                         aria-hidden="true"></i></span></a>
+                        -->
                 </li>
                 <li>
                   <a class="enlace irHover" href="#hover"><span>Hover</span><span><i class="fab fa-suse"
@@ -226,6 +228,7 @@ class miNav extends HTMLElement {
   }
 }
 customElements.define("mi-nav", miNav);
+
 // llamar componentes
 function navegar(id) {
   var render = id;

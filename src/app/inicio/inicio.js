@@ -4,9 +4,9 @@ class miInicio extends HTMLElement {
   }
   connectedCallback() {
     this.innerHTML = `
-    <style>
-    @import "/src/app/inicio/inicio.css";
-  </style>
+   <style>
+  @import "/src/app/inicio/inicio.css";
+</style>
     <section class="inicio">
     <div class="separador5">
     </div>
