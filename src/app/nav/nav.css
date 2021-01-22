@@ -187,14 +187,6 @@
   list-style: none;
 }
 
-.stick .nav .navbar .menu .links .menuCSS3 a {
-  background-color: #000;
-}
-
-.stick .nav .navbar .menu .links .menuCSS3 a:hover {
-  background-color: #000;
-}
-
 .stick .nav .navbar .menu .links .menuCSS3 ul li ul {
   display: none;
 }

@@ -250,21 +250,19 @@ function modoNoche(id) {
   if (id != undefined) {
     var hora = "";
   }
+  console.log(hora)
   if ((hora >= 8 && hora < 20) || id == "noche") {
+    console.log('modo dia');
     estilo = "dia";
-  } else if (
-    (hora >= 20 && hora < 26) ||
-    (hora > 00 && hora < 8) ||
-    id == "dia"
-  ) {
+  } else if ((hora >= 20 && hora < 26) || (hora > 00 && hora < 8) || id == "dia") {
     estilo = "noche";
   }
   switch (estilo) {
     case "dia":
       console.log('dia')
+      console.log('final',estilo)
 
-      document.getElementById("modo").href =
-        "/src/assets/style/sass/styles/styleDia.css";
+      document.getElementById("modo").href ="/src/assets/style/sass/styles/styleDia.css";
       break;
     case "noche":
       console.log('noche')
