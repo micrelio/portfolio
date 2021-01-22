@@ -23,127 +23,161 @@ class miNav extends HTMLElement {
 </section>
 <section class="stick" id="stick">
 <div class="nav" id="nav">
-    <div class="navbar">
-        <div id="foto" class="foto">
-            <img src="/src/assets/images/dracula-man.jpg">
-        </div>
-        <div class="menu">
-            <div id="links" class="links">
-            
-            
-            <a class="enlace hhh ">
-            <span>About</span>
-            <span>
-                <i class="fas fa-address-card" aria-hidden="true"></i>
-            </span>
-        </a>
-                <a class="enlace irInicio" href="#inicio"><span>Inicio</span><span><i class="fas fa-address-card" aria-hidden="true"></i></span></a>
-                <a class="enlace irBiografia" href="#biografia">Biografía</a>
-                <a class="enlace irWebs" href="#webs">Webs</a>
-                <a class="enlace irGaleria" href="#galeria">Galería</a>
-                <a class="enlace irCurriculum" href="#curriculum">Currículum</a>
-                <a class="enlace irContacto" href="#contacto">Contacto</a>
-                <a class="enlace irDisenos" href="#disenos">Diseños</a>
-                <a class="enlace irHover" href="#hover">Hover</a>
-                <a class="enlace irEfectos" href="#efectos">Efectos</a>
-                <a class="enlace irgaleriaPruebas" href="#galeriaPruebas">galeriaPruebas</a>
-
-                <div class=" mode">
-                    <p id="noche" class="noche enlace bx bxs-moon" onclick="modoNoche('dia');"></p>
-                    <p id="dia" class="dia enlace bx bxs-sun" onclick="modoNoche('noche');"></p>
-                </div>
-                <div class=" brushEstilos">
-                    <p id="selecEstilosDesplegar" class="selecEstilosDesplegar enlace bx bxs-brush"></p>
-                    <p style="display:none;" id="selecEstilosPlegar"
-                        class="selecEstilosPlegar enlace bx bxs-brush-alt"></p>
-                </div>
-            </div>
-        </div>
+  <div class="navbar">
+    <div id="foto" class="foto">
+      <img src="/src/assets/images/dracula-man.jpg">
     </div>
+    <div class="menu">
+      <div id="links" class="links">
+
+
+        <a class="enlace irInicio" href="#inicio"><span>Inicio</span><span><i class="fas fa-home"
+              aria-hidden="true"></i></span></a>
+        <a class="enlace irBiografia" href="#biografia"><span>Biografía</span><span><i class="fab fa-leanpub"
+              aria-hidden="true"></i></span></a>
+        <a class="enlace irWebs" href="#webs"><span>Webs</span><span><i class="fas fa-globe"
+              aria-hidden="true"></i></span></a>
+        <a class="enlace irGaleria" href="#galeria"><span>Galería</span><span><i class="far fa-images"
+              aria-hidden="true"></i></span></a>
+        <a class="enlace irCurriculum" href="#curriculum"><span>Currículum</span><span><i class="far fa-id-badge"
+              aria-hidden="true"></i></span></a>
+        <a class="enlace irContacto" href="#contacto"><span>Contacto</span><span><i class="far fa-envelope"
+              aria-hidden="true"></i></span></a>
+
+
+        <div class="menuCSS3">
+          <ul>
+            <li><a href="#" class="enlace"><span>Diseños</span><span><i class="fas fa-mouse"
+                    aria-hidden="true"></i></span></a>
+              <ul>
+                <li>
+                  <a class="enlace irDisenos" href="#disenos"><span>Diseños</span><span><i class="fas fa-mouse"
+                        aria-hidden="true"></i></span></a>
+                </li>
+                <li>
+                  <a class="enlace irHover" href="#hover"><span>Hover</span><span><i class="fab fa-suse"
+                        aria-hidden="true"></i></span></a>
+                </li>
+                <li>
+                  <a class="enlace irEfectos" href="#efectos"><span>Efectos</span><span><i class="far fa-star"
+                        aria-hidden="true"></i></span></a>
+                </li>
+                <li>
+                  <a class="enlace irgaleriaPruebas" href="#galeriaPruebas"><span>Pruebas</span><span><i
+                        class="far fa-images" aria-hidden="true"></i></span></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+
+
+
+
+
+        <div class=" mode">
+          <p id="noche" class="noche enlace bx bxs-moon" onclick="modoNoche('dia');"></p>
+          <p id="dia" class="dia enlace bx bxs-sun" onclick="modoNoche('noche');"></p>
+        </div>
+        <div class=" brushEstilos">
+          <p id="selecEstilosDesplegar" class="selecEstilosDesplegar enlace bx bxs-brush"></p>
+          <p style="display:none;" id="selecEstilosPlegar" class="selecEstilosPlegar enlace bx bxs-brush-alt"></p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+
+
+
+
+
+
 <div class="movil">
-    <div class="imagenes">
-        <div id="foto" class="foto">
-            <!--<img src="/src/assets/images/dracula-man.jpg">-->
-            <img src="/src/assets/images/transparente.png">
+  <div class="imagenes">
+    <div id="foto" class="foto">
+      <!--<img src="/src/assets/images/dracula-man.jpg">-->
+      <img src="/src/assets/images/transparente.png">
 
-        </div>
-        <div class="logotipo" >
-          <!--          <div class="dos letritas" id="dos" onclick="efectos('dos');">          -->  
-          
-          <div class="palabras">
-          <span>M</span>
-          <span>I</span>
-          <span>C</span>
-          <span>R</span>
-          <span>O</span>
-      </div>    
+    </div>
+    <div class="logotipo">
+      <!--          <div class="dos letritas" id="dos" onclick="efectos('dos');">          -->
+
+      <div class="palabras">
+        <span>M</span>
+        <span>I</span>
+        <span>C</span>
+        <span>R</span>
+        <span>O</span>
+      </div>
       <svg>
-      <defs>
+        <defs>
           <filter id="squiggly-0">
-          <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="0"/>
-          <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="6" />
-        </filter>
-        <filter id="squiggly-1">
-          <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="1"/>
-    <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
-        </filter>
-        
-        <filter id="squiggly-2">
-          <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="2"/>
-    <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
-        </filter>
-        <filter id="squiggly-3">
-          <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="3"/>
-    <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
-        </filter>
-        
-        <filter id="squiggly-4">
-          <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="4"/>
-    <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
-        </filter>
-      </defs> 
-  </svg>   
-            <!-- </div>-->
-        </div>
-        <div class="botones">
-          <div class="botonMenu">
-            <a id="pull" > <span></span></a>
-          </div>
+            <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="0" />
+            <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="6" />
+          </filter>
+          <filter id="squiggly-1">
+            <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="1" />
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+          </filter>
 
+          <filter id="squiggly-2">
+            <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="2" />
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+          </filter>
+          <filter id="squiggly-3">
+            <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="3" />
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+          </filter>
 
-
-            <!-- <span id="boton1"><img src="/src/assets/images/icons/menu.png" id="pull" href="#" alt="menu"></span> -->
-            <!--   <p id="pull" href="#" class="botonMenu bx bx-menu" alt="menu"></p>-->
-                
-  
-        </div>
+          <filter id="squiggly-4">
+            <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="4" />
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+          </filter>
+        </defs>
+      </svg>
+      <!-- </div>-->
     </div>
-    
-    <div style="display:none" class="desplegable nuevo" id="desplegable">
-        <a class="enlace" href="#inicio" onclick="seleccionado(); toggleMenu();">Inicio</a>
-        <a class="enlace" href="#biografia" onclick="seleccionado();">Biografía</a>
-        <a class="enlace" href="#webs" onclick="seleccionado();">Webs</a>
-        <a class="enlace" href="#galeria" onclick="seleccionado();">Galería</a>
-        <a class="enlace" href="#curriculum" onclick="seleccionado();">Currículum</a>
-        <a class="enlace" href="#contacto" onclick="seleccionado();">Contacto</a>
-        <a class="enlace " href="#disenos" onclick="seleccionado();">Diseños</a>
-        <a class="enlace " href="#hover" onclick="seleccionado();">Hover</a>
-        <a class="enlace " href="#efectos" onclick="seleccionado();">Efectos</a>
+    <div class="botones">
+      <div class="botonMenu">
+        <a id="pull"> <span></span></a>
+      </div>
 
-        <div class="brushMode">
-            <div class="brushEstilos">
-                <p onclick="navegar('panelEstilos');" id="selecEstilosDesplegar"
-                    class="selecEstilosDesplegar bx bxs-brush"></p>
-                <p style="display:none;" id="selecEstilosPlegar" class="selecEstilosPlegar bx bxs-brush-alt">
-                </p>
-            </div>
-            <div class="mode">
-                <p id="noche" class="noche bx bxs-moon" onclick="modoNoche('dia');"></p>
-                <p id="dia" class="dia bx bxs-sun" onclick="modoNoche('noche');"></p>
-            </div>
-        </div>
+
+
+      <!-- <span id="boton1"><img src="/src/assets/images/icons/menu.png" id="pull" href="#" alt="menu"></span> -->
+      <!--   <p id="pull" href="#" class="botonMenu bx bx-menu" alt="menu"></p>-->
+
+
     </div>
+  </div>
+
+  <div style="display:none" class="desplegable nuevo" id="desplegable">
+    <a class="enlace" href="#inicio" onclick="seleccionado(); toggleMenu();">Inicio</a>
+    <a class="enlace" href="#biografia" onclick="seleccionado();">Biografía</a>
+    <a class="enlace" href="#webs" onclick="seleccionado();">Webs</a>
+    <a class="enlace" href="#galeria" onclick="seleccionado();">Galería</a>
+    <a class="enlace" href="#curriculum" onclick="seleccionado();">Currículum</a>
+    <a class="enlace" href="#contacto" onclick="seleccionado();">Contacto</a>
+    <a class="enlace " href="#disenos" onclick="seleccionado();">Diseños</a>
+    <a class="enlace " href="#hover" onclick="seleccionado();">Hover</a>
+    <a class="enlace " href="#efectos" onclick="seleccionado();">Efectos</a>
+
+    <div class="brushMode">
+      <div class="brushEstilos">
+        <p onclick="navegar('panelEstilos');" id="selecEstilosDesplegar" class="selecEstilosDesplegar bx bxs-brush">
+        </p>
+        <p style="display:none;" id="selecEstilosPlegar" class="selecEstilosPlegar bx bxs-brush-alt">
+        </p>
+      </div>
+      <div class="mode">
+        <p id="noche" class="noche bx bxs-moon" onclick="modoNoche('dia');"></p>
+        <p id="dia" class="dia bx bxs-sun" onclick="modoNoche('noche');"></p>
+      </div>
+    </div>
+  </div>
 </div>
 <!-- <audio src="../sonidos/ping.mp4" autoplay loop></audio> -->
 </section>

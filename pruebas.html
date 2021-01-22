@@ -28,615 +28,166 @@
 
 <body>
 
-
-
-
-  <style>
-    .galeriaPruebas {
-      display: flex;
-
-      /* // * {
-  // 	box-sizing: border-box; 
-  // 	margin: 0;
-  // 	padding: 0;
-  // }
-
-  // *:focus {
-  // 	outline: 0;
-  // }
-
-  // html {
-  // 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  // } */
-
-      /* Slider */
-      .ctn-slider {
-        margin-bottom: 100vh;
-      }
-
-      .ctn-slider .slider {
-        backface-visibility: hidden;
-        /* Se coloca para que no se dañe lo del attachment fixed en pantallas mas pequeñas */
-        cursor: pointer;
-        /* Se deja de primero el pointer para explorer y en los demas navegadores por cascada lo sobre-escribe */
-        cursor: -webkit-grab;
-        cursor: -moz-grab;
-        left: 0;
-        overflow: hidden;
-        position: absolute;
-        /* // top: 0; */
-        width: 100%;
-        z-index: 600;
-      }
-
-      .ctn-slider .slider:active {
-        cursor: -webkit-grabbing;
-        cursor: -moz-grabbing;
-      }
-
-      .ctn-slider .slider .slider-inner {
-        display: table;
-        left: 0;
-        position: relative;
-        /* // top: 0; */
-        transition: 1s ease;
-      }
-
-      .ctn-slider .slider .section-slider {
-        float: left;
-      }
-
-      .ctn-slider .slider .section-slider .img-slider:before {
-        background-attachment: fixed;
-        background-image: url("https://grupoamsi.com/Test-Grupo-Amsi/Test-Grupo-Amsi/img/imgs-general/sliders/malla-slider/capa.png");
-        content: "";
-        height: 100vh;
-        left: 0;
-        position: absolute;
-        /* // top: 0; */
-        width: 100%;
-      }
-
-      .ctn-slider .slider .section-slider .img-slider {
-        align-items: center;
-        background: #202020 center center / cover no-repeat fixed;
-        background-color: #000;
-
-        display: flex;
-        filter: grayscale(20%);
-        height: 100vh;
-        justify-content: center;
-        position: relative;
-        width: 100%;
-      }
-
-      /* Imágenes slider inicio */
-      .ctn-slider .slider .section-slider .slider-one {
-        background-image: url("https://grupoamsi.com/Test-Grupo-Amsi/Test-Grupo-Amsi/img/imgs-general/sliders/slider-inicio/inicio-aplicaciones-web.jpg");
-      }
-
-      .ctn-slider .slider .section-slider .slider-two {
-        background-image: url("https://grupoamsi.com/Test-Grupo-Amsi/Test-Grupo-Amsi/img/imgs-general/sliders/slider-inicio/inicio-escritorio.jpg");
-      }
-
-      .ctn-slider .slider .section-slider .slider-three {
-        background-image: url("https://grupoamsi.com/Test-Grupo-Amsi/Test-Grupo-Amsi/img/imgs-general/sliders/slider-inicio/inicio-grupo-de-trabajo.jpg");
-      }
-
-      .ctn-slider .slider .section-slider .slider-four {
-        background-image: url("https://grupoamsi.com/Test-Grupo-Amsi/Test-Grupo-Amsi/img/imgs-general/sliders/slider-inicio/inicio-ideas.jpg");
-      }
-
-      .ctn-slider .slider .section-slider .slider-five {
-        background-image: url("https://grupoamsi.com/Test-Grupo-Amsi/Test-Grupo-Amsi/img/imgs-general/sliders/slider-inicio/inicio-servidores.jpg");
-      }
-
-      /* Titulos slider */
-      .ctn-slider .slider .section-slider .title-slider {
-        color: #ffffff;
-        font: normal 4em "Dancing Script", sans-serif;
-        position: relative;
-        text-align: center;
-        text-shadow: 0.1rem 0.1rem 1rem #000000;
-        top: 1.5rem;
-        user-select: none;
-      }
-
-      /* Flechas del slider */
-      .ctn-slider .slider-nav .arrows {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        background-color: rgba(255, 255, 255, 0.3);
-        color: #ffffff;
-        cursor: pointer;
-        display: none;
-        padding: 1em;
-        position: absolute;
-        text-shadow: 0.1rem 0.1rem 0.5rem #000000;
-        /* // top: 0; */
-        margin-top: 50vh;
-        transition: 0.3s ease all;
-        z-index: 601;
-        height: 5rem;
-      }
-
-      .i {
-        width: 10rem;
-      }
-
-      /* Flechas izquierda del slider */
-      .ctn-slider .slider-nav .prev {
-        border-radius: 50% 0 0 50%;
-        left: 1rem;
-
-      }
-
-      /* Flechas derecha del slider */
-      .ctn-slider .slider-nav .next {
-        border-radius: 0 50% 50% 0;
-        right: 1rem;
-      }
-
-      /* Efecto cuando le dan click a las flechas del slider */
-      .ctn-slider .slider-nav .prev:active {
-        transform: translateX(-0.5rem);
-      }
-
-      .ctn-slider .slider-nav .next:active {
-        transform: translateX(0.5rem);
-      }
-
-      /* Flecha de ir a la siguiente sección */
-      .ctn-slider .move-slider {
-        animation: jump-arrow 2.5s infinite;
-        /* // bottom: 2%; */
-        color: rgba(255, 255, 255, 0.5);
-        font-size: 2rem;
-        /* // left: 0; */
-        margin-top: 100vh;
-        position: absolute;
-        text-align: center;
-        text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.5);
-        width: 100%;
-        z-index: 600;
-      }
-
-      .ctn-slider .move-slider .arrow-down-slider {
-        cursor: pointer;
-      }
-
-      /* Efecto hover flecha de ir a la siguiente sección */
-      .ctn-slider .move-slider .arrow-down-slider:hover,
-      .ctn-slider .move-slider .arrow-down-slider:focus,
-      .ctn-slider .move-slider .arrow-down-slider:active {
-        color: #ffffff;
-      }
-
-      /* Animación de las flechas que saltan para señalar a la siguiente sección */
-      @keyframes jump-arrow {
-
-        0%,
-        20%,
-        55%,
-        80%,
-        100% {
-          transform: translate3d(0, 0, 0);
-        }
-
-        40% {
-          transform: translate3d(0, -1.5rem, 0);
-        }
-
-        70% {
-          transform: translate3d(0, -1rem, 0);
-        }
-
-        90% {
-          transform: translate3d(0, -0.5rem, 0);
-        }
-      }
-
-      .wallpaper {
-        background: url("https://images.pexels.com/photos/745407/pexels-photo-745407.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") #202020 center center / cover no-repeat fixed;
-        height: 100vh;
-        width: 100%;
-      }
-
-
-
-
-      /* Responsive max-width and min-width */
-      /* Responsive flechas y título del slider */
-      @media only screen and (min-width: 761px) and (max-width: 960px) {
-
-        /* Títulos del slider */
-        .ctn-slider .slider .section-slider .title-slider {
-          font-size: 3em;
-        }
-      }
-
-      @media only screen and (min-width: 501px) and (max-width: 760px) {
-
-        /* Títulos del slider */
-        .ctn-slider .slider .section-slider .title-slider {
-          font-size: 2em;
-          top: 0;
-        }
-
-        /* Flechas slider */
-        .ctn-slider .slider-nav .arrows {
-          padding: 0.5em;
-        }
-      }
-
-      @media screen and (max-width: 500px) {
-
-        /* Títulos del slider */
-        .ctn-slider .slider .section-slider .title-slider {
-          font-size: 1.5em;
-          top: 0;
-        }
-
-        /* Flechas slider */
-        .ctn-slider .slider-nav .arrows {
-          background-color: rgba(0, 0, 0, 0);
-        }
-
-        .ctn-slider .slider-nav .prev {
-          left: 0.5rem;
-        }
-
-        .ctn-slider .slider-nav .next {
-          right: 0.5rem;
-        }
-      }
-
-      /* Efecto hover de las flechas del slider (desde mobiles grandes hasta pc) */
-      @media screen and (min-width: 500px) {
-
-        .ctn-slider .slider-nav .arrows:hover,
-        .ctn-slider .slider-nav .arrows:focus {
-          background-color: rgba(255, 255, 255, 0.5);
-          color: rgba(0, 0, 0, 0.7);
-          text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.5);
-        }
-      }
-
-      /* //---uno------------------------- */
-      .uno {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-
-        font-size: 5rem;
-        /* // font-family: "Open Sans",  Impact; */
-        /* // @import url(https://fonts.googleapis.com/css?family=Open+Sans); */
-        /* // */
-        color: #fff;
-        /* // letter-spacing: -7px; */
-        font-weight: 700;
-        text-transform: uppercase;
-        /* //activar efectos */
-        animation: blur 0.75s ease-out infinite;
-        text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
-      }
-
-      .unoEfectos,
-      .uno:hover {
-        animation: blur 0.75s ease-out infinite;
-      }
-
-      @keyframes blur {
-        from {
-          text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 2.5rem #fff,
-            0px 0px 2.5rem #fff, 0px 0px 2.5rem #fff, 0px 0px 2.5rem #fff,
-            0px 0px 2.5rem #fff, 0px 0px 2.5rem #fff, 0px 0px 50px #fff,
-            0px 0px 50px #fff, 0px 0px 50px #7b96b8, 0px 0px 150px #7b96b8,
-            0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8,
-            0px 10px 100px #7b96b8, 0px -10px 100px #7b96b8, 0px -10px 100px #7b96b8;
-        }
-      }
-  </style>
-
-  <section class="galeriaPruebas">
-    <!-- Slider -->
-    <div id="ctn-slider" class="ctn-slider">
-      <div id="slider" class="slider">
-        <section class="section-slider">
-          <div class="img-slider slider-one">
-            <h1 class="title-slider">
-              Diseños de letras
-            </h1>
-          </div>
-        </section>
-
-        <section class="section-slider">
-          <div class="img-slider slider-two">
-            <section class="letras">
-              <div class="uno letritas" id="uno" onclick="efectos('uno');">
-                ⚠Micro⚠
-              </div>
-          </div>
-        </section>
-
-        <section class="section-slider">
-          <div class="img-slider slider-three">
-            <div class="dos letritas" id="dos" onclick="efectos('dos');">
-              <div class="word">
-                <span>M</span>
-                <span>I</span>
-                <span>C</span>
-                <span>R</span>
-                <span>O</span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section-slider">
-          <div class="img-slider slider-four">
-            <div class="tres letritas" id="tres" onclick="efectos('tres');">
-              <div class="glitch" data-text="Micro">Micro</div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section-slider">
-          <div class="img-slider slider-four">
-            <div class="cuatro letritas" id="cuatro" onclick="efectos('cuatro');">
-              <span class="jittery">Micro</span>
-            </div>
-          </div>
-        </section>
-
-        <section class="section-slider">
-          <div class="img-slider slider-four">
-            <div class="cinco letritas" id="cinco" onclick="efectos('cinco');">
-              <h1>Micro</h1>
-            </div>
-          </div>
-        </section>
-
-        <section class="section-slider">
-          <div class="img-slider slider-four">
-            <div class="seis letritas" id="seis" onclick="efectos('seis');">
-              <svg viewBox="0 0 800 300">
-                <!-- Clippath  with text -->
-                <clippath id="cp-text">
-                  <text text-anchor="middle" x="50%" y="70%" class="colorines">
-                    Micro
-                  </text>
-                </clippath>
-                <!-- Group for shadow -->
-                <g clip-path="url(#cp-text)" class="shadow">
-                  <rect class="anim-shape anim-shape--shadow"></rect>
-                </g>
-                <!-- Group with clippath for text-->
-                <g clip-path="url(#cp-text)" class="colortext">
-                  <!-- Animated shapes inside text -->
-                  <rect width="100%" height="100%" class="anim-shape"></rect>
-                  <rect width="80%" height="100%" class="anim-shape"></rect>
-                  <rect width="60%" height="100%" class="anim-shape"></rect>
-                  <rect width="40%" height="100%" class="anim-shape"></rect>
-                  <rect width="20%" height="100%" class="anim-shape"></rect>
-                </g>
-                <!-- Transparent copy of text to keep patterned text selectable -->
-                <use xlink:href="#s-text" class="text--transparent"></use>
-              </svg>
-            </div>
-          </div>
-        </section>
-
-        <section class="section-slider">
-          <div class="img-slider slider-four">
-            <div class="siete letritas" id="siete" onclick="efectos('siete');">
-              <h1>Micro</h1>
-            </div>
-          </div>
-        </section>
-
-        <section class="section-slider">
-          <div class="img-slider slider-four">
-            <div class="ocho letritas" id="ocho" onclick="efectos('ocho');">
-              <svg>
-                <!-- Symbol -->
-                <symbol id="s-text">
-                  <text text-anchor="middle" x="50%" y="50%" dy=".35em" class="text--line">
-                    Micro
-                  </text>
-                </symbol>
-                <!-- Duplicate symbols -->
-                <use xlink:href="#s-text" class="text"></use>
-                <use xlink:href="#s-text" class="text"></use>
-                <use xlink:href="#s-text" class="text"></use>
-                <use xlink:href="#s-text" class="text"></use>
-                <use xlink:href="#s-text" class="text"></use>
-              </svg>
-            </div>
-          </div>
-        </section>
-
-        <section class="section-slider">
-          <div class="img-slider slider-five">
-            <div class="nueve letritas" id="nueve" onclick="efectos('nueve');">
-              <svg>
-                <symbol id="s-text">
-                  <text>
-                    Elastic
-                  </text>
-                </symbol>
-                <g class="g-ants">
-                  <use xlink:href="#s-text" class="text-copy"></use>
-                  <use xlink:href="#s-text" class="text-copy"></use>
-                  <use xlink:href="#s-text" class="text-copy"></use>
-                  <use xlink:href="#s-text" class="text-copy"></use>
-                  <use xlink:href="#s-text" class="text-copy"></use>
-                </g>
-              </svg>
-            </div>
-          </div>
-        </section>
-
-        <section class="section-slider">
-          <div class="img-slider slider-five">
-            <div class="diez letritas" id="diez" onclick="efectos('diez');">
-              <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
-              <h1>
-                <em>C</em>
-                <em class="planet left">O</em>
-                <em>S</em>
-                <em>M</em>
-                <em class="planet right">O</em>
-              </h1>
-            </div>
-          </div>
-        </section>
-
-
-        <section class="section-slider">
-          <div class="img-slider slider-five">
-            <div class="once letritas" id="once" onclick="efectos('once');">
-              <h1 data-heading="Micro">Micro</h1>
-            </div>
-          </div>
-        </section>
-
-
-        <section class="section-slider">
-          <div class="img-slider slider-five">
-            <div class="doce letritas" id="doce" onclick="efectos('doce');">
-              <div class='moveText'>
-                <div class='moveTextIn'>
-                  <p>
-                    Hello
-                  </p>
+  <section class="stick" id="stick">
+    <div class="nav" id="nav">
+      <div class="navbar">
+        <div id="foto" class="foto">
+          <img src="/src/assets/images/dracula-man.jpg">
+        </div>
+        <div class="menu">
+          <div id="links" class="links">
+
+
+            <a class="enlace irInicio" href="#inicio"><span>Inicio</span><span><i class="fas fa-home"
+                  aria-hidden="true"></i></span></a>
+            <a class="enlace irBiografia" href="#biografia"><span>Biografía</span><span><i class="fab fa-leanpub"
+                  aria-hidden="true"></i></span></a>
+            <a class="enlace irWebs" href="#webs"><span>Webs</span><span><i class="fas fa-globe"
+                  aria-hidden="true"></i></span></a>
+            <a class="enlace irGaleria" href="#galeria"><span>Galería</span><span><i class="far fa-images"
+                  aria-hidden="true"></i></span></a>
+            <a class="enlace irCurriculum" href="#curriculum"><span>Currículum</span><span><i class="far fa-id-badge"
+                  aria-hidden="true"></i></span></a>
+            <a class="enlace irContacto" href="#contacto"><span>Contacto</span><span><i class="far fa-envelope"
+                  aria-hidden="true"></i></span></a>
+
+
+            <div class="menuCSS3">
+              <ul>
+                <li><i class="enlace"><span>Diseños</span><span><i class="fas fa-mouse"
+                        aria-hidden="true"></i></span></i>
                   <ul>
-                    <li>world !</li>
-                    <li>Micro !</li>
-                    <li>users !</li>
+                    <li>
+                      <a class="enlace irDisenos" href="#disenos"><span>Diseños</span><span><i class="fas fa-mouse"
+                            aria-hidden="true"></i></span></a>
+                    </li>
+                    <li>
+                      <a class="enlace irHover" href="#hover"><span>Hover</span><span><i class="fab fa-suse"
+                            aria-hidden="true"></i></span></a>
+                    </li>
+                    <li>
+                      <a class="enlace irEfectos" href="#efectos"><span>Efectos</span><span><i class="far fa-star"
+                            aria-hidden="true"></i></span></a>
+                    </li>
+                    <li>
+                      <a class="enlace irgaleriaPruebas" href="#galeriaPruebas"><span>Pruebas</span><span><i
+                            class="far fa-images" aria-hidden="true"></i></span></a>
+                    </li>
                   </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-
-        <section class="section-slider">
-          <div class="img-slider slider-five">
-            <div class="trece letritas" id="trece" onclick="efectos('trece');">
-              <a>Micro</a>
-              <!--<a href="http://www.thismanslife.co.uk" target="_blank">Micro</a>-->
-            </div>
-          </div>
-        </section>
-
-
-        <section class="section-slider">
-          <div class="img-slider slider-five">
-            <div class="catorce letritas">
-              <div class="test">
-                <p class="small">- Micro -
-                  <p />
-              </div>
-              <svg>
-                <defs>
-                  <filter id="squiggly-0">
-                    <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="0" />
-                    <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="6" />
-                  </filter>
-                  <filter id="squiggly-1">
-                    <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="1" />
-                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
-                  </filter>
-
-                  <filter id="squiggly-2">
-                    <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="2" />
-                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
-                  </filter>
-                  <filter id="squiggly-3">
-                    <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="3" />
-                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
-                  </filter>
-
-                  <filter id="squiggly-4">
-                    <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="4" />
-                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
-                  </filter>
-                </defs>
-              </svg>
-            </div>
-          </div>
-        </section>
-
-
-        <section class="section-slider">
-          <div class="img-slider slider-five">
-            <div class="fluorescentes letritas">
-              <x-sign>
-                OPEN
-              </x-sign>
-              <x-sign>
-                Come back soon
-              </x-sign>
-              <x-sign>
-                PBR<br>in cans
-              </x-sign>
-              <x-sign>
-                REAL LIVE<br>Hot wings
-              </x-sign>
-              <x-sign>
-                <small>GARDEN PARK</small><br>MOTEL
-              </x-sign>
-              <x-sign>
-                Restrooms
-                <br><small>Yes&mdash;they are bad</small>
-              </x-sign>
-              <x-sign>
-                FREE RADIOS
-              </x-sign>
-              <x-sign>
-                WHO YOU GONNA CALL?
-              </x-sign>
-              <x-sign>
-                Karaoke Inside
-              </x-sign>
-            </div>
-            <div class="k letritas">
-              <div>
-                Micro
-              </div>
+                </li>
+              </ul>
             </div>
 
+
+
+
+
+
+            <div class=" mode">
+              <p id="noche" class="noche enlace bx bxs-moon" onclick="modoNoche('dia');"></p>
+              <p id="dia" class="dia enlace bx bxs-sun" onclick="modoNoche('noche');"></p>
+            </div>
+            <div class=" brushEstilos">
+              <p id="selecEstilosDesplegar" class="selecEstilosDesplegar enlace bx bxs-brush"></p>
+              <p style="display:none;" id="selecEstilosPlegar" class="selecEstilosPlegar enlace bx bxs-brush-alt"></p>
+            </div>
           </div>
-        </section>
-
-        <section class="section-slider">
-          <div class="img-slider slider-five">
-            <h1 class="title-slider">
-              Fin
-            </h1>
-          </div>
-        </section>
-      </div>
-
-
-      <!-- Botón de ir a la siguiente sección slider -->
-      <div class="move-slider">
-        <i id="arrow-down-slider" class="fa fa-chevron-down arrow-down-slider" aria-hidden="true"></i>
+        </div>
       </div>
     </div>
+
+
+
+
+
+
+
+    <div class="movil">
+      <div class="imagenes">
+        <div id="foto" class="foto">
+          <!--<img src="/src/assets/images/dracula-man.jpg">-->
+          <img src="/src/assets/images/transparente.png">
+
+        </div>
+        <div class="logotipo">
+          <!--          <div class="dos letritas" id="dos" onclick="efectos('dos');">          -->
+
+          <div class="palabras">
+            <span>M</span>
+            <span>I</span>
+            <span>C</span>
+            <span>R</span>
+            <span>O</span>
+          </div>
+          <svg>
+            <defs>
+              <filter id="squiggly-0">
+                <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="0" />
+                <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="6" />
+              </filter>
+              <filter id="squiggly-1">
+                <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="1" />
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+              </filter>
+
+              <filter id="squiggly-2">
+                <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="2" />
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+              </filter>
+              <filter id="squiggly-3">
+                <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="3" />
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+              </filter>
+
+              <filter id="squiggly-4">
+                <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="4" />
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+              </filter>
+            </defs>
+          </svg>
+          <!-- </div>-->
+        </div>
+        <div class="botones">
+          <div class="botonMenu">
+            <a id="pull"> <span></span></a>
+          </div>
+
+
+
+          <!-- <span id="boton1"><img src="/src/assets/images/icons/menu.png" id="pull" href="#" alt="menu"></span> -->
+          <!--   <p id="pull" href="#" class="botonMenu bx bx-menu" alt="menu"></p>-->
+
+
+        </div>
+      </div>
+
+      <div style="display:none" class="desplegable nuevo" id="desplegable">
+        <a class="enlace" href="#inicio" onclick="seleccionado(); toggleMenu();">Inicio</a>
+        <a class="enlace" href="#biografia" onclick="seleccionado();">Biografía</a>
+        <a class="enlace" href="#webs" onclick="seleccionado();">Webs</a>
+        <a class="enlace" href="#galeria" onclick="seleccionado();">Galería</a>
+        <a class="enlace" href="#curriculum" onclick="seleccionado();">Currículum</a>
+        <a class="enlace" href="#contacto" onclick="seleccionado();">Contacto</a>
+        <a class="enlace " href="#disenos" onclick="seleccionado();">Diseños</a>
+        <a class="enlace " href="#hover" onclick="seleccionado();">Hover</a>
+        <a class="enlace " href="#efectos" onclick="seleccionado();">Efectos</a>
+
+        <div class="brushMode">
+          <div class="brushEstilos">
+            <p onclick="navegar('panelEstilos');" id="selecEstilosDesplegar" class="selecEstilosDesplegar bx bxs-brush">
+            </p>
+            <p style="display:none;" id="selecEstilosPlegar" class="selecEstilosPlegar bx bxs-brush-alt">
+            </p>
+          </div>
+          <div class="mode">
+            <p id="noche" class="noche bx bxs-moon" onclick="modoNoche('dia');"></p>
+            <p id="dia" class="dia bx bxs-sun" onclick="modoNoche('noche');"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <audio src="../sonidos/ping.mp4" autoplay loop></audio> -->
   </section>
-  <div class="separator5"></div>
-  <section>
-    <div id="wallpaper" class="wallpaper"></div>
-  </section>
-  <div class="separador5"></div>
 
 </body>
 

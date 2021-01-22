@@ -131,8 +131,28 @@
       -ms-flex-align: end;
           align-items: flex-end;
   width: 100%;
+}
+
+.stick .nav .navbar .menu .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   /* ANIMATIONS
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+}
+
+.stick .nav .navbar .menu .links a {
+  text-decoration: none;
 }
 
 .stick .nav .navbar .menu .links a:hover span:first-child {
@@ -141,34 +161,53 @@
 }
 
 .stick .nav .navbar .menu .links a:hover span:last-child,
-.stick .nav .navbar .menu .links[data-animation] a:hover span:last-child {
+.stick .nav .navbar .menu .links .links[data-animation] a:hover span:last-child {
   -webkit-transform: none;
           transform: none;
 }
 
-.stick .nav .navbar .menu .links[data-animation="to-top"] a span:last-child {
+.stick .nav .navbar .menu .links .links[data-animation="to-top"] a span:last-child {
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
 }
 
-.stick .nav .navbar .menu .links[data-animation="to-right"] a span:last-child {
+.stick .nav .navbar .menu .links .links[data-animation="to-right"] a span:last-child {
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
 }
 
-.stick .nav .navbar .menu .links {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: [x0] 0.1fr [x1] 0.1fr [x2] 0.1fr [x3] 0.1fr [x4] 0.1fr [x5] 0.1fr [x6] 0.1fr [x7] 0.1fr [x8] 0.1fr [x9] 0.1fr [x10] 0.1fr [x11];
-      grid-template-columns: [x0] 0.1fr [x1] 0.1fr [x2] 0.1fr [x3] 0.1fr [x4] 0.1fr [x5] 0.1fr [x6] 0.1fr [x7] 0.1fr [x8] 0.1fr [x9] 0.1fr [x10] 0.1fr [x11];
-  -ms-grid-rows: [y0] 1fr [y1];
-      grid-template-rows: [y0] 1fr [y1];
-  grid-column-gap: 0rem;
-  grid-row-gap: 1rem;
+.stick .nav .navbar .menu .links .menuCSS3 {
+  list-style: none;
+  /* Rounded Corners */
+  border-radius: 1rem;
 }
 
-.stick .nav .navbar .menu .links a {
-  text-decoration: none;
+.stick .nav .navbar .menu .links .menuCSS3 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-left: -1rem;
+  list-style: none;
+}
+
+.stick .nav .navbar .menu .links .menuCSS3 a {
+  background-color: #000;
+}
+
+.stick .nav .navbar .menu .links .menuCSS3 a:hover {
+  background-color: #000;
+}
+
+.stick .nav .navbar .menu .links .menuCSS3 ul li ul {
+  display: none;
+}
+
+.stick .nav .navbar .menu .links .menuCSS3 ul li a:hover + ul,
+.stick .nav .navbar .menu .links .menuCSS3 ul li ul:hover {
+  display: block;
+  position: absolute;
 }
 
 .stick .nav .navbar .menu .links .enlace {
@@ -185,8 +224,9 @@
       -ms-flex-pack: center;
           justify-content: center;
   cursor: pointer;
-  margin: 0rem 0.5rem 0rem 0.5rem;
+  margin: 0rem 0.4rem 0rem 0.4rem;
   color: #3c97bf;
+  padding: 0rem 0.1rem 0rem 0.1rem;
   font-size: 1.6rem;
   font-weight: bold;
 }
@@ -200,7 +240,7 @@
 
 .stick .nav .navbar .menu .links .enlace span:first-child {
   display: inline-block;
-  padding: 1rem;
+  padding: 1rem 0rem 1rem 0rem;
 }
 
 .stick .nav .navbar .menu .links .enlace span:last-child {
@@ -230,64 +270,14 @@
   color: #3c97bf;
 }
 
-.stick .nav .navbar .menu .links .irInicio {
-  grid-column: x0 / x1;
-  grid-row: y0 / y1;
-}
-
-.stick .nav .navbar .menu .links .irBiografia {
-  grid-column: x1 / x2;
-  grid-row: y0 / y1;
-}
-
-.stick .nav .navbar .menu .links .irWebs {
-  grid-column: x2 / x3;
-  grid-row: y0 / y1;
-}
-
-.stick .nav .navbar .menu .links .irGaleria {
-  grid-column: x3 / x4;
-  grid-row: y0 / y1;
-}
-
-.stick .nav .navbar .menu .links .irCurriculum {
-  grid-column: x4 / x5;
-  grid-row: y0 / y1;
-}
-
-.stick .nav .navbar .menu .links .irContacto {
-  grid-column: x5 / x6;
-  grid-row: y0 / y1;
-}
-
-.stick .nav .navbar .menu .links .irDisenos {
-  grid-column: x6 / x7;
-  grid-row: y0 / y1;
-}
-
-.stick .nav .navbar .menu .links .irHover {
-  grid-column: x7 / x8;
-  grid-row: y0 / y1;
-}
-
-.stick .nav .navbar .menu .links .irEfectos {
-  grid-column: x8 / x9;
-  grid-row: y0 / y1;
-}
-
-.stick .nav .navbar .menu .links .mode {
-  grid-column: x9 / x10;
-  grid-row: y0 / y1;
-}
-
 .stick .nav .navbar .menu .links .mode .noche {
   display: none;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .stick .nav .navbar .menu .links .mode .dia {
   display: block;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .stick .nav .navbar .menu .links .mode:hover {
@@ -297,26 +287,12 @@
   transform: rotate(360deg);
 }
 
-.stick .nav .navbar .menu .links .brushEstilos {
-  grid-column: x10 / x11;
-  grid-row: y0 / y1;
-}
-
 .stick .nav .navbar .menu .links .brushEstilos .selecEstilosDesplegar {
-  margin: 0;
-  -webkit-animation-name: parpadeo;
-          animation-name: parpadeo;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .stick .nav .navbar .menu .links .brushEstilos .selecEstilosPlegar {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .stick .nav .navbar .menu .links .brushEstilos:hover {
