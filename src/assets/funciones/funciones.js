@@ -272,14 +272,12 @@ function modoNoche(id) {
     case "dia":
       console.log("dia");
       console.log("final", estilo);
-      // document.getElementById("dia").style = "color:red";
 
-     document.getElementById("dia").classList.add("active");
-      // kaka.classList="kaka";
-      // document.getElementById("noche").style = "transform: rotate(360deg)";
-      // document.getElementById("dia").style = "display:none;";
+     document.getElementById("dia").classList.add("efectoModoNoche");
+  
+     
         setTimeout(function () {
-          document.getElementById("dia").classList.remove("active");
+          document.getElementById("dia").classList.remove("efectoModoNoche");
           document.getElementById("noche").style = "display:block";
           document.getElementById("dia").style = "display:none;";
           document.getElementById("modo").href = "/src/assets/style/sass/styles/styleDia.css";        
@@ -290,12 +288,19 @@ function modoNoche(id) {
 
      
       break;
+
+
     case "noche":
-      console.log("noche");
+      document.getElementById("noche").classList.add("efectoModoNoche");
+
+      setTimeout(function () {
+        document.getElementById("noche").classList.remove("efectoModoNoche");
+
       document.getElementById("dia").style = "display:block";
       document.getElementById("noche").style = "display:none";
-
       document.getElementById("modo").href = "";
+    }, 2000); // 1000ms = 3s
+
       break;
     default:
       break;
