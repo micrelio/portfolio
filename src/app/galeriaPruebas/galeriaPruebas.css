@@ -934,15 +934,15 @@
 
 @-webkit-keyframes jitter {
   50% {
-    -webkit-transform: skewY(0.5deg) skewX(-0.5deg) scale(1.006);
-            transform: skewY(0.5deg) skewX(-0.5deg) scale(1.006);
+    -webkit-transform: skewY(5deg) skewX(-5deg) scale(1.006);
+            transform: skewY(5deg) skewX(-5deg) scale(1.006);
   }
 }
 
 @keyframes jitter {
   50% {
-    -webkit-transform: skewY(0.5deg) skewX(-0.5deg) scale(1.006);
-            transform: skewY(0.5deg) skewX(-0.5deg) scale(1.006);
+    -webkit-transform: skewY(5deg) skewX(-5deg) scale(1.006);
+            transform: skewY(5deg) skewX(-5deg) scale(1.006);
   }
 }
 

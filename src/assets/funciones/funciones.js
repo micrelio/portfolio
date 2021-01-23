@@ -230,6 +230,12 @@ function color(color) {
       break;
   }
 }
+
+
+
+
+
+
 function modoNoche(id) {
   //   getDate(): devuelve el día del mes (1 a 31).
   // getDay(): devuelve el número del día de la semana: desde 0 (domingo) hasta 6 (sábado).
@@ -241,7 +247,8 @@ function modoNoche(id) {
   // getSeconds(): devuelve el número de segundos (0 a 59).
   // toLocaleDateString(): devuelve una cadena con la fecha completa, en formato de fecha local.
   // toLocaleTimeString(): devuelve una cadena con la hora completa, en formato de hora local.
-  console.log(id)
+
+  console.log(id);
   var objFecha = new Date();
   var mes = 1 + objFecha.getMonth();
   var hora = objFecha.getHours();
@@ -250,22 +257,43 @@ function modoNoche(id) {
   if (id != undefined) {
     var hora = "";
   }
-  console.log(hora)
+  console.log(hora);
   if ((hora >= 8 && hora < 20) || id == "noche") {
-    console.log('modo dia');
+    console.log("modo dia");
     estilo = "dia";
-  } else if ((hora >= 20 && hora < 26) || (hora > 00 && hora < 8) || id == "dia") {
+  } else if (
+    (hora >= 20 && hora < 26) ||
+    (hora >= 00 && hora < 8) ||
+    id == "dia"
+  ) {
     estilo = "noche";
   }
   switch (estilo) {
     case "dia":
-      console.log('dia')
-      console.log('final',estilo)
+      console.log("dia");
+      console.log("final", estilo);
+      // document.getElementById("dia").style = "color:red";
 
-      document.getElementById("modo").href ="/src/assets/style/sass/styles/styleDia.css";
+     document.getElementById("dia").classList.add("active");
+      // kaka.classList="kaka";
+      // document.getElementById("noche").style = "transform: rotate(360deg)";
+      // document.getElementById("dia").style = "display:none;";
+        setTimeout(function () {
+          document.getElementById("dia").classList.remove("active");
+          document.getElementById("noche").style = "display:block";
+          document.getElementById("dia").style = "display:none;";
+          document.getElementById("modo").href = "/src/assets/style/sass/styles/styleDia.css";        
+        }, 1000); // 1000ms = 3s
+      // function mostrarAviso() {
+      //   alert("Han pasado los tres segundos");
+      // }
+
+     
       break;
     case "noche":
-      console.log('noche')
+      console.log("noche");
+      document.getElementById("dia").style = "display:block";
+      document.getElementById("noche").style = "display:none";
 
       document.getElementById("modo").href = "";
       break;

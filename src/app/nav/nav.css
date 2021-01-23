@@ -270,20 +270,47 @@
 }
 
 .stick .nav .navbar .menu .links .mode .noche {
+  -webkit-animation: rotate1 1s linear;
+          animation: rotate1 1s linear;
   display: none;
   font-size: 3rem;
 }
 
 .stick .nav .navbar .menu .links .mode .dia {
-  display: block;
+  display: none;
   font-size: 3rem;
 }
 
-.stick .nav .navbar .menu .links .mode:hover {
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
+.stick .nav .navbar .menu .links .mode .dia .active {
+  -webkit-animation: rotate1 1s linear;
+          animation: rotate1 1s linear;
+  -webkit-transform: scale(1.3);
+  transform: scale(-1.3);
+}
+
+.stick .nav .navbar .menu .links .active {
+  -webkit-animation: rotate1 1s linear;
+          animation: rotate1 1s linear;
+}
+
+@-webkit-keyframes rotate1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 .stick .nav .navbar .menu .links .brushEstilos .selecEstilosDesplegar {

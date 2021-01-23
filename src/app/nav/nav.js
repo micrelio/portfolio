@@ -78,7 +78,7 @@ class miNav extends HTMLElement {
 
 
 
-        <div class=" mode">
+        <div id="mode" class=" mode">
           <p id="noche" class="noche enlace bx bxs-moon" onclick="modoNoche('dia');"></p>
           <p id="dia" class="dia enlace bx bxs-sun" onclick="modoNoche('noche');"></p>
         </div>
@@ -174,7 +174,7 @@ class miNav extends HTMLElement {
         <p style="display:none;" id="selecEstilosPlegar" class="selecEstilosPlegar bx bxs-brush-alt">
         </p>
       </div>
-      <div class="mode">
+      <div id="mode" class="mode">
         <p id="noche" class="noche bx bxs-moon" onclick="modoNoche('dia');"></p>
         <p id="dia" class="dia bx bxs-sun" onclick="modoNoche('noche');"></p>
       </div>
@@ -185,6 +185,7 @@ class miNav extends HTMLElement {
 </section>
 
       `;
+
     //---logotipo---LETRAS QUE SE MUEVEN
     const spans = document.querySelectorAll(".palabras span");
 
@@ -204,7 +205,7 @@ class miNav extends HTMLElement {
     //---efecto boton menu------------------------------------------------------------------
 
     // // event
-    //---menuEfecto-------------------------------------------------
+    //---menuEfecto x-------------------------------------------------
     document.querySelector("#pull").addEventListener("click", function () {
       this.classList.toggle("active");
       // document.getElementById("pull").style = "value: 100%";
