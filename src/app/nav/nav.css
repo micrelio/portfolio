@@ -1,10 +1,13 @@
 @charset "UTF-8";
 /* ---------------hovers--------------*/
+@font-face {
+  font-family: "Londrina Outline";
+  src: url(../../assets/fuentes/letrasEfectos/LondrinaOutline-Regular.ttf) format("truetype");
+}
+
 /* -----------------------------------------
          social media menu
 ------------------------------------------ */
-@import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700");
-@import url("https://fonts.googleapis.com/css?family=Anton|Roboto");
 .social-media {
   padding: 0.1rem 1rem 0.1rem 1rem;
   background-color: #3c97bf;
@@ -270,18 +273,17 @@
 }
 
 .stick .nav .navbar .menu .links .mode .noche {
+  -webkit-animation: amplia 1s linear;
+          animation: amplia 1s linear;
   display: none;
   font-size: 3rem;
 }
 
 .stick .nav .navbar .menu .links .mode .dia {
+  -webkit-animation: amplia 1s linear;
+          animation: amplia 1s linear;
   display: none;
   font-size: 3rem;
-}
-
-.stick .nav .navbar .menu .links .va {
-  -webkit-animation: amplia 2s linear;
-          animation: amplia 2s linear;
 }
 
 .stick .nav .navbar .menu .links .efectoModoNoche {
@@ -470,7 +472,6 @@
     margin-right: 6rem;
   }
   .stick .movil .imagenes .logotipo {
-    font-family: "Amatic SC", sans-serif;
     /* Other styles */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -490,15 +491,43 @@
     color: #3c97bf;
   }
   .stick .movil .imagenes .logotipo .palabras {
-    font-family: "Anton", sans-serif;
-    font-family: "Amatic SC", sans-serif;
-    -webkit-perspective: 100rem;
-            perspective: 100rem;
+    font-size: 3rem;
+    letter-spacing: -5px;
+    --interval: 1s;
+    display: block;
+    text-shadow: 0 0 1rem var(--color1), 0 0 2rem var(--color2), 0 0 4rem var(--color3), 0 0 8rem var(--color4);
+    will-change: filter, color;
+    -webkit-filter: saturate(60%);
+            filter: saturate(60%);
+    -webkit-animation: flicker steps(100) var(--interval) 1s infinite;
+            animation: flicker steps(100) var(--interval) 1s infinite;
+    color: tomato;
+    --color1: orangered;
+    --color2: firebrick;
+    --color3: maroon;
+    --color4: darkred;
+    font-family: Yellowtail;
+    font-family: Londrina Outline;
+    font-family: Kumar One Outline;
+    font-family: Bad Script;
+  }
+  @-webkit-keyframes flicker {
+    50% {
+      color: white;
+      -webkit-filter: saturate(200%) hue-rotate(20deg);
+              filter: saturate(200%) hue-rotate(20deg);
+    }
+  }
+  @keyframes flicker {
+    50% {
+      color: white;
+      -webkit-filter: saturate(200%) hue-rotate(20deg);
+              filter: saturate(200%) hue-rotate(20deg);
+    }
   }
   .stick .movil .imagenes .logotipo .palabras span {
     cursor: pointer;
     display: inline-block;
-    font-size: 3rem;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
@@ -597,8 +626,8 @@
     }
     45%,
     50% {
-      -webkit-transform: scale(1) translate(0, -15rem);
-              transform: scale(1) translate(0, -15rem);
+      -webkit-transform: scale(1) translate(0, -2rem);
+              transform: scale(1) translate(0, -2rem);
     }
     80% {
       -webkit-transform: scale(1) translate(0, 0);
@@ -613,8 +642,8 @@
     }
     45%,
     50% {
-      -webkit-transform: scale(1) translate(0, -15rem);
-              transform: scale(1) translate(0, -15rem);
+      -webkit-transform: scale(1) translate(0, -2rem);
+              transform: scale(1) translate(0, -2rem);
     }
     80% {
       -webkit-transform: scale(1) translate(0, 0);
@@ -714,23 +743,23 @@
   @-webkit-keyframes toplong {
     10%,
     40% {
-      -webkit-transform: translateY(-48vh) scaleY(1);
-              transform: translateY(-48vh) scaleY(1);
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
     }
     90% {
-      -webkit-transform: translateY(-48vh) scaleY(4);
-              transform: translateY(-48vh) scaleY(4);
+      -webkit-transform: scaleY(4);
+              transform: scaleY(4);
     }
   }
   @keyframes toplong {
     10%,
     40% {
-      -webkit-transform: translateY(-48vh) scaleY(1);
-              transform: translateY(-48vh) scaleY(1);
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
     }
     90% {
-      -webkit-transform: translateY(-48vh) scaleY(4);
-              transform: translateY(-48vh) scaleY(4);
+      -webkit-transform: scaleY(4);
+              transform: scaleY(4);
     }
   }
   .stick .movil .imagenes .logotipo:hover {

@@ -14,6 +14,51 @@
   src: url(../../../fuentes/pricedow.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "Bad Script";
+  src: url(../../../fuentes/letrasEfectos/BadScript-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Sriracha";
+  src: url(../../../fuentes/letrasEfectos/Sriracha-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Kumar One outline";
+  src: url(../../../fuentes/letrasEfectos/KumarOneOutline-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Gruppo";
+  src: url(../../../fuentes/letrasEfectos/Gruppo-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Yellowtail";
+  src: url(../../../fuentes/letrasEfectos/Yellowtail-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Londrina";
+  src: url(../../../fuentes/letrasEfectos/Yellowtail-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Londrina Outline";
+  src: url(../../../fuentes/letrasEfectos/LondrinaOutline-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Monoton";
+  src: url(../../../fuentes/letrasEfectos/Monoton-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "frozen";
+  src: url(../../../fuentes/letrasEfectos/Ice-kingdomKustren.woff);
+}
+
 .head {
   width: 100%;
   position: relative;
@@ -33,6 +78,7 @@ body {
   vertical-align: baseline;
   width: 100%;
   height: 100%;
+  background-image: url("../../../images/backgrounds/0.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-color: #272727;

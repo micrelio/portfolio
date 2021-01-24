@@ -185,7 +185,7 @@ class miBiografia extends HTMLElement {
                 <p><strong>Ocupación</strong></p>
             </div>
             <div class="ocupacion">
-                <p>politólogo, político, profesor titular interino, presentador</p>
+                <p>Programador y diseñador web, técnico informático, eléctrico, electrónico, automática industrial y energías renovables.</p>
             </div>
             <div class="tituloSalario">
                 <p><strong>Salario</strong></p>

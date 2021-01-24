@@ -108,12 +108,17 @@ class miNav extends HTMLElement {
       <!--          <div class="dos letritas" id="dos" onclick="efectos('dos');">          -->
 
       <div class="palabras">
-        <span>M</span>
-        <span>I</span>
-        <span>C</span>
-        <span>R</span>
-        <span>O</span>
+  
+      <span>M</span>
+        <span>i</span>
+        <span>c</span>
+        <span>r</span>
+        <span>o</span>
+
+        
+        <!--  <br><small>Micro</small>-->
       </div>
+      <!--
       <svg>
         <defs>
           <filter id="squiggly-0">
@@ -140,6 +145,7 @@ class miNav extends HTMLElement {
           </filter>
         </defs>
       </svg>
+      -->
       <!-- </div>-->
     </div>
     <div class="botones">
