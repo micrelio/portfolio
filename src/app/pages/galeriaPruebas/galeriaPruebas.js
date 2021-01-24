@@ -283,6 +283,8 @@ class miGaleriapruebas extends HTMLElement {
       </div>
     </section>
 
+    
+
     <section class="seccionSlider">
       <div class="imagenSlider slider-four">
       <div class="starWars">
