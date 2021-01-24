@@ -16,7 +16,7 @@ function getContent(fragmentId) {
     hover: "<mi-hover></mi-hover>",
     efectos: "<mi-efectos></mi-efectos>",
     galeriaPruebas: "<mi-galeriapruebas></mi-galeriapruebas>",
-    pruebas: "<mi-saludo></mi-saludo>"
+    //  pruebas: window.location.href ="/src/app/prueba/sell-button.html"
 
     };
   return partials[fragmentId];

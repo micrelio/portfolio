@@ -1,19 +1,21 @@
 class MiSaludo extends HTMLElement {
-     constructor () {
-        super();
-      }
-      
-      connectedCallback () {
-        // let shadowRoot = this.attachShadow({mode: 'open'});
-        //  const t = document.querySelector('#sellBtn');
-        //  const instance = t.content.cloneNode(true);
-        //  shadowRoot.appendChild(instance);
-        this.innerHTML = `
-        <h1>eeeee
-        </h1>
-              
-        `;
-      }
+  constructor () {
+    super();
+  }
+
+  connectedCallback () {
+    this.innerHTML =    
+    `
+    <link rel="import" href="/src/app/prueba/sell-button.html">
+    <a class="enlace irGaleria" href="/src/app/prueba/sell-button.html"><span>Galería</span><span><i class="far fa-images"
+    aria-hidden="true"></i></span></a>
+
+
+
+        <h1>eeee</h1>
+    `;
+    window.location.href ="/src/app/prueba/sell-button.html";
+    }
     }
     
     window.customElements.define('mi-saludo', MiSaludo)

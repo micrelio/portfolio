@@ -1,0 +1,58 @@
+<script type="text/javascript" src="/src/assets/funciones/nav.js"></script>
+<script type="text/javascript" src="/src/app/templates/nav/nav.js"></script>
+
+<mi-nav></mi-nav>
+<first-element></first-element>
+<second-element></second-element>
+
+<script>
+/** FirstElement component **/
+customElements.define("first-element", class extends HTMLElement {
+  constructor() {
+    super();
+    this.attachShadow({ mode: "open" });
+  }
+
+  handleEvent(event) {
+    if (event.type === "click") {
+      const MessageEvent = new CustomEvent("message", {
+        detail: { from: "Manz", message: "Hello!" },
+        bubbles: true,
+        composed: true
+      });
+      this.dispatchEvent(MessageEvent);
+    }
+  }
+
+  connectedCallback() {
+    this.shadowRoot.innerHTML = `<button>Send message!</button>`;
+    this.shadowRoot.querySelector("button").addEventListener("click", this);
+  }
+});
+
+/** SecondElement component **/
+customElements.define("second-element", class extends HTMLElement {
+  constructor() {
+    super();
+    this.attachShadow({ mode: "open" });
+  }
+
+  handleEvent(event) {
+    if (event.type === "message") {
+      event.detail.from = "Robot";
+      const data = event.detail;
+      this.shadowRoot.innerHTML = `
+        <div>
+          From ${data.from}:
+          <span style="color:red">${data.message}</span>
+        </div>
+      `;
+    }
+  }
+
+  connectedCallback() {
+    this.shadowRoot.innerHTML = `<div>No messages</button>`;
+    document.addEventListener("message", this);
+  }
+});
+</script>
