@@ -369,13 +369,7 @@ class miGaleriapruebas extends HTMLElement {
           frameborder="0" allowfullscreen></iframe>
   </div>
 </section>
-      </div>
-    </section>
-
-
-    
-
-        <section class="seccionSlider">
+           <section class="seccionSlider">
           <div class="imagenSlider slider-five">
             <h1 class="tituloSlider">
               Fin
@@ -383,6 +377,10 @@ class miGaleriapruebas extends HTMLElement {
           </div>
         </section>
       </div>
+
+
+      </div>
+      </section>
 
       <!-- Botón de ir a la siguiente sección slider -->
       <div class="move-slider">

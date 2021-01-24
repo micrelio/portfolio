@@ -25,7 +25,22 @@ class miNav extends HTMLElement {
 <div class="nav" id="nav">
   <div class="navbar">
     <div id="foto" class="foto">
-      <img src="/src/assets/images/dracula-man.jpg">
+      <!--<img src="/src/assets/images/dracula-man.jpg">-->
+    </div>
+    <div class="logotipo">
+    <!--          <div class="dos letritas" id="dos" onclick="efectos('dos');">          -->
+
+    <div class="palabras">
+
+    <span>M</span>
+      <span>i</span>
+      <span>c</span>
+      <span>r</span>
+      <span>o</span>
+
+      
+      <!--  <br><small>Micro</small>-->
+    </div>
     </div>
     <div class="menu">
       <div id="links" class="links">
