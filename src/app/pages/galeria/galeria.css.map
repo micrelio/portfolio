@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "ACCA,wCAAwC;ADExC,AAAA,EAAE,CAAC;EACD,KAAK,EAAE,KAAK;CACb;;AACD,AAAA,QAAQ,CAAC;EACP,QAAQ,EAAE,IAAI;CAGf;;AACD,AAAA,KAAK,CAAC;ECmCJ,KAAK,EAAE,IAAI;EACX,QAAQ,EAAE,QAAQ;CDlCnB;;AAFD,ACwCE,KDxCG,CCwCH,GAAG,CAAC;EACF,KAAK,EAAE,IAAI;CACZ",
+    "sources": [
+        "galeria.scss",
+        "../../../assets/style/sass/mixins/mixins.scss",
+        "../../../assets/style/sass/variables/variables.scss",
+        "../../../assets/style/sass/variables/variables.scss"
+    ],
+    "names": [],
+    "file": "galeria.css"
+}

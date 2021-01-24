@@ -1,0 +1,256 @@
+@import "../../../assets/style/sass/mixins/mixins.scss";
+@import "../../../assets/style/sass/variables/variables.scss";
+
+/* ------------------------------------------
+         div stilos
+------------------------------------------ */
+ .panelEstilos {
+  width: 100%;
+   position: sticky;
+   top: 0; //para que siga la pagina
+     z-index: 100;
+    //  height: 100%;
+   //position: fixed;
+  //display:inline-block;
+  // display: flex;
+  // flex-direction: row;
+  // margin-top: -5rem;
+  // background-color: indigo;
+  // height: 100vh;
+  .botonesEstilo {
+    // position: sticky;
+    //  top: 0;
+    //  z-index: 10000000;
+    //  width: 100%;
+    //  position: fixed;
+    //  top: 0;
+    //  display: flex;
+    //  flex-direction: row;
+    //top: 0; //para que siga la pagina
+    //position: sticky;
+    //position: absolute;
+    // position: -webkit-fixed;  // required for Safari
+    // display: none;
+    background-color: white;
+    // border: 0.05rem solid $negro;
+    // border-radius: 0.9rem;
+    padding: 1rem 1rem 1rem 1rem;
+  //  margin: 0rem 0.5rem 0rem 0.5rem;
+    //width: 10%;
+
+    //z-index: 100;
+    //position: relative;
+    .desplazable {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      // max-height: 90vh;
+      overflow: auto;
+      p {
+        color: $negro;
+        font-size: 1.5rem;
+      }
+      .reset {
+        //margin: 0rem 0rem 1rem 0rem;
+        p {
+          margin: 0rem 0rem 0rem 0rem;
+        }
+        .resetear {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          p {
+            font-size: 6rem;
+          }
+        }
+      }
+      .filasFiesta {
+        margin: 0rem 0rem 1rem 0rem;
+        p {
+          margin: 0rem 0rem 0rem 0rem;
+        }
+        .selecFiesta {
+          margin: 0.5rem 0rem 0rem 0rem;
+          .festivos {
+            //   border: none;
+            // background-color: transparent;
+            width: 2.4rem;
+            margin: 0.5rem 0rem 0rem 0.2rem;
+          }
+          .detenerFestivos {
+            @include estilos;
+            // background-color: red;
+          }
+        }
+      }
+      .fondoPantalla {
+        p {
+          margin: 0rem 0rem 0rem 0rem;
+        }
+        .selecFondo {
+          display: flex;
+          flex-direction: column;
+          // align-items: center;
+          // justify-content: center;
+          display: flex;
+          flex-direction: row;
+          .color {
+            height: 2.2rem;
+            width: 2.2rem;
+            border-radius: 50%;
+            border: 0.05rem solid $negro;
+            margin: 0.7rem 0.2rem 0rem 0.2rem;
+          }
+        }
+        .blanco {
+          background: $blanco;
+        }
+        .negro {
+          background: $negro;
+        }
+        .movimiento {
+          background: {
+            image: url("../../../../images/gifs/liquido.gif");
+            position: center;
+            size: cover;
+          }
+        }
+      }
+      .filasColores {
+        p {
+          margin: 0rem 0rem 0rem 0rem;
+        }
+        .cambioColor {
+          display: flex;
+          flex-direction: column;
+          // align-items: center;
+          // justify-content: center;
+          .selecColor {
+            display: flex;
+            flex-direction: row;
+            .color {
+              height: 2.2rem;
+              width: 2.2rem;
+              border-radius: 50%;
+              border: 0.05rem solid $negro;
+              margin: 0.7rem 0.2rem 0rem 0.2rem;
+            }
+          }
+          .blanco {
+            background: $blanco;
+          }
+          .gris {
+            background: $gris;
+          }
+          .amarillo {
+            background: $amarillo;
+          }
+          .naranja {
+            background: $naranja;
+          }
+          .oro {
+            background: $oro;
+          }
+          .marron {
+            background: $marron;
+          }
+          .rojo {
+            background: $rojo;
+          }
+          .rosa {
+            background: $rosa;
+          }
+          .morado {
+            background: $morado;
+          }
+          .azul {
+            background: $azul;
+          }
+          .verde {
+            background: $verde;
+          }
+          .negro {
+            background: $negro;
+          }
+        }
+      }
+    }
+    .opacidad {
+      p {
+        margin: 0rem 0rem 0rem 0rem;
+      }
+      .slidecontainer {
+        //  width: 100%; /* Width of the outside container */
+
+        .valBox {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          // width: 2.5rem; /* Set a specific slider handle width */
+          // height: 2.5rem; /* Slider handle height */
+          // background: $blanco; /* Green background */
+          // cursor: pointer; /* Cursor on hover */
+          font-size: 2.5rem;
+        }
+
+        /* The slider itself */
+        .slider {
+          -webkit-appearance: none; /* Override default CSS styles */
+          appearance: none;
+          // width: 100%; /* Full-width */
+          height: 2.5rem; /* Specified height */
+          background: #d3d3d3; /* Grey background */
+          outline: none; /* Remove outline */
+          opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+          -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+          transition: opacity 0.2s;
+        }
+
+        /* Mouse-over effects */
+        .slider:hover {
+          opacity: 1; /* Fully shown on mouse-over */
+        }
+
+        /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+        .slider::-webkit-slider-thumb {
+          -webkit-appearance: none; /* Override default look */
+          appearance: none;
+          width: 2.5rem; /* Set a specific slider handle width */
+          height: 2.5rem; /* Slider handle height */
+          background: black; /* Green background */
+          cursor: pointer; /* Cursor on hover */
+        }
+
+        .slider::-moz-range-thumb {
+          width: 2.5rem; /* Set a specific slider handle width */
+          height: 2.5rem; /* Slider handle height */
+          background: black; /* Green background */
+          cursor: pointer; /* Cursor on hover */
+        }
+      }
+    }
+       
+    .selecModo {
+     // margin: 1rem 0rem 0rem 0rem;
+      p {
+        margin: 0rem 0rem 0rem 0rem;
+      }
+      .mode {
+        margin: 0.5rem 0rem 0rem 0rem;
+        p {
+          font-size: 3rem;
+        }
+        .noche {
+          color: $negro;
+          display: none;
+        }
+        .dia {
+          color: $negro;
+        }
+      }
+    }
+  }
+}
+

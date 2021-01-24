@@ -15,10 +15,10 @@ function getContent(fragmentId) {
     disenos: "<mi-disenos></mi-disenos>",
     hover: "<mi-hover></mi-hover>",
     efectos: "<mi-efectos></mi-efectos>",
-    galeriaPruebas: "<mi-galeriapruebas></mi-galeriapruebas>"
+    galeriaPruebas: "<mi-galeriapruebas></mi-galeriapruebas>",
+    pruebas: "<mi-saludo></mi-saludo>"
 
     };
-
   return partials[fragmentId];
 }
 

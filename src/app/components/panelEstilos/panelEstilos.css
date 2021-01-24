@@ -1,0 +1,305 @@
+/* ---------------hovers--------------*/
+/* ------------------------------------------
+         div stilos
+------------------------------------------ */
+.panelEstilos {
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.panelEstilos .botonesEstilo {
+  background-color: white;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.panelEstilos .botonesEstilo .desplazable {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: auto;
+}
+
+.panelEstilos .botonesEstilo .desplazable p {
+  color: #0a0a0a;
+  font-size: 1.5rem;
+}
+
+.panelEstilos .botonesEstilo .desplazable .reset p {
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+.panelEstilos .botonesEstilo .desplazable .reset .resetear {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.panelEstilos .botonesEstilo .desplazable .reset .resetear p {
+  font-size: 6rem;
+}
+
+.panelEstilos .botonesEstilo .desplazable .filasFiesta {
+  margin: 0rem 0rem 1rem 0rem;
+}
+
+.panelEstilos .botonesEstilo .desplazable .filasFiesta p {
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+.panelEstilos .botonesEstilo .desplazable .filasFiesta .selecFiesta {
+  margin: 0.5rem 0rem 0rem 0rem;
+}
+
+.panelEstilos .botonesEstilo .desplazable .filasFiesta .selecFiesta .festivos {
+  width: 2.4rem;
+  margin: 0.5rem 0rem 0rem 0.2rem;
+}
+
+.panelEstilos .botonesEstilo .desplazable .filasFiesta .selecFiesta .detenerFestivos {
+  margin: 0;
+  -webkit-animation-name: parpadeo;
+          animation-name: parpadeo;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.panelEstilos .botonesEstilo .desplazable .fondoPantalla p {
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+.panelEstilos .botonesEstilo .desplazable .fondoPantalla .selecFondo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+
+.panelEstilos .botonesEstilo .desplazable .fondoPantalla .selecFondo .color {
+  height: 2.2rem;
+  width: 2.2rem;
+  border-radius: 50%;
+  border: 0.05rem solid #0a0a0a;
+  margin: 0.7rem 0.2rem 0rem 0.2rem;
+}
+
+.panelEstilos .botonesEstilo .desplazable .fondoPantalla .blanco {
+  background: #eeeeee;
+}
+
+.panelEstilos .botonesEstilo .desplazable .fondoPantalla .negro {
+  background: #0a0a0a;
+}
+
+.panelEstilos .botonesEstilo .desplazable .fondoPantalla .movimiento {
+  background-image: url("../../../../images/gifs/liquido.gif");
+  background-position: center;
+  background-size: cover;
+}
+
+.panelEstilos .botonesEstilo .desplazable .filasColores p {
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+.panelEstilos .botonesEstilo .desplazable .filasColores .cambioColor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.panelEstilos .botonesEstilo .desplazable .filasColores .cambioColor .selecColor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.panelEstilos .botonesEstilo .desplazable .filasColores .cambioColor .selecColor .color {
+  height: 2.2rem;
+  width: 2.2rem;
+  border-radius: 50%;
+  border: 0.05rem solid #0a0a0a;
+  margin: 0.7rem 0.2rem 0rem 0.2rem;
+}
+
+.panelEstilos .botonesEstilo .desplazable .filasColores .cambioColor .blanco {
+  background: #eeeeee;
+}
+
+.panelEstilos .botonesEstilo .desplazable .filasColores .cambioColor .gris {
+  background: #272727;
+}
+
+.panelEstilos .botonesEstilo .desplazable .filasColores .cambioColor .amarillo {
+  background: #ffff00;
+}
+
+.panelEstilos .botonesEstilo .desplazable .filasColores .cambioColor .naranja {
+  background: orangered;
+}
+
+.panelEstilos .botonesEstilo .desplazable .filasColores .cambioColor .oro {
+  background: #eabe3f;
+}
+
+.panelEstilos .botonesEstilo .desplazable .filasColores .cambioColor .marron {
+  background: #a05000;
+}
+
+.panelEstilos .botonesEstilo .desplazable .filasColores .cambioColor .rojo {
+  background: #f80000;
+}
+
+.panelEstilos .botonesEstilo .desplazable .filasColores .cambioColor .rosa {
+  background: #ff0080;
+}
+
+.panelEstilos .botonesEstilo .desplazable .filasColores .cambioColor .morado {
+  background: #9c27b0;
+}
+
+.panelEstilos .botonesEstilo .desplazable .filasColores .cambioColor .azul {
+  background: #00c6ee;
+}
+
+.panelEstilos .botonesEstilo .desplazable .filasColores .cambioColor .verde {
+  background: #008f39;
+}
+
+.panelEstilos .botonesEstilo .desplazable .filasColores .cambioColor .negro {
+  background: #0a0a0a;
+}
+
+.panelEstilos .botonesEstilo .opacidad p {
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+.panelEstilos .botonesEstilo .opacidad .slidecontainer {
+  /* The slider itself */
+  /* Mouse-over effects */
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+}
+
+.panelEstilos .botonesEstilo .opacidad .slidecontainer .valBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2.5rem;
+}
+
+.panelEstilos .botonesEstilo .opacidad .slidecontainer .slider {
+  -webkit-appearance: none;
+  /* Override default CSS styles */
+  -moz-appearance: none;
+       appearance: none;
+  height: 2.5rem;
+  /* Specified height */
+  background: #d3d3d3;
+  /* Grey background */
+  outline: none;
+  /* Remove outline */
+  opacity: 0.7;
+  /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: 0.2s;
+  /* 0.2 seconds transition on hover */
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.panelEstilos .botonesEstilo .opacidad .slidecontainer .slider:hover {
+  opacity: 1;
+  /* Fully shown on mouse-over */
+}
+
+.panelEstilos .botonesEstilo .opacidad .slidecontainer .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  width: 2.5rem;
+  /* Set a specific slider handle width */
+  height: 2.5rem;
+  /* Slider handle height */
+  background: black;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
+}
+
+.panelEstilos .botonesEstilo .opacidad .slidecontainer .slider::-moz-range-thumb {
+  width: 2.5rem;
+  /* Set a specific slider handle width */
+  height: 2.5rem;
+  /* Slider handle height */
+  background: black;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
+}
+
+.panelEstilos .botonesEstilo .selecModo p {
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+.panelEstilos .botonesEstilo .selecModo .mode {
+  margin: 0.5rem 0rem 0rem 0rem;
+}
+
+.panelEstilos .botonesEstilo .selecModo .mode p {
+  font-size: 3rem;
+}
+
+.panelEstilos .botonesEstilo .selecModo .mode .noche {
+  color: #0a0a0a;
+  display: none;
+}
+
+.panelEstilos .botonesEstilo .selecModo .mode .dia {
+  color: #0a0a0a;
+}
+/*# sourceMappingURL=panelEstilos.css.map */

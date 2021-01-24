@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "ACCA,wCAAwC;ADExC,AAAA,QAAQ,CAAC;EACP,OAAO,EAAE,IAAI;CAuBd;;AAxBD,AAEG,QAFK,CAEL,CAAC,CAAC;EACD,KAAK,EEJI,OAAO;EFKhB,MAAM,EAAE,OAAO;CAChB;;AALH,AAME,QANM,CAMN,CAAC,CAAC;EACA,KAAK,EERI,OAAO;EFShB,eAAe,EAAE,IAAI;CACtB;;AATH,AAUI,QAVI,CAUJ,CAAC,CAAC;EACE,WAAW,EAAE,sBAAsB;CACtC;;AAZL,AAaI,QAbI,CAaJ,EAAE,CAAC;EACH,MAAM,EAAE,mBAAmB;CAS5B;;AAvBH,AAeI,QAfI,CAaJ,EAAE,CAEF,EAAE,CAAC;EACD,KAAK,EAAE,KAAK;EACZ,SAAS,EAAE,MAAM;EACjB,MAAM,EAAE,mBAAmB;CAI5B;;AAtBL,AAmBM,QAnBE,CAaJ,EAAE,CAEF,EAAE,CAIA,CAAC,GAAG,CAAC,CAAC;EACJ,KAAK,EErBA,OAAO;CFsBb",
+    "sources": [
+        "textosLegales.scss",
+        "../../../assets/style/sass/mixins/mixins.scss",
+        "../../../assets/style/sass/variables/variables.scss",
+        "../../../assets/style/sass/variables/variables.scss"
+    ],
+    "names": [],
+    "file": "textosLegales.css"
+}
