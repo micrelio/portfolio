@@ -1121,59 +1121,7 @@
     // border-radius: 20px;
   }
   //---xxl--------------------------------------
-  @font-face {
-    font-family: "Monoton";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Monoton"), local("Monoton-Regular"),
-     src url(../../assets/fuentes/letrasEfectos/Monoton-Regular.ttf)
-        format("woff");
-  }
-
-  @font-face {
-    font-family: "Iceland";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Iceland"), local("Iceland-Regular"),
-    src url(../../assets/fuentes/letrasEfectos/Iceland-Regular.woff)
-        format("woff");
-  }
-
-  @font-face {
-    font-family: "Pacifico";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Pacifico Regular"), local("Pacifico-Regular"),
-      url(http://themes.googleusercontent.com/static/fonts/pacifico/v5/yunJt0R8tCvMyj_V4xSjafesZW2xOQ-xsNqO47m55DA.woff)
-        format("woff");
-  }
-
-  @font-face {
-    font-family: "PressStart";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Press Start 2P"), local("PressStart2P-Regular"),
-      url(http://themes.googleusercontent.com/static/fonts/pressstart2p/v2/8Lg6LX8-ntOHUQnvQ0E7o3dD2UuwsmbX3BOp4SL_VwM.woff)
-        format("woff");
-  }
-
-  @font-face {
-    font-family: "Audiowide";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Audiowide"), local("Audiowide-Regular"),
-      url(http://themes.googleusercontent.com/static/fonts/audiowide/v2/8XtYtNKEyyZh481XVWfVOj8E0i7KZn-EPnyo3HZu7kw.woff)
-        format("woff");
-  }
-
-  @font-face {
-    font-family: "Vampiro One";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Vampiro One"), local("VampiroOne-Regular"),
-      url(http://themes.googleusercontent.com/static/fonts/vampiroone/v3/Ho2Xld8UbQyBA8XLxF1_NYbN6UDyHWBl620a-IRfuBk.woff)
-        format("woff");
-  }
+ 
 
   .xxl {
     display: flex;
@@ -1529,11 +1477,11 @@
       color: #4ee;
       opacity: 0;
       z-index: 1;
-      -webkit-animation: intro 2s ease-out;
-      -moz-animation: intro 2s ease-out;
-      -ms-animation: intro 2s ease-out;
-      -o-animation: intro 2s ease-out;
-      animation: intro 2s ease-out;
+      // -webkit-animation: intro 2s ease-out;
+      // -moz-animation: intro 2s ease-out;
+      // -ms-animation: intro 2s ease-out;
+      // -o-animation: intro 2s ease-out;
+      // animation: intro 2s ease-out;
     }
 
     @-webkit-keyframes intro {
@@ -1611,11 +1559,11 @@
         2px 2px 0 #ff6;
       opacity: 0;
       z-index: 1;
-      -webkit-animation: logo 5s ease-out 2.5s;
-      -moz-animation: logo 5s ease-out 2.5s;
-      -ms-animation: logo 5s ease-out 2.5s;
-      -o-animation: logo 5s ease-out 2.5s;
-      animation: logo 5s ease-out 2.5s;
+      // -webkit-animation: logo 5s ease-out 2.5s;
+      // -moz-animation: logo 5s ease-out 2.5s;
+      // -ms-animation: logo 5s ease-out 2.5s;
+      // -o-animation: logo 5s ease-out 2.5s;
+      // animation: logo 5s ease-out 2.5s;
     }
 
     h1 sub {

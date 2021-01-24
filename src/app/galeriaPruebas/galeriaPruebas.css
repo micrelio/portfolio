@@ -6,6 +6,7 @@
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700");
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
 .galeriaPruebas {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -291,6 +292,33 @@
     color: rgba(0, 0, 0, 0.7);
     text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.5);
   }
+}
+
+.titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 5rem;
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  text-transform: uppercase;
+  color: #f1ebe5;
+  text-shadow: 0 8px 9px #c4b59d, 0px -2px 1px #fff;
+  font-weight: bold;
+  letter-spacing: -4px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ece4d9), to(#e9dfd1));
+  background: linear-gradient(to bottom, #ece4d9 0%, #e9dfd1 100%);
 }
 
 .uno {
@@ -1396,11 +1424,6 @@
   }
 }
 
-@font-face {
-  font-family: "frozen";
-  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/Ice%20kingdom%20-%20Bold%20-%20Por%20Kustren.woff");
-}
-
 .once {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1603,7 +1626,7 @@
   font-family: helvetica, arial, sans-serif;
 }
 
-.trece a {
+.trece .rotarCuadrado {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1626,8 +1649,8 @@
           transform: translateX(-50%) translateY(-50%);
 }
 
-a:before,
-a:after {
+.rotarCuadrado:before,
+.rotarCuadrado:after {
   content: "";
   padding: 9rem 4rem;
   position: absolute;
@@ -1641,12 +1664,12 @@ a:after {
           animation: 10s infinite alternate ease-in-out tipsy;
 }
 
-a:before {
+.rotarCuadrado:before {
   border-color: #d9524a #d9524a rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
   z-index: -1;
 }
 
-a:after {
+.rotarCuadrado:after {
   border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #d9524a #d9524a;
   -webkit-box-shadow: 2.5rem 2.5rem 2.5rem rgba(46, 46, 49, 0.8);
           box-shadow: 2.5rem 2.5rem 2.5rem rgba(46, 46, 49, 0.8);
@@ -1894,6 +1917,386 @@ a:after {
     color: white;
     -webkit-filter: saturate(200%) hue-rotate(20deg);
             filter: saturate(200%) hue-rotate(20deg);
+  }
+}
+
+.neones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #222222;
+  /*neeeeoooon*/
+  /*glow for webkit*/
+  /*glow for mozilla*/
+  /*glow*/
+}
+
+.neones p {
+  text-align: center;
+  font-size: 7em;
+  margin: 0rem 0.5rem 0rem 0.5rem;
+}
+
+.neones a {
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.neones p:nth-child(1) a {
+  color: #ff1177;
+  font-family: Monoton;
+}
+
+.neones p:nth-child(1) a:hover {
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+.neones p:nth-child(2) a {
+  font-size: 1.5em;
+  color: #228dff;
+  font-family: Iceland;
+}
+
+.neones p:nth-child(2) a:hover {
+  -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+  animation: neon2 1.5s ease-in-out infinite alternate;
+}
+
+.neones p:nth-child(3) a {
+  color: #ffdd1b;
+  font-family: Pacifico;
+}
+
+.neones p:nth-child(3) a:hover {
+  -webkit-animation: neon3 1.5s ease-in-out infinite alternate;
+  animation: neon3 1.5s ease-in-out infinite alternate;
+}
+
+.neones p:nth-child(4) a {
+  color: #b6ff00;
+  font-family: PressStart;
+  font-size: 0.8em;
+}
+
+.neones p:nth-child(4) a:hover {
+  -webkit-animation: neon4 1.5s ease-in-out infinite alternate;
+  animation: neon4 1.5s ease-in-out infinite alternate;
+}
+
+.neones p:nth-child(5) a {
+  color: #ff9900;
+  font-family: Audiowide;
+}
+
+.neones p:nth-child(5) a:hover {
+  -webkit-animation: neon5 1.5s ease-in-out infinite alternate;
+  animation: neon5 1.5s ease-in-out infinite alternate;
+}
+
+.neones p:nth-child(6) a {
+  color: #ba01ff;
+  font-family: Vampiro One;
+}
+
+.neones p:nth-child(6) a:hover {
+  -webkit-animation: neon6 1.5s ease-in-out infinite alternate;
+  animation: neon6 1.5s ease-in-out infinite alternate;
+}
+
+.neones p a:hover {
+  color: #ffffff;
+}
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff1177, 0 0 70px #ff1177, 0 0 80px #ff1177, 0 0 100px #ff1177, 0 0 150px #ff1177;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff1177, 0 0 35px #ff1177, 0 0 40px #ff1177, 0 0 50px #ff1177, 0 0 75px #ff1177;
+  }
+}
+
+@-webkit-keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff, 0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff, 0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+  }
+}
+
+@-webkit-keyframes neon3 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffdd1b, 0 0 70px #ffdd1b, 0 0 80px #ffdd1b, 0 0 100px #ffdd1b, 0 0 150px #ffdd1b;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffdd1b, 0 0 35px #ffdd1b, 0 0 40px #ffdd1b, 0 0 50px #ffdd1b, 0 0 75px #ffdd1b;
+  }
+}
+
+@-webkit-keyframes neon4 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #b6ff00, 0 0 70px #b6ff00, 0 0 80px #b6ff00, 0 0 100px #b6ff00, 0 0 150px #b6ff00;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #b6ff00, 0 0 35px #b6ff00, 0 0 40px #b6ff00, 0 0 50px #b6ff00, 0 0 75px #b6ff00;
+  }
+}
+
+@-webkit-keyframes neon5 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff9900, 0 0 70px #ff9900, 0 0 80px #ff9900, 0 0 100px #ff9900, 0 0 150px #ff9900;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff9900, 0 0 35px #ff9900, 0 0 40px #ff9900, 0 0 50px #ff9900, 0 0 75px #ff9900;
+  }
+}
+
+@-webkit-keyframes neon6 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+  }
+}
+
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff1177, 0 0 70px #ff1177, 0 0 80px #ff1177, 0 0 100px #ff1177, 0 0 150px #ff1177;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff1177, 0 0 35px #ff1177, 0 0 40px #ff1177, 0 0 50px #ff1177, 0 0 75px #ff1177;
+  }
+}
+
+@keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff, 0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff, 0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+  }
+}
+
+@keyframes neon3 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffdd1b, 0 0 70px #ffdd1b, 0 0 80px #ffdd1b, 0 0 100px #ffdd1b, 0 0 150px #ffdd1b;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffdd1b, 0 0 35px #ffdd1b, 0 0 40px #ffdd1b, 0 0 50px #ffdd1b, 0 0 75px #ffdd1b;
+  }
+}
+
+@keyframes neon4 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #b6ff00, 0 0 70px #b6ff00, 0 0 80px #b6ff00, 0 0 100px #b6ff00, 0 0 150px #b6ff00;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #b6ff00, 0 0 35px #b6ff00, 0 0 40px #b6ff00, 0 0 50px #b6ff00, 0 0 75px #b6ff00;
+  }
+}
+
+@keyframes neon5 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff9900, 0 0 70px #ff9900, 0 0 80px #ff9900, 0 0 100px #ff9900, 0 0 150px #ff9900;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff9900, 0 0 35px #ff9900, 0 0 40px #ff9900, 0 0 50px #ff9900, 0 0 75px #ff9900;
+  }
+}
+
+@keyframes neon6 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+  }
+}
+
+.starWars {
+  width: 100%;
+  height: 40rem;
+  font-family: "Droid Sans", arial, verdana, sans-serif;
+  font-weight: 700;
+  color: #ff6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* the interesting 3D scrolling stuff */
+  /* animation */
+}
+
+.starWars p#start {
+  width: 16em;
+  font-size: 200%;
+  font-weight: 400;
+  color: #4ee;
+  opacity: 0;
+  z-index: 1;
+}
+
+@-webkit-keyframes intro {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes intro {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.starWars h1 {
+  position: absolute;
+  width: 2.6em;
+  font-size: 10em;
+  text-align: center;
+  line-height: 0.8em;
+  letter-spacing: -0.05em;
+  color: #000;
+  text-shadow: -2px -2px 0 #ff6, 2px -2px 0 #ff6, -2px 2px 0 #ff6, 2px 2px 0 #ff6;
+  opacity: 0;
+  z-index: 1;
+  -webkit-animation: logo 5s ease-out 2.5s;
+  animation: logo 5s ease-out 2.5s;
+}
+
+.starWars h1 sub {
+  display: block;
+  font-size: 0.3em;
+  letter-spacing: 0;
+  line-height: 0.8em;
+}
+
+@-webkit-keyframes logo {
+  0% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0.1);
+    opacity: 0;
+  }
+}
+
+@keyframes logo {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+    opacity: 0;
+  }
+}
+
+.starWars #titles {
+  width: 18em;
+  height: 15em;
+  font-size: 350%;
+  text-align: justify;
+  overflow: hidden;
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transform: perspective(300px) rotateX(25deg);
+  transform: perspective(300px) rotateX(25deg);
+}
+
+.starWars #titles:after {
+  position: absolute;
+  content: " ";
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 60%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
+  background-image: linear-gradient(top, black 0%, transparent 100%);
+  pointer-events: none;
+}
+
+.starWars #titles p {
+  text-align: justify;
+}
+
+.starWars #titles p.center {
+  text-align: center;
+}
+
+.starWars #titles a {
+  color: #ff6;
+  text-decoration: underline;
+}
+
+.starWars #titlecontent {
+  position: absolute;
+  top: 100%;
+  -webkit-animation: scroll 100s linear 4s infinite;
+  animation: scroll 100s linear 4s infinite;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -170%;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -170%;
   }
 }
 /*# sourceMappingURL=galeriaPruebas.css.map */
