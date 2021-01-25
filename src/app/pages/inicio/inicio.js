@@ -4,7 +4,7 @@ class miInicio extends HTMLElement {
   }
   connectedCallback() {
     this.innerHTML = `
-   <style>
+     <style>
   @import "/src/app/pages/inicio/inicio.css";
 </style>
     <section class="inicio">
