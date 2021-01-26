@@ -2,122 +2,90 @@
 @import "../../../assets/style/sass/variables/variables.scss";
 
 .botoneraMultimedia {
-    @include botoneraMultimedia;
+  @include botoneraMultimedia;
 
-    .multimediaControl {
-        @include multimediaControl;
+  .multimediaControl {
+    @include multimediaControl;
 
-        .multimediaImagen {
-            @include multimediaImagen;
-        }
+    .multimediaImagen {
+      @include multimediaImagen;
     }
-
-        .multimediaSound{
-            @include multimediaSound;
-        .multimediaImagen{
-            @include multimediaImagen;
-        }
+  }
+  .multimediaSound {
+    @include multimediaSound;
+    .multimediaImagen {
+      @include multimediaImagen;
     }
-
+  }
 }
-
 .principal {
-    @include principal;
-
-
-
-    .visor {
-        @include visor;
-
-        .activoA {
-            @include activoA;
-
-            .imagen {
-                @include imagen;
-            }
-
-        }
-
-        .activo {
-            @include activo;
-
-            .imagen {
-                @include imagen;
-            }
-        }
-
-        .activoS {
-            @include activoS;
-
-            .imagen {
-                @include imagen;
-            }
-        }
+  @include principal;
+  .visor {
+    @include visor;
+    .activoA {
+      @include activoA;
+      .imagen {
+        @include imagen;
+      }
     }
+    .activo {
+      @include activo;
 
-
-    .cajonMini {
-        @include cajonMini;
-
-        #cajonCentral {
-            @include cajonCentral;
-
-            #miniCentral {
-                @include miniCentral;
-
-                &:hover {
-                    @include mediaImagen;
-                }
-            }
-        }
-
-        #cajonDerecha {
-            @include cajonDerecha;
-
-            #miniDerecha {
-                @include miniDerecha;
-
-                &:hover {
-                    @include mediaImagen;
-                }
-            }
-        }
-
-        #cajonIzquierda {
-            @include cajonIzquierda;
-
-            #miniIzquierda {
-                @include miniIzquierda;
-
-                &:hover {
-                    @include mediaImagen;
-                }
-            }
-        }
+      .imagen {
+        @include imagen;
+      }
     }
+    .activoS {
+      @include activoS;
+
+      .imagen {
+        @include imagen;
+      }
+    }
+  }
+  .cajonMini {
+    @include cajonMini;
+
+    #cajonCentral {
+      @include cajonCentral;
+
+      #miniCentral {
+        @include miniCentral;
+
+        &:hover {
+          @include mediaImagen;
+        }
+      }
+    }
+    #cajonDerecha {
+      @include cajonDerecha;
+
+      #miniDerecha {
+        @include miniDerecha;
+
+        &:hover {
+          @include mediaImagen;
+        }
+      }
+    }
+    #cajonIzquierda {
+      @include cajonIzquierda;
+
+      #miniIzquierda {
+        @include miniIzquierda;
+
+        &:hover {
+          @include mediaImagen;
+        }
+      }
+    }
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // .novisible, .visible{
 //    //height: 30rem;
 // 	width: 30rem;
 
 // }
-
 
 // #animacion{padding:0;
 // 	margin:0 auto;
