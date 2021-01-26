@@ -4,29 +4,20 @@
 .miniaturas {
   display: flex;
   justify-content: center;
-  //align-items: center;
-// background-color: khaki;
-background-color: lightgoldenrodyellow;
+  background-color: lightgoldenrodyellow;
   .repertorio {
     display: flex;
     flex-direction: column;
     padding: 1rem;
     width: 95vw;
     background: {
-      // color: lightblue;
     }
     h3 {
       color: $corporativo;
       font-size: 4rem;
       font-weight: bolder;
-      // color: $blanco;
-      // margin: 1rem 0rem 0.5rem 0rem;
       -webkit-text-stroke: 0.04rem rgb(221, 216, 216);
-      text-shadow: 0.2rem 0.2rem 0.1rem black
-
-      // font: {
-      //   size: 2.5rem;
-      // }
+      text-shadow: 0.2rem 0.2rem 0.1rem black;
     }
     .title {
       margin-top: 1.5rem;
