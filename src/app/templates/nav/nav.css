@@ -143,6 +143,10 @@
   color: #3c97bf;
 }
 
+.stick .nav .navbar .logotipo #palabras {
+  position: relative;
+}
+
 .stick .nav .navbar .logotipo .palabras {
   font-size: 3rem;
   letter-spacing: -5px;
@@ -1196,6 +1200,7 @@
   }
   .stick .movil .imagenes .botones .botonMenu #pull {
     cursor: pointer;
+    position: relative;
     padding: 1rem 4rem 1.5rem 0rem;
   }
   .stick .movil .imagenes .botones .botonMenu #pull span,

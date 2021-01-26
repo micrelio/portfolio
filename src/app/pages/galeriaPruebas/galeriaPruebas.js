@@ -1,12 +1,14 @@
 class miGaleriapruebas extends HTMLElement {
     constructor() {
       super();
+      
     }
     connectedCallback() {
       this.innerHTML = `
       <style>
       @import "/src/app/pages/galeriaPruebas/galeriaPruebas.css";
     </style>
+    
     <section class="galeriaPruebas">
     <!-- Slider -->
     <div id="containerSlider" class="containerSlider">

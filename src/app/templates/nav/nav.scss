@@ -122,10 +122,14 @@
         //
         // background-color: skyblue;
         color: $corporativo;
+        #palabras{
+          position: relative;
+        }
         .palabras {
           // font-family: "Anton", sans-serif;
           // font-family: "Amatic SC", sans-serif;
           // perspective: 100rem;
+        
 
           // x-sign {
           font-size: 3rem;
@@ -1034,7 +1038,7 @@
 
             #pull {
               cursor: pointer;
-              // position: relative;
+              position: relative;
               // left: 50%;
               // top: 50%;
               padding: 1rem 4rem 1.5rem 0rem;

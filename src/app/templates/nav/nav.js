@@ -30,7 +30,7 @@ class miNav extends HTMLElement {
     <div class="logotipo">
     <!--          <div class="dos letritas" id="dos" onclick="efectos('dos');">          -->
 
-    <div class="palabras">
+    <div id="palabras" class="palabras">
 
     <span>M</span>
       <span>i</span>
@@ -239,7 +239,10 @@ class miNav extends HTMLElement {
 
     // esto arranca automatico
     //mover elemento con el raton
-    Drag.init(document.getElementById("foto"));
+    // Drag.init(document.getElementById("foto"));
+    // Drag.init(document.getElementById("palabras"));
+    Drag.init(document.getElementById("pull"));
+
     //probar para mover div
     // var theHandle = document.getElementById("botonesEstilo");
     // var theRoot = document.getElementById("cabecera");
