@@ -3,21 +3,17 @@
 
 .galeriaPruebas {
   display: flex;
-
   // * {
   // 	box-sizing: border-box;
   // 	margin: 0;
   // 	padding: 0;
   // }
-
   // *:focus {
   // 	outline: 0;
   // }
-
   // html {
   // 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   // }
-
   /* Slider */
   .containerSlider {
     margin-bottom: 100vh;
@@ -33,12 +29,10 @@
       // top: 0;
       width: 100%;
       z-index: 600;
-
       .slider:active {
         cursor: -webkit-grabbing;
         cursor: -moz-grabbing;
       }
-
       .slider-inner {
         // display: table;
         left: 0;
@@ -46,10 +40,8 @@
         // top: 0;
         transition: 1s ease;
       }
-
       .seccionSlider {
         float: left;
-
         .imagenSlider:before {
           background-attachment: fixed;
           // background-image: url("data:image/jpeg;base64,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");
@@ -60,12 +52,10 @@
           // top: 0;
           width: 100%;
         }
-
         .imagenSlider {
           align-items: center;
           background: #202020 center center / cover no-repeat fixed;
           background-color: #000;
-
           display: flex;
           filter: grayscale(20%);
           height: 100vh;
@@ -73,28 +63,22 @@
           position: relative;
           width: 100%;
         }
-
         /* Imágenes slider inicio */
         .slider-one {
           background-image: url("https://besthqwallpapers.com/Uploads/15-3-2018/44223/thumb2-ultra-instinct-dragon-ball-goku-ultra-ball-super-instinct-dragon.jpg");
         }
-
         .slider-two {
           background-image: url("https://generacionxbox.com/wp-content/uploads/2020/05/Goku-Ultra-Instinto-GX-940x529.jpg.webp");
         }
-
         .slider-three {
           background-image: url("https://grupoamsi.com/Test-Grupo-Amsi/Test-Grupo-Amsi/img/imgs-general/sliders/slider-inicio/inicio-grupo-de-trabajo.jpg");
         }
-
         .slider-four {
           background-image: url("https://grupoamsi.com/Test-Grupo-Amsi/Test-Grupo-Amsi/img/imgs-general/sliders/slider-inicio/inicio-ideas.jpg");
         }
-
         .slider-five {
           background-image: url("https://grupoamsi.com/Test-Grupo-Amsi/Test-Grupo-Amsi/img/imgs-general/sliders/slider-inicio/inicio-servidores.jpg");
         }
-
         /* Titulos slider */
         .tituloSlider {
           overflow: hidden;
@@ -119,47 +103,38 @@
       width: 8rem;
       cursor: pointer;
       display: none;
-      // padding: 1rem;
       position: absolute;
       text-shadow: 0.1rem 0.1rem 0.5rem #000000;
-      // top: 0;
       margin-top: 43vh;
       transition: 0.3s ease all;
       z-index: 601;
       height: 15rem;
       font-size: 7rem;
-
       i {
         display: flex;
         align-self: center;
-        // color:red;
         position: absolute;
         margin: 4rem 0rem 0vh 2rem;
       }
     }
     // }
-
     /* Flechas izquierda del slider */
     .slider-nav .prev {
       border-radius: 50% 0 0 50%;
       left: 1rem;
     }
-
     /* Flechas derecha del slider */
     .slider-nav .next {
       border-radius: 0 50% 50% 0;
       right: 1rem;
     }
-
     /* Efecto cuando le dan click a las flechas del slider */
     .slider-nav .prev:active {
       transform: translateX(-0.5rem);
     }
-
     .slider-nav .next:active {
       transform: translateX(0.5rem);
     }
-
     /* Flecha de ir a la siguiente sección */
     .move-slider {
       animation: jump-arrow 2.5s infinite;
@@ -174,11 +149,9 @@
       width: 100%;
       z-index: 600;
     }
-
     .move-slider .arrow-down-slider {
       cursor: pointer;
     }
-
     /* Efecto hover flecha de ir a la siguiente sección */
     .move-slider .arrow-down-slider:hover,
     .move-slider .arrow-down-slider:focus,
@@ -186,7 +159,6 @@
       color: #ffffff;
     }
   }
-
   /* Animación de las flechas que saltan para señalar a la siguiente sección */
   @keyframes jump-arrow {
     0%,
@@ -196,20 +168,16 @@
     100% {
       transform: translate3d(0, 0, 0);
     }
-
     40% {
       transform: translate3d(0, -1.5rem, 0);
     }
-
     70% {
       transform: translate3d(0, -1rem, 0);
     }
-
     90% {
       transform: translate3d(0, -0.5rem, 0);
     }
   }
-
   .wallpaper {
     background: url("https://images.pexels.com/photos/745407/pexels-photo-745407.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
       #202020 center center / cover no-repeat fixed;
@@ -217,7 +185,6 @@
     width: 100%;
   }
 }
-
 /* Responsive max-width and min-width */
 /* Responsive flechas y título del slider */
 @media only screen and (min-width: 761px) and (max-width: 960px) {
@@ -226,41 +193,34 @@
     font-size: 3em;
   }
 }
-
 @media only screen and (min-width: 501px) and (max-width: 760px) {
   /* Títulos del slider */
   .containerSlider .slider .seccionSlider .tituloSlider {
     font-size: 2em;
     top: 0;
   }
-
   /* Flechas slider */
   .containerSlider .slider-nav .arrows {
     padding: 0.5em;
   }
 }
-
 @media screen and (max-width: 500px) {
   /* Títulos del slider */
   .containerSlider .slider .seccionSlider .tituloSlider {
     font-size: 1.5em;
     top: 0;
   }
-
   /* Flechas slider */
   .containerSlider .slider-nav .arrows {
     background-color: rgba(0, 0, 0, 0);
   }
-
   .containerSlider .slider-nav .prev {
     left: 0.5rem;
   }
-
   .containerSlider .slider-nav .next {
     right: 0.5rem;
   }
 }
-
 /* Efecto hover de las flechas del slider (desde mobiles grandes hasta pc) */
 @media screen and (min-width: 500px) {
   .containerSlider .slider-nav .arrows:hover,
@@ -270,7 +230,6 @@
     text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.5);
   }
 }
-
 //---titulo-----------------------------------------
 .titulo {
   display: flex;
@@ -290,12 +249,6 @@
   letter-spacing: -4px;
   // text-align: center;
   background: linear-gradient(to bottom, #ece4d9 0%, #e9dfd1 100%);
-  // position: absolute;
-  // padding: 100px 200px;
-  // top: 50%;
-  // left: 50%;
-  // transform: translate(-50%,-50%);
-  // border-radius: 20px;
 }
 //---uno-------------------------
 .uno {
@@ -332,7 +285,6 @@
       0rem -1rem 10rem #7b96b8;
   }
 }
-
 //---dos-----------------------------
 .dos {
   @import url("https://fonts.googleapis.com/css?family=Anton|Roboto");
@@ -342,11 +294,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-
-  //  font-size: 5rem;
   text-transform: uppercase;
-
-  //
   background-color: skyblue;
   color: #fff;
   font-family: "Roboto", sans-serif;
@@ -400,7 +348,6 @@
     color: #3c97bf;
     text-decoration: none;
   }
-
   @keyframes shrinkjump {
     10%,
     35% {
@@ -662,14 +609,10 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-
   font-size: 5rem;
   text-transform: uppercase;
-
   font-family: Amatic SC;
   text-align: center;
-  // padding-top: 140px;
-
   margin: 1rem;
   padding: 1rem;
   font-size: 5rem;
@@ -685,7 +628,6 @@
     transform: skewY(5deg) skewX(-5deg) scale(1.006);
   }
 }
-
 //---cinco--------------------------------------
 .cinco {
   display: flex;
@@ -693,11 +635,8 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-
   font-size: 5rem;
   text-transform: uppercase;
-
-  // padding-bottom: 8rem;
   @import url(https://fonts.googleapis.com/css?family=Erica+One);
   background-color: pink;
   ::selection {
@@ -714,7 +653,6 @@
     -webkit-animation: bounce 0.3s ease infinite alternate;
     font-family: "Erica One", cursive;
     font-size: 5rem;
-
     color: #fff;
     text-shadow: 0 0.1rem 0 #ccc, 0 0.2rem 0 #ccc, 0 0.3rem 0 #ccc,
       0 0.4rem 0 #ccc, 0 0.5rem 0 #ccc, 0 0.6rem 0 transparent,
@@ -722,7 +660,6 @@
       0 1rem 1rem rgba(0, 0, 0, 0.6);
   }
 }
-
 /* ANIMATION */
 @-webkit-keyframes bounce {
   100% {
@@ -740,7 +677,6 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-
   font-size: 15rem;
   text-transform: uppercase;
   // background-color: chocolate;
@@ -749,7 +685,6 @@
   @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
   font-family: Open Sans, Impact;
   text-transform: uppercase;
-
   .text--transparent {
     fill: transparent;
   }
@@ -818,9 +753,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-
   text-transform: uppercase;
-
   @import url(https://fonts.googleapis.com/css?family=Varela+Round);
   h1 {
     color: hsla(0, 0%, 0%, 0.9);
@@ -831,7 +764,6 @@
     animation: move linear 2000ms infinite;
   }
 }
-
 @keyframes move {
   0% {
     text-shadow: 4px -4px 0 hsla(0, 100%, 50%, 1),
@@ -876,10 +808,8 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-
   font-size: 5rem;
   text-transform: uppercase;
-
   @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
   svg {
     height: 7rem;
@@ -895,7 +825,6 @@
     animation: stroke 6s infinite linear;
   }
 }
-
 .text:nth-child(5n + 1) {
   stroke: #f2385a;
   -webkit-animation-delay: -1.2s;
@@ -977,12 +906,9 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-
   font-size: 5rem;
   text-transform: uppercase;
-
   // height: 7rem;
-
   // background-color: red;
   margin: 1rem;
   padding: 1rem;
@@ -1047,7 +973,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
   }
 }
 //---once-------------------------------------
-
 .once {
   display: flex;
   flex-direction: row;
@@ -1058,7 +983,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
   margin-top: 1rem;
   // font-size: 25rem;
   text-transform: uppercase;
-
   // background: linear-gradient(to bottom, #000428, #005d92);
   // overflow: hidden;
   h1 {
@@ -1274,18 +1198,15 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
   //---efecto-----------------------------------------------------------------------------------
   animation: 10s infinite alternate ease-in-out tipsy;
 }
-
 .rotarCuadrado:before {
   border-color: #d9524a #d9524a rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
   z-index: -1;
 }
-
 .rotarCuadrado:after {
   border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #d9524a #d9524a;
   box-shadow: 2.5rem 2.5rem 2.5rem rgba(46, 46, 49, 0.8);
 }
 // }
-
 @keyframes tipsy {
   0% {
     transform: translateX(-50%) translateY(-50%) rotate(0deg);
@@ -1294,7 +1215,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
     transform: translateX(-50%) translateY(-50%) rotate(360deg);
   }
 }
-
 //---catorce--------------------------------------
 .catorce {
   @import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700");
@@ -1355,9 +1275,7 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
     filter: url("#squiggly-4");
   }
 }
-
 //---fluorescentes---------------------------------
-
 .fluorescentes {
   // @font-face {
   //   font-family: "Monoton";
@@ -1372,7 +1290,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
   // min-height: 100vh;
   margin: 0;
   // }
-
   // html {
   background: #090000;
   // font-size: calc(1rem + 1vmax);
@@ -1380,7 +1297,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
   line-height: 1.1;
   text-align: center;
   // }
-
   body {
     display: grid;
     grid-gap: 1em;
@@ -1389,7 +1305,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
     align-content: center;
     justify-content: center;
   }
-
   x-sign {
     --interval: 1s;
     display: block;
@@ -1399,7 +1314,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
     filter: saturate(60%);
     animation: flicker steps(100) var(--interval) 1s infinite;
   }
-
   x-sign:nth-of-type(1) {
     color: yellow;
     --color1: goldenrod;
@@ -1408,7 +1322,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
     --color4: purple;
     font-family: Gruppo;
   }
-
   x-sign:nth-of-type(2) {
     color: lightpink;
     --color1: pink;
@@ -1417,7 +1330,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
     --color4: magenta;
     font-family: Bad Script;
   }
-
   x-sign:nth-of-type(3) {
     color: lightyellow;
     --color1: yellow;
@@ -1426,7 +1338,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
     --color4: mediumblue;
     font-family: Kumar One Outline;
   }
-
   x-sign:nth-of-type(4) {
     color: lightyellow;
     --color1: gold;
@@ -1435,7 +1346,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
     --color4: red;
     font-family: Londrina Outline;
   }
-
   x-sign:nth-of-type(5) {
     color: azure;
     --color1: azure;
@@ -1444,7 +1354,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
     --color4: blue;
     font-family: Sriracha;
   }
-
   x-sign:nth-of-type(6) {
     color: tomato;
     --color1: orangered;
@@ -1453,7 +1362,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
     --color4: darkred;
     font-family: Yellowtail;
   }
-
   x-sign:nth-of-type(7) {
     color: lightyellow;
     --color1: yellow;
@@ -1462,7 +1370,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
     --color4: purple;
     font-family: Bad Script;
   }
-
   x-sign:nth-of-type(8) {
     color: yellow;
     --color1: yellow;
@@ -1471,7 +1378,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
     --color4: darkgreen;
     font-family: Monoton;
   }
-
   x-sign:nth-of-type(9) {
     color: lightyellow;
     --color1: yellow;
@@ -1480,7 +1386,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
     --color4: darkred;
     font-family: Sriracha;
   }
-
   @keyframes flicker {
     50% {
       color: white;
@@ -1488,7 +1393,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
     }
   }
 }
-
 //---neones--------------------------------------
 .neones {
   display: flex;
@@ -1497,14 +1401,12 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
   align-items: center;
   justify-content: center;
   background-color: #222222;
-
   /*neeeeoooon*/
   p {
     text-align: center;
     font-size: 7em;
     margin: 0rem 0.5rem 0rem 0.5rem;
   }
-
   a {
     position: relative;
     text-decoration: none;
@@ -1512,7 +1414,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
     -moz-transition: all 0.5s;
     transition: all 0.5s;
   }
-
   p:nth-child(1) a {
     color: #ff1177;
     font-family: Monoton;
@@ -1522,7 +1423,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
     -moz-animation: neon1 1.5s ease-in-out infinite alternate;
     animation: neon1 1.5s ease-in-out infinite alternate;
   }
-
   p:nth-child(2) a {
     font-size: 1.5em;
     color: #228dff;
@@ -1533,7 +1433,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
     -moz-animation: neon2 1.5s ease-in-out infinite alternate;
     animation: neon2 1.5s ease-in-out infinite alternate;
   }
-
   p:nth-child(3) a {
     color: #ffdd1b;
     font-family: Pacifico;
@@ -1543,7 +1442,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
     -moz-animation: neon3 1.5s ease-in-out infinite alternate;
     animation: neon3 1.5s ease-in-out infinite alternate;
   }
-
   p:nth-child(4) a {
     color: #b6ff00;
     font-family: PressStart;
@@ -1554,7 +1452,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
     -moz-animation: neon4 1.5s ease-in-out infinite alternate;
     animation: neon4 1.5s ease-in-out infinite alternate;
   }
-
   p:nth-child(5) a {
     color: #ff9900;
     font-family: Audiowide;
@@ -1564,7 +1461,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
     -moz-animation: neon5 1.5s ease-in-out infinite alternate;
     animation: neon5 1.5s ease-in-out infinite alternate;
   }
-
   p:nth-child(6) a {
     color: #ba01ff;
     font-family: Vampiro One;
@@ -1574,11 +1470,9 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
     -moz-animation: neon6 1.5s ease-in-out infinite alternate;
     animation: neon6 1.5s ease-in-out infinite alternate;
   }
-
   p a:hover {
     color: #ffffff;
   }
-
   /*glow for webkit*/
   @-webkit-keyframes neon1 {
     from {
@@ -1590,7 +1484,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
         0 0 35px #ff1177, 0 0 40px #ff1177, 0 0 50px #ff1177, 0 0 75px #ff1177;
     }
   }
-
   @-webkit-keyframes neon2 {
     from {
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff,
@@ -1601,7 +1494,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
         0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
     }
   }
-
   @-webkit-keyframes neon3 {
     from {
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffdd1b,
@@ -1612,7 +1504,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
         0 0 35px #ffdd1b, 0 0 40px #ffdd1b, 0 0 50px #ffdd1b, 0 0 75px #ffdd1b;
     }
   }
-
   @-webkit-keyframes neon4 {
     from {
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #b6ff00,
@@ -1623,7 +1514,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
         0 0 35px #b6ff00, 0 0 40px #b6ff00, 0 0 50px #b6ff00, 0 0 75px #b6ff00;
     }
   }
-
   @-webkit-keyframes neon5 {
     from {
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff9900,
@@ -1634,7 +1524,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
         0 0 35px #ff9900, 0 0 40px #ff9900, 0 0 50px #ff9900, 0 0 75px #ff9900;
     }
   }
-
   @-webkit-keyframes neon6 {
     from {
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de,
@@ -1645,7 +1534,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
         0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
     }
   }
-
   /*glow for mozilla*/
   @-moz-keyframes neon1 {
     from {
@@ -1657,7 +1545,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
         0 0 35px #ff1177, 0 0 40px #ff1177, 0 0 50px #ff1177, 0 0 75px #ff1177;
     }
   }
-
   @-moz-keyframes neon2 {
     from {
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff,
@@ -1668,7 +1555,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
         0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
     }
   }
-
   @-moz-keyframes neon3 {
     from {
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffdd1b,
@@ -1679,7 +1565,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
         0 0 35px #ffdd1b, 0 0 40px #ffdd1b, 0 0 50px #ffdd1b, 0 0 75px #ffdd1b;
     }
   }
-
   @-moz-keyframes neon4 {
     from {
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #b6ff00,
@@ -1690,7 +1575,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
         0 0 35px #b6ff00, 0 0 40px #b6ff00, 0 0 50px #b6ff00, 0 0 75px #b6ff00;
     }
   }
-
   @-moz-keyframes neon5 {
     from {
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff9900,
@@ -1701,7 +1585,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
         0 0 35px #ff9900, 0 0 40px #ff9900, 0 0 50px #ff9900, 0 0 75px #ff9900;
     }
   }
-
   @-moz-keyframes neon6 {
     from {
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de,
@@ -1712,7 +1595,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
         0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
     }
   }
-
   /*glow*/
   @keyframes neon1 {
     from {
@@ -1724,7 +1606,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
         0 0 35px #ff1177, 0 0 40px #ff1177, 0 0 50px #ff1177, 0 0 75px #ff1177;
     }
   }
-
   @keyframes neon2 {
     from {
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff,
@@ -1735,7 +1616,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
         0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
     }
   }
-
   @keyframes neon3 {
     from {
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffdd1b,
@@ -1746,7 +1626,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
         0 0 35px #ffdd1b, 0 0 40px #ffdd1b, 0 0 50px #ffdd1b, 0 0 75px #ffdd1b;
     }
   }
-
   @keyframes neon4 {
     from {
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #b6ff00,
@@ -1757,7 +1636,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
         0 0 35px #b6ff00, 0 0 40px #b6ff00, 0 0 50px #b6ff00, 0 0 75px #b6ff00;
     }
   }
-
   @keyframes neon5 {
     from {
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff9900,
@@ -1768,7 +1646,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
         0 0 35px #ff9900, 0 0 40px #ff9900, 0 0 50px #ff9900, 0 0 75px #ff9900;
     }
   }
-
   @keyframes neon6 {
     from {
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de,
@@ -1780,7 +1657,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
     }
   }
 }
-
 //---starWars--------------------------
 .starWars {
   width: 100%;
@@ -1788,7 +1664,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
   font-family: "Droid Sans", arial, verdana, sans-serif;
   font-weight: 700;
   color: #ff6;
-
   // overflow: hidden;
   // overflow: visible;
   display: flex;
@@ -1811,7 +1686,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
     // -o-animation: intro 2s ease-out;
     // animation: intro 2s ease-out;
   }
-
   @-webkit-keyframes intro {
     0% {
       opacity: 1;
@@ -1823,7 +1697,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
       opacity: 0;
     }
   }
-
   @-moz-keyframes intro {
     0% {
       opacity: 1;
@@ -1835,7 +1708,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
       opacity: 0;
     }
   }
-
   @-ms-keyframes intro {
     0% {
       opacity: 1;
@@ -1847,7 +1719,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
       opacity: 0;
     }
   }
-
   @-o-keyframes intro {
     0% {
       opacity: 1;
@@ -1859,7 +1730,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
       opacity: 0;
     }
   }
-
   @keyframes intro {
     0% {
       opacity: 1;
@@ -1871,7 +1741,6 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
       opacity: 0;
     }
   }
-
   h1 {
     position: absolute;
     width: 2.6em;
@@ -1890,14 +1759,12 @@ $colors: #360745, #d61c59, #e7d84b, #efeac5, #1b8798;
     -o-animation: logo 5s ease-out 2.5s;
     animation: logo 5s ease-out 2.5s;
   }
-
   h1 sub {
     display: block;
     font-size: 0.3em;
     letter-spacing: 0;
     line-height: 0.8em;
   }
-
   @-webkit-keyframes logo {
     0% {
       -webkit-transform: scale(1);
