@@ -6,7 +6,6 @@ class miNav extends HTMLElement {
     this.innerHTML = `
     <style>
     @import "/src/app/templates/nav/nav.css";
-
   </style>
 <section class="social-media">
     <div class="social-links">
@@ -29,23 +28,17 @@ class miNav extends HTMLElement {
     </div>
     <div class="logotipo">
     <!--          <div class="dos letritas" id="dos" onclick="efectos('dos');">          -->
-
     <div id="palabras" class="palabras">
-
-    <span>M</span>
+   <span>M</span>
       <span>i</span>
       <span>c</span>
       <span>r</span>
       <span>o</span>
-
-      
-      <!--  <br><small>Micro</small>-->
+     <!--  <br><small>Micro</small>-->
     </div>
     </div>
     <div class="menu">
       <div id="links" class="links">
-
-
         <a class="enlace irInicio" href="#inicio"><span>Inicio</span><span><i class="fas fa-home"
               aria-hidden="true"></i></span></a>
         <a class="enlace irBiografia" href="#biografia"><span>Biografía</span><span><i class="fab fa-leanpub"
@@ -58,8 +51,6 @@ class miNav extends HTMLElement {
               aria-hidden="true"></i></span></a>
         <a class="enlace irContacto" href="#contacto"><span>Contacto</span><span><i class="far fa-envelope"
               aria-hidden="true"></i></span></a>
-
-
         <div class="menuCSS3">
           <ul>
             <li><a href="#" class="enlace"><span>Diseños</span><span><i class="fas fa-mouse"
@@ -87,12 +78,6 @@ class miNav extends HTMLElement {
             </li>
           </ul>
         </div>
-
-
-
-
-
-
         <div id="mode" class=" mode">
           <p id="noche" class="noche enlace bx bxs-moon" onclick="modoNoche('dia');"></p>
           <p id="dia" class="dia enlace bx bxs-sun" onclick="modoNoche('noche');"></p>
@@ -107,31 +92,21 @@ class miNav extends HTMLElement {
 </div>
 
 
-
-
-
-
-
 <div class="movil">
   <div class="imagenes">
     <div id="foto" class="foto">
       <!--<img src="/src/assets/images/dracula-man.jpg">-->
       <img src="/src/assets/images/transparente.png">
-
     </div>
     <div class="logotipo">
       <!--          <div class="dos letritas" id="dos" onclick="efectos('dos');">          -->
-
-      <div class="palabras">
-  
-      <span>M</span>
+     <div class="palabras">
+        <span>M</span>
         <span>i</span>
         <span>c</span>
         <span>r</span>
         <span>o</span>
-
-        
-        <!--  <br><small>Micro</small>-->
+         <!--  <br><small>Micro</small>-->
       </div>
       <!--
       <svg>
@@ -167,16 +142,10 @@ class miNav extends HTMLElement {
       <div class="botonMenu">
         <a id="pull"> <span></span></a>
       </div>
-
-
-
       <!-- <span id="boton1"><img src="/src/assets/images/icons/menu.png" id="pull" href="#" alt="menu"></span> -->
       <!--   <p id="pull" href="#" class="botonMenu bx bx-menu" alt="menu"></p>-->
-
-
     </div>
   </div>
-
   <div style="display:none" class="desplegable nuevo" id="desplegable">
     <a class="enlace" href="#inicio" onclick="seleccionado(); toggleMenu();">Inicio</a>
     <a class="enlace" href="#biografia" onclick="seleccionado();">Biografía</a>
@@ -187,7 +156,6 @@ class miNav extends HTMLElement {
     <a class="enlace " href="#disenos" onclick="seleccionado();">Diseños</a>
     <a class="enlace " href="#hover" onclick="seleccionado();">Hover</a>
     <a class="enlace " href="#efectos" onclick="seleccionado();">Efectos</a>
-
     <div class="brushMode">
       <div class="brushEstilos">
         <p onclick="navegar('panelEstilos');" id="selecEstilosDesplegar" class="selecEstilosDesplegar bx bxs-brush">
@@ -204,9 +172,7 @@ class miNav extends HTMLElement {
 </div>
 <!-- <audio src="../sonidos/ping.mp4" autoplay loop></audio> -->
 </section>
-
       `;
-
     //---logotipo---LETRAS QUE SE MUEVEN
     const spans = document.querySelectorAll(".palabras span");
 
@@ -224,7 +190,6 @@ class miNav extends HTMLElement {
       }, 750 * (idx + 1));
     });
     //---efecto boton menu------------------------------------------------------------------
-
     // // event
     //---menuEfecto x-------------------------------------------------
     document.querySelector("#pull").addEventListener("click", function () {
@@ -232,17 +197,13 @@ class miNav extends HTMLElement {
       // document.getElementById("pull").style = "value: 100%";
       console.log(this.classList.value);
       // this.classList.toggle ("value: active"); tarjet
-            // document.getElementById("pull").style = "value: 100%";
-
-     
+      // document.getElementById("pull").style = "value: 100%";
     });
-
     // esto arranca automatico
     //mover elemento con el raton
     // Drag.init(document.getElementById("foto"));
     // Drag.init(document.getElementById("palabras"));
     Drag.init(document.getElementById("pull"));
-
     //probar para mover div
     // var theHandle = document.getElementById("botonesEstilo");
     // var theRoot = document.getElementById("cabecera");
@@ -253,7 +214,6 @@ class miNav extends HTMLElement {
   }
 }
 customElements.define("mi-nav", miNav);
-
 // llamar componentes
 function navegar(id) {
   var render = id;
@@ -316,7 +276,6 @@ function mostrarValor(opacidadMenu) {
       break;
     default:
       document.getElementById("stick").style = "opacity:1";
-
       break;
   }
   document.getElementById("foto").style = "opacity:";
@@ -326,8 +285,8 @@ document.addEventListener("click", function (e) {
   //obtiendo informacion del DOM para
   var clic = e.target.id;
   // console.log("menu", e.target.id);
-   switch (clic) {
-        // case "mpull":
+  switch (clic) {
+    // case "mpull":
     //   pull.classList.toggle('is-active');
     // break;
     case "selecEstilosDesplegar":
@@ -345,7 +304,6 @@ document.addEventListener("click", function (e) {
         "display:none";
       document.getElementById("selecEstilosMenuPlegar").style = "display:block";
       break;
-
     default:
       if (document.getElementById("botonesEstilo").contains(e.target)) {
         //alert("Clicked in Box");
@@ -378,38 +336,32 @@ document.addEventListener("click", function (e) {
   // );
 });
 // function nav() {
-  console.log("1desplegable");
-
- 
-
-
-
-  $(function () {
-    // console.log("abrir");
-    var pull = $("#pull");
-    menu = $(".desplegable");
-    menuHeight = menu.height();
-    $(pull).on("click", function (e) {
-      // console.log("cerrar");
-      e.preventDefault();
-      menu.slideToggle();
-    });
+console.log("1desplegable");
+$(function () {
+  // console.log("abrir");
+  var pull = $("#pull");
+  menu = $(".desplegable");
+  menuHeight = menu.height();
+  $(pull).on("click", function (e) {
+    // console.log("cerrar");
+    e.preventDefault();
+    menu.slideToggle();
   });
+});
+$(window).resize(function () {
+  var w = $(window).width();
+  if (w > 320 && menu.is(":hidden")) {
+    menu.removeAttr("style");
+  }
+  // console.log(pull.value);
+  var variable = document.getElementById("pull");
+  // console.log(variable);
 
-  $(window).resize(function () {
-    var w = $(window).width();
-    if (w > 320 && menu.is(":hidden")) {
-      menu.removeAttr("style");
-    }
-    // console.log(pull.value);
-    var variable = document.getElementById("pull");
-    // console.log(variable);
-
-    if (pull.classList.value=="active" && menu.is(":hidden")) {
-      console.log('dentro');
-      pull.classList.toggle("active");
-    }
-  });
+  if (pull.classList.value == "active" && menu.is(":hidden")) {
+    console.log("dentro");
+    pull.classList.toggle("active");
+  }
+});
 // }
 //----------------
 //sonido menu
