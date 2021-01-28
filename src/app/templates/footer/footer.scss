@@ -1,8 +1,7 @@
 @import "../../../assets/style/sass/mixins/mixins.scss";
 @import "../../../assets/style/sass/variables/variables.scss";
-
 * {
-  margin: 0rem 0rem 0rem 0rem ;
+  margin: 0rem 0rem 0rem 0rem;
   padding: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -54,9 +53,8 @@
         }
         input[type="submit"] {
           border: none;
-         // background: $corporativo;
+          // background: $corporativo;
           background-image: -webkit-linear-gradient(top, $azul, $gris);
-
           color: #fff;
           width: 50%;
           padding: 1rem 0rem 1rem 0rem;
@@ -70,7 +68,6 @@
         input[type="submit"]:hover {
           background-color: $negro;
           background-image: -webkit-linear-gradient(top, $gris, $azul);
-
         }
         .fa {
           color: red;
@@ -102,7 +99,7 @@
     .redes {
       display: flex;
       width: 100%;
-     // background: #000;
+      // background: #000;
       border-top: 0.1rem solid $corporativo;
       .propiedad {
         width: 100%;
@@ -114,7 +111,7 @@
           padding: 2rem;
           .iconSocial {
             img {
-             // border-radius: 75%;
+              // border-radius: 75%;
               //border: 0.03rem solid $blanco;
               height: 4rem;
               margin: 0.3rem;

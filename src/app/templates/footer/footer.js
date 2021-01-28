@@ -93,7 +93,6 @@ class miFooter extends HTMLElement {
 customElements.define("mi-footer", miFooter);
 /*************************\
         funciones
-
 /*************************/
 class MiBoton extends HTMLElement {
   constructor() {
