@@ -48,10 +48,6 @@ body .fiestas .stop:hover {
   border-bottom: 0.05rem solid orangered;
 }
 
-.stick .nav .navbar .foto img {
-  border: 0.05rem solid orangered;
-}
-
 .stick .nav .navbar .menu .links .enlace {
   color: orangered;
 }
@@ -207,11 +203,6 @@ body .fiestas .stop:hover {
     -webkit-box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
             box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
     background-color: rgba(0, 0, 0, 0.438);
-  }
-  .stick .movil .imagenes .foto img {
-    border: 3px double orangered;
-    -webkit-box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
-            box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
   }
   .stick .movil .imagenes .botones .botonMenu {
     color: orangered;

@@ -46,10 +46,6 @@ body .fiestas .stop:hover {
   border-bottom: 0.05rem solid #f80000;
 }
 
-.stick .nav .navbar .foto img {
-  border-color: #f80000;
-}
-
 .stick .nav .navbar .menu .links .enlace {
   color: #f80000;
   border-color: #f80000;
@@ -206,11 +202,6 @@ body .fiestas .stop:hover {
     -webkit-box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
             box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
     background-color: rgba(0, 0, 0, 0.438);
-  }
-  .stick .movil .imagenes .foto img {
-    border: 3px double #f80000;
-    -webkit-box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
-            box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
   }
   .stick .movil .imagenes .botones .botonMenu {
     color: #f80000;
