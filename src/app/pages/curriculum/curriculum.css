@@ -134,7 +134,7 @@ a:visited {
 }
 
 .datos .experiencia .logotipo img {
-  width: calc(20rem + 10vw);
+  width: calc(10rem + 10vw);
   border-radius: 1rem 0rem 0rem 1rem;
 }
 

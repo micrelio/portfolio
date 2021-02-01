@@ -111,6 +111,11 @@
   width: 100%;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html,
 body {
   margin: 0;
@@ -254,7 +259,7 @@ body .fa-arrow-alt-circle-up {
   position: fixed;
   bottom: 15rem;
   right: 2rem;
-  border-radius: 100px;
+  border-radius: 10rem;
   -webkit-text-stroke: 0.1rem gray;
   text-shadow: 0.2rem 0.2rem 0.5rem black;
   background-color: white;

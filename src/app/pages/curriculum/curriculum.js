@@ -48,6 +48,21 @@ class miCurriculum extends HTMLElement {
 <div class="separador3">
 </div>
 <section class="datos">
+<div class="experiencia">
+        <div class="logotipo">
+            <a href="https://ocupacio.quartdepoblet.es/index.php/es/formacio"target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/typing.jpg"></a>
+        </div>
+        <div class="descripcion">
+            <p class="año">2021</p><br>
+            <p>Curso de mecanografía online nivel avanzado.  <a href="https://www.typing.com/" target="_blank">typing.com</a>.<br>
+            <a href="https://www.typing.com/student/verify#147381855-106754366" target="_blank">Verificar</a>.</p>
+        </div>
+        <div class="titulo">
+             <a href="/src/assets/images/titulos/mecanografia.jpg" target="_blank"><img alt="" src="/src/assets/images/icons/titulo2.png"></a> 
+        </div>
+    </div>
+    <div class="separador5">
+    </div>
     <div class="experiencia">
         <div class="logotipo">
             <a href="https://ocupacio.quartdepoblet.es/index.php/es/formacio"target="_blank"><img id="" class="corporativo" src="/src/assets/images/logoEmpresa/quart.jpg"></a>
