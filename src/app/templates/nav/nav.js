@@ -189,7 +189,7 @@ class miNav extends HTMLElement {
         span.classList.add("active");
       }, 750 * (idx + 1));
     });
-    //---efecto boton menu------------------------------------------------------------------
+    //---efecto boton menu-------------------------------------------------------------
     // // event
     //---menuEfecto x-------------------------------------------------
     document.querySelector("#pull").addEventListener("click", function () {
@@ -213,6 +213,8 @@ class miNav extends HTMLElement {
     //</div>
   }
 }
+// 
+// 
 customElements.define("mi-nav", miNav);
 // llamar componentes
 function navegar(id) {
