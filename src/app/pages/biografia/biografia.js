@@ -1,10 +1,8 @@
 // import styles from '/src/assets/style/css/styles/componentes/biografia.css';
-
 class miBiografia extends HTMLElement {
   constructor() {
     // this.attachShadow({mode: open});
     // this.shadowRoot.adoptedStyleSheets = [styles];
-
     super();
   }
   connectedCallback() {
@@ -129,8 +127,6 @@ class miBiografia extends HTMLElement {
                 </div>
             </div>
 
-
-
           <div class="datosGenerales">
             <div class="infoPersonal">
                 <p><strong>Información personal</strong></p>
@@ -217,12 +213,8 @@ class miBiografia extends HTMLElement {
             <div class="sitioWeb">
                 <p> <a class="visitar" target="blank" href="https://microdeveloper.es/">microdeveloper.es</p>
             </div>
-
-          </div>
-
-      <!--
-
-	
+        </div>
+    <!--
 Distinciones	
 Premio Extraordinario de Fin de Carrera (2004)
 Firma	Pablo Iglesias Turrión signature.svg
@@ -230,22 +222,12 @@ Web
 Sitio web	
 pabloiglesias.org
 -->
-
         </div><!-- curriculum-->
-
     </div><!-- biografiaCurriculum-->
-    
-</section>
+    </section>
 <div class="separador5">
     </div>
-   
-     `;    
-    }
-
+        `;
+  }
 }
 customElements.define("mi-biografia", miBiografia);
-
-    
-
-
-
