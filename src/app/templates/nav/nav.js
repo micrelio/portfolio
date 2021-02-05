@@ -27,7 +27,6 @@ class miNav extends HTMLElement {
       <!--<img src="/src/assets/images/dracula-man.jpg">-->
     </div>
     <div class="logotipo">
-    <!--          <div class="dos letritas" id="dos" onclick="efectos('dos');">          -->
     <div id="palabras" class="palabras">
    <span>M</span>
       <span>i</span>
@@ -213,8 +212,8 @@ class miNav extends HTMLElement {
     //</div>
   }
 }
-// 
-// 
+//
+//
 customElements.define("mi-nav", miNav);
 // llamar componentes
 function navegar(id) {
