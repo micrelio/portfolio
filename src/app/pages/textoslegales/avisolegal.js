@@ -1,9 +1,9 @@
 class miAvisolegal extends HTMLElement {
-    constructor() {
-      super();
-    }
-    connectedCallback() {
-      this.innerHTML = `
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    this.innerHTML = `
       <style>
       @import "/src/app/pages/textosLegales/textosLegales.css";
     </style>
@@ -250,7 +250,7 @@ class miAvisolegal extends HTMLElement {
             "<mi-politicadecookies></mi-politicadecookies>";
           break;
       }
-    });    
-    }
+    });
   }
-  customElements.define("mi-avisolegal", miAvisolegal);
+}
+customElements.define("mi-avisolegal", miAvisolegal);

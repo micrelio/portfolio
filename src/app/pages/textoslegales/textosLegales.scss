@@ -1,9 +1,8 @@
 @import "../../../assets/style/sass/mixins/mixins.scss";
 @import "../../../assets/style/sass/variables/variables.scss";
-
 .legales {
   padding: 5rem;
-   e {
+  e {
     color: $corporativo;
     cursor: pointer;
   }
@@ -11,10 +10,10 @@
     color: $corporativo;
     text-decoration: none;
   }
-    p {
-        text-shadow: 0.1em 0.1em 0.1em gray;
-    }
-    ul {
+  p {
+    text-shadow: 0.1em 0.1em 0.1em gray;
+  }
+  ul {
     margin: 2rem 0rem 2rem 2rem;
     li {
       color: black;
