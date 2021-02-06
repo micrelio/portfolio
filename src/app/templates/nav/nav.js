@@ -50,6 +50,8 @@ class miNav extends HTMLElement {
               aria-hidden="true"></i></span></a>
         <a class="enlace irContacto" href="#contacto"><span>Contacto</span><span><i class="far fa-envelope"
               aria-hidden="true"></i></span></a>
+              <a class="enlace irContacto" href="/src/app/pages/contacto/html/contacto.html"><span>Contacto</span><span><i class="far fa-envelope"
+              aria-hidden="true"></i></span></a>
         <div class="menuCSS3">
           <ul>
             <li><a href="#" class="enlace"><span>Diseños</span><span><i class="fas fa-mouse"
