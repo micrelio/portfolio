@@ -1,0 +1,62 @@
+<!DOCTYPE html>    
+<html>
+ <head>
+  <link type="text/css" rel="stylesheet" href="style.css">
+   <!-- La linea de arriba es para importar estilos CSS a nuestro formulario -->
+  <title>Formulario de contacto</title>
+  <style>
+      label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:1px;
+}
+.formulario {
+    display:block;
+    margin:0 auto;
+    width:510px;
+    color: #666666;
+    font-family:Arial;
+}
+form {
+    margin:0 auto;
+    width:400px;
+}
+ 
+input, textarea {
+    width:380px;
+    height:27px;
+    background:#666666;
+    border:2px solid #f6f6f6;
+    padding:10px;
+    margin-top:5px;
+    font-size:10px;
+    color:#ffffff;
+}
+ 
+textarea {
+    height:150px;
+}
+ 
+#submit {
+    width:85px;
+    height:35px;
+    border:none;
+    margin-top:20px;
+    cursor:pointer;
+}
+  </style>
+ </head>
+ <body>
+  <section class="formulario">
+    <form action="contact.php" method="post">
+        <label for="nombre">Nombre:</label>
+         <input id="nombre" type="text" name="nombre" placeholder="Nombre y Apellido" required="" />
+         <label for="email">Email:</label>
+         <input id="email" type="email" name="email" placeholder="ejemplo@correo.com" required="" />
+         <label for="mensaje">Mensaje:</label>
+         <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required=""></textarea>
+         <input id="submit" type="submit" name="submit" value="Enviar" />
+        </form>
+  </section>
+ </body>
+</html>
