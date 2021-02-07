@@ -1,59 +1,85 @@
 @import "../../../assets/style/sass/mixins/mixins.scss";
 @import "../../../assets/style/sass/variables/variables.scss";
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-// .head {
-//   @include head;
-// }
-.primera {
-  //width: 100vw;
-  //padding: 5%;
-  ///height: 80vh;
-  // img {
-  // width: 90vw;
-  // }
-  //   background: {
-  //         color: white;
-  //     }
-  form {
-    /* Sólo para centrar el formulario a la página */
-    margin: 0 auto;
-   // width: 400px;
-    /* Para ver el borde del formulario */
-    padding: 1em;
-    border: 1px solid #ccc;
-    border-radius: 1em;
-  }
-  label {
-    /* Para asegurarse que todos los labels tienen el mismo tamaño y están alineados correctamente */
-    display: inline-block;
-   // width: 90px;
-    text-align: right;
-  }
-  input,
-  textarea {
-    /* Para asegurarse de que todos los campos de texto tienen las mismas propiedades de fuente
-           Por defecto, las areas de texto tienen una fuente con monospace */
-    font: 1em sans-serif;
-    /* Para darle el mismo tamaño a todos los campos de texto */
-  //  width: 300px;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    /* Para armonizar el look&feel del borde en los campos de texto */
-    border: 1px solid #999;
-  }
-  input:focus,
-  textarea:focus {
-    /* Para dar un pequeño destaque en elementos activos*/
-    border-color: #000;
-  }
-  textarea {
-    /* Para alinear campos de texto multilínea con sus labels */
-    vertical-align: top;
-    /* Para dar suficiente espacio para escribir texto */
-    height: 6em;
-    /* Para permitir a los usuarios cambiar el tamaño de cualquier textarea verticalmente
-              No funciona en todos los navegadores */
-    resize: vertical;
-  }
-  
+* {
+  margin: 0;
+  padding: 0  
+}
+body {
+  background: url(http://img6.uploadhouse.com/fileuploads/17737/17737075bdad5cfa9423bb2c3c2beee695c72bb8.jpg);
+  color: #B1B1B1;
+  // margin: 15px auto 0;
+  // width: 410px;
+}
+#contact {
+  overflow: auto;
+}
+#contact #form {
+  width:410px;
+  float:left;
+}
+#contact #form h2 {
+  font: 48px 'Bree Serif', Georgia, serif;
+}
+#contact #form span {
+  display:block;
+  float:left;
+  width:100px;
+  padding-top:5px;
+  font: 14px/16px'Bree Serif', Georgia, serif;
+}
+#contact #form input {
+  float:left;
+  width:255px;
+  border:0px;
+  color:#F1F1F1;
+  padding:10px 10px 10px 30px;
+  font: 11px/20px'Open Sans', Verdana, Helvetica, sans-serif;
+  margin-bottom:10px;
+}
+#contact #form textarea {
+  float:left;
+  border:0px;
+  width:255px;
+  height:140px;
+  padding:10px 10px 10px 30px;
+  font: 11px/20px'Open Sans', Verdana, Helvetica, sans-serif;
+  color:#F1F1F1;
+  resize: none;
+}
+#contact #form input.name {
+  background:#222222 url(http://img7.uploadhouse.com/fileuploads/17737/177370145f09fe433945815665aa214f80dbc6af.png) no-repeat 10px 8px;
+}
+#contact #form input.email {
+  background:#222222 url(http://img6.uploadhouse.com/fileuploads/17737/177370138cc63992182149e9befabff3eafa6d23.png) no-repeat 10px 9px;
+}
+#contact #form input.captcha {
+  background:#222222 url(http://img3.uploadhouse.com/fileuploads/17737/17737011310213e71805ecf2292144cbbecf42ad.png) no-repeat 10px 9px;
+}
+#contact #form textarea.message {
+  background:#222222 url(http://img3.uploadhouse.com/fileuploads/17737/1773701229ed8c2f465a8274623ca8976adaf196.png) no-repeat 10px 8px;
+}
+#contact #form input.submit {
+  cursor: pointer;
+  width:85px;
+  height:30px;
+  float:right;
+  padding:0px 0px 5px 0px;
+  margin:10px 16px 0px 0px;
+  background:#222222;
+  color:#F1F1F1;
+  font: 14px/16px'Bree Serif', Georgia, serif;
+}
+#contact #captcha span{
+  width: 44px;
+}
+#contact #captcha input{
+  background: url(http://img3.uploadhouse.com/fileuploads/17737/17737011310213e71805ecf2292144cbbecf42ad.png) no-repeat scroll 0 0 transparent;
+  margin: 5px 0 0;
+  padding: 0;
+  border: medium none;
+  cursor: pointer;
+  width: 15px;
 }

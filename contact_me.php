@@ -1,20 +1,20 @@
 <?php
+echo "kakakakakakakakak";
 // Revisa si los campos están vacíos
-echo "nadad";
 if(empty($_POST['name'])  		||
    empty($_POST['email']) 		||
-   empty($_POST['phone']) 		||
-   empty($_POST['message'])	||
-   !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
+   empty($_POST['captcha'])   ||
+   // empty($_POST['phone']) 		||
+   empty($_POST['message'])	)
    {
 	echo "No arguments Provided!";
 	return false;
    }
 	
-$name = strip_tags(htmlspecialchars($_POST['name']));
-$email_address = strip_tags(htmlspecialchars($_POST['email']));
-$phone = strip_tags(htmlspecialchars($_POST['phone']));
-$message = strip_tags(htmlspecialchars($_POST['message']));
+$name = $_POST['name'];
+$email_address = $_POST['email'];
+// $phone = $_POST['phone'];
+$message = $_POST['message'];
 	
 // Crea el mensaje que va a enviar
 $to = 'microa4@gmail.com'; //Añada su dirección de correo electrónico entre el '' reemplazando suNombre@suDominio.com - Aquí es donde el formulario enviará un mensaje. Puede ser @gmail.com
