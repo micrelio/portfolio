@@ -34,7 +34,7 @@ class miCurriculum extends HTMLElement {
             </p>
            
             <p>
-            <i class="fa fa-envelope"></i>  microa4@gmail.com 
+            <i class="fa fa-envelope"></i> info@microdeveloper.es
             </p>
             
         </div>
