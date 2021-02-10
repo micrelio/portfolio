@@ -10,7 +10,8 @@ class miInicio extends HTMLElement {
     <section class="inicio">
     <div class="separador5">
     </div>
-        <h1>Presentación</h1>
+        <h1>Desarrollador</h1>
+        <h1>Micro</h1>
         <div>
           <p>
           Bienvenido a mi página web de presentación o portfolio, en ella mostraré mis competencias y aficiones frente al mundo laboral adquiridas a lo largo de la vida, una de las funciones principales es mostrar mi currículum.

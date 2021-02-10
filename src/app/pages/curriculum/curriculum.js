@@ -7,38 +7,29 @@ class miCurriculum extends HTMLElement {
     <style>
     @import "/src/app/pages/curriculum/curriculum.css";
   </style>
-<section>
-<div class="separador5">
+    <section>
+    <div class="separador5">
     </div>
-<div class="descripcion">
-    <h1>Datos personales</h1>
-</div>
-<div class="separador3">
-</div>
-<section class="datos">
-    <div class="datosPersonales">
-        <div class="foto">
-            <img id="" class="dni" src="/src/assets/images/fotos/dni.png">
+    <div class="descripcion">
+        <h1>Datos personales</h1>
+    </div>
+    <div class="separador3">
+    </div>
+    <section class="datos">
+        <div class="datosPersonales">
+            <div class="foto">
+                <img id="" class="dni" src="/src/assets/images/fotos/dni.png">
         </div>
         <div class="direccion">
-        <br>
-            <h3><strong>José Antonio López Baena</strong></h3>
-            <p>
-                Nacido en julio de 1982 Valencia (España).
-            </p>
-            <p>
-            <a class="fa fa-map-marker" href="https://goo.gl/maps/9UUDsgCz7YnERqvD6" target="_blank"></a> <a href="https://goo.gl/maps/9UUDsgCz7YnERqvD6" target="_blank">Quart dePoblet 46930 (Valencia).</a>
-            </p>
-            <p>
-            <a class="fa fa-phone" href="tel:+34653251983"></a> <a href="tel:+34653251983">653 25 19 83</a>
-            </p>
-           
-            <p>
-            <i class="fa fa-envelope"></i> info@microdeveloper.es
-            </p>
-            
+            <br>
+                <h3><strong>José Antonio López Baena</strong></h3>
+                <p>Nacido en julio de 1982 Valencia (España).</p>
+                <p><a class="fa fa-map-marker" href="https://goo.gl/maps/9UUDsgCz7YnERqvD6" target="_blank"></a> <a href="https://goo.gl/maps/9UUDsgCz7YnERqvD6" target="_blank">Quart dePoblet 46930 (Valencia).</a></p>
+                <p><a class="fa fa-phone" href="tel:+34653251983"></a> <a href="tel:+34653251983">653 25 19 83</a></p>
+                <p><i class="fa fa-envelope"></i> info@microdeveloper.es</p>
+            </div>
         </div>
-    </div>
+    
 </section>
 <div class="separador5">
 </div>
