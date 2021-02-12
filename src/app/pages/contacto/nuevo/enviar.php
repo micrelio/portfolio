@@ -5,7 +5,7 @@ $correo = $_POST['correo'];
 $telefono = $_POST['telefono'];
 $mensaje = $_POST['mensaje'];
 // Datos para el correo
-$destinatario = "microa4@gmail.com";
+$destinatario = "info@microdeveloper.es";
 $asunto = "Contacto desde nuestra web";
 $carta = "De: $nombre \n";
 $carta .= "Correo: $correo \n";
