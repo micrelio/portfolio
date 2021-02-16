@@ -7,20 +7,20 @@
   +-----------------------------------------------------+
   */
   // INFORMACION DEL ENVIADOR
-  $host = "TU HOST O DOMAIN";
-  $senderEmail = "CORREO DEL ENVIADOR";
-  $senderPassword = "CONTRASENA DEL ENVIADOR";
+  $host = "microdeveloper.es";
+  $senderEmail = "web@microdeveloper.es";
+  $senderPassword = "";
   // INFORMACION DEL QUE RECIBE EL MENSAJE
-  $receiverName = "NOMBRE DEL QUE RECIBE EL MENSAJE";
-  $receiver = "CORREO DEL QUE RECIBE EL MENSAJE";
+  $receiverName = "Micrelio";
+  $receiver = "info@microdeveloper.es";
   //
   /*
   +-----------------------------------------------------+
   | PARAMETROS DE CONFIGURACION PARA GOOGLE RECAPTCHA                        |
   +-----------------------------------------------------+
   */
-  $yoursecretkey = "SECRET DE GOOGLE RECAPTCHA";
-  $yourpublickey = "PUBLIC DE GOOGLE RECAPTCHA";
+  $yoursecretkey = "6LcBgVoaAAAAAJ2nLbx3BMR7DShc077ZVSLAross";
+  $yourpublickey = "6LcBgVoaAAAAAAEt7-fWXw1MomP4kWSywzYaMii5";
   //
   /*
   +-----------------------------------------------------+
