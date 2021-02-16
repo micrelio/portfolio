@@ -7,15 +7,31 @@ class miContacto extends HTMLElement {
     <style>
       @import "/src/app/pages/contacto/contacto.css";
     </style>
+<section class="primera">
+<div class="separador5">
+    </div>
+<img src="/src/assets/images/constructor2.png">
+
+
   
-    <section>
-    <iframe src="/src/app/pages/contacto/contacto/index.php" style="display:block;  width: 90%; height: 80%" name="formularios"></iframe>
-    <section>
-
-
-
+</section>
+<section id="contact">
+          <div class="content">
+            <div id="form">
+              <form action="contact_me.php" id="contactForm" method="post">
+                <span>Name</span>
+                <input type="text" name="name" class="name" placeholder="Enter your name" tabindex=1 />
+                <span>Email</span>
+                <input type="text" name="email" class="email" placeholder="Enter your email" tabindex=2 />
+                <span id="captcha"></span>
+                <input type="text" name="captcha" class="captcha" maxlength="4" size="4" placeholder="Enter captcha code" tabindex=3 />
+                <span>Message</span>
+                <textarea class="message" placeholder="Enter your message" tabindex=4></textarea>
+                <input type="submit" name="submit" value="Send e-mail" class="submit" tabindex=5>
+              </form>
+            </div>
+      </section>
 `;
-
   }
 }
 customElements.define("mi-contacto", miContacto);
