@@ -1,6 +1,6 @@
 <?php
 //cambiar el contenido entre comillas por la dirección de su dominio -A- la cual se desea que lleguen los correos enviados desde el formulario
-$correo="microa4@gmail.com";
+$correo="info@microdeveloper.es";
 
 //se incluye la clase php-captcha
 require_once('php-captcha.inc.php');
