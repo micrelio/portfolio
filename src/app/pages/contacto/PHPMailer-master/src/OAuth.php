@@ -55,21 +55,21 @@ class OAuth
      *
      * @var string
      */
-    protected $oauthUserEmail = '';
+    protected $oauthUserEmail = 'info@microdeveloper.es';
 
     /**
      * The client secret, generated in the app definition of the service you're connecting to.
      *
      * @var string
      */
-    protected $oauthClientSecret = '';
+    protected $oauthClientSecret = '6LcBgVoaAAAAAJ2nLbx3BMR7DShc077ZVSLAross';
 
     /**
      * The client ID, generated in the app definition of the service you're connecting to.
      *
      * @var string
      */
-    protected $oauthClientId = '';
+    protected $oauthClientId = '6LcBgVoaAAAAAAEt7-fWXw1MomP4kWSywzYaMii5';
 
     /**
      * The refresh token, used to obtain new AccessTokens.
