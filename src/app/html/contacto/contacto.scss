@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "FontAwesome";
+  src: url("/src/assets/fonts/fontawesome-webfont.woff");
+}
 .container{
     .form-center{
         max-width: 550px;
@@ -12,6 +16,15 @@
             font: 11px/20px'Open Sans', Verdana, Helvetica, sans-serif;
             margin-bottom:10px;
           }
+          
+
+input, textarea { 
+	font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+
     .name {
         background:#222222 url(http://img7.uploadhouse.com/fileuploads/17737/177370145f09fe433945815665aa214f80dbc6af.png) no-repeat 10px 8px;
       }
@@ -21,6 +34,8 @@
       .message {
         background:#222222 url(http://img3.uploadhouse.com/fileuploads/17737/1773701229ed8c2f465a8274623ca8976adaf196.png) no-repeat 10px 8px;
       }
-
+      .phone {
+        background:#222222 url(http://img3.uploadhouse.com/fileuploads/17737/1773701229ed8c2f465a8274623ca8976adaf196.png) no-repeat 10px 8px;
+      }
     }
 }
