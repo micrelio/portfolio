@@ -55,7 +55,7 @@ class miNav extends HTMLElement {
               <a class="enlace irContacto" href="/src/app/pages/contacto/html/contacto.html"><span>Contacto</span><span><i class="far fa-envelope"
               aria-hidden="true"></i></span></a>
               -->
-              <a class="enlace irContacto" href="/src/app/pages/contacto/contacto/index.php"><span>Contacto</span><span><i class="far fa-envelope"
+              <a class="enlace irContacto" target="_blank" href="/src/app/html/contacto/contacto.php"><span>Contacto</span><span><i class="far fa-envelope"
               aria-hidden="true"></i></span></a>
         <div class="menuCSS3">
           <ul>
