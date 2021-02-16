@@ -62,7 +62,7 @@ $cuerpo .= $mensaje;
 $cuerpo .= "\n";
 
 	//DIRECCION
-	$enviarA = 'micorreo@gmail.com';
+	$enviarA = 'info@microdeveloper.es';
 	$asunto = 'Nuevo mensaje de mi sitio web';
 
 	//ENVIAR CORREO

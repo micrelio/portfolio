@@ -7,7 +7,7 @@ class EmailService
 	public $mensaje_ok 			= 'Gracias por contactarnos';
 	public $mensaje_error 		= 'Lo Sentimos, Ocurrió un error al enviar su formulario';
 	public $mensaje_validacion 	= 'Debe Completar todos los Campos';
-	public $destino 			= 'gbarrerasaez.cl@gmail.com';
+	public $destino 			= 'info@microdeveloper.es';
 	public $asunto  			= 'Contacto de Formulario de Sitio Web';	
 	//public $formato			= 'text/html' ;	 
 	public $formato				= 'text/plain' ;	 

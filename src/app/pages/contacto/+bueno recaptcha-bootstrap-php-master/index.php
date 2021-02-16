@@ -10,8 +10,8 @@
 require_once "recaptchalib.php";
 
 // tu secret key
-$publicKey = "INGRESA TU PUBLIC KEY";
-$secret = "INGRESA TU SECRET KEY";
+$publicKey = "6LcBgVoaAAAAAAEt7-fWXw1MomP4kWSywzYaMii5";
+$secret = "6LcBgVoaAAAAAJ2nLbx3BMR7DShc077ZVSLAross";
 
 
 $response = null;
@@ -29,11 +29,11 @@ $showMessage = false;
 if ($response != null && $response->success) {
     $showMessage = true;
     // a quien se envia el email
-    $to = "MI@CORREO";
+    $to = "info@microdeveloper.es";
     // sujeto del email
-    $subject = "Contacto";
+    $subject = "Micrelio web";
     // quien envia el correo
-    $headers = "From: INFO@SUSITIOWEB" . "\r\n";
+    $headers = "From: web@microdeveloper.es" . "\r\n";
     // quito el valor del recaptcha
     unset($_POST["g-recaptcha-response"] );
 
