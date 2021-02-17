@@ -1,43 +1,92 @@
-@font-face {
-  font-family: "FontAwesome";
-  src: url("/src/assets/fonts/fontawesome-webfont.woff");
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.container .form-center {
-  max-width: 550px;
-  padding: 15px 30px 15px 0px;
-  margin: 0 auto;
+body {
+  background-image: url("../../../images/backgrounds/0.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
-.container .form-center input {
-  float: left;
+body .container {
+  width: 90%;
+  height: 100vh;
+  background-color: yellow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .container .formularioContacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  background-color: red;
+}
+
+body .container .formularioContacto .bloqueEntrada {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: aqua;
+}
+
+body .container .formularioContacto input {
+  border-radius: 0.5rem;
   width: 255px;
-  border: 0px;
   padding: 10px 10px 10px 30px;
-  font: 11px/20px "Open Sans", Verdana, Helvetica, sans-serif;
-  margin-bottom: 10px;
+  background-color: aqua;
 }
 
-.container .form-center input, .container .form-center textarea {
-  font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: inherit;
+body .container .formularioContacto .name {
+  background: #222222;
 }
 
-.container .form-center .name {
-  background: #222222 url(http://img7.uploadhouse.com/fileuploads/17737/177370145f09fe433945815665aa214f80dbc6af.png) no-repeat 10px 8px;
+body .container .formularioContacto .email {
+  background: #222222;
 }
 
-.container .form-center .email {
-  background: #222222 url(http://img6.uploadhouse.com/fileuploads/17737/177370138cc63992182149e9befabff3eafa6d23.png) no-repeat 10px 9px;
+body .container .formularioContacto .message {
+  background: #222222;
 }
 
-.container .form-center .message {
-  background: #222222 url(http://img3.uploadhouse.com/fileuploads/17737/1773701229ed8c2f465a8274623ca8976adaf196.png) no-repeat 10px 8px;
-}
-
-.container .form-center .phone {
-  background: #222222 url(http://img3.uploadhouse.com/fileuploads/17737/1773701229ed8c2f465a8274623ca8976adaf196.png) no-repeat 10px 8px;
+body .container .formularioContacto .phone {
+  background: #222222;
 }
 /*# sourceMappingURL=contacto.css.map */

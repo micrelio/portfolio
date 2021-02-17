@@ -64,10 +64,7 @@ if ($response != null && $response->success) {
     <title>CONTACTO</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://getbootstrap.com/assets/css/docs.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="contacto.css">
 
     <link rel="stylesheet" href="/src/assets/fonts/FontAwesome.otf">
@@ -79,67 +76,56 @@ if ($response != null && $response->success) {
 <body>
     <div class="container">
 
-        <div class="row">
-            <div class="form-center">
-                <div class="col-sm-4"></div>
-                <div class="col-sm-8">
-                    <!-- <?php
+        <div class="">
+            <!-- <?php
                     if ($showMessage) {
                         echo !$error ? '<div class="bs-example-bg-classes"><p class="bg-success text-center">' . $message . '</p></div>' : '';
                         echo $error ? ' <div class="bs-example-bg-classes"><p class="bg-danger text-center">' . $message . '</p></div>' : '';
                     }
                     ?> -->
 
-                    <h2>CONTACTO</h2>
-                </div>
-
-                <form role="form" action="" method="post" class="form-horizontal">
-                    <div class="form-group">
-                        <label for="name" class="col-sm-4 control-label">Nombre:</label>
-                        <div class="col-sm-8">
-                            <input class="name form-control" placeholder="Nombre" id="name" type="text" name="Nombre"
-                                autofocus required />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="email" class="col-sm-4 control-label">Email:</label>
-                        <div class="col-sm-8">
-                            <input class="email form-control" placeholder="Email" id="email" type="email" name="Email"
-                                autofocus required />
-                                <i class="fa fa-user fa-lg"></i>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone" class="col-sm-4 control-label">Telefono:</label>
-                        <div class="col-sm-8">
-                            <input class="phone form-control" placeholder="&#xf007" id="phone" type="tel" name="Telefono"
-                                autofocus required />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="comment" class="col-sm-4 control-label">Mensaje :</label>
-                        <div class="col-sm-8">
-                            <textarea class="message form-control" rows="5" name="comentario" id="comment"></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-4"></div>
-                        <div class="col-sm-8">
-                            <!--pueden cambiar el lenguaje con el parametro hl-->
-                            <script src='https://www.google.com/recaptcha/api.js?hl=es'></script>
-                            <!--El site key de su sitio-->
-                            <div class="g-recaptcha" data-sitekey="<?php echo $publicKey; ?>"></div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-4"></div>
-                        <div class="col-sm-8">
-                            <button type="submit" class="fa fa-paper-plane btn btn-block btn-success"></button>
-                        </div>
-                    </div>
-                </form>
-            </div>
+            <h2>CONTACTO</h2>
         </div>
+
+        <form role="form" action="" method="post" class="formularioContacto">
+            <div class="bloqueEntrada">
+                <label for="name">Nombre:</label>
+                <div>
+                    <input class="name" placeholder="Nombre" id="name" type="text" name="Nombre"  />
+                </div>
+            </div>
+            <div class="bloqueEntrada">
+                <label for="email" class=" ">Email:</label>
+                <div class="">
+                    <input class="email" placeholder="Email" id="email" type="email" name="Email"  />
+                </div>
+            </div>
+            <div class="bloqueEntrada">
+                <label for="phone" class=" ">Telefono:</label>
+                <div class="">
+                    <input class="phone" placeholder="Telefono" id="phone" type="tel" name="Telefono"  />
+                </div>
+            </div>
+            <div class="bloqueEntrada">
+                <label for="comment" class=" ">Mensaje :</label>
+                <div class="">
+                    <textarea class="message" rows="10" cols="40"  name="comentario" id="comment"></textarea>
+                </div>
+            </div>
+            <div class="bloqueEntrada">
+                <div class="">
+                    <!--pueden cambiar el lenguaje con el parametro hl-->
+                    <script src='https://www.google.com/recaptcha/api.js?hl=es'></script>
+                    <!--El site key de su sitio-->
+                    <div class="g-recaptcha" data-sitekey="<?php echo $publicKey; ?>"></div>
+                </div>
+            </div>
+            <div class="">
+                <div class="">
+                    <button type="submit" class="fa fa-paper-plane "></button>
+                </div>
+            </div>
+        </form>
     </div>
 </body>
 
