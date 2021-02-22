@@ -79,13 +79,34 @@ if ($response != null && $response->success) {
 ?>
 
 
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <title>CodePen - Expanding Contact Form</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Micro | Desarrollador web</title>
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="https://i.ibb.co/sHmt0XZ/00001361.jpg" />
+    <meta name="author" content="micro" />
+    <meta name="copyright" content="micro" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="twitter:site" content="@">
+    <link rel="alternate" hreflang="es" href="https://microdeveloper.es/" />
+    <meta name="Title" content="" />
+    <meta name="Description"
+        content="Portfolio y curriculum Jose Antonio Lopez Baena, Micro. En ella muestro mi pericia como programador y control de servidores" />
+    <meta name="Keywords" content="6 palabras" />
+    <meta http-equiv="content-language" content="es-ES" />
+    <meta name="Distribution" content="Global" />
+    <meta name="googlebot" content="index, follow">
+    <meta name="robots" content="index,follow">
+    <meta property="og:url" content="https://microdeveloper.es/">
+    <meta property="og:site_name" content="Micro | Developer">
+
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/sHmt0XZ/00001361.jpg">
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -139,7 +160,7 @@ if ($response != null && $response->success) {
         <!-- partial:index.partial.html -->
         <div class='form-overlay'></div>
         <div class='icon fa fa-pencil' id='form-container'>
-            <span class='icon feo fa fa-close' id='form-close'></span>
+            <!-- <span class='icon feo fa fa-close' id='form-close'></span> -->
             <div id='form-content'>
                 <div id='form-head'>
                     <h2 class='pre'>CONTACTO</h2>
