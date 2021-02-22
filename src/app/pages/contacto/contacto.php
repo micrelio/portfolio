@@ -76,7 +76,7 @@ if ($response != null && $response->success) {
         $message = 'Error al enviar el formulario intente de nuevo';
     }
 }
-?>  
+?>
 
 
 <!DOCTYPE html>
@@ -97,9 +97,19 @@ if ($response != null && $response->success) {
 
 
     <?php#  include('./php/configuracion.php');
-    ?> 
+    ?>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./font-awesome/font-awesome.min.css">
+    <link rel="stylesheet" href="./font-awesome/fontawesome-webfont.svg">
+    <link rel="stylesheet" href="./font-awesome/fontawersome.js">
+    <link rel="stylesheet" href="./font-awesome/fontawersome-webfont.eot">
+    <link rel="stylesheet" href="./font-awesome/fontawersome-webfont.ttf">
+    <link rel="stylesheet" href="./font-awesome/fontawersome-webfont.woff">
+    <link rel="stylesheet" href="./font-awesome/fontawersome-webfont.woff2">
+
+
+
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="./styles/normalize.min.css">
@@ -112,9 +122,16 @@ if ($response != null && $response->success) {
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
     <!-- <script src="jquery.min.js"></script> -->
+
+
+    <script type="text/javascript" src="/js/botonEnvio.js"></script>
+
 </head>
 
-<body id="body"  >
+<body id="body">
+    <!-- <div id="preloader"></div> -->
+    <div id="preloader"></div>
+
 
     <div class="container">
 
@@ -122,45 +139,56 @@ if ($response != null && $response->success) {
         <!-- partial:index.partial.html -->
         <div class='form-overlay'></div>
         <div class='icon fa fa-pencil' id='form-container'>
-            <span class='icon fa fa-close' id='form-close'></span>
+            <span class='icon feo fa fa-close' id='form-close'></span>
             <div id='form-content'>
                 <div id='form-head'>
-                    <h1 class='pre'>Get in touch</h1>
-                    <p class='pre'>Good choice...</p>
-                    <h1 class='post'>Thanks!</h1>
-                    <p class='post'>I'll be in touch ASAP</p>
+                    <h2 class='pre'>CONTACTO</h2>
+                    <h1 class='pre'>Micro Developer</h1>
+                    <h2 class='post'>Gracias!</h2>
+                    <h1 class='post'>Le contestaré con mayor brevedad posible.</h1>
                 </div>
 
 
-                <form role="form" action="" method="post" id="formulario" name="formulario" class="formularioContacto">
-                    <input class="input name" id="nombre" placeholder="Nombre" type="text" name="Nombre" />
+                <form role="form" action="" method="post" id="formulario" name="formulario" class="">
+                    <input class="input name" id="nombre" placeholder="&#xf007;  Nombre" type="text" name="Nombre" />
                     <!-- <input type="text"  name="direccion" id="direccion"/><br/>
                     <input type="text"  name="pais" id="pais"/><br/>
                     <input type="text"  name="web-site" id="web-site"/><br/> -->
 
-                    <input class="input email" placeholder="Email" id="email" type="email" name="Email" />
-                    <input class="input phone" placeholder="Telefono" id="telefono" type="tel" name="Telefono" />
-                    <textarea class="input message" rows="10" cols="40" maxlength="1000" id="comentario" name="comentario" onkeypress="calcular()" onkeyup="calcular()"></textarea><br />
+                    <input class="input email" placeholder="&#xf003;  Email" id="email" type="email" name="Email" />
+                    <input class="input phone fa fa-phone" placeholder="&#xf095;  Teléfono" id="telefono" type="tel"
+                        name="Telefono" />
+                    <textarea class="input message" placeholder="&#xf0e5;  Mensaje" rows="10" cols="40" maxlength="1000"
+                        id="comentario" name="comentario" onkeypress="calcular()" onkeyup="calcular()"></textarea>
                     <p>Le quedan <span id="contador-char">1000</span> de 1000 caracteres.</p>
-                    <br />
-                    <br />
-
-
-
                     <!--pueden cambiar el lenguaje con el parametro hl-->
                     <script src='https://www.google.com/recaptcha/api.js?hl=es'></script>
                     <!--El site key de su sitio-->
-                    <!-- <input class="input g-recaptcha" data-sitekey="<?php #echo $publicKey; 
-                                                                        ?>"placeholder="" id="" type="checkbox" name="" /> -->
+                    <!-- <input type="checkbox" id="terms">
+                    <label for="terms">
+                        <p>He leído y acepto <a href="">los terminos y condiciones.</a></p>
+                    </label> -->
+                    <div class="inputRecaptcha  g-recaptcha" id="recaptcha" data-sitekey="<?php echo $publicKey; ?>"></div>
+</br>
+                    <!-- https://codepen.io/joshuaward/pen/oGZrWN -->
+                    <button class="button btn-animate" type="button" name="enviar" id="enviar">
+                        <!-- <i class="fa fa-paper-plane"></i> -->
+                        <span class="submit"><i class="fa fa-paper-plane"></i></span>
+                        <span class="loading"><i class="fa fa-refresh"></i></span>
+                        <span class="check"><i class="fa fa-check"></i></span>
+                        <span class="bad"><i class="fas fa-close"></i></span>
 
-                    <div class=" g-recaptcha" data-sitekey="<?php echo $publicKey; ?>"></div>
-                    <button type="button" name="enviar" id="enviar" class="canbio">Enviar</button>&nbsp;&nbsp;&nbsp;
+                    </button>
 
 
-                    <!-- <input class='input submit' type='submit' value='Send Message' > -->
-                    <!-- <button class='input submit' type="buton" class="fa fa-paper-plane " value='Send Message'></button> -->
-                    <input type="reset" value="Borrar Datos" /> &nbsp; &nbsp;
+                    <!-- <button class="fa fa-paper-plane btn btn-white btn-animate" type="button" name="enviar"
+                        id="enviar">Enviar</button>&nbsp;&nbsp;&nbsp; -->
 
+                    <!-- <input class='input submit' type='submit' value='Send Message' >
+                    <button class='input submit' type="buton" class="fa fa-paper-plane " value='Send Message'></button> -->
+                    <button class='borrar ' type="reset" value=''><span><i class="fa fa-eraser"></i></span></button>
+
+                    <!-- <input class="borrar" type="reset" value="Borrar" /> &nbsp; &nbsp; -->
                 </form>
             </div>
 
@@ -168,11 +196,11 @@ if ($response != null && $response->success) {
         </div>
         <div class="">
             <?php
-            if ($showMessage) {
-                echo !$error ? '<div class="bs-example-bg-classes"><p class="bg-success text-center">' . $message . '</p></div>' : '';
-                echo $error ? ' <div class="bs-example-bg-classes"><p class="bg-danger text-center">' . $message . '</p></div>' : '';
-            }
-            ?> 
+            // if ($showMessage) {
+            //     echo !$error ? '<div class="bs-example-bg-classes"><p class="bg-success text-center">' . $message . '</p></div>' : '';
+            //     echo $error ? ' <div class="bs-example-bg-classes"><p class="bg-danger text-center">' . $message . '</p></div>' : '';
+            // }
+            ?>
 
         </div>
 
@@ -198,7 +226,7 @@ if ($response != null && $response->success) {
         <input class='input submit' type='submit' value='Send Message'>
       </form> -->
 
-      <script async type="text/javascript" src="./script.js"></script>
+        <script async type="text/javascript" src="./script.js"></script>
 
 
 
@@ -208,6 +236,10 @@ if ($response != null && $response->success) {
         <!-- <script src="jquery.min.js"></script> -->
 
 </body>
+
+
+
+
 
 
 </html>

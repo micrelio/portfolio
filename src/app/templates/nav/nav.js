@@ -48,14 +48,7 @@ class miNav extends HTMLElement {
               aria-hidden="true"></i></span></a>
         <a class="enlace irCurriculum" href="#curriculum"><span>Currículum</span><span><i class="far fa-id-badge"
               aria-hidden="true"></i></span></a>
-       <!--
-        <a class="enlace irContacto" href="#contacto"><span>Contacto</span><span><i class="far fa-envelope"
-              aria-hidden="true"></i></span></a>
-              
-              <a class="enlace irContacto" href="/src/app/pages/contacto/html/contacto.html"><span>Contacto</span><span><i class="far fa-envelope"
-              aria-hidden="true"></i></span></a>
-              -->
-              <a class="enlace irContacto" target="_blank" href="/src/app/php/contacto/contacto.php"><span>Contacto</span><span><i class="far fa-envelope"
+        <a class="enlace irContacto" target="_blank" href="/src/app/pages/contacto/contacto.php"><span>Contacto</span><span><i class="far fa-envelope"
               aria-hidden="true"></i></span></a>
         <div class="menuCSS3">
           <ul>
@@ -158,7 +151,7 @@ class miNav extends HTMLElement {
     <a class="enlace" href="#webs" onclick="seleccionado();">Webs</a>
     <a class="enlace" href="#galeria" onclick="seleccionado();">Galería</a>
     <a class="enlace" href="#curriculum" onclick="seleccionado();">Currículum</a>
-    <a class="enlace irContacto" target="_blank" href="/src/app/php/contacto/contacto.php"><span>Contacto</span><span><i class="far fa-envelope"
+    <a class="enlace irContacto" target="_blank" href="/src/app/pages/contacto/contacto.php"><span>Contacto</span><span><i class="far fa-envelope"
     <a class="enlace " href="#disenos" onclick="seleccionado();">Diseños</a>
     <a class="enlace " href="#hover" onclick="seleccionado();">Hover</a>
     <a class="enlace " href="#efectos" onclick="seleccionado();">Efectos</a>
