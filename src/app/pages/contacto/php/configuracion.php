@@ -8,16 +8,10 @@
  */
 // Incluir libreria de recaptcha de Google
 require_once "recaptchalib.php";
-
-
 // tu secret key
 $publicKey = "6LcBgVoaAAAAAAEt7-fWXw1MomP4kWSywzYaMii5";
 $secret = "6LcBgVoaAAAAAJ2nLbx3BMR7DShc077ZVSLAross";
-
-echo "llega";
-
 $response = null;
-
 // comprueba la clave secreta
 $reCaptcha = new ReCaptcha($secret);
 if ($_POST["g-recaptcha-response"]) {
@@ -26,7 +20,4 @@ if ($_POST["g-recaptcha-response"]) {
         $_POST["g-recaptcha-response"]
     );
 }
-  
-$showMessage = false;
-
-?>
+  $showMessage = false;
