@@ -1,56 +1,56 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: juliomorales
- * Website: http://www.nworldt.net
- * Date: 21/07/16
- * Time: 11:44 PM
- */
-// Incluir libreria de recaptcha de Google
-require_once "./php/recaptchalib.php";
-// tu secret key
-$publicKey = "6LcBgVoaAAAAAAEt7-fWXw1MomP4kWSywzYaMii5";
-$secret = "6LcBgVoaAAAAAJ2nLbx3BMR7DShc077ZVSLAross";
-$response = null;
-// comprueba la clave secreta
-$reCaptcha = new ReCaptcha($secret);
-if ($_POST["g-recaptcha-response"]) {
-    $response = $reCaptcha->verifyResponse(
-        $_SERVER["REMOTE_ADDR"],
-        $_POST["g-recaptcha-response"]
-    );
-}
-$showMessage = false;
-// Envio de Email
-if ($response != null && $response->success) {
-    $showMessage = true;
-    // a quien se envia el email
-    $to = "info@microdeveloper.es";
-    // sujeto del email
-    $subject = "Micrelio web";
-    // quien envia el correo
-    $headers = "From: web@microdeveloper.es" . "\r\n";
-    // quito el valor del recaptcha
-    unset($_POST["g-recaptcha-response"]);
-    $body = '';
-    foreach ($_POST as $key => $value) {
-        $body .= "{$key}: {$value}\n";
-    }
-    if (mail($to, $subject, $body, $headers)) {
-        $error = false;
-        $message = 'Enviado con exito';
-    } else {
-        $error = true;
-        $message = 'Error al enviar el email';
-    }
-} else {
-    if ($_POST) {
-        $showMessage = true;
-        $error = true;
-        $message = 'Error al enviar el formulario intente de nuevo';
-    }
-}
+// /**
+//  * Created by PhpStorm.
+//  * User: juliomorales
+//  * Website: http://www.nworldt.net
+//  * Date: 21/07/16
+//  * Time: 11:44 PM
+//  */
+// // Incluir libreria de recaptcha de Google
+// require_once "./php/recaptchalib.php";
+// // tu secret key
+// $publicKey = "6LcBgVoaAAAAAAEt7-fWXw1MomP4kWSywzYaMii5";
+// $secret = "6LcBgVoaAAAAAJ2nLbx3BMR7DShc077ZVSLAross";
+// $response = null;
+// // comprueba la clave secreta
+// $reCaptcha = new ReCaptcha($secret);
+// if ($_POST["g-recaptcha-response"]) {
+//     $response = $reCaptcha->verifyResponse(
+//         $_SERVER["REMOTE_ADDR"],
+//         $_POST["g-recaptcha-response"]
+//     );
+// }
+// $showMessage = false;
+// // Envio de Email
+// if ($response != null && $response->success) {
+//     $showMessage = true;
+//     // a quien se envia el email
+//     $to = "info@microdeveloper.es";
+//     // sujeto del email
+//     $subject = "Micrelio web";
+//     // quien envia el correo
+//     $headers = "From: web@microdeveloper.es" . "\r\n";
+//     // quito el valor del recaptcha
+//     unset($_POST["g-recaptcha-response"]);
+//     $body = '';
+//     foreach ($_POST as $key => $value) {
+//         $body .= "{$key}: {$value}\n";
+//     }
+//     if (mail($to, $subject, $body, $headers)) {
+//         $error = false;
+//         $message = 'Enviado con exito';
+//     } else {
+//         $error = true;
+//         $message = 'Error al enviar el email';
+//     }
+// } else {
+//     if ($_POST) {
+//         $showMessage = true;
+//         $error = true;
+//         $message = 'Error al enviar el formulario intente de nuevo';
+//     }
+// }
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es">
@@ -83,7 +83,7 @@ if ($response != null && $response->success) {
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-    <?php#  include('./php/configuracion.php');
+    <?php  include('./php/configuracion.php');
     ?>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./font-awesome/font-awesome.min.css">
@@ -121,7 +121,7 @@ if ($response != null && $response->success) {
                     <h2 class='post'>Gracias!</h2>
                     <h1 class='post'>Le contestaré con mayor brevedad posible.</h1>
                 </div>
-                <form role="form" action="" method="post" id="formulario" name="formulario" class="">
+                <form role="form" action="./php/envio.php" method="post" id="formulario" name="formulario" class="">
                     <input class="input name" id="nombre" placeholder="&#xf007;  Nombre" type="text" name="Nombre" />
                     <!-- <input type="text"  name="direccion" id="direccion"/><br/>
                     <input type="text"  name="pais" id="pais"/><br/>

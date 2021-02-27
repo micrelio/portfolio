@@ -59,7 +59,7 @@ if ($response != null && $response->success) {
 //  // wake up !
 //  echo date('h:i:s') . "\n";
         $error = false;
-        // echo "ENVIADO";
+         echo "ENVIADO";
         $message = 'Enviado con exito';
     } else {
         echo "ERROR1";
