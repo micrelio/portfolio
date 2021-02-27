@@ -1,57 +1,3 @@
-<?php
-
-// /**
-//  * Created by PhpStorm.
-//  * User: juliomorales
-//  * Website: http://www.nworldt.net
-//  * Date: 21/07/16
-//  * Time: 11:44 PM
-//  */
-// // Incluir libreria de recaptcha de Google
-// require_once "./php/recaptchalib.php";
-// // tu secret key
-// $publicKey = "6LcBgVoaAAAAAAEt7-fWXw1MomP4kWSywzYaMii5";
-// $secret = "6LcBgVoaAAAAAJ2nLbx3BMR7DShc077ZVSLAross";
-// $response = null;
-// // comprueba la clave secreta
-// $reCaptcha = new ReCaptcha($secret);
-// if ($_POST["g-recaptcha-response"]) {
-//     $response = $reCaptcha->verifyResponse(
-//         $_SERVER["REMOTE_ADDR"],
-//         $_POST["g-recaptcha-response"]
-//     );
-// }
-// $showMessage = false;
-// // Envio de Email
-// if ($response != null && $response->success) {
-//     $showMessage = true;
-//     // a quien se envia el email
-//     $to = "info@microdeveloper.es";
-//     // sujeto del email
-//     $subject = "Micrelio web";
-//     // quien envia el correo
-//     $headers = "From: web@microdeveloper.es" . "\r\n";
-//     // quito el valor del recaptcha
-//     unset($_POST["g-recaptcha-response"]);
-//     $body = '';
-//     foreach ($_POST as $key => $value) {
-//         $body .= "{$key}: {$value}\n";
-//     }
-//     if (mail($to, $subject, $body, $headers)) {
-//         $error = false;
-//         $message = 'Enviado con exito';
-//     } else {
-//         $error = true;
-//         $message = 'Error al enviar el email';
-//     }
-// } else {
-//     if ($_POST) {
-//         $showMessage = true;
-//         $error = true;
-//         $message = 'Error al enviar el formulario intente de nuevo';
-//     }
-// }
-?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es">
 
@@ -83,9 +29,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-    <?php  include('./php/configuracion.php');
-    ?>
-     <?php  include('./php/envio.php');
+    <?php 
+    include('./php/envio.php');
+    include('./php/configuracion.php');
     ?>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./font-awesome/font-awesome.min.css">
@@ -123,7 +69,7 @@
                     <h2 class='post'>Gracias!</h2>
                     <h1 class='post'>Le contestaré con mayor brevedad posible.</h1>
                 </div>
-                <form role="form" action="/src/app/pages/contacto/php/envio.php" method="post" id="formulario" name="formulario" class="">
+                <form role="form" action="" method="post" id="formulario" name="formulario" class="">
                     <input class="input name" id="nombre" placeholder="&#xf007;  Nombre" type="text" name="Nombre" />
                     <!-- <input type="text"  name="direccion" id="direccion"/><br/>
                     <input type="text"  name="pais" id="pais"/><br/>
@@ -159,24 +105,10 @@
             // }
             ?>
         </div>
-        <!-- <form role="form" action="" method="post" class="formularioContacto">
-        <input class='input name' name='user_name' placeholder='Your name please' id="name" type='text'>
-        <input class='input email' name='user_email' placeholder='A contact email' id="email" type='text'>
-        <select class='input select' name='subject'>
-          <option disabled=''>What shall we talk about?</option>
-          <option selected=''>About a new project</option>
-          <option>About a job opportunity</option>
-          <option>Let's do this over a coffee</option>
-        </select>
-        <textarea class='input message' placeholder='How can I help?'></textarea> -->
-        <!--pueden cambiar el lenguaje con el parametro hl-->
-        <!-- <script src='https://www.google.com/recaptcha/api.js?hl=es'></script> -->
-        <!--El site key de su sitio-->
-        <!-- <div class="g-recaptcha" data-sitekey="<?php #echo $publicKey; 
-                                                    ?>"></div>
-                    <button type="submit" class="fa fa-paper-plane "></button>
-        <input class='input submit' type='submit' value='Send Message'>
-      </form> -->
+
+        <?php 
+    include('./php/envio.php');
+    ?>
         <script async type="text/javascript" src="./script.js"></script>
         <!-- partial -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

@@ -20,4 +20,4 @@ if ($_POST["g-recaptcha-response"]) {
         $_POST["g-recaptcha-response"]
     );
 }
-  $showMessage = false;
+  ?>
