@@ -85,6 +85,8 @@
 
     <?php  include('./php/configuracion.php');
     ?>
+     <?php  include('./php/envio.php');
+    ?>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./font-awesome/font-awesome.min.css">
     <link rel="stylesheet" href="./font-awesome/fontawesome-webfont.svg">
@@ -121,7 +123,7 @@
                     <h2 class='post'>Gracias!</h2>
                     <h1 class='post'>Le contestaré con mayor brevedad posible.</h1>
                 </div>
-                <form role="form" action="./php/envio.php" method="post" id="formulario" name="formulario" class="">
+                <form role="form" action="/src/app/pages/contacto/php/envio.php" method="post" id="formulario" name="formulario" class="">
                     <input class="input name" id="nombre" placeholder="&#xf007;  Nombre" type="text" name="Nombre" />
                     <!-- <input type="text"  name="direccion" id="direccion"/><br/>
                     <input type="text"  name="pais" id="pais"/><br/>
