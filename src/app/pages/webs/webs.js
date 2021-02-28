@@ -146,26 +146,26 @@ class miWebs extends HTMLElement {
 $(document).ready(function() {
     // $('#titaniumGamers').hide(0);
     $('#tiendaTitanium').hide(0);
-    $('#primeroscoc').hide(0);
-    $('#guerrasOnline').hide(0);
+    // $('#primeroscoc').hide(0);
+    // $('#guerrasOnline').hide(0);
      
      
             $(window).scroll(function(){
-                    var windowHeight = $(window).focus();
+                    var windowHeight = $(window).scrollTop();
                     var titaniumGamers = $("#titaniumGamers").offset();
                     var tiendaTitanium = $("#tiendaTitanium").offset();
                     var primeroscoc = $("#primeroscoc").offset();
                     var guerrasOnline = $("#guerrasOnline").offset();
 
-                    if(windowHeight >= titaniumGamers  ){
-                        console.log('1');
-                            $('#tiendaTitanium').fadeIn(500);
+                    if(windowHeight <= titaniumGamers  ){
+                        console.log('111111111111111111111111111111');
+                            $('#tiendaTitanium').fadeIn(2000);
                             // $('#primeroscoc').hide(0);
                             // $('#guerrasOnline').hide(0);
                             }else{
                                 console.log('1.1');
 
-                            $('#tiendaTitanium').fadeIn(500);
+                            $('#tiendaTitanium').fadeIn(2000);
                             // $('#primeroscoc').hide(0);
                             // $('#guerrasOnline').hide(0);
                         }
@@ -179,16 +179,16 @@ $(document).ready(function() {
 
                             $('#primeroscoc').fadeIn(500);
                         }
-                        if(windowHeight >= primeroscoc  ){
-                            console.log('3');
+                        // if(windowHeight >= primeroscoc  ){
+                        //     console.log('3');
 
-                            $('#guerrasOnline').fadeIn(500);
+                        //     $('#guerrasOnline').fadeIn(500);
          
-                            }else{
-                                console.log('3.3');
+                        //     }else{
+                        //         console.log('3.3');
 
-                            $('#guerrasOnline').fadeIn(500);
-                        }
+                        //     $('#guerrasOnline').fadeIn(500);
+                        // }
                         
 
 
