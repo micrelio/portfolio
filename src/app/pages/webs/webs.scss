@@ -1,6 +1,25 @@
 @import "../../../assets/style/sass/mixins/mixins.scss";
 @import "../../../assets/style/sass/variables/variables.scss";
 
+
+#contenido1, #contenido2{
+  // max-width: 150px;
+  // margin: 0 auto;
+  // text-align: justify;
+}
+
+#aviso{
+  // margin: 0 auto;
+  // top: 10px;
+  // position: fixed;
+  // width: 100%;
+  // padding: 30px 10px 30px 10px;
+  // background: #00bdff;
+  // color: white;
+  // text-align: center;
+}
+
+
 .head {
   //@include head;
 }
@@ -95,6 +114,36 @@
       }
     }
   }
+
+
+//   .titaniumGamers{
+//     // display: none;
+
+//   }
+
+//  .titaniumGamers:focus{
+//    display: block;
+//  }
+//   .tiendaTitanium {
+//     display: none;
+//   }
+//   .tiendaTitanium:focus{
+//     display: block;
+//   }
+  // .primeroscoc {
+  //   display: none;
+  // }
+  // .guerrasOnline:focus{
+  //   display: block;
+  // }
+//   .guerrasOnline {
+//     display: none;
+//   }
+//   .guerrasOnline:focus{
+//     display: block;
+//   }
+
+
   .titaniumGamers {
     .titulo {
       background: {
@@ -137,6 +186,7 @@
   }
   .primeroscoc,
   .guerrasOnline {
+
     .titulo {
       background: {
         image: url("../../../assets/images/banners/primeros.jpg");

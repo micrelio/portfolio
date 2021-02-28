@@ -5,7 +5,7 @@ class miNav extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <style>
-    @import "/src/app/templates/nav/nav.css";
+    @import "/src/app/components/nav/nav.css";
   </style>
 <section class="social-media">
     <div class="social-links">

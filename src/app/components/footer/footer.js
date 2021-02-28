@@ -5,7 +5,7 @@ class miFooter extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <style>
-      @import "/src/app/templates/footer/footer.css";
+      @import "/src/app/components/footer/footer.css";
     </style>
 <footer id="footer" class="footer" >
   <div class="separator">
@@ -57,36 +57,38 @@ class miFooter extends HTMLElement {
         <a href="#politicadeprivacidad"><p class="privacidad" id="privacidad"> Política de privacidad</p></a>
         <a href="#avisolegal"><p class="privacidad" id="aviso"> Aviso Legal</p></a>
         <a href="#politicadecookies"><p class="privacidad" id="cookies"> Política de Cookies</p></a>
+        <p><a href="#avisolegal"><e class="privacidad" id="aviso"> Aviso Legal</e></a></p>
+
       </div>
     </div>
   </div>
 </footer>
   `;
-    var multimedia = document.querySelector("#politicas");
-    multimedia.addEventListener("click", function (seleccion) {
-      console.log(seleccion);
-      var h = seleccion.target.id;
-      console.log("h es", h);
-      // if (seleccion.target !== this) {
-      switch (h) {
-        case "privacidad":
-          console.log("politicadeprivacidad");
-          document.getElementById("componente").innerHTML =
-            "<mi-politicadeprivacidad></mi-politicadeprivacidad>";
-          break;
-        case "aviso":
-          console.log("aviso");
-          document.getElementById("componente").innerHTML =
-            "<mi-avisolegal></mi-avisolegal>";
-          break;
-        case "cookies":
-          console.log("cookies");
-          document.getElementById("componente").innerHTML =
-            "<mi-politicadecookies></mi-politicadecookies>";
-          break;
-      }
-      // }
-    });
+    // var multimedia = document.querySelector("#politicas");
+    // multimedia.addEventListener("click", function (seleccion) {
+    //   console.log(seleccion);
+    //   var h = seleccion.target.id;
+    //   console.log("h es", h);
+    //   // if (seleccion.target !== this) {
+    //   switch (h) {
+    //     case "privacidad":
+    //       console.log("politicadeprivacidad");
+    //       document.getElementById("componente").innerHTML =
+    //         "<mi-politicadeprivacidad></mi-politicadeprivacidad>";
+    //       break;
+    //     case "aviso":
+    //       console.log("aviso");
+    //       document.getElementById("componente").innerHTML =
+    //         "<mi-avisolegal></mi-avisolegal>";
+    //       break;
+    //     case "cookies":
+    //       console.log("cookies");
+    //       document.getElementById("componente").innerHTML =
+    //         "<mi-politicadecookies></mi-politicadecookies>";
+    //       break;
+    //   }
+    //   // }
+    // });
   }
 }
 //  window.customElements.define('mi-menu', miFooter);
@@ -94,12 +96,12 @@ customElements.define("mi-footer", miFooter);
 /*************************\
         funciones
 /*************************/
-class MiBoton extends HTMLElement {
-  constructor() {
-    super();
-    this.addEventListener("click", function (e) {
-      alert("hola");
-    });
-  }
-}
-customElements.define("mi-boton", MiBoton);
+// class MiBoton extends HTMLElement {
+//   constructor() {
+//     super();
+//     this.addEventListener("click", function (e) {
+//       alert("hola");
+//     });
+//   }
+// }
+// customElements.define("mi-boton", MiBoton);

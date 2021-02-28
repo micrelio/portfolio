@@ -396,7 +396,7 @@ body {
 .hide {
   display: none;
 }
-.input,
+.button,
 .borrar {
   position: relative;
   display: flex;
@@ -461,7 +461,7 @@ body {
     }
   }
 }
-.input:active,
+.button:active,
 .borrar:active {
   // background-color: $color-4;
   /*Gracias a que el elemento está en posición relativa, podemos bajarlo 4 px sin alterar el HTML*/

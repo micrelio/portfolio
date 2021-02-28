@@ -101,6 +101,47 @@
   src: local("Vampiro One"), local("VampiroOne-Regular"), url(http://themes.googleusercontent.com/static/fonts/vampiroone/v3/Ho2Xld8UbQyBA8XLxF1_NYbN6UDyHWBl620a-IRfuBk.woff) format("woff");
 }
 
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  content: "";
+  position: fixed;
+  z-index: 9999;
+  top: calc(50% - 3rem);
+  left: calc(50% - 3rem);
+  border: 6px solid orangered;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 .head {
   width: 100%;
   position: relative;
