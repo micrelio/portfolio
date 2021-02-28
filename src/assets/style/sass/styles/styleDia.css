@@ -89,11 +89,6 @@ body a {
   color: #00c6ee;
 }
 
-html ul li,
-body ul li {
-  color: #0a0a0a;
-}
-
 html ul li p strong,
 body ul li p strong {
   color: blue;
