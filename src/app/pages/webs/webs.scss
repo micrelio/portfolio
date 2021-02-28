@@ -8,27 +8,26 @@
   // height: 20vw;
 }
 @mixin recuadro {
-  // width: 100%;
-  border-radius: 2.5rem;
-  border: 0.5rem double $corporativo;
-  // margin-top: 5rem;
-  // overflow: hidden;
-  background-color: black;
+  // // width: 100%;
+  // // border-radius: 2.5rem;
+  // border: 0.5rem double $corporativo;
+  // // margin-top: 5rem;
+  // // overflow: hidden;
+  // background-color: black;
 }
 @mixin titulo {
   // display: flex;
   // justify-content: center;
   // align-items: center;
   // overflow: hidden;
-  border-radius: 25px 25px 0px 0px;
-  border-bottom: 0.05rem solid $corporativo;
+  // border-radius: 25px 25px 0px 0px;
+  // // border-bottom: 0.05rem solid $corporativo;
 
-  background: {
-    //  color: purple;
-    size: cover;
-  }
+  // background: {
+  //   //  color: purple;
+  //   size: cover;
+  // }
 }
-
 
 //---separadores--------------------------------------
 // @mixin separador1 {
@@ -66,252 +65,271 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: red;
+  .webs {
+    width: 100%;
+    padding: 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+.miniWeb{
+  margin: 0rem 0rem 3rem 0rem ;
 
-
-.webs {
-   width: 100%;
-padding: 5rem;
-  // display: flex;
-  // flex-direction: row;
-  //  flex-wrap: wrap;
-  //  align-items: flex-start;
-  //  justify-content: center;
-   background-color: violet;
-  // @include webs;
-  // @include separador5;
-  .primeroscoc,
-  .guerrasOnline,
-  .tiendaTitanium,
-  .titaniumGamers {
-    @include recuadro;
-    width: 30%;
-    background-color: saddlebrown;
-    display: grid;
-    grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5];
-    grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3];
-    .titulo {
-      grid-column: x0 / x2;
-      grid-row: y0 / y3;
-    }
-    .descripcion {
-      grid-column: x2 / x5;
-      grid-row: y0 / y2;
-    }
-    .visitar {
-      grid-column: x2 / x5;
-      grid-row: y2 / y3;
-    }
-    // .titulo {
-    //   grid-column: x0 / x2;
-    //   grid-row: y0 / y1;
-    // }
-    // .descripcion {
-    //   grid-column: x0 / x4;
-    //   grid-row: y1 / y3;
-    // }
-    // .visitar {
-    //   grid-column: x4 / x5;
-    //   grid-row: y1 / y3;
-    // }
-
-    a {
-      text-decoration: none;
-    }
-    .titulo {
-      @include titulo;
-      //padding: 0rem;
-
-      // height: 25vh;
-
-      h1 {
-        // display: flex;
-        // align-self: center;
-        // justify-content: center;
-        // margin: 1rem;
-        font-size: 0.5em;
-        
-      }
-    }
-    .descripcion {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: baseline;
-      padding: 2rem;
-      p {
-        color: $blanco;
-
-        font: {
-          // family: "FontAwesome", sans-serif;
-          // size: 2.5rem;
-        }
-        // font-size: 1.7rem;
-        a {
-          text-decoration: none;
-          color: $azul;
-        }
-        i {
-          color: green;
-        }
-      }
-      //   background-color: cornflowerblue;
-    }
-    .visitar {
-      padding: 1rem;
-      // background-color: red;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      color: $azul;
-      font-size: 3rem;
-      margin-left: 0px;
-      animation-name: parpadeo;
-      animation-duration: 1s;
-      animation-timing-function: linear;
-      animation-iteration-count: infinite;
-      -webkit-animation-name: parpadeo;
-      -webkit-animation-duration: 2s;
-      -webkit-animation-timing-function: linear;
-      -webkit-animation-iteration-count: infinite;
-      .fa-arrow-alt-circle-right {
-        color: green;
-        font-size: 5rem;
-        display: block;
-        text-decoration: none;
-        margin-left: 1rem;
-      }
-      .fa-arrow-alt-circle-right:hover {
-        -webkit-transform: scale(1.5);
-        -moz-transform: scale(1.5);
-        -ms-transform: scale(1.5);
-        -o-transform: scale(1.5);
-        transform: scale(1.5);
-      }
-    }
-  }
-
-  //   .titaniumGamers{
-  //     // display: none;
-
-  //   }
-
-  //  .titaniumGamers:focus{
-  //    display: block;
-  //  }
-  //   .tiendaTitanium {
-  //     display: none;
-  //   }
-  //   .tiendaTitanium:focus{
-  //     display: block;
-  //   }
-  // .primeroscoc {
-  //   display: none;
-  // }
-  // .guerrasOnline:focus{
-  //   display: block;
-  // }
-  //   .guerrasOnline {
-  //     display: none;
-  //   }
-  //   .guerrasOnline:focus{
-  //     display: block;
-  //   }
-
-  .titaniumGamers {
-    .titulo {
-      background: {
-        image: url("../../../assets/images/banners/vinewood.jpg");
-        position: center;
-        size: cover;
-      }
-      h1 {
-        -webkit-text-fill-color: #e3e4e5;
-        -webkit-text-stroke: 1px black;
-        //height: 0 auto;
-        // -webkit-text-stroke: 0.05rem black;
-        //  text-shadow: 0.1em 0.1em brown;
-        // color: #e3e4e5;
-        font: {
-          family: titanium;
-          size: 7rem;
-        }
-        // background-color: chocolate;
-      }
-    }
-  }
-  .tiendaTitanium {
-    .titulo {
-      background: {
-        image: url("../../../assets/images/banners/TitaniumRoleplay.png");
-        position: center;
-        size: cover;
-      }
-      h1 {
-        -webkit-text-fill-color: #8a9597;
-        -webkit-text-stroke: 1px black;
-        -webkit-text-stroke: 0.05rem black;
-        font: {
-          family: titanium;
-          size: 7rem;
-        }
-      }
-    }
-  }
-  .primeroscoc,
-  .guerrasOnline {
-    .titulo {
-      background: {
-        image: url("../../../assets/images/banners/primeros.jpg");
-        position: center;
-        size: cover;
-      }
-      h1 {
-        -webkit-text-fill-color: orange;
-        -webkit-text-stroke: 1px black;
-        height: 0 auto;
-        -webkit-text-stroke: 0.05rem black;
-        text-shadow: 0.1em 0.1em brown;
-        font: {
-          family: supercell;
-          //size: 5rem;
-          //width: calc(1rem + 3vw);
-
-          //size: 4rem;
-        }
-      }
-    }
-    .descripcion {
-      p {
-        color: white;
-        a {
-          text-decoration: none;
-          color: gold;
-        }
-        i {
-          color: green;
-        }
-        .fa-undo-alt {
-          color: red;
-          left: 0px;
-        }
-      }
-    }
-  }
-  .guerrasOnline {
-    .titulo {
-      background: {
-        image: url("../../../assets/images/banners/guerrasonline.jpg");
-        position: center;
-        size: cover;
-      }
-      h1 {
-        -webkit-text-fill-color: gold;
-      }
-    }
-  }
 }
+    .primeroscoc,
+    .guerrasOnline,
+    .tiendaTitanium,
+    .titaniumGamers {
+      // @include recuadro;
+        // width: 100%;
+  // border-radius: 2.5rem;
+  border: 0.5rem double $corporativo;
+  // margin-top: 5rem;
+  // overflow: hidden;
+  // background-color: black;
+      width: 30%;
+      min-width: 30rem;
+      display: grid;
+      grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5];
+      grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3] 1fr [y4] 0.2fr [y5];
+      .titulo {
+        grid-column: x0 / x5;
+        grid-row: y0 / y1;
+      }
+      .descripcion {
+        grid-column: x0 / x5;
+        grid-row: y1 / y4;
+      }
+      .visitar {
+        grid-column: x0 / x5;
+        grid-row: y4 / y5;
+      }
+      // .titulo {
+      //   grid-column: x0 / x2;
+      //   grid-row: y0 / y1;
+      // }
+      // .descripcion {
+      //   grid-column: x0 / x4;
+      //   grid-row: y1 / y3;
+      // }
+      // .visitar {
+      //   grid-column: x4 / x5;
+      //   grid-row: y1 / y3;
+      // }
+
+      a {
+        text-decoration: none;
+      }
+      .titulo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 0.05rem solid $corporativo;
+
+        background: {
+          //  color: purple;
+          size: cover;
+        }
+        // @include titulo;
+        //padding: 0rem;
+
+        // height: 25vh;
+
+        h1 {
+          // display: flex;
+          // align-self: center;
+          // justify-content: center;
+          // margin: 1rem;
+          font-size: 4em;
+        }
+      }
+      .descripcion {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: baseline;
+        padding: 2rem;
+        background-color: black;
+        p {
+          color: $blanco;
+
+          font: {
+            // family: "FontAwesome", sans-serif;
+            // size: 2.5rem;
+          }
+          // font-size: 1.7rem;
+          a {
+            text-decoration: none;
+            color: $azul;
+          }
+          i {
+            color: green;
+          }
+        }
+        //   background-color: cornflowerblue;
+      }
+      .visitar {
+        padding: 0.2rem;
+        // background-color: red;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: $azul;
+        background-color: black;
+
+        font-size: 2rem;
+        margin-left: 0px;
+        
+        .fa-arrow-alt-circle-right {
+          color: green;
+          font-size: 3rem;
+          display: block;
+          text-decoration: none;
+          margin-left: 1rem;
+          animation-name: parpadeo;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: parpadeo;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        }
+        .fa-arrow-alt-circle-right:hover {
+          transition: 0.5s;
+
+          -webkit-transform: scale(1.5);
+          -moz-transform: scale(1.5);
+          -ms-transform: scale(1.5);
+          -o-transform: scale(1.5);
+          transform: scale(1.5);
+        }
+      }
+    }
+
+    //   .titaniumGamers{
+    //     // display: none;
+
+    //   }
+
+    //  .titaniumGamers:focus{
+    //    display: block;
+    //  }
+    //   .tiendaTitanium {
+    //     display: none;
+    //   }
+    //   .tiendaTitanium:focus{
+    //     display: block;
+    //   }
+    // .primeroscoc {
+    //   display: none;
+    // }
+    // .guerrasOnline:focus{
+    //   display: block;
+    // }
+    //   .guerrasOnline {
+    //     display: none;
+    //   }
+    //   .guerrasOnline:focus{
+    //     display: block;
+    //   }
+
+    .titaniumGamers {
+      .titulo {
+        background: {
+          image: url("../../../assets/images/banners/vinewood.jpg");
+          position: center;
+          size: cover;
+        }
+        h1 {
+          -webkit-text-fill-color: #e3e4e5;
+          -webkit-text-stroke: 1px black;
+          //height: 0 auto;
+          // -webkit-text-stroke: 0.05rem black;
+          //  text-shadow: 0.1em 0.1em brown;
+          // color: #e3e4e5;
+          font: {
+            family: titanium;
+            size: 4rem;
+          }
+          // background-color: chocolate;
+        }
+      }
+    }
+    .tiendaTitanium {
+      .titulo {
+        background: {
+          image: url("../../../assets/images/banners/TitaniumRoleplay.png");
+          position: center;
+          size: cover;
+        }
+        h1 {
+          -webkit-text-fill-color: #8a9597;
+          -webkit-text-stroke: 1px black;
+          -webkit-text-stroke: 0.05rem black;
+          font: {
+            family: titanium;
+            size: 4rem;
+          }
+        }
+      }
+    }
+    .primeroscoc,
+    .guerrasOnline {
+      .titulo {
+        background: {
+          image: url("../../../assets/images/banners/primeros.jpg");
+          position: center;
+          size: cover;
+        }
+        h1 {
+          -webkit-text-fill-color: orange;
+          -webkit-text-stroke: 1px black;
+          height: 0 auto;
+          -webkit-text-stroke: 0.05rem black;
+          text-shadow: 0.1em 0.1em brown;
+          font: {
+            family: supercell;
+            //size: 5rem;
+            //width: calc(1rem + 3vw);
+
+            //size: 4rem;
+          }
+        }
+      }
+      .descripcion {
+        p {
+          color: white;
+          a {
+            text-decoration: none;
+            color: gold;
+          }
+          i {
+            color: green;
+          }
+          .fa-undo-alt {
+            color: red;
+            left: 0px;
+          }
+        }
+      }
+    }
+    .guerrasOnline {
+      .titulo {
+        background: {
+          image: url("../../../assets/images/banners/guerrasonline.jpg");
+          position: center;
+          size: cover;
+        }
+        h1 {
+          -webkit-text-fill-color: gold;
+        }
+      }
+    }
+  }
   @media only screen and (max-width: 700px) {
     .primeroscoc,
     .guerrasOnline,

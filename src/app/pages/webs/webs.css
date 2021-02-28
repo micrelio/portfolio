@@ -21,54 +21,68 @@
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  background-color: red;
 }
 
 .total .webs {
   width: 100%;
   padding: 5rem;
-  background-color: violet;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.total .webs .miniWeb {
+  margin: 0rem 0rem 3rem 0rem;
 }
 
 .total .webs .primeroscoc,
 .total .webs .guerrasOnline,
 .total .webs .tiendaTitanium,
 .total .webs .titaniumGamers {
-  border-radius: 2.5rem;
   border: 0.5rem double #3c97bf;
-  background-color: black;
   width: 30%;
-  background-color: saddlebrown;
+  min-width: 30rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5];
       grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5];
-  -ms-grid-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3];
-      grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3];
+  -ms-grid-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3] 1fr [y4] 0.2fr [y5];
+      grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3] 1fr [y4] 0.2fr [y5];
 }
 
 .total .webs .primeroscoc .titulo,
 .total .webs .guerrasOnline .titulo,
 .total .webs .tiendaTitanium .titulo,
 .total .webs .titaniumGamers .titulo {
-  grid-column: x0 / x2;
-  grid-row: y0 / y3;
+  grid-column: x0 / x5;
+  grid-row: y0 / y1;
 }
 
 .total .webs .primeroscoc .descripcion,
 .total .webs .guerrasOnline .descripcion,
 .total .webs .tiendaTitanium .descripcion,
 .total .webs .titaniumGamers .descripcion {
-  grid-column: x2 / x5;
-  grid-row: y0 / y2;
+  grid-column: x0 / x5;
+  grid-row: y1 / y4;
 }
 
 .total .webs .primeroscoc .visitar,
 .total .webs .guerrasOnline .visitar,
 .total .webs .tiendaTitanium .visitar,
 .total .webs .titaniumGamers .visitar {
-  grid-column: x2 / x5;
-  grid-row: y2 / y3;
+  grid-column: x0 / x5;
+  grid-row: y4 / y5;
 }
 
 .total .webs .primeroscoc a,
@@ -82,7 +96,19 @@
 .total .webs .guerrasOnline .titulo,
 .total .webs .tiendaTitanium .titulo,
 .total .webs .titaniumGamers .titulo {
-  border-radius: 25px 25px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-bottom: 0.05rem solid #3c97bf;
   background-size: cover;
 }
@@ -91,7 +117,7 @@
 .total .webs .guerrasOnline .titulo h1,
 .total .webs .tiendaTitanium .titulo h1,
 .total .webs .titaniumGamers .titulo h1 {
-  font-size: 0.5em;
+  font-size: 4em;
 }
 
 .total .webs .primeroscoc .descripcion,
@@ -112,6 +138,7 @@
       -ms-flex-align: baseline;
           align-items: baseline;
   padding: 2rem;
+  background-color: black;
 }
 
 .total .webs .primeroscoc .descripcion p,
@@ -140,7 +167,7 @@
 .total .webs .guerrasOnline .visitar,
 .total .webs .tiendaTitanium .visitar,
 .total .webs .titaniumGamers .visitar {
-  padding: 1rem;
+  padding: 0.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,8 +182,20 @@
       -ms-flex-align: center;
           align-items: center;
   color: #00c6ee;
-  font-size: 3rem;
+  background-color: black;
+  font-size: 2rem;
   margin-left: 0px;
+}
+
+.total .webs .primeroscoc .visitar .fa-arrow-alt-circle-right,
+.total .webs .guerrasOnline .visitar .fa-arrow-alt-circle-right,
+.total .webs .tiendaTitanium .visitar .fa-arrow-alt-circle-right,
+.total .webs .titaniumGamers .visitar .fa-arrow-alt-circle-right {
+  color: green;
+  font-size: 3rem;
+  display: block;
+  text-decoration: none;
+  margin-left: 1rem;
   animation-name: parpadeo;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
@@ -168,21 +207,12 @@
   -webkit-animation-iteration-count: infinite;
 }
 
-.total .webs .primeroscoc .visitar .fa-arrow-alt-circle-right,
-.total .webs .guerrasOnline .visitar .fa-arrow-alt-circle-right,
-.total .webs .tiendaTitanium .visitar .fa-arrow-alt-circle-right,
-.total .webs .titaniumGamers .visitar .fa-arrow-alt-circle-right {
-  color: green;
-  font-size: 5rem;
-  display: block;
-  text-decoration: none;
-  margin-left: 1rem;
-}
-
 .total .webs .primeroscoc .visitar .fa-arrow-alt-circle-right:hover,
 .total .webs .guerrasOnline .visitar .fa-arrow-alt-circle-right:hover,
 .total .webs .tiendaTitanium .visitar .fa-arrow-alt-circle-right:hover,
 .total .webs .titaniumGamers .visitar .fa-arrow-alt-circle-right:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
 }
@@ -197,7 +227,7 @@
   -webkit-text-fill-color: #e3e4e5;
   -webkit-text-stroke: 1px black;
   font-family: titanium;
-  font-size: 7rem;
+  font-size: 4rem;
 }
 
 .total .webs .tiendaTitanium .titulo {
@@ -211,7 +241,7 @@
   -webkit-text-stroke: 1px black;
   -webkit-text-stroke: 0.05rem black;
   font-family: titanium;
-  font-size: 7rem;
+  font-size: 4rem;
 }
 
 .total .webs .primeroscoc .titulo,

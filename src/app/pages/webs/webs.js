@@ -9,7 +9,7 @@ class miWebs extends HTMLElement {
     </style>
 
     <section class="total">
-    <div class="separador5">
+    <div class="">
     </div>
     <h1>Diseños web</h1>
     <div class="webs">
@@ -38,7 +38,7 @@ class miWebs extends HTMLElement {
           </p>
         </div>
       </div>
-      <div class="separador5">
+      <div class="">
       </div>
       <div id="tiendaTitanium" class="tiendaTitanium miniWeb">
         <div class="titulo">
@@ -67,7 +67,7 @@ class miWebs extends HTMLElement {
           </p>
         </div>
       </div>
-      <div class="separador5">
+      <div class="">
       </div>
       <div id="primeroscoc" class="primeroscoc miniWeb">
         <div class="titulo">
@@ -95,7 +95,7 @@ class miWebs extends HTMLElement {
           </p>
         </div>
       </div>
-      <div class="separador5">
+      <div class="">
       </div>
       <div id="guerrasOnline" class="guerrasOnline miniWeb">
         <div class="titulo">
@@ -123,7 +123,7 @@ class miWebs extends HTMLElement {
           </p>
         </div>
       </div>
-      <div class="separador5">
+      <div class="">
       </div>
     </div>
   </section>
