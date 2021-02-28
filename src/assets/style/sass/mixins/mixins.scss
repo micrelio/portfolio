@@ -89,34 +89,34 @@
   height: 5rem;
 }
 //--webs-----------------------------------------------------------------------
-@mixin webs {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  //height: 20vw;
-}
-@mixin recuadro {
-  width: 90%;
-  border-radius: 25px;
-  border: 0.05rem solid $corporativo;
-  // margin-top: 5rem;
-  overflow: hidden;
-  background-color: black;
-}
-@mixin titulo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  //overflow: hidden;
-  //border-radius: 25px 25px 0px 0px;
-  //border-bottom: 0.05rem solid $corporativo;
+// // @mixin webs {
+//   // display: flex;
+//   // flex-direction: column;
+//   // justify-content: space-around;
+//   // align-items: center;
+//   //height: 20vw;
+// // }
+// @mixin recuadro {
+//   width: 90%;
+//   border-radius: 25px;
+//   border: 0.05rem solid $corporativo;
+//   // margin-top: 5rem;
+//   overflow: hidden;
+//   background-color: black;
+// }
+// @mixin titulo {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   //overflow: hidden;
+//   //border-radius: 25px 25px 0px 0px;
+//   //border-bottom: 0.05rem solid $corporativo;
 
-  background: {
-    //  color: purple;
-    size: cover;
-  }
-}
+//   background: {
+//     //  color: purple;
+//     size: cover;
+//   }
+// }
 
 //--GALERIA
 @mixin botonGalery {

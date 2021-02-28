@@ -1,60 +1,139 @@
-@import "../../../assets/style/sass/mixins/mixins.scss";
+// @import "../../../assets/style/sass/mixins/mixins.scss";
 @import "../../../assets/style/sass/variables/variables.scss";
-
-
-#contenido1, #contenido2{
-  // max-width: 150px;
-  // margin: 0 auto;
-  // text-align: justify;
+@mixin webs {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-around;
+  // align-items: center;
+  // height: 20vw;
 }
-
-#aviso{
-  // margin: 0 auto;
-  // top: 10px;
-  // position: fixed;
+@mixin recuadro {
   // width: 100%;
-  // padding: 30px 10px 30px 10px;
-  // background: #00bdff;
-  // color: white;
-  // text-align: center;
+  border-radius: 2.5rem;
+  border: 0.5rem double $corporativo;
+  // margin-top: 5rem;
+  // overflow: hidden;
+  background-color: black;
+}
+@mixin titulo {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // overflow: hidden;
+  border-radius: 25px 25px 0px 0px;
+  border-bottom: 0.05rem solid $corporativo;
+
+  background: {
+    //  color: purple;
+    size: cover;
+  }
 }
 
+
+//---separadores--------------------------------------
+// @mixin separador1 {
+//   width: 100%;
+//   height: 1rem;
+// }
+// @mixin separador2 {
+//   width: 100%;
+//   height: 2rem;
+// }
+// @mixin separador3 {
+//   width: 100%;
+//   height: 3rem;
+// }
+// @mixin separador4 {
+//   width: 100%;
+//   height: 4rem;
+// }
+// @mixin separador5 {
+//   width: 100%;
+//   height: 5rem;
+// }
 
 .head {
   //@include head;
 }
+.miniWeb:hover {
+  transition: 0.5s;
+  border-color: black;
+  box-shadow: 0rem 0rem 1.5rem 0.2rem rgba(0, 0, 0, 1);
+}
+.total {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: red;
+
+
 .webs {
-  @include webs;
-  //@include separador5;
+   width: 100%;
+padding: 5rem;
+  // display: flex;
+  // flex-direction: row;
+  //  flex-wrap: wrap;
+  //  align-items: flex-start;
+  //  justify-content: center;
+   background-color: violet;
+  // @include webs;
+  // @include separador5;
   .primeroscoc,
   .guerrasOnline,
   .tiendaTitanium,
-  .titaniumGamers,
-  .portfolio {
-            @include recuadro;
+  .titaniumGamers {
+    @include recuadro;
+    width: 30%;
+    background-color: saddlebrown;
     display: grid;
     grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5];
-    grid-template-rows: [y0] 0.5fr [y1] 1fr [y2] 0.05fr [y3];
+    grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3];
+    .titulo {
+      grid-column: x0 / x2;
+      grid-row: y0 / y3;
+    }
+    .descripcion {
+      grid-column: x2 / x5;
+      grid-row: y0 / y2;
+    }
+    .visitar {
+      grid-column: x2 / x5;
+      grid-row: y2 / y3;
+    }
+    // .titulo {
+    //   grid-column: x0 / x2;
+    //   grid-row: y0 / y1;
+    // }
+    // .descripcion {
+    //   grid-column: x0 / x4;
+    //   grid-row: y1 / y3;
+    // }
+    // .visitar {
+    //   grid-column: x4 / x5;
+    //   grid-row: y1 / y3;
+    // }
+
     a {
       text-decoration: none;
     }
     .titulo {
       @include titulo;
       //padding: 0rem;
-      grid-column: x0 / x5;
-      grid-row: y0 / y1;
+
       // height: 25vh;
 
       h1 {
-        display: flex;
-        align-self: center;
-        justify-content: center;
-        margin: 1rem;
+        // display: flex;
+        // align-self: center;
+        // justify-content: center;
+        // margin: 1rem;
+        font-size: 0.5em;
+        
       }
     }
     .descripcion {
-      grid-column: x0 / x4;
-      grid-row: y1 / y3;
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
@@ -64,8 +143,8 @@
         color: $blanco;
 
         font: {
-          family: "FontAwesome", sans-serif;
-          size: 2.5rem;
+          // family: "FontAwesome", sans-serif;
+          // size: 2.5rem;
         }
         // font-size: 1.7rem;
         a {
@@ -79,8 +158,6 @@
       //   background-color: cornflowerblue;
     }
     .visitar {
-      grid-column: x4 / x5;
-      grid-row: y1 / y3;
       padding: 1rem;
       // background-color: red;
       display: flex;
@@ -115,34 +192,32 @@
     }
   }
 
+  //   .titaniumGamers{
+  //     // display: none;
 
-//   .titaniumGamers{
-//     // display: none;
+  //   }
 
-//   }
-
-//  .titaniumGamers:focus{
-//    display: block;
-//  }
-//   .tiendaTitanium {
-//     display: none;
-//   }
-//   .tiendaTitanium:focus{
-//     display: block;
-//   }
+  //  .titaniumGamers:focus{
+  //    display: block;
+  //  }
+  //   .tiendaTitanium {
+  //     display: none;
+  //   }
+  //   .tiendaTitanium:focus{
+  //     display: block;
+  //   }
   // .primeroscoc {
   //   display: none;
   // }
   // .guerrasOnline:focus{
   //   display: block;
   // }
-//   .guerrasOnline {
-//     display: none;
-//   }
-//   .guerrasOnline:focus{
-//     display: block;
-//   }
-
+  //   .guerrasOnline {
+  //     display: none;
+  //   }
+  //   .guerrasOnline:focus{
+  //     display: block;
+  //   }
 
   .titaniumGamers {
     .titulo {
@@ -186,7 +261,6 @@
   }
   .primeroscoc,
   .guerrasOnline {
-
     .titulo {
       background: {
         image: url("../../../assets/images/banners/primeros.jpg");
@@ -237,6 +311,7 @@
       }
     }
   }
+}
   @media only screen and (max-width: 700px) {
     .primeroscoc,
     .guerrasOnline,
