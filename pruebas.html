@@ -15,8 +15,24 @@
   <script type="text/javascript" src="/src/assets/style/fonts/fontawersome.js"></script>
 
 
-  <link rel="stylesheet" href="/src/app/pages/webs/webs.css">
+  <link rel="stylesheet" href="/src/app/pages/webs/webs.css" media="screen" />
+  <link rel="stylesheet" href="/src/app/pages/webs/aos/aos.css" media="screen" />
+  <link rel="stylesheet" href="/src/assets/style/sass/styles/style.css" media="screen" />
+  <script type="text/javascript" src="/src/app/pages/webs/webs.js"></script>
+  <script type="text/javascript" src="/src/app/pages/webs/aos/aos.js"></script>
 
+  <script>
+    aos_init();
+
+    //  import('./aos/aos.js');
+    // Init AOS
+    function aos_init() {
+      AOS.init({
+        duration: 1000,
+        once: true
+      });
+    }
+  </script>
 
   <link rel="stylesheet" media="all"
     href="https://cpwebassets.codepen.io/assets/global/global-031b289c73bf4e4d154ba7eb2675a0ae1333ced942cdba9a66c6f032629b8038.css" />
@@ -33,14 +49,14 @@
 
 
 
+
+
   <section class="total">
-    <div class="separador5">
+    <div class="">
     </div>
     <h1>Diseños web</h1>
     <div class="webs">
-      <div class="separador3">
-      </div>
-      <section id="titaniumGamers" class="titaniumGamers miniWeb">
+      <div data-aos="fade-up" data-aos-delay="200" id="titaniumGamers" class="titaniumGamers miniWeb">
         <div class="titulo">
           <a target="blank" href=" https://titaniumgamers.com/">
             <h1>Comunidad </h1>
@@ -51,21 +67,21 @@
           <p>
             Diseñada con WordPress tema DIVI (adquirida licencia ilimitada de desarrollador), para la comunidad propia
             de jugadores <a target="blank" href="https://titaniumgamers.com/">Titanium Gamers</a> durante el
-            confinamiento 2020.<br>
-            Creada con:<br>
-            <i class="fa fa-check-circle verde"></i> WordPress tema DIVI.
-          </p>
+            confinamiento 2020.</p><br>
+          <p>Creada con:</p>
+          <ul>
+            <li> WordPress tema DIVI.</li>
+          </ul>
+          <div class="visitar">
+            <p>
+              <a class="visitar" target="blank" href="https://titaniumgamers.com/">Visitar <i
+                  class="fas fa-share"></i></a>
+            </p>
+          </div>
         </div>
-        <div class="visitar">
-          <p>
-            <a class="visitar" target="blank" href="https://titaniumgamers.com/">Visitar
-              <i class="fas fa-arrow-alt-circle-right"></i></a>
-          </p>
-        </div>
-      </section>
-      <div class="separador5">
       </div>
-      <section id="tiendaTitanium" class="tiendaTitanium miniWeb">
+
+      <div data-aos="fade-up" data-aos-delay="200" id="tiendaTitanium" class="tiendaTitanium miniWeb">
         <div class="titulo">
           <a target="blank" href=" https://tiendasamp.titaniumgamers.com/">
             <h1>Tienda</h1>
@@ -74,27 +90,29 @@
         </div>
         <div class="descripcion">
           <p>Tienda de donaciones PayPal creada durante el verano 2020 para la comunidad propia de jugadores <a
-              target="blank" href="https://tiendasamp.titaniumgamers.com/">Titanium Gamers</a>.<br>
-            Estilos:<br>
-            <i class="fa fa-check-circle verde"></i> Bootstrap.<br>
-            <i class="fa fa-check-circle verde"></i> Display Grid.<br>
-            <i class="fa fa-check-circle verde"></i> Display Flex.<br>
-            Lenguajes:<br>
-            <i class="fa fa-check-circle verde"></i> HTML.<br>
-            <i class="fa fa-check-circle verde"></i> CSS.<br>
-            <i class="fa fa-check-circle verde"></i> Javascript.
-          </p>
+              target="blank" href="https://tiendasamp.titaniumgamers.com/">Titanium Gamers</a>.</p><br>
+          <p>Creada con: </p>
+          <ul>
+            <li> Bootstrap.</li>
+            <li> Display Grid.</li>
+            <li> Display Flex.</li>
+          </ul>
+          <p>Lenguajes: </p>
+          <ul>
+            <li> HTML.</li>
+            <li> CSS.</li>
+            <li> Javascript.</li>
+          </ul>
+          <div class="visitar">
+            <p>
+              <a class="visitar" target="blank" href="https://tiendasamp.titaniumgamers.com/">Visitar
+                <i class="fas fa-share"></i></a>
+            </p>
+          </div>
         </div>
-        <div class="visitar">
-          <p>
-            <a class="visitar" target="blank" href="https://tiendasamp.titaniumgamers.com/">Visitar
-              <i class="fas fa-arrow-alt-circle-right"></i></a>
-          </p>
-        </div>
-      </section>
-      <div class="separador5">
       </div>
-      <section id="primeroscoc" class="primeroscoc miniWeb">
+
+      <div data-aos="fade-up" data-aos-delay="200" id="primeroscoc" class="primeroscoc miniWeb">
         <div class="titulo">
           <a target="blank" href="https://primeroscoc.titaniumgamers.com/">
             <h1>Primeros</h1>
@@ -106,23 +124,23 @@
             Diseñada como proyecto fin de curso ASIR durante el curso 2017-2018, a la comunidad de gamers <a
               target="blank" href="https://primeroscoc.titaniumgamers.com/">&#xf006;Primeros&#xf006;</a> jugadores de
             Clash of Clans.<br>
-            Esta API sincroniza con el servidor y muestra los datos de los equipos en tiempo real.<br>
-            Lenguajes:<br>
-            <i class="fa fa-check-circle verde"></i> HTML.<br>
-            <i class="fa fa-check-circle verde"></i> CSS.<br>
-            <i class="fa fa-check-circle verde"></i> PHP.
-          </p>
+            Esta API sincroniza con el servidor y muestra los datos de los equipos en tiempo real.</p><br>
+          <p>Lenguajes:</p>
+          <ul>
+            <li> HTML.</li>
+            <li> CSS.</li>
+            <li> PHP.</li>
+          </ul>
+          <div class="visitar">
+            <p>
+              <a class="visitar" target="blank" href="https://primeroscoc.titaniumgamers.com/">Visitar
+                <i class="fas fa-share"></i></a>
+            </p>
+          </div>
         </div>
-        <div class="visitar">
-          <p>
-            <a class="visitar" target="blank" href="https://primeroscoc.titaniumgamers.com/">Visitar
-              <i class="fas fa-arrow-alt-circle-right"></i></a>
-          </p>
-        </div>
-      </section>
-      <div class="separador5">
       </div>
-      <section id="guerrasOnline" class="guerrasOnline miniWeb">
+
+      <div data-aos="fade-up" data-aos-delay="200" id="guerrasOnline" class="guerrasOnline miniWeb">
         <div class="titulo">
           <a target="blank" href="https://clashofclansguerrasonline.titaniumgamers.com/">
             <h1>Guerras on Line</h1>
@@ -134,25 +152,24 @@
             Esta página sincroniza con la <a target="blank" href="https://developer.clashofclans.com/#/"> API Clash of
               Clans</a>, lee un archivo JSON, descarga los datos y muestra con imágenes imitando la estructura real del
             juego, con búsqueda y selección de equipos por medio de formulario.<br>
-            Datos cedidos por <a target="blank" href="https://supercell.com/en/">Supercell</a>.<br>
-            Lenguajes:<br>
-            <i class="fa fa-check-circle verde"></i> HTML.<br>
-            <i class="fa fa-check-circle verde"></i> CSS.<br>
-            <i class="fa fa-check-circle verde"></i> PHP.
-          </p>
+            Datos cedidos por <a target="blank" href="https://supercell.com/en/">Supercell</a>.</p><br>
+          <p>Lenguajes: </p>
+          <ul>
+            <li> HTML.</li>
+            <li> CSS.</li>
+            <li> PHP.</li>
+          </ul>
+
+          <div class="visitar">
+            <p>
+              <a class="visitar" target="blank" href="https://clashofclansguerrasonline.titaniumgamers.com/">Visitar
+                <i class="fas fa-share"></i></a>
+            </p>
+          </div>
         </div>
-        <div class="visitar">
-          <p>
-            <a class="visitar" target="blank" href="https://clashofclansguerrasonline.titaniumgamers.com/">Visitar
-              <i class="fas fa-arrow-alt-circle-right"></i></a>
-          </p>
-        </div>
-      </section>
-      <div class="separador5">
       </div>
     </div>
   </section>
-
 
 
 </body>

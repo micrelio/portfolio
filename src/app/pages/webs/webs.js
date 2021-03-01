@@ -7,15 +7,15 @@ class miWebs extends HTMLElement {
     <style>
       @import "/src/app/pages/webs/webs.css";
     </style>
+    <style>
+      @import "/src/app/pages/webs/aos/aos.css";
+    </style>
 
     <section class="total">
-    <div class="">
-    </div>
+  
     <h1>Diseños web</h1>
-    <div class="webs">
-      <div class="separador3">
-      </div>
-      <div id="titaniumGamers" class="titaniumGamers miniWeb">
+    <div class="webs" >
+      <div data-aos="fade-up" data-aos-delay="200" id="titaniumGamers" class="titaniumGamers miniWeb">
         <div class="titulo">
           <a target="blank" href=" https://titaniumgamers.com/">
             <h1>Comunidad </h1>
@@ -27,28 +27,19 @@ class miWebs extends HTMLElement {
             Diseñada con WordPress tema DIVI (adquirida licencia ilimitada de desarrollador), para la comunidad propia
             de jugadores <a target="blank" href="https://titaniumgamers.com/">Titanium Gamers</a> durante el
             confinamiento 2020.</p><br>
-            <p>Creada con:</p>
-            <ul>
-                <li> WordPress tema DIVI.</li>
-                
-            </ul>
-            
-           
-       
-        <div class="visitar">
-       
-          <p>
-            <a class="visitar" target="blank" href="https://titaniumgamers.com/">Visitar
-              <i class="fas fa-arrow-alt-circle-right"></i></a>
-          </p>
+          <p>Creada con:</p>
+          <ul>
+            <li> WordPress tema DIVI.</li>
+          </ul>
+          <div class="visitar">
+            <p>
+              <a class="visitar" target="blank" href="https://titaniumgamers.com/">Visitar <i class="fas fa-share"></i></a>
+            </p>
+          </div>
         </div>
       </div>
-      </div>
 
-
-      <div class="">
-      </div>
-      <div id="tiendaTitanium" class="tiendaTitanium miniWeb">
+      <div data-aos="fade-up" data-aos-delay="200" id="tiendaTitanium" class="tiendaTitanium miniWeb">
         <div class="titulo">
           <a target="blank" href=" https://tiendasamp.titaniumgamers.com/">
             <h1>Tienda</h1>
@@ -58,33 +49,30 @@ class miWebs extends HTMLElement {
         <div class="descripcion">
           <p>Tienda de donaciones PayPal creada durante el verano 2020 para la comunidad propia de jugadores <a
               target="blank" href="https://tiendasamp.titaniumgamers.com/">Titanium Gamers</a>.</p><br>
-              <p>Creada con: </p>
-              <ul>
-              <li>  Bootstrap.</li>
-              <li> Display Grid.</li>
-              <li> Display Flex.</li>
-              </ul>
-              <p>Lenguajes: </p>
-              <ul>
-              <li> HTML.</li>
-              <li> CSS.</li>
-              <li> Javascript.</li>
-                  
-              </ul>
-              
-        <div class="visitar">
-          <p>
-            <a class="visitar" target="blank" href="https://tiendasamp.titaniumgamers.com/">Visitar
-              <i class="fas fa-arrow-alt-circle-right"></i></a>
-          </p>
-        </div>
+          <p>Creada con: </p>
+          <ul>
+            <li> Bootstrap.</li>
+            <li> Display Grid.</li>
+            <li> Display Flex.</li>
+          </ul>
+          <p>Lenguajes: </p>
+          <ul>
+            <li> HTML.</li>
+            <li> CSS.</li>
+            <li> Javascript.</li>
+          </ul>
+          <div class="visitar">
+            <p>
+              <a class="visitar" target="blank" href="https://tiendasamp.titaniumgamers.com/">Visitar
+                <i class="fas fa-share"></i></a>
+            </p>
+          </div>
         </div>
       </div>
-      <div class="">
 
+      
 
-      </div>
-      <div id="primeroscoc" class="primeroscoc miniWeb">
+      <div data-aos="fade-up" data-aos-delay="200" id="primeroscoc" class="primeroscoc miniWeb">
         <div class="titulo">
           <a target="blank" href="https://primeroscoc.titaniumgamers.com/">
             <h1>Primeros</h1>
@@ -97,25 +85,22 @@ class miWebs extends HTMLElement {
               target="blank" href="https://primeroscoc.titaniumgamers.com/">&#xf006;Primeros&#xf006;</a> jugadores de
             Clash of Clans.<br>
             Esta API sincroniza con el servidor y muestra los datos de los equipos en tiempo real.</p><br>
-            
-            <p>Lenguajes:</p>
-              <ul>
-              <li> HTML.</li>
-              <li> CSS.</li>
-              <li> PHP.</li>
-              </ul>        
-        <div class="visitar">
-          <p>
-            <a class="visitar" target="blank" href="https://primeroscoc.titaniumgamers.com/">Visitar
-              <i class="fas fa-arrow-alt-circle-right"></i></a>
-          </p>
+          <p>Lenguajes:</p>
+          <ul>
+            <li> HTML.</li>
+            <li> CSS.</li>
+            <li> PHP.</li>
+          </ul>
+          <div class="visitar">
+            <p>
+              <a class="visitar" target="blank" href="https://primeroscoc.titaniumgamers.com/">Visitar
+                <i class="fas fa-share"></i></a>
+            </p>
+          </div>
         </div>
       </div>
-      </div>
-      <div class="">
 
-      </div>
-      <div id="guerrasOnline" class="guerrasOnline miniWeb">
+      <div data-aos="fade-up" data-aos-delay="200" id="guerrasOnline" class="guerrasOnline miniWeb">
         <div class="titulo">
           <a target="blank" href="https://clashofclansguerrasonline.titaniumgamers.com/">
             <h1>Guerras on Line</h1>
@@ -128,45 +113,81 @@ class miWebs extends HTMLElement {
               Clans</a>, lee un archivo JSON, descarga los datos y muestra con imágenes imitando la estructura real del
             juego, con búsqueda y selección de equipos por medio de formulario.<br>
             Datos cedidos por <a target="blank" href="https://supercell.com/en/">Supercell</a>.</p><br>
-            <p>Lenguajes: </p>
-            <ul>
+          <p>Lenguajes: </p>
+          <ul>
             <li> HTML.</li>
             <li> CSS.</li>
             <li> PHP.</li>
-                   
-        <div class="visitar">
-          <p>
-            <a class="visitar" target="blank" href="https://clashofclansguerrasonline.titaniumgamers.com/">Visitar
-              <i class="fas fa-arrow-alt-circle-right"></i></a>
-          </p>
+          </ul>
+
+          <div class="visitar">
+            <p>
+              <a class="visitar" target="blank" href="https://clashofclansguerrasonline.titaniumgamers.com/">Visitar
+                <i class="fas fa-share"></i></a>
+            </p>
+          </div>
         </div>
-      </div>
-      </div>
-      <div class="">
       </div>
     </div>
   </section>
 
 `;
+aos_init();
+
+import('./aos/aos.js');
+// Init AOS
+function aos_init() {
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    // $(document).ready(function () {
     //   $("#titaniumGamers").hide(0);
     //   $("#tiendaTitanium").hide(0);
     //   $("#primeroscoc").hide(0);
     //   $("#guerrasOnline").hide(0);
 
-      $("#titaniumGamers").fadeIn(2000);
+    //   $("#titaniumGamers").fadeIn(2000);
+    //   $("#tiendaTitanium").fadeIn(3000);
+    //   $("#primeroscoc").fadeIn(4000);
+    //   $("#guerrasOnline").fadeIn(5000);
 
 
-      $(window).scroll(function () {
-        var windowHeight = $(window).scrollTop();
-        var titaniumGamers = $("#titaniumGamers").offset();
-        titaniumGamers = titaniumGamers.top/2;
-        var tiendaTitanium = $("#tiendaTitanium").offset();
-        tiendaTitanium = tiendaTitanium.top/2;
-        var primeroscoc = $("#primeroscoc").offset();
-        primeroscoc = primeroscoc.top/2;
-        var guerrasOnline = $("#guerrasOnline").offset();
-        guerrasOnline = guerrasOnline.top/2;
+    //   $(window).scroll(function () {
+    //     var windowHeight = $(window).scrollTop();
+    //     var titaniumGamers = $("#titaniumGamers").offset();
+    //     titaniumGamers = titaniumGamers.top/2;
+    //     var tiendaTitanium = $("#tiendaTitanium").offset();
+    //     tiendaTitanium = tiendaTitanium.top/2;
+    //     var primeroscoc = $("#primeroscoc").offset();
+    //     primeroscoc = primeroscoc.top/2;
+    //     var guerrasOnline = $("#guerrasOnline").offset();
+    //     guerrasOnline = guerrasOnline.top/2;
 
         // if (windowHeight <= titaniumGamers) {
         //   $("#tiendaTitanium").fadeOut(2000);
@@ -183,7 +204,7 @@ class miWebs extends HTMLElement {
         // } else {
         //   $("#guerrasOnline").fadeIn(2000);
         // }
-         });
+        //  });
     // });
   }
 }

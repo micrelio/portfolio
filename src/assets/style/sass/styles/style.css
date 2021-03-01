@@ -145,6 +145,10 @@
 .head {
   width: 100%;
   position: relative;
+  background-color: pink;
+  background-image: url("../../../assets/images/banners/vinewood.jpg");
+  background-position: center;
+  background-size: cover;
   border-bottom: 0.05rem solid #3c97bf;
 }
 
@@ -170,7 +174,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-color: #272727;
-  font-family: Arial;
+  font-family: Audiowide;
   font-size: 62.5%;
 }
 

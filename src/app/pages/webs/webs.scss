@@ -51,6 +51,16 @@
 //   height: 5rem;
 // }
 
+
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
 .head {
   //@include head;
 }
@@ -67,16 +77,19 @@
   width: 100%;
   .webs {
     width: 100%;
+    height: 100%;
     padding: 5rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     //poner
-    // align-items: stretch;
-    // justify-content: space-between;
+    align-items: stretch;
+    justify-content: space-around;
     .miniWeb {
-      margin: 0rem 0rem 3rem 0rem;
+      margin: 0rem 5rem 10rem 0rem;
+
     }
+  
     .primeroscoc,
     .guerrasOnline,
     .tiendaTitanium,
@@ -84,12 +97,9 @@
       // @include recuadro;
       // width: 100%;
       // border-radius: 2.5rem;
-      border: 0.5rem double $corporativo;
-      // margin-top: 5rem;
-      // overflow: hidden;
-      // background-color: black;
-      width: 30%;
-      min-width: 30rem;
+      border: 0.5rem double $blanco;
+       width: 25%;
+      min-width: 25rem;
       display: grid;
       grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5];
       grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3] 1fr [y4];
@@ -99,26 +109,9 @@
       }
       .descripcion {
         grid-column: x0 / x5;
-        grid-row: y1 / y5;
+        grid-row: y1 / y4;
       }
-      .visitar {
-        // grid-column: x0 / x5;
-        // grid-row: y4 / y5;
-      }
-      // .titulo {
-      //   grid-column: x0 / x2;
-      //   grid-row: y0 / y1;
-      // }
-      // .descripcion {
-      //   grid-column: x0 / x4;
-      //   grid-row: y1 / y3;
-      // }
-      // .visitar {
-      //   grid-column: x4 / x5;
-      //   grid-row: y1 / y3;
-      // }
-
-      a {
+              a {
         text-decoration: none;
       }
       .titulo {
@@ -127,22 +120,12 @@
         align-items: center;
         justify-content: center;
         border-bottom: 0.05rem solid $corporativo;
-
         background: {
           //  color: purple;
           size: cover;
         }
-        // @include titulo;
-        //padding: 0rem;
-
-        // height: 25vh;
-
-        h1 {
-          // display: flex;
-          // align-self: center;
-          // justify-content: center;
-          // margin: 1rem;
-          font-size: 4em;
+            h1 {
+              font-size: 4em;
         }
       }
       .descripcion {
@@ -150,6 +133,8 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: baseline;
+        width: 100%;
+        height: 100%;
         padding: 2rem;
         background-color: black;
         p {
@@ -173,32 +158,27 @@
         li::before{
           font-family:"FontAwesome";
           content: "\f058";
+          
           color:green ;  
           margin-left: -2rem;   
           // content: "\f057";
           // content: "\f01a";
-
-
             margin-right:8px;
         }
         //   background-color: cornflowerblue;
-     
-      .visitar {
+           .visitar {
         // padding: 0.2rem;
         // background-color: red;
         width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
         color: $azul;
-        // background-color: red;
-
         font-size: 2rem;
-        margin-left: 0px;
-
-        .fa-arrow-alt-circle-right {
+        .fa-share {
           color: green;
           font-size: 3rem;
           display: block;
@@ -213,7 +193,7 @@
           -webkit-animation-timing-function: linear;
           -webkit-animation-iteration-count: infinite;
         }
-        .fa-arrow-alt-circle-right:hover {
+        .fa-share:hover {
           transition: 0.5s;
 
           -webkit-transform: scale(1.5);
@@ -352,11 +332,11 @@
     .tiendaTitanium,
     .titaniumGamers,
     .portfolio {
-      grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5];
-      grid-template-rows: [y0] 0.5fr [y1] 1fr [y2] 0.05fr [y3];
+      // grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1fr [x5];
+      // grid-template-rows: [y0] 0.5fr [y1] 1fr [y2] 0.05fr [y3];
       .titulo {
-        grid-column: x0 / x5;
-        grid-row: y0 / y1;
+        // grid-column: x0 / x5;
+        // grid-row: y0 / y1;
         // background-color: pink;
         h1 {
           display: flex;
@@ -369,16 +349,16 @@
         }
       }
       .descripcion {
-        grid-column: x0 / x5;
-        grid-row: y1 / y2;
+        // grid-column: x0 / x5;
+        // grid-row: y1 / y2;
         //  p {
         //   background-color: cornflowerblue;
         //   }
         //   background-color: cornflowerblue;
       }
       .visitar {
-        grid-column: x0 / x5;
-        grid-row: y2 / y3;
+        // grid-column: x0 / x5;
+        // grid-row: y2 / y3;
         //background-color: red;
       }
     }

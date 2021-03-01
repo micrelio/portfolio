@@ -47,10 +47,15 @@
   width: 100%;
   position: relative;
   background: {
-    //    color: pink;
+       color: pink;
   }
   img {
     width: 100%;
+  }
+  background: {
+    image: url("../../../assets/images/banners/vinewood.jpg");
+    position: center;
+    size: cover;
   }
 }
 @mixin principal {
